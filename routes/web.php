@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('formularios');
+    // return view('componenteprueba');
+});
+
+Route::get('/formularios', function () {
+    return view('formularios');
+    // return view('componenteprueba');
 });

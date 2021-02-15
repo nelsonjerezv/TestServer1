@@ -15,8 +15,34 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+import listadoFormularios from './components/formularios/FormularioEnsayo.vue';
+import componentePrueba from './components/ExampleComponent.vue';
+import Element from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/es';
 
-const app = new Vue({
-    el: '#app'
+Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.use(Element, {locale});
+
+var formularios = new Vue({
+    el: '#formularios',
+    components: {
+        listadoFormularios
+    },
+    data() {
+        return {
+            
+        }
+    }
+});
+
+var prueba = new Vue({
+    el: '#componente-prueba',
+    components: {
+        componentePrueba
+    },
+    data() {
+        return {
+            
+        }
+    }
 });

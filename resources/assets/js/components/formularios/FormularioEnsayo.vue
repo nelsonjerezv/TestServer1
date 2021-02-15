@@ -6,13 +6,8 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        componente prueba
+                        componente formularios
                     </div>
-                    <el-button
-                        :@click="iraFormularios">
-                        ir a formularios
-                    </el-button>
-
                 </div>
             </div>
         </div>
@@ -23,11 +18,6 @@
     export default {
         mounted() {
             console.log('Component mounted.')
-        },
-        methods: {
-            iraFormularios(){
-                this.$http.get('http://app.versionuno/formularios');
-            }
         }
     }
 </script>
