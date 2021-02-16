@@ -5,16 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Version Uno</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     </head>
     <body>
-        <!-- aca scripts de librerias como element -->
+        <!-- css -->
+        <link rel="stylesheet" href="{{ asset(mix('css/layout.css')) }}">
+
+        <!-- scripts -->
+        <script type="text/javascript" src="{{ asset(mix('js/bundle.js')) }}" ></script>
+        
         @yield('styles')
-        <div class="flex-center position-ref full-height">
+        <div class="container">
             @yield('content')
         </div>
         @yield('scripts')

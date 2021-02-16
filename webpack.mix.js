@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+const { forIn } = require('lodash');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,46 @@ let mix = require('laravel-mix');
  |
  */
 
+const directoriosVue = {
+   'resources/assets/js/vue/controllers/formularios/' : {
+      'archivos' : [
+         'formulario.js'
+      ],
+      'destino' : ""
+   }
+}
+
+const destinoVue = 'js/vue';
+for (let directorio in directoriosVue) {
+   for (let archivo in directoriosVue[directorio].archivos) {
+      mix.js(directorio + directoriosVue[directorio].archivos[archivo], destinoVue + directoriosVue[directorio].destino);
+   }
+   
+}
+
+mix.js('resources/assets/js/bundle.js', 'js/');
+
+
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+const sass_dir = 'resources/assets/css/';
+const sass_dest = 'css';
+const sass = [
+   'layout.scss'
+];
+
+for(let archivo in sass){
+   mix.sass(sass_dir + sass[archivo], sass_dest).options({
+      processCssUrls: false,
+      uglyfy: {
+         parallel: 8, // multithreading for this
+         uglyfyOptions: {
+            mangle: true,
+            compress: false,
+         }
+      }
+   });
+}
+

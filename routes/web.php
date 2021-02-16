@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('formularios');
-    // return view('componenteprueba');
+    // return view('formularios');
+    return view('componenteprueba');
 });
 
 Route::get('/formularios', function () {

@@ -3,15 +3,15 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card card-default">
-                    <div class="card-header">Example Component</div>
+                    <!-- <div class="card-header">Example Component</div> -->
 
                     <div class="card-body">
-                        componente prueba
+                        Componente prueba
                     </div>
-                    <el-button
+                    <!-- <el-button
                         :@click="iraFormularios">
                         ir a formularios
-                    </el-button>
+                    </el-button> -->
 
                 </div>
             </div>
@@ -25,9 +25,9 @@
             console.log('Component mounted.')
         },
         methods: {
-            iraFormularios(){
-                this.$http.get('http://app.versionuno/formularios');
-            }
+            // iraFormularios(){
+            //     this.$http.get('http://app.versionuno/formularios');
+            // }
         }
     }
 </script>

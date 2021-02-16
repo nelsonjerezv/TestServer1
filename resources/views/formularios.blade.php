@@ -12,5 +12,5 @@
     {{-- <script type="text/javascript">
         window.datos = @json($datos);
     </script>  --}}
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset(mix('js/vue/formulario.js')) }}"></script>
 @endsection
