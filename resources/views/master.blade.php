@@ -17,11 +17,11 @@
 
         <!-- scripts -->
         <script type="text/javascript" src="{{ asset(mix('js/bundle.js')) }}" ></script>
-        
+
         @yield('styles')
-        <div class="container">
-            @yield('content')
-        </div>
+
+        @yield('content')
+        
         @yield('scripts')
     </body>
 </html>

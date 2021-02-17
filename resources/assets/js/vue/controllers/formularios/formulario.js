@@ -1,19 +1,24 @@
 
-import listadoFormularios from '../../components/formularios/FormularioEnsayo.vue';
-import Element from 'element-ui';
-import locale from 'element-ui/lib/locale/lang/es';
-import 'element-ui/lib/theme-chalk/index.css';
+// componentes
+import DashboardFormularios from '../../components/formularios/DashboardFormularios.vue';
 
-Vue.use(Element, {locale});
+// librerias
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import locale from "element-ui/lib/locale";
+import lang from "element-ui/lib/locale/lang/es";
+
+locale.use(lang);
+Vue.use(ElementUI);
 
 new Vue({
     el: '#formularios' ,
     components: {
-        listadoFormularios
+        DashboardFormularios
     },
     data() {
         return {
-            
+
         }
     }
 });

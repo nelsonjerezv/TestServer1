@@ -1,8 +1,8 @@
 @extends ('master')
 @section('content')
 <div id="formularios">
-    <listado-formularios/>
-</div>    
+    <dashboard-formularios/>
+</div>
 @endsection
 @section('styles')
     {{-- <link rel="stylesheet" lang="scss" href="{{ asset(mix('css/listatrabajo.css')) }}" /> --}}
