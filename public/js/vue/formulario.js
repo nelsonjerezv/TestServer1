@@ -73958,16 +73958,19 @@ module.exports = __webpack_require__(206);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_DashboardFormularios_vue__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_DashboardFormularios_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_formularios_DashboardFormularios_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_element_ui__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_element_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_element_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_element_ui_lib_theme_chalk_index_css__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_element_ui_lib_theme_chalk_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_element_ui_lib_theme_chalk_index_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_element_ui_lib_locale__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_element_ui_lib_locale___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_element_ui_lib_locale__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale_lang_es__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale_lang_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale_lang_es__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_formularios_SidebarFormularios_vue__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_formularios_SidebarFormularios_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_formularios_SidebarFormularios_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_element_ui__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_element_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_element_ui__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_element_ui_lib_theme_chalk_index_css__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_element_ui_lib_theme_chalk_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_element_ui_lib_theme_chalk_index_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_element_ui_lib_locale_lang_es__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_element_ui_lib_locale_lang_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_element_ui_lib_locale_lang_es__);
 
 // componentes
+
 
 
 // librerias
@@ -73976,13 +73979,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_3_element_ui_lib_locale___default.a.use(__WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale_lang_es___default.a);
-Vue.use(__WEBPACK_IMPORTED_MODULE_1_element_ui___default.a);
+__WEBPACK_IMPORTED_MODULE_4_element_ui_lib_locale___default.a.use(__WEBPACK_IMPORTED_MODULE_5_element_ui_lib_locale_lang_es___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_2_element_ui___default.a);
 
 new Vue({
     el: '#formularios',
     components: {
-        DashboardFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_DashboardFormularios_vue___default.a
+        DashboardFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_DashboardFormularios_vue___default.a,
+        SidebarFormularios: __WEBPACK_IMPORTED_MODULE_1__components_formularios_SidebarFormularios_vue___default.a
     },
     data: function data() {
         return {};
@@ -74869,13 +74873,202 @@ exports = module.exports = __webpack_require__(187)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-aside {\n    background-color: #d3dce6;\n    color: #333;\n    text-align: center;\n    line-height: 200px;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n\n\n/* sidebar */\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: 200px;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 223 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        SidebarFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default.a
+    },
+    data: function data() {
+        return {
+            color1: "#409EFF",
+            color2: null,
+            color: "rgba(19, 206, 102, 0.8)"
+        };
+    },
+    mounted: function mounted() {
+        console.log("Component mounted.");
+    },
+
+    methods: {}
+});
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "contenedor-vue" } },
+    [
+      _c(
+        "el-container",
+        { staticClass: "height-max-percent" },
+        [
+          _c("el-header", [_vm._v("Sección formularios")]),
+          _vm._v(" "),
+          _c(
+            "el-container",
+            [
+              _c("sidebar-formularios"),
+              _vm._v(" "),
+              _c(
+                "el-container",
+                [
+                  _c("el-main", [_vm._v("Main")]),
+                  _vm._v(" "),
+                  _c("el-footer", [_vm._v("Footer")])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-552d6f49", module.exports)
+  }
+}
+
+/***/ }),
+/* 225 */,
+/* 226 */,
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(228)
+}
+var normalizeComponent = __webpack_require__(87)
+/* script */
+var __vue_script__ = __webpack_require__(230)
+/* template */
+var __vue_template__ = __webpack_require__(231)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/vue/components/formularios/SidebarFormularios.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7da1be81", Component.options)
+  } else {
+    hotAPI.reload("data-v-7da1be81", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(229);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(195)("4483b016", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7da1be81\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SidebarFormularios.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7da1be81\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SidebarFormularios.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(187)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.el-aside {\n    background-color: #d3dce6;\n    height: 100%;\n    color: #333;\n    text-align: center;\n    line-height: 200px;\n    overflow-x: hidden;\n}\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: 200px;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74922,36 +75115,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            color1: "#409EFF",
-            color2: null,
-            color: "rgba(19, 206, 102, 0.8)",
-            //sidebar
             isCollapse: true
         };
     },
-    mounted: function mounted() {
-        console.log("Component mounted.");
-    },
 
     methods: {
-        //sidebar
         clickOTT: function clickOTT() {
             console.log('Abrir OTT');
         }
@@ -74959,7 +75131,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 224 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -74968,139 +75140,91 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { attrs: { id: "contenedor-vue" } },
     [
       _c(
-        "el-container",
-        { staticClass: "height-max-percent" },
+        "el-aside",
+        { attrs: { width: "200px" } },
         [
-          _c("el-header", [_vm._v("Sección formularios")]),
-          _vm._v(" "),
           _c(
-            "el-container",
+            "el-menu",
+            {
+              staticClass: "el-menu-vertical-demo",
+              attrs: { "default-active": "1" }
+            },
             [
+              _c("el-menu-item", { attrs: { index: "1" } }, [
+                _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                  _vm._v("Resumen")
+                ])
+              ]),
+              _vm._v(" "),
               _c(
-                "el-aside",
-                { attrs: { width: "200px" } },
+                "el-submenu",
+                { attrs: { index: "2" } },
                 [
+                  _c("template", { slot: "title" }, [
+                    _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                      _vm._v("Formularios")
+                    ])
+                  ]),
+                  _vm._v(" "),
                   _c(
-                    "el-menu",
-                    {
-                      staticClass: "el-menu-vertical-demo",
-                      attrs: { "default-active": "1" }
-                    },
+                    "el-menu-item-group",
                     [
-                      _c("el-menu-item", { attrs: { index: "1" } }, [
-                        _c(
-                          "span",
-                          { attrs: { slot: "title" }, slot: "title" },
-                          [_vm._v("Resumen")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "el-submenu",
-                        { attrs: { index: "2" } },
-                        [
-                          _c("template", { slot: "title" }, [
-                            _c(
-                              "span",
-                              { attrs: { slot: "title" }, slot: "title" },
-                              [_vm._v("Formularios")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "el-menu-item-group",
-                            [
-                              _c(
-                                "el-menu-item",
-                                {
-                                  attrs: { index: "2-1" },
-                                  on: { click: _vm.clickOTT }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                Orden de trabajo de Terreno\n                            "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "el-menu-item",
-                                { attrs: { index: "2-2", disabled: "" } },
-                                [_vm._v("item two")]
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "el-menu-item-group",
-                            [
-                              _c(
-                                "el-menu-item",
-                                { attrs: { index: "2-3", disabled: "" } },
-                                [_vm._v("item three")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "3", disabled: "" } },
+                        {
+                          attrs: { index: "2-1" },
+                          on: { click: _vm.clickOTT }
+                        },
                         [
-                          _c(
-                            "span",
-                            { attrs: { slot: "title" }, slot: "title" },
-                            [_vm._v("Navigator Two")]
+                          _vm._v(
+                            "\n                        Orden de trabajo de Terreno\n                    "
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "4", disabled: "" } },
-                        [
-                          _c(
-                            "span",
-                            { attrs: { slot: "title" }, slot: "title" },
-                            [_vm._v("Navigator Three")]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
+                        { attrs: { index: "2-2", disabled: "" } },
+                        [_vm._v("item two")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-menu-item-group",
+                    [
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "5", disabled: "" } },
-                        [
-                          _c(
-                            "span",
-                            { attrs: { slot: "title" }, slot: "title" },
-                            [_vm._v("Navigator Four")]
-                          )
-                        ]
+                        { attrs: { index: "2-3", disabled: "" } },
+                        [_vm._v("item three")]
                       )
                     ],
                     1
                   )
                 ],
-                1
+                2
               ),
               _vm._v(" "),
-              _c(
-                "el-container",
-                [
-                  _c("el-main", [_vm._v("Main")]),
-                  _vm._v(" "),
-                  _c("el-footer", [_vm._v("Footer")])
-                ],
-                1
-              )
+              _c("el-menu-item", { attrs: { index: "3", disabled: "" } }, [
+                _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                  _vm._v("Navigator Two")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("el-menu-item", { attrs: { index: "4", disabled: "" } }, [
+                _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                  _vm._v("Navigator Three")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("el-menu-item", { attrs: { index: "5", disabled: "" } }, [
+                _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                  _vm._v("Navigator Four")
+                ])
+              ])
             ],
             1
           )
@@ -75117,7 +75241,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-552d6f49", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7da1be81", module.exports)
   }
 }
 

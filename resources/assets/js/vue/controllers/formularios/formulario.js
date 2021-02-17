@@ -1,6 +1,7 @@
 
 // componentes
 import DashboardFormularios from '../../components/formularios/DashboardFormularios.vue';
+import SidebarFormularios from '../../components/formularios/SidebarFormularios.vue';
 
 // librerias
 import ElementUI from "element-ui";
@@ -14,7 +15,8 @@ Vue.use(ElementUI);
 new Vue({
     el: '#formularios' ,
     components: {
-        DashboardFormularios
+        DashboardFormularios,
+        SidebarFormularios
     },
     data() {
         return {
