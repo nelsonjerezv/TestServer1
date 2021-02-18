@@ -1,9 +1,11 @@
 <template>
     <div>
-        <el-aside width="200px">
-            <el-menu default-active="1" class="el-menu-vertical-demo">
-                <el-menu-item index="1">
-                    <span slot="title">Resumen</span>
+        <el-aside width="fit-content">
+            <el-menu default-active="2" class="el-menu-vertical-demo">
+                <el-menu-item
+                    index="1"
+                    @click="clickResumen">
+                    Resumen
                 </el-menu-item>
                 <el-submenu index="2">
                     <template slot="title">
@@ -50,6 +52,11 @@
         methods: {
             clickOTT() {
                 console.log('Abrir OTT');
+                this.$emit("cambiaMain", "OrdenTrabajoTerreno");
+            },
+            clickResumen() {
+                console.log('Volver a resumen');
+                this.$emit("cambiaMain", "ListadoFormularios");
             }
         }
     }
@@ -60,15 +67,18 @@
         background-color: #d3dce6;
         height: 100%;
         color: #333;
-        text-align: center;
-        line-height: 200px;
+        text-align: left;
         overflow-x: hidden;
     }
     .el-menu-vertical-demo:not(.el-menu--collapse) {
-        width: 200px;
+        width: fit-content;
         min-height: 400px;
     }
     .el-menu{
         background-color: transparent;
+    }
+    .el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {
+        height: 40px;
+        line-height: 40px;
     }
 </style>

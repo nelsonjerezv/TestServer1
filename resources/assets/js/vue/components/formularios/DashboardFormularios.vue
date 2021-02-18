@@ -1,11 +1,15 @@
 <template>
-    <div id="contenedor-vue">
+    <div class="contenedor-vue">
         <el-container class="height-max-percent">
             <el-header>Secci&oacute;n formularios</el-header>
             <el-container>
-                <sidebar-formularios/>
+                <sidebar-formularios
+                    @cambiaMain="cambiarMain"
+                />
                 <el-container>
-                    <el-main>Main</el-main>
+                    <el-main>
+                        <component :is="componenteMain"></component>
+                    </el-main>
                     <el-footer>Footer</el-footer>
                 </el-container>
             </el-container>
@@ -15,22 +19,27 @@
 
 <script>
     import SidebarFormularios from '../../components/formularios/SidebarFormularios.vue';
+    import OrdenTrabajoTerreno from '../../components/formularios/OrdenTrabajoTerreno.vue';
+    import ListadoFormularios from '../../components/formularios/ListadoFormularios.vue';
 
     export default {
         components:{
-            SidebarFormularios
+            SidebarFormularios,
+            OrdenTrabajoTerreno,
+            ListadoFormularios
         },
         data() {
             return {
-                color1: "#409EFF",
-                color2: null,
-                color: "rgba(19, 206, 102, 0.8)",
+                componenteMain: "ListadoFormularios"
             };
         },
         mounted() {
             console.log("Component mounted.");
         },
         methods: {
+            cambiarMain: function(contenido){
+                this.componenteMain = contenido;
+            }
         }
     };
 </script>
