@@ -10,7 +10,7 @@
             <el-col :span="12">
                 <div class="grid-content bg-purple">
                     <span class="nombre-campo">OTT N° HF - </span>
-                    <el-input placeholder="Please input" v-model="numClienteObra"></el-input>
+                    <el-input placeholder="Please input" v-model="ottNumberHF"></el-input>
                 </div>
             </el-col>
         </el-row>
@@ -72,7 +72,7 @@
                 fonoObra: '',
                 direccionObra: '',
                 encargadoObra: '',
-                muestreoDe: 'hormigon'
+                muestreoDe: ''
             }
         }
     }

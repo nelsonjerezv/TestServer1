@@ -1,7 +1,9 @@
 <template>
     <div class="contenedor-vue">
         <el-container class="height-max-percent">
-            <el-header>Secci&oacute;n formularios</el-header>
+            <el-header>
+                <h1>Secci&oacute;n formularios</h1>
+            </el-header>
             <el-container>
                 <sidebar-formularios
                     @cambiaMain="cambiarMain"
@@ -79,5 +81,8 @@
     #formularios {
         height: 100%;
         width: 100%;
+    }
+    .el-menu-item-group__title {
+        padding: 0px 0px 0px 20px;
     }
 </style>
