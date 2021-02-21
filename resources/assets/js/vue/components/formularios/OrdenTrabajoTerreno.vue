@@ -621,7 +621,6 @@
             <el-divider class="el-divider-14"/>
             <el-form-item class="comentarios">
                 <el-button type="primary" @click="onSubmit">Crear OTT</el-button>
-                <!-- <el-button>Cancel</el-button> -->
             </el-form-item>
         </el-form>
     </div>
@@ -709,11 +708,6 @@
                     recibeOMuestrea: ''
                 },
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
-                resource: {
-                    guardarFormulario: {
-                        method: 'POST',
-                    }
-                }
             }
         },
         created() {
@@ -723,9 +717,10 @@
         destroyed() {
             window.removeEventListener('resize', this.handleResize);
         },
+        mounted () {
+        },
         methods: {
             onSubmit() {
-                console.log('submit!');
                 this.$http.post(this.urlGuardarFormulario,{
                     formulario: this.form
                 }).then(response => {
@@ -744,6 +739,7 @@
         padding: 10px;
         line-height: 40px;
         height: auto;
+        overflow: auto;
     }
     .dis-flex-dir-col{
         display: flex;

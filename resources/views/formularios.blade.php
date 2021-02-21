@@ -1,7 +1,9 @@
 @extends ('master')
 @section('content')
 <div id="formularios">
-    <dashboard-formularios/>
+    <dashboard-formularios
+        :ordenes="ordenes"
+    />
 </div>
 @endsection
 @section('styles')
@@ -9,8 +11,8 @@
 
 @endsection
 @section('scripts')
-    {{-- <script type="text/javascript">
+    <script type="text/javascript">
         window.datos = @json($datos);
-    </script>  --}}
+    </script>
     <script type="text/javascript" src="{{ asset(mix('js/vue/formulario.js')) }}"></script>
 @endsection

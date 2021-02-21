@@ -1,6 +1,7 @@
 window.axios = require('axios');
 window.$ = window.jQuery = require('jquery');
 window.Vue = require('vue');
+window._ = require('lodash');
 let urlGlobal = window.GLOBAL.URL;
 window.GLOBAL = require('./globals.json');
 window.GLOBAL.URL = urlGlobal;

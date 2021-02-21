@@ -1,29 +1,23 @@
 <template>
     <div>
         <el-aside width="fit-content">
-            <el-menu default-active="6" class="el-menu-vertical-demo">
+            <el-menu class="el-menu-vertical-demo">
                 <el-menu-item
                     index="1"
-                    @click="clickResumen">
-                    Resumen
-                </el-menu-item>
-                <el-menu-item
-                    index="6"
-                    @click="clickOTT">
-                    Orden de trabajo de Terreno
+                    @click="inicio">
+                    Inicio
                 </el-menu-item>
                 <el-submenu index="2">
                     <template slot="title">
                         <span slot="title">Formularios</span>
                     </template>
                     <el-menu-item-group>
-                        <!-- <span slot="title">Group One</span> -->
-                        <el-menu-item
-                            index="2-1"
-                            @click="clickOTT">
-                            Orden de trabajo de Terreno
+                        <el-menu-item index="2-1" @click="listadoOTTs">
+                            Listado OTTs
                         </el-menu-item>
-                        <el-menu-item index="2-2" disabled>item two</el-menu-item>
+                        <el-menu-item index="2-2" @click="nuevaOTT">
+                            Nueva OTT
+                        </el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group>
                         <el-menu-item index="2-3" disabled>item three</el-menu-item>
@@ -55,12 +49,13 @@
             }
         },
         methods: {
-            clickOTT() {
-                console.log('Abrir OTT');
+            inicio(){
+                this.$emit("cambiaMain", "");
+            },
+            nuevaOTT() {
                 this.$emit("cambiaMain", "OrdenTrabajoTerreno");
             },
-            clickResumen() {
-                console.log('Volver a resumen');
+            listadoOTTs() {
                 this.$emit("cambiaMain", "ListadoFormularios");
             }
         }

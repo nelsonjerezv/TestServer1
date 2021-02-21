@@ -8,8 +8,15 @@ use App\Models\OrdenTrabajoTerreno;
 class OrdenTrabajoTerrenoController extends Controller
 {
     public function index(){
-        $ordenes = OrdenTrabajoTerreno::get();
-        return view('formularios', ['ordenes' => $ordenes]);
+        $ordenes = $this->todasLasOrdenes();
+        $datos = [
+            'ordenes' => $ordenes
+        ];
+        return view('formularios', compact('datos'));
+    }
+
+    public function todasLasOrdenes(){
+        return OrdenTrabajoTerreno::get();
     }
 
     public function guardarFormulario(Request $request){

@@ -1,19 +1,26 @@
 <template>
-    <div class="contenedor-vue">
-        <el-container class="height-max-percent">
-            <el-header>
-                <h1>Secci&oacute;n formularios</h1>
-            </el-header>
-            <el-container style="height: calc(100% - 60px) !important;">
-                <sidebar-formularios
-                    @cambiaMain="cambiarMain"
-                />
-                <el-container>
-                    <el-main>
-                        <component :is="componenteMain"></component>
-                    </el-main>
-                    <el-footer>Footer</el-footer>
-                </el-container>
+    <div class="contenedor-vue height-max-percent">
+        <el-header>
+            Prototipo
+        </el-header>
+        <el-container style="height: calc(100% - 60px) !important;">
+            <sidebar-formularios
+                @cambiaMain="cambiarMain"
+            />
+            <el-container>
+                <el-main>
+                    <div v-if="componenteMain == ''" class="bienvenido">
+                        Bienvenido
+                    </div>
+                    <listado-formularios
+                        v-if="componenteMain == 'ListadoFormularios'"
+                        :ordenes="ordenes"
+                    />
+                    <orden-trabajo-terreno
+                        v-if="componenteMain == 'OrdenTrabajoTerreno'"
+                    />
+                </el-main>
+                <el-footer>Footer</el-footer>
             </el-container>
         </el-container>
     </div>
@@ -30,9 +37,12 @@
             OrdenTrabajoTerreno,
             ListadoFormularios
         },
+        props: [
+            'ordenes'
+        ],
         data() {
             return {
-                componenteMain: "OrdenTrabajoTerreno"
+                componenteMain: ''
             };
         },
         mounted() {
@@ -57,6 +67,9 @@
         color: #333;
         text-align: center;
         line-height: 60px;
+    }
+    .el-header{
+        font-size: xx-large;
     }
     .el-main {
         background-color: #e9eef3;
@@ -85,5 +98,12 @@
     }
     .el-menu-item-group__title {
         padding: 0px 0px 0px 20px;
+    }
+
+    .bienvenido{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
     }
 </style>

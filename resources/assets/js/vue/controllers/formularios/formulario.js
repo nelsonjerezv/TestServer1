@@ -20,7 +20,7 @@ new Vue({
     },
     data() {
         return {
-
+            ordenes: window.datos.ordenes
         }
     }
 });

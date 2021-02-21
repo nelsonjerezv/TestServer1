@@ -74270,7 +74270,9 @@ new Vue({
         SidebarFormularios: __WEBPACK_IMPORTED_MODULE_1__components_formularios_SidebarFormularios_vue___default.a
     },
     data: function data() {
-        return {};
+        return {
+            ordenes: window.datos.ordenes
+        };
     }
 });
 
@@ -74360,7 +74362,7 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-header{\n    font-size: xx-large;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -74398,6 +74400,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -74409,9 +74418,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         OrdenTrabajoTerreno: __WEBPACK_IMPORTED_MODULE_1__components_formularios_OrdenTrabajoTerreno_vue___default.a,
         ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a
     },
+    props: ['ordenes'],
     data: function data() {
         return {
-            componenteMain: "OrdenTrabajoTerreno"
+            componenteMain: ''
         };
     },
     mounted: function mounted() {
@@ -74514,12 +74524,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -74529,12 +74533,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        clickOTT: function clickOTT() {
-            console.log('Abrir OTT');
+        inicio: function inicio() {
+            this.$emit("cambiaMain", "");
+        },
+        nuevaOTT: function nuevaOTT() {
             this.$emit("cambiaMain", "OrdenTrabajoTerreno");
         },
-        clickResumen: function clickResumen() {
-            console.log('Volver a resumen');
+        listadoOTTs: function listadoOTTs() {
             this.$emit("cambiaMain", "ListadoFormularios");
         }
     }
@@ -74557,25 +74562,12 @@ var render = function() {
         [
           _c(
             "el-menu",
-            {
-              staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "6" }
-            },
+            { staticClass: "el-menu-vertical-demo" },
             [
               _c(
                 "el-menu-item",
-                { attrs: { index: "1" }, on: { click: _vm.clickResumen } },
-                [_vm._v("\n                Resumen\n            ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "el-menu-item",
-                { attrs: { index: "6" }, on: { click: _vm.clickOTT } },
-                [
-                  _vm._v(
-                    "\n                Orden de trabajo de Terreno\n            "
-                  )
-                ]
+                { attrs: { index: "1" }, on: { click: _vm.inicio } },
+                [_vm._v("\n                Inicio\n            ")]
               ),
               _vm._v(" "),
               _c(
@@ -74595,19 +74587,26 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "2-1" },
-                          on: { click: _vm.clickOTT }
+                          on: { click: _vm.listadoOTTs }
                         },
                         [
                           _vm._v(
-                            "\n                        Orden de trabajo de Terreno\n                    "
+                            "\n                        Listado OTTs\n                    "
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "2-2", disabled: "" } },
-                        [_vm._v("item two")]
+                        {
+                          attrs: { index: "2-2" },
+                          on: { click: _vm.nuevaOTT }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Nueva OTT\n                    "
+                          )
+                        ]
                       )
                     ],
                     1
@@ -74751,7 +74750,7 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-input__inner {\n    width: calc(100% - 41px);\n    margin-left: -112px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.auto-height[data-v-1e744d4c] {\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-14[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n", ""]);
+exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-input__inner {\n    width: calc(100% - 41px);\n    margin-left: -112px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.auto-height[data-v-1e744d4c] {\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-14[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n", ""]);
 
 // exports
 
@@ -74762,7 +74761,6 @@ exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-colo
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -75472,12 +75470,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 ayudante: '',
                 recibeOMuestrea: ''
             },
-            urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario',
-            resource: {
-                guardarFormulario: {
-                    method: 'POST'
-                }
-            }
+            urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario'
         };
     },
     created: function created() {
@@ -75487,10 +75480,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     destroyed: function destroyed() {
         window.removeEventListener('resize', this.handleResize);
     },
+    mounted: function mounted() {},
 
     methods: {
         onSubmit: function onSubmit() {
-            console.log('submit!');
             this.$http.post(this.urlGuardarFormulario, {
                 formulario: this.form
             }).then(function (response) {
@@ -78691,7 +78684,7 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -78702,13 +78695,67 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
+    },
+    props: [],
+    data: function data() {
+        return {
+            urltodasLasOrdenes: GLOBAL.URL + 'formularios/todas-las-ordenes',
+            ordenesDeTrabajo: '',
+            todasLasOrdenes: '',
+            buscador: ''
+        };
+    },
+    mounted: function mounted() {
+        this.getOrdenes();
+    },
+
+    methods: {
+        getOrdenes: function getOrdenes() {
+            var _this = this;
+
+            this.$http.get(this.urltodasLasOrdenes).then(function (response) {
+                _this.todasLasOrdenes = response.body;
+                _this.ordenesDeTrabajo = response.body;
+            });
+        },
+        filtraOrdenes: function filtraOrdenes() {
+            var _this2 = this;
+
+            this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
+                return orden.num_cliente_obra.includes(_this2.buscador);
+            });
+        }
+    },
+    watch: {
+        buscador: function buscador() {
+            this.filtraOrdenes();
+        }
+    }
+});
 
 /***/ }),
 /* 211 */
@@ -78719,7 +78766,38 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "contenedor-vue" }, [
-    _vm._v("\n    este es el listado\n")
+    _c(
+      "div",
+      { staticClass: "container-elementos" },
+      [
+        _c("h1", [_vm._v("Listado Órdenes de Trabajo de Terreno")]),
+        _vm._v(" "),
+        _c("el-input", {
+          staticClass: "width-100",
+          attrs: { placeholder: "Filtre por N° Cliente Obra" },
+          model: {
+            value: _vm.buscador,
+            callback: function($$v) {
+              _vm.buscador = $$v
+            },
+            expression: "buscador"
+          }
+        })
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container-items-formulario" },
+      _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
+        return _c("item-lista-formularios", {
+          key: orden.id,
+          attrs: { itemLista: orden, index: index }
+        })
+      }),
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -78742,35 +78820,44 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "contenedor-vue" },
+    { staticClass: "contenedor-vue height-max-percent" },
     [
+      _c("el-header", [_vm._v("\n        Prototipo\n    ")]),
+      _vm._v(" "),
       _c(
         "el-container",
-        { staticClass: "height-max-percent" },
+        { staticStyle: { height: "calc(100% - 60px) !important" } },
         [
-          _c("el-header", [_c("h1", [_vm._v("Sección formularios")])]),
+          _c("sidebar-formularios", { on: { cambiaMain: _vm.cambiarMain } }),
           _vm._v(" "),
           _c(
             "el-container",
-            { staticStyle: { height: "calc(100% - 60px) !important" } },
             [
-              _c("sidebar-formularios", {
-                on: { cambiaMain: _vm.cambiarMain }
-              }),
-              _vm._v(" "),
               _c(
-                "el-container",
+                "el-main",
                 [
-                  _c(
-                    "el-main",
-                    [_c(_vm.componenteMain, { tag: "component" })],
-                    1
-                  ),
+                  _vm.componenteMain == ""
+                    ? _c("div", { staticClass: "bienvenido" }, [
+                        _vm._v(
+                          "\n                    Bienvenido\n                "
+                        )
+                      ])
+                    : _vm._e(),
                   _vm._v(" "),
-                  _c("el-footer", [_vm._v("Footer")])
+                  _vm.componenteMain == "ListadoFormularios"
+                    ? _c("listado-formularios", {
+                        attrs: { ordenes: _vm.ordenes }
+                      })
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.componenteMain == "OrdenTrabajoTerreno"
+                    ? _c("orden-trabajo-terreno")
+                    : _vm._e()
                 ],
                 1
-              )
+              ),
+              _vm._v(" "),
+              _c("el-footer", [_vm._v("Footer")])
             ],
             1
           )
@@ -79336,6 +79423,204 @@ module.exports = function (css) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(244)
+}
+var normalizeComponent = __webpack_require__(55)
+/* script */
+var __vue_script__ = __webpack_require__(246)
+/* template */
+var __vue_template__ = __webpack_require__(247)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-88ecfba6"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/vue/components/formularios/ItemListaFormularios.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-88ecfba6", Component.options)
+  } else {
+    hotAPI.reload("data-v-88ecfba6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(245);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(54)("6ac06352", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-88ecfba6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaFormularios.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-88ecfba6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaFormularios.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(30)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.item-lista-formularios[data-v-88ecfba6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-88ecfba6] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-88ecfba6] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-88ecfba6] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 246 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['itemLista'],
+    data: function data() {
+        return {
+            item: ''
+        };
+    },
+    mounted: function mounted() {
+        this.item = this.itemLista;
+    }
+});
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "item-lista-formularios" }, [
+    _c("div", { staticClass: "item" }, [
+      _c("div", { staticClass: "atributos" }, [
+        _c("div", { staticClass: "item-atributo" }, [
+          _vm._v("N° Cliente Obra: " + _vm._s(_vm.item.num_cliente_obra))
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-atributo" }, [
+          _vm._v("Laboratorista: " + _vm._s(_vm.item.laboratorista))
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "item-contenedor-botones" },
+        [
+          _c("el-button", { attrs: { type: "primary", plain: "" } }, [
+            _vm._v("Ver")
+          ]),
+          _vm._v(" "),
+          _c("el-button", { attrs: { type: "warning", plain: "" } }, [
+            _vm._v("Editar")
+          ]),
+          _vm._v(" "),
+          _c("el-button", { attrs: { type: "danger", plain: "" } }, [
+            _vm._v("Eliminar")
+          ])
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-88ecfba6", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
