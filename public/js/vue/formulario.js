@@ -74762,8 +74762,6 @@ exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-colo
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 //
 //
 //
@@ -75395,12 +75393,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-        var _form;
-
         return {
             labelPosition: 'left',
             unaDosColumnas: 24,
-            form: (_form = {
+            form: {
                 numClienteObra: '',
                 ottNumberHF: '',
                 nombreCliente: '',
@@ -75431,8 +75427,57 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 numGuiaDespacho: '',
                 nombreChofer: '',
                 curadoInicial: '',
-                elementoHormigonado: ''
-            }, _defineProperty(_form, 'numGuiaDespacho', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'tipoHormigonMortero', ''), _defineProperty(_form, 'resistenciaEspecificada', ''), _defineProperty(_form, 'fechaConfeccion', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'aditivo', ''), _defineProperty(_form, 'numMixer', ''), _defineProperty(_form, 'trasladoProbetas', ''), _defineProperty(_form, 'retiroMuestraOtros', ''), _defineProperty(_form, 'retiroMuestraCantidadUnDia', ''), _defineProperty(_form, 'retiroMuestraCantidadTresDias', ''), _defineProperty(_form, 'retiroMuestraCantidadSieteDias', ''), _defineProperty(_form, 'retiroMuestraCantidadCatorceDias', ''), _defineProperty(_form, 'retiroMuestraCantidadVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraCantidadOtros', ''), _defineProperty(_form, 'retiroMuestraFechaUnDia', ''), _defineProperty(_form, 'retiroMuestraFechaTresDias', ''), _defineProperty(_form, 'retiroMuestraFechaSieteDias', ''), _defineProperty(_form, 'retiroMuestraFechaCatorceDias', ''), _defineProperty(_form, 'retiroMuestraFechaVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraFechaOtros', ''), _defineProperty(_form, 'retiroMuestraInformeUnDia', ''), _defineProperty(_form, 'retiroMuestraInformeTresDias', ''), _defineProperty(_form, 'retiroMuestraInformeSieteDias', ''), _defineProperty(_form, 'retiroMuestraInformeCatorceDias', ''), _defineProperty(_form, 'retiroMuestraInformeVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraInformeOtros', ''), _defineProperty(_form, 'procedimientoExtraccion', ''), _defineProperty(_form, 'muestraIngresadaPorCliente', ''), _defineProperty(_form, 'fechaIngreso', ''), _defineProperty(_form, 'fechaVisitaObra', ''), _defineProperty(_form, 'horaLlegada', ''), _defineProperty(_form, 'horaSalida', ''), _defineProperty(_form, 'responsableEnObra', ''), _defineProperty(_form, 'densAparenteHormigon', ''), _defineProperty(_form, 'densAparenteMortero', ''), _defineProperty(_form, 'indiceEsclerometrico', ''), _defineProperty(_form, 'irregularidadSuperficial', ''), _defineProperty(_form, 'irregularidadSuperficialMl', ''), _defineProperty(_form, 'observaciones', ''), _defineProperty(_form, 'alteracionMuestra', ''), _defineProperty(_form, 'laboratorista', ''), _defineProperty(_form, 'ayudante', ''), _defineProperty(_form, 'recibeOMuestrea', ''), _form)
+                elementoHormigonado: '',
+                ubicacionElemento: '',
+                tipoHormigonMortero: '',
+                resistenciaEspecificada: '',
+                fechaConfeccion: '',
+                aditivo: '',
+                numMixer: '',
+                trasladoProbetas: '',
+                retiroMuestraOtros: '',
+                retiroMuestraCantidadUnDia: '',
+                retiroMuestraCantidadTresDias: '',
+                retiroMuestraCantidadSieteDias: '',
+                retiroMuestraCantidadCatorceDias: '',
+                retiroMuestraCantidadVeintiochoDias: '',
+                retiroMuestraCantidadOtros: '',
+                retiroMuestraFechaUnDia: '',
+                retiroMuestraFechaTresDias: '',
+                retiroMuestraFechaSieteDias: '',
+                retiroMuestraFechaCatorceDias: '',
+                retiroMuestraFechaVeintiochoDias: '',
+                retiroMuestraFechaOtros: '',
+                retiroMuestraInformeUnDia: '',
+                retiroMuestraInformeTresDias: '',
+                retiroMuestraInformeSieteDias: '',
+                retiroMuestraInformeCatorceDias: '',
+                retiroMuestraInformeVeintiochoDias: '',
+                retiroMuestraInformeOtros: '',
+                procedimientoExtraccion: '',
+                muestraIngresadaPorCliente: '',
+                fechaIngreso: '',
+                fechaVisitaObra: '',
+                horaLlegada: '',
+                horaSalida: '',
+                responsableEnObra: '',
+                densAparenteHormigon: '',
+                densAparenteMortero: '',
+                indiceEsclerometrico: '',
+                irregularidadSuperficial: '',
+                irregularidadSuperficialMl: '',
+                observaciones: '',
+                alteracionMuestra: '',
+                laboratorista: '',
+                ayudante: '',
+                recibeOMuestrea: ''
+            },
+            urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario',
+            resource: {
+                guardarFormulario: {
+                    method: 'POST'
+                }
+            }
         };
     },
     created: function created() {
@@ -75446,6 +75491,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     methods: {
         onSubmit: function onSubmit() {
             console.log('submit!');
+            this.$http.post(this.urlGuardarFormulario, {
+                formulario: this.form
+            }).then(function (response) {
+                console.log('response', response);
+            });
         },
         handleResize: function handleResize() {
             this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12;
@@ -77286,8 +77336,8 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "tabla-extraccion tabla-extraccion--10cols",
-                    attrs: { disabled: "" }
+                    staticClass:
+                      "tabla-extraccion tabla-extraccion--10cols comentarios"
                   },
                   [
                     _c(
@@ -78112,7 +78162,7 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "si" },
+                          attrs: { label: "true" },
                           model: {
                             value: _vm.form.muestraIngresadaPorCliente,
                             callback: function($$v) {
@@ -78131,7 +78181,7 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "no" },
+                          attrs: { label: "false" },
                           model: {
                             value: _vm.form.muestraIngresadaPorCliente,
                             callback: function($$v) {

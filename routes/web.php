@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,11 +11,10 @@
 */
 
 Route::get('/', function () {
-    // return view('formularios');
     return view('componenteprueba');
 });
 
-Route::get('/formularios', function () {
-    return view('formularios');
-    // return view('componenteprueba');
-});
+
+Route::get('/formularios', 'OrdenTrabajoTerrenoController@index');
+Route::post('/formularios/guardar-formulario', 'OrdenTrabajoTerrenoController@guardarFormulario');
+Route::resource('formularios', 'OrdenTrabajoTerrenoController');

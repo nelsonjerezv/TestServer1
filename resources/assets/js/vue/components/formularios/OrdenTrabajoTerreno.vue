@@ -356,7 +356,7 @@
             <el-row class="margin-b-5 auto-height">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Extracci&oacute;n de Testigos Hormig&oacute;n Endurecido</el-col>
                 <el-col :span="24" class="padding-5">
-                    <div class="tabla-extraccion tabla-extraccion--10cols" disabled>
+                    <div class="tabla-extraccion tabla-extraccion--10cols comentarios">
                         <!-- titulos -->
 
                         <div class="tabla-extraccion-cell" style="width: 30%;">Di&aacute;metro</div>
@@ -524,8 +524,8 @@
             <el-row class="margin-b-5 auto-height">
                 <el-col :span="12" class="seccion-otros padding-5">
                     <el-form-item label="Muestra Ingresada por el Cliente">
-                        <el-radio v-model="form.muestraIngresadaPorCliente" label="si">Si</el-radio>
-                        <el-radio v-model="form.muestraIngresadaPorCliente" label="no">No</el-radio>
+                        <el-radio v-model="form.muestraIngresadaPorCliente" label="true">Si</el-radio>
+                        <el-radio v-model="form.muestraIngresadaPorCliente" label="false">No</el-radio>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
@@ -664,13 +664,10 @@
                     nombreChofer: '',
                     curadoInicial: '',
                     elementoHormigonado: '',
-                    numGuiaDespacho: '',
                     ubicacionElemento: '',
                     tipoHormigonMortero: '',
                     resistenciaEspecificada: '',
                     fechaConfeccion: '',
-                    ubicacionElemento: '',
-                    ubicacionElemento: '',
                     aditivo: '',
                     numMixer: '',
                     trasladoProbetas: '',
@@ -710,6 +707,12 @@
                     laboratorista: '',
                     ayudante: '',
                     recibeOMuestrea: ''
+                },
+                urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
+                resource: {
+                    guardarFormulario: {
+                        method: 'POST',
+                    }
                 }
             }
         },
@@ -723,6 +726,11 @@
         methods: {
             onSubmit() {
                 console.log('submit!');
+                this.$http.post(this.urlGuardarFormulario,{
+                    formulario: this.form
+                }).then(response => {
+                    console.log('response', response);
+                });
             },
             handleResize() {
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12

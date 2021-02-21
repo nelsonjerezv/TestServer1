@@ -16,12 +16,14 @@
         <link rel="stylesheet" href="{{ asset(mix('css/layout.css')) }}">
 
         <!-- scripts -->
+        <script>window.GLOBAL = {"URL": '{{ config('app.url') }}'}</script>
+        <script>window.Laravel = <?php echo json_encode(['csrfToken' => csrf_token()]); ?></script>
         <script type="text/javascript" src="{{ asset(mix('js/bundle.js')) }}" ></script>
 
         @yield('styles')
 
         @yield('content')
-        
+
         @yield('scripts')
     </body>
 </html>
