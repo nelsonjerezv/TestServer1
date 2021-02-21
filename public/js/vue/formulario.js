@@ -74360,7 +74360,7 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n", ""]);
 
 // exports
 
@@ -74411,7 +74411,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            componenteMain: "ListadoFormularios"
+            componenteMain: "OrdenTrabajoTerreno"
         };
     },
     mounted: function mounted() {
@@ -74515,6 +74515,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -74554,13 +74559,23 @@ var render = function() {
             "el-menu",
             {
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "2" }
+              attrs: { "default-active": "6" }
             },
             [
               _c(
                 "el-menu-item",
                 { attrs: { index: "1" }, on: { click: _vm.clickResumen } },
                 [_vm._v("\n                Resumen\n            ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "el-menu-item",
+                { attrs: { index: "6" }, on: { click: _vm.clickOTT } },
+                [
+                  _vm._v(
+                    "\n                Orden de trabajo de Terreno\n            "
+                  )
+                ]
               ),
               _vm._v(" "),
               _c(
@@ -74712,13 +74727,13 @@ var content = __webpack_require__(204);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(54)("4fb505fe", content, false, {});
+var update = __webpack_require__(54)("5c703696", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e744d4c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./OrdenTrabajoTerreno.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e744d4c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./OrdenTrabajoTerreno.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e744d4c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./OrdenTrabajoTerreno.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e744d4c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./OrdenTrabajoTerreno.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -74736,7 +74751,7 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c]{\n    background-color: darkgray;\n    padding: 10px;\n    line-height: 40px;\n}\n.nombre-campo[data-v-1e744d4c]{\n    padding: 0px 15px;\n}\n.el-row[data-v-1e744d4c] {\n    margin-bottom: 20px;\n&:last-child {\n        margin-bottom: 0;\n}\n}\n.el-col[data-v-1e744d4c] {\n    border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n    background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n    background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n    background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n    border-radius: 4px;\n    height: 44px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    white-space: nowrap;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n    padding: 10px 0;\n    background-color: #f9fafc;\n}\n", ""]);
+exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-input__inner {\n    width: calc(100% - 41px);\n    margin-left: -112px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.auto-height[data-v-1e744d4c] {\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-14[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n", ""]);
 
 // exports
 
@@ -74747,6 +74762,573 @@ exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c]{\n    background-col
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -74813,16 +75395,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
+        var _form;
+
         return {
-            numClienteObra: '',
-            ottNumberHF: '',
-            nombreCliente: '',
-            nombreObra: '',
-            fonoObra: '',
-            direccionObra: '',
-            encargadoObra: '',
-            muestreoDe: ''
+            labelPosition: 'left',
+            unaDosColumnas: 24,
+            form: (_form = {
+                numClienteObra: '',
+                ottNumberHF: '',
+                nombreCliente: '',
+                nombreObra: '',
+                fonoObra: '',
+                direccionObra: '',
+                encargadoObra: '',
+                muestreoDe: '',
+                extraccion: '',
+                compactacion: '',
+                tipoMolde: '',
+                muestreadoPor: '',
+                ensayadoPor: '',
+                tipoMuestra: '',
+                amasadaHormigon: '',
+                asentamientoCono: '',
+                numInforme: '400-08',
+                segregacion: '',
+                numEquipoConoAbrams: '',
+                numVibradorInmersion: '',
+                numEquipoConoReducido: '',
+                numIngreso: '',
+                horaMuestreo: '',
+                horaInicioAmasado: '',
+                tAmbiente: '',
+                tHormigonMortero: '',
+                proveedor: '',
+                numGuiaDespacho: '',
+                nombreChofer: '',
+                curadoInicial: '',
+                elementoHormigonado: ''
+            }, _defineProperty(_form, 'numGuiaDespacho', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'tipoHormigonMortero', ''), _defineProperty(_form, 'resistenciaEspecificada', ''), _defineProperty(_form, 'fechaConfeccion', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'ubicacionElemento', ''), _defineProperty(_form, 'aditivo', ''), _defineProperty(_form, 'numMixer', ''), _defineProperty(_form, 'trasladoProbetas', ''), _defineProperty(_form, 'retiroMuestraOtros', ''), _defineProperty(_form, 'retiroMuestraCantidadUnDia', ''), _defineProperty(_form, 'retiroMuestraCantidadTresDias', ''), _defineProperty(_form, 'retiroMuestraCantidadSieteDias', ''), _defineProperty(_form, 'retiroMuestraCantidadCatorceDias', ''), _defineProperty(_form, 'retiroMuestraCantidadVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraCantidadOtros', ''), _defineProperty(_form, 'retiroMuestraFechaUnDia', ''), _defineProperty(_form, 'retiroMuestraFechaTresDias', ''), _defineProperty(_form, 'retiroMuestraFechaSieteDias', ''), _defineProperty(_form, 'retiroMuestraFechaCatorceDias', ''), _defineProperty(_form, 'retiroMuestraFechaVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraFechaOtros', ''), _defineProperty(_form, 'retiroMuestraInformeUnDia', ''), _defineProperty(_form, 'retiroMuestraInformeTresDias', ''), _defineProperty(_form, 'retiroMuestraInformeSieteDias', ''), _defineProperty(_form, 'retiroMuestraInformeCatorceDias', ''), _defineProperty(_form, 'retiroMuestraInformeVeintiochoDias', ''), _defineProperty(_form, 'retiroMuestraInformeOtros', ''), _defineProperty(_form, 'procedimientoExtraccion', ''), _defineProperty(_form, 'muestraIngresadaPorCliente', ''), _defineProperty(_form, 'fechaIngreso', ''), _defineProperty(_form, 'fechaVisitaObra', ''), _defineProperty(_form, 'horaLlegada', ''), _defineProperty(_form, 'horaSalida', ''), _defineProperty(_form, 'responsableEnObra', ''), _defineProperty(_form, 'densAparenteHormigon', ''), _defineProperty(_form, 'densAparenteMortero', ''), _defineProperty(_form, 'indiceEsclerometrico', ''), _defineProperty(_form, 'irregularidadSuperficial', ''), _defineProperty(_form, 'irregularidadSuperficialMl', ''), _defineProperty(_form, 'observaciones', ''), _defineProperty(_form, 'alteracionMuestra', ''), _defineProperty(_form, 'laboratorista', ''), _defineProperty(_form, 'ayudante', ''), _defineProperty(_form, 'recibeOMuestrea', ''), _form)
         };
+    },
+    created: function created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    destroyed: function destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
+
+    methods: {
+        onSubmit: function onSubmit() {
+            console.log('submit!');
+        },
+        handleResize: function handleResize() {
+            this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12;
+        }
     }
 });
 
@@ -74839,245 +75466,3078 @@ var render = function() {
     { staticClass: "contenedor-vue" },
     [
       _c(
-        "el-row",
-        { attrs: { gutter: 20 } },
+        "el-form",
+        { ref: "form", attrs: { model: _vm.form, "label-width": "150px" } },
         [
-          _c("el-col", { attrs: { span: 12 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("N° Cliente Obra")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.numClienteObra,
-                    callback: function($$v) {
-                      _vm.numClienteObra = $$v
-                    },
-                    expression: "numClienteObra"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5" },
+            [
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 14 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Cliente Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numClienteObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numClienteObra", $$v)
+                          },
+                          expression: "form.numClienteObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 10 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "OTT N° HF - " } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.ottNumberHF,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "ottNumberHF", $$v)
+                          },
+                          expression: "form.ottNumberHF"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("el-col", { attrs: { span: 12 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("OTT N° HF - ")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.ottNumberHF,
-                    callback: function($$v) {
-                      _vm.ottNumberHF = $$v
-                    },
-                    expression: "ottNumberHF"
-                  }
-                })
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "el-row",
-        { attrs: { gutter: 20 } },
-        [
-          _c("el-col", { attrs: { span: 24 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("Cliente")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.nombreCliente,
-                    callback: function($$v) {
-                      _vm.nombreCliente = $$v
-                    },
-                    expression: "nombreCliente"
-                  }
-                })
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "el-row",
-        { attrs: { gutter: 20 } },
-        [
-          _c("el-col", { attrs: { span: 16 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [_vm._v("Obra")]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.nombreObra,
-                    callback: function($$v) {
-                      _vm.nombreObra = $$v
-                    },
-                    expression: "nombreObra"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
+          _c("el-divider", { staticClass: "el-divider-14" }),
           _vm._v(" "),
-          _c("el-col", { attrs: { span: 8 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("Fono Obra")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.fonoObra,
-                    callback: function($$v) {
-                      _vm.fonoObra = $$v
-                    },
-                    expression: "fonoObra"
-                  }
-                })
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "el-row",
-        { attrs: { gutter: 20 } },
-        [
-          _c("el-col", { attrs: { span: 16 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("Dirección Obra")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.direccionObra,
-                    callback: function($$v) {
-                      _vm.direccionObra = $$v
-                    },
-                    expression: "direccionObra"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5" },
+            [
+              _c(
+                "el-col",
+                { attrs: { span: 24 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Cliente" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.nombreCliente,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "nombreCliente", $$v)
+                          },
+                          expression: "form.nombreCliente"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("el-col", { attrs: { span: 8 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("Encargado Obra")
-                ]),
-                _vm._v(" "),
-                _c("el-input", {
-                  attrs: { placeholder: "Please input" },
-                  model: {
-                    value: _vm.encargadoObra,
-                    callback: function($$v) {
-                      _vm.encargadoObra = $$v
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5" },
+            [
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 15 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.nombreObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "nombreObra", $$v)
+                          },
+                          expression: "form.nombreObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 9 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Fono Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.fonoObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "fonoObra", $$v)
+                          },
+                          expression: "form.fonoObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5" },
+            [
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 15 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Dirección Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.direccionObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "direccionObra", $$v)
+                          },
+                          expression: "form.direccionObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 9 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Encargado Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.encargadoObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "encargadoObra", $$v)
+                          },
+                          expression: "form.encargadoObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5" },
+            [
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 24 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Muestreo de:" } },
+                    [
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "hormigon" },
+                          model: {
+                            value: _vm.form.muestreoDe,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "muestreoDe", $$v)
+                            },
+                            expression: "form.muestreoDe"
+                          }
+                        },
+                        [_vm._v("Hormigón")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "mortero" },
+                          model: {
+                            value: _vm.form.muestreoDe,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "muestreoDe", $$v)
+                            },
+                            expression: "form.muestreoDe"
+                          }
+                        },
+                        [_vm._v("Mortero")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  attrs: { span: _vm.unaDosColumnas }
+                },
+                [
+                  _c("el-form-item", { attrs: { label: "Extracción" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "dis-flex-dir-col" },
+                      [
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "camion" },
+                            model: {
+                              value: _vm.form.extraccion,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "extraccion", $$v)
+                              },
+                              expression: "form.extraccion"
+                            }
+                          },
+                          [_vm._v("Camión")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "betonera" },
+                            model: {
+                              value: _vm.form.extraccion,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "extraccion", $$v)
+                              },
+                              expression: "form.extraccion"
+                            }
+                          },
+                          [_vm._v("Betonera")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "acopio" },
+                            model: {
+                              value: _vm.form.extraccion,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "extraccion", $$v)
+                              },
+                              expression: "form.extraccion"
+                            }
+                          },
+                          [_vm._v("Acopio")]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c("el-form-item", { attrs: { label: "Compactación" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "dis-flex-dir-col" },
+                      [
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "apisonado" },
+                            model: {
+                              value: _vm.form.compactacion,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "compactacion", $$v)
+                              },
+                              expression: "form.compactacion"
+                            }
+                          },
+                          [_vm._v("Apisonado")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "vibrado" },
+                            model: {
+                              value: _vm.form.compactacion,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "compactacion", $$v)
+                              },
+                              expression: "form.compactacion"
+                            }
+                          },
+                          [_vm._v("Vibrado")]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Tipo de Molde (en cm)" } },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "dis-flex-dir-col" },
+                        [
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-01" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("15x15x15")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-01")])
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-02" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("20x20x20")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-02")])
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-03" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("15x30")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-03")])
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-04" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("4x4x16")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-04")])
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-05" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("53x15x15")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-05")])
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              staticClass: "radio-molde",
+                              attrs: { label: "400-06" },
+                              model: {
+                                value: _vm.form.tipoMolde,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "tipoMolde", $$v)
+                                },
+                                expression: "form.tipoMolde"
+                              }
+                            },
+                            [
+                              _c("div", { staticStyle: { display: "flex" } }, [
+                                _c(
+                                  "div",
+                                  { staticStyle: { "flex-grow": "1" } },
+                                  [_vm._v("10x10x10")]
+                                ),
+                                _c("div", [
+                                  _vm._v(" | "),
+                                  _c("b", [_vm._v("400-06")])
+                                ])
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c("el-form-item", { attrs: { label: "Muestreado por" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "dis-flex-dir-col" },
+                      [
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "lacem" },
+                            model: {
+                              value: _vm.form.muestreadoPor,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "muestreadoPor", $$v)
+                              },
+                              expression: "form.muestreadoPor"
+                            }
+                          },
+                          [_vm._v("Lacem")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "mandante" },
+                            model: {
+                              value: _vm.form.muestreadoPor,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "muestreadoPor", $$v)
+                              },
+                              expression: "form.muestreadoPor"
+                            }
+                          },
+                          [_vm._v("Mandante")]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c("el-form-item", { attrs: { label: "Ensayado por" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "dis-flex-dir-col" },
+                      [
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "lacem" },
+                            model: {
+                              value: _vm.form.ensayadoPor,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "ensayadoPor", $$v)
+                              },
+                              expression: "form.ensayadoPor"
+                            }
+                          },
+                          [_vm._v("Lacem")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "mandante" },
+                            model: {
+                              value: _vm.form.ensayadoPor,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "ensayadoPor", $$v)
+                              },
+                              expression: "form.ensayadoPor"
+                            }
+                          },
+                          [_vm._v("Mandante")]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c("el-form-item", { attrs: { label: "Tipo de muestra" } }, [
+                    _c(
+                      "div",
+                      { staticClass: "dis-flex-dir-col" },
+                      [
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "simple" },
+                            model: {
+                              value: _vm.form.tipoMuestra,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "tipoMuestra", $$v)
+                              },
+                              expression: "form.tipoMuestra"
+                            }
+                          },
+                          [_vm._v("Simple")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "compuesta" },
+                            model: {
+                              value: _vm.form.tipoMuestra,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "tipoMuestra", $$v)
+                              },
+                              expression: "form.tipoMuestra"
+                            }
+                          },
+                          [_vm._v("Compuesta")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "especial" },
+                            model: {
+                              value: _vm.form.tipoMuestra,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "tipoMuestra", $$v)
+                              },
+                              expression: "form.tipoMuestra"
+                            }
+                          },
+                          [_vm._v("Especial")]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    {
+                      attrs: {
+                        label: "Volumen de la Amasada del Hormigón (m³)"
+                      }
                     },
-                    expression: "encargadoObra"
-                  }
-                })
-              ],
-              1
-            )
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "el-row",
-        { attrs: { gutter: 20 } },
-        [
-          _c("el-col", { attrs: { span: 24 } }, [
-            _c(
-              "div",
-              { staticClass: "grid-content bg-purple" },
-              [
-                _c("span", { staticClass: "nombre-campo" }, [
-                  _vm._v("Muestreo de: ")
-                ]),
-                _vm._v(" "),
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.amasadaHormigon,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "amasadaHormigon", $$v)
+                          },
+                          expression: "form.amasadaHormigon"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Asentamiento de cono (cm)" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.asentamientoCono,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "asentamientoCono", $$v)
+                          },
+                          expression: "form.asentamientoCono"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Informe" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input", disabled: "" },
+                        model: {
+                          value: _vm.form.numInforme,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numInforme", $$v)
+                          },
+                          expression: "form.numInforme"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Segregación" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.segregacion,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "segregacion", $$v)
+                          },
+                          expression: "form.segregacion"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° equipo Cono de Abrams" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numEquipoConoAbrams,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numEquipoConoAbrams", $$v)
+                          },
+                          expression: "form.numEquipoConoAbrams"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Vibrador de Inmersión" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numVibradorInmersion,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numVibradorInmersion", $$v)
+                          },
+                          expression: "form.numVibradorInmersion"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° equipo Cono reducido" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numEquipoConoReducido,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numEquipoConoReducido", $$v)
+                          },
+                          expression: "form.numEquipoConoReducido"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  attrs: { span: _vm.unaDosColumnas }
+                },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Ingreso" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numIngreso,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numIngreso", $$v)
+                          },
+                          expression: "form.numIngreso"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Hora Muestreo" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.horaMuestreo,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "horaMuestreo", $$v)
+                          },
+                          expression: "form.horaMuestreo"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Hora Inicio amasado" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.horaInicioAmasado,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "horaInicioAmasado", $$v)
+                          },
+                          expression: "form.horaInicioAmasado"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "T° Ambiente" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.tAmbiente,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "tAmbiente", $$v)
+                          },
+                          expression: "form.tAmbiente"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "T° Hormigón/Mortero" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.tHormigonMortero,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "tHormigonMortero", $$v)
+                          },
+                          expression: "form.tHormigonMortero"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Proveedor" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.proveedor,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "proveedor", $$v)
+                          },
+                          expression: "form.proveedor"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Guía de Despacho" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numGuiaDespacho,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numGuiaDespacho", $$v)
+                          },
+                          expression: "form.numGuiaDespacho"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Nombre Chofer" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.nombreChofer,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "nombreChofer", $$v)
+                          },
+                          expression: "form.nombreChofer"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Curado Inicial" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.curadoInicial,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "curadoInicial", $$v)
+                          },
+                          expression: "form.curadoInicial"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Elemento Hormigonado" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.elementoHormigonado,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "elementoHormigonado", $$v)
+                          },
+                          expression: "form.elementoHormigonado"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Ubicación del Elemento" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.ubicacionElemento,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "ubicacionElemento", $$v)
+                          },
+                          expression: "form.ubicacionElemento"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Tipo de Hormigón / Mortero" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.tipoHormigonMortero,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "tipoHormigonMortero", $$v)
+                          },
+                          expression: "form.tipoHormigonMortero"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Resistencia especificada" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.resistenciaEspecificada,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "resistenciaEspecificada", $$v)
+                          },
+                          expression: "form.resistenciaEspecificada"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Fecha de confección" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.fechaConfeccion,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "fechaConfeccion", $$v)
+                          },
+                          expression: "form.fechaConfeccion"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Aditivo" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.aditivo,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "aditivo", $$v)
+                          },
+                          expression: "form.aditivo"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° de Mixer" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.numMixer,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "numMixer", $$v)
+                          },
+                          expression: "form.numMixer"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("el-divider", { staticClass: "el-divider-5 margin-l-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [
+                      _c("div", { staticClass: "Rtable Rtable--4cols" }, [
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("strong", [_vm._v("Programa de Ensayo a")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-15" }, [
+                          _c("strong", [_vm._v("Cantidad")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [_c("strong", [_vm._v("Fecha")])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-15" }, [
+                          _c("strong", [_vm._v("Informe")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("label", [_vm._v("1 dia")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value: _vm.form.retiroMuestraCantidadUnDia,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadUnDia",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadUnDia"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value: _vm.form.retiroMuestraFechaUnDia,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaUnDia",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.retiroMuestraFechaUnDia"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value: _vm.form.retiroMuestraInformeUnDia,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeUnDia",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.retiroMuestraInformeUnDia"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("label", [_vm._v("3 dia")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraCantidadTresDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadTresDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadTresDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value: _vm.form.retiroMuestraFechaTresDias,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaTresDias",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.retiroMuestraFechaTresDias"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraInformeTresDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeTresDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraInformeTresDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("label", [_vm._v("7 dia")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraCantidadSieteDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadSieteDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadSieteDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value: _vm.form.retiroMuestraFechaSieteDias,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaSieteDias",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.retiroMuestraFechaSieteDias"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraInformeSieteDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeSieteDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraInformeSieteDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("label", [_vm._v("14 dia")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraCantidadCatorceDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadCatorceDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadCatorceDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value: _vm.form.retiroMuestraFechaCatorceDias,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaCatorceDias",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.retiroMuestraFechaCatorceDias"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form.retiroMuestraInformeCatorceDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeCatorceDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraInformeCatorceDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "Rtable-cell width-35" }, [
+                          _c("label", [_vm._v("28 dia")])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form
+                                        .retiroMuestraCantidadVeintiochoDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadVeintiochoDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadVeintiochoDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value:
+                                  _vm.form.retiroMuestraFechaVeintiochoDias,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaVeintiochoDias",
+                                    $$v
+                                  )
+                                },
+                                expression:
+                                  "form.retiroMuestraFechaVeintiochoDias"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value:
+                                      _vm.form
+                                        .retiroMuestraInformeVeintiochoDias,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeVeintiochoDias",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraInformeVeintiochoDias"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-35" },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                staticClass: "item-no-margin cantidad-otros",
+                                attrs: { label: "Otros" }
+                              },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value: _vm.form.retiroMuestraCantidadOtros,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadOtros",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadOtros"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value: _vm.form.retiroMuestraCantidadOtros,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraCantidadOtros",
+                                        $$v
+                                      )
+                                    },
+                                    expression:
+                                      "form.retiroMuestraCantidadOtros"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-datepicker" },
+                          [
+                            _c("el-date-picker", {
+                              attrs: { type: "date", size: "mini" },
+                              model: {
+                                value: _vm.form.retiroMuestraFechaOtros,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "retiroMuestraFechaOtros",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.retiroMuestraFechaOtros"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "Rtable-cell width-15" },
+                          [
+                            _c(
+                              "el-form-item",
+                              { staticClass: "item-no-margin" },
+                              [
+                                _c("el-input", {
+                                  attrs: { size: "mini" },
+                                  model: {
+                                    value: _vm.form.retiroMuestraInformeOtros,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "retiroMuestraInformeOtros",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.retiroMuestraInformeOtros"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [_vm._v("Traslado de probetas al Laboratorio")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [
+                      _c(
+                        "el-form-item",
+                        [
+                          _c(
+                            "el-radio",
+                            {
+                              attrs: { label: "moldes" },
+                              model: {
+                                value: _vm.form.trasladoProbetas,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "trasladoProbetas", $$v)
+                                },
+                                expression: "form.trasladoProbetas"
+                              }
+                            },
+                            [_vm._v("En Moldes")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              attrs: { label: "desmoldadas" },
+                              model: {
+                                value: _vm.form.trasladoProbetas,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "trasladoProbetas", $$v)
+                                },
+                                expression: "form.trasladoProbetas"
+                              }
+                            },
+                            [_vm._v("Desmoldadas")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  staticStyle: { "font-weight": "600" },
+                  attrs: { span: 24 }
+                },
+                [_vm._v("Extracción de Testigos Hormigón Endurecido")]
+              ),
+              _vm._v(" "),
+              _c("el-col", { staticClass: "padding-5", attrs: { span: 24 } }, [
                 _c(
-                  "el-radio",
+                  "div",
                   {
-                    attrs: { label: "hormigon" },
-                    model: {
-                      value: _vm.muestreoDe,
-                      callback: function($$v) {
-                        _vm.muestreoDe = $$v
-                      },
-                      expression: "muestreoDe"
-                    }
+                    staticClass: "tabla-extraccion tabla-extraccion--10cols",
+                    attrs: { disabled: "" }
                   },
-                  [_vm._v("Hormigón")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "el-radio",
-                  {
-                    attrs: { label: "mortero" },
-                    model: {
-                      value: _vm.muestreoDe,
-                      callback: function($$v) {
-                        _vm.muestreoDe = $$v
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tabla-extraccion-cell",
+                        staticStyle: { width: "30%" }
                       },
-                      expression: "muestreoDe"
-                    }
-                  },
-                  [_vm._v("Mortero")]
+                      [_vm._v("Diámetro")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }, [
+                      _vm._v('>6"|400-13')
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }, [
+                      _vm._v('>4"|400-12')
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }, [
+                      _vm._v("Total")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }, [
+                      _vm._v("Ingreso")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "tabla-extraccion-cell",
+                      staticStyle: {
+                        "border-right-color": "transparent",
+                        width: "3%"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "tabla-extraccion-cell",
+                      staticStyle: {
+                        "border-right-color": "transparent",
+                        width: "3%"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tabla-extraccion-cell",
+                        staticStyle: {
+                          "border-right-color": "transparent",
+                          width: "23%",
+                          "text-align": "center"
+                        }
+                      },
+                      [_vm._v("N° de Informe")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "tabla-extraccion-cell",
+                      staticStyle: {
+                        "border-right-color": "transparent",
+                        width: "3%"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "tabla-extraccion-cell",
+                      staticStyle: { width: "3%" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tabla-extraccion-cell",
+                        staticStyle: { width: "30%" }
+                      },
+                      [_vm._v("N° de Testigos Extraídos")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tabla-extraccion-cell",
+                        staticStyle: { width: "30%" }
+                      },
+                      [_vm._v("N° de Testigos Ensayados")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tabla-extraccion-cell" })
+                  ]
                 )
-              ],
-              1
-            )
-          ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  staticStyle: { "font-weight": "600" },
+                  attrs: { span: 6 }
+                },
+                [_vm._v("Áridos para Hormigón")]
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  staticStyle: { "font-weight": "600" },
+                  attrs: { span: 6 }
+                },
+                [_vm._v("Procedimiento Extracción")]
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { staticClass: "procedimiento-extraccion-opciones" },
+                    [
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "yacimiento" },
+                          model: {
+                            value: _vm.form.procedimientoExtraccion,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "procedimientoExtraccion", $$v)
+                            },
+                            expression: "form.procedimientoExtraccion"
+                          }
+                        },
+                        [_vm._v("Yacimiento")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "produccion" },
+                          model: {
+                            value: _vm.form.procedimientoExtraccion,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "procedimientoExtraccion", $$v)
+                            },
+                            expression: "form.procedimientoExtraccion"
+                          }
+                        },
+                        [_vm._v("Producción")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "obra" },
+                          model: {
+                            value: _vm.form.procedimientoExtraccion,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "procedimientoExtraccion", $$v)
+                            },
+                            expression: "form.procedimientoExtraccion"
+                          }
+                        },
+                        [_vm._v("Obra ")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("el-col", { staticClass: "padding-5", attrs: { span: 12 } }, [
+                _c("div", { staticClass: "tabla-aridos" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "100%" }
+                    },
+                    [_vm._v("N° Ingreso")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "35%" }
+                    },
+                    [_vm._v("400 - 17")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "35%" }
+                    },
+                    [_vm._v("Grava")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "35%" }
+                    },
+                    [_vm._v("Gravilla")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "35%" }
+                    },
+                    [_vm._v("Arena")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "35%" }
+                    },
+                    [_vm._v("Volumen Representado m³")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "tabla-aridos-cell",
+                    staticStyle: { width: "8.125%" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("el-col", { staticClass: "padding-5", attrs: { span: 12 } }, [
+                _c("div", { staticClass: "tabla-aridos" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "90%" }
+                    },
+                    [_vm._v("Ensayos para aceptación de áridos")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "10%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "90%" }
+                    },
+                    [_vm._v("Ensayos para dosificació de hormigón")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "10%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "75%" }
+                    },
+                    [_vm._v("- Sin probetas de prueba")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "15%" }
+                    },
+                    [_vm._v("400 - 18")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "10%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "75%" }
+                    },
+                    [_vm._v("- Con probetas de prueba")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "15%" }
+                    },
+                    [_vm._v("400 - 19")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "10%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "30%" }
+                    },
+                    [_vm._v("N° Informe")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "30%" }
+                    },
+                    [_vm._v("--")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "tabla-aridos-cell",
+                      staticStyle: { width: "17.5%" }
+                    },
+                    [_vm._v("-")]
+                  )
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  staticStyle: { "font-weight": "600" },
+                  attrs: { span: 24 }
+                },
+                [_vm._v("Otros")]
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 8 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Dens. Aparente Hormigón" } },
+                    [
+                      _c("el-checkbox", {
+                        model: {
+                          value: _vm.form.densAparenteHormigon,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "densAparenteHormigon", $$v)
+                          },
+                          expression: "form.densAparenteHormigon"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 8 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Dens. Aparente Mortero" } },
+                    [
+                      _c("el-checkbox", {
+                        model: {
+                          value: _vm.form.densAparenteMortero,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "densAparenteMortero", $$v)
+                          },
+                          expression: "form.densAparenteMortero"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 8 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Índice Esclerométrico" } },
+                    [
+                      _c("el-checkbox", {
+                        model: {
+                          value: _vm.form.indiceEsclerometrico,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "indiceEsclerometrico", $$v)
+                          },
+                          expression: "form.indiceEsclerometrico"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Irregularidad Superficial" } },
+                    [
+                      _c("el-checkbox", {
+                        model: {
+                          value: _vm.form.irregularidadSuperficial,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "irregularidadSuperficial", $$v)
+                          },
+                          expression: "form.irregularidadSuperficial"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    {
+                      attrs: {
+                        label: "Irregularidad Superficial - cantidad ml"
+                      }
+                    },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.irregularidadSuperficialMl,
+                          callback: function($$v) {
+                            _vm.$set(
+                              _vm.form,
+                              "irregularidadSuperficialMl",
+                              $$v
+                            )
+                          },
+                          expression: "form.irregularidadSuperficialMl"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Muestra Ingresada por el Cliente" } },
+                    [
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "si" },
+                          model: {
+                            value: _vm.form.muestraIngresadaPorCliente,
+                            callback: function($$v) {
+                              _vm.$set(
+                                _vm.form,
+                                "muestraIngresadaPorCliente",
+                                $$v
+                              )
+                            },
+                            expression: "form.muestraIngresadaPorCliente"
+                          }
+                        },
+                        [_vm._v("Si")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "no" },
+                          model: {
+                            value: _vm.form.muestraIngresadaPorCliente,
+                            callback: function($$v) {
+                              _vm.$set(
+                                _vm.form,
+                                "muestraIngresadaPorCliente",
+                                $$v
+                              )
+                            },
+                            expression: "form.muestraIngresadaPorCliente"
+                          }
+                        },
+                        [_vm._v("No")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Responsable en Obra" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.responsableEnObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "responsableEnObra", $$v)
+                          },
+                          expression: "form.responsableEnObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Fecha de Ingreso" } },
+                    [
+                      _c("el-date-picker", {
+                        attrs: { type: "date" },
+                        model: {
+                          value: _vm.form.fechaIngreso,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "fechaIngreso", $$v)
+                          },
+                          expression: "form.fechaIngreso"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Fecha de Visita Obra" } },
+                    [
+                      _c("el-date-picker", {
+                        attrs: { type: "date" },
+                        model: {
+                          value: _vm.form.fechaVisitaObra,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "fechaVisitaObra", $$v)
+                          },
+                          expression: "form.fechaVisitaObra"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Hora Llegada" } },
+                    [
+                      _c("el-time-picker", {
+                        model: {
+                          value: _vm.form.horaLlegada,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "horaLlegada", $$v)
+                          },
+                          expression: "form.horaLlegada"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "seccion-otros padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Hora Salida" } },
+                    [
+                      _c("el-time-picker", {
+                        model: {
+                          value: _vm.form.horaSalida,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "horaSalida", $$v)
+                          },
+                          expression: "form.horaSalida"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height comentarios" },
+            [
+              _c(
+                "el-col",
+                { attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [_vm._v("Observaciones")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [
+                      _c(
+                        "el-form-item",
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              type: "textarea",
+                              autosize: "",
+                              placeholder: "Please input"
+                            },
+                            model: {
+                              value: _vm.form.observaciones,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "observaciones", $$v)
+                              },
+                              expression: "form.observaciones"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [_vm._v("La muestra presenta alguna alteración?")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [
+                      _c(
+                        "el-form-item",
+                        [
+                          _c(
+                            "el-radio",
+                            {
+                              attrs: { label: "si" },
+                              model: {
+                                value: _vm.form.alteracionMuestra,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "alteracionMuestra", $$v)
+                                },
+                                expression: "form.alteracionMuestra"
+                              }
+                            },
+                            [_vm._v("Si")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-radio",
+                            {
+                              attrs: { label: "no" },
+                              model: {
+                                value: _vm.form.alteracionMuestra,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "alteracionMuestra", $$v)
+                                },
+                                expression: "form.alteracionMuestra"
+                              }
+                            },
+                            [_vm._v("No")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    { staticClass: "padding-5", attrs: { span: 24 } },
+                    [
+                      _c(
+                        "el-form-item",
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              type: "textarea",
+                              autosize: "",
+                              placeholder: "Please input"
+                            },
+                            model: {
+                              value: _vm.form.observaciones,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "observaciones", $$v)
+                              },
+                              expression: "form.observaciones"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-row",
+            { staticClass: "margin-b-5 auto-height" },
+            [
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  attrs: { span: _vm.unaDosColumnas }
+                },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Laboratorista" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.laboratorista,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "laboratorista", $$v)
+                          },
+                          expression: "form.laboratorista"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                {
+                  staticClass: "padding-5",
+                  attrs: { span: _vm.unaDosColumnas }
+                },
+                [
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "Ayudante" } },
+                    [
+                      _c("el-input", {
+                        attrs: { placeholder: "Please input" },
+                        model: {
+                          value: _vm.form.ayudante,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "ayudante", $$v)
+                          },
+                          expression: "form.ayudante"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                {
+                  staticClass: "comentarios",
+                  attrs: { span: _vm.unaDosColumnas }
+                },
+                [
+                  _c(
+                    "el-form-item",
+                    [
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "recibe" },
+                          model: {
+                            value: _vm.form.recibeOMuestrea,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "recibeOMuestrea", $$v)
+                            },
+                            expression: "form.recibeOMuestrea"
+                          }
+                        },
+                        [_vm._v("Recibe")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-radio",
+                        {
+                          attrs: { label: "muestrea" },
+                          model: {
+                            value: _vm.form.recibeOMuestrea,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "recibeOMuestrea", $$v)
+                            },
+                            expression: "form.recibeOMuestrea"
+                          }
+                        },
+                        [_vm._v("Muestrea")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-14" }),
+          _vm._v(" "),
+          _c(
+            "el-form-item",
+            { staticClass: "comentarios" },
+            [
+              _c(
+                "el-button",
+                { attrs: { type: "primary" }, on: { click: _vm.onSubmit } },
+                [_vm._v("Crear OTT")]
+              )
+            ],
+            1
+          )
         ],
         1
       )

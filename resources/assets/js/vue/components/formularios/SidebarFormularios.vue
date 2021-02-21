@@ -1,11 +1,16 @@
 <template>
     <div>
         <el-aside width="fit-content">
-            <el-menu default-active="2" class="el-menu-vertical-demo">
+            <el-menu default-active="6" class="el-menu-vertical-demo">
                 <el-menu-item
                     index="1"
                     @click="clickResumen">
                     Resumen
+                </el-menu-item>
+                <el-menu-item
+                    index="6"
+                    @click="clickOTT">
+                    Orden de trabajo de Terreno
                 </el-menu-item>
                 <el-submenu index="2">
                     <template slot="title">

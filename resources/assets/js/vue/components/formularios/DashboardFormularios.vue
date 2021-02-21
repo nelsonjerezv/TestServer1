@@ -32,7 +32,7 @@
         },
         data() {
             return {
-                componenteMain: "ListadoFormularios"
+                componenteMain: "OrdenTrabajoTerreno"
             };
         },
         mounted() {
@@ -63,6 +63,7 @@
         color: #333;
         text-align: center;
         line-height: 160px;
+        display: flex;
     }
 
     body > .el-container {
