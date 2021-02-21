@@ -78702,6 +78702,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "el-container",
+            { staticStyle: { height: "calc(100% - 60px) !important" } },
             [
               _c("sidebar-formularios", {
                 on: { cambiaMain: _vm.cambiarMain }

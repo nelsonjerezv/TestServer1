@@ -4,7 +4,7 @@
             <el-header>
                 <h1>Secci&oacute;n formularios</h1>
             </el-header>
-            <el-container>
+            <el-container style="height: calc(100% - 60px) !important;">
                 <sidebar-formularios
                     @cambiaMain="cambiarMain"
                 />
