@@ -14,7 +14,7 @@ if (App::environment('production')) {
 */
 
 Route::get('/', function () {
-    return view('componenteprueba');
+    return redirect('/formularios');
 });
 
 
