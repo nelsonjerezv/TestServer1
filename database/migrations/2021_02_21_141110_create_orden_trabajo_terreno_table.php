@@ -89,6 +89,10 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('laboratorista', 100)->nullable();
             $table->string('ayudante', 100)->nullable();
             $table->string('recibe_o_muestrea', 100)->nullable();
+            $table->string('aridos_hormigon_muestra_uno', 100)->nullable();
+            $table->string('aridos_hormigon_muestra_dos', 100)->nullable();
+            $table->string('aridos_hormigon_muestra_tres', 100)->nullable();
+            $table->string('aridos_hormigon_muestra_cuatro', 100)->nullable();
             $table->timestamps();
         });
     }

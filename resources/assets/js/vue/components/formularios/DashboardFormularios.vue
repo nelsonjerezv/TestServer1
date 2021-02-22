@@ -42,7 +42,7 @@
         ],
         data() {
             return {
-                componenteMain: ''
+                componenteMain: 'OrdenTrabajoTerreno'
             };
         },
         mounted() {
@@ -78,7 +78,6 @@
         line-height: 160px;
         display: flex;
     }
-
     body > .el-container {
         margin-bottom: 40px;
     }
