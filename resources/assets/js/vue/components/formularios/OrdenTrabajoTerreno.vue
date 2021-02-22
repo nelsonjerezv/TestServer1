@@ -353,6 +353,7 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
+            <!-- testigos hormigon endurecido -->
             <el-row class="margin-b-5 auto-height">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Extracci&oacute;n de Testigos Hormig&oacute;n Endurecido</el-col>
                 <el-col :span="24" class="padding-5">
@@ -395,6 +396,7 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
+            <!-- aridos para hormigon -->
             <el-row class="margin-b-5 auto-height">
                 <el-col :span="6" style="font-weight: 600" class="padding-5">&Aacute;ridos para Hormig&oacute;n</el-col>
                 <el-col :span="6" style="font-weight: 600" class="padding-5">Procedimiento Extracci&oacute;n</el-col>
@@ -406,59 +408,81 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
-                    <div class="tabla-aridos">
+                    <div class="tabla-aridos comentarios">
                         <!-- titulos1 -->
                         <div class="tabla-aridos-cell" style="width: 100%;">N° Ingreso</div>
                         <!-- titulos 2 -->
                         <div class="tabla-aridos-cell" style="width: 35%;">400 - 17</div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">M - 1</div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">M - 2</div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">M - 3</div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">M - 4</div>
                         <!-- Grava -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Grava</div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" label="grava"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" label="grava"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" label="grava"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="grava"></el-radio>
+                            </el-form-item>
+                        </div>
                         <!-- Gravilla -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Gravilla</div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" label="gravilla"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" label="gravilla"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" label="gravilla"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="gravilla"></el-radio>
+                            </el-form-item>
+                        </div>
                         <!-- Arena -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Arena</div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <!-- Volumen -->
-                        <div class="tabla-aridos-cell" style="width: 35%;">Volumen Representado m&#179;</div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
-                        <div class="tabla-aridos-cell" style="width: 8.125%"></div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" label="arena"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" label="arena"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" label="arena"></el-radio>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-aridos-cell" style="width: 16.25%">
+                            <el-form-item>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="arena"></el-radio>
+                            </el-form-item>
+                        </div>
                     </div>
                 </el-col>
                 <el-col :span="12" class="padding-5">
@@ -705,7 +729,11 @@
                     alteracionMuestra: '',
                     laboratorista: '',
                     ayudante: '',
-                    recibeOMuestrea: ''
+                    recibeOMuestrea: '',
+                    aridosHormigonMuestraUno: '',
+                    aridosHormigonMuestraDos: '',
+                    aridosHormigonMuestraTres: '',
+                    aridosHormigonMuestraCuatro: '',
                 },
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
             }
@@ -768,6 +796,15 @@
         /deep/  .el-input__inner{
             width: calc(100% - 41px);
             margin-left: -112px;
+        }
+    }
+    .tabla-aridos{
+        /deep/  .el-radio__label{
+            display: none;
+        }
+        /deep/  .el-form-item__content{
+            text-align: center;
+            line-height: 20px;
         }
     }
     .el-form-item__label-wrap{

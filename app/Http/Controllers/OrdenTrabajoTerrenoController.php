@@ -95,6 +95,10 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['laboratorista'] = mb_strtoupper($request->formulario['laboratorista']);
         $formulario['ayudante'] = mb_strtoupper($request->formulario['ayudante']);
         $formulario['recibe_o_muestrea'] = mb_strtoupper($request->formulario['recibeOMuestrea']);
+        $formulario['aridos_hormigon_muestra_uno'] = mb_strtoupper($request->formulario['aridosHormigonMuestraUno']);
+        $formulario['aridos_hormigon_muestra_dos'] = mb_strtoupper($request->formulario['aridosHormigonMuestraDos']);
+        $formulario['aridos_hormigon_muestra_tres'] = mb_strtoupper($request->formulario['aridosHormigonMuestraTres']);
+        $formulario['aridos_hormigon_muestra_cuatro'] = mb_strtoupper($request->formulario['aridosHormigonMuestraCuatro']);
 
         return OrdenTrabajoTerreno::create($formulario);
     }
