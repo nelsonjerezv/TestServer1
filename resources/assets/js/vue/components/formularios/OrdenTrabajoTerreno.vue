@@ -773,11 +773,11 @@
                     aridosHormigonMuestraCuatro: '',
                     seccionTestigosHabilitada: false,
                     seccionAridosHabilitada: false,
-                    testigosExtraidosSeis: '',
-                    testigosExtraidosCuatro: '',
+                    testigosExtraidosSeis: '0',
+                    testigosExtraidosCuatro: '0',
                     testigosExtraidosTotal: '',
-                    testigosEnsayadosSeis: '',
-                    testigosEnsayadosCuatro: '',
+                    testigosEnsayadosSeis: '0',
+                    testigosEnsayadosCuatro: '0',
                     testigosEnsayadosTotal: '',
                 },
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
@@ -804,12 +804,18 @@
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
             },
         },
-        computed: {
-            totalTestigosExtraidos() {
+        watch: {
+            'form.testigosExtraidosCuatro': function (newVal, oldVal){
                 this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
             },
-            totalTestigosEnsayadoss() {
-                this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeiss);
+            'form.testigosExtraidosSeis': function (newVal, oldVal){
+                this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+            },
+            'form.testigosEnsayadosSeis': function (newVal, oldVal){
+                this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+            },
+            'form.testigosEnsayadosCuatro': function (newVal, oldVal){
+                this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
             }
         },
     }
