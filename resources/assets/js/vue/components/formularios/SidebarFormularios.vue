@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-aside width="fit-content">
-            <el-menu default-active="3" class="el-menu-vertical-demo">
+            <el-menu default-active="1" class="el-menu-vertical-demo">
                 <el-menu-item
                     index="1"
                     @click="inicio">
@@ -27,9 +27,6 @@
                         <el-menu-item index="2-4-1">item one</el-menu-item>
                     </el-submenu> -->
                 </el-submenu>
-                <el-menu-item index="3" @click="nuevaOTT">
-                    Nueva OTT
-                </el-menu-item>
                 <el-menu-item index="4" disabled>
                     <span slot="title">Navigator Three</span>
                 </el-menu-item>

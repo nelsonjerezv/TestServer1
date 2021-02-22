@@ -50,12 +50,22 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <!-- MUESTREO HORMIGON / MORTERO -->
-            <el-row class="margin-b-5">
+            <!-- MUESTREO HORMIGON / MORTERO / SECCION TESTIGOS / SECCION ARIDOS-->
+            <el-row class="margin-b-5 auto-height">
                 <el-col :span="24" class="padding-5">
                     <el-form-item label="Muestreo de:">
                         <el-radio v-model="form.muestreoDe" label="hormigon">Hormig&oacute;n</el-radio>
                         <el-radio v-model="form.muestreoDe" label="mortero">Mortero</el-radio>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="12" class="padding-5">
+                    <el-form-item>
+                        <el-checkbox v-model="form.seccionTestigosHabilitada">Sección Testigos</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="12" class="padding-5">
+                    <el-form-item>
+                        <el-checkbox v-model="form.seccionAridosHabilitada">Sección &Aacute;ridos</el-checkbox>
                     </el-form-item>
                 </el-col>
             </el-row>
@@ -359,7 +369,6 @@
                 <el-col :span="24" class="padding-5">
                     <div class="tabla-extraccion tabla-extraccion--10cols comentarios">
                         <!-- titulos -->
-
                         <div class="tabla-extraccion-cell" style="width: 30%;">Di&aacute;metro</div>
                         <div class="tabla-extraccion-cell">>6"|400-13</div>
                         <div class="tabla-extraccion-cell">>4"|400-12</div>
@@ -372,9 +381,21 @@
                         <div class="tabla-extraccion-cell" style="width: 3%;"></div>
                         <!-- N° de Testigos Extraidos -->
                         <div class="tabla-extraccion-cell" style="width: 30%;">N° de Testigos Extra&iacute;dos</div>
-                        <div class="tabla-extraccion-cell"></div>
-                        <div class="tabla-extraccion-cell"></div>
-                        <div class="tabla-extraccion-cell"></div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosSeis"></el-input>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosCuatro"></el-input>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosTotal"></el-input>
+                            </el-form-item>
+                        </div>
                         <div class="tabla-extraccion-cell"></div>
                         <div class="tabla-extraccion-cell"></div>
                         <div class="tabla-extraccion-cell"></div>
@@ -382,10 +403,25 @@
                         <div class="tabla-extraccion-cell"></div>
                         <div class="tabla-extraccion-cell"></div>
                         <!-- N° de Testigos Ensayados -->
-                        <div class="tabla-extraccion-cell" style="width: 30%;">N° de Testigos Ensayados</div>
-                        <div class="tabla-extraccion-cell"></div>
-                        <div class="tabla-extraccion-cell"></div>
-                        <div class="tabla-extraccion-cell"></div>
+                        <div class="tabla-extraccion-cell" style="width: 30%;flex-wrap: nowrap;display: flex;">
+                            <div style="display: flex;flex-grow: 1;">N° de Testigos Ensayados</div>
+                            <div class="tabla-extraccion-cell extraccion-cell-borde-left">400-14</div>
+                        </div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosSeis"></el-input>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosCuatro"></el-input>
+                            </el-form-item>
+                        </div>
+                        <div class="tabla-extraccion-cell">
+                            <el-form-item class="item-no-margin">
+                                <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosTotal"></el-input>
+                            </el-form-item>
+                        </div>
                         <div class="tabla-extraccion-cell"></div>
                         <div class="tabla-extraccion-cell"></div>
                         <div class="tabla-extraccion-cell"></div>
@@ -402,9 +438,9 @@
                 <el-col :span="6" style="font-weight: 600" class="padding-5">Procedimiento Extracci&oacute;n</el-col>
                 <el-col :span="12" class="padding-5">
                     <el-form-item class="procedimiento-extraccion-opciones">
-                        <el-radio v-model="form.procedimientoExtraccion" label="yacimiento">Yacimiento</el-radio>
-                        <el-radio v-model="form.procedimientoExtraccion" label="produccion">Producci&oacute;n</el-radio>
-                        <el-radio v-model="form.procedimientoExtraccion" label="obra">Obra </el-radio>
+                        <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="yacimiento">Yacimiento</el-radio>
+                        <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="produccion">Producci&oacute;n</el-radio>
+                        <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="obra">Obra </el-radio>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
@@ -421,66 +457,66 @@
                         <div class="tabla-aridos-cell" style="width: 35%;">Grava</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraUno" label="grava"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraDos" label="grava"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraTres" label="grava"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="grava"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <!-- Gravilla -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Gravilla</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraUno" label="gravilla"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraDos" label="gravilla"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraTres" label="gravilla"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="gravilla"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <!-- Arena -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Arena</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraUno" label="arena"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraDos" label="arena"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraTres" label="arena"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
                             <el-form-item>
-                                <el-radio v-model="form.aridosHormigonMuestraCuatro" label="arena"></el-radio>
+                                <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                     </div>
@@ -516,6 +552,7 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
+            <!-- Otros -->
             <el-row class="margin-b-5 auto-height">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Otros</el-col>
                 <el-col :span="8" class="padding-5">
@@ -734,6 +771,14 @@
                     aridosHormigonMuestraDos: '',
                     aridosHormigonMuestraTres: '',
                     aridosHormigonMuestraCuatro: '',
+                    seccionTestigosHabilitada: false,
+                    seccionAridosHabilitada: false,
+                    testigosExtraidosSeis: '0',
+                    testigosExtraidosCuatro: '0',
+                    testigosExtraidosTotal: '',
+                    testigosEnsayadosSeis: '0',
+                    testigosEnsayadosCuatro: '0',
+                    testigosEnsayadosTotal: '',
                 },
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
             }
@@ -758,7 +803,21 @@
             handleResize() {
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
             },
-        }
+        },
+        watch: {
+            'form.testigosExtraidosCuatro': function (newVal, oldVal){
+                this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+            },
+            'form.testigosExtraidosSeis': function (newVal, oldVal){
+                this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+            },
+            'form.testigosEnsayadosSeis': function (newVal, oldVal){
+                this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+            },
+            'form.testigosEnsayadosCuatro': function (newVal, oldVal){
+                this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+            }
+        },
     }
 </script>
 <style scoped lang="scss">
@@ -938,6 +997,16 @@
         border-bottom-width: 1px;
         > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
         white-space: nowrap;
+    }
+    .extraccion-cell-borde-left{
+        border-left-style: solid;
+        border-left-color: #8e9198;
+        border-left-width: 1px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        width: fit-content !important;
+        padding: 0 10px;
+        flex-grow: 0;
     }
     .tabla-extraccion--10cols > .tabla-extraccion-cell  { width: 7%; }
 

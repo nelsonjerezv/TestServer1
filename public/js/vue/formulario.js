@@ -74523,9 +74523,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -74566,7 +74563,7 @@ var render = function() {
             "el-menu",
             {
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "3" }
+              attrs: { "default-active": "1" }
             },
             [
               _c(
@@ -74630,12 +74627,6 @@ var render = function() {
                   )
                 ],
                 2
-              ),
-              _vm._v(" "),
-              _c(
-                "el-menu-item",
-                { attrs: { index: "3" }, on: { click: _vm.nuevaOTT } },
-                [_vm._v("\n                Nueva OTT\n            ")]
               ),
               _vm._v(" "),
               _c("el-menu-item", { attrs: { index: "4", disabled: "" } }, [
@@ -74755,7 +74746,7 @@ exports = module.exports = __webpack_require__(29)(false);
 
 
 // module
-exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-input__inner {\n    width: calc(100% - 41px);\n    margin-left: -112px;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.auto-height[data-v-1e744d4c] {\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-14[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n", ""]);
+exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-input__inner {\n    width: calc(100% - 41px);\n    margin-left: -112px;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.auto-height[data-v-1e744d4c] {\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-14[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n", ""]);
 
 // exports
 
@@ -74766,6 +74757,43 @@ exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-colo
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -75501,7 +75529,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 aridosHormigonMuestraUno: '',
                 aridosHormigonMuestraDos: '',
                 aridosHormigonMuestraTres: '',
-                aridosHormigonMuestraCuatro: ''
+                aridosHormigonMuestraCuatro: '',
+                seccionTestigosHabilitada: false,
+                seccionAridosHabilitada: false,
+                testigosExtraidosSeis: '0',
+                testigosExtraidosCuatro: '0',
+                testigosExtraidosTotal: '',
+                testigosEnsayadosSeis: '0',
+                testigosEnsayadosCuatro: '0',
+                testigosEnsayadosTotal: ''
             },
             urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario'
         };
@@ -75525,6 +75561,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         handleResize: function handleResize() {
             this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12;
+        }
+    },
+    watch: {
+        'form.testigosExtraidosCuatro': function formTestigosExtraidosCuatro(newVal, oldVal) {
+            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+        },
+        'form.testigosExtraidosSeis': function formTestigosExtraidosSeis(newVal, oldVal) {
+            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+        },
+        'form.testigosEnsayadosSeis': function formTestigosEnsayadosSeis(newVal, oldVal) {
+            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+        },
+        'form.testigosEnsayadosCuatro': function formTestigosEnsayadosCuatro(newVal, oldVal) {
+            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
         }
     }
 });
@@ -75754,7 +75804,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "el-row",
-            { staticClass: "margin-b-5" },
+            { staticClass: "margin-b-5 auto-height" },
             [
               _c(
                 "el-col",
@@ -75792,6 +75842,64 @@ var render = function() {
                           }
                         },
                         [_vm._v("Mortero")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    [
+                      _c(
+                        "el-checkbox",
+                        {
+                          model: {
+                            value: _vm.form.seccionTestigosHabilitada,
+                            callback: function($$v) {
+                              _vm.$set(
+                                _vm.form,
+                                "seccionTestigosHabilitada",
+                                $$v
+                              )
+                            },
+                            expression: "form.seccionTestigosHabilitada"
+                          }
+                        },
+                        [_vm._v("Sección Testigos")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-col",
+                { staticClass: "padding-5", attrs: { span: 12 } },
+                [
+                  _c(
+                    "el-form-item",
+                    [
+                      _c(
+                        "el-checkbox",
+                        {
+                          model: {
+                            value: _vm.form.seccionAridosHabilitada,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "seccionAridosHabilitada", $$v)
+                            },
+                            expression: "form.seccionAridosHabilitada"
+                          }
+                        },
+                        [_vm._v("Sección Áridos")]
                       )
                     ],
                     1
@@ -77442,11 +77550,101 @@ var render = function() {
                       [_vm._v("N° de Testigos Extraídos")]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosExtraidosSeis,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosExtraidosSeis",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosExtraidosSeis"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosExtraidosCuatro,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosExtraidosCuatro",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosExtraidosCuatro"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosExtraidosTotal,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosExtraidosTotal",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosExtraidosTotal"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
                     _c("div", { staticClass: "tabla-extraccion-cell" }),
                     _vm._v(" "),
@@ -77464,16 +77662,127 @@ var render = function() {
                       "div",
                       {
                         staticClass: "tabla-extraccion-cell",
-                        staticStyle: { width: "30%" }
+                        staticStyle: {
+                          width: "30%",
+                          "flex-wrap": "nowrap",
+                          display: "flex"
+                        }
                       },
-                      [_vm._v("N° de Testigos Ensayados")]
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticStyle: { display: "flex", "flex-grow": "1" }
+                          },
+                          [_vm._v("N° de Testigos Ensayados")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "tabla-extraccion-cell extraccion-cell-borde-left"
+                          },
+                          [_vm._v("400-14")]
+                        )
+                      ]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosEnsayadosSeis,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosEnsayadosSeis",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosEnsayadosSeis"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosEnsayadosCuatro,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosEnsayadosCuatro",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosEnsayadosCuatro"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tabla-extraccion-cell" }),
+                    _c(
+                      "div",
+                      { staticClass: "tabla-extraccion-cell" },
+                      [
+                        _c(
+                          "el-form-item",
+                          { staticClass: "item-no-margin" },
+                          [
+                            _c("el-input", {
+                              attrs: {
+                                size: "mini",
+                                disabled: !_vm.form.seccionTestigosHabilitada
+                              },
+                              model: {
+                                value: _vm.form.testigosEnsayadosTotal,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "testigosEnsayadosTotal",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.testigosEnsayadosTotal"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
                     _c("div", { staticClass: "tabla-extraccion-cell" }),
                     _vm._v(" "),
@@ -77530,7 +77839,10 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "yacimiento" },
+                          attrs: {
+                            disabled: !_vm.form.seccionAridosHabilitada,
+                            label: "yacimiento"
+                          },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
                             callback: function($$v) {
@@ -77545,7 +77857,10 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "produccion" },
+                          attrs: {
+                            disabled: !_vm.form.seccionAridosHabilitada,
+                            label: "produccion"
+                          },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
                             callback: function($$v) {
@@ -77560,7 +77875,10 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "obra" },
+                          attrs: {
+                            disabled: !_vm.form.seccionAridosHabilitada,
+                            label: "obra"
+                          },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
                             callback: function($$v) {
@@ -77654,7 +77972,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "grava" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "grava"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -77685,7 +78006,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "grava" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "grava"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
                               callback: function($$v) {
@@ -77716,7 +78040,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "grava" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "grava"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -77747,7 +78074,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "grava" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "grava"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
                               callback: function($$v) {
@@ -77787,7 +78117,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "gravilla" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "gravilla"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -77818,7 +78151,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "gravilla" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "gravilla"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
                               callback: function($$v) {
@@ -77849,7 +78185,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "gravilla" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "gravilla"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -77880,7 +78219,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "gravilla" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "gravilla"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
                               callback: function($$v) {
@@ -77920,7 +78262,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "arena" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "arena"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -77951,7 +78296,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "arena" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "arena"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
                               callback: function($$v) {
@@ -77982,7 +78330,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "arena" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "arena"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -78013,7 +78364,10 @@ var render = function() {
                         "el-form-item",
                         [
                           _c("el-radio", {
-                            attrs: { label: "arena" },
+                            attrs: {
+                              disabled: !_vm.form.seccionAridosHabilitada,
+                              label: "arena"
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
                               callback: function($$v) {

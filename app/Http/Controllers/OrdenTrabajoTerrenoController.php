@@ -99,6 +99,14 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['aridos_hormigon_muestra_dos'] = mb_strtoupper($request->formulario['aridosHormigonMuestraDos']);
         $formulario['aridos_hormigon_muestra_tres'] = mb_strtoupper($request->formulario['aridosHormigonMuestraTres']);
         $formulario['aridos_hormigon_muestra_cuatro'] = mb_strtoupper($request->formulario['aridosHormigonMuestraCuatro']);
+        $formulario['seccion_testigos_habilitada'] = mb_strtoupper($request->formulario['seccionTestigosHabilitada']);
+        $formulario['seccion_aridos_habilitada'] = mb_strtoupper($request->formulario['seccionAridosHabilitada']);
+        $formulario['testigos_extraidos_seis'] = mb_strtoupper($request->formulario['testigosExtraidosSeis']);
+        $formulario['testigos_extraidos_cuatro'] = mb_strtoupper($request->formulario['testigosExtraidosCuatro']);
+        $formulario['testigos_extraidos_total'] = mb_strtoupper($request->formulario['testigosExtraidosTotal']);
+        $formulario['testigos_ensayados_seis'] = mb_strtoupper($request->formulario['testigosEnsayadosSeis']);
+        $formulario['testigos_ensayados_cuatro'] = mb_strtoupper($request->formulario['testigosEnsayadosCuatro']);
+        $formulario['testigos_ensayados_total'] = mb_strtoupper($request->formulario['testigosEnsayadosTotal']);
 
         return OrdenTrabajoTerreno::create($formulario);
     }
