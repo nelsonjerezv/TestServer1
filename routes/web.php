@@ -10,7 +10,9 @@
 |
 */
 
-Route::get('/', 'OrdenTrabajoTerrenoController@index');
+Route::get('/', function () {
+    return redirect('/formularios');
+});
 
 
 Route::get('/formularios', 'OrdenTrabajoTerrenoController@index');
