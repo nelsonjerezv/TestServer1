@@ -18,6 +18,7 @@
                     />
                     <orden-trabajo-terreno
                         v-if="componenteMain == 'OrdenTrabajoTerreno'"
+                        @cambiaMain="cambiarMain"
                     />
                 </el-main>
                 <el-footer>Footer</el-footer>

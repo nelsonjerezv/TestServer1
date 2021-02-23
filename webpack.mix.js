@@ -26,10 +26,12 @@ for (let directorio in directoriosVue) {
    for (let archivo in directoriosVue[directorio].archivos) {
       mix.js(directorio + directoriosVue[directorio].archivos[archivo], destinoVue + directoriosVue[directorio].destino);
    }
-   
+
 }
 
 mix.js('resources/assets/js/bundle.js', 'js/');
+mix.js('resources/assets/lib/semantic/dist/semantic.min.js', 'lib/semantic/semantic.min.js');
+mix.css('resources/assets/lib/semantic/dist/semantic.min.css', 'lib/semantic/semantic.min.css');
 
 
 mix.js('resources/assets/js/app.js', 'public/js')
@@ -55,3 +57,6 @@ for(let archivo in sass){
    });
 }
 
+mix.styles(
+   'resources/assets/lib/semantic/dist/semantic.min.css'
+   , 'public/css/semantic.min.css');

@@ -8,21 +8,27 @@
         <title>Version Uno</title>
 
         <!-- Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     </head>
     <body>
         <!-- css -->
         <link rel="stylesheet" href="{{ asset(mix('css/layout.css')) }}">
-
+        <link rel="stylesheet" href="{{ asset(mix('css/semantic.min.css')) }}">
+        {{-- <link rel="stylesheet" href="{{ url('lib/semantic/semantic.min.css') }}" /> --}}
         <!-- scripts -->
         <script>window.GLOBAL = {"URL": '{{ config('app.url') }}'}</script>
         <script>window.Laravel = <?php echo json_encode(['csrfToken' => csrf_token()]); ?></script>
         <script type="text/javascript" src="{{ asset(mix('js/bundle.js')) }}" ></script>
+        <script type="text/javascript" src="{{ url('lib/semantic/semantic.min.js') }}" ></script>
 
         @yield('styles')
+        <div id="msgcontainer"></div>
+        <div class="container">
 
-        @yield('content')
+            @yield('content')
+
+        </div>
 
         @yield('scripts')
     </body>
