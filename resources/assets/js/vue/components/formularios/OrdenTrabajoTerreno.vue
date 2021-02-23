@@ -1,78 +1,78 @@
 <template>
     <div class="contenedor-vue">
-        <el-form ref="form" :model="form" label-width="150px">
+        <el-form ref="formularioOtt" :model="form" :rules="reglas" label-width="150px">
             <!-- CLIENTE OBRA / N° OTT -->
             <el-row class="margin-b-5">
                 <el-col :span="14" class="padding-5">
-                    <el-form-item label="N° Cliente Obra">
-                        <el-input placeholder="Please input" v-model="form.numClienteObra"></el-input>
+                    <el-form-item label="N° Cliente Obra" prop="numClienteObra">
+                        <el-input v-model="form.numClienteObra"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="10" class="padding-5">
-                    <el-form-item label="OTT N° HF - ">
-                        <el-input placeholder="Please input" v-model="form.ottNumberHF"></el-input>
+                    <el-form-item label="OTT N° HF - " prop="ottNumberHF">
+                        <el-input v-model="form.ottNumberHF"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
             <!-- NOMBRE CLIENTE -->
             <el-row class="margin-b-5">
-                <el-col :span="24">
-                    <el-form-item label="Cliente">
-                        <el-input placeholder="Please input" v-model="form.nombreCliente"></el-input>
+                <el-col :span="24" class="padding-5">
+                    <el-form-item label="Cliente" prop="nombreCliente">
+                        <el-input v-model="form.nombreCliente"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <!-- OBRA / FONO OBRA -->
             <el-row class="margin-b-5">
                 <el-col :span="15" class="padding-5">
-                    <el-form-item label="Obra">
-                        <el-input placeholder="Please input" v-model="form.nombreObra"></el-input>
+                    <el-form-item label="Obra" prop="nombreObra">
+                        <el-input v-model="form.nombreObra"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="9" class="padding-5">
-                    <el-form-item label="Fono Obra">
-                        <el-input placeholder="Please input" v-model="form.fonoObra"></el-input>
+                    <el-form-item label="Fono Obra" prop="fonoObra">
+                        <el-input v-model="form.fonoObra"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <!-- DIRECCION / ENCARGADO OBRA -->
             <el-row class="margin-b-5">
                 <el-col :span="15" class="padding-5">
-                    <el-form-item label="Dirección Obra">
-                        <el-input placeholder="Please input" v-model="form.direccionObra"></el-input>
+                    <el-form-item label="Dirección Obra" prop="direccionObra">
+                        <el-input v-model="form.direccionObra"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="9" class="padding-5">
-                    <el-form-item label="Encargado Obra">
-                        <el-input placeholder="Please input" v-model="form.encargadoObra"></el-input>
+                    <el-form-item label="Encargado Obra" prop="encargadoObra">
+                        <el-input v-model="form.encargadoObra"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
             <!-- MUESTREO HORMIGON / MORTERO / SECCION TESTIGOS / SECCION ARIDOS-->
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="24" class="padding-5">
-                    <el-form-item label="Muestreo de:">
+                    <el-form-item label="Muestreo de:" prop="muestreoDe">
                         <el-radio v-model="form.muestreoDe" label="hormigon">Hormig&oacute;n</el-radio>
                         <el-radio v-model="form.muestreoDe" label="mortero">Mortero</el-radio>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
-                    <el-form-item>
+                    <el-form-item prop="seccionTestigosHabilitada">
                         <el-checkbox v-model="form.seccionTestigosHabilitada">Sección Testigos</el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
-                    <el-form-item>
+                    <el-form-item prop="seccionAridosHabilitada">
                         <el-checkbox v-model="form.seccionAridosHabilitada">Sección &Aacute;ridos</el-checkbox>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <el-form-item label="Extracción">
+                    <el-form-item label="Extracción" prop="extraccion">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.extraccion" label="camion">Cami&oacute;n</el-radio>
                             <el-radio v-model="form.extraccion" label="betonera">Betonera</el-radio>
@@ -80,14 +80,14 @@
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Compactación">
+                    <el-form-item label="Compactación" prop="">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.compactacion" label="apisonado">Apisonado</el-radio>
                             <el-radio v-model="form.compactacion" label="vibrado">Vibrado</el-radio>
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Tipo de Molde (en cm)">
+                    <el-form-item label="Tipo de Molde (en cm)" prop="tipoMolde">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-01">
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x15x15</div><div> | <b>400-01</b> </div></div>
@@ -110,21 +110,21 @@
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Muestreado por">
+                    <el-form-item label="Muestreado por" prop="muestreadoPor">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.muestreadoPor" label="lacem">Lacem</el-radio>
                             <el-radio v-model="form.muestreadoPor" label="mandante">Mandante</el-radio>
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Ensayado por">
+                    <el-form-item label="Ensayado por" prop="ensayadoPor">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.ensayadoPor" label="lacem">Lacem</el-radio>
                             <el-radio v-model="form.ensayadoPor" label="mandante">Mandante</el-radio>
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Tipo de muestra">
+                    <el-form-item label="Tipo de muestra" prop="tipoMuestra">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.tipoMuestra" label="simple">Simple</el-radio>
                             <el-radio v-model="form.tipoMuestra" label="compuesta">Compuesta</el-radio>
@@ -132,97 +132,97 @@
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Volumen de la Amasada del Hormigón (m³)">
-                        <el-input placeholder="Please input" v-model="form.amasadaHormigon"></el-input>
+                    <el-form-item label="Volumen de la Amasada del Hormigón (m³)" prop="amasadaHormigon">
+                        <el-input v-model="form.amasadaHormigon"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Asentamiento de cono (cm)">
-                        <el-input placeholder="Please input" v-model="form.asentamientoCono"></el-input>
+                    <el-form-item label="Asentamiento de cono (cm)" prop="asentamientoCono">
+                        <el-input v-model="form.asentamientoCono"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="N° Informe">
-                        <el-input placeholder="Please input" disabled v-model="form.numInforme"></el-input>
+                    <el-form-item label="N° Informe" prop="numInforme">
+                        <el-input disabled v-model="form.numInforme"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Segregación">
-                        <el-input placeholder="Please input" v-model="form.segregacion"></el-input>
+                    <el-form-item label="Segregación" prop="segregacion">
+                        <el-input v-model="form.segregacion"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="N° equipo Cono de Abrams">
-                        <el-input placeholder="Please input" v-model="form.numEquipoConoAbrams"></el-input>
+                    <el-form-item label="N° equipo Cono de Abrams" prop="numEquipoConoAbrams">
+                        <el-input v-model="form.numEquipoConoAbrams"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="N° Vibrador de Inmersión">
-                        <el-input placeholder="Please input" v-model="form.numVibradorInmersion"></el-input>
+                    <el-form-item label="N° Vibrador de Inmersión" prop="numVibradorInmersion">
+                        <el-input v-model="form.numVibradorInmersion"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="N° equipo Cono reducido">
-                        <el-input placeholder="Please input" v-model="form.numEquipoConoReducido"></el-input>
+                    <el-form-item label="N° equipo Cono reducido" prop="numEquipoConoReducido">
+                        <el-input v-model="form.numEquipoConoReducido"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <el-form-item label="N° Ingreso">
-                        <el-input placeholder="Please input" v-model="form.numIngreso"></el-input>
+                    <el-form-item label="N° Ingreso" prop="numIngreso">
+                        <el-input v-model="form.numIngreso"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Hora Muestreo">
-                        <el-input placeholder="Please input" v-model="form.horaMuestreo"></el-input>
+                    <el-form-item label="Hora Muestreo" prop="horaMuestreo">
+                        <el-input v-model="form.horaMuestreo"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Hora Inicio amasado">
-                        <el-input placeholder="Please input" v-model="form.horaInicioAmasado"></el-input>
+                    <el-form-item label="Hora Inicio amasado" prop="horaInicioAmasado">
+                        <el-input v-model="form.horaInicioAmasado"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="T° Ambiente">
-                        <el-input placeholder="Please input" v-model="form.tAmbiente"></el-input>
+                    <el-form-item label="T° Ambiente" prop="tAmbiente">
+                        <el-input v-model="form.tAmbiente"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="T° Hormigón/Mortero">
-                        <el-input placeholder="Please input" v-model="form.tHormigonMortero"></el-input>
+                    <el-form-item label="T° Hormigón/Mortero" prop="tHormigonMortero">
+                        <el-input v-model="form.tHormigonMortero"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Proveedor">
-                        <el-input placeholder="Please input" v-model="form.proveedor"></el-input>
+                    <el-form-item label="Proveedor" prop="proveedor">
+                        <el-input v-model="form.proveedor"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="N° Guía de Despacho">
-                        <el-input placeholder="Please input" v-model="form.numGuiaDespacho"></el-input>
+                    <el-form-item label="N° Guía de Despacho" prop="numGuiaDespacho">
+                        <el-input v-model="form.numGuiaDespacho"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Nombre Chofer">
-                        <el-input placeholder="Please input" v-model="form.nombreChofer"></el-input>
+                    <el-form-item label="Nombre Chofer" prop="nombreChofer">
+                        <el-input v-model="form.nombreChofer"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Curado Inicial">
-                        <el-input placeholder="Please input" v-model="form.curadoInicial"></el-input>
+                    <el-form-item label="Curado Inicial" prop="curadoInicial">
+                        <el-input v-model="form.curadoInicial"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Elemento Hormigonado">
-                        <el-input placeholder="Please input" v-model="form.elementoHormigonado"></el-input>
+                    <el-form-item label="Elemento Hormigonado" prop="elementoHormigonado">
+                        <el-input v-model="form.elementoHormigonado"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Ubicación del Elemento">
-                        <el-input placeholder="Please input" v-model="form.ubicacionElemento"></el-input>
+                    <el-form-item label="Ubicación del Elemento" prop="ubicacionElemento">
+                        <el-input v-model="form.ubicacionElemento"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Tipo de Hormigón / Mortero">
-                        <el-input placeholder="Please input" v-model="form.tipoHormigonMortero"></el-input>
+                    <el-form-item label="Tipo de Hormigón / Mortero" prop="tipoHormigonMortero">
+                        <el-input v-model="form.tipoHormigonMortero"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Resistencia especificada">
-                        <el-input placeholder="Please input" v-model="form.resistenciaEspecificada"></el-input>
+                    <el-form-item label="Resistencia especificada" prop="resistenciaEspecificada">
+                        <el-input v-model="form.resistenciaEspecificada"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Fecha de confección">
-                        <el-input placeholder="Please input" v-model="form.fechaConfeccion"></el-input>
+                    <el-form-item label="Fecha de confección" prop="fechaConfeccion">
+                        <el-input v-model="form.fechaConfeccion"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="Aditivo">
-                        <el-input placeholder="Please input" v-model="form.aditivo"></el-input>
+                    <el-form-item label="Aditivo" prop="aditivo">
+                        <el-input v-model="form.aditivo"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
-                    <el-form-item label="N° de Mixer">
-                        <el-input placeholder="Please input" v-model="form.numMixer"></el-input>
+                    <el-form-item label="N° de Mixer" prop="numMixer">
+                        <el-input v-model="form.numMixer"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <!-- Fecha de Retiro de muestra -->
@@ -236,118 +236,130 @@
                             <!-- 1 dia -->
                             <div class="Rtable-cell width-35"><label>1 dia</label></div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadUnDia">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadUnDia"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaUnDia"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaUnDia">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaUnDia"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeUnDia">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeUnDia"></el-input>
                                 </el-form-item>
                             </div>
                             <!-- 3 dias -->
                             <div class="Rtable-cell width-35"><label>3 dia</label></div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadTresDias">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadTresDias"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaTresDias"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaTresDias">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaTresDias"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeTresDias">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeTresDias"></el-input>
                                 </el-form-item>
                             </div>
                             <!-- 7 dias -->
                             <div class="Rtable-cell width-35"><label>7 dia</label></div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadSieteDias">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadSieteDias"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaSieteDias"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaSieteDias">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaSieteDias"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeSieteDias">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeSieteDias"></el-input>
                                 </el-form-item>
                             </div>
                             <!-- 14 dias -->
                             <div class="Rtable-cell width-35"><label>14 dia</label></div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadCatorceDias">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadCatorceDias"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaCatorceDias"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaCatorceDias">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaCatorceDias"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeCatorceDias">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeCatorceDias"></el-input>
                                 </el-form-item>
                             </div>
                             <!-- 28 dias -->
                             <div class="Rtable-cell width-35"><label>28 dia</label></div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadVeintiochoDias">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadVeintiochoDias"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaVeintiochoDias"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaVeintiochoDias">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaVeintiochoDias"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeVeintiochoDias">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeVeintiochoDias"></el-input>
                                 </el-form-item>
                             </div>
                             <!-- otros -->
                             <div class="Rtable-cell width-35">
-                                <el-form-item class="item-no-margin cantidad-otros" label="Otros">
-                                    <el-input size="mini" v-model="form.retiroMuestraCantidadOtros"></el-input>
+                                <el-form-item class="item-no-margin cantidad-otros" label="Otros" prop="retiroMuestraOtros">
+                                    <el-input size="mini" v-model="form.retiroMuestraOtros"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraCantidadOtros">
                                     <el-input size="mini" v-model="form.retiroMuestraCantidadOtros"></el-input>
                                 </el-form-item>
                             </div>
                             <div class="Rtable-cell width-datepicker">
-                                <el-date-picker
-                                    v-model="form.retiroMuestraFechaOtros"
-                                    type="date"
-                                    size="mini">
-                                </el-date-picker>
+                                <el-form-item class="item-no-margin" prop="retiroMuestraFechaOtros">
+                                    <el-date-picker
+                                        v-model="form.retiroMuestraFechaOtros"
+                                        type="date"
+                                        size="mini">
+                                    </el-date-picker>
+                                </el-form-item>
                             </div>
                             <div class="Rtable-cell width-15">
-                                <el-form-item class="item-no-margin">
+                                <el-form-item class="item-no-margin" prop="retiroMuestraInformeOtros">
                                     <el-input size="mini" v-model="form.retiroMuestraInformeOtros"></el-input>
                                 </el-form-item>
                             </div>
@@ -355,7 +367,7 @@
                     </el-col>
                     <el-col :span="24" class="padding-5">Traslado de probetas al Laboratorio</el-col>
                     <el-col :span="24" class="padding-5">
-                        <el-form-item>
+                        <el-form-item prop="trasladoProbetas">
                             <el-radio v-model="form.trasladoProbetas" label="moldes">En Moldes</el-radio>
                             <el-radio v-model="form.trasladoProbetas" label="desmoldadas">Desmoldadas</el-radio>
                         </el-form-item>
@@ -364,7 +376,7 @@
             </el-row>
             <el-divider class="el-divider-14"/>
             <!-- testigos hormigon endurecido -->
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Extracci&oacute;n de Testigos Hormig&oacute;n Endurecido</el-col>
                 <el-col :span="24" class="padding-5">
                     <div class="tabla-extraccion tabla-extraccion--10cols comentarios">
@@ -382,17 +394,17 @@
                         <!-- N° de Testigos Extraidos -->
                         <div class="tabla-extraccion-cell" style="width: 30%;">N° de Testigos Extra&iacute;dos</div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosExtraidosSeis">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosSeis"></el-input>
                             </el-form-item>
                         </div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosExtraidosCuatro">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosCuatro"></el-input>
                             </el-form-item>
                         </div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosExtraidosTotal">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosExtraidosTotal"></el-input>
                             </el-form-item>
                         </div>
@@ -408,17 +420,17 @@
                             <div class="tabla-extraccion-cell extraccion-cell-borde-left">400-14</div>
                         </div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosEnsayadosSeis">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosSeis"></el-input>
                             </el-form-item>
                         </div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosEnsayadosCuatro">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosCuatro"></el-input>
                             </el-form-item>
                         </div>
                         <div class="tabla-extraccion-cell">
-                            <el-form-item class="item-no-margin">
+                            <el-form-item class="item-no-margin" prop="testigosEnsayadosTotal">
                                 <el-input size="mini" :disabled="!form.seccionTestigosHabilitada" v-model="form.testigosEnsayadosTotal"></el-input>
                             </el-form-item>
                         </div>
@@ -433,11 +445,11 @@
             </el-row>
             <el-divider class="el-divider-14"/>
             <!-- aridos para hormigon -->
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="6" style="font-weight: 600" class="padding-5">&Aacute;ridos para Hormig&oacute;n</el-col>
                 <el-col :span="6" style="font-weight: 600" class="padding-5">Procedimiento Extracci&oacute;n</el-col>
                 <el-col :span="12" class="padding-5">
-                    <el-form-item class="procedimiento-extraccion-opciones">
+                    <el-form-item class="procedimiento-extraccion-opciones" prop="procedimientoExtraccion">
                         <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="yacimiento">Yacimiento</el-radio>
                         <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="produccion">Producci&oacute;n</el-radio>
                         <el-radio v-model="form.procedimientoExtraccion" :disabled="!form.seccionAridosHabilitada" label="obra">Obra </el-radio>
@@ -456,66 +468,66 @@
                         <!-- Grava -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Grava</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraUno">
                                 <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraDos">
                                 <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraTres">
                                 <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraCuatro">
                                 <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="grava"></el-radio>
                             </el-form-item>
                         </div>
                         <!-- Gravilla -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Gravilla</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraUno">
                                 <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraDos">
                                 <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraTres">
                                 <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraCuatro">
                                 <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="gravilla"></el-radio>
                             </el-form-item>
                         </div>
                         <!-- Arena -->
                         <div class="tabla-aridos-cell" style="width: 35%;">Arena</div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraUno">
                                 <el-radio v-model="form.aridosHormigonMuestraUno" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraDos">
                                 <el-radio v-model="form.aridosHormigonMuestraDos" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraTres">
                                 <el-radio v-model="form.aridosHormigonMuestraTres" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
                         <div class="tabla-aridos-cell" style="width: 16.25%">
-                            <el-form-item>
+                            <el-form-item prop="aridosHormigonMuestraCuatro">
                                 <el-radio v-model="form.aridosHormigonMuestraCuatro" :disabled="!form.seccionAridosHabilitada" label="arena"></el-radio>
                             </el-form-item>
                         </div>
@@ -553,49 +565,49 @@
             </el-row>
             <el-divider class="el-divider-14"/>
             <!-- Otros -->
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Otros</el-col>
                 <el-col :span="8" class="padding-5">
-                    <el-form-item label="Dens. Aparente Hormigón">
+                    <el-form-item label="Dens. Aparente Hormigón" prop="densAparenteHormigon">
                         <el-checkbox v-model="form.densAparenteHormigon"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
-                    <el-form-item label="Dens. Aparente Mortero">
+                    <el-form-item label="Dens. Aparente Mortero" prop="densAparenteMortero">
                         <el-checkbox v-model="form.densAparenteMortero"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
-                    <el-form-item label="Índice Esclerométrico">
+                    <el-form-item label="Índice Esclerométrico" prop="indiceEsclerometrico">
                         <el-checkbox v-model="form.indiceEsclerometrico"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
-                    <el-form-item label="Irregularidad Superficial">
+                    <el-form-item label="Irregularidad Superficial" prop="irregularidadSuperficial">
                         <el-checkbox v-model="form.irregularidadSuperficial"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
-                    <el-form-item label="Irregularidad Superficial - cantidad ml">
-                        <el-input placeholder="Please input" v-model="form.irregularidadSuperficialMl"></el-input>
+                    <el-form-item label="Irregularidad Superficial - cantidad ml" prop="irregularidadSuperficialMl">
+                        <el-input v-model="form.irregularidadSuperficialMl"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Muestra Ingresada por el Cliente">
+                    <el-form-item label="Muestra Ingresada por el Cliente" prop="muestraIngresadaPorCliente">
                         <el-radio v-model="form.muestraIngresadaPorCliente" label="true">Si</el-radio>
                         <el-radio v-model="form.muestraIngresadaPorCliente" label="false">No</el-radio>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Responsable en Obra">
-                        <el-input placeholder="Please input" v-model="form.responsableEnObra"></el-input>
+                    <el-form-item label="Responsable en Obra" prop="responsableEnObra">
+                        <el-input v-model="form.responsableEnObra"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Fecha de Ingreso">
+                    <el-form-item label="Fecha de Ingreso" prop="fechaIngreso">
                         <el-date-picker
                             v-model="form.fechaIngreso"
                             type="date">
@@ -603,7 +615,7 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Fecha de Visita Obra">
+                    <el-form-item label="Fecha de Visita Obra" prop="fechaVisitaObra">
                             <el-date-picker
                                 v-model="form.fechaVisitaObra"
                                 type="date">
@@ -611,14 +623,14 @@
                         </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Hora Llegada">
+                    <el-form-item label="Hora Llegada" prop="horaLlegada">
                         <el-time-picker
                             v-model="form.horaLlegada">
                         </el-time-picker>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
-                    <el-form-item label="Hora Salida">
+                    <el-form-item label="Hora Salida" prop="horaSalida">
                         <el-time-picker
                             v-model="form.horaSalida">
                         </el-time-picker>
@@ -626,16 +638,12 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <el-row class="margin-b-5 auto-height comentarios">
+            <el-row class="margin-b-5 comentarios">
                 <el-col :span="12">
                     <el-col :span="24" class="padding-5">Observaciones</el-col>
                     <el-col :span="24" class="padding-5">
-                        <el-form-item>
-                            <el-input
-                                type="textarea"
-                                autosize
-                                placeholder="Please input"
-                                v-model="form.observaciones">
+                        <el-form-item prop="observaciones">
+                            <el-input type="textarea" autosize v-model="form.observaciones">
                             </el-input>
                         </el-form-item>
                     </el-col>
@@ -643,55 +651,64 @@
                 <el-col :span="12">
                     <el-col :span="24" class="padding-5">La muestra presenta alguna alteraci&oacute;n?</el-col>
                     <el-col :span="24" class="padding-5">
-                        <el-form-item>
+                        <el-form-item prop="alteracionMuestra">
                             <el-radio v-model="form.alteracionMuestra" label="si">Si</el-radio>
                             <el-radio v-model="form.alteracionMuestra" label="no">No</el-radio>
                         </el-form-item>
                     </el-col>
                     <el-col :span="24" class="padding-5">
-                        <el-form-item>
-                            <el-input
-                                type="textarea"
-                                autosize
-                                placeholder="Please input"
-                                v-model="form.observaciones">
+                        <el-form-item prop="observacionesAlteracionesMuestra">
+                            <el-input type="textarea" autosize v-model="form.observacionesAlteracionesMuestra">
                             </el-input>
                         </el-form-item>
                     </el-col>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <el-row class="margin-b-5 auto-height">
+            <el-row class="margin-b-5">
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <el-form-item label="Laboratorista">
-                        <el-input placeholder="Please input" v-model="form.laboratorista"></el-input>
+                    <el-form-item label="Laboratorista" prop="laboratorista">
+                        <el-input v-model="form.laboratorista"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <el-form-item label="Ayudante">
-                        <el-input placeholder="Please input" v-model="form.ayudante"></el-input>
+                    <el-form-item label="Ayudante" prop="ayudante">
+                        <el-input v-model="form.ayudante"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="unaDosColumnas" class="comentarios">
-                    <el-form-item>
+                    <el-form-item prop="recibeOMuestrea">
                         <el-radio v-model="form.recibeOMuestrea" label="recibe">Recibe</el-radio>
                         <el-radio v-model="form.recibeOMuestrea" label="muestrea">Muestrea</el-radio>
                     </el-form-item>
                 </el-col>
             </el-row>
             <el-divider class="el-divider-14"/>
-            <el-form-item class="comentarios">
-                <el-button type="primary" @click="onSubmit">Crear OTT</el-button>
+            <el-form-item class="comentarios" prop="">
+                <el-button type="primary" @click="onSubmit('formularioOtt')">Crear OTT</el-button>
+                <el-popconfirm
+                    confirm-button-text='Vaciar campos'
+                    cancel-button-text='volver'
+                    @confirm="resetForm('formularioOtt')"
+                    placement="right"
+                    icon="el-icon-info"
+                    icon-color="red"
+                    title="Está seguro quiere vaciar todos los campos?">
+                    <el-button slot="reference">Vaciar campos</el-button>
+                </el-popconfirm>
             </el-form-item>
         </el-form>
     </div>
 </template>
 <script>
+    import Tools from '../../../tools.js';
+
     export default {
         data(){
             return{
                 labelPosition: 'left',
                 unaDosColumnas: 24,
+                urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
                 form: {
                     numClienteObra: '',
                     ottNumberHF: '',
@@ -764,6 +781,7 @@
                     irregularidadSuperficialMl: '',
                     observaciones: '',
                     alteracionMuestra: '',
+                    observacionesAlteracionesMuestra: '',
                     laboratorista: '',
                     ayudante: '',
                     recibeOMuestrea: '',
@@ -780,7 +798,248 @@
                     testigosEnsayadosCuatro: '0',
                     testigosEnsayadosTotal: '',
                 },
-                urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
+                reglas: {
+                    numClienteObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    ottNumberHF: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    nombreCliente: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    nombreObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    fonoObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    direccionObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    encargadoObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    muestreoDe: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    extraccion: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    compactacion: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    tipoMolde: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    muestreadoPor: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    ensayadoPor: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    tipoMuestra: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    amasadaHormigon: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    asentamientoCono: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numInforme: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    segregacion: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numEquipoConoAbrams: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numVibradorInmersion: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numEquipoConoReducido: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numIngreso: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    horaMuestreo: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    horaInicioAmasado: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tAmbiente: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tHormigonMortero: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    proveedor: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numGuiaDespacho: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    nombreChofer: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    curadoInicial: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    elementoHormigonado: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    ubicacionElemento: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoHormigonMortero: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    resistenciaEspecificada: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    fechaConfeccion: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    aditivo: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numMixer: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadUnDia: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaUnDia: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeUnDia: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadTresDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaTresDias: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeTresDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadSieteDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaSieteDias: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeSieteDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadCatorceDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaCatorceDias: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeCatorceDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadVeintiochoDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaVeintiochoDias: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeVeintiochoDias: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraOtros: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraCantidadOtros: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    retiroMuestraFechaOtros: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    retiroMuestraInformeOtros: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    trasladoProbetas: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    procedimientoExtraccion: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    aridosHormigonMuestraUno: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    aridosHormigonMuestraDos: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    aridosHormigonMuestraTres: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    aridosHormigonMuestraCuatro: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    densAparenteHormigon: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    densAparenteMortero: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    indiceEsclerometrico: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    irregularidadSuperficial: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    irregularidadSuperficialMl  : [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    muestraIngresadaPorCliente: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    responsableEnObra: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    fechaIngreso: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    fechaVisitaObra: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    horaLlegada: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    horaSalida: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    observaciones: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    alteracionMuestra: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    observacionesAlteracionesMuestra: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                    observaciones: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    laboratorista: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    ayudante: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    recibeOMuestrea: [
+                        { required: true, message: '', trigger: 'change' }
+                    ],
+                }
             }
         },
         created() {
@@ -791,14 +1050,28 @@
             window.removeEventListener('resize', this.handleResize);
         },
         mounted () {
+
+                console.log(`${GLOBAL.URL}`);
+            Tools.mensajeAlerta("mensaje de prueba", Tools.MENSAJE.INFO, 'titulo mensaje', 5);
         },
         methods: {
-            onSubmit() {
-                this.$http.post(this.urlGuardarFormulario,{
-                    formulario: this.form
-                }).then(response => {
-                    console.log('response', response);
+            onSubmit(nombreFormulario) {
+                this.$refs[nombreFormulario].validate((valid) => {
+                    if (valid) {
+                        this.$http.post(this.urlGuardarFormulario,{
+                            formulario: this.form
+                        }).then(response => {
+                            setTimeout(()=>{
+                                this.$emit("cambiaMain", "ListadoFormularios");
+                            }, 8000);
+                        });
+                    } else {
+                        return false;
+                    }
                 });
+            },
+            resetForm(nombreFormulario) {
+                this.$refs[nombreFormulario].resetFields();
             },
             handleResize() {
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
@@ -827,6 +1100,13 @@
         line-height: 40px;
         height: auto;
         overflow: auto;
+        /deep/  .el-form-item__error {
+            top: 10px;
+            font-size: 14px;
+            padding-left: 15px;
+            color: #ffffff00;
+            z-index: -1;
+        }
     }
     .dis-flex-dir-col{
         display: flex;
@@ -888,17 +1168,16 @@
     .margin-l-5{
         margin-left: 5px;
     }
-    .auto-height{
-        height: auto !important;
-    }
     .el-row {
         height: 40px;
+        height: auto !important;
         &:last-child {
             margin-bottom: 0;
         }
     }
     .el-col {
         border-radius: 4px;
+        height: auto !important;
     }
     .bg-purple-dark {
         background: #99a9bf;

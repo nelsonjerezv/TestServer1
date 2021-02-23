@@ -83,5 +83,18 @@ class OrdenTrabajoTerreno extends Model
         'laboratorista',
         'ayudante',
         'recibe_o_muestrea',
+        'aridos_hormigon_muestra_uno',
+        'aridos_hormigon_muestra_dos',
+        'aridos_hormigon_muestra_tres',
+        'aridos_hormigon_muestra_cuatro',
+        'seccion_testigos_habilitada',
+        'seccion_aridos_habilitada',
+        'testigos_extraidos_seis',
+        'testigos_extraidos_cuatro',
+        'testigos_extraidos_total',
+        'testigos_ensayados_seis',
+        'testigos_ensayados_cuatro',
+        'testigos_ensayados_total',
+        'observaciones_alteraciones_muestra'
     ];
 }

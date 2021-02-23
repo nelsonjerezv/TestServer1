@@ -23,3 +23,13 @@ body {
   overflow: hidden;
   height: 100%;
 }
+
+#msgcontainer {
+  width: 300px;
+  height: 1px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin-top: 45px;
+  z-index: 999999;
+}

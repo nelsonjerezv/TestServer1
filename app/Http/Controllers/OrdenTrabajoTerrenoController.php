@@ -107,7 +107,9 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['testigos_ensayados_seis'] = mb_strtoupper($request->formulario['testigosEnsayadosSeis']);
         $formulario['testigos_ensayados_cuatro'] = mb_strtoupper($request->formulario['testigosEnsayadosCuatro']);
         $formulario['testigos_ensayados_total'] = mb_strtoupper($request->formulario['testigosEnsayadosTotal']);
+        $formulario['observaciones_alteraciones_muestra'] = mb_strtoupper($request->formulario['observacionesAlteracionesMuestra']);
 
         return OrdenTrabajoTerreno::create($formulario);
     }
 }
+ 

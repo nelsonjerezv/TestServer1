@@ -101,6 +101,8 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('testigos_ensayados_seis', 100)->nullable();
             $table->string('testigos_ensayados_cuatro', 100)->nullable();
             $table->string('testigos_ensayados_total', 100)->nullable();
+            $table->string('observaciones_alteraciones_muestra', 100)->nullable();
+
             $table->timestamps();
         });
     }
