@@ -9,12 +9,12 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="10" class="padding-5">
-                    <el-form-item label="OTT N° HF - " prop="ottNumberHF">
+                    <el-form-item class="item-no-margin cantidad-otros" label="OTT N° HF - " prop="ottNumberHF">
                         <el-input v-model="form.ottNumberHF"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <!-- NOMBRE CLIENTE -->
             <el-row class="margin-b-5">
                 <el-col :span="24" class="padding-5">
@@ -31,7 +31,7 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="9" class="padding-5">
-                    <el-form-item label="Fono Obra" prop="fonoObra">
+                    <el-form-item class="item-no-margin cantidad-otros" label="Fono Obra" prop="fonoObra">
                         <el-input v-model="form.fonoObra"></el-input>
                     </el-form-item>
                 </el-col>
@@ -44,12 +44,12 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="9" class="padding-5">
-                    <el-form-item label="Encargado Obra" prop="encargadoObra">
+                    <el-form-item class="item-no-margin cantidad-otros" label="Encargado Obra" prop="encargadoObra">
                         <el-input v-model="form.encargadoObra"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <!-- MUESTREO HORMIGON / MORTERO / SECCION TESTIGOS / SECCION ARIDOS-->
             <el-row class="margin-b-5">
                 <el-col :span="24" class="padding-5">
@@ -58,18 +58,31 @@
                         <el-radio v-model="form.muestreoDe" label="mortero">Mortero</el-radio>
                     </el-form-item>
                 </el-col>
-                <el-col :span="12" class="padding-5">
-                    <el-form-item prop="seccionTestigosHabilitada">
-                        <el-checkbox v-model="form.seccionTestigosHabilitada">Sección Testigos</el-checkbox>
+            </el-row>
+            <el-divider class="el-divider-5"/>
+            <el-row class="margin-b-5">
+                <el-col :span="6" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionTestigosHabilitada">
+                        <el-checkbox v-model="form.seccionTestigosHabilitada">Secci&oacute;n Testigos</el-checkbox>
                     </el-form-item>
                 </el-col>
-                <el-col :span="12" class="padding-5">
-                    <el-form-item prop="seccionAridosHabilitada">
-                        <el-checkbox v-model="form.seccionAridosHabilitada">Sección &Aacute;ridos</el-checkbox>
+                <el-col :span="6" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionAridosHabilitada">
+                        <el-checkbox v-model="form.seccionAridosHabilitada">Secci&oacute;n &Aacute;ridos</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="6" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionOtros">
+                        <el-checkbox v-model="form.seccionOtros">Secci&oacute;n Otros</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="6" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionRetiroMuestrasHabilitada">
+                        <el-checkbox v-model="form.seccionRetiroMuestrasHabilitada">Secci&oacute;n Retiro de Muestras</el-checkbox>
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
                 <el-col :span="unaDosColumnas" class="padding-5">
                     <el-form-item label="Extracción" prop="extraccion">
@@ -374,7 +387,7 @@
                     </el-col>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <!-- testigos hormigon endurecido -->
             <el-row class="margin-b-5">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Extracci&oacute;n de Testigos Hormig&oacute;n Endurecido</el-col>
@@ -443,7 +456,7 @@
                     </div>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <!-- aridos para hormigon -->
             <el-row class="margin-b-5">
                 <el-col :span="6" style="font-weight: 600" class="padding-5">&Aacute;ridos para Hormig&oacute;n</el-col>
@@ -563,37 +576,37 @@
                     </div>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <!-- Otros -->
             <el-row class="margin-b-5">
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Otros</el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Dens. Aparente Hormigón" prop="densAparenteHormigon">
-                        <el-checkbox v-model="form.densAparenteHormigon"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.densAparenteHormigon"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Dens. Aparente Mortero" prop="densAparenteMortero">
-                        <el-checkbox v-model="form.densAparenteMortero"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.densAparenteMortero"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Índice Esclerométrico" prop="indiceEsclerometrico">
-                        <el-checkbox v-model="form.indiceEsclerometrico"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.indiceEsclerometrico"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
                     <el-form-item label="Irregularidad Superficial" prop="irregularidadSuperficial">
-                        <el-checkbox v-model="form.irregularidadSuperficial"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.irregularidadSuperficial"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
                     <el-form-item label="Irregularidad Superficial - cantidad ml" prop="irregularidadSuperficialMl">
-                        <el-input v-model="form.irregularidadSuperficialMl"></el-input>
+                        <el-input :disabled="!form.seccionOtros"  v-model="form.irregularidadSuperficialMl"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
                 <el-col :span="12" class="seccion-otros padding-5">
                     <el-form-item label="Muestra Ingresada por el Cliente" prop="muestraIngresadaPorCliente">
@@ -637,7 +650,7 @@
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5 comentarios">
                 <el-col :span="12">
                     <el-col :span="24" class="padding-5">Observaciones</el-col>
@@ -664,7 +677,7 @@
                     </el-col>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
                 <el-col :span="unaDosColumnas" class="padding-5">
                     <el-form-item label="Laboratorista" prop="laboratorista">
@@ -683,9 +696,9 @@
                     </el-form-item>
                 </el-col>
             </el-row>
-            <el-divider class="el-divider-14"/>
+            <el-divider class="el-divider-5"/>
             <el-form-item class="comentarios" prop="">
-                <el-button type="primary" @click="onSubmit('formularioOtt')">Crear OTT</el-button>
+                <el-button type="primary" @click="onSubmit('formularioOtt')" plain>Crear OTT</el-button>
                 <el-popconfirm
                     confirm-button-text='Vaciar campos'
                     cancel-button-text='volver'
@@ -693,8 +706,9 @@
                     placement="right"
                     icon="el-icon-info"
                     icon-color="red"
+                    :hide-icon="true"
                     title="Está seguro quiere vaciar todos los campos?">
-                    <el-button slot="reference">Vaciar campos</el-button>
+                    <el-button slot="reference" plain>Vaciar campos</el-button>
                 </el-popconfirm>
             </el-form-item>
         </el-form>
@@ -791,6 +805,8 @@
                     aridosHormigonMuestraCuatro: '',
                     seccionTestigosHabilitada: false,
                     seccionAridosHabilitada: false,
+                    seccionOtros: false,
+                    seccionRetiroMuestrasHabilitada: '',
                     testigosExtraidosSeis: '0',
                     testigosExtraidosCuatro: '0',
                     testigosExtraidosTotal: '',
@@ -1050,9 +1066,6 @@
             window.removeEventListener('resize', this.handleResize);
         },
         mounted () {
-
-                console.log(`${GLOBAL.URL}`);
-            Tools.mensajeAlerta("mensaje de prueba", Tools.MENSAJE.INFO, 'titulo mensaje', 5);
         },
         methods: {
             onSubmit(nombreFormulario) {
@@ -1061,11 +1074,16 @@
                         this.$http.post(this.urlGuardarFormulario,{
                             formulario: this.form
                         }).then(response => {
+                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 8 segundos.", Tools.MENSAJE.EXITO, '', 8);
                             setTimeout(()=>{
                                 this.$emit("cambiaMain", "ListadoFormularios");
                             }, 8000);
+                        }, response => {
+                            console.log(response)
+                            Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
                         });
                     } else {
+                        Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
                         return false;
                     }
                 });
@@ -1132,9 +1150,11 @@
     }
     .cantidad-otros{
         white-space: nowrap;
-        /deep/  .el-input__inner{
-            width: calc(100% - 41px);
-            margin-left: -112px;
+        /deep/  .el-form-item__content{
+            display: flex;
+        }
+        /deep/  .el-form-item__label{
+            width: auto !important;
         }
     }
     .tabla-aridos{
@@ -1219,7 +1239,7 @@
         display: flex;
         align-items: center;
     }
-    .el-divider-14{
+    .el-divider-5{
         margin: 14px 0;
     }
     .el-divider-5{
@@ -1345,6 +1365,11 @@
     .seccion-otros{
         /deep/  .el-date-editor.el-input{
             width: 140px !important;
+        }
+    }
+    .form-item-no-label{
+        /deep/  .el-form-item__content{
+            margin-left: 0px !important;
         }
     }
 </style>

@@ -32,3 +32,19 @@ body{
     margin-top: 45px;
     z-index: 999999;
 }
+
+.el-popconfirm{
+    /deep/  .el-button{
+        font-size: 14px;
+    }
+    /deep/  .el-button--primary{
+        color: #F56C6C;
+        background: #fef0f0;
+        border-color: #fbc4c4;
+    }
+    /deep/  .el-button--primary:hover {
+            background: #F56C6C;
+            border-color: #F56C6C;
+            color: #FFF;
+        }
+}

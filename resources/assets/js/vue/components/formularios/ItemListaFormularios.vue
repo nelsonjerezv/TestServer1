@@ -8,24 +8,50 @@
             <div class="item-contenedor-botones">
                 <el-button type="primary" plain>Ver</el-button>
                 <el-button type="warning" plain>Editar</el-button>
-                <el-button type="danger" plain>Eliminar</el-button>
+                <!-- <el-button @click="clickEliminar" type="danger" plain>Eliminar</el-button> -->
+                <el-popconfirm
+                    confirm-button-text='Eliminar'
+                    cancel-button-text='volver'
+                    @confirm="clickEliminar"
+                    placement="top-end"
+                    icon="el-icon-info"
+                    icon-color="red"
+                    :hide-icon="true"
+                    title="Está seguro quiere eliminar el formulario?">
+                    <el-button slot="reference" type="danger" plain>Eliminar</el-button>
+                </el-popconfirm>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import Tools from '../../../tools.js';
+
     export default {
         props: [
             'itemLista'
         ],
         data() {
             return {
-                item: ''
+                item: '',
+                urlEliminarFormulario: `${GLOBAL.URL}formularios/eliminar-formulario`,
             }
         },
         mounted () {
             this.item = this.itemLista;
+        },
+        methods: {
+            clickEliminar() {
+                this.$http.post(this.urlEliminarFormulario,{
+                    id: this.item.id
+                }).then(response => {
+                    Tools.mensajeAlerta("Formulario eliminado.", Tools.MENSAJE.EXITO, '', 5);
+                    this.$emit("actualizar");
+                }, response => {
+                    Tools.mensajeAlerta("No se pudo eliminar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                });
+            }
         },
     }
 </script>
@@ -55,5 +81,8 @@
     .item-contenedor-botones{
         flex-grow: 1;
         text-align-last: end;
+    }
+    .el-button--warning.is-plain {
+        margin-left: 0px;
     }
 </style>

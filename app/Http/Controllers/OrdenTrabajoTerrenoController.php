@@ -19,6 +19,10 @@ class OrdenTrabajoTerrenoController extends Controller
         return OrdenTrabajoTerreno::get();
     }
 
+    public function eliminarFormulario(Request $request){
+        return OrdenTrabajoTerreno::destroy($request->id);
+    }
+
     public function guardarFormulario(Request $request){
         $formulario;
         $formulario['num_cliente_obra'] = mb_strtoupper($request->formulario['numClienteObra']);
@@ -101,6 +105,8 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['aridos_hormigon_muestra_cuatro'] = mb_strtoupper($request->formulario['aridosHormigonMuestraCuatro']);
         $formulario['seccion_testigos_habilitada'] = mb_strtoupper($request->formulario['seccionTestigosHabilitada']);
         $formulario['seccion_aridos_habilitada'] = mb_strtoupper($request->formulario['seccionAridosHabilitada']);
+        $formulario['seccion_otros_habilitada'] = mb_strtoupper($request->formulario['seccionOtrosHabilitada']);
+        $formulario['seccion_retiro_muestras_habilitada'] = mb_strtoupper($request->formulario['seccionRetiroMuestrasHabilitada']);
         $formulario['testigos_extraidos_seis'] = mb_strtoupper($request->formulario['testigosExtraidosSeis']);
         $formulario['testigos_extraidos_cuatro'] = mb_strtoupper($request->formulario['testigosExtraidosCuatro']);
         $formulario['testigos_extraidos_total'] = mb_strtoupper($request->formulario['testigosExtraidosTotal']);
@@ -112,4 +118,3 @@ class OrdenTrabajoTerrenoController extends Controller
         return OrdenTrabajoTerreno::create($formulario);
     }
 }
- 

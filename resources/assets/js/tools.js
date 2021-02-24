@@ -48,8 +48,6 @@ const Tools = {
             }
         };
 
-        console.log(window.jQuery);
-
         /* Mensaje por defecto */
         let mensaje = CATEGORIA_MENSAJE.INFO;
         //Verificando tipo de mensaje y contenido de mensaje

@@ -103945,7 +103945,8 @@ module.exports = function(module) {
 
 /***/ }),
 /* 192 */,
-/* 193 */
+/* 193 */,
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -106570,7 +106571,6 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)))
 
 /***/ }),
-/* 194 */,
 /* 195 */,
 /* 196 */,
 /* 197 */,
@@ -106670,7 +106670,7 @@ var prueba = new Vue({
 
 
 window._ = __webpack_require__(190);
-window.Popper = __webpack_require__(193).default;
+window.Popper = __webpack_require__(194).default;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -106735,7 +106735,7 @@ if (token) {
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(87), __webpack_require__(193)) :
+   true ? factory(exports, __webpack_require__(87), __webpack_require__(194)) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
 }(this, (function (exports, $, Popper) { 'use strict';

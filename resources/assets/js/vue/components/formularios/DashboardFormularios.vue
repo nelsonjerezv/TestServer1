@@ -14,7 +14,6 @@
                     </div>
                     <listado-formularios
                         v-if="componenteMain == 'ListadoFormularios'"
-                        :ordenes="ordenes"
                     />
                     <orden-trabajo-terreno
                         v-if="componenteMain == 'OrdenTrabajoTerreno'"
@@ -47,7 +46,6 @@
             };
         },
         mounted() {
-            console.log("Component mounted.");
         },
         methods: {
             cambiarMain: function(contenido){

@@ -18,4 +18,5 @@ Route::get('/', function () {
 Route::get('/formularios', 'OrdenTrabajoTerrenoController@index');
 Route::get('/formularios/todas-las-ordenes', 'OrdenTrabajoTerrenoController@todasLasOrdenes');
 Route::post('/formularios/guardar-formulario', 'OrdenTrabajoTerrenoController@guardarFormulario');
+Route::post('/formularios/eliminar-formulario', 'OrdenTrabajoTerrenoController@eliminarFormulario');
 Route::resource('formularios', 'OrdenTrabajoTerrenoController');
