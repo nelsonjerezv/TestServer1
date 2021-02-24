@@ -89,6 +89,8 @@ class OrdenTrabajoTerreno extends Model
         'aridos_hormigon_muestra_cuatro',
         'seccion_testigos_habilitada',
         'seccion_aridos_habilitada',
+        'seccion_otros_habilitada',
+        'seccion_retiro_muestras_habilitada',
         'testigos_extraidos_seis',
         'testigos_extraidos_cuatro',
         'testigos_extraidos_total',

@@ -10,6 +10,7 @@
                 v-bind:itemLista="orden"
                 v-bind:index="index"
                 v-bind:key="orden.id"
+                @actualizar="getOrdenes"
             />
         </div>
     </div>
@@ -39,6 +40,8 @@
                 .then(response => {
                     this.todasLasOrdenes =  response.body;
                     this.ordenesDeTrabajo = response.body;
+                }, response => {
+                    Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
             filtraOrdenes(){

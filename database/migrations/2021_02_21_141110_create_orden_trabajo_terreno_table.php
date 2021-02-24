@@ -95,6 +95,8 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('aridos_hormigon_muestra_cuatro', 100)->nullable();
             $table->string('seccion_testigos_habilitada', 100)->nullable();
             $table->string('seccion_aridos_habilitada', 100)->nullable();
+            $table->string('seccion_otros_habilitada', 100)->nullable();
+            $table->string('seccion_retiro_muestras_habilitada', 100)->nullable();
             $table->string('testigos_extraidos_seis', 100)->nullable();
             $table->string('testigos_extraidos_cuatro', 100)->nullable();
             $table->string('testigos_extraidos_total', 100)->nullable();
