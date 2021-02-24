@@ -6,8 +6,8 @@
                 <div class="item-atributo">Laboratorista: {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <el-button type="primary" plain>Ver</el-button>
-                <el-button type="warning" plain>Editar</el-button>
+                <el-button type="primary" disabled plain>Ver</el-button>
+                <el-button type="warning" @click="editarFormulario" plain>Editar</el-button>
                 <!-- <el-button @click="clickEliminar" type="danger" plain>Eliminar</el-button> -->
                 <el-popconfirm
                     confirm-button-text='Eliminar'
@@ -36,6 +36,7 @@
             return {
                 item: '',
                 urlEliminarFormulario: `${GLOBAL.URL}formularios/eliminar-formulario`,
+                urlEditarFormulario: `${GLOBAL.URL}formularios/editar-formulario`,
             }
         },
         mounted () {
@@ -51,7 +52,12 @@
                 }, response => {
                     Tools.mensajeAlerta("No se pudo eliminar el formulario.", Tools.MENSAJE.ERROR, '', 5);
                 });
-            }
+            },
+            clickEditar() {
+                this.$http.get(this.urlEditarFormulario,{
+                    id: this.item.id
+                });
+            },
         },
     }
 </script>

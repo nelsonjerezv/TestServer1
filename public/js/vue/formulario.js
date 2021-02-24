@@ -80284,7 +80284,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             item: '',
-            urlEliminarFormulario: GLOBAL.URL + 'formularios/eliminar-formulario'
+            urlEliminarFormulario: GLOBAL.URL + 'formularios/eliminar-formulario',
+            urlEditarFormulario: GLOBAL.URL + 'formularios/editar-formulario'
         };
     },
     mounted: function mounted() {
@@ -80302,6 +80303,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.$emit("actualizar");
             }, function (response) {
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
+        },
+        clickEditar: function clickEditar() {
+            this.$http.get(this.urlEditarFormulario, {
+                id: this.item.id
             });
         }
     }
@@ -80331,13 +80337,20 @@ var render = function() {
         "div",
         { staticClass: "item-contenedor-botones" },
         [
-          _c("el-button", { attrs: { type: "primary", plain: "" } }, [
-            _vm._v("Ver")
-          ]),
+          _c(
+            "el-button",
+            { attrs: { type: "primary", disabled: "", plain: "" } },
+            [_vm._v("Ver")]
+          ),
           _vm._v(" "),
-          _c("el-button", { attrs: { type: "warning", plain: "" } }, [
-            _vm._v("Editar")
-          ]),
+          _c(
+            "el-button",
+            {
+              attrs: { type: "warning", plain: "" },
+              on: { click: _vm.editarFormulario }
+            },
+            [_vm._v("Editar")]
+          ),
           _vm._v(" "),
           _c(
             "el-popconfirm",
