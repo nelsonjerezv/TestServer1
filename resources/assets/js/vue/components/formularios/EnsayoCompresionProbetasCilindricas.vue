@@ -1,0 +1,1468 @@
+<template>
+    <div class="contenedor-vue">
+        <el-form ref="formularioCompresion" :model="form" :rules="reglas" label-width="150px">
+            <el-row >
+                <el-col :span="8" >
+                    <el-form-item label="Muestra N°" prop="numMuestra">
+                        <el-input v-model="form.numMuestra"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8" >
+                    <el-form-item label="N° OTT" prop="numOTT">
+                        <el-input v-model="form.numOTT"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8" >
+                    <el-form-item label="Informe N°" prop="numInforme">
+                        <el-input v-model="form.numInforme"></el-input>
+                    </el-form-item>
+                </el-col>
+            </el-row>
+            <el-divider />
+            <el-row >
+                <el-col :span="24">
+                    M&eacute;todo de curado
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Cámara Húmeda" prop="camaraHumeda">
+                        <el-input v-model="form.camaraHumeda"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Piscina N°" prop="piscina">
+                        <el-input v-model="form.piscina"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Balanza N°" prop="balanza">
+                        <el-input v-model="form.balanza"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Pie de Metro N°" prop="numPieDeMetro">
+                        <el-input v-model="form.numPieDeMetro"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Prensa N°" prop="numPrensa">
+                        <el-input v-model="form.numPrensa"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Cronómetro N°" prop="numCronometro">
+                        <el-input v-model="form.numCronometro"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Error: 150mm" prop="errorCientoCincuentaMm">
+                        <el-input v-model="form.errorCientoCincuentaMm"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Error: 300mm" prop="errorTrescientosMm">
+                        <el-input v-model="form.errorTrescientosMm"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Marmita N°" prop="numMarmita">
+                        <el-input v-model="form.numMarmita"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Dispositivo de refrentado N°" prop="numDispositivoRefrentado">
+                        <el-input v-model="form.numDispositivoRefrentado"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8">
+                    <el-form-item label="Micrómetro N°" prop="numMicrometro">
+                        <el-input v-model="form.numMicrometro"></el-input>
+                    </el-form-item>
+                </el-col>
+            </el-row>
+            <el-divider />
+            <el-row class="muestras">
+                <!-- titulo -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Probeta N°
+                    </div>
+                    <div class="texto-muestras">
+                        1
+                    </div>
+                    <div class="texto-muestras">
+                        2
+                    </div>
+                    <div class="texto-muestras">
+                        3
+                    </div>
+                    <div class="texto-muestras">
+                        4
+                    </div>
+                </el-col>
+                <!-- Nº de molde -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Nº de molde
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="numMoldeMuestraUno">
+                            <el-input v-model="form.numMoldeMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="numMoldeMuestraDos">
+                            <el-input v-model="form.numMoldeMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="numMoldeMuestraTres">
+                            <el-input v-model="form.numMoldeMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="numMoldeMuestraCuatro">
+                            <el-input v-model="form.numMoldeMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Fecha de Confección -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Fecha de Confección
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaConfeccionMuestraUno">
+                            <el-input v-model="form.fechaConfeccionMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaConfeccionMuestraDos">
+                            <el-input v-model="form.fechaConfeccionMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaConfeccionMuestraTres">
+                            <el-input v-model="form.fechaConfeccionMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaConfeccionMuestraCuatro">
+                            <el-input v-model="form.fechaConfeccionMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Fecha de Ensayo -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Fecha de Ensayo
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaEnsayoMuestraUno">
+                            <el-input v-model="form.fechaEnsayoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaEnsayoMuestraDos">
+                            <el-input v-model="form.fechaEnsayoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaEnsayoMuestraTres">
+                            <el-input v-model="form.fechaEnsayoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="fechaEnsayoMuestraCuatro">
+                            <el-input v-model="form.fechaEnsayoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Edad - Días -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Edad - Días
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="edadDiasMuestraUno">
+                            <el-input v-model="form.edadDiasMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="edadDiasMuestraDos">
+                            <el-input v-model="form.edadDiasMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="edadDiasMuestraTres">
+                            <el-input v-model="form.edadDiasMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="edadDiasMuestraCuatro">
+                            <el-input v-model="form.edadDiasMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Refrentado -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Refrentado
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="refrentadoMuestraUno">
+                            <el-checkbox v-model="form.refrentadoMuestraUno"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="refrentadoMuestraDos">
+                            <el-checkbox v-model="form.refrentadoMuestraDos"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="refrentadoMuestraTres">
+                            <el-checkbox v-model="form.refrentadoMuestraTres"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="refrentadoMuestraCuatro">
+                            <el-checkbox v-model="form.refrentadoMuestraCuatro"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- perpendicularidad -->
+                <el-col :span="24">
+                    <div class="texto">
+                        perpendicularidad
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="perpendicularidadMuestraUno">
+                            <el-checkbox v-model="form.perpendicularidadMuestraUno"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="perpendicularidadMuestraDos">
+                            <el-checkbox v-model="form.perpendicularidadMuestraDos"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="perpendicularidadMuestraTres">
+                            <el-checkbox v-model="form.perpendicularidadMuestraTres"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="perpendicularidadMuestraCuatro">
+                            <el-checkbox v-model="form.perpendicularidadMuestraCuatro"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- planeidad -->
+                <el-col :span="24">
+                    <div class="texto">
+                        planeidad
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="planeidadMuestraUno">
+                            <el-checkbox v-model="form.planeidadMuestraUno"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="planeidadMuestraDos">
+                            <el-checkbox v-model="form.planeidadMuestraDos"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="planeidadMuestraTres">
+                            <el-checkbox v-model="form.planeidadMuestraTres"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="planeidadMuestraCuatro">
+                            <el-checkbox v-model="form.planeidadMuestraCuatro"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Espesor Superior -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Espesor Superior
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorSuperiorMuestraUno">
+                            <el-input v-model="form.espesorSuperiorMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorSuperiorMuestraDos">
+                            <el-input v-model="form.espesorSuperiorMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorSuperiorMuestraTres">
+                            <el-input v-model="form.espesorSuperiorMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorSuperiorMuestraCuatro">
+                            <el-input v-model="form.espesorSuperiorMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Espesor Inferior -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Espesor Inferior
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorInferiorMuestraUno">
+                            <el-input v-model="form.espesorInferiorMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorInferiorMuestraDos">
+                            <el-input v-model="form.espesorInferiorMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorInferiorMuestraTres">
+                            <el-input v-model="form.espesorInferiorMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorInferiorMuestraCuatro">
+                            <el-input v-model="form.espesorInferiorMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Espesor Promedio -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Espesor Promedio
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorPromedioMuestraUno">
+                            <el-input v-model="form.espesorPromedioMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorPromedioMuestraDos">
+                            <el-input v-model="form.espesorPromedioMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorPromedioMuestraTres">
+                            <el-input v-model="form.espesorPromedioMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="espesorPromedioMuestraCuatro">
+                            <el-input v-model="form.espesorPromedioMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Dimensiones -->
+                <el-col :span="24">
+                    <div class="texto-ancho-full">
+                        Dimensiones
+                    </div>
+                </el-col>
+                <!-- d 1 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        d 1
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraUno">
+                            <el-input v-model="form.dUnoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraDos">
+                            <el-input v-model="form.dUnoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraTres">
+                            <el-input v-model="form.dUnoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraCuatro">
+                            <el-input v-model="form.dUnoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- d 2 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        d 2
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraUno">
+                            <el-input v-model="form.dDosMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraDos">
+                            <el-input v-model="form.dDosMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraTres">
+                            <el-input v-model="form.dDosMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraCuatro">
+                            <el-input v-model="form.dDosMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h 1-->
+                <el-col :span="24">
+                    <div class="texto">
+                        h 1
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraUno">
+                            <el-input v-model="form.hUnoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraDos">
+                            <el-input v-model="form.hUnoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraTres">
+                            <el-input v-model="form.hUnoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraCuatro">
+                            <el-input v-model="form.hUnoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h 2 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        h 2
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraUno">
+                            <el-input v-model="form.hDosMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraDos">
+                            <el-input v-model="form.hDosMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraTres">
+                            <el-input v-model="form.hDosMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraCuatro">
+                            <el-input v-model="form.hDosMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h refrentado -->
+                <el-col :span="24">
+                    <div class="texto">
+                        h refrentado
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                </el-col>
+                <!-- Dimensiones Corregidas -->
+                <el-col :span="24">
+                    <div class="texto-ancho-full">
+                        Dimensiones Corregidas
+                    </div>
+                </el-col>
+                <!-- d 1 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        d 1'
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraUnoCorregida">
+                            <el-input v-model="form.dUnoMuestraUnoCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraDosCorregida">
+                            <el-input v-model="form.dUnoMuestraDosCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraTresCorregida">
+                            <el-input v-model="form.dUnoMuestraTresCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dUnoMuestraCuatroCorregida">
+                            <el-input v-model="form.dUnoMuestraCuatroCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- d 2 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        d 2'
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraUnoCorregida">
+                            <el-input v-model="form.dDosMuestraUnoCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraDosCorregida">
+                            <el-input v-model="form.dDosMuestraDosCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraTresCorregida">
+                            <el-input v-model="form.dDosMuestraTresCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="dDosMuestraCuatroCorregida">
+                            <el-input v-model="form.dDosMuestraCuatroCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h 1-->
+                <el-col :span="24">
+                    <div class="texto">
+                        h 1'
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraUnoCorregida">
+                            <el-input v-model="form.hUnoMuestraUnoCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraDosCorregida">
+                            <el-input v-model="form.hUnoMuestraDosCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraTresCorregida">
+                            <el-input v-model="form.hUnoMuestraTresCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hUnoMuestraCuatroCorregida">
+                            <el-input v-model="form.hUnoMuestraCuatroCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h 2 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        h 2'
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraUnoCorregida">
+                            <el-input v-model="form.hDosMuestraUnoCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraDosCorregida">
+                            <el-input v-model="form.hDosMuestraDosCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraTresCorregida">
+                            <el-input v-model="form.hDosMuestraTresCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="hDosMuestraCuatroCorregida">
+                            <el-input v-model="form.hDosMuestraCuatroCorregida"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- h refrentado -->
+                <el-col :span="24">
+                    <div class="texto">
+                        h refrentado'
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                    <div class="texto-muestras">
+                    </div>
+                </el-col>
+                <!-- Masa -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Masa
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaMuestraUno">
+                            <el-input v-model="form.masaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaMuestraDos">
+                            <el-input v-model="form.masaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaMuestraTres">
+                            <el-input v-model="form.masaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaMuestraCuatro">
+                            <el-input v-model="form.masaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Error -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Error
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="errorMuestraUno">
+                            <el-input v-model="form.errorMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="errorMuestraDos">
+                            <el-input v-model="form.errorMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="errorMuestraTres">
+                            <el-input v-model="form.errorMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="errorMuestraCuatro">
+                            <el-input v-model="form.errorMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Masa Corregida -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Masa Corregida
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaCorregidaMuestraUno">
+                            <el-input v-model="form.masaCorregidaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaCorregidaMuestraDos">
+                            <el-input v-model="form.masaCorregidaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaCorregidaMuestraTres">
+                            <el-input v-model="form.masaCorregidaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="masaCorregidaMuestraCuatro">
+                            <el-input v-model="form.masaCorregidaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Volumen -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Volumen
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMuestraUno">
+                            <el-input v-model="form.volumenMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMuestraDos">
+                            <el-input v-model="form.volumenMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMuestraTres">
+                            <el-input v-model="form.volumenMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMuestraCuatro">
+                            <el-input v-model="form.volumenMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Volumen metro cubico-->
+                <el-col :span="24">
+                    <div class="texto">
+                        Volumen m3
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMetroCubicoMuestraUno">
+                            <el-input v-model="form.volumenMetroCubicoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMetroCubicoMuestraDos">
+                            <el-input v-model="form.volumenMetroCubicoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMetroCubicoMuestraTres">
+                            <el-input v-model="form.volumenMetroCubicoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="volumenMetroCubicoMuestraCuatro">
+                            <el-input v-model="form.volumenMetroCubicoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Densidad -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Densidad (masa / vol)
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="densidadMuestraUno">
+                            <el-input v-model="form.densidadMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="densidadMuestraDos">
+                            <el-input v-model="form.densidadMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="densidadMuestraTres">
+                            <el-input v-model="form.densidadMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="densidadMuestraCuatro">
+                            <el-input v-model="form.densidadMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Area -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Área = 0,196 ( d1'+d2' )2
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="areaMuestraUno">
+                            <el-input v-model="form.areaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="areaMuestraDos">
+                            <el-input v-model="form.areaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="areaMuestraTres">
+                            <el-input v-model="form.areaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="areaMuestraCuatro">
+                            <el-input v-model="form.areaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- P (Carga de ensayo) -->
+                <el-col :span="24">
+                    <div class="texto">
+                        P (Carga de ensayo)
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMuestraUno">
+                            <el-input v-model="form.cargaEnsayoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMuestraDos">
+                            <el-input v-model="form.cargaEnsayoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMuestraTres">
+                            <el-input v-model="form.cargaEnsayoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMuestraCuatro">
+                            <el-input v-model="form.cargaEnsayoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- X 1000 -->
+                <el-col :span="24">
+                    <div class="texto">
+                        X 1000
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMilMuestraUno">
+                            <el-input v-model="form.cargaEnsayoMilMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMilMuestraDos">
+                            <el-input v-model="form.cargaEnsayoMilMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMilMuestraTres">
+                            <el-input v-model="form.cargaEnsayoMilMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cargaEnsayoMilMuestraCuatro">
+                            <el-input v-model="form.cargaEnsayoMilMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Tiempo de Carga -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Tiempo de Carga
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tiempoCargaMuestraUno">
+                            <el-input v-model="form.tiempoCargaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tiempoCargaMuestraDos">
+                            <el-input v-model="form.tiempoCargaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tiempoCargaMuestraTres">
+                            <el-input v-model="form.tiempoCargaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tiempoCargaMuestraCuatro">
+                            <el-input v-model="form.tiempoCargaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Resistencia compresión (P/S) -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Resistencia compresión (P/S)
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="errorresistenciaCompresionraUno">
+                            <el-input v-model="form.resistenciaCompresionMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCompresionMuestraDos">
+                            <el-input v-model="form.resistenciaCompresionMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCompresionMuestraTres">
+                            <el-input v-model="form.resistenciaCompresionMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCompresionMuestraCuatro">
+                            <el-input v-model="form.resistenciaCompresionMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Factores Conversion -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Factores de conversión cil. 15x30  a  cubo 20x20
+                        <br>
+                        Fcil < a 20 MPa * 1,25 | Fcil > 20 Mpa ver nota (*)
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="factoresConversionMuestraUno">
+                            <el-input v-model="form.factoresConversionMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="factoresConversionMuestraDos">
+                            <el-input v-model="form.factoresConversionMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="factoresConversionMuestraTres">
+                            <el-input v-model="form.factoresConversionMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="factoresConversionMuestraCuatro">
+                            <el-input v-model="form.factoresConversionMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Resistencia Corregida -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Resistencia Corregida
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCorregidaMuestraUno">
+                            <el-input v-model="form.resistenciaCorregidaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCorregidaMuestraDos">
+                            <el-input v-model="form.resistenciaCorregidaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCorregidaMuestraTres">
+                            <el-input v-model="form.resistenciaCorregidaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="resistenciaCorregidaMuestraCuatro">
+                            <el-input v-model="form.resistenciaCorregidaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Velocidad de ensayo -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Velocidad de ensayo
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadEnsayoMuestraUno">
+                            <el-input v-model="form.velocidadEnsayoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadEnsayoMuestraDos">
+                            <el-input v-model="form.velocidadEnsayoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadEnsayoMuestraTres">
+                            <el-input v-model="form.velocidadEnsayoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadEnsayoMuestraCuatro">
+                            <el-input v-model="form.velocidadEnsayoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Tipo rotura -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Tipo rotura
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tipoRoturaMuestraUno">
+                            <el-input v-model="form.tipoRoturaMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tipoRoturaMuestraDos">
+                            <el-input v-model="form.tipoRoturaMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tipoRoturaMuestraTres">
+                            <el-input v-model="form.tipoRoturaMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="tipoRoturaMuestraCuatro">
+                            <el-input v-model="form.tipoRoturaMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Aseguramiento (por Rango) -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Aseguramiento (por Rango)
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="aseguramientoMuestraUno">
+                            <el-input v-model="form.aseguramientoMuestraUno"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="aseguramientoMuestraDos">
+                            <el-input v-model="form.aseguramientoMuestraDos"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="aseguramientoMuestraTres">
+                            <el-input v-model="form.aseguramientoMuestraTres"></el-input>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="aseguramientoMuestraCuatro">
+                            <el-input v-model="form.aseguramientoMuestraCuatro"></el-input>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Cumple -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Cumple
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cumpleMuestraUno">
+                            <el-checkbox v-model="form.cumpleMuestraUno"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cumpleMuestraDos">
+                            <el-checkbox v-model="form.cumpleMuestraDos"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cumpleMuestraTres">
+                            <el-checkbox v-model="form.cumpleMuestraTres"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="cumpleMuestraCuatro">
+                            <el-checkbox v-model="form.cumpleMuestraCuatro"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                </el-col>
+                <!-- Velocidad -->
+                <el-col :span="24">
+                    <div class="texto">
+                        Velocidad
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadMuestraUno">
+                            <el-checkbox v-model="form.velocidadMuestraUno"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadMuestraDos">
+                            <el-checkbox v-model="form.velocidadMuestraDos"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadMuestraTres">
+                            <el-checkbox v-model="form.velocidadMuestraTres"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                    <div class="texto-muestras">
+                        <el-form-item prop="velocidadMuestraCuatro">
+                            <el-checkbox v-model="form.velocidadMuestraCuatro"></el-checkbox>
+                        </el-form-item>
+                    </div>
+                </el-col>
+
+            </el-row>
+            <el-divider />
+            <el-row>
+                <el-col :span="24">
+                    <div class="texto-ancho-full">
+                        Observaciones
+                    </div>
+                </el-col>
+                <el-col :span="24">
+                    <el-form-item prop="observaciones">
+                        <el-input type="textarea" autosize v-model="form.observaciones">
+                        </el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8" >
+                    <el-form-item label="Ensayado por" prop="ensayadoPor">
+                        <el-input v-model="form.ensayadoPor"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8" >
+                    <el-form-item label="Fecha" prop="fecha">
+                        <el-date-picker
+                            v-model="form.fecha"
+                            type="date"
+                            size="mini">
+                        </el-date-picker>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="8" >
+                    <el-form-item label="V°B°" prop="vb">
+                        <el-input v-model="form.vb"></el-input>
+                    </el-form-item>
+                </el-col>
+            </el-row>
+            <el-divider />
+            <el-form-item class="container-botones" prop="">
+                <el-button type="primary" @click="onSubmit('formularioCompresion')" plain>Crear Ensayo</el-button>
+                <el-popconfirm
+                    confirm-button-text='Vaciar campos'
+                    cancel-button-text='volver'
+                    @confirm="resetForm('formularioCompresion')"
+                    placement="right"
+                    icon="el-icon-info"
+                    icon-color="red"
+                    :hide-icon="true"
+                    title="Está seguro quiere vaciar todos los campos?">
+                    <el-button slot="reference" plain>Vaciar campos</el-button>
+                </el-popconfirm>
+            </el-form-item>
+        </el-form>
+    </div>
+</template>
+
+<script>
+    import Tools from '../../../tools.js';
+
+    export default {
+        data() {
+            return {
+                urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-ensayo-compresion`,
+                form: {
+                    numMuestra: '',
+                    OTT: '',
+                    numInforme: '',
+                    camaraHumeda: '',
+                    piscina: '',
+                    balanza: '',
+                    numPieDeMetro: '',
+                    numPrensa: '',
+                    numCronometro: '',
+                    errorTrescientosMm: '',
+                    numMarmita: '',
+                    numDispositivoRefrentado: '',
+                    numMicrometro: '',
+                    numMoldeMuestraUno: '',
+                    numMoldeMuestraDos: '',
+                    numMoldeMuestraTres: '',
+                    numMoldeMuestraCuatro: '',
+                    fechaConfeccionMuestraUno: '',
+                    fechaConfeccionMuestraDos: '',
+                    fechaConfeccionMuestraTres: '',
+                    fechaConfeccionMuestraCuatro: '',
+                    fechaEnsayoMuestraUno: '',
+                    fechaEnsayoMuestraDos: '',
+                    fechaEnsayoMuestraTres: '',
+                    fechaEnsayoMuestraCuatro: '',
+                    edadDiasMuestraUno: '',
+                    edadDiasMuestraDos: '',
+                    edadDiasMuestraTres: '',
+                    edadDiasMuestraCuatro: '',
+                    refrentadoMuestraUno: '',
+                    refrentadoMuestraDos: '',
+                    refrentadoMuestraTres: '',
+                    refrentadoMuestraCuatro: '',
+                    perpendicularidadMuestraUno: '',
+                    perpendicularidadMuestraDos: '',
+                    perpendicularidadMuestraTres: '',
+                    perpendicularidadMuestraCuatro: '',
+                    planeidadMuestraUno: '',
+                    planeidadMuestraDos: '',
+                    planeidadMuestraTres: '',
+                    planeidadMuestraCuatro: '',
+                    espesorSuperiorMuestraUno: '',
+                    espesorSuperiorMuestraDos: '',
+                    espesorSuperiorMuestraTres: '',
+                    espesorInferiorMuestraCuatro: '',
+                    espesorInferiorMuestraUno: '',
+                    espesorInferiorMuestraDos: '',
+                    espesorInferiorMuestraTres: '',
+                    espesorInferiorMuestraCuatro: '',
+                    espesorPromedioMuestraUno: '',
+                    espesorPromedioMuestraDos: '',
+                    espesorPromedioMuestraTres: '',
+                    espesorPromedioMuestraCuatro: '',
+                    dUnoMuestraUno: '',
+                    dUnoMuestraDos: '',
+                    dUnoMuestraTres: '',
+                    dUnoMuestraCuatro: '',
+                    dDosMuestraUno: '',
+                    dDosMuestraDos: '',
+                    dDosMuestraTres: '',
+                    dDosMuestraCuatro: '',
+                    hUnoMuestraUno: '',
+                    hUnoMuestraDos: '',
+                    hUnoMuestraTres: '',
+                    hUnoMuestraCuatro: '',
+                    hDosMuestraUno: '',
+                    hDosMuestraDos: '',
+                    hDosMuestraTres: '',
+                    hDosMuestraCuatro: '',
+                    dUnoMuestraUnoCorregida: '',
+                    dUnoMuestraDosCorregida: '',
+                    dUnoMuestraTresCorregida: '',
+                    dUnoMuestraCuatroCorregida: '',
+                    dDosMuestraUnoCorregida: '',
+                    dDosMuestraDosCorregida: '',
+                    dDosMuestraTresCorregida: '',
+                    dDosMuestraCuatroCorregida: '',
+                    hUnoMuestraUnoCorregida: '',
+                    hUnoMuestraDosCorregida: '',
+                    hUnoMuestraTresCorregida: '',
+                    hUnoMuestraCuatroCorregida: '',
+                    hDosMuestraUnoCorregida: '',
+                    hDosMuestraDosCorregida: '',
+                    hDosMuestraTresCorregida: '',
+                    hDosMuestraCuatroCorregida: '',
+                    masaMuestraUno: '',
+                    masaMuestraDos: '',
+                    masaMuestraTres: '',
+                    masaMuestraCuatro: '',
+                    errorMuestraUno: '',
+                    errorMuestraDos: '',
+                    errorMuestraTres: '',
+                    errorMuestraCuatro: '',
+                    masaCorregidaMuestraUno: '',
+                    masaCorregidaMuestraDos: '',
+                    masaCorregidaMuestraTres: '',
+                    masaCorregidaMuestraCuatro: '',
+                    volumenMuestraUno: '',
+                    volumenMuestraDos: '',
+                    volumenMuestraTres: '',
+                    volumenMuestraCuatro: '',
+                    volumenMetroCubicoMuestraUno: '',
+                    volumenMetroCubicoMuestraDos: '',
+                    volumenMetroCubicoMuestraTres: '',
+                    volumenMetroCubicoMuestraCuatro: '',
+                    densidadMuestraUno: '',
+                    densidadMuestraDos: '',
+                    densidadMuestraTres: '',
+                    densidadMuestraCuatro: '',
+                    areaMuestraUno: '',
+                    areaMuestraDos: '',
+                    areaMuestraTres: '',
+                    areaMuestraCuatro: '',
+                    cargaEnsayoMuestraUno: '',
+                    cargaEnsayoMuestraDos: '',
+                    cargaEnsayoMuestraTres: '',
+                    cargaEnsayoMuestraCuatro: '',
+                    cargaEnsayoMilMuestraUno: '',
+                    cargaEnsayoMilMuestraDos: '',
+                    cargaEnsayoMilMuestraTres: '',
+                    cargaEnsayoMilMuestraCuatro: '',
+                    tiempoCargaMuestraUno: '',
+                    tiempoCargaMuestraDos: '',
+                    tiempoCargaMuestraTres: '',
+                    tiempoCargaMuestraCuatro: '',
+                    resistenciaCompresionMuestraUno: '',
+                    resistenciaCompresionMuestraDos: '',
+                    resistenciaCompresionMuestraTres: '',
+                    resistenciaCompresionMuestraCuatro: '',
+                    factoresConversionMuestraUno: '',
+                    factoresConversionMuestraDos: '',
+                    factoresConversionMuestraTres: '',
+                    factoresConversionMuestraCuatro: '',
+                    resistenciaCorregidaMuestraUno: '',
+                    resistenciaCorregidaMuestraDos: '',
+                    resistenciaCorregidaMuestraTres: '',
+                    resistenciaCorregidaMuestraCuatro: '',
+                    velocidadEnsayoMuestraUno: '',
+                    velocidadEnsayoMuestraDos: '',
+                    velocidadEnsayoMuestraTres: '',
+                    velocidadEnsayoMuestraCuatro: '',
+                    tipoRoturaMuestraUno: '',
+                    tipoRoturaMuestraDos: '',
+                    tipoRoturaMuestraTres: '',
+                    tipoRoturaMuestraCuatro: '',
+                    aseguramientoMuestraUno: '',
+                    aseguramientoMuestraDos: '',
+                    aseguramientoMuestraTres: '',
+                    aseguramientoMuestraCuatro: '',
+                    cumpleMuestraUno: '',
+                    cumpleMuestraDos: '',
+                    cumpleMuestraTres: '',
+                    cumpleMuestraCuatro: '',
+                    velocidadMuestraUno: '',
+                    velocidadMuestraDos: '',
+                    velocidadMuestraTres: '',
+                    velocidadMuestraCuatro: '',
+                    observaciones: '',
+                    ensayadoPor: '',
+                    fecha: '',
+                    vb: ''
+                },
+                reglas: {
+                    numMuestra: [ { required: true, message: '', trigger: 'blur' } ],
+                    OTT: [ { required: true, message: '', trigger: 'blur' } ],
+                    numInforme: [ { required: true, message: '', trigger: 'blur' } ],
+                    camaraHumeda: [ { required: true, message: '', trigger: 'blur' } ],
+                    piscina: [ { required: true, message: '', trigger: 'blur' } ],
+                    balanza: [ { required: true, message: '', trigger: 'blur' } ],
+                    numPieDeMetro: [ { required: true, message: '', trigger: 'blur' } ],
+                    numPrensa: [ { required: true, message: '', trigger: 'blur' } ],
+                    numCronometro: [ { required: true, message: '', trigger: 'blur' } ],
+                    errorTrescientosMm: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMarmita: [ { required: true, message: '', trigger: 'blur' } ],
+                    numDispositivoRefrentado: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMicrometro: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMoldeMuestraUno: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMoldeMuestraDos: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMoldeMuestraTres: [ { required: true, message: '', trigger: 'blur' } ],
+                    numMoldeMuestraCuatro: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaConfeccionMuestraUno: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaConfeccionMuestraDos: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaConfeccionMuestraTres: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaConfeccionMuestraCuatro: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaEnsayoMuestraUno: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaEnsayoMuestraDos: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaEnsayoMuestraTres: [ { required: true, message: '', trigger: 'blur' } ],
+                    fechaEnsayoMuestraCuatro: [ { required: true, message: '', trigger: 'blur' } ],
+                    edadDiasMuestraUno: [ { required: true, message: '', trigger: 'blur' } ],
+                    edadDiasMuestraDos: [ { required: true, message: '', trigger: 'blur' } ],
+                    edadDiasMuestraTres: [ { required: true, message: '', trigger: 'blur' } ],
+                    edadDiasMuestraCuatro: [ { required: true, message: '', trigger: 'blur' } ],
+                }
+            }
+        },
+        methods: {
+            name() {
+
+            }
+        },
+        watch: {
+            'form.volumenMetroCubicoMuestraUno': function (newVal, oldVal){
+                this.form.densidadMuestraUno = (parseInt(this.form.masaCorregidaMuestraUno) / parseInt(this.form.volumenMetroCubicoMuestraUno)).toFixed(2);
+            },
+            'form.masaCorregidaMuestraUno': function (newVal, oldVal){
+                this.form.densidadMuestraUno = (parseInt(this.form.masaCorregidaMuestraUno) / parseInt(this.form.volumenMetroCubicoMuestraUno)).toFixed(2);
+            },
+            'form.masaCorregidaMuestraDos': function (newVal, oldVal){
+                this.form.densidadMuestraDos = (parseInt(this.form.masaCorregidaMuestraDos) / parseInt(this.form.volumenMetroCubicoMuestraDos)).toFixed(2);
+            },
+            'form.volumenMetroCubicoMuestraDos': function (newVal, oldVal){
+                this.form.densidadMuestraDos = (parseInt(this.form.masaCorregidaMuestraDos) / parseInt(this.form.volumenMetroCubicoMuestraDos)).toFixed(2);
+            },
+            'form.masaCorregidaMuestraTres': function (newVal, oldVal){
+                this.form.densidadMuestraTres = (parseInt(this.form.masaCorregidaMuestraTres) / parseInt(this.form.volumenMetroCubicoMuestraTres)).toFixed(2);
+            },
+            'form.volumenMetroCubicoMuestraTres': function (newVal, oldVal){
+                this.form.densidadMuestraTres = (parseInt(this.form.masaCorregidaMuestraTres) / parseInt(this.form.volumenMetroCubicoMuestraTres)).toFixed(2);
+            },
+            'form.masaCorregidaMuestraCuatro': function (newVal, oldVal){
+                this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(2);
+            },
+            'form.volumenMetroCubicoMuestraCuatro': function (newVal, oldVal){
+                this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(2);
+            },
+        },
+    }
+</script>
+
+<style scoped lang="scss">
+    .contenedor-vue{
+        background-color: #f5f5f5;
+        padding: 10px;
+        line-height: 20px;
+        height: auto;
+        overflow: auto;
+        /deep/  .el-form-item__content {
+            line-height: 20px;
+        }
+        /deep/  .el-form-item__label {
+            line-height: 20px;
+        }
+        /deep/  .el-input__inner {
+            line-height: 20px;
+            height: 20px;
+        }
+        /deep/  .el-col{
+            padding: 3px;
+        }
+        /deep/  .el-divider--horizontal {
+            display: block;
+            height: 1px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        /deep/  .el-form-item__error {
+            top: 10px;
+            font-size: 14px;
+            padding-left: 15px;
+            color: #ffffff00;
+            z-index: -1;
+        }
+        /deep/  .el-form-item__label {
+            width: auto !important;
+        }
+        /deep/  .el-form-item__content {
+            margin: 0px !important;
+            display: flex;
+        }
+        /deep/  .el-form-item {
+            white-space: nowrap;
+            margin-bottom: 0px;
+        }
+        /deep/  .el-input--mini .el-input__icon {
+            line-height: 20px;
+        }
+        .texto{
+            min-width: 200px;
+            width: 28%;
+            display: flex;
+            border-style: none solid none none;
+            border-color: #adb0b7;
+            border-width: 1px;
+            padding: 0px 10px;
+        }
+        .texto-ancho-full{
+            min-width: 200px;
+            width: 100%;
+            display: flex;
+            border-style: none solid none none;
+            border-color: #adb0b7;
+            border-width: 1px;
+            padding: 0px 10px;
+        }
+        .texto-muestras{
+            display: flex;
+            width: 18%;
+            border-style: none solid none none;
+            border-color: #484b50;
+            border-width: 1px;
+            padding: 0px 10px;
+        }
+        .muestras{
+            .el-col{
+                flex-wrap: nowrap;
+                display: flex;
+                border-style: solid none none none;
+                border-color: #adb0b7;
+                border-width: 1px;
+            }
+        }
+        .contenedor-botones{
+            padding-top: 20px;
+        }
+    }
+</style>
+/*
+border-left-style: solid;
+        border-top-style: solid;
+        border-left-color: #8e9198;
+        border-top-color: #8e9198;
+        border-left-width: 1px;
+        border-top-width: 1px;
+
+
+
+*/

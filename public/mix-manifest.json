@@ -1,8 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
     "/js/vue/formulario.js": "/js/vue/formulario.js",
     "/css/app.css": "/css/app.css",
     "/css/layout.css": "/css/layout.css",
+    "/js/app.js": "/js/app.js",
     "/js/bundle.js": "/js/bundle.js",
     "/lib/semantic/semantic.min.js": "/lib/semantic/semantic.min.js",
     "/css/semantic.min.css": "/css/semantic.min.css"

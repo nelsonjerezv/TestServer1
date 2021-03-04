@@ -9,7 +9,7 @@
                 </el-menu-item>
                 <el-submenu index="2">
                     <template slot="title">
-                        <span slot="title">Formularios</span>
+                        <span slot="title">OTT</span>
                     </template>
                     <el-menu-item-group>
                         <el-menu-item index="2-1" @click="listadoOTTs">
@@ -21,6 +21,26 @@
                     </el-menu-item-group>
                     <el-menu-item-group>
                         <el-menu-item index="2-3" disabled>item three</el-menu-item>
+                    </el-menu-item-group>
+                    <!-- <el-submenu index="2-4">
+                        <span slot="title">item four</span>
+                        <el-menu-item index="2-4-1">item one</el-menu-item>
+                    </el-submenu> -->
+                </el-submenu>
+                <el-submenu index="3">
+                    <template slot="title">
+                        <span slot="title">Ensayos</span>
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="3-1" @click="listadoEnsayos">
+                            Listado Ensayos
+                        </el-menu-item>
+
+                    </el-menu-item-group>
+                    <el-menu-item-group>
+                        <el-menu-item index="3-2" @click="nuevoEnsayo">
+                            Nuevo Ensayo
+                        </el-menu-item>
                     </el-menu-item-group>
                     <!-- <el-submenu index="2-4">
                         <span slot="title">item four</span>
@@ -54,6 +74,12 @@
             },
             listadoOTTs() {
                 this.$emit("cambiaMain", "ListadoFormularios");
+            },
+            nuevoEnsayo() {
+                this.$emit("cambiaMain", "EnsayoCompresionProbetasCilindricas");
+            },
+            listadoEnsayos() {
+                this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
             }
         }
     }

@@ -19,6 +19,14 @@
                         v-if="componenteMain == 'OrdenTrabajoTerreno'"
                         @cambiaMain="cambiarMain"
                     />
+                    <ensayo-compresion-probetas-cilindricas
+                        v-if="componenteMain == 'EnsayoCompresionProbetasCilindricas' "
+                        @cambiaMain="cambiarMain"
+                    />
+                    <listado-ensayos-compresion-probetas-cilindricas
+                        v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
+                        @cambiaMain="cambiarMain"
+                    />
                 </el-main>
                 <el-footer>Footer</el-footer>
             </el-container>
@@ -30,19 +38,24 @@
     import SidebarFormularios from '../../components/formularios/SidebarFormularios.vue';
     import OrdenTrabajoTerreno from '../../components/formularios/OrdenTrabajoTerreno.vue';
     import ListadoFormularios from '../../components/formularios/ListadoFormularios.vue';
+    import EnsayoCompresionProbetasCilindricas from '../../components/formularios/EnsayoCompresionProbetasCilindricas.vue';
+    import ListadoEnsayosCompresionProbetasCilindricas from '../../components/formularios/ListadoEnsayosCompresionProbetasCilindricas.vue';
 
     export default {
         components:{
             SidebarFormularios,
             OrdenTrabajoTerreno,
-            ListadoFormularios
+            ListadoFormularios,
+            EnsayoCompresionProbetasCilindricas,
+            ListadoEnsayosCompresionProbetasCilindricas
         },
         props: [
             'ordenes'
         ],
         data() {
             return {
-                componenteMain: 'OrdenTrabajoTerreno'
+                // componenteMain: 'OrdenTrabajoTerreno'
+                componenteMain: 'EnsayoCompresionProbetasCilindricas'
             };
         },
         mounted() {
