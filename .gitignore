@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
+/public/js
 /public/js/vue/*
 /storage/*.key
 /vendor
@@ -12,3 +13,4 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+.env.examples

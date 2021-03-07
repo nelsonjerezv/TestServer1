@@ -5,7 +5,7 @@
             <el-input class="width-100" placeholder="Filtre por N° Cliente Obra" v-model="buscador"></el-input>
         </div>
         <div class="container-items-formulario">
-            <item-lista-formularios
+            <item-lista-ensayo
                 v-for="(orden, index) in ordenesDeTrabajo"
                 v-bind:itemLista="orden"
                 v-bind:index="index"
@@ -16,16 +16,16 @@
     </div>
 </template>
 <script>
-    import ItemListaFormularios from '../../components/formularios/ItemListaFormularios.vue';
+    import ItemListaEnsayo from '../../components/formularios/ItemListaEnsayo.vue';
 
     export default {
         components: {
-            ItemListaFormularios
+            ItemListaEnsayo
         },
         props: [],
         data(){
             return{
-                urltodasLasOrdenes: `${GLOBAL.URL}formularios/todas-las-ordenes`,
+                urltodasLasOrdenes: `${GLOBAL.URL}ensayos/todos-los-ensayos`,
                 ordenesDeTrabajo: '',
                 todasLasOrdenes: '',
                 buscador: ''

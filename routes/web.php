@@ -22,3 +22,31 @@ Route::post('/formularios/guardar-formulario', 'OrdenTrabajoTerrenoController@gu
 Route::post('/formularios/guardar-ensayo-compresion', 'OrdenTrabajoTerrenoController@guardarFormulario');
 Route::post('/formularios/eliminar-formulario', 'OrdenTrabajoTerrenoController@eliminarFormulario');
 Route::resource('formularios', 'OrdenTrabajoTerrenoController');
+
+
+Route::get('/ensayos', 'EnsayosHormigonController@index');
+Route::get('/ensayos/todos-los-ensayos', 'EnsayosHormigonController@todosLosEnsayos');
+Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
+Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
+Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
+Route::resource('ensayos', 'EnsayosHormigonController');
+
+
+
+Route::get('/informeHormigon', 'EnsayosHormigonController@index');
+
+Route::get('/imprimir-informe-hormigon/{indice}', function ($indice) {
+    // $pdf = PDF::loadView('informe_hormigon');
+    // return $pdf->download('informe_hormigon.pdf');
+
+    $pdf = PDF::loadView('informe_hormigon', ['indice' => $indice]);
+    return $pdf->stream();
+});
+
+Route::get('/imprimir-informe-hormigon', function () {
+    // $pdf = PDF::loadView('informe_hormigon');
+    // return $pdf->download('informe_hormigon.pdf');
+
+    $pdf = PDF::loadView('informe_hormigon');
+    return $pdf->download('informe_hormigon.pdf');
+});

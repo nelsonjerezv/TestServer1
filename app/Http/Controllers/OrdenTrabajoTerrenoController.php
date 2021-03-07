@@ -4,19 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\OrdenTrabajoTerreno;
+use App\Models\EnsayoProbetasHormigon;
 
 class OrdenTrabajoTerrenoController extends Controller
 {
     public function index(){
         $ordenes = $this->todasLasOrdenes();
+        $ensayos = $this->todosLosEnsayos();
         $datos = [
-            'ordenes' => $ordenes
+            'ordenes' => $ordenes,
+            'ensayos' => $ensayos
         ];
         return view('formularios', compact('datos'));
     }
 
     public function todasLasOrdenes(){
         return OrdenTrabajoTerreno::get();
+    }
+
+    public function todosLosEnsayos(){
+        return EnsayoProbetasHormigon::get();
     }
 
     public function eliminarFormulario(Request $request){
