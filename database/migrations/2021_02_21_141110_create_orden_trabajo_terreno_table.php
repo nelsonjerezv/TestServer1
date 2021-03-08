@@ -15,6 +15,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
     {
         Schema::create('orden_trabajo_terreno', function (Blueprint $table) {
             $table->increments('id');
+
             $table->string('num_cliente_obra', 100)->nullable();
             $table->string('ott_number_hf', 100)->nullable();
             $table->string('nombre_cliente', 100)->nullable();
@@ -31,7 +32,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('tipo_muestra', 100)->nullable();
             $table->string('amasada_hormigon', 100)->nullable();
             $table->string('asentamiento_cono', 100)->nullable();
-            $table->string('numero_informe', 100)->nullable();
+            $table->string('num_informe', 100)->nullable();
             $table->string('segregacion', 100)->nullable();
             $table->string('num_equipo_cono_abrams', 100)->nullable();
             $table->string('num_vibrador_inmersion', 100)->nullable();
@@ -40,7 +41,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('hora_muestreo', 100)->nullable();
             $table->string('hora_inicio_amasado', 100)->nullable();
             $table->string('t_ambiente', 100)->nullable();
-            $table->string('t_hormigon_muestreo', 100)->nullable();
+            $table->string('t_hormigon_mortero', 100)->nullable();
             $table->string('proveedor', 100)->nullable();
             $table->string('num_guia_despacho', 100)->nullable();
             $table->string('nombre_chofer', 100)->nullable();
@@ -86,6 +87,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('irregularidad_superficial_ml', 100)->nullable();
             $table->string('observaciones', 100)->nullable();
             $table->string('alteracion_muestra', 100)->nullable();
+            $table->string('observaciones_alteraciones_muestra', 100)->nullable();
             $table->string('laboratorista', 100)->nullable();
             $table->string('ayudante', 100)->nullable();
             $table->string('recibe_o_muestrea', 100)->nullable();
@@ -103,7 +105,6 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->string('testigos_ensayados_seis', 100)->nullable();
             $table->string('testigos_ensayados_cuatro', 100)->nullable();
             $table->string('testigos_ensayados_total', 100)->nullable();
-            $table->string('observaciones_alteraciones_muestra', 100)->nullable();
 
             $table->timestamps();
         });

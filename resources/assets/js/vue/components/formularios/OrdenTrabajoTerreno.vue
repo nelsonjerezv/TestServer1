@@ -72,8 +72,8 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="6" class="padding-5">
-                    <el-form-item class="form-item-no-label" prop="seccionOtros">
-                        <el-checkbox v-model="form.seccionOtros">Secci&oacute;n Otros</el-checkbox>
+                    <el-form-item class="form-item-no-label" prop="seccionOtrosHabilitada">
+                        <el-checkbox v-model="form.seccionOtrosHabilitada">Secci&oacute;n Otros</el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="6" class="padding-5">
@@ -582,27 +582,27 @@
                 <el-col :span="24" style="font-weight: 600" class="padding-5">Otros</el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Dens. Aparente Hormigón" prop="densAparenteHormigon">
-                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.densAparenteHormigon"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtrosHabilitada"  v-model="form.densAparenteHormigon"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Dens. Aparente Mortero" prop="densAparenteMortero">
-                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.densAparenteMortero"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtrosHabilitada"  v-model="form.densAparenteMortero"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" class="padding-5">
                     <el-form-item label="Índice Esclerométrico" prop="indiceEsclerometrico">
-                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.indiceEsclerometrico"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtrosHabilitada"  v-model="form.indiceEsclerometrico"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
                     <el-form-item label="Irregularidad Superficial" prop="irregularidadSuperficial">
-                        <el-checkbox :disabled="!form.seccionOtros"  v-model="form.irregularidadSuperficial"></el-checkbox>
+                        <el-checkbox :disabled="!form.seccionOtrosHabilitada"  v-model="form.irregularidadSuperficial"></el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="padding-5">
                     <el-form-item label="Irregularidad Superficial - cantidad ml" prop="irregularidadSuperficialMl">
-                        <el-input :disabled="!form.seccionOtros"  v-model="form.irregularidadSuperficialMl"></el-input>
+                        <el-input :disabled="!form.seccionOtrosHabilitada"  v-model="form.irregularidadSuperficialMl"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
@@ -805,7 +805,7 @@
                     aridosHormigonMuestraCuatro: '',
                     seccionTestigosHabilitada: false,
                     seccionAridosHabilitada: false,
-                    seccionOtros: false,
+                    seccionOtrosHabilitada: false,
                     seccionRetiroMuestrasHabilitada: '',
                     testigosExtraidosSeis: '0',
                     testigosExtraidosCuatro: '0',
