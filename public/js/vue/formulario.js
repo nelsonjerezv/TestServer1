@@ -74720,8 +74720,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             // componenteMain: 'OrdenTrabajoTerreno'
-            // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-            componenteMain: ''
+            componenteMain: 'EnsayoCompresionProbetasCilindricas'
         };
     },
     mounted: function mounted() {},
@@ -75942,7 +75941,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 aridosHormigonMuestraCuatro: '',
                 seccionTestigosHabilitada: false,
                 seccionAridosHabilitada: false,
-                seccionOtrosHabilitada: false,
+                seccionOtros: false,
                 seccionRetiroMuestrasHabilitada: '',
                 testigosExtraidosSeis: '0',
                 testigosExtraidosCuatro: '0',
@@ -76452,18 +76451,18 @@ var render = function() {
                     "el-form-item",
                     {
                       staticClass: "form-item-no-label",
-                      attrs: { prop: "seccionOtrosHabilitada" }
+                      attrs: { prop: "seccionOtros" }
                     },
                     [
                       _c(
                         "el-checkbox",
                         {
                           model: {
-                            value: _vm.form.seccionOtrosHabilitada,
+                            value: _vm.form.seccionOtros,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "seccionOtrosHabilitada", $$v)
+                              _vm.$set(_vm.form, "seccionOtros", $$v)
                             },
-                            expression: "form.seccionOtrosHabilitada"
+                            expression: "form.seccionOtros"
                           }
                         },
                         [_vm._v("Sección Otros")]
@@ -79426,7 +79425,7 @@ var render = function() {
                     },
                     [
                       _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                        attrs: { disabled: !_vm.form.seccionOtros },
                         model: {
                           value: _vm.form.densAparenteHormigon,
                           callback: function($$v) {
@@ -79456,7 +79455,7 @@ var render = function() {
                     },
                     [
                       _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                        attrs: { disabled: !_vm.form.seccionOtros },
                         model: {
                           value: _vm.form.densAparenteMortero,
                           callback: function($$v) {
@@ -79486,7 +79485,7 @@ var render = function() {
                     },
                     [
                       _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                        attrs: { disabled: !_vm.form.seccionOtros },
                         model: {
                           value: _vm.form.indiceEsclerometrico,
                           callback: function($$v) {
@@ -79516,7 +79515,7 @@ var render = function() {
                     },
                     [
                       _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                        attrs: { disabled: !_vm.form.seccionOtros },
                         model: {
                           value: _vm.form.irregularidadSuperficial,
                           callback: function($$v) {
@@ -79546,7 +79545,7 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                        attrs: { disabled: !_vm.form.seccionOtros },
                         model: {
                           value: _vm.form.irregularidadSuperficialMl,
                           callback: function($$v) {
