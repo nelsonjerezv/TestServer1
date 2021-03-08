@@ -48,7 +48,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['tipo_muestra'] = mb_strtoupper($request->formulario['tipoMuestra']);
         $formulario['amasada_hormigon'] = mb_strtoupper($request->formulario['amasadaHormigon']);
         $formulario['asentamiento_cono'] = mb_strtoupper($request->formulario['asentamientoCono']);
-        $formulario['numero_informe'] = mb_strtoupper($request->formulario['numInforme']);
+        $formulario['num_informe'] = mb_strtoupper($request->formulario['numInforme']);
         $formulario['segregacion'] = mb_strtoupper($request->formulario['segregacion']);
         $formulario['num_equipo_cono_abrams'] = mb_strtoupper($request->formulario['numEquipoConoAbrams']);
         $formulario['num_vibrador_inmersion'] = mb_strtoupper($request->formulario['numVibradorInmersion']);
@@ -57,7 +57,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['hora_muestreo'] = mb_strtoupper($request->formulario['horaMuestreo']);
         $formulario['hora_inicio_amasado'] = mb_strtoupper($request->formulario['horaInicioAmasado']);
         $formulario['t_ambiente'] = mb_strtoupper($request->formulario['tAmbiente']);
-        $formulario['t_hormigon_muestreo'] = mb_strtoupper($request->formulario['tHormigonMortero']);
+        $formulario['t_hormigon_mortero'] = mb_strtoupper($request->formulario['tHormigonMortero']);
         $formulario['proveedor'] = mb_strtoupper($request->formulario['proveedor']);
         $formulario['num_guia_despacho'] = mb_strtoupper($request->formulario['numGuiaDespacho']);
         $formulario['nombre_chofer'] = mb_strtoupper($request->formulario['nombreChofer']);
@@ -103,6 +103,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['irregularidad_superficial_ml'] = mb_strtoupper($request->formulario['irregularidadSuperficialMl']);
         $formulario['observaciones'] = mb_strtoupper($request->formulario['observaciones']);
         $formulario['alteracion_muestra'] = mb_strtoupper($request->formulario['alteracionMuestra']);
+        $formulario['observaciones_alteraciones_muestra'] = mb_strtoupper($request->formulario['observacionesAlteracionesMuestra']);
         $formulario['laboratorista'] = mb_strtoupper($request->formulario['laboratorista']);
         $formulario['ayudante'] = mb_strtoupper($request->formulario['ayudante']);
         $formulario['recibe_o_muestrea'] = mb_strtoupper($request->formulario['recibeOMuestrea']);
@@ -120,7 +121,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['testigos_ensayados_seis'] = mb_strtoupper($request->formulario['testigosEnsayadosSeis']);
         $formulario['testigos_ensayados_cuatro'] = mb_strtoupper($request->formulario['testigosEnsayadosCuatro']);
         $formulario['testigos_ensayados_total'] = mb_strtoupper($request->formulario['testigosEnsayadosTotal']);
-        $formulario['observaciones_alteraciones_muestra'] = mb_strtoupper($request->formulario['observacionesAlteracionesMuestra']);
+
 
         return OrdenTrabajoTerreno::create($formulario);
     }

@@ -25,7 +25,7 @@ class OrdenTrabajoTerreno extends Model
         'tipo_muestra',
         'amasada_hormigon',
         'asentamiento_cono',
-        'numero_informe',
+        'num_informe',
         'segregacion',
         'num_equipo_cono_abrams',
         'num_vibrador_inmersion',
@@ -34,7 +34,7 @@ class OrdenTrabajoTerreno extends Model
         'hora_muestreo',
         'hora_inicio_amasado',
         't_ambiente',
-        't_hormigon_muestreo',
+        't_hormigon_mortero',
         'proveedor',
         'num_guia_despacho',
         'nombre_chofer',
@@ -80,6 +80,7 @@ class OrdenTrabajoTerreno extends Model
         'irregularidad_superficial_ml',
         'observaciones',
         'alteracion_muestra',
+        'observaciones_alteraciones_muestra',
         'laboratorista',
         'ayudante',
         'recibe_o_muestrea',
@@ -97,6 +98,5 @@ class OrdenTrabajoTerreno extends Model
         'testigos_ensayados_seis',
         'testigos_ensayados_cuatro',
         'testigos_ensayados_total',
-        'observaciones_alteraciones_muestra'
     ];
 }
