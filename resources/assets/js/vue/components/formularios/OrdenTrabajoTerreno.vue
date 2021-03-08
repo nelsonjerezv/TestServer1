@@ -698,7 +698,7 @@
             </el-row>
             <el-divider class="el-divider-5"/>
             <el-form-item class="comentarios" prop="">
-                <el-button type="primary" @click="onSubmit('formularioOtt')" plain>Crear OTT</el-button>
+                <el-button type="primary" @click.prevent="onSubmit('formularioOtt')" plain>Crear OTT</el-button>
                 <el-popconfirm
                     confirm-button-text='Vaciar campos'
                     cancel-button-text='volver'
@@ -1069,8 +1069,8 @@
         },
         methods: {
             onSubmit(nombreFormulario) {
-                this.$refs[nombreFormulario].validate((valid) => {
-                    if (valid) {
+                // this.$refs[nombreFormulario].validate((valid) => {
+                //     if (valid) {
                         this.$http.post(this.urlGuardarFormulario,{
                             formulario: this.form
                         }).then(response => {
@@ -1082,11 +1082,11 @@
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
                         });
-                    } else {
-                        Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                        return false;
-                    }
-                });
+                //     } else {
+                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+                //         return false;
+                //     }
+                // });
             },
             resetForm(nombreFormulario) {
                 this.$refs[nombreFormulario].resetFields();

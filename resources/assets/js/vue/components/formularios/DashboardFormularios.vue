@@ -55,7 +55,8 @@
         data() {
             return {
                 // componenteMain: 'OrdenTrabajoTerreno'
-                componenteMain: 'EnsayoCompresionProbetasCilindricas'
+                // componenteMain: 'EnsayoCompresionProbetasCilindricas'
+                componenteMain: ''
             };
         },
         mounted() {

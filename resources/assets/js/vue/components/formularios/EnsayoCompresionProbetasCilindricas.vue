@@ -1137,7 +1137,7 @@
     export default {
         data() {
             return {
-                urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-ensayo-compresion`,
+                urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
                 form: {
                     numMuestra: '',
                     OTT: '',
@@ -1183,7 +1183,7 @@
                     espesorSuperiorMuestraUno: '',
                     espesorSuperiorMuestraDos: '',
                     espesorSuperiorMuestraTres: '',
-                    espesorInferiorMuestraCuatro: '',
+                    espesorSuperiorMuestraCuatro: '',
                     espesorInferiorMuestraUno: '',
                     espesorInferiorMuestraDos: '',
                     espesorInferiorMuestraTres: '',
@@ -1335,9 +1335,29 @@
             }
         },
         methods: {
-            name() {
-
-            }
+            onSubmit(nombreEnsayo) {
+                // this.$refs[nombreEnsayo].validate((valid) => {
+                //     if (valid) {
+                        this.$http.post(this.urlGuardarEnsayo,{
+                            ensayo: this.form
+                        }).then(response => {
+                            Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 8 segundos.", Tools.MENSAJE.EXITO, '', 8);
+                            setTimeout(()=>{
+                                this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
+                            }, 8000);
+                        }, response => {
+                            console.log(response)
+                            Tools.mensajeAlerta("No se pudo guardar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
+                        });
+                //     } else {
+                //         Tools.mensajeAlerta("Faltan camposque llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+                //         return false;
+                //     }
+                // });
+            },
+            resetForm(nombreFormulario) {
+                this.$refs[nombreFormulario].resetFields();
+            },
         },
         watch: {
             'form.volumenMetroCubicoMuestraUno': function (newVal, oldVal){
