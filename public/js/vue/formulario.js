@@ -74721,7 +74721,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             // componenteMain: 'OrdenTrabajoTerreno'
             // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-            componenteMain: ''
+            componenteMain: 'ListadoFormularios'
         };
     },
     mounted: function mounted() {},
@@ -76049,10 +76049,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             this.$http.post(this.urlGuardarFormulario, {
                 formulario: this.form
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 8 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 8);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 8);
                 setTimeout(function () {
                     _this.$emit("cambiaMain", "ListadoFormularios");
-                }, 8000);
+                }, 5);
             }, function (response) {
                 console.log(response);
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
@@ -80371,7 +80371,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -80389,7 +80388,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        clickEliminar: function clickEliminar() {
+        eliminarFormulario: function eliminarFormulario() {
             var _this = this;
 
             this.$http.post(this.urlEliminarFormulario, {
@@ -80401,10 +80400,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
             });
         },
-        clickEditar: function clickEditar() {
-            this.$http.get(this.urlEditarFormulario, {
-                id: this.item.id
-            });
+        verFormulario: function verFormulario() {
+            // this.$http.get(this.urlEditarFormulario,{
+            //     id: this.item.id
+            // });
+            console.log('ver formulario');
+        },
+        editarFormulario: function editarFormulario() {
+            // this.$http.get(this.urlEditarFormulario,{
+            //     id: this.item.id
+            // });
+            console.log('editar formulario');
         }
     }
 });
@@ -80435,7 +80441,10 @@ var render = function() {
         [
           _c(
             "el-button",
-            { attrs: { type: "primary", disabled: "", plain: "" } },
+            {
+              attrs: { type: "primary", plain: "" },
+              on: { click: _vm.verFormulario }
+            },
             [_vm._v("Ver")]
           ),
           _vm._v(" "),
@@ -80460,7 +80469,7 @@ var render = function() {
                 "hide-icon": true,
                 title: "Está seguro quiere eliminar el formulario?"
               },
-              on: { confirm: _vm.clickEliminar }
+              on: { confirm: _vm.eliminarFormulario }
             },
             [
               _c(
@@ -86918,7 +86927,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -86937,7 +86945,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        clickEliminar: function clickEliminar() {
+        eliminarEnsayo: function eliminarEnsayo() {
             var _this = this;
 
             this.$http.post(this.urlEliminarEnsayo, {
@@ -86949,15 +86957,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
             });
         },
-        clickEditar: function clickEditar() {
-            this.$http.get(this.urlEditarFormulario, {
-                id: this.item.id
-            });
+        editarEnsayo: function editarEnsayo() {
+            // this.$http.get(this.urlEditarFormulario,{
+            //     id: this.item.id
+            // });
+            console.log('editar ensayo');
         },
         exportarPDF: function exportarPDF() {
-            this.$http.get(this.urlExportarEnsayo, {
-                id: this.item.id
-            });
+            // this.$http.get(this.urlExportarEnsayo, {
+            //     id: this.item.id
+            // });
+            console.log('exportarPDF');
         }
     }
 });
@@ -87003,7 +87013,7 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "warning", plain: "" },
-              on: { click: _vm.editarFormulario }
+              on: { click: _vm.editarEnsayo }
             },
             [_vm._v("Editar")]
           ),
@@ -87020,7 +87030,7 @@ var render = function() {
                 "hide-icon": true,
                 title: "Está seguro quiere eliminar el formulario?"
               },
-              on: { confirm: _vm.clickEliminar }
+              on: { confirm: _vm.eliminarEnsayo }
             },
             [
               _c(
