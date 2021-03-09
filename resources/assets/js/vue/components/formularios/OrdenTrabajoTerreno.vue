@@ -1,6 +1,6 @@
 <template>
     <div class="contenedor-vue">
-        <el-form ref="formularioOtt" :model="form" :rules="reglas" label-width="150px">
+        <el-form ref="formularioOtt" :model="form" :rules="reglas" label-width="150px" class="no-click">
             <!-- CLIENTE OBRA / N° OTT -->
             <el-row class="margin-b-5">
                 <el-col :span="14" class="padding-5">
@@ -1112,6 +1112,9 @@
     }
 </script>
 <style scoped lang="scss">
+    .no-click {
+        pointer-events: none;
+    }
     .contenedor-vue{
         background-color: #f5f5f5;
         padding: 10px;
