@@ -9,7 +9,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['middleware' => ['cors']], function () {
     Route::get('/', function () {
         return redirect('/formularios');
     });
@@ -50,5 +49,3 @@ Route::group(['middleware' => ['cors']], function () {
         $pdf = PDF::loadView('informe_hormigon');
         return $pdf->download('informe_hormigon.pdf');
     });
-
-});

@@ -13,7 +13,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if ( config('app.usa_https') ) {
+            $this->app['request']->server->set('HTTPS', true);
+        } else {
+            $this->app['request']->server->set('HTTPS', false);
+        }
+
     }
 
     /**
@@ -23,6 +28,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if ( config('app.usa_https') ) {
+            $this->app['request']->server->set('HTTPS', true);
+        } else {
+            $this->app['request']->server->set('HTTPS', false);
+        }
     }
 }

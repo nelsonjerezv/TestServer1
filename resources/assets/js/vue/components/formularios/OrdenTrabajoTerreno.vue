@@ -1074,10 +1074,10 @@
                         this.$http.post(this.urlGuardarFormulario,{
                             formulario: this.form
                         }).then(response => {
-                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 8 segundos.", Tools.MENSAJE.EXITO, '', 8);
+                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 8);
                             setTimeout(()=>{
                                 this.$emit("cambiaMain", "ListadoFormularios");
-                            }, 8000);
+                            }, 5);
                         }, response => {
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
