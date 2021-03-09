@@ -2,6 +2,10 @@
 
 return [
 
+    // EXTRAS
+
+    'usa_https' => env('REDIRECT_HTTPS', false),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

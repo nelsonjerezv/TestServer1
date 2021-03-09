@@ -56,7 +56,7 @@
             return {
                 // componenteMain: 'OrdenTrabajoTerreno'
                 // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-                componenteMain: ''
+                componenteMain: 'ListadoFormularios'
             };
         },
         mounted() {

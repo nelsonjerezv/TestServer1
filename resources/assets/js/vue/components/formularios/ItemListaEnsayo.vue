@@ -8,12 +8,11 @@
             </div>
             <div class="item-contenedor-botones">
                 <el-button type="primary" @click="exportarPDF" plain>Ver como PDF</el-button>
-                <el-button type="warning" @click="editarFormulario" plain>Editar</el-button>
-                <!-- <el-button @click="clickEliminar" type="danger" plain>Eliminar</el-button> -->
+                <el-button type="warning" @click="editarEnsayo" plain>Editar</el-button>
                 <el-popconfirm
                     confirm-button-text='Eliminar'
                     cancel-button-text='volver'
-                    @confirm="clickEliminar"
+                    @confirm="eliminarEnsayo"
                     placement="top-end"
                     icon="el-icon-info"
                     icon-color="red"
@@ -45,7 +44,7 @@
             this.item = this.itemLista;
         },
         methods: {
-            clickEliminar() {
+            eliminarEnsayo() {
                 this.$http.post(this.urlEliminarEnsayo, {
                     id: this.item.id
                 }).then(response => {
@@ -55,15 +54,17 @@
                     Tools.mensajeAlerta("No se pudo eliminar el ensayoo.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
-            clickEditar() {
-                this.$http.get(this.urlEditarFormulario,{
-                    id: this.item.id
-                });
+            editarEnsayo() {
+                // this.$http.get(this.urlEditarFormulario,{
+                //     id: this.item.id
+                // });
+                console.log('editar ensayo');
             },
             exportarPDF(){
-                this.$http.get(this.urlExportarEnsayo, {
-                    id: this.item.id
-                });
+                // this.$http.get(this.urlExportarEnsayo, {
+                //     id: this.item.id
+                // });
+                console.log('exportarPDF');
             }
         },
     }

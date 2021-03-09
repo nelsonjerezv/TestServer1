@@ -6,13 +6,12 @@
                 <div class="item-atributo">Laboratorista: {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <el-button type="primary" disabled plain>Ver</el-button>
+                <el-button type="primary" @click="verFormulario"  plain>Ver</el-button>
                 <el-button type="warning" @click="editarFormulario" plain>Editar</el-button>
-                <!-- <el-button @click="clickEliminar" type="danger" plain>Eliminar</el-button> -->
                 <el-popconfirm
                     confirm-button-text='Eliminar'
                     cancel-button-text='volver'
-                    @confirm="clickEliminar"
+                    @confirm="eliminarFormulario"
                     placement="top-end"
                     icon="el-icon-info"
                     icon-color="red"
@@ -43,7 +42,7 @@
             this.item = this.itemLista;
         },
         methods: {
-            clickEliminar() {
+            eliminarFormulario() {
                 this.$http.post(this.urlEliminarFormulario,{
                     id: this.item.id
                 }).then(response => {
@@ -53,10 +52,17 @@
                     Tools.mensajeAlerta("No se pudo eliminar el formulario.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
-            clickEditar() {
-                this.$http.get(this.urlEditarFormulario,{
-                    id: this.item.id
-                });
+            verFormulario() {
+                // this.$http.get(this.urlEditarFormulario,{
+                //     id: this.item.id
+                // });
+                console.log('ver formulario');
+            },
+            editarFormulario() {
+                // this.$http.get(this.urlEditarFormulario,{
+                //     id: this.item.id
+                // });
+                console.log('editar formulario');
             },
         },
     }
