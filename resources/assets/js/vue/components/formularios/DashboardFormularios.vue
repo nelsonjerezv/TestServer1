@@ -18,10 +18,12 @@
                     <orden-trabajo-terreno
                         v-if="componenteMain == 'OrdenTrabajoTerreno'"
                         @cambiaMain="cambiarMain"
+                        :tipo-ott="tipoOTT"
                     />
                     <ensayo-compresion-probetas-cilindricas
                         v-if="componenteMain == 'EnsayoCompresionProbetasCilindricas' "
                         @cambiaMain="cambiarMain"
+                        :tipo-ensayo="tipoEnsayo"
                     />
                     <listado-ensayos-compresion-probetas-cilindricas
                         v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
@@ -56,14 +58,22 @@
             return {
                 // componenteMain: 'OrdenTrabajoTerreno'
                 // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-                componenteMain: 'ListadoFormularios'
+                componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+                tipoOTT: '',
+                tipoEnsayo: '',
             };
         },
         mounted() {
         },
         methods: {
             cambiarMain: function(contenido){
-                this.componenteMain = contenido;
+                this.componenteMain = contenido.vista;
+                if (contenido.vista === 'OrdenTrabajoTerreno') {
+                    this.tipoOTT = contenido.condicion;
+                }
+                if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
+                    this.tipoEnsayo = contenido.condicion;
+                }
             }
         }
     };

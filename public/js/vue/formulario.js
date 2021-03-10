@@ -74701,6 +74701,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -74721,14 +74723,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             // componenteMain: 'OrdenTrabajoTerreno'
             // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-            componenteMain: 'ListadoFormularios'
+            componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+            tipoOTT: '',
+            tipoEnsayo: ''
         };
     },
     mounted: function mounted() {},
 
     methods: {
         cambiarMain: function cambiarMain(contenido) {
-            this.componenteMain = contenido;
+            this.componenteMain = contenido.vista;
+            if (contenido.vista === 'OrdenTrabajoTerreno') {
+                this.tipoOTT = contenido.condicion;
+            }
+            if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
+                this.tipoEnsayo = contenido.condicion;
+            }
         }
     }
 });
@@ -74852,16 +74862,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", "");
         },
         nuevaOTT: function nuevaOTT() {
-            this.$emit("cambiaMain", "OrdenTrabajoTerreno");
+            this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
         },
         listadoOTTs: function listadoOTTs() {
-            this.$emit("cambiaMain", "ListadoFormularios");
+            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
         },
         nuevoEnsayo: function nuevoEnsayo() {
-            this.$emit("cambiaMain", "EnsayoCompresionProbetasCilindricas");
+            this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
         },
         listadoEnsayos: function listadoEnsayos() {
-            this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
+            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
         }
     }
 });
@@ -75119,7 +75129,7 @@ exports = module.exports = __webpack_require__(15)(false);
 
 
 // module
-exports.push([module.i, "\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -75853,6 +75863,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['tipoOtt'],
     data: function data() {
         var _reglas;
 
@@ -75860,6 +75871,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             labelPosition: 'left',
             unaDosColumnas: 24,
             urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario',
+            visualizacion: '',
             form: {
                 numClienteObra: '',
                 ottNumberHF: '',
@@ -76038,7 +76050,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     destroyed: function destroyed() {
         window.removeEventListener('resize', this.handleResize);
     },
-    mounted: function mounted() {},
+    mounted: function mounted() {
+        this.visualizacion = this.tipoOtt;
+    },
 
     methods: {
         onSubmit: function onSubmit(nombreFormulario) {
@@ -76049,10 +76063,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             this.$http.post(this.urlGuardarFormulario, {
                 formulario: this.form
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 8);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                 setTimeout(function () {
-                    _this.$emit("cambiaMain", "ListadoFormularios");
-                }, 5);
+                    _this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
+                }, 5000);
             }, function (response) {
                 console.log(response);
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
@@ -76068,6 +76082,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         },
         handleResize: function handleResize() {
             this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12;
+        }
+    },
+    computed: {
+        esClickeable: function esClickeable() {
+            return {
+                'no-click': this.visualizacion === 'ver'
+            };
         }
     },
     watch: {
@@ -76102,6 +76123,7 @@ var render = function() {
         "el-form",
         {
           ref: "formularioOtt",
+          class: _vm.esClickeable,
           attrs: { model: _vm.form, rules: _vm.reglas, "label-width": "150px" }
         },
         [
@@ -81997,16 +82019,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$http.post(this.urlGuardarEnsayo, {
                 ensayo: this.form
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 8 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 8);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                 setTimeout(function () {
-                    _this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
-                }, 8000);
+                    _this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
+                }, 5000);
             }, function (response) {
                 console.log(response);
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
             });
             //     } else {
-            //         Tools.mensajeAlerta("Faltan camposque llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+            //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
             //         return false;
             //     }
             // });
@@ -86766,38 +86788,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: [],
     data: function data() {
         return {
-            urltodasLasOrdenes: GLOBAL.URL + 'ensayos/todos-los-ensayos',
-            ordenesDeTrabajo: '',
-            todasLasOrdenes: '',
+            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
+            ensayosHormigon: '',
+            todosLosEnsayos: '',
             buscador: ''
         };
     },
     mounted: function mounted() {
-        this.getOrdenes();
+        this.getEnsayos();
     },
 
     methods: {
-        getOrdenes: function getOrdenes() {
+        getEnsayos: function getEnsayos() {
             var _this = this;
 
-            this.$http.get(this.urltodasLasOrdenes).then(function (response) {
-                _this.todasLasOrdenes = response.body;
-                _this.ordenesDeTrabajo = response.body;
+            this.$http.get(this.urlTodosLosEnsayos).then(function (response) {
+                _this.todosLosEnsayos = response.body;
+                _this.ensayosHormigon = response.body;
             }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, '', 5);
+                Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
             });
         },
-        filtraOrdenes: function filtraOrdenes() {
+        filtraEnsayos: function filtraEnsayos() {
             var _this2 = this;
 
-            this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
-                return orden.num_cliente_obra.includes(_this2.buscador);
+            this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
+                return ensayo.num_muestra.includes(_this2.buscador);
             });
         }
     },
     watch: {
         buscador: function buscador() {
-            this.filtraOrdenes();
+            this.filtraEnsayos();
         }
     }
 });
@@ -86937,7 +86959,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             item: '',
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
-            urlExportarEnsayo: GLOBAL.URL + 'imprimir-informe-hormigon'
+            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf'
         };
     },
     mounted: function mounted() {
@@ -86964,9 +86986,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             console.log('editar ensayo');
         },
         exportarPDF: function exportarPDF() {
-            // this.$http.get(this.urlExportarEnsayo, {
+            // this.$http.get(this.urlExportarEnsayoPdf, {
             //     id: this.item.id
             // });
+            window.open(this.urlExportarEnsayoPdf + '/' + this.item.id, '_blank');
             console.log('exportarPDF');
         }
     }
@@ -87077,7 +87100,7 @@ var render = function() {
         _vm._v(" "),
         _c("el-input", {
           staticClass: "width-100",
-          attrs: { placeholder: "Filtre por N° Cliente Obra" },
+          attrs: { placeholder: "Filtre por N° Muestra" },
           model: {
             value: _vm.buscador,
             callback: function($$v) {
@@ -87093,11 +87116,11 @@ var render = function() {
     _c(
       "div",
       { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
+      _vm._l(_vm.ensayosHormigon, function(orden, index) {
         return _c("item-lista-ensayo", {
           key: orden.id,
           attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getOrdenes }
+          on: { actualizar: _vm.getEnsayos }
         })
       }),
       1
@@ -87154,12 +87177,14 @@ var render = function() {
                   _vm._v(" "),
                   _vm.componenteMain == "OrdenTrabajoTerreno"
                     ? _c("orden-trabajo-terreno", {
+                        attrs: { "tipo-ott": _vm.tipoOTT },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e(),
                   _vm._v(" "),
                   _vm.componenteMain == "EnsayoCompresionProbetasCilindricas"
                     ? _c("ensayo-compresion-probetas-cilindricas", {
+                        attrs: { "tipo-ensayo": _vm.tipoEnsayo },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e(),

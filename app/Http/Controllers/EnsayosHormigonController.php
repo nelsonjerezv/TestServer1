@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\EnsayoProbetasHormigon;
+use PDF;
 
 class EnsayosHormigonController extends Controller
 {
@@ -191,5 +192,20 @@ class EnsayosHormigonController extends Controller
         $ensayo['vb'] = mb_strtoupper($request->ensayo['vb']);
 
         return EnsayoProbetasHormigon::create($ensayo);
+    }
+
+    public function exportarEnsayoPdf($id){
+        // dd($id);
+
+        $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+
+        // $snappy = App::make('snappy.pdf');
+        // $director_info_pdf = $snappy->getOutputFromHtml(view('informe_hormigon',compact('data'))->render());
+
+
+        // $pdf = \PDF::loadView('informe_hormigon',  compact('ensayo'));
+        $pdf = PDF::loadView('informe_hormigon');
+        $pdf->setOption('no-background', true);
+        return $pdf->stream();
     }
 }

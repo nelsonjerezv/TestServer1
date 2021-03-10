@@ -46,26 +46,29 @@
 <style type="text/css">
     table {
         width: 100%;
+        font-family:Arial, sans-serif;
     }
     .tg  {
         border-collapse:collapse;
-        border-color:black;
+        border-color:rgb(0, 184, 46);
+        font-family:Arial, sans-serif;
         border-spacing:0;
-        border-style:solid;
-        border-width:1px;
+        border-style:none;
+        border-width: 0px;
     }
     .tg td{
-        border-style:solid;
-        border-width:0px;
+        border-style:none;
+        border-width: 0px;
         font-family:Arial, sans-serif;
         font-size:12px;
         overflow:hidden;
         padding:5px 5px;
         word-break:normal;
+        white-space: nowrap;
     }
     .tg th{
-        border-style:solid;
-        border-width:0px;
+        border-style:none;
+        border-width: 0px;
         font-family:Arial, sans-serif;
         font-size:12px;
         font-weight:normal;
@@ -76,34 +79,97 @@
         text-align:left;
         vertical-align:top
     }
+    .width-100{
+      width: 100%;
+    }
+    .width-50{
+      width: 50%;
+    }
+    .izquierda{
+      text-align: left;
+    }
+    .centro{
+      text-align: center;
+    }
+    .titulo{
+      font-size: 16px !important;
+      font-weight: bold;
+      vertical-align:top
+    }
+    .subtitulo{
+      font-size: 14px !important;
+      font-weight: bold;
+      vertical-align:top
+    }
+    .subsubtitulo{
+      font-size: 12px !important;
+      font-weight: bold;
+      vertical-align:top
+    }
 </style>
+<script type="text/javascript">
+    </script>
+
+{{-- tabla 0 --}}
+<div class="tg-wrap"><table>
+<tbody>
+  <tr>
+    <td colspan="10" class="titulo centro">INFORME DE ENSAYO OFICIAL</td>
+  </tr>
+  <tr>
+    <td colspan="10" class="subsubtitulo centro">(Resolución MINVU Nº 13104 del 13 de noviembre de 2017)</td>
+  </tr>
+  <tr>
+    <td colspan="10">indice informe: </td>
+  </tr>
+  <tr>
+    <td colspan="10" class="titulo centro">COMPRESION CUBICA O CILINDRICA</td>
+  </tr>
+  <tr>
+    <td colspan="10" class="titulo centro">DE PROBETAS DE HORMIGON</td>
+  </tr>
+</tbody>
 {{-- tabla 1 --}}
 <div class="tg-wrap"><table class="tg">
 <tbody>
   <tr>
     <td class="tg-0lax">Obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
   </tr>
   <tr>
     <td class="tg-0lax">Solicitante</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
   </tr>
   <tr>
     <td class="tg-0lax">Dirección Solicitante</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qweqw</td>
+    <td class="tg-0lax width-100" colspan="8">qweqw</td>
   </tr>
   <tr>
     <td class="tg-0lax">Localización Obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qwewq</td>
+    <td class="tg-0lax width-100" colspan="8">qwewq</td>
   </tr>
   <tr>
     <td class="tg-0lax">Proyecto N°</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">asdasdasdasdaasd</td>
+    <td class="tg-0lax width-100" colspan="8">asdasdasdasdaasd</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda">ANTECEDENTES GENERALES</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
@@ -113,12 +179,19 @@
   <tr>
     <td class="tg-fsgl">Ensayo realizado</td>
     <td class="tg-gvcd">:</td>
-    <td class="tg-gvcd" colspan="8">Compresión de probetas cúbicas o cilíndricas de hormigón endurecido</td>
+    <td class="tg-gvcd width-100" colspan="8">Compresión de probetas cúbicas o cilíndricas de hormigón endurecido</td>
   </tr>
   <tr>
     <td class="tg-fsgl">Normas Aplicadas</td>
     <td class="tg-gvcd">:</td>
-    <td class="tg-gvcd" colspan="8">NCh 1037 n2009; NCh 1019 Of. 09; NCh 171 E Of. 75; NCh 1172 Of. 10; NCh 1017 E Of. 75</td>
+    <td class="tg-gvcd width-100" colspan="8">NCh 1037 n2009; NCh 1019 Of. 09; NCh 171 E Of. 75; NCh 1172 Of. 10; NCh 1017 E Of. 75</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
@@ -128,12 +201,19 @@
   <tr>
     <td class="tg-0lax">Identificación del elemento muestreado</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
   </tr>
   <tr>
     <td class="tg-0lax">Ubicación en obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
@@ -143,91 +223,119 @@
   <tr>
     <td class="tg-0pky">Fecha de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  OTT</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="3">qweqwe</td>
   </tr>
   <tr>
     <td class="tg-0pky">Fecha de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  Muestra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweewq</td>
+    <td class="tg-0pky width-50" colspan="3">qweewq</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de realización de ensayos</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qwwqe</td>
+    <td class="tg-0pky width-50" colspan="2">qwwqe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Nº Correlativo de informe obra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweweq</td>
+    <td class="tg-0pky width-50" colspan="3">qweweq</td>
   </tr>
   <tr>
     <td class="tg-0pky">Laboratorista que efectuó el muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="2">qwewqe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Nº Correlativo de obra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="3">qwewqe</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda">RESULTADOS</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
 {{-- tabla 5 --}}
 <div class="tg-wrap"><table class="tg">
-<tbody>
+  <tbody>
   <tr>
-    <td class="tg-1wig" colspan="10">Antecedentes de confección</td>
+    <td class="tg-1wig subsubtitulo" colspan="10">Antecedentes de confección</td>
   </tr>
   <tr>
     <td class="tg-0lax">Tipo de hormigón</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="2">qweewq</td>
+    <td class="tg-0lax width-50" colspan="2">qweewq</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">Temperatura ambiente (Cº)</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax" colspan="3">qweewq</td>
+    <td class="tg-0lax width-50" colspan="3">qweewq</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de confección o procedencia</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Temperatura del hormigón (Cº)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="3">qweqwe</td>
   </tr>
   <tr>
     <td class="tg-0pky">Guía Nº</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Docilidad o cono (cm)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweewq</td>
+    <td class="tg-0pky width-50" colspan="3">qweewq</td>
   </tr>
   <tr>
     <td class="tg-0pky">Hora de confección</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qwwqe</td>
+    <td class="tg-0pky width-50" colspan="2">qwwqe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado inicial</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qweweq</td>
+    <td class="tg-0pky width-50" colspan="3">qweweq</td>
   </tr>
   <tr>
     <td class="tg-0pky">Hora de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="2">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="2">qwewqe</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado en laboratorio</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky" colspan="3">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="3">qwewqe</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
@@ -235,7 +343,7 @@
 <div class="tg-wrap"><table class="tg">
 <tbody>
   <tr>
-    <td class="tg-1wig" colspan="10">Resultados de ensayo</td>
+    <td class="tg-1wig subtitulo izquierda" colspan="10">Resultados de ensayo</td>
   </tr>
   <tr>
     <td class="tg-0lax">MUESTRA N°</td>
@@ -331,12 +439,26 @@
   </tr>
 </tbody>
 </table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+  </tr>
+</tbody>
+</table></div>
 {{-- tabla 7 --}}
 <div class="tg-wrap"><table class="tg">
 <tbody>
   <tr>
     <td class="tg-1wig">OBSERVACIONES :</td>
     <td class="tg-cly1" colspan="9">(*) Densidad calculada según NCh 1037, pto.&nbsp;&nbsp;&nbsp;6.2.1</td>
+  </tr>
+</tbody>
+</table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
   </tr>
 </tbody>
 </table></div>
@@ -355,6 +477,13 @@
   </tr>
 </tbody>
 </table></div>
+<div class="tg-wrap"><table class="tg">
+<tbody>
+  <tr>
+    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+  </tr>
+</tbody>
+</table></div>
 {{-- tabla 9 --}}
 <div class="tg-wrap"><table class="tg">
 <tbody>
@@ -368,7 +497,7 @@
 </table></div>
 
 
-    <style>
+    {{-- <style>
         .seccion {
             width: 100%;
             display: flex;
@@ -377,9 +506,9 @@
         .valores {
             padding: 5px 5px;
         }
-    </style>
+    </style> --}}
 
-    <div class="container-pdf">
+    {{-- <div class="container-pdf">
         <div class="seccion">
             <div class="nombres">
                 <div class="nombre">Obra</div>
@@ -394,7 +523,7 @@
                 <div class="valor">: valorasdsad</div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
     </body>
