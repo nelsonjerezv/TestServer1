@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-aside width="fit-content">
-            <el-menu default-active="1" class="el-menu-vertical-demo">
+            <el-menu default-active="3-1" class="el-menu-vertical-demo">
                 <el-menu-item
                     index="1"
                     @click="inicio">
