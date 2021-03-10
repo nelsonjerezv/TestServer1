@@ -74895,7 +74895,7 @@ var render = function() {
             "el-menu",
             {
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "1" }
+              attrs: { "default-active": "3-1" }
             },
             [
               _c(
