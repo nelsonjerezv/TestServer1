@@ -41,7 +41,7 @@
                     this.todosLosEnsayos =  response.body;
                     this.ensayosHormigon = response.body;
                 }, response => {
-                    Tools.mensajeAlerta("No se pueden cargar los ensayoss.", Tools.MENSAJE.ERROR, '', 5);
+                    Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
             filtraEnsayos(){

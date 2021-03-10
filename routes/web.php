@@ -26,6 +26,7 @@
     Route::get('/ensayos', 'EnsayosHormigonController@index');
     Route::get('/ensayos/todos-los-ensayos', 'EnsayosHormigonController@todosLosEnsayos');
     Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
+    Route::get('/ensayos/exportar-ensayo-pdf/{id}', 'EnsayosHormigonController@exportarEnsayoPdf');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
     Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
     Route::resource('ensayos', 'EnsayosHormigonController');
@@ -47,5 +48,8 @@
         // return $pdf->download('informe_hormigon.pdf');
 
         $pdf = PDF::loadView('informe_hormigon');
-        return $pdf->download('informe_hormigon.pdf');
+        $pdf->setOption('no-background', true);
+        // return $pdf->download('informe_hormigon.pdf');
+        return $pdf->inline('record.pdf');
+
     });

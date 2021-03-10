@@ -1341,16 +1341,16 @@
                         this.$http.post(this.urlGuardarEnsayo,{
                             ensayo: this.form
                         }).then(response => {
-                            Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 8 segundos.", Tools.MENSAJE.EXITO, '', 8);
+                            Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
                             setTimeout(()=>{
-                                this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
-                            }, 8000);
+                                this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
+                            }, 5000);
                         }, response => {
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
                         });
                 //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+                //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
                 //         return false;
                 //     }
                 // });

@@ -70,16 +70,16 @@
                 this.$emit("cambiaMain", "");
             },
             nuevaOTT() {
-                this.$emit("cambiaMain", "OrdenTrabajoTerreno");
+                this.$emit("cambiaMain", {vista: "OrdenTrabajoTerreno", condicion:'nueva'});
             },
             listadoOTTs() {
-                this.$emit("cambiaMain", "ListadoFormularios");
+                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
             },
             nuevoEnsayo() {
-                this.$emit("cambiaMain", "EnsayoCompresionProbetasCilindricas");
+                this.$emit("cambiaMain", {vista: "EnsayoCompresionProbetasCilindricas", condicion:'nueva'});
             },
             listadoEnsayos() {
-                this.$emit("cambiaMain", "ListadoEnsayosCompresionProbetasCilindricas");
+                this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
             }
         }
     }

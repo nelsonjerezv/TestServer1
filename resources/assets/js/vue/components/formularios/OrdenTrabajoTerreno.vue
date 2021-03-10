@@ -1,6 +1,6 @@
 <template>
     <div class="contenedor-vue">
-        <el-form ref="formularioOtt" :model="form" :rules="reglas" label-width="150px" class="no-click">
+        <el-form ref="formularioOtt" :model="form" :rules="reglas" label-width="150px" :class="esClickeable">
             <!-- CLIENTE OBRA / N° OTT -->
             <el-row class="margin-b-5">
                 <el-col :span="14" class="padding-5">
@@ -718,11 +718,15 @@
     import Tools from '../../../tools.js';
 
     export default {
+        props: [
+            'tipoOtt'
+        ],
         data(){
             return{
                 labelPosition: 'left',
                 unaDosColumnas: 24,
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
+                visualizacion: '',
                 form: {
                     numClienteObra: '',
                     ottNumberHF: '',
@@ -1066,6 +1070,7 @@
             window.removeEventListener('resize', this.handleResize);
         },
         mounted () {
+            this.visualizacion = this.tipoOtt;
         },
         methods: {
             onSubmit(nombreFormulario) {
@@ -1074,10 +1079,10 @@
                         this.$http.post(this.urlGuardarFormulario,{
                             formulario: this.form
                         }).then(response => {
-                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 8);
+                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
                             setTimeout(()=>{
-                                this.$emit("cambiaMain", "ListadoFormularios");
-                            }, 5);
+                                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
+                            }, 5000);
                         }, response => {
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
@@ -1094,6 +1099,13 @@
             handleResize() {
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
             },
+        },
+        computed: {
+            esClickeable: function () {
+                return {
+                    'no-click': this.visualizacion === 'ver'
+                }
+            }
         },
         watch: {
             'form.testigosExtraidosCuatro': function (newVal, oldVal){

@@ -37,7 +37,7 @@
                 item: '',
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
-                urlExportarEnsayo: `${GLOBAL.URL}imprimir-informe-hormigon`,
+                urlExportarEnsayoPdf: `${GLOBAL.URL}ensayos/exportar-ensayo-pdf`,
             }
         },
         mounted () {
@@ -61,9 +61,10 @@
                 console.log('editar ensayo');
             },
             exportarPDF(){
-                // this.$http.get(this.urlExportarEnsayo, {
+                // this.$http.get(this.urlExportarEnsayoPdf, {
                 //     id: this.item.id
                 // });
+                window.open(this.urlExportarEnsayoPdf + '/' + this.item.id, '_blank')
                 console.log('exportarPDF');
             }
         },
