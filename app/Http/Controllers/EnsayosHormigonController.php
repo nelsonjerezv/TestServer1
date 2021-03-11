@@ -8,12 +8,20 @@ use PDF;
 
 class EnsayosHormigonController extends Controller
 {
-    public function index(Request $request){
-        $ensayos = $this->todosLosEnsayos();
+    public function index($indice = false){
+        if ($indice == false) {
+            $ensayos = $this->todosLosEnsayos();
+            $datos = [
+                'ensayos' => $ensayos
+            ];
+            return view('informe_hormigon', compact('datos'));
+        }
+        $ensayo = EnsayoProbetasHormigon::where('id', $indice)->first();
+        // dd($ensayo);
         $datos = [
-            'ensayos' => $ensayos
+            'ensayo' => $ensayo
         ];
-        return view('informe_hormigon', compact('datos'));
+        return view('informe_hormigon', compact('ensayo'));
     }
 
     public function todosLosEnsayos(){
@@ -203,8 +211,8 @@ class EnsayosHormigonController extends Controller
         // $director_info_pdf = $snappy->getOutputFromHtml(view('informe_hormigon',compact('data'))->render());
 
 
-        // $pdf = \PDF::loadView('informe_hormigon',  compact('ensayo'));
-        $pdf = PDF::loadView('informe_hormigon');
+        $pdf = PDF::loadView('informe_hormigon',  compact('ensayo'));
+        // $pdf = PDF::loadView('informe_hormigon');
         $pdf->setOption('no-background', true);
         return $pdf->stream();
     }
