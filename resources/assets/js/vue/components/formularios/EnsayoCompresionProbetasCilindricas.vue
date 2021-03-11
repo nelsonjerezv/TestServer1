@@ -8,8 +8,23 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" >
-                    <el-form-item label="N° OTT" prop="numOTT">
-                        <el-input v-model="form.numOTT"></el-input>
+                    <el-form-item label="N° OTT" prop="OTT">
+                        <el-select
+                            v-model="form.OTT"
+                            filterable
+                            clearable
+                            remote
+                            reserve-keyword
+                            placeholder="Seleccione OTT"
+                            :remote-method="querySearchNumeroOtt"
+                            :loading="loading">
+                            <el-option
+                                v-for="item in opcionesSearchBoxOTT"
+                                :key="item.id"
+                                :label="item.value"
+                                :value="item.value">
+                            </el-option>
+                        </el-select>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" >
@@ -1138,6 +1153,10 @@
         data() {
             return {
                 urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
+                urlBuscarOtt: `${GLOBAL.URL}ensayos/buscar-ott`,
+                timeout:  null,
+                opcionesSearchBoxOTT: [],
+                loading: false,
                 form: {
                     numMuestra: '',
                     OTT: '',
@@ -1303,7 +1322,7 @@
                 },
                 reglas: {
                     numMuestra: [ { required: true, message: '', trigger: 'blur' } ],
-                    OTT: [ { required: true, message: '', trigger: 'blur' } ],
+                    OTT: [ { required: true, message: '', trigger: 'change' } ],
                     numInforme: [ { required: true, message: '', trigger: 'blur' } ],
                     camaraHumeda: [ { required: true, message: '', trigger: 'blur' } ],
                     piscina: [ { required: true, message: '', trigger: 'blur' } ],
@@ -1358,6 +1377,36 @@
             resetForm(nombreFormulario) {
                 this.$refs[nombreFormulario].resetFields();
             },
+            querySearchNumeroOtt(query) {
+                if (query !== '') {
+                    this.loading = true;
+
+                    this.$http.get(this.urlBuscarOtt + '/' + query, {
+                    }).then(response => {
+                        this.loading = false;
+                        let resultados = response.body;
+                        var results = resultados.length > 0 ? resultados.map(orden => {return {'value': orden.num_cliente_obra.toUpperCase(),
+                                                                                               'id': orden.id}} ) : [];
+                        this.opcionesSearchBoxOTT = results;
+                        // clearTimeout(this.timeout);
+                        // this.timeout = setTimeout(() => {
+                        //     cb(results);
+                        // }, 3000 * Math.random());
+                    }, response => {
+                        console.log(response)
+                        Tools.mensajeAlerta("No se pudo encontrar ott para su criterio de busqueda.", Tools.MENSAJE.ERROR, '', 5);
+                    });
+                }
+            },
+            createFilter(queryString) {
+                return (link) => {
+                    return (link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+                };
+            },
+            handleSelectNumeroOtt(seleccion) {
+                this.form.OTT = seleccion.value;
+                this.searchBoxOTT = seleccion.value;
+            }
         },
         watch: {
             'form.volumenMetroCubicoMuestraUno': function (newVal, oldVal){
