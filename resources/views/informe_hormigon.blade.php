@@ -236,9 +236,9 @@
     <td class="tg-0pky width-50" colspan="3">{{ $orden->{'id'} }}</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Fecha de muestreo</td>
+    <td class="tg-0pky">Fecha de ensayo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $ensayo->{'fecha_ensayo_muestra_uno'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  Muestra</td>
     <td class="tg-0pky">:</td>
@@ -298,7 +298,7 @@
     <td class="tg-0lax"></td>
     <td class="tg-0lax">Temperatura ambiente (Cº)</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0lax width-50" colspan="3">{{ $orden->{'t_ambiente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de confección o procedencia</td>
@@ -307,7 +307,7 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Temperatura del hormigón (Cº)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'t_hormigon_mortero'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Guía Nº</td>
@@ -319,9 +319,9 @@
     <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Hora de confección</td>
+    <td class="tg-0pky">Fecha de confección</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'fecha_confeccion'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado inicial</td>
     <td class="tg-0pky">:</td>
@@ -330,7 +330,7 @@
   <tr>
     <td class="tg-0pky">Hora de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'hora_muestreo'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado en laboratorio</td>
     <td class="tg-0pky">:</td>

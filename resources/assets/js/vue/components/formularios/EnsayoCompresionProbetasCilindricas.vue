@@ -173,22 +173,46 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaEnsayoMuestraUno">
-                            <el-input v-model="form.fechaEnsayoMuestraUno"></el-input>
+                            <el-date-picker
+                                v-model="form.fechaEnsayoMuestraUno"
+                                type="date"
+                                size="mini"
+                                format="dd-MM-yyyy"
+                                value-format="dd-MM-yyyy">
+                            </el-date-picker>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaEnsayoMuestraDos">
-                            <el-input v-model="form.fechaEnsayoMuestraDos"></el-input>
+                            <el-date-picker
+                                v-model="form.fechaEnsayoMuestraDos"
+                                type="date"
+                                size="mini"
+                                format="dd-MM-yyyy"
+                                value-format="dd-MM-yyyy">
+                            </el-date-picker>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaEnsayoMuestraTres">
-                            <el-input v-model="form.fechaEnsayoMuestraTres"></el-input>
+                            <el-date-picker
+                                v-model="form.fechaEnsayoMuestraTres"
+                                type="date"
+                                size="mini"
+                                format="dd-MM-yyyy"
+                                value-format="dd-MM-yyyy">
+                            </el-date-picker>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaEnsayoMuestraCuatro">
-                            <el-input v-model="form.fechaEnsayoMuestraCuatro"></el-input>
+                            <el-date-picker
+                                v-model="form.fechaEnsayoMuestraCuatro"
+                                type="date"
+                                size="mini"
+                                format="dd-MM-yyyy"
+                                value-format="dd-MM-yyyy">
+                            </el-date-picker>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -1117,7 +1141,9 @@
                         <el-date-picker
                             v-model="form.fecha"
                             type="date"
-                            size="mini">
+                            size="mini"
+                            format="dd-MM-yyyy"
+                            value-format="dd-MM-yyyy">
                         </el-date-picker>
                     </el-form-item>
                 </el-col>
@@ -1155,6 +1181,8 @@
                 urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
                 urlBuscarOtt: `${GLOBAL.URL}ensayos/buscar-ott`,
                 timeout:  null,
+                ordenSeleccionada: '',
+                ordenes: [],
                 opcionesSearchBoxOTT: [],
                 loading: false,
                 form: {
@@ -1388,24 +1416,12 @@
                         var results = resultados.length > 0 ? resultados.map(orden => {return {'value': orden.num_cliente_obra.toUpperCase(),
                                                                                                'id': orden.id}} ) : [];
                         this.opcionesSearchBoxOTT = results;
-                        // clearTimeout(this.timeout);
-                        // this.timeout = setTimeout(() => {
-                        //     cb(results);
-                        // }, 3000 * Math.random());
+                        this.ordenes = resultados;
                     }, response => {
                         console.log(response)
                         Tools.mensajeAlerta("No se pudo encontrar ott para su criterio de busqueda.", Tools.MENSAJE.ERROR, '', 5);
                     });
                 }
-            },
-            createFilter(queryString) {
-                return (link) => {
-                    return (link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
-                };
-            },
-            handleSelectNumeroOtt(seleccion) {
-                this.form.OTT = seleccion.value;
-                this.searchBoxOTT = seleccion.value;
             }
         },
         watch: {
@@ -1433,6 +1449,13 @@
             'form.volumenMetroCubicoMuestraCuatro': function (newVal, oldVal){
                 this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(2);
             },
+            'form.OTT': function(newVal, oldVal){
+                this.ordenSeleccionada = this.ordenes.filter(orden => {return orden.num_cliente_obra == newVal})[0];
+                this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
+                this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
+                this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
+                this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
+            }
         },
     }
 </script>
