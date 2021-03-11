@@ -37,6 +37,7 @@ if (App::environment('production')) {
 
 
     Route::get('/informeHormigon', 'EnsayosHormigonController@index');
+    Route::get('/informeHormigon/{indice}', 'EnsayosHormigonController@index');
 
     Route::get('/imprimir-informe-hormigon/{indice}', function ($indice) {
         // $pdf = PDF::loadView('informe_hormigon');
