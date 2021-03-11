@@ -242,7 +242,7 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  Muestra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $ensayo->{'num_muestra'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de realización de ensayos</td>
@@ -334,7 +334,7 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado en laboratorio</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $ensayo->{'piscina'} }}</td>
   </tr>
 </tbody>
 </table></div>
