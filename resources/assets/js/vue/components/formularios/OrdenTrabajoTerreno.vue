@@ -120,6 +120,9 @@
                             <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-06">
                                 <div style="display: flex;"><div style="flex-grow: 1;">10x10x10</div><div> | <b>400-06</b> </div></div>
                             </el-radio>
+                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-07">
+                                <div style="display: flex;"><div style="flex-grow: 1;">15x30</div><div> | <b>400-07</b> </div></div>
+                            </el-radio>
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
@@ -179,11 +182,19 @@
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Hora Muestreo" prop="horaMuestreo">
-                        <el-input v-model="form.horaMuestreo"></el-input>
+                        <el-time-picker
+                            v-model="form.horaMuestreo"
+                            format="HH:mm"
+                            value-format="HH:mm">
+                        </el-time-picker>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Hora Inicio amasado" prop="horaInicioAmasado">
-                        <el-input v-model="form.horaInicioAmasado"></el-input>
+                        <el-time-picker
+                            v-model="form.horaInicioAmasado"
+                            format="HH:mm"
+                            value-format="HH:mm">
+                        </el-time-picker>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="T° Ambiente" prop="tAmbiente">
@@ -227,7 +238,12 @@
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Fecha de confección" prop="fechaConfeccion">
-                        <el-input v-model="form.fechaConfeccion"></el-input>
+                        <el-date-picker
+                            v-model="form.fechaConfeccion"
+                            type="date"
+                            format="dd-MM-yyyy"
+                            value-format="dd-MM-yyyy">
+                        </el-date-picker>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Aditivo" prop="aditivo">
@@ -258,7 +274,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaUnDia"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -279,7 +297,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaTresDias"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -300,7 +320,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaSieteDias"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -321,7 +343,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaCatorceDias"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -342,7 +366,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaVeintiochoDias"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -367,7 +393,9 @@
                                     <el-date-picker
                                         v-model="form.retiroMuestraFechaOtros"
                                         type="date"
-                                        size="mini">
+                                        size="mini"
+                                        format="dd-MM-yyyy"
+                                        value-format="dd-MM-yyyy">
                                     </el-date-picker>
                                 </el-form-item>
                             </div>
@@ -623,7 +651,9 @@
                     <el-form-item label="Fecha de Ingreso" prop="fechaIngreso">
                         <el-date-picker
                             v-model="form.fechaIngreso"
-                            type="date">
+                            type="date"
+                            format="dd-MM-yyyy"
+                            value-format="dd-MM-yyyy">
                         </el-date-picker>
                     </el-form-item>
                 </el-col>
@@ -631,21 +661,27 @@
                     <el-form-item label="Fecha de Visita Obra" prop="fechaVisitaObra">
                             <el-date-picker
                                 v-model="form.fechaVisitaObra"
-                                type="date">
+                                type="date"
+                                format="dd-MM-yyyy"
+                                value-format="dd-MM-yyyy">
                             </el-date-picker>
                         </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
                     <el-form-item label="Hora Llegada" prop="horaLlegada">
                         <el-time-picker
-                            v-model="form.horaLlegada">
+                            v-model="form.horaLlegada"
+                            format="HH:mm"
+                            value-format="HH:mm">
                         </el-time-picker>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12" class="seccion-otros padding-5">
                     <el-form-item label="Hora Salida" prop="horaSalida">
                         <el-time-picker
-                            v-model="form.horaSalida">
+                            v-model="form.horaSalida"
+                            format="HH:mm"
+                            value-format="HH:mm">
                         </el-time-picker>
                     </el-form-item>
                 </el-col>
@@ -716,6 +752,7 @@
 </template>
 <script>
     import Tools from '../../../tools.js';
+    var moment = require('moment');
 
     export default {
         props: [
@@ -723,6 +760,7 @@
         ],
         data(){
             return{
+                moment: moment,
                 labelPosition: 'left',
                 unaDosColumnas: 24,
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
@@ -1139,6 +1177,9 @@
             padding-left: 15px;
             color: #ffffff00;
             z-index: -1;
+        }
+        /deep/  .el-date-editor.el-input {
+            width: 100% !important;
         }
     }
     .dis-flex-dir-col{
