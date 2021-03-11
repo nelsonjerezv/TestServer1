@@ -113,6 +113,7 @@
 </style>
 <script type="text/javascript">
     window.ensayo = @json($ensayo);
+    window.orden = @json($orden);
     </script>
 
 {{-- tabla 0 --}}
@@ -140,27 +141,27 @@
   <tr>
     <td class="tg-0lax">Obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">{{ $ensayo->{'num_informe'} }}</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'nombre_obra'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">Solicitante</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">Dirección Solicitante</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">qweqw</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">Localización Obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">qwewq</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'direccion_obra'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">Proyecto N°</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">asdasdasdasdaasd</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'numClienteObra'} }}</td>
   </tr>
 </tbody>
 </table></div>
@@ -206,12 +207,12 @@
   <tr>
     <td class="tg-0lax">Identificación del elemento muestreado</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">Ubicación en obra</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-100" colspan="8">qweqwe</td>
+    <td class="tg-0lax width-100" colspan="8">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
 </tbody>
 </table></div>
@@ -228,38 +229,38 @@
   <tr>
     <td class="tg-0pky">Fecha de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  OTT</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'id'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Fecha de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  Muestra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweewq</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de realización de ensayos</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qwwqe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Nº Correlativo de informe obra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweweq</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Laboratorista que efectuó el muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Nº Correlativo de obra</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
 </tbody>
 </table></div>
@@ -293,47 +294,47 @@
   <tr>
     <td class="tg-0lax">Tipo de hormigón</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-50" colspan="2">qweewq</td>
+    <td class="tg-0lax width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">Temperatura ambiente (Cº)</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-50" colspan="3">qweewq</td>
+    <td class="tg-0lax width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Lugar de confección o procedencia</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Temperatura del hormigón (Cº)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Guía Nº</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qweqwe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Docilidad o cono (cm)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweewq</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Hora de confección</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qwwqe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado inicial</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qweweq</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Hora de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="2">{{ $orden->{'nombre_cliente'} }}</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Curado en laboratorio</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">qwewqe</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'nombre_cliente'} }}</td>
   </tr>
 </tbody>
 </table></div>

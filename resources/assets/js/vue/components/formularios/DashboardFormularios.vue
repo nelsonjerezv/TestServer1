@@ -56,9 +56,9 @@
         ],
         data() {
             return {
-                // componenteMain: 'OrdenTrabajoTerreno'
-                // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-                componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+                // componenteMain: 'OrdenTrabajoTerreno',
+                componenteMain: 'EnsayoCompresionProbetasCilindricas',
+                // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',
                 tipoEnsayo: '',
             };

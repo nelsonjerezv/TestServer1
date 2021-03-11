@@ -74721,9 +74721,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['ordenes'],
     data: function data() {
         return {
-            // componenteMain: 'OrdenTrabajoTerreno'
-            // componenteMain: 'EnsayoCompresionProbetasCilindricas'
-            componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+            // componenteMain: 'OrdenTrabajoTerreno',
+            componenteMain: 'EnsayoCompresionProbetasCilindricas',
+            // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
             tipoEnsayo: ''
         };
@@ -74895,7 +74895,7 @@ var render = function() {
             "el-menu",
             {
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "3-1" }
+              attrs: { "default-active": "3-2" }
             },
             [
               _c(
@@ -81806,6 +81806,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -81813,6 +81828,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             urlGuardarEnsayo: GLOBAL.URL + 'ensayos/guardar-ensayo-compresion',
+            urlBuscarOtt: GLOBAL.URL + 'ensayos/buscar-ott',
+            timeout: null,
+            opcionesSearchBoxOTT: [],
+            loading: false,
             form: {
                 numMuestra: '',
                 OTT: '',
@@ -81978,7 +81997,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             },
             reglas: {
                 numMuestra: [{ required: true, message: '', trigger: 'blur' }],
-                OTT: [{ required: true, message: '', trigger: 'blur' }],
+                OTT: [{ required: true, message: '', trigger: 'change' }],
                 numInforme: [{ required: true, message: '', trigger: 'blur' }],
                 camaraHumeda: [{ required: true, message: '', trigger: 'blur' }],
                 piscina: [{ required: true, message: '', trigger: 'blur' }],
@@ -82035,6 +82054,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         resetForm: function resetForm(nombreFormulario) {
             this.$refs[nombreFormulario].resetFields();
+        },
+        querySearchNumeroOtt: function querySearchNumeroOtt(query) {
+            var _this2 = this;
+
+            if (query !== '') {
+                this.loading = true;
+
+                this.$http.get(this.urlBuscarOtt + '/' + query, {}).then(function (response) {
+                    _this2.loading = false;
+                    var resultados = response.body;
+                    var results = resultados.length > 0 ? resultados.map(function (orden) {
+                        return { 'value': orden.num_cliente_obra.toUpperCase(),
+                            'id': orden.id };
+                    }) : [];
+                    _this2.opcionesSearchBoxOTT = results;
+                    // clearTimeout(this.timeout);
+                    // this.timeout = setTimeout(() => {
+                    //     cb(results);
+                    // }, 3000 * Math.random());
+                }, function (response) {
+                    console.log(response);
+                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo encontrar ott para su criterio de busqueda.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+                });
+            }
+        },
+        createFilter: function createFilter(queryString) {
+            return function (link) {
+                return link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0;
+            };
+        },
+        handleSelectNumeroOtt: function handleSelectNumeroOtt(seleccion) {
+            this.form.OTT = seleccion.value;
+            this.searchBoxOTT = seleccion.value;
         }
     },
     watch: {
@@ -82117,17 +82169,36 @@ var render = function() {
                 [
                   _c(
                     "el-form-item",
-                    { attrs: { label: "N° OTT", prop: "numOTT" } },
+                    { attrs: { label: "N° OTT", prop: "OTT" } },
                     [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numOTT,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numOTT", $$v)
+                      _c(
+                        "el-select",
+                        {
+                          attrs: {
+                            filterable: "",
+                            clearable: "",
+                            remote: "",
+                            "reserve-keyword": "",
+                            placeholder: "Seleccione OTT",
+                            "remote-method": _vm.querySearchNumeroOtt,
+                            loading: _vm.loading
                           },
-                          expression: "form.numOTT"
-                        }
-                      })
+                          model: {
+                            value: _vm.form.OTT,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "OTT", $$v)
+                            },
+                            expression: "form.OTT"
+                          }
+                        },
+                        _vm._l(_vm.opcionesSearchBoxOTT, function(item) {
+                          return _c("el-option", {
+                            key: item.id,
+                            attrs: { label: item.value, value: item.value }
+                          })
+                        }),
+                        1
+                      )
                     ],
                     1
                   )
