@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\QueryException;
 use App\Models\OrdenTrabajoTerreno;
 use App\Models\EnsayoProbetasHormigon;
 
@@ -31,9 +32,23 @@ class OrdenTrabajoTerrenoController extends Controller
     }
 
     public function guardarFormulario(Request $request){
+
+        $ultimoNumInforme = OrdenTrabajoTerreno::latest('created_at')->first();
+        $ultimoNumIngreso = intVal($ultimoNumInforme->num_ingreso);
+        $ultimoNumIngreso++;
+        $numLibre = true;
+        while($numLibre){
+            $repetido = OrdenTrabajoTerreno::where('num_ingreso', $ultimoNumIngreso)->get();
+            if ( count($repetido) == 0 ) {
+                $numLibre = false;
+            } else {
+                $ultimoNumIngreso++;
+            }
+        }
+
         $formulario;
+        $formulario['num_ott'] = mb_strtoupper($request->formulario['numOtt']);
         $formulario['num_cliente_obra'] = mb_strtoupper($request->formulario['numClienteObra']);
-        $formulario['ott_number_hf'] = mb_strtoupper($request->formulario['ottNumberHF']);
         $formulario['nombre_cliente'] = mb_strtoupper($request->formulario['nombreCliente']);
         $formulario['nombre_obra'] = mb_strtoupper($request->formulario['nombreObra']);
         $formulario['fono_obra'] = mb_strtoupper($request->formulario['fonoObra']);
@@ -42,7 +57,13 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['muestreo_de'] = mb_strtoupper($request->formulario['muestreoDe']);
         $formulario['extraccion'] = mb_strtoupper($request->formulario['extraccion']);
         $formulario['compactacion'] = mb_strtoupper($request->formulario['compactacion']);
-        $formulario['tipo_molde'] = mb_strtoupper($request->formulario['tipoMolde']);
+        $formulario['tipo_molde_uno'] = mb_strtoupper($request->formulario['tipoMoldeUno']);
+        $formulario['tipo_molde_dos'] = mb_strtoupper($request->formulario['tipoMoldeDos']);
+        $formulario['tipo_molde_tres'] = mb_strtoupper($request->formulario['tipoMoldeTres']);
+        $formulario['tipo_molde_cuatro'] = mb_strtoupper($request->formulario['tipoMoldeCuatro']);
+        $formulario['tipo_molde_cinco'] = mb_strtoupper($request->formulario['tipoMoldeCinco']);
+        $formulario['tipo_molde_seis'] = mb_strtoupper($request->formulario['tipoMoldeSeis']);
+        $formulario['tipo_molde_siete'] = mb_strtoupper($request->formulario['tipoMoldeSiete']);
         $formulario['muestreado_por'] = mb_strtoupper($request->formulario['muestreadoPor']);
         $formulario['ensayado_por'] = mb_strtoupper($request->formulario['ensayadoPor']);
         $formulario['tipo_muestra'] = mb_strtoupper($request->formulario['tipoMuestra']);
@@ -53,7 +74,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['num_equipo_cono_abrams'] = mb_strtoupper($request->formulario['numEquipoConoAbrams']);
         $formulario['num_vibrador_inmersion'] = mb_strtoupper($request->formulario['numVibradorInmersion']);
         $formulario['num_equipo_cono_reducido'] = mb_strtoupper($request->formulario['numEquipoConoReducido']);
-        $formulario['num_ingreso'] = mb_strtoupper($request->formulario['numIngreso']);
+        $formulario['num_ingreso'] = $ultimoNumIngreso;
         $formulario['hora_muestreo'] = mb_strtoupper($request->formulario['horaMuestreo']);
         $formulario['hora_inicio_amasado'] = mb_strtoupper($request->formulario['horaInicioAmasado']);
         $formulario['t_ambiente'] = mb_strtoupper($request->formulario['tAmbiente']);
@@ -122,7 +143,12 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['testigos_ensayados_cuatro'] = mb_strtoupper($request->formulario['testigosEnsayadosCuatro']);
         $formulario['testigos_ensayados_total'] = mb_strtoupper($request->formulario['testigosEnsayadosTotal']);
 
-
-        return OrdenTrabajoTerreno::create($formulario);
+        $result;
+        try {
+            $result = OrdenTrabajoTerreno::create($formulario);
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$result, true];
     }
 }

@@ -10,7 +10,7 @@ class OrdenTrabajoTerreno extends Model
 
     protected $fillable = [
         'num_cliente_obra',
-        'ott_number_hf',
+        'num_ott',
         'nombre_cliente',
         'nombre_obra',
         'fono_obra',
@@ -19,7 +19,13 @@ class OrdenTrabajoTerreno extends Model
         'muestreo_de',
         'extraccion',
         'compactacion',
-        'tipo_molde',
+        'tipo_molde_uno',
+        'tipo_molde_dos',
+        'tipo_molde_tres',
+        'tipo_molde_cuatro',
+        'tipo_molde_cinco',
+        'tipo_molde_seis',
+        'tipo_molde_siete',
         'muestreado_por',
         'ensayado_por',
         'tipo_muestra',

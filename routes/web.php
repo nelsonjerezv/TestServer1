@@ -29,11 +29,12 @@ if (App::environment('production')) {
     Route::get('/ensayos', 'EnsayosHormigonController@index');
     Route::get('/ensayos/todos-los-ensayos', 'EnsayosHormigonController@todosLosEnsayos');
     Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
-    Route::get('/ensayos/exportar-ensayo-pdf/{id}', 'EnsayosHormigonController@exportarEnsayoPdf');
+    Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}', 'EnsayosHormigonController@exportarEnsayoPdf');
+    Route::get('/ensayos/ver-ensayo-pdf/{id}', 'EnsayosHormigonController@verEnsayoPdf');
     Route::get('/ensayos/buscar-ott/{busqueda}', 'EnsayosHormigonController@buscarOtt');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
     Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
-    Route::resource('ensayos', 'EnsayosHormigonController');
+    Route::resource('ensayos', 'EnsayosHormigonController', ['only'=> ['index','create','store']]);
 
 
 

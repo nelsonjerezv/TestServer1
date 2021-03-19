@@ -2,12 +2,27 @@
     <div class="item-lista-formularios">
         <div class="item">
             <div class="atributos">
-                <div class="item-atributo">N° Muestra: {{item.num_muestra}}</div>
+                <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
                 <div class="item-atributo">N° Ott: {{item.ott}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <el-button type="primary" @click="exportarPDF" plain>Ver como PDF</el-button>
+                <el-popover
+                    placement="right"
+                    width="400"
+                    trigger="click"
+                    popper-class="datos-informe">
+                    <div class="una-linea">Complete Datos faltantes</div>
+                    <div class="una-linea">Dirección Solicitante:            <el-input placeholder="" size="mini" v-model="direccionSolicitante"/></div>
+                    <div class="una-linea">Localización Obra:                <el-input placeholder="" size="mini" v-model="localizacionObra"/></div>
+                    <div class="una-linea">Proyecto N°:                      <el-input placeholder="" size="mini" v-model="numProyecto"/></div>
+                    <div class="una-linea">Nº Correlativo de informe obra:   <el-input placeholder="" size="mini" v-model="numCorrelativoInformeObra"/></div>
+                    <div class="una-linea">Nº Correlativo de obra:           <el-input placeholder="" size="mini" v-model="numCorrelativoObra"/></div>
+                    <div class="una-linea">Curado inicial:                   <el-input placeholder="" size="mini" v-model="curadoInicial"/></div>
+                    <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
+                    <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar</el-button></div>
+                <el-button slot="reference" type="primary" plain>Ver como PDF</el-button>
+                </el-popover>
                 <el-button type="warning" @click="editarEnsayo" plain>Editar</el-button>
                 <el-popconfirm
                     confirm-button-text='Eliminar'
@@ -38,6 +53,13 @@
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
                 urlExportarEnsayoPdf: `${GLOBAL.URL}ensayos/exportar-ensayo-pdf`,
+                direccionSolicitante: 'Dirección Solicitante',
+                localizacionObra: 'localizacion obra',
+                numProyecto: 'numero de proyecto',
+                numCorrelativoInformeObra: 'n° corelativo informe obra',
+                numCorrelativoObra: 'n° corelativo obra',
+                curadoInicial: 'Piscina de Curado',
+                lugarEnsayos: 'Laboratorio LACEM',
             }
         },
         mounted () {
@@ -61,10 +83,23 @@
                 console.log('editar ensayo');
             },
             exportarPDF(){
-                // this.$http.get(this.urlExportarEnsayoPdf, {
-                //     id: this.item.id
-                // });
-                window.open(this.urlExportarEnsayoPdf + '/' + this.item.id, '_blank')
+                let data = {
+                    id: this.item.id,
+                    direccionSolicitante: this.direccionSolicitante,
+                    localizacionObra: this.localizacionObra,
+                    numProyecto: this.numProyecto,
+                    numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+                    numCorrelativoObra: this.numCorrelativoObra,
+                    curadoInicial:this.curadoInicial,
+                };
+                window.open(this.urlExportarEnsayoPdf + '/' + this.item.id
+                                                      + '/' + this.direccionSolicitante
+                                                      + '/' + this.localizacionObra
+                                                      + '/' + this.numProyecto
+                                                      + '/' + this.numCorrelativoInformeObra
+                                                      + '/' + this.numCorrelativoObra
+                                                      + '/' + this.curadoInicial
+                                                      + '/' + this.lugarEnsayos, '_blank')
                 console.log('exportarPDF');
             }
         },
@@ -72,6 +107,18 @@
 </script>
 
 <style lang="scss" scoped>
+    .una-linea{
+        white-space: nowrap;
+        display: flex;
+        line-height: 40px;
+        margin-bottom: 6px;
+        .el-input {
+            margin-left: 5px;
+        }
+    }
+    .datos-informe{
+        width: 700px;
+    }
     .item-lista-formularios{
         display: flex;
         flex-grow: 1;

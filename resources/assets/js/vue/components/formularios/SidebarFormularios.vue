@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-aside width="fit-content">
-            <el-menu default-active="3-2" class="el-menu-vertical-demo">
+            <el-menu default-active="4-1" class="el-menu-vertical-demo">
                 <el-menu-item
                     index="1"
                     @click="inicio">
@@ -42,14 +42,20 @@
                             Nuevo Ensayo
                         </el-menu-item>
                     </el-menu-item-group>
-                    <!-- <el-submenu index="2-4">
-                        <span slot="title">item four</span>
-                        <el-menu-item index="2-4-1">item one</el-menu-item>
-                    </el-submenu> -->
                 </el-submenu>
-                <el-menu-item index="4" disabled>
-                    <span slot="title">Navigator Three</span>
-                </el-menu-item>
+                <el-submenu index="4">
+                    <span slot="title">Exportar</span>
+                    <el-menu-item-group>
+                        <el-menu-item index="4-1" @click="exportaPDF">
+                            A PDF
+                        </el-menu-item>
+                    </el-menu-item-group>
+                    <el-menu-item-group>
+                        <el-menu-item disabled index="4-2">
+                            A Excel
+                        </el-menu-item>
+                    </el-menu-item-group>
+                </el-submenu>
                 <el-menu-item index="5" disabled>
                     <span slot="title">Navigator Four</span>
                 </el-menu-item>
@@ -80,7 +86,10 @@
             },
             listadoEnsayos() {
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
-            }
+            },
+            exportaPDF() {
+                this.$emit("cambiaMain", {vista: "ListadoExportarPdf", condicion:''});
+            },
         }
     }
 </script>

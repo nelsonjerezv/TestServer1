@@ -8,9 +8,11 @@
                         <el-input v-model="form.numClienteObra"></el-input>
                     </el-form-item>
                 </el-col>
-                <el-col :span="10" class="padding-5">
-                    <el-form-item class="item-no-margin cantidad-otros" label="OTT N° HF - " prop="ottNumberHF">
-                        <el-input v-model="form.ottNumberHF"></el-input>
+                <el-col :span="10" class="padding-5 una-linea">
+                    <el-form-item class="item-no-margin cantidad-otros" label="OTT N° HF - " prop="numOtt">
+                        <!-- <label class="el-form-item__label" style="width: 150px;">N° OTT</label> -->
+                        <!-- <el-input class="no-click" v-model="form.numOtt"></el-input> -->
+                        <el-input class="" v-model="form.numOtt"></el-input>
                     </el-form-item>
                 </el-col>
             </el-row>
@@ -100,7 +102,33 @@
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <el-form-item label="Tipo de Molde (en cm)" prop="tipoMolde">
+                    <div class="una-linea dis-flex-dir-row">
+                        <div class="label-item" style="min-width: 150px;padding-right: 12px;display: flex;">Tipo de Molde (en cm)</div>
+                        <div style="display: flex;flex-direction: column;width: 100%;">
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x15x15 | 400-01" prop="tipoMoldeUno">
+                                <el-input size="mini" v-model="form.tipoMoldeUno"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="20x20x20 | 400-02" prop="tipoMoldeDos">
+                                <el-input size="mini" v-model="form.tipoMoldeDos"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-03" prop="tipoMoldeTres">
+                                <el-input size="mini" v-model="form.tipoMoldeTres"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="4x4x16 | 400-04" prop="tipoMoldeCuatro">
+                                <el-input size="mini" v-model="form.tipoMoldeCuatro"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="53x15x15 | 400-05" prop="tipoMoldeCinco">
+                                <el-input size="mini" v-model="form.tipoMoldeCinco"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="10x10x10 | 400-06" prop="tipoMoldeSeis">
+                                <el-input size="mini" v-model="form.tipoMoldeSeis"></el-input>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-07" prop="tipoMoldeSiete">
+                                <el-input size="mini" v-model="form.tipoMoldeSiete"></el-input>
+                            </el-form-item>
+                        </div>
+                    </div>
+                    <!-- <el-form-item label="Tipo de Molde (en cm)" prop="tipoMolde">
                         <div class="dis-flex-dir-col">
                             <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-01">
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x15x15</div><div> | <b>400-01</b> </div></div>
@@ -124,7 +152,7 @@
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x30</div><div> | <b>400-07</b> </div></div>
                             </el-radio>
                         </div>
-                    </el-form-item>
+                    </el-form-item> -->
                     <el-divider class="el-divider-5"/>
                     <el-form-item label="Muestreado por" prop="muestreadoPor">
                         <div class="dis-flex-dir-col">
@@ -177,9 +205,12 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <el-form-item label="N° Ingreso" prop="numIngreso">
-                        <el-input v-model="form.numIngreso"></el-input>
-                    </el-form-item>
+                    <!-- <el-form-item label="N° Ingreso"> -->
+                        <div class="container-item no-click una-linea">
+                            <div class="label-item">N° Ingreso</div>
+                            <el-input class="contenido-item" v-model="placeholderNumIngreso"></el-input>
+                        </div>
+                    <!-- </el-form-item> -->
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Hora Muestreo" prop="horaMuestreo">
                         <el-time-picker
@@ -765,9 +796,10 @@
                 unaDosColumnas: 24,
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
                 visualizacion: '',
+                placeholderNumIngreso: 'Se generará automáticamente',
                 form: {
                     numClienteObra: '',
-                    ottNumberHF: '',
+                    numOtt: '',
                     nombreCliente: '',
                     nombreObra: '',
                     fonoObra: '',
@@ -776,7 +808,13 @@
                     muestreoDe: '',
                     extraccion: '',
                     compactacion: '',
-                    tipoMolde: '',
+                    tipoMoldeUno: '',
+                    tipoMoldeDos: '',
+                    tipoMoldeTres: '',
+                    tipoMoldeCuatro: '',
+                    tipoMoldeCinco: '',
+                    tipoMoldeSeis: '',
+                    tipoMoldeSiete: '',
                     muestreadoPor: '',
                     ensayadoPor: '',
                     tipoMuestra: '',
@@ -787,7 +825,6 @@
                     numEquipoConoAbrams: '',
                     numVibradorInmersion: '',
                     numEquipoConoReducido: '',
-                    numIngreso: '',
                     horaMuestreo: '',
                     horaInicioAmasado: '',
                     tAmbiente: '',
@@ -795,7 +832,7 @@
                     proveedor: '',
                     numGuiaDespacho: '',
                     nombreChofer: '',
-                    curadoInicial: '',
+                    curadoInicial: 'Piscina de curado',
                     elementoHormigonado: '',
                     ubicacionElemento: '',
                     tipoHormigonMortero: '',
@@ -851,16 +888,16 @@
                     seccionRetiroMuestrasHabilitada: '',
                     testigosExtraidosSeis: '0',
                     testigosExtraidosCuatro: '0',
-                    testigosExtraidosTotal: '',
+                    testigosExtraidosTotal: '0',
                     testigosEnsayadosSeis: '0',
                     testigosEnsayadosCuatro: '0',
-                    testigosEnsayadosTotal: '',
+                    testigosEnsayadosTotal: '0',
                 },
                 reglas: {
                     numClienteObra: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
-                    ottNumberHF: [
+                    numOtt: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     nombreCliente: [
@@ -887,8 +924,26 @@
                     compactacion: [
                         { required: true, message: '', trigger: 'change' }
                     ],
-                    tipoMolde: [
-                        { required: true, message: '', trigger: 'change' }
+                    tipoMoldeUno: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeDos: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeTres: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeCuatro: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeCinco: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeSeis: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    tipoMoldeSiete: [
+                        { required: true, message: '', trigger: 'blur' }
                     ],
                     muestreadoPor: [
                         { required: true, message: '', trigger: 'change' }
@@ -918,9 +973,6 @@
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     numEquipoConoReducido: [
-                        { required: true, message: '', trigger: 'blur' }
-                    ],
-                    numIngreso: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     horaMuestreo: [
@@ -1117,10 +1169,18 @@
                         this.$http.post(this.urlGuardarFormulario,{
                             formulario: this.form
                         }).then(response => {
-                            Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
-                            setTimeout(()=>{
-                                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
-                            }, 5000);
+                            console.log(response);
+                            if(response.body[1] == true){
+                                Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
+                                setTimeout(()=>{
+                                    this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
+                                }, 5000);
+                            } else{
+                                if(response.body[0].errorInfo[0] == "23000"){
+                                    return Tools.mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
+                                }
+                                return Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                            }
                         }, response => {
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
@@ -1157,13 +1217,26 @@
             },
             'form.testigosEnsayadosCuatro': function (newVal, oldVal){
                 this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+            },
+            'form.muestreadoPor': function (newVal, oldVal){
+                if(newVal == 'lacem'){
+                    this.form.ensayadoPor = 'lacem';
+                }
             }
+
         },
     }
 </script>
 <style scoped lang="scss">
     .no-click {
         pointer-events: none;
+    }
+    .container-item{
+        display: flex;
+        .label-item{
+            margin-right: 10px;
+            color: #606266;
+        }
     }
     .contenedor-vue{
         background-color: #f5f5f5;
@@ -1182,9 +1255,16 @@
             width: 100% !important;
         }
     }
+    .una-linea{
+        white-space: nowrap;
+    }
     .dis-flex-dir-col{
         display: flex;
         flex-direction: column;
+    }
+    .dis-flex-dir-row{
+        display: flex;
+        flex-direction: row;
     }
     .radio-molde{
         width: 100%;
