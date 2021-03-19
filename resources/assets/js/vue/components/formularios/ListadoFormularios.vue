@@ -2,7 +2,7 @@
     <div class="contenedor-vue">
         <div class="container-elementos">
             <h1>Listado Órdenes de Trabajo de Terreno</h1>
-            <el-input class="width-100" placeholder="Filtre por N° Cliente Obra" v-model="buscador"></el-input>
+            <el-input class="width-100" placeholder="Filtre por N° OTT, N° Cliente Obra o Laboratorista" v-model="buscador"></el-input>
         </div>
         <div class="container-items-formulario">
             <item-lista-formularios
@@ -45,7 +45,10 @@
                 });
             },
             filtraOrdenes(){
-                this.ordenesDeTrabajo = this.todasLasOrdenes.filter(orden => orden.num_cliente_obra.includes(this.buscador));
+                this.ordenesDeTrabajo = this.todasLasOrdenes.filter(orden => orden.num_cliente_obra.includes(this.buscador) ||
+                                                                             orden.laboratorista.toLowerCase().includes(this.buscador.toLowerCase()) ||
+                                                                             orden.id.toString().includes(this.buscador)
+                                                                    );
             }
         },
         watch: {

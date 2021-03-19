@@ -8,10 +8,11 @@
                         <el-input v-model="form.numClienteObra"></el-input>
                     </el-form-item>
                 </el-col>
-                <el-col :span="10" class="padding-5">
-                    <el-form-item class="item-no-margin cantidad-otros" label="OTT N° HF - " prop="ottNumberHF">
-                        <el-input v-model="form.ottNumberHF"></el-input>
-                    </el-form-item>
+                <el-col :span="10" class="padding-5 una-linea">
+                    <!-- <el-form-item class="item-no-margin cantidad-otros" label="OTT N° HF - " prop="ottNumberHF"> -->
+                        <label class="el-form-item__label" style="width: 150px;">N° OTT</label>
+                        <el-input disabled class="no-click" v-model="placeholderNumOtt"></el-input>
+                    <!-- </el-form-item> -->
                 </el-col>
             </el-row>
             <el-divider class="el-divider-5"/>
@@ -765,9 +766,9 @@
                 unaDosColumnas: 24,
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
                 visualizacion: '',
+                placeholderNumOtt: 'Se generará automáticamente',
                 form: {
                     numClienteObra: '',
-                    ottNumberHF: '',
                     nombreCliente: '',
                     nombreObra: '',
                     fonoObra: '',
@@ -795,7 +796,7 @@
                     proveedor: '',
                     numGuiaDespacho: '',
                     nombreChofer: '',
-                    curadoInicial: '',
+                    curadoInicial: 'Piscina de curado',
                     elementoHormigonado: '',
                     ubicacionElemento: '',
                     tipoHormigonMortero: '',
@@ -851,16 +852,13 @@
                     seccionRetiroMuestrasHabilitada: '',
                     testigosExtraidosSeis: '0',
                     testigosExtraidosCuatro: '0',
-                    testigosExtraidosTotal: '',
+                    testigosExtraidosTotal: '0',
                     testigosEnsayadosSeis: '0',
                     testigosEnsayadosCuatro: '0',
-                    testigosEnsayadosTotal: '',
+                    testigosEnsayadosTotal: '0',
                 },
                 reglas: {
                     numClienteObra: [
-                        { required: true, message: '', trigger: 'blur' }
-                    ],
-                    ottNumberHF: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     nombreCliente: [
@@ -1181,6 +1179,9 @@
         /deep/  .el-date-editor.el-input {
             width: 100% !important;
         }
+    }
+    .una-linea{
+        white-space: nowrap;
     }
     .dis-flex-dir-col{
         display: flex;

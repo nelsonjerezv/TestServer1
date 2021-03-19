@@ -9,7 +9,7 @@ class EnsayoProbetasHormigon extends Model
     protected $table = 'ensayo_probetas_hormigon';
 
     protected $fillable = [
-        'num_muestra',
+        'num_ingreso',
         'ott',
         'num_informe',
         'camara_humeda',
@@ -42,6 +42,10 @@ class EnsayoProbetasHormigon extends Model
         'refrentado_muestra_dos',
         'refrentado_muestra_tres',
         'refrentado_muestra_cuatro',
+        'refrentado_corregido_muestra_uno',
+        'refrentado_corregido_muestra_dos',
+        'refrentado_corregido_muestra_tres',
+        'refrentado_corregido_muestra_cuatro',
         'perpendicularidad_muestra_uno',
         'perpendicularidad_muestra_dos',
         'perpendicularidad_muestra_tres',

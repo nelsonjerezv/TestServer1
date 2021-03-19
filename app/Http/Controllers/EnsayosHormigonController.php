@@ -37,7 +37,7 @@ class EnsayosHormigonController extends Controller
         // $ensayo[''] = mb_strtoupper($request->ensayo['']);
 
 
-        $ensayo['num_muestra'] = mb_strtoupper($request->ensayo['numMuestra']);
+        $ensayo['num_ingreso'] = mb_strtoupper($request->ensayo['numIngreso']);
         $ensayo['ott'] = mb_strtoupper($request->ensayo['OTT']);
         $ensayo['num_informe'] = mb_strtoupper($request->ensayo['numInforme']);
         $ensayo['camara_humeda'] = mb_strtoupper($request->ensayo['camaraHumeda']);
@@ -70,6 +70,10 @@ class EnsayosHormigonController extends Controller
         $ensayo['refrentado_muestra_dos'] = mb_strtoupper($request->ensayo['refrentadoMuestraDos']);
         $ensayo['refrentado_muestra_tres'] = mb_strtoupper($request->ensayo['refrentadoMuestraTres']);
         $ensayo['refrentado_muestra_cuatro'] = mb_strtoupper($request->ensayo['refrentadoMuestraCuatro']);
+        $ensayo['refrentado_corregido_muestra_uno'] = mb_strtoupper($request->ensayo['refrentadoCorregidoMuestraUno']);
+        $ensayo['refrentado_corregido_muestra_dos'] = mb_strtoupper($request->ensayo['refrentadoCorregidoMuestraDos']);
+        $ensayo['refrentado_corregido_muestra_tres'] = mb_strtoupper($request->ensayo['refrentadoCorregidoMuestraTres']);
+        $ensayo['refrentado_corregido_muestra_cuatro'] = mb_strtoupper($request->ensayo['refrentadoCorregidoMuestraCuatro']);
         $ensayo['perpendicularidad_muestra_uno'] = mb_strtoupper($request->ensayo['perpendicularidadMuestraUno']);
         $ensayo['perpendicularidad_muestra_dos'] = mb_strtoupper($request->ensayo['perpendicularidadMuestraDos']);
         $ensayo['perpendicularidad_muestra_tres'] = mb_strtoupper($request->ensayo['perpendicularidadMuestraTres']);
@@ -202,17 +206,52 @@ class EnsayosHormigonController extends Controller
         return EnsayoProbetasHormigon::create($ensayo);
     }
 
-    public function exportarEnsayoPdf($id){
+    public function exportarEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
-        $orden = OrdenTrabajoTerreno::where('num_cliente_obra', $ensayo['ott'])->first();
-        $pdf = PDF::loadView('informe_hormigon',  compact('ensayo'), compact('orden'));
+        $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
+        $datos = (object) [
+                'direccionSolicitante' => $direccionSolicitante,
+                'localizacionObra' => $localizacionObra,
+                'numProyecto' => $numProyecto,
+                'numCorrelativoInformeObra' => $numCorrelativoInformeObra,
+                'numCorrelativoObra' => $numCorrelativoObra,
+                'curadoInicial' => $curadoInicial,
+                'lugarEnsayos' => $lugarEnsayos,
+                'ensayo' => $ensayo
+            ];
+        // dd($orden, $datos);
+        $pdf = PDF::loadView('informe_hormigon',  compact('datos', 'orden') )->setOption('dpi', 600);
         $pdf->setOption('no-background', true);
 
         return $pdf->stream();
     }
 
+    public function verEnsayoPdf($id){
+        $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+        $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
+        $datos = (object) [
+                'direccionSolicitante' => '-',
+                'localizacionObra' => '-',
+                'numProyecto' => '-',
+                'numCorrelativoInformeObra' => '-',
+                'numCorrelativoObra' => '-',
+                'curadoInicial' => '-',
+                'lugarEnsayos' => '-',
+                'ensayo' => $ensayo
+            ];
+        // dd($orden, $datos);
+
+        return view('informe_hormigon', compact('datos', 'orden'));
+    }
+
     public function buscarOtt($busqueda){
-        $ordenes = OrdenTrabajoTerreno::where('num_cliente_obra' , 'like', '%' . $busqueda . '%')->get();
+        $ordenes = OrdenTrabajoTerreno::where('num_ott' , 'like', '%' . $busqueda . '%')->get();
+
+        // $ordenes = OrdenTrabajoTerreno::where('num_cliente_obra' , 'like', '%' . $busqueda . '%')
+        //                                 ->orWhere('laboratorista' , 'like', '%' . $busqueda . '%')
+        //                                 ->orWhere('id' , $busqueda)
+        //                                 ->get();
+
         return $ordenes;
     }
 }

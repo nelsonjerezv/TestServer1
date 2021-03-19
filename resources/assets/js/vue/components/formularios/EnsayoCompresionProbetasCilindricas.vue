@@ -3,8 +3,8 @@
         <el-form ref="formularioCompresion" :model="form" :rules="reglas" label-width="150px">
             <el-row >
                 <el-col :span="8" >
-                    <el-form-item label="Muestra N°" prop="numMuestra">
-                        <el-input v-model="form.numMuestra"></el-input>
+                    <el-form-item label="N° Ingreso" prop="numMuestra">
+                        <el-input class="no-click" v-model="form.numIngreso"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" >
@@ -147,22 +147,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaConfeccionMuestraUno">
-                            <el-input v-model="form.fechaConfeccionMuestraUno"></el-input>
+                            <el-input class="no-click" v-model="form.fechaConfeccionMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaConfeccionMuestraDos">
-                            <el-input v-model="form.fechaConfeccionMuestraDos"></el-input>
+                            <el-input class="no-click" v-model="form.fechaConfeccionMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaConfeccionMuestraTres">
-                            <el-input v-model="form.fechaConfeccionMuestraTres"></el-input>
+                            <el-input class="no-click" v-model="form.fechaConfeccionMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="fechaConfeccionMuestraCuatro">
-                            <el-input v-model="form.fechaConfeccionMuestraCuatro"></el-input>
+                            <el-input class="no-click" v-model="form.fechaConfeccionMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -514,12 +514,24 @@
                         h refrentado
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoUno">
+                            <el-input v-model="form.refrentadoUno"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoDos">
+                            <el-input v-model="form.refrentadoDos"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoTres">
+                            <el-input v-model="form.refrentadoTres"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoCuatro">
+                            <el-input v-model="form.refrentadoCuatro"></el-input>
+                        </el-form-item>
                     </div>
                 </el-col>
                 <!-- Dimensiones Corregidas -->
@@ -638,12 +650,24 @@
                         h refrentado'
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoCorregidoMuestraUno">
+                            <el-input v-model="form.refrentadoCorregidoMuestraUno"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoCorregidoMuestraDos">
+                            <el-input v-model="form.refrentadoCorregidoMuestraDos"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoCorregidoMuestraTres">
+                            <el-input v-model="form.refrentadoCorregidoMuestraTres"></el-input>
+                        </el-form-item>
                     </div>
                     <div class="texto-muestras">
+                        <el-form-item prop="refrentadoCorregidoMuestraCuatro">
+                            <el-input v-model="form.refrentadoCorregidoMuestraCuatro"></el-input>
+                        </el-form-item>
                     </div>
                 </el-col>
                 <!-- Masa -->
@@ -705,22 +729,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaCorregidaMuestraUno">
-                            <el-input v-model="form.masaCorregidaMuestraUno"></el-input>
+                            <el-input class="no-click" v-model="form.masaCorregidaMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaCorregidaMuestraDos">
-                            <el-input v-model="form.masaCorregidaMuestraDos"></el-input>
+                            <el-input class="no-click" v-model="form.masaCorregidaMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaCorregidaMuestraTres">
-                            <el-input v-model="form.masaCorregidaMuestraTres"></el-input>
+                            <el-input class="no-click" v-model="form.masaCorregidaMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaCorregidaMuestraCuatro">
-                            <el-input v-model="form.masaCorregidaMuestraCuatro"></el-input>
+                            <el-input class="no-click" v-model="form.masaCorregidaMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -783,22 +807,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="densidadMuestraUno">
-                            <el-input v-model="form.densidadMuestraUno"></el-input>
+                            <el-input class="no-click" v-model="form.densidadMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="densidadMuestraDos">
-                            <el-input v-model="form.densidadMuestraDos"></el-input>
+                            <el-input class="no-click" v-model="form.densidadMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="densidadMuestraTres">
-                            <el-input v-model="form.densidadMuestraTres"></el-input>
+                            <el-input class="no-click" v-model="form.densidadMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="densidadMuestraCuatro">
-                            <el-input v-model="form.densidadMuestraCuatro"></el-input>
+                            <el-input class="no-click" v-model="form.densidadMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -1174,6 +1198,9 @@
 
 <script>
     import Tools from '../../../tools.js';
+    import moment from 'moment'
+
+    Vue.prototype.moment = moment
 
     export default {
         data() {
@@ -1185,8 +1212,14 @@
                 ordenes: [],
                 opcionesSearchBoxOTT: [],
                 loading: false,
+                pickerOptionsFechaEnsayo:{
+                    // disabledDate(time) {
+                        //     this.calculaFechaEnsayoInicio()
+                    //     return time.getTime() > Date.now();
+                    // },
+                },
                 form: {
-                    numMuestra: '',
+                    numIngreso: 'Cargado desde la OTT',
                     OTT: '',
                     numInforme: '',
                     camaraHumeda: '',
@@ -1219,6 +1252,10 @@
                     refrentadoMuestraDos: '',
                     refrentadoMuestraTres: '',
                     refrentadoMuestraCuatro: '',
+                    refrentadoCorregidoMuestraUno: '',
+                    refrentadoCorregidoMuestraDos: '',
+                    refrentadoCorregidoMuestraTres: '',
+                    refrentadoCorregidoMuestraCuatro: '',
                     perpendicularidadMuestraUno: '',
                     perpendicularidadMuestraDos: '',
                     perpendicularidadMuestraTres: '',
@@ -1239,66 +1276,70 @@
                     espesorPromedioMuestraDos: '',
                     espesorPromedioMuestraTres: '',
                     espesorPromedioMuestraCuatro: '',
-                    dUnoMuestraUno: '',
-                    dUnoMuestraDos: '',
-                    dUnoMuestraTres: '',
-                    dUnoMuestraCuatro: '',
-                    dDosMuestraUno: '',
-                    dDosMuestraDos: '',
-                    dDosMuestraTres: '',
-                    dDosMuestraCuatro: '',
-                    hUnoMuestraUno: '',
-                    hUnoMuestraDos: '',
-                    hUnoMuestraTres: '',
-                    hUnoMuestraCuatro: '',
-                    hDosMuestraUno: '',
-                    hDosMuestraDos: '',
-                    hDosMuestraTres: '',
-                    hDosMuestraCuatro: '',
-                    dUnoMuestraUnoCorregida: '',
-                    dUnoMuestraDosCorregida: '',
-                    dUnoMuestraTresCorregida: '',
-                    dUnoMuestraCuatroCorregida: '',
-                    dDosMuestraUnoCorregida: '',
-                    dDosMuestraDosCorregida: '',
-                    dDosMuestraTresCorregida: '',
-                    dDosMuestraCuatroCorregida: '',
-                    hUnoMuestraUnoCorregida: '',
-                    hUnoMuestraDosCorregida: '',
-                    hUnoMuestraTresCorregida: '',
-                    hUnoMuestraCuatroCorregida: '',
-                    hDosMuestraUnoCorregida: '',
-                    hDosMuestraDosCorregida: '',
-                    hDosMuestraTresCorregida: '',
-                    hDosMuestraCuatroCorregida: '',
-                    masaMuestraUno: '',
-                    masaMuestraDos: '',
-                    masaMuestraTres: '',
-                    masaMuestraCuatro: '',
-                    errorMuestraUno: '',
-                    errorMuestraDos: '',
-                    errorMuestraTres: '',
-                    errorMuestraCuatro: '',
-                    masaCorregidaMuestraUno: '',
-                    masaCorregidaMuestraDos: '',
-                    masaCorregidaMuestraTres: '',
-                    masaCorregidaMuestraCuatro: '',
-                    volumenMuestraUno: '',
-                    volumenMuestraDos: '',
-                    volumenMuestraTres: '',
-                    volumenMuestraCuatro: '',
-                    volumenMetroCubicoMuestraUno: '',
-                    volumenMetroCubicoMuestraDos: '',
-                    volumenMetroCubicoMuestraTres: '',
-                    volumenMetroCubicoMuestraCuatro: '',
-                    densidadMuestraUno: '',
-                    densidadMuestraDos: '',
-                    densidadMuestraTres: '',
-                    densidadMuestraCuatro: '',
-                    areaMuestraUno: '',
-                    areaMuestraDos: '',
-                    areaMuestraTres: '',
-                    areaMuestraCuatro: '',
+                    dUnoMuestraUno: 0,
+                    dUnoMuestraDos: 0,
+                    dUnoMuestraTres: 0,
+                    dUnoMuestraCuatro: 0,
+                    dDosMuestraUno: 0,
+                    dDosMuestraDos: 0,
+                    dDosMuestraTres: 0,
+                    dDosMuestraCuatro: 0,
+                    hUnoMuestraUno: 0,
+                    hUnoMuestraDos: 0,
+                    hUnoMuestraTres: 0,
+                    hUnoMuestraCuatro: 0,
+                    hDosMuestraUno: 0,
+                    hDosMuestraDos: 0,
+                    hDosMuestraTres: 0,
+                    hDosMuestraCuatro: 0,
+                    refrentadoUno: 0,
+                    refrentadoDos: 0,
+                    refrentadoTres: 0,
+                    refrentadoCuatro: 0,
+                    dUnoMuestraUnoCorregida: 0,
+                    dUnoMuestraDosCorregida: 0,
+                    dUnoMuestraTresCorregida: 0,
+                    dUnoMuestraCuatroCorregida: 0,
+                    dDosMuestraUnoCorregida: 0,
+                    dDosMuestraDosCorregida: 0,
+                    dDosMuestraTresCorregida: 0,
+                    dDosMuestraCuatroCorregida: 0,
+                    hUnoMuestraUnoCorregida: 0,
+                    hUnoMuestraDosCorregida: 0,
+                    hUnoMuestraTresCorregida: 0,
+                    hUnoMuestraCuatroCorregida: 0,
+                    hDosMuestraUnoCorregida: 0,
+                    hDosMuestraDosCorregida: 0,
+                    hDosMuestraTresCorregida: 0,
+                    hDosMuestraCuatroCorregida: 0,
+                    masaMuestraUno: 0,
+                    masaMuestraDos: 0,
+                    masaMuestraTres: 0,
+                    masaMuestraCuatro: 0,
+                    errorMuestraUno: 0,
+                    errorMuestraDos: 0,
+                    errorMuestraTres: 0,
+                    errorMuestraCuatro: 0,
+                    masaCorregidaMuestraUno: 0,
+                    masaCorregidaMuestraDos: 0,
+                    masaCorregidaMuestraTres: 0,
+                    masaCorregidaMuestraCuatro: 0,
+                    volumenMuestraUno: 0,
+                    volumenMuestraDos: 0,
+                    volumenMuestraTres: 0,
+                    volumenMuestraCuatro: 0,
+                    volumenMetroCubicoMuestraUno: 0,
+                    volumenMetroCubicoMuestraDos: 0,
+                    volumenMetroCubicoMuestraTres: 0,
+                    volumenMetroCubicoMuestraCuatro: 0,
+                    densidadMuestraUno: 0,
+                    densidadMuestraDos: 0,
+                    densidadMuestraTres: 0,
+                    densidadMuestraCuatro: 0,
+                    areaMuestraUno: 0,
+                    areaMuestraDos: 0,
+                    areaMuestraTres: 0,
+                    areaMuestraCuatro: 0,
                     cargaEnsayoMuestraUno: '',
                     cargaEnsayoMuestraDos: '',
                     cargaEnsayoMuestraTres: '',
@@ -1349,7 +1390,7 @@
                     vb: ''
                 },
                 reglas: {
-                    numMuestra: [ { required: true, message: '', trigger: 'blur' } ],
+                    numIngreso: [ { required: true, message: '', trigger: 'blur' } ],
                     OTT: [ { required: true, message: '', trigger: 'change' } ],
                     numInforme: [ { required: true, message: '', trigger: 'blur' } ],
                     camaraHumeda: [ { required: true, message: '', trigger: 'blur' } ],
@@ -1413,8 +1454,9 @@
                     }).then(response => {
                         this.loading = false;
                         let resultados = response.body;
-                        var results = resultados.length > 0 ? resultados.map(orden => {return {'value': orden.num_cliente_obra.toUpperCase(),
-                                                                                               'id': orden.id}} ) : [];
+                        var results = resultados.length > 0 ? resultados.map(orden => {return {'value': orden.num_ott,
+                                                                                               'id': orden.num_ott}} ) : [];
+                        // console.log('resultados', this.opcionesSearchBoxOTT);
                         this.opcionesSearchBoxOTT = results;
                         this.ordenes = resultados;
                     }, response => {
@@ -1450,17 +1492,214 @@
                 this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(2);
             },
             'form.OTT': function(newVal, oldVal){
-                this.ordenSeleccionada = this.ordenes.filter(orden => {return orden.num_cliente_obra == newVal})[0];
-                this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
-            }
+                this.ordenSeleccionada = this.ordenes.filter(orden => {return orden.num_ott == newVal});
+                if (this.ordenSeleccionada.length != 0) {
+                    this.ordenSeleccionada = this.ordenSeleccionada[0];
+                    this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
+                    this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
+                    this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
+                    this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
+                    this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+                }
+            },
+            'form.fechaEnsayoMuestraUno': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraUno = diff;
+                }
+            },
+            'form.fechaConfeccionMuestraUno': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraUno = diff;
+                }
+            },
+            'form.fechaEnsayoMuestraDos': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraDos) && patronFecha.test(this.form.fechaConfeccionMuestraDos) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraDos, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraDos = diff;
+                }
+            },
+            'form.fechaConfeccionMuestraDos': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraDos) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraDos = diff;
+                }
+            },
+            'form.fechaEnsayoMuestraTres': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraTres = diff;
+                }
+            },
+            'form.fechaConfeccionMuestraTres': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraTres = diff;
+                }
+            },
+            'form.fechaEnsayoMuestraCuatro': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraCuatro = diff;
+                }
+            },
+            'form.fechaConfeccionMuestraCuatro': function(newVal, oldVal){
+                var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+
+                if( patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro) ){
+                    var date1 = moment(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
+                    var date2 = moment(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
+                    var diff = date1.diff(date2, 'days');
+                    this.form.edadDiasMuestraCuatro = diff;
+                }
+            },
+            'form.masaMuestraUno': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno)) ){
+                    this.form.masaCorregidaMuestraUno = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(2);
+                }
+            },
+            'form.errorMuestraUno': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno)) ){
+                    this.form.masaCorregidaMuestraUno = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(2);
+                }
+            },
+            'form.masaMuestraDos': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos)) ){
+                    this.form.masaCorregidaMuestraDos = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(2);
+                }
+            },
+            'form.errorMuestraDos': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos)) ){
+                    this.form.masaCorregidaMuestraDos = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(2);
+                }
+            },
+            'form.masaMuestraTres': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres)) ){
+                    this.form.masaCorregidaMuestraTres = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(2);
+                }
+            },
+            'form.errorMuestraTres': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres)) ){
+                    this.form.masaCorregidaMuestraTres = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(2);
+                }
+            },
+            'form.masaMuestraCuatro': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro)) ){
+                    this.form.masaCorregidaMuestraCuatro = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(2);
+                }
+            },
+            'form.errorMuestraCuatro': function(newVal, oldVal){
+                if( isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro)) ){
+                    this.form.masaCorregidaMuestraCuatro = 'No valido';
+                } else{
+                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(2);
+                }
+            },
+            'form.dUnoMuestraUnoCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraUno = 'No valido';
+                } else{
+                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
+            'form.dDosMuestraUnoCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraUno = 'No valido';
+                } else{
+                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
+            'form.dUnoMuestraDosCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraDos = 'No valido';
+                } else{
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
+            'form.dDosMuestraDosCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraDos = 'No valido';
+                } else{
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
+            'form.dUnoMuestraTresCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraDos = 'No valido';
+                } else{
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
+            'form.dDosMuestraTresCorregida': function(newVal, oldVal){
+                var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+                var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
+                if( isNaN(dUno) || isNaN(dDos) ){
+                    this.form.areaMuestraDos = 'No valido';
+                } else{
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2);
+                }
+            },
         },
     }
 </script>
 
 <style scoped lang="scss">
+    .no-click {
+        pointer-events: none;
+    }
     .contenedor-vue{
         background-color: #f5f5f5;
         padding: 10px;

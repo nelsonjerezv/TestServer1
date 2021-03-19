@@ -2,8 +2,8 @@
     <div class="item-lista-formularios">
         <div class="item">
             <div class="atributos">
-                <div class="item-atributo">N° Cliente Obra: {{item.num_cliente_obra}}</div>
-                <div class="item-atributo">Laboratorista: {{item.laboratorista}}</div>
+                <div class="item-atributo"><strong>N° OTT:</strong> {{item.id}}</div>
+                <div class="item-atributo"><strong>N° Cliente Obra:</strong> {{item.num_cliente_obra}} &emsp; &emsp; <strong>Laboratorista:</strong> {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
                 <el-button type="primary" @click="verFormulario"  plain>Ver</el-button>

@@ -29,6 +29,10 @@
                         v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
                         @cambiaMain="cambiarMain"
                     />
+                    <listado-exportar-pdf
+                        v-if="componenteMain == 'ListadoExportarPdf' "
+                        @cambiaMain="cambiarMain"
+                    />
                 </el-main>
                 <el-footer>Footer</el-footer>
             </el-container>
@@ -42,6 +46,7 @@
     import ListadoFormularios from '../../components/formularios/ListadoFormularios.vue';
     import EnsayoCompresionProbetasCilindricas from '../../components/formularios/EnsayoCompresionProbetasCilindricas.vue';
     import ListadoEnsayosCompresionProbetasCilindricas from '../../components/formularios/ListadoEnsayosCompresionProbetasCilindricas.vue';
+    import ListadoExportarPdf from '../../components/formularios/ListadoExportarPdf.vue';
 
     export default {
         components:{
@@ -49,15 +54,16 @@
             OrdenTrabajoTerreno,
             ListadoFormularios,
             EnsayoCompresionProbetasCilindricas,
-            ListadoEnsayosCompresionProbetasCilindricas
+            ListadoEnsayosCompresionProbetasCilindricas,
+            ListadoExportarPdf
         },
         props: [
             'ordenes'
         ],
         data() {
             return {
-                // componenteMain: 'OrdenTrabajoTerreno',
-                componenteMain: 'EnsayoCompresionProbetasCilindricas',
+                componenteMain: 'ListadoExportarPdf',
+                // componenteMain: 'EnsayoCompresionProbetasCilindricas',
                 // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',
                 tipoEnsayo: '',
