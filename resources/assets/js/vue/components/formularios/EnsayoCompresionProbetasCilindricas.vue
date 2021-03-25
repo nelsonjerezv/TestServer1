@@ -28,7 +28,7 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="8" >
-                    <el-form-item label="Informe N°" prop="numInforme">
+                    <el-form-item label="N° Informe" prop="numInforme">
                         <el-input v-model="form.numInforme"></el-input>
                     </el-form-item>
                 </el-col>
@@ -961,7 +961,7 @@
                     <div class="texto">
                         Factores de conversión cil. 15x30  a  cubo 20x20
                         <br>
-                        Fcil < a 20 MPa * 1,25 | Fcil > 20 Mpa ver nota (*)
+                        Fcil  a 20 MPa * 1,25 | Fcil  20 Mpa ver nota (*)
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="factoresConversionMuestraUno">
@@ -1276,70 +1276,70 @@
                     espesorPromedioMuestraDos: '',
                     espesorPromedioMuestraTres: '',
                     espesorPromedioMuestraCuatro: '',
-                    dUnoMuestraUno: 0,
-                    dUnoMuestraDos: 0,
-                    dUnoMuestraTres: 0,
-                    dUnoMuestraCuatro: 0,
-                    dDosMuestraUno: 0,
-                    dDosMuestraDos: 0,
-                    dDosMuestraTres: 0,
-                    dDosMuestraCuatro: 0,
-                    hUnoMuestraUno: 0,
-                    hUnoMuestraDos: 0,
-                    hUnoMuestraTres: 0,
-                    hUnoMuestraCuatro: 0,
-                    hDosMuestraUno: 0,
-                    hDosMuestraDos: 0,
-                    hDosMuestraTres: 0,
-                    hDosMuestraCuatro: 0,
-                    refrentadoUno: 0,
-                    refrentadoDos: 0,
-                    refrentadoTres: 0,
-                    refrentadoCuatro: 0,
-                    dUnoMuestraUnoCorregida: 0,
-                    dUnoMuestraDosCorregida: 0,
-                    dUnoMuestraTresCorregida: 0,
-                    dUnoMuestraCuatroCorregida: 0,
-                    dDosMuestraUnoCorregida: 0,
-                    dDosMuestraDosCorregida: 0,
-                    dDosMuestraTresCorregida: 0,
-                    dDosMuestraCuatroCorregida: 0,
-                    hUnoMuestraUnoCorregida: 0,
-                    hUnoMuestraDosCorregida: 0,
-                    hUnoMuestraTresCorregida: 0,
-                    hUnoMuestraCuatroCorregida: 0,
-                    hDosMuestraUnoCorregida: 0,
-                    hDosMuestraDosCorregida: 0,
-                    hDosMuestraTresCorregida: 0,
-                    hDosMuestraCuatroCorregida: 0,
-                    masaMuestraUno: 0,
-                    masaMuestraDos: 0,
-                    masaMuestraTres: 0,
-                    masaMuestraCuatro: 0,
-                    errorMuestraUno: 0,
-                    errorMuestraDos: 0,
-                    errorMuestraTres: 0,
-                    errorMuestraCuatro: 0,
-                    masaCorregidaMuestraUno: 0,
-                    masaCorregidaMuestraDos: 0,
-                    masaCorregidaMuestraTres: 0,
-                    masaCorregidaMuestraCuatro: 0,
-                    volumenMuestraUno: 0,
-                    volumenMuestraDos: 0,
-                    volumenMuestraTres: 0,
-                    volumenMuestraCuatro: 0,
-                    volumenMetroCubicoMuestraUno: 0,
-                    volumenMetroCubicoMuestraDos: 0,
-                    volumenMetroCubicoMuestraTres: 0,
-                    volumenMetroCubicoMuestraCuatro: 0,
-                    densidadMuestraUno: 0,
-                    densidadMuestraDos: 0,
-                    densidadMuestraTres: 0,
-                    densidadMuestraCuatro: 0,
-                    areaMuestraUno: 0,
-                    areaMuestraDos: 0,
-                    areaMuestraTres: 0,
-                    areaMuestraCuatro: 0,
+                    dUnoMuestraUno: '',
+                    dUnoMuestraDos: '',
+                    dUnoMuestraTres: '',
+                    dUnoMuestraCuatro: '',
+                    dDosMuestraUno: '',
+                    dDosMuestraDos: '',
+                    dDosMuestraTres: '',
+                    dDosMuestraCuatro: '',
+                    hUnoMuestraUno: '',
+                    hUnoMuestraDos: '',
+                    hUnoMuestraTres: '',
+                    hUnoMuestraCuatro: '',
+                    hDosMuestraUno: '',
+                    hDosMuestraDos: '',
+                    hDosMuestraTres: '',
+                    hDosMuestraCuatro: '',
+                    refrentadoUno: '',
+                    refrentadoDos: '',
+                    refrentadoTres: '',
+                    refrentadoCuatro: '',
+                    dUnoMuestraUnoCorregida: '',
+                    dUnoMuestraDosCorregida: '',
+                    dUnoMuestraTresCorregida: '',
+                    dUnoMuestraCuatroCorregida: '',
+                    dDosMuestraUnoCorregida: '',
+                    dDosMuestraDosCorregida: '',
+                    dDosMuestraTresCorregida: '',
+                    dDosMuestraCuatroCorregida: '',
+                    hUnoMuestraUnoCorregida: '',
+                    hUnoMuestraDosCorregida: '',
+                    hUnoMuestraTresCorregida: '',
+                    hUnoMuestraCuatroCorregida: '',
+                    hDosMuestraUnoCorregida: '',
+                    hDosMuestraDosCorregida: '',
+                    hDosMuestraTresCorregida: '',
+                    hDosMuestraCuatroCorregida: '',
+                    masaMuestraUno: '',
+                    masaMuestraDos: '',
+                    masaMuestraTres: '',
+                    masaMuestraCuatro: '',
+                    errorMuestraUno: '',
+                    errorMuestraDos: '',
+                    errorMuestraTres: '',
+                    errorMuestraCuatro: '',
+                    masaCorregidaMuestraUno: '',
+                    masaCorregidaMuestraDos: '',
+                    masaCorregidaMuestraTres: '',
+                    masaCorregidaMuestraCuatro: '',
+                    volumenMuestraUno: '',
+                    volumenMuestraDos: '',
+                    volumenMuestraTres: '',
+                    volumenMuestraCuatro: '',
+                    volumenMetroCubicoMuestraUno: '',
+                    volumenMetroCubicoMuestraDos: '',
+                    volumenMetroCubicoMuestraTres: '',
+                    volumenMetroCubicoMuestraCuatro: '',
+                    densidadMuestraUno: '',
+                    densidadMuestraDos: '',
+                    densidadMuestraTres: '',
+                    densidadMuestraCuatro: '',
+                    areaMuestraUno: '',
+                    areaMuestraDos: '',
+                    areaMuestraTres: '',
+                    areaMuestraCuatro: '',
                     cargaEnsayoMuestraUno: '',
                     cargaEnsayoMuestraDos: '',
                     cargaEnsayoMuestraTres: '',
@@ -1429,10 +1429,17 @@
                         this.$http.post(this.urlGuardarEnsayo,{
                             ensayo: this.form
                         }).then(response => {
-                            Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
-                            setTimeout(()=>{
-                                this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
-                            }, 5000);
+                            if(response.body[1] == true){
+                                Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
+                                setTimeout(()=>{
+                                    this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
+                                }, 5000);
+                            } else{
+                                if(response.body[0].errorInfo[0] == "23000"){
+                                    return Tools.mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
+                                }
+                                return Tools.mensajeAlerta("No se pudo guardar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
+                            }
                         }, response => {
                             console.log(response)
                             Tools.mensajeAlerta("No se pudo guardar el ensayo.", Tools.MENSAJE.ERROR, '', 5);

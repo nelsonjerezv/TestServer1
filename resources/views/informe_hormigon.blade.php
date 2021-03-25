@@ -295,7 +295,7 @@
   <tr>
     <td class="tg-0lax">Tipo de hormigón</td>
     <td class="tg-0lax">:</td>
-    <td class="tg-0lax width-50" colspan="2">{{ $orden->{'t_hormigon_mortero'} }}</td>
+    <td class="tg-0lax width-50" colspan="2">{{ $orden->{'tipo_hormigon_mortero'} }}</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">Temperatura ambiente (Cº)</td>
     <td class="tg-0lax">:</td>
@@ -308,7 +308,7 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Temperatura del hormigón (Cº)</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="3">{{-- {{ $orden->{'t_hormigon_mortero'} }} --}}PENDIENTE</td>
+    <td class="tg-0pky width-50" colspan="3">{{ $orden->{'t_hormigon_mortero'} }}</td>
   </tr>
   <tr>
     <td class="tg-0pky">Guía Nº</td>
@@ -381,42 +381,42 @@
   <tr>
     <td class="tg-0pky">HUMEDAD DE LA MUESTRA</td>
     <td class="tg-0pky"></td>
-    <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">---</td>
+    <td class="tg-c3ow">---</td>
+    <td class="tg-c3ow">---</td>
+    <td class="tg-c3ow">---</td>
   </tr>
   <tr>
     <td class="tg-0pky">DENSIDAD (*)</td>
     <td class="tg-0pky">(Kg/m3)</td>
-    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_uno'} === "" ? "-" : $datos->{'ensayo'}->{'densidad_muestra_uno'} }}</td>
-    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_dos'} === "" ? "-" : $datos->{'ensayo'}->{'densidad_muestra_dos'} }}</td>
-    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_tres'} === "" ? "-" : $datos->{'ensayo'}->{'densidad_muestra_tres'} }}</td>
-    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_cuatro'} === "" ? "-" : $datos->{'ensayo'}->{'densidad_muestra_cuatro'} }}</td>
+    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_uno'} }}</td>
+    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_dos'} }}</td>
+    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_tres'} }}</td>
+    <td class="tg-c3ow">{{ $datos->{'ensayo'}->{'densidad_muestra_cuatro'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_cuatro'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">SECCION DE ENSAYO</td>
     <td class="tg-0lax">(mm2)</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_uno'} === "" ? "-" : $datos->{'ensayo'}->{'area_muestra_uno'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_dos'} === "" ? "-" : $datos->{'ensayo'}->{'area_muestra_dos'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_tres'} === "" ? "-" : $datos->{'ensayo'}->{'area_muestra_tres'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_cuatro'} === "" ? "-" : $datos->{'ensayo'}->{'area_muestra_cuatro'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_uno'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_dos'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_tres'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'area_muestra_cuatro'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_cuatro'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">CARGA MAXIMA REGISTRADA</td>
     <td class="tg-0lax">(N)</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_uno'} === "" ? "-" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_uno'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_dos'} === "" ? "-" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_dos'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_tres'} === "" ? "-" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_tres'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_cuatro'} === "" ? "-" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_cuatro'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_uno'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_dos'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_tres'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_cuatro'} === "" ? "---" : $datos->{'ensayo'}->{'carga_ensayo_mil_muestra_cuatro'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">RESISTENCIA CILINDRICA</td>
     <td class="tg-0lax">(MPa)</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_uno'} === "" ? "-" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_uno'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_dos'} === "" ? "-" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_dos'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_tres'} === "" ? "-" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_tres'} }}</td>
-    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_cuatro'} === "" ? "-" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_cuatro'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_uno'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_dos'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_tres'} }}</td>
+    <td class="tg-baqh">{{ $datos->{'ensayo'}->{'resistencia_compresion_muestra_cuatro'} === "" ? "---" : $datos->{'ensayo'}->{'resistencia_compresion_muestra_cuatro'} }}</td>
   </tr>
   <tr>
     <td class="tg-0lax">RESISTENCIA CUBICA 15x15</td>

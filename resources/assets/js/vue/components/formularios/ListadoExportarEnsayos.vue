@@ -5,7 +5,7 @@
             <el-input class="width-100" placeholder="Filtre por N° Muestra" v-model="buscador"></el-input>
         </div>
         <div class="container-items-formulario">
-            <item-lista-exportar-pdf
+            <item-lista-exportar-ensayos
                 v-for="(orden, index) in ensayosHormigon"
                 v-bind:itemLista="orden"
                 v-bind:index="index"
@@ -16,11 +16,11 @@
     </div>
 </template>
 <script>
-    import ItemListaExportarPdf from '../../components/formularios/ItemListaExportarPdf.vue';
+    import ItemListaExportarEnsayos from './ItemListaExportarEnsayos.vue';
 
     export default {
         components: {
-            ItemListaExportarPdf
+            ItemListaExportarEnsayos
         },
         props: [],
         data(){
