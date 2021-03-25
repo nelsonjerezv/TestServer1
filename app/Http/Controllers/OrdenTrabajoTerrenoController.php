@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
 use App\Models\OrdenTrabajoTerreno;
 use App\Models\EnsayoProbetasHormigon;
+use Maatwebsite\Excel\Facades\Excel;
 
 class OrdenTrabajoTerrenoController extends Controller
 {

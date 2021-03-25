@@ -29,8 +29,8 @@
                         v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
                         @cambiaMain="cambiarMain"
                     />
-                    <listado-exportar-pdf
-                        v-if="componenteMain == 'ListadoExportarPdf' "
+                    <listado-exportar-ensayos
+                        v-if="componenteMain == 'ListadoExportarEnsayos' "
                         @cambiaMain="cambiarMain"
                     />
                 </el-main>
@@ -46,7 +46,7 @@
     import ListadoFormularios from '../../components/formularios/ListadoFormularios.vue';
     import EnsayoCompresionProbetasCilindricas from '../../components/formularios/EnsayoCompresionProbetasCilindricas.vue';
     import ListadoEnsayosCompresionProbetasCilindricas from '../../components/formularios/ListadoEnsayosCompresionProbetasCilindricas.vue';
-    import ListadoExportarPdf from '../../components/formularios/ListadoExportarPdf.vue';
+    import ListadoExportarEnsayos from '../../components/formularios/ListadoExportarEnsayos.vue';
 
     export default {
         components:{
@@ -55,14 +55,14 @@
             ListadoFormularios,
             EnsayoCompresionProbetasCilindricas,
             ListadoEnsayosCompresionProbetasCilindricas,
-            ListadoExportarPdf
+            ListadoExportarEnsayos
         },
         props: [
             'ordenes'
         ],
         data() {
             return {
-                componenteMain: 'ListadoExportarPdf',
+                componenteMain: 'ListadoExportarEnsayos',
                 // componenteMain: 'EnsayoCompresionProbetasCilindricas',
                 // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',

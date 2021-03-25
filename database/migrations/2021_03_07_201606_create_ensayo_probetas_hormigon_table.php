@@ -17,7 +17,7 @@ class CreateEnsayoProbetasHormigonTable extends Migration
             $table->increments('id');
             $table->string('num_ingreso', 75)->nullable();
             $table->string('ott', 75)->nullable();
-            $table->string('num_informe', 75)->nullable();
+            $table->string('num_informe', 75)->unique();
             $table->string('camara_humeda', 75)->nullable();
             $table->string('piscina', 75)->nullable();
             $table->string('balanza', 75)->nullable();

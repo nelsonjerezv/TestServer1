@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\EnsayoProbetasHormigon;
 use App\Models\OrdenTrabajoTerreno;
+use App\Exports\EnsayosHormigonExport;
+use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Database\QueryException;
 use PDF;
 
 class EnsayosHormigonController extends Controller
@@ -203,27 +206,57 @@ class EnsayosHormigonController extends Controller
         $ensayo['fecha'] = mb_strtoupper($request->ensayo['fecha']);
         $ensayo['vb'] = mb_strtoupper($request->ensayo['vb']);
 
-        return EnsayoProbetasHormigon::create($ensayo);
+        $result;
+        try {
+            $result = EnsayoProbetasHormigon::create($ensayo);
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$result, true];
     }
 
     public function exportarEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
-                'direccionSolicitante' => $direccionSolicitante,
-                'localizacionObra' => $localizacionObra,
-                'numProyecto' => $numProyecto,
-                'numCorrelativoInformeObra' => $numCorrelativoInformeObra,
-                'numCorrelativoObra' => $numCorrelativoObra,
-                'curadoInicial' => $curadoInicial,
-                'lugarEnsayos' => $lugarEnsayos,
-                'ensayo' => $ensayo
-            ];
+            'direccionSolicitante' => $direccionSolicitante,
+            'localizacionObra' => $localizacionObra,
+            'numProyecto' => $numProyecto,
+            'numCorrelativoInformeObra' => $numCorrelativoInformeObra,
+            'numCorrelativoObra' => $numCorrelativoObra,
+            'curadoInicial' => $curadoInicial,
+            'lugarEnsayos' => $lugarEnsayos,
+            'ensayo' => $ensayo
+        ];
         // dd($orden, $datos);
         $pdf = PDF::loadView('informe_hormigon',  compact('datos', 'orden') )->setOption('dpi', 600);
         $pdf->setOption('no-background', true);
 
         return $pdf->stream();
+    }
+
+    public function exportarEnsayoExcel($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos){
+        $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+        $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
+        $datos = (object) [
+            'direccionSolicitante' => $direccionSolicitante,
+            'localizacionObra' => $localizacionObra,
+            'numProyecto' => $numProyecto,
+            'numCorrelativoInformeObra' => $numCorrelativoInformeObra,
+            'numCorrelativoObra' => $numCorrelativoObra,
+            'curadoInicial' => $curadoInicial,
+            'lugarEnsayos' => $lugarEnsayos,
+            'ensayo' => $ensayo
+        ];
+
+        // return 1;
+        return Excel::download(new EnsayosHormigonExport($datos, $orden), 'test.xlsx');
+
+        // return Excel::create('New file', function($excel) {
+        //     $excel->sheet('New sheet', function($sheet) {
+        //         $sheet->loadView('informe_hormigon',  compact('datos', 'orden') );
+        //     });
+        // });
     }
 
     public function verEnsayoPdf($id){

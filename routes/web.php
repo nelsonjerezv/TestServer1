@@ -27,6 +27,7 @@
     Route::get('/ensayos/todos-los-ensayos', 'EnsayosHormigonController@todosLosEnsayos');
     Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
     Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}', 'EnsayosHormigonController@exportarEnsayoPdf');
+    Route::get('/ensayos/exportar-ensayo-excel/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}', 'EnsayosHormigonController@exportarEnsayoExcel');
     Route::get('/ensayos/ver-ensayo-pdf/{id}', 'EnsayosHormigonController@verEnsayoPdf');
     Route::get('/ensayos/buscar-ott/{busqueda}', 'EnsayosHormigonController@buscarOtt');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');

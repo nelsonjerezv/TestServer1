@@ -46,8 +46,8 @@
                 <el-submenu index="4">
                     <span slot="title">Exportar</span>
                     <el-menu-item-group>
-                        <el-menu-item index="4-1" @click="exportaPDF">
-                            A PDF
+                        <el-menu-item index="4-1" @click="exportaEnsayos">
+                            Ensayos
                         </el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group>
@@ -87,8 +87,8 @@
             listadoEnsayos() {
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
             },
-            exportaPDF() {
-                this.$emit("cambiaMain", {vista: "ListadoExportarPdf", condicion:''});
+            exportaEnsayos() {
+                this.$emit("cambiaMain", {vista: "ListadoExportarEnsayos", condicion:''});
             },
         }
     }

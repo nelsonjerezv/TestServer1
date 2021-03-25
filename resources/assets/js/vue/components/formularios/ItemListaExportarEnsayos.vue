@@ -7,6 +7,17 @@
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
             <div class="item-contenedor-botones">
+                <el-button type="warning" @click="dialogVisible = true" plain>Ver Ensayo</el-button>
+                <el-dialog
+                    :visible.sync="dialogVisible"
+                    width="90%"
+                    :before-close="handleClose">
+                    <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
+                    <span slot="footer" class="dialog-footer">
+                        <el-button @click="dialogVisible = false" plain>Volver</el-button>
+                        <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
+                    </span>
+                </el-dialog>
                 <el-popover
                     placement="right"
                     width="400"
@@ -20,31 +31,26 @@
                     <div class="una-linea">Nº Correlativo de obra:           <el-input placeholder="" size="mini" v-model="numCorrelativoObra"/></div>
                     <div class="una-linea">Curado inicial:                   <el-input placeholder="" size="mini" v-model="curadoInicial"/></div>
                     <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
-                    <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar PDF</el-button></div>
-                <el-button slot="reference" type="primary" plain>Generar PDF</el-button>
+                    <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar Informe</el-button></div>
+                <el-button slot="reference" type="primary" plain>Exportar a PDF</el-button>
                 </el-popover>
-                <el-button type="info" @click="dialogVisible = true" plain>Ver contenido Ensayo</el-button>
-                <!-- <el-popconfirm
-                    confirm-button-text='Eliminar'
-                    cancel-button-text='volver'
-                    @confirm="eliminarEnsayo"
-                    placement="top-end"
-                    icon="el-icon-info"
-                    icon-color="red"
-                    :hide-icon="true"
-                    title="Está seguro quiere eliminar el formulario?">
-                    <el-button slot="reference" type="danger" plain>Eliminar</el-button>
-                </el-popconfirm> -->
-                <el-dialog
-                    :visible.sync="dialogVisible"
-                    width="90%"
-                    :before-close="handleClose">
-                    <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
-                    <span slot="footer" class="dialog-footer">
-                        <el-button @click="dialogVisible = false">Volver</el-button>
-                        <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
-                    </span>
-                </el-dialog>
+                <el-popover
+                    placement="right"
+                    width="400"
+                    trigger="click"
+                    popper-class="datos-informe">
+                    <div class="una-linea">Complete Datos faltantes</div>
+                    <div class="una-linea">Dirección Solicitante:            <el-input placeholder="" size="mini" v-model="direccionSolicitante"/></div>
+                    <div class="una-linea">Localización Obra:                <el-input placeholder="" size="mini" v-model="localizacionObra"/></div>
+                    <div class="una-linea">Proyecto N°:                      <el-input placeholder="" size="mini" v-model="numProyecto"/></div>
+                    <div class="una-linea">Nº Correlativo de informe obra:   <el-input placeholder="" size="mini" v-model="numCorrelativoInformeObra"/></div>
+                    <div class="una-linea">Nº Correlativo de obra:           <el-input placeholder="" size="mini" v-model="numCorrelativoObra"/></div>
+                    <div class="una-linea">Curado inicial:                   <el-input placeholder="" size="mini" v-model="curadoInicial"/></div>
+                    <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
+                    <div class="una-linea"><el-button type="success" @click="exportarExcel" plain>Exportar Excel</el-button></div>
+                    <el-button slot="reference" type="success" plain>Exportar a Excel</el-button>
+                </el-popover>
+
             </div>
         </div>
     </div>
@@ -63,6 +69,7 @@
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
                 urlExportarEnsayoPdf: `${GLOBAL.URL}ensayos/exportar-ensayo-pdf`,
+                urlExportarEnsayoExcel: `${GLOBAL.URL}ensayos/exportar-ensayo-excel`,
                 direccionSolicitante: 'Dirección Solicitante',
                 localizacionObra: 'localizacion obra',
                 numProyecto: 'numero de proyecto',
@@ -113,12 +120,28 @@
                                                       + '/' + this.lugarEnsayos, '_blank');
                 console.log('exportarPDF');
             },
+            exportarExcel(){
+                let data = {
+                    id: this.item.id,
+                    direccionSolicitante: this.direccionSolicitante,
+                    localizacionObra: this.localizacionObra,
+                    numProyecto: this.numProyecto,
+                    numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+                    numCorrelativoObra: this.numCorrelativoObra,
+                    curadoInicial:this.curadoInicial,
+                };
+                window.open(this.urlExportarEnsayoExcel + '/' + this.item.id
+                                                      + '/' + this.direccionSolicitante
+                                                      + '/' + this.localizacionObra
+                                                      + '/' + this.numProyecto
+                                                      + '/' + this.numCorrelativoInformeObra
+                                                      + '/' + this.numCorrelativoObra
+                                                      + '/' + this.curadoInicial
+                                                      + '/' + this.lugarEnsayos, '_blank')
+                console.log('exportarExcel');
+            },
             handleClose(done) {
-                this.$confirm('Are you sure to close this dialog?')
-                .then(_ => {
-                    done();
-                })
-                .catch(_ => {});
+                done().catch(_ => {});
             }
         },
         computed: {
@@ -181,8 +204,15 @@
         width: 90% !important;
         height: 90% !important;
         margin: 3% auto !important;
+        .el-dialog__header{
+            padding: 0px;
+        }
         .el-dialog__body {
-            height: calc(100% - 100px);
+            height: calc(100% - 60px);
+            padding: 20px;
+        }
+        .el-dialog__footer{
+            padding: 0px 20px 20px;
         }
     }
 </style>
