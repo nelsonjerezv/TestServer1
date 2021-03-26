@@ -34,7 +34,7 @@
                     <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar Informe</el-button></div>
                 <el-button slot="reference" type="primary" plain>Exportar a PDF</el-button>
                 </el-popover>
-                <el-popover
+                <!-- <el-popover
                     placement="right"
                     width="400"
                     trigger="click"
@@ -49,8 +49,8 @@
                     <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
                     <div class="una-linea"><el-button type="success" @click="exportarExcel" plain>Exportar Excel</el-button></div>
                     <el-button slot="reference" type="success" plain>Exportar a Excel</el-button>
-                </el-popover>
-
+                </el-popover> -->
+                <el-button type="success" @click="handleInner" plain>Exportar a Excel</el-button>
             </div>
         </div>
     </div>
@@ -142,6 +142,13 @@
             },
             handleClose(done) {
                 done().catch(_ => {});
+            },
+            handleInner(done) {
+                this.$confirm('Pendiente')
+                .then(_ => {
+                    done();
+                })
+                .catch(_ => {});
             }
         },
         computed: {
