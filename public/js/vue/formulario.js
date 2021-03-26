@@ -95615,6 +95615,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -95690,11 +95693,11 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "2-1" },
-                          on: { click: _vm.listadoOTTs }
+                          on: { click: _vm.nuevaOTT }
                         },
                         [
                           _vm._v(
-                            "\n                        Listado OTTs\n                    "
+                            "\n                        Nueva OTT\n                    "
                           )
                         ]
                       ),
@@ -95703,25 +95706,23 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "2-2" },
-                          on: { click: _vm.nuevaOTT }
+                          on: { click: _vm.listadoOTTs }
                         },
                         [
                           _vm._v(
-                            "\n                        Nueva OTT\n                    "
+                            "\n                        OTTs por validar\n                    "
                           )
                         ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "el-menu-item-group",
-                    [
+                      ),
+                      _vm._v(" "),
                       _c(
                         "el-menu-item",
                         { attrs: { index: "2-3", disabled: "" } },
-                        [_vm._v("item three")]
+                        [
+                          _vm._v(
+                            "\n                        OTTs validadas\n                    "
+                          )
+                        ]
                       )
                     ],
                     1
@@ -95747,30 +95748,34 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "3-1" },
-                          on: { click: _vm.listadoEnsayos }
-                        },
-                        [
-                          _vm._v(
-                            "\n                        Listado Ensayos\n                    "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "el-menu-item-group",
-                    [
-                      _c(
-                        "el-menu-item",
-                        {
-                          attrs: { index: "3-2" },
                           on: { click: _vm.nuevoEnsayo }
                         },
                         [
                           _vm._v(
                             "\n                        Nuevo Ensayo\n                    "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-menu-item",
+                        {
+                          attrs: { index: "3-2" },
+                          on: { click: _vm.listadoEnsayos }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Ensayos por validar\n                    "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-menu-item",
+                        { attrs: { index: "3-2", disabled: "" } },
+                        [
+                          _vm._v(
+                            "\n                        Ensayos validados\n                    "
                           )
                         ]
                       )
@@ -95806,32 +95811,10 @@ var render = function() {
                       )
                     ],
                     1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "el-menu-item-group",
-                    [
-                      _c(
-                        "el-menu-item",
-                        { attrs: { disabled: "", index: "4-2" } },
-                        [
-                          _vm._v(
-                            "\n                        A Excel\n                    "
-                          )
-                        ]
-                      )
-                    ],
-                    1
                   )
                 ],
                 1
-              ),
-              _vm._v(" "),
-              _c("el-menu-item", { attrs: { index: "5", disabled: "" } }, [
-                _c("span", { attrs: { slot: "title" }, slot: "title" }, [
-                  _vm._v("Navigator Four")
-                ])
-              ])
+              )
             ],
             1
           )
@@ -109485,6 +109468,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         handleClose: function handleClose(done) {
             done().catch(function (_) {});
+        },
+        handleInner: function handleInner(done) {
+            this.$confirm('Pendiente').then(function (_) {
+                done();
+            }).catch(function (_) {});
         }
     },
     computed: {
@@ -109765,179 +109753,12 @@ var render = function() {
           ),
           _vm._v(" "),
           _c(
-            "el-popover",
+            "el-button",
             {
-              attrs: {
-                placement: "right",
-                width: "400",
-                trigger: "click",
-                "popper-class": "datos-informe"
-              }
+              attrs: { type: "success", plain: "" },
+              on: { click: _vm.handleInner }
             },
-            [
-              _c("div", { staticClass: "una-linea" }, [
-                _vm._v("Complete Datos faltantes")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Dirección Solicitante:            "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.direccionSolicitante,
-                      callback: function($$v) {
-                        _vm.direccionSolicitante = $$v
-                      },
-                      expression: "direccionSolicitante"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Localización Obra:                "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.localizacionObra,
-                      callback: function($$v) {
-                        _vm.localizacionObra = $$v
-                      },
-                      expression: "localizacionObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Proyecto N°:                      "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numProyecto,
-                      callback: function($$v) {
-                        _vm.numProyecto = $$v
-                      },
-                      expression: "numProyecto"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Nº Correlativo de informe obra:   "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoInformeObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoInformeObra = $$v
-                      },
-                      expression: "numCorrelativoInformeObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Nº Correlativo de obra:           "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoObra = $$v
-                      },
-                      expression: "numCorrelativoObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Curado inicial:                   "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.curadoInicial,
-                      callback: function($$v) {
-                        _vm.curadoInicial = $$v
-                      },
-                      expression: "curadoInicial"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Lugar de realización de ensayos: "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.lugarEnsayos,
-                      callback: function($$v) {
-                        _vm.lugarEnsayos = $$v
-                      },
-                      expression: "lugarEnsayos"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "success", plain: "" },
-                      on: { click: _vm.exportarExcel }
-                    },
-                    [_vm._v("Exportar Excel")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-button",
-                {
-                  attrs: { slot: "reference", type: "success", plain: "" },
-                  slot: "reference"
-                },
-                [_vm._v("Exportar a Excel")]
-              )
-            ],
-            1
+            [_vm._v("Exportar a Excel")]
           )
         ],
         1
