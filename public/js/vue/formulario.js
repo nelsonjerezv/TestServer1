@@ -101690,6 +101690,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //     id: this.item.id
             // });
             console.log('editar formulario');
+        },
+        handleInner: function handleInner(done) {
+            this.$confirm('Pendiente').then(function (_) {
+                done();
+            }).catch(function (_) {});
         }
     }
 });
@@ -101726,7 +101731,7 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "primary", plain: "" },
-              on: { click: _vm.verFormulario }
+              on: { click: _vm.handleInner }
             },
             [_vm._v("Ver")]
           ),
@@ -101735,7 +101740,7 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "warning", plain: "" },
-              on: { click: _vm.editarFormulario }
+              on: { click: _vm.handleInner }
             },
             [_vm._v("Editar")]
           ),
@@ -108863,8 +108868,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
             console.log('exportarExcel');
         },
-        handleClose: function handleClose(done) {
-            done().catch(function (_) {});
+        handleInner: function handleInner(done) {
+            this.$confirm('Pendiente').then(function (_) {
+                done();
+            }).catch(function (_) {});
         }
     },
     computed: {
@@ -108925,11 +108932,7 @@ var render = function() {
           _c(
             "el-dialog",
             {
-              attrs: {
-                visible: _vm.dialogVisible,
-                width: "90%",
-                "before-close": _vm.handleClose
-              },
+              attrs: { visible: _vm.dialogVisible, width: "90%" },
               on: {
                 "update:visible": function($event) {
                   _vm.dialogVisible = $event
@@ -108954,11 +108957,7 @@ var render = function() {
                     "el-button",
                     {
                       attrs: { type: "success", plain: "" },
-                      on: {
-                        click: function($event) {
-                          _vm.dialogVisible = false
-                        }
-                      }
+                      on: { click: _vm.handleInner }
                     },
                     [_vm._v("Validar")]
                   ),
@@ -108967,11 +108966,7 @@ var render = function() {
                     "el-button",
                     {
                       attrs: { type: "warning", plain: "" },
-                      on: {
-                        click: function($event) {
-                          _vm.dialogVisible = false
-                        }
-                      }
+                      on: { click: _vm.handleInner }
                     },
                     [_vm._v("Rechazar")]
                   ),
@@ -108998,7 +108993,7 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "warning", plain: "" },
-              on: { click: _vm.editarEnsayo }
+              on: { click: _vm.handleInner }
             },
             [_vm._v("Editar")]
           ),
