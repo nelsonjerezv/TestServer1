@@ -12,16 +12,19 @@
                         <span slot="title">OTT</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="2-1" @click="listadoOTTs">
-                            Listado OTTs
-                        </el-menu-item>
-                        <el-menu-item index="2-2" @click="nuevaOTT">
+                        <el-menu-item index="2-1" @click="nuevaOTT">
                             Nueva OTT
                         </el-menu-item>
+                        <el-menu-item index="2-2" @click="listadoOTTs">
+                            OTTs por validar
+                        </el-menu-item>
+                        <el-menu-item index="2-3" disabled>
+                            OTTs validadas
+                        </el-menu-item>
                     </el-menu-item-group>
-                    <el-menu-item-group>
+                    <!-- <el-menu-item-group>
                         <el-menu-item index="2-3" disabled>item three</el-menu-item>
-                    </el-menu-item-group>
+                    </el-menu-item-group> -->
                     <!-- <el-submenu index="2-4">
                         <span slot="title">item four</span>
                         <el-menu-item index="2-4-1">item one</el-menu-item>
@@ -32,14 +35,14 @@
                         <span slot="title">Ensayos</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="3-1" @click="listadoEnsayos">
-                            Listado Ensayos
-                        </el-menu-item>
-
-                    </el-menu-item-group>
-                    <el-menu-item-group>
-                        <el-menu-item index="3-2" @click="nuevoEnsayo">
+                        <el-menu-item index="3-1" @click="nuevoEnsayo">
                             Nuevo Ensayo
+                        </el-menu-item>
+                        <el-menu-item index="3-2" @click="listadoEnsayos">
+                            Ensayos por validar
+                        </el-menu-item>
+                        <el-menu-item index="3-2" disabled>
+                            Ensayos validados
                         </el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
@@ -50,15 +53,15 @@
                             Ensayos
                         </el-menu-item>
                     </el-menu-item-group>
-                    <el-menu-item-group>
+                    <!-- <el-menu-item-group>
                         <el-menu-item disabled index="4-2">
                             A Excel
                         </el-menu-item>
-                    </el-menu-item-group>
+                    </el-menu-item-group> -->
                 </el-submenu>
-                <el-menu-item index="5" disabled>
+                <!-- <el-menu-item index="5" disabled>
                     <span slot="title">Navigator Four</span>
-                </el-menu-item>
+                </el-menu-item> -->
             </el-menu>
         </el-aside>
     </div>
