@@ -42,6 +42,7 @@ class EnsayosHormigonController extends Controller
 
         $ensayo['num_ingreso'] = mb_strtoupper($request->ensayo['numIngreso']);
         $ensayo['ott'] = mb_strtoupper($request->ensayo['OTT']);
+        $ensayo['validado'] = false;
         $ensayo['num_informe'] = mb_strtoupper($request->ensayo['numInforme']);
         $ensayo['camara_humeda'] = mb_strtoupper($request->ensayo['camaraHumeda']);
         $ensayo['piscina'] = mb_strtoupper($request->ensayo['piscina']);

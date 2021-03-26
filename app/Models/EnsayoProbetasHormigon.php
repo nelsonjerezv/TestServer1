@@ -11,6 +11,7 @@ class EnsayoProbetasHormigon extends Model
     protected $fillable = [
         'num_ingreso',
         'ott',
+        'validado',
         'num_informe',
         'camara_humeda',
         'piscina',
