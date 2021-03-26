@@ -15,6 +15,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 1,
             "ott" => 1,
+            "validado" => true,
             "num_ingreso" => 1,
             "num_informe" => "1",
             "camara_humeda" => "CAMARA HUMEDA",
@@ -180,6 +181,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 2,
             "ott" => 2,
+            "validado" => true,
             "num_ingreso" => 2,
             "num_informe" => "2",
             "camara_humeda" => "CAMARA HUMEDA",
@@ -345,6 +347,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 3,
             "ott" => 3,
+            "validado" => false,
             "num_ingreso" => 3,
             "num_informe" => "3",
             "camara_humeda" => "CAMARA HUMEDA",
@@ -510,6 +513,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 4,
             "ott" => 4,
+            "validado" => true,
             "num_ingreso" => 4,
             "num_informe" => "4",
             "camara_humeda" => "CAMARA HUMEDA",
@@ -675,6 +679,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 5,
             "ott" => 5,
+            "validado" => false,
             "num_ingreso" => 5,
             "num_informe" => "5",
             "camara_humeda" => "CAMARA HUMEDA",
@@ -840,6 +845,7 @@ class EnsayoProbetasHormigonSeeder  extends Seeder
         EnsayoProbetasHormigon::create(array(
             "id" => 6,
             "ott" => 6,
+            "validado" => true,
             "num_ingreso" => 6,
             "num_informe" => "6",
             "camara_humeda" => "CAMARA HUMEDA",

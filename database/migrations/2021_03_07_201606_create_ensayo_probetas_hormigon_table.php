@@ -15,6 +15,7 @@ class CreateEnsayoProbetasHormigonTable extends Migration
     {
         Schema::create('ensayo_probetas_hormigon', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('validado', 10);
             $table->string('num_ingreso', 75)->nullable();
             $table->string('ott', 75)->nullable();
             $table->string('num_informe', 75)->unique();

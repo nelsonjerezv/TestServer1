@@ -11,17 +11,17 @@
                 <el-button type="primary" @click="dialogVisible = true" plain>Ver Ensayo</el-button>
                 <el-dialog
                     :visible.sync="dialogVisible"
-                    width="90%"
-                    :before-close="handleClose">
+                    width="90%">
+                    <!-- :before-close="handleClose" -->
                     <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
                     <span slot="footer" class="dialog-footer">
-                        <el-button type="success" @click="dialogVisible = false" plain>Validar</el-button>
-                        <el-button type="warning" @click="dialogVisible = false" plain>Rechazar</el-button>
+                        <el-button type="success" @click="handleInner" plain>Validar</el-button>
+                        <el-button type="warning" @click="handleInner" plain>Rechazar</el-button>
                         <el-button type="danger" @click="dialogVisible = false" plain>Volver</el-button>
                         <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
                     </span>
                 </el-dialog>
-                <el-button type="warning" @click="editarEnsayo" plain>Editar</el-button>
+                <el-button type="warning" @click="handleInner" plain>Editar</el-button>
                 <el-popconfirm
                     confirm-button-text='Eliminar'
                     cancel-button-text='volver'
@@ -114,8 +114,12 @@
                                                       + '/' + this.lugarEnsayos, '_blank')
                 console.log('exportarExcel');
             },
-            handleClose(done) {
-                done().catch(_ => {});
+            handleInner(done) {
+                this.$confirm('Pendiente')
+                .then(_ => {
+                    done();
+                })
+                .catch(_ => {});
             }
         },
         computed: {

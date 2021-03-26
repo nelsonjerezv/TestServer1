@@ -6,8 +6,8 @@
                 <div class="item-atributo"><strong>N° Cliente Obra:</strong> {{item.num_cliente_obra}} &emsp; &emsp; <strong>Laboratorista:</strong> {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <el-button type="primary" @click="verFormulario"  plain>Ver</el-button>
-                <el-button type="warning" @click="editarFormulario" plain>Editar</el-button>
+                <el-button type="primary" @click="handleInner"  plain>Ver</el-button>
+                <el-button type="warning" @click="handleInner" plain>Editar</el-button>
                 <el-popconfirm
                     confirm-button-text='Eliminar'
                     cancel-button-text='volver'
@@ -64,6 +64,13 @@
                 // });
                 console.log('editar formulario');
             },
+            handleInner(done) {
+                this.$confirm('Pendiente')
+                .then(_ => {
+                    done();
+                })
+                .catch(_ => {});
+            }
         },
     }
 </script>
