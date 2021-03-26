@@ -95417,8 +95417,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarPdf_vue__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarPdf_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarPdf_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue__);
 //
 //
 //
@@ -95476,12 +95476,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a,
         EnsayoCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default.a,
         ListadoEnsayosCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default.a,
-        ListadoExportarPdf: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarPdf_vue___default.a
+        ListadoExportarEnsayos: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default.a
     },
     props: ['ordenes'],
     data: function data() {
         return {
-            componenteMain: 'ListadoExportarPdf',
+            componenteMain: 'ListadoExportarEnsayos',
             // componenteMain: 'EnsayoCompresionProbetasCilindricas',
             // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
@@ -95639,8 +95639,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         listadoEnsayos: function listadoEnsayos() {
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
         },
-        exportaPDF: function exportaPDF() {
-            this.$emit("cambiaMain", { vista: "ListadoExportarPdf", condicion: '' });
+        exportaEnsayos: function exportaEnsayos() {
+            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: '' });
         }
     }
 });
@@ -95796,11 +95796,11 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "4-1" },
-                          on: { click: _vm.exportaPDF }
+                          on: { click: _vm.exportaEnsayos }
                         },
                         [
                           _vm._v(
-                            "\n                        A PDF\n                    "
+                            "\n                        Ensayos\n                    "
                           )
                         ]
                       )
@@ -103216,70 +103216,70 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 espesorPromedioMuestraDos: '',
                 espesorPromedioMuestraTres: '',
                 espesorPromedioMuestraCuatro: '',
-                dUnoMuestraUno: 0,
-                dUnoMuestraDos: 0,
-                dUnoMuestraTres: 0,
-                dUnoMuestraCuatro: 0,
-                dDosMuestraUno: 0,
-                dDosMuestraDos: 0,
-                dDosMuestraTres: 0,
-                dDosMuestraCuatro: 0,
-                hUnoMuestraUno: 0,
-                hUnoMuestraDos: 0,
-                hUnoMuestraTres: 0,
-                hUnoMuestraCuatro: 0,
-                hDosMuestraUno: 0,
-                hDosMuestraDos: 0,
-                hDosMuestraTres: 0,
-                hDosMuestraCuatro: 0,
-                refrentadoUno: 0,
-                refrentadoDos: 0,
-                refrentadoTres: 0,
-                refrentadoCuatro: 0,
-                dUnoMuestraUnoCorregida: 0,
-                dUnoMuestraDosCorregida: 0,
-                dUnoMuestraTresCorregida: 0,
-                dUnoMuestraCuatroCorregida: 0,
-                dDosMuestraUnoCorregida: 0,
-                dDosMuestraDosCorregida: 0,
-                dDosMuestraTresCorregida: 0,
-                dDosMuestraCuatroCorregida: 0,
-                hUnoMuestraUnoCorregida: 0,
-                hUnoMuestraDosCorregida: 0,
-                hUnoMuestraTresCorregida: 0,
-                hUnoMuestraCuatroCorregida: 0,
-                hDosMuestraUnoCorregida: 0,
-                hDosMuestraDosCorregida: 0,
-                hDosMuestraTresCorregida: 0,
-                hDosMuestraCuatroCorregida: 0,
-                masaMuestraUno: 0,
-                masaMuestraDos: 0,
-                masaMuestraTres: 0,
-                masaMuestraCuatro: 0,
-                errorMuestraUno: 0,
-                errorMuestraDos: 0,
-                errorMuestraTres: 0,
-                errorMuestraCuatro: 0,
-                masaCorregidaMuestraUno: 0,
-                masaCorregidaMuestraDos: 0,
-                masaCorregidaMuestraTres: 0,
-                masaCorregidaMuestraCuatro: 0,
-                volumenMuestraUno: 0,
-                volumenMuestraDos: 0,
-                volumenMuestraTres: 0,
-                volumenMuestraCuatro: 0,
-                volumenMetroCubicoMuestraUno: 0,
-                volumenMetroCubicoMuestraDos: 0,
-                volumenMetroCubicoMuestraTres: 0,
-                volumenMetroCubicoMuestraCuatro: 0,
-                densidadMuestraUno: 0,
-                densidadMuestraDos: 0,
-                densidadMuestraTres: 0,
-                densidadMuestraCuatro: 0,
-                areaMuestraUno: 0,
-                areaMuestraDos: 0,
-                areaMuestraTres: 0,
-                areaMuestraCuatro: 0,
+                dUnoMuestraUno: '',
+                dUnoMuestraDos: '',
+                dUnoMuestraTres: '',
+                dUnoMuestraCuatro: '',
+                dDosMuestraUno: '',
+                dDosMuestraDos: '',
+                dDosMuestraTres: '',
+                dDosMuestraCuatro: '',
+                hUnoMuestraUno: '',
+                hUnoMuestraDos: '',
+                hUnoMuestraTres: '',
+                hUnoMuestraCuatro: '',
+                hDosMuestraUno: '',
+                hDosMuestraDos: '',
+                hDosMuestraTres: '',
+                hDosMuestraCuatro: '',
+                refrentadoUno: '',
+                refrentadoDos: '',
+                refrentadoTres: '',
+                refrentadoCuatro: '',
+                dUnoMuestraUnoCorregida: '',
+                dUnoMuestraDosCorregida: '',
+                dUnoMuestraTresCorregida: '',
+                dUnoMuestraCuatroCorregida: '',
+                dDosMuestraUnoCorregida: '',
+                dDosMuestraDosCorregida: '',
+                dDosMuestraTresCorregida: '',
+                dDosMuestraCuatroCorregida: '',
+                hUnoMuestraUnoCorregida: '',
+                hUnoMuestraDosCorregida: '',
+                hUnoMuestraTresCorregida: '',
+                hUnoMuestraCuatroCorregida: '',
+                hDosMuestraUnoCorregida: '',
+                hDosMuestraDosCorregida: '',
+                hDosMuestraTresCorregida: '',
+                hDosMuestraCuatroCorregida: '',
+                masaMuestraUno: '',
+                masaMuestraDos: '',
+                masaMuestraTres: '',
+                masaMuestraCuatro: '',
+                errorMuestraUno: '',
+                errorMuestraDos: '',
+                errorMuestraTres: '',
+                errorMuestraCuatro: '',
+                masaCorregidaMuestraUno: '',
+                masaCorregidaMuestraDos: '',
+                masaCorregidaMuestraTres: '',
+                masaCorregidaMuestraCuatro: '',
+                volumenMuestraUno: '',
+                volumenMuestraDos: '',
+                volumenMuestraTres: '',
+                volumenMuestraCuatro: '',
+                volumenMetroCubicoMuestraUno: '',
+                volumenMetroCubicoMuestraDos: '',
+                volumenMetroCubicoMuestraTres: '',
+                volumenMetroCubicoMuestraCuatro: '',
+                densidadMuestraUno: '',
+                densidadMuestraDos: '',
+                densidadMuestraTres: '',
+                densidadMuestraCuatro: '',
+                areaMuestraUno: '',
+                areaMuestraDos: '',
+                areaMuestraTres: '',
+                areaMuestraCuatro: '',
                 cargaEnsayoMuestraUno: '',
                 cargaEnsayoMuestraDos: '',
                 cargaEnsayoMuestraTres: '',
@@ -103372,10 +103372,17 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             this.$http.post(this.urlGuardarEnsayo, {
                 ensayo: this.form
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                setTimeout(function () {
-                    _this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
-                }, 5000);
+                if (response.body[1] == true) {
+                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                    setTimeout(function () {
+                        _this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
+                    }, 5000);
+                } else {
+                    if (response.body[0].errorInfo[0] == "23000") {
+                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+                    }
+                    return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+                }
             }, function (response) {
                 console.log(response);
                 __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
@@ -103739,7 +103746,7 @@ var render = function() {
                 [
                   _c(
                     "el-form-item",
-                    { attrs: { label: "Informe N°", prop: "numInforme" } },
+                    { attrs: { label: "N° Informe", prop: "numInforme" } },
                     [
                       _c("el-input", {
                         model: {
@@ -107527,7 +107534,7 @@ var render = function() {
                   ),
                   _c("br"),
                   _vm._v(
-                    "\n                    Fcil < a 20 MPa * 1,25 | Fcil > 20 Mpa ver nota (*)\n                "
+                    "\n                    Fcil  a 20 MPa * 1,25 | Fcil  20 Mpa ver nota (*)\n                "
                   )
                 ]),
                 _vm._v(" "),
@@ -108741,7 +108748,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n.una-linea[data-v-77211b5e] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-77211b5e] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-77211b5e] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-77211b5e] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-77211b5e] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-77211b5e] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-77211b5e] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-77211b5e] {\n  margin-left: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.una-linea[data-v-77211b5e] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-77211b5e] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-77211b5e] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-77211b5e] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-77211b5e] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-77211b5e] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-77211b5e] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-77211b5e] {\n  margin-left: 0px;\n}\n[data-v-77211b5e] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-77211b5e] .el-dialog .el-dialog__header {\n    padding: 0px;\n}\n[data-v-77211b5e] .el-dialog .el-dialog__body {\n    height: calc(100% - 60px);\n    padding: 20px;\n}\n[data-v-77211b5e] .el-dialog .el-dialog__footer {\n    padding: 0px 20px 20px;\n}\n", ""]);
 
 // exports
 
@@ -108793,8 +108800,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -108803,16 +108808,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             item: '',
+            dialogVisible: false,
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
-            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf',
-            direccionSolicitante: 'Dirección Solicitante',
-            localizacionObra: 'localizacion obra',
-            numProyecto: 'numero de proyecto',
-            numCorrelativoInformeObra: 'n° corelativo informe obra',
-            numCorrelativoObra: 'n° corelativo obra',
-            curadoInicial: 'Piscina de Curado',
-            lugarEnsayos: 'Laboratorio LACEM'
+            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf'
         };
     },
     mounted: function mounted() {
@@ -108850,6 +108849,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             };
             window.open(this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
             console.log('exportarPDF');
+        },
+        exportarExcel: function exportarExcel() {
+            var data = {
+                id: this.item.id,
+                direccionSolicitante: this.direccionSolicitante,
+                localizacionObra: this.localizacionObra,
+                numProyecto: this.numProyecto,
+                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+                numCorrelativoObra: this.numCorrelativoObra,
+                curadoInicial: this.curadoInicial
+            };
+            window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
+            console.log('exportarExcel');
+        },
+        handleClose: function handleClose(done) {
+            done().catch(function (_) {});
+        }
+    },
+    computed: {
+        rutaVerInforme: function rutaVerInforme() {
+            return '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id
+            /* + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-' */;
         }
     }
 });
@@ -108883,179 +108910,88 @@ var render = function() {
         { staticClass: "item-contenedor-botones" },
         [
           _c(
-            "el-popover",
+            "el-button",
+            {
+              attrs: { type: "primary", plain: "" },
+              on: {
+                click: function($event) {
+                  _vm.dialogVisible = true
+                }
+              }
+            },
+            [_vm._v("Ver Ensayo")]
+          ),
+          _vm._v(" "),
+          _c(
+            "el-dialog",
             {
               attrs: {
-                placement: "right",
-                width: "400",
-                trigger: "click",
-                "popper-class": "datos-informe"
+                visible: _vm.dialogVisible,
+                width: "90%",
+                "before-close": _vm.handleClose
+              },
+              on: {
+                "update:visible": function($event) {
+                  _vm.dialogVisible = $event
+                }
               }
             },
             [
-              _c("div", { staticClass: "una-linea" }, [
-                _vm._v("Complete Datos faltantes")
-              ]),
+              _c("iframe", {
+                staticStyle: { width: "100%", height: "100%" },
+                attrs: { src: _vm.rutaVerInforme }
+              }),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Dirección Solicitante:            "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.direccionSolicitante,
-                      callback: function($$v) {
-                        _vm.direccionSolicitante = $$v
-                      },
-                      expression: "direccionSolicitante"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Localización Obra:                "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.localizacionObra,
-                      callback: function($$v) {
-                        _vm.localizacionObra = $$v
-                      },
-                      expression: "localizacionObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Proyecto N°:                      "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numProyecto,
-                      callback: function($$v) {
-                        _vm.numProyecto = $$v
-                      },
-                      expression: "numProyecto"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Nº Correlativo de informe obra:   "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoInformeObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoInformeObra = $$v
-                      },
-                      expression: "numCorrelativoInformeObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Nº Correlativo de obra:           "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoObra = $$v
-                      },
-                      expression: "numCorrelativoObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Curado inicial:                   "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.curadoInicial,
-                      callback: function($$v) {
-                        _vm.curadoInicial = $$v
-                      },
-                      expression: "curadoInicial"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("Lugar de realización de ensayos: "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.lugarEnsayos,
-                      callback: function($$v) {
-                        _vm.lugarEnsayos = $$v
-                      },
-                      expression: "lugarEnsayos"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
+                "span",
+                {
+                  staticClass: "dialog-footer",
+                  attrs: { slot: "footer" },
+                  slot: "footer"
+                },
                 [
                   _c(
                     "el-button",
                     {
-                      attrs: { type: "primary", plain: "" },
-                      on: { click: _vm.exportarPDF }
+                      attrs: { type: "success", plain: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.dialogVisible = false
+                        }
+                      }
                     },
-                    [_vm._v("Exportar")]
+                    [_vm._v("Validar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "warning", plain: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.dialogVisible = false
+                        }
+                      }
+                    },
+                    [_vm._v("Rechazar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "danger", plain: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.dialogVisible = false
+                        }
+                      }
+                    },
+                    [_vm._v("Volver")]
                   )
                 ],
                 1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-button",
-                {
-                  attrs: { slot: "reference", type: "primary", plain: "" },
-                  slot: "reference"
-                },
-                [_vm._v("Ver como PDF")]
               )
-            ],
-            1
+            ]
           ),
           _vm._v(" "),
           _c(
@@ -109193,7 +109129,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/vue/components/formularios/ListadoExportarPdf.vue"
+Component.options.__file = "resources/assets/js/vue/components/formularios/ListadoExportarEnsayos.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -109202,9 +109138,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-671a1d5b", Component.options)
+    hotAPI.createRecord("data-v-49103c22", Component.options)
   } else {
-    hotAPI.reload("data-v-671a1d5b", Component.options)
+    hotAPI.reload("data-v-49103c22", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -109225,13 +109161,13 @@ var content = __webpack_require__(374);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(17)("6c5867a1", content, false, {});
+var update = __webpack_require__(17)("f9988668", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-671a1d5b\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListadoExportarPdf.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-671a1d5b\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListadoExportarPdf.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49103c22\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListadoExportarEnsayos.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-49103c22\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ListadoExportarEnsayos.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -109260,8 +109196,8 @@ exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elemento
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaExportarPdf_vue__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaExportarPdf_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaExportarPdf_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue__);
 //
 //
 //
@@ -109284,7 +109220,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
-        ItemListaExportarPdf: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaExportarPdf_vue___default.a
+        ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
     },
     props: [],
     data: function data() {
@@ -109344,7 +109280,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-2a7c9339"
+var __vue_scopeId__ = "data-v-ca5f8e66"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -109355,7 +109291,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/vue/components/formularios/ItemListaExportarPdf.vue"
+Component.options.__file = "resources/assets/js/vue/components/formularios/ItemListaExportarEnsayos.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -109364,9 +109300,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2a7c9339", Component.options)
+    hotAPI.createRecord("data-v-ca5f8e66", Component.options)
   } else {
-    hotAPI.reload("data-v-2a7c9339", Component.options)
+    hotAPI.reload("data-v-ca5f8e66", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -109387,13 +109323,13 @@ var content = __webpack_require__(378);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(17)("6c8f6b4a", content, false, {});
+var update = __webpack_require__(17)("09c84c24", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2a7c9339\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaExportarPdf.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2a7c9339\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaExportarPdf.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ca5f8e66\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaExportarEnsayos.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ca5f8e66\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ItemListaExportarEnsayos.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -109411,7 +109347,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n.una-linea[data-v-2a7c9339] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-2a7c9339] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-2a7c9339] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-2a7c9339] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-2a7c9339] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-2a7c9339] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-2a7c9339] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-2a7c9339] {\n  margin-left: 0px;\n}\n[data-v-2a7c9339] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-2a7c9339] .el-dialog .el-dialog__body {\n    height: calc(100% - 100px);\n}\n", ""]);
+exports.push([module.i, "\n.una-linea[data-v-ca5f8e66] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-ca5f8e66] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-ca5f8e66] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-ca5f8e66] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-ca5f8e66] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-ca5f8e66] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-ca5f8e66] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-ca5f8e66] {\n  margin-left: 0px;\n}\n[data-v-ca5f8e66] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__header {\n    padding: 0px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__body {\n    height: calc(100% - 60px);\n    padding: 20px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__footer {\n    padding: 0px 20px 20px;\n}\n", ""]);
 
 // exports
 
@@ -109475,6 +109411,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -109486,6 +109428,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
             urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf',
+            urlExportarEnsayoExcel: GLOBAL.URL + 'ensayos/exportar-ensayo-excel',
             direccionSolicitante: 'Dirección Solicitante',
             localizacionObra: 'localizacion obra',
             numProyecto: 'numero de proyecto',
@@ -109532,10 +109475,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             window.open(this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
             console.log('exportarPDF');
         },
+        exportarExcel: function exportarExcel() {
+            var data = {
+                id: this.item.id,
+                direccionSolicitante: this.direccionSolicitante,
+                localizacionObra: this.localizacionObra,
+                numProyecto: this.numProyecto,
+                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+                numCorrelativoObra: this.numCorrelativoObra,
+                curadoInicial: this.curadoInicial
+            };
+            window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
+            console.log('exportarExcel');
+        },
         handleClose: function handleClose(done) {
-            this.$confirm('Are you sure to close this dialog?').then(function (_) {
-                done();
-            }).catch(function (_) {});
+            done().catch(function (_) {});
         }
     },
     computed: {
@@ -109580,6 +109534,65 @@ var render = function() {
         "div",
         { staticClass: "item-contenedor-botones" },
         [
+          _c(
+            "el-button",
+            {
+              attrs: { type: "warning", plain: "" },
+              on: {
+                click: function($event) {
+                  _vm.dialogVisible = true
+                }
+              }
+            },
+            [_vm._v("Ver Ensayo")]
+          ),
+          _vm._v(" "),
+          _c(
+            "el-dialog",
+            {
+              attrs: {
+                visible: _vm.dialogVisible,
+                width: "90%",
+                "before-close": _vm.handleClose
+              },
+              on: {
+                "update:visible": function($event) {
+                  _vm.dialogVisible = $event
+                }
+              }
+            },
+            [
+              _c("iframe", {
+                staticStyle: { width: "100%", height: "100%" },
+                attrs: { src: _vm.rutaVerInforme }
+              }),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "dialog-footer",
+                  attrs: { slot: "footer" },
+                  slot: "footer"
+                },
+                [
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { plain: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.dialogVisible = false
+                        }
+                      }
+                    },
+                    [_vm._v("Volver")]
+                  )
+                ],
+                1
+              )
+            ]
+          ),
+          _vm._v(" "),
           _c(
             "el-popover",
             {
@@ -109738,7 +109751,7 @@ var render = function() {
                       attrs: { type: "primary", plain: "" },
                       on: { click: _vm.exportarPDF }
                     },
-                    [_vm._v("Exportar PDF")]
+                    [_vm._v("Exportar Informe")]
                   )
                 ],
                 1
@@ -109750,68 +109763,186 @@ var render = function() {
                   attrs: { slot: "reference", type: "primary", plain: "" },
                   slot: "reference"
                 },
-                [_vm._v("Generar PDF")]
+                [_vm._v("Exportar a PDF")]
               )
             ],
             1
           ),
           _vm._v(" "),
           _c(
-            "el-button",
-            {
-              attrs: { type: "info", plain: "" },
-              on: {
-                click: function($event) {
-                  _vm.dialogVisible = true
-                }
-              }
-            },
-            [_vm._v("Ver contenido Ensayo")]
-          ),
-          _vm._v(" "),
-          _c(
-            "el-dialog",
+            "el-popover",
             {
               attrs: {
-                visible: _vm.dialogVisible,
-                width: "90%",
-                "before-close": _vm.handleClose
-              },
-              on: {
-                "update:visible": function($event) {
-                  _vm.dialogVisible = $event
-                }
+                placement: "right",
+                width: "400",
+                trigger: "click",
+                "popper-class": "datos-informe"
               }
             },
             [
-              _c("iframe", {
-                staticStyle: { width: "100%", height: "100%" },
-                attrs: { src: _vm.rutaVerInforme }
-              }),
+              _c("div", { staticClass: "una-linea" }, [
+                _vm._v("Complete Datos faltantes")
+              ]),
               _vm._v(" "),
               _c(
-                "span",
-                {
-                  staticClass: "dialog-footer",
-                  attrs: { slot: "footer" },
-                  slot: "footer"
-                },
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Dirección Solicitante:            "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.direccionSolicitante,
+                      callback: function($$v) {
+                        _vm.direccionSolicitante = $$v
+                      },
+                      expression: "direccionSolicitante"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Localización Obra:                "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.localizacionObra,
+                      callback: function($$v) {
+                        _vm.localizacionObra = $$v
+                      },
+                      expression: "localizacionObra"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Proyecto N°:                      "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.numProyecto,
+                      callback: function($$v) {
+                        _vm.numProyecto = $$v
+                      },
+                      expression: "numProyecto"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Nº Correlativo de informe obra:   "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.numCorrelativoInformeObra,
+                      callback: function($$v) {
+                        _vm.numCorrelativoInformeObra = $$v
+                      },
+                      expression: "numCorrelativoInformeObra"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Nº Correlativo de obra:           "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.numCorrelativoObra,
+                      callback: function($$v) {
+                        _vm.numCorrelativoObra = $$v
+                      },
+                      expression: "numCorrelativoObra"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Curado inicial:                   "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.curadoInicial,
+                      callback: function($$v) {
+                        _vm.curadoInicial = $$v
+                      },
+                      expression: "curadoInicial"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("Lugar de realización de ensayos: "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.lugarEnsayos,
+                      callback: function($$v) {
+                        _vm.lugarEnsayos = $$v
+                      },
+                      expression: "lugarEnsayos"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
                 [
                   _c(
                     "el-button",
                     {
-                      on: {
-                        click: function($event) {
-                          _vm.dialogVisible = false
-                        }
-                      }
+                      attrs: { type: "success", plain: "" },
+                      on: { click: _vm.exportarExcel }
                     },
-                    [_vm._v("Volver")]
+                    [_vm._v("Exportar Excel")]
                   )
                 ],
                 1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-button",
+                {
+                  attrs: { slot: "reference", type: "success", plain: "" },
+                  slot: "reference"
+                },
+                [_vm._v("Exportar a Excel")]
               )
-            ]
+            ],
+            1
           )
         ],
         1
@@ -109825,7 +109956,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2a7c9339", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-ca5f8e66", module.exports)
   }
 }
 
@@ -109863,7 +109994,7 @@ var render = function() {
       "div",
       { staticClass: "container-items-formulario" },
       _vm._l(_vm.ensayosHormigon, function(orden, index) {
-        return _c("item-lista-exportar-pdf", {
+        return _c("item-lista-exportar-ensayos", {
           key: orden.id,
           attrs: { itemLista: orden, index: index },
           on: { actualizar: _vm.getEnsayos }
@@ -109879,7 +110010,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-671a1d5b", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-49103c22", module.exports)
   }
 }
 
@@ -109942,8 +110073,8 @@ var render = function() {
                       })
                     : _vm._e(),
                   _vm._v(" "),
-                  _vm.componenteMain == "ListadoExportarPdf"
-                    ? _c("listado-exportar-pdf", {
+                  _vm.componenteMain == "ListadoExportarEnsayos"
+                    ? _c("listado-exportar-ensayos", {
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e()
