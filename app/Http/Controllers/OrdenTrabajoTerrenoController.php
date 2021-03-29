@@ -34,22 +34,24 @@ class OrdenTrabajoTerrenoController extends Controller
 
     public function guardarFormulario(Request $request){
 
-        $ultimoNumInforme = OrdenTrabajoTerreno::latest('created_at')->first();
-        $ultimoNumIngreso = intVal($ultimoNumInforme->num_ingreso);
-        $ultimoNumIngreso++;
-        $numLibre = true;
-        while($numLibre){
-            $repetido = OrdenTrabajoTerreno::where('num_ingreso', $ultimoNumIngreso)->get();
-            if ( count($repetido) == 0 ) {
-                $numLibre = false;
-            } else {
-                $ultimoNumIngreso++;
-            }
-        }
+        // $ultimoNumInforme = OrdenTrabajoTerreno::latest('created_at')->first();
+        // $ultimoNumIngreso = intVal($ultimoNumInforme->num_ingreso);
+        // $ultimoNumIngreso++;
+        // $numLibre = true;
+        // while($numLibre){
+        //     $repetido = OrdenTrabajoTerreno::where('num_ingreso', $ultimoNumIngreso)->get();
+        //     if ( count($repetido) == 0 ) {
+        //         $numLibre = false;
+        //     } else {
+        //         $ultimoNumIngreso++;
+        //     }
+        // }
 
         $formulario;
         $formulario['num_ott'] = mb_strtoupper($request->formulario['numOtt']);
         $formulario['num_cliente_obra'] = mb_strtoupper($request->formulario['numClienteObra']);
+        $formulario['num_ingreso'] = mb_strtoupper($request->formulario['numIngreso']);
+        // $formulario['num_ingreso'] = $ultimoNumIngreso;
         $formulario['nombre_cliente'] = mb_strtoupper($request->formulario['nombreCliente']);
         $formulario['nombre_obra'] = mb_strtoupper($request->formulario['nombreObra']);
         $formulario['fono_obra'] = mb_strtoupper($request->formulario['fonoObra']);
@@ -75,7 +77,6 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['num_equipo_cono_abrams'] = mb_strtoupper($request->formulario['numEquipoConoAbrams']);
         $formulario['num_vibrador_inmersion'] = mb_strtoupper($request->formulario['numVibradorInmersion']);
         $formulario['num_equipo_cono_reducido'] = mb_strtoupper($request->formulario['numEquipoConoReducido']);
-        $formulario['num_ingreso'] = $ultimoNumIngreso;
         $formulario['hora_muestreo'] = mb_strtoupper($request->formulario['horaMuestreo']);
         $formulario['hora_inicio_amasado'] = mb_strtoupper($request->formulario['horaInicioAmasado']);
         $formulario['t_ambiente'] = mb_strtoupper($request->formulario['tAmbiente']);
@@ -151,5 +152,22 @@ class OrdenTrabajoTerrenoController extends Controller
             return [$e, false];
         }
         return [$result, true];
+    }
+
+    public function verFormulario($id){
+        $orden = OrdenTrabajoTerreno::where('id', $id)->first();
+        // $datos = (object) [
+        //         'direccionSolicitante' => '-',
+        //         'localizacionObra' => '-',
+        //         'numProyecto' => '-',
+        //         'numCorrelativoInformeObra' => '-',
+        //         'numCorrelativoObra' => '-',
+        //         'curadoInicial' => '-',
+        //         'lugarEnsayos' => '-',
+        //         'ensayo' => $ensayo
+        //     ];
+        // dd($orden, $datos);
+
+        return view('ver_formulario_ott', compact('orden'));
     }
 }

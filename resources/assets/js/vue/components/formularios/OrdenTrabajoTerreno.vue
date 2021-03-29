@@ -53,7 +53,7 @@
             </el-row>
             <el-divider class="el-divider-5"/>
             <!-- MUESTREO HORMIGON / MORTERO / SECCION TESTIGOS / SECCION ARIDOS-->
-            <el-row class="margin-b-5">
+            <!-- <el-row class="margin-b-5">
                 <el-col :span="24" class="padding-5">
                     <el-form-item label="Muestreo de:" prop="muestreoDe">
                         <el-radio v-model="form.muestreoDe" label="hormigon">Hormig&oacute;n</el-radio>
@@ -83,7 +83,38 @@
                         <el-checkbox v-model="form.seccionRetiroMuestrasHabilitada">Secci&oacute;n Retiro de Muestras</el-checkbox>
                     </el-form-item>
                 </el-col>
+            </el-row> -->
+            <el-row class="margin-b-5">
+                <el-col :span="10" class="padding-5">
+                    <el-form-item label="Muestreo de:" prop="muestreoDe">
+                        <el-radio v-model="form.muestreoDe" label="hormigon">Hormig&oacute;n</el-radio>
+                        <el-radio v-model="form.muestreoDe" label="mortero">Mortero</el-radio>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="3" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionTestigosHabilitada">
+                        <el-checkbox v-model="form.seccionTestigosHabilitada">Secci&oacute;n Testigos</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="3" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionAridosHabilitada">
+                        <el-checkbox v-model="form.seccionAridosHabilitada">Secci&oacute;n &Aacute;ridos</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="3" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionOtrosHabilitada">
+                        <el-checkbox v-model="form.seccionOtrosHabilitada">Secci&oacute;n Otros</el-checkbox>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="5" class="padding-5">
+                    <el-form-item class="form-item-no-label" prop="seccionRetiroMuestrasHabilitada">
+                        <el-checkbox v-model="form.seccionRetiroMuestrasHabilitada">Secci&oacute;n Retiro de Muestras</el-checkbox>
+                    </el-form-item>
+                </el-col>
             </el-row>
+            <!-- <el-divider class="el-divider-5"/>
+            <el-row class="margin-b-5">
+            </el-row> -->
             <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
                 <el-col :span="unaDosColumnas" class="padding-5">
@@ -102,22 +133,22 @@
                         </div>
                     </el-form-item>
                     <el-divider class="el-divider-5"/>
-                    <div class="una-linea dis-flex-dir-row">
+                    <!-- <div class="una-linea dis-flex-dir-row">
                         <div class="label-item" style="min-width: 150px;padding-right: 12px;display: flex;">Tipo de Molde (en cm)</div>
                         <div style="display: flex;flex-direction: column;width: 100%;">
                             <el-form-item class="item-no-margin cantidad-otros" label="15x15x15 | 400-01" prop="tipoMoldeUno">
                                 <el-input size="mini" v-model="form.tipoMoldeUno"></el-input>
                             </el-form-item>
-                            <el-form-item class="item-no-margin cantidad-otros" label="20x20x20 | 400-02" prop="tipoMoldeDos">
+                            <el-form-item class="item-no-margin cantidad-otros" label="20x20x20 | 400-01" prop="tipoMoldeDos">
                                 <el-input size="mini" v-model="form.tipoMoldeDos"></el-input>
                             </el-form-item>
-                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-03" prop="tipoMoldeTres">
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-02" prop="tipoMoldeTres">
                                 <el-input size="mini" v-model="form.tipoMoldeTres"></el-input>
                             </el-form-item>
                             <el-form-item class="item-no-margin cantidad-otros" label="4x4x16 | 400-04" prop="tipoMoldeCuatro">
                                 <el-input size="mini" v-model="form.tipoMoldeCuatro"></el-input>
                             </el-form-item>
-                            <el-form-item class="item-no-margin cantidad-otros" label="53x15x15 | 400-05" prop="tipoMoldeCinco">
+                            <el-form-item class="item-no-margin cantidad-otros" label="53x15x15 | 400-03" prop="tipoMoldeCinco">
                                 <el-input size="mini" v-model="form.tipoMoldeCinco"></el-input>
                             </el-form-item>
                             <el-form-item class="item-no-margin cantidad-otros" label="10x10x10 | 400-06" prop="tipoMoldeSeis">
@@ -127,28 +158,54 @@
                                 <el-input size="mini" v-model="form.tipoMoldeSiete"></el-input>
                             </el-form-item>
                         </div>
+                    </div> -->
+                    <div class="una-linea dis-flex-dir-row">
+                        <div class="label-item" style="min-width: 150px;padding-right: 12px;display: flex;">Tipo de Molde (en cm)</div>
+                        <div style="display: flex;flex-direction: column;width: 100%;">
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x15x15 | 400-01" prop="tipoMoldeUno">
+                                <el-checkbox v-model="form.tipoMoldeUno"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="20x20x20 | 400-01" prop="tipoMoldeDos">
+                                <el-checkbox v-model="form.tipoMoldeDos"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-02" prop="tipoMoldeTres">
+                                <el-checkbox v-model="form.tipoMoldeTres"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="4x4x16 | 400-04" prop="tipoMoldeCuatro">
+                                <el-checkbox v-model="form.tipoMoldeCuatro"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="53x15x15 | 400-03" prop="tipoMoldeCinco">
+                                <el-checkbox v-model="form.tipoMoldeCinco"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="10x10x10 | 400-06" prop="tipoMoldeSeis">
+                                <el-checkbox v-model="form.tipoMoldeSeis"></el-checkbox>
+                            </el-form-item>
+                            <el-form-item class="item-no-margin cantidad-otros" label="15x30 | 400-07" prop="tipoMoldeSiete">
+                                <el-checkbox v-model="form.tipoMoldeSiete"></el-checkbox>
+                            </el-form-item>
+                        </div>
                     </div>
                     <!-- <el-form-item label="Tipo de Molde (en cm)" prop="tipoMolde">
                         <div class="dis-flex-dir-col">
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-01">
+                            <el-radio v-model="form.tipoMoldeUno" class="radio-molde" label="400-01">
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x15x15</div><div> | <b>400-01</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-02">
+                            <el-radio v-model="form.tipoMoldeDos" class="radio-molde" label="400-02">
                                 <div style="display: flex;"><div style="flex-grow: 1;">20x20x20</div><div> | <b>400-02</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-03">
+                            <el-radio v-model="form.tipoMoldeTres" class="radio-molde" label="400-03">
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x30</div><div> | <b>400-03</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-04">
+                            <el-radio v-model="form.tipoMoldeCuatro" class="radio-molde" label="400-04">
                                 <div style="display: flex;"><div style="flex-grow: 1;">4x4x16</div><div> | <b>400-04</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-05">
+                            <el-radio v-model="form.tipoMoldeCinco" class="radio-molde" label="400-05">
                                 <div style="display: flex;"><div style="flex-grow: 1;">53x15x15</div><div> | <b>400-05</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-06">
+                            <el-radio v-model="form.tipoMoldeSeis" class="radio-molde" label="400-06">
                                 <div style="display: flex;"><div style="flex-grow: 1;">10x10x10</div><div> | <b>400-06</b> </div></div>
                             </el-radio>
-                            <el-radio v-model="form.tipoMolde" class="radio-molde" label="400-07">
+                            <el-radio v-model="form.tipoMoldeSiete" class="radio-molde" label="400-07">
                                 <div style="display: flex;"><div style="flex-grow: 1;">15x30</div><div> | <b>400-07</b> </div></div>
                             </el-radio>
                         </div>
@@ -205,12 +262,13 @@
                     </el-form-item>
                 </el-col>
                 <el-col :span="unaDosColumnas" class="padding-5">
-                    <!-- <el-form-item label="N° Ingreso"> -->
-                        <div class="container-item no-click una-linea">
-                            <div class="label-item">N° Ingreso</div>
-                            <el-input class="contenido-item" v-model="placeholderNumIngreso"></el-input>
-                        </div>
-                    <!-- </el-form-item> -->
+                    <!-- <div class="container-item no-click una-linea">
+                        <div class="label-item">N° Ingreso</div>
+                        <el-input class="contenido-item" v-model="placeholderNumIngreso"></el-input>
+                    </div> -->
+                    <el-form-item label="N° Ingreso" prop="numIngreso">
+                        <el-input v-model="form.numIngreso"></el-input>
+                    </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
                     <el-form-item label="Hora Muestreo" prop="horaMuestreo">
                         <el-time-picker
@@ -787,6 +845,7 @@
 
     export default {
         props: [
+            'ottCargada',
             'tipoOtt'
         ],
         data(){
@@ -800,6 +859,7 @@
                 form: {
                     numClienteObra: '',
                     numOtt: '',
+                    numIngreso: '',
                     nombreCliente: '',
                     nombreObra: '',
                     fonoObra: '',
@@ -808,13 +868,13 @@
                     muestreoDe: '',
                     extraccion: '',
                     compactacion: '',
-                    tipoMoldeUno: '',
-                    tipoMoldeDos: '',
-                    tipoMoldeTres: '',
-                    tipoMoldeCuatro: '',
-                    tipoMoldeCinco: '',
-                    tipoMoldeSeis: '',
-                    tipoMoldeSiete: '',
+                    tipoMoldeUno: false,
+                    tipoMoldeDos: false,
+                    tipoMoldeTres: false,
+                    tipoMoldeCuatro: false,
+                    tipoMoldeCinco: false,
+                    tipoMoldeSeis: false,
+                    tipoMoldeSiete: false,
                     muestreadoPor: '',
                     ensayadoPor: '',
                     tipoMuestra: '',
@@ -898,6 +958,9 @@
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     numOtt: [
+                        { required: true, message: '', trigger: 'blur' }
+                    ],
+                    numIngreso: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     nombreCliente: [

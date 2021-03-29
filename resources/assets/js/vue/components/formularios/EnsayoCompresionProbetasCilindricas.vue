@@ -547,22 +547,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraUnoCorregida">
-                            <el-input v-model="form.dUnoMuestraUnoCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dUnoMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraDosCorregida">
-                            <el-input v-model="form.dUnoMuestraDosCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dUnoMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraTresCorregida">
-                            <el-input v-model="form.dUnoMuestraTresCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dUnoMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraCuatroCorregida">
-                            <el-input v-model="form.dUnoMuestraCuatroCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dUnoMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -573,22 +573,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraUnoCorregida">
-                            <el-input v-model="form.dDosMuestraUnoCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dDosMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraDosCorregida">
-                            <el-input v-model="form.dDosMuestraDosCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dDosMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraTresCorregida">
-                            <el-input v-model="form.dDosMuestraTresCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dDosMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraCuatroCorregida">
-                            <el-input v-model="form.dDosMuestraCuatroCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.dDosMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -599,22 +599,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraUnoCorregida">
-                            <el-input v-model="form.hUnoMuestraUnoCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hUnoMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraDosCorregida">
-                            <el-input v-model="form.hUnoMuestraDosCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hUnoMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraTresCorregida">
-                            <el-input v-model="form.hUnoMuestraTresCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hUnoMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraCuatroCorregida">
-                            <el-input v-model="form.hUnoMuestraCuatroCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hUnoMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -625,22 +625,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraUnoCorregida">
-                            <el-input v-model="form.hDosMuestraUnoCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hDosMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraDosCorregida">
-                            <el-input v-model="form.hDosMuestraDosCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hDosMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraTresCorregida">
-                            <el-input v-model="form.hDosMuestraTresCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hDosMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraCuatroCorregida">
-                            <el-input v-model="form.hDosMuestraCuatroCorregida"></el-input>
+                            <el-input class="no-click" v-model="form.hDosMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -651,22 +651,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoCorregidoMuestraUno">
-                            <el-input v-model="form.refrentadoCorregidoMuestraUno"></el-input>
+                            <el-input class="no-click" v-model="form.refrentadoUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoCorregidoMuestraDos">
-                            <el-input v-model="form.refrentadoCorregidoMuestraDos"></el-input>
+                            <el-input class="no-click" v-model="form.refrentadoDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoCorregidoMuestraTres">
-                            <el-input v-model="form.refrentadoCorregidoMuestraTres"></el-input>
+                            <el-input class="no-click" v-model="form.refrentadoTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoCorregidoMuestraCuatro">
-                            <el-input v-model="form.refrentadoCorregidoMuestraCuatro"></el-input>
+                            <el-input class="no-click" v-model="form.refrentadoCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>

@@ -6,7 +6,20 @@
                 <div class="item-atributo"><strong>N° Cliente Obra:</strong> {{item.num_cliente_obra}} &emsp; &emsp; <strong>Laboratorista:</strong> {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <el-button type="primary" @click="handleInner"  plain>Ver</el-button>
+                <!-- <el-button type="primary" @click="dialogVerVisible = true" plain>Ver Ensayo</el-button> -->
+                <el-button type="primary" @click="dialogVerVisible = true"  plain>Ver OTT</el-button>
+                <el-dialog
+                    :visible.sync="dialogVerVisible"
+                    width="90%">
+                    <!-- :before-close="handleClose" -->
+                    <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
+                    <span slot="footer" class="dialog-footer">
+                        <el-button type="success" @click="handleInner" plain>Validar</el-button>
+                        <el-button type="warning" @click="handleInner" plain>Rechazar</el-button>
+                        <el-button type="danger" @click="dialogVerVisible = false" plain>Volver</el-button>
+                        <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
+                    </span>
+                </el-dialog>
                 <el-button type="warning" @click="handleInner" plain>Editar</el-button>
                 <el-popconfirm
                     confirm-button-text='Eliminar'
@@ -36,6 +49,9 @@
                 item: '',
                 urlEliminarFormulario: `${GLOBAL.URL}formularios/eliminar-formulario`,
                 urlEditarFormulario: `${GLOBAL.URL}formularios/editar-formulario`,
+                dialogVisible: false,
+                dialogVerVisible: false,
+
             }
         },
         mounted () {
@@ -72,6 +88,19 @@
                 .catch(_ => {});
             }
         },
+        computed: {
+            rutaVerInforme() {
+                // return `${GLOBAL.URL}` + '/formularios';
+                return `${GLOBAL.URL}` + '/formularios/ver-ott/' + this.item.id
+                                                      /* + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-' */;
+            }
+        },
     }
 </script>
 
@@ -103,5 +132,20 @@
     }
     .el-button--warning.is-plain {
         margin-left: 0px;
+    }
+    /deep/  .el-dialog{
+        width: 90% !important;
+        height: 90% !important;
+        margin: 3% auto !important;
+        .el-dialog__header{
+            padding: 0px;
+        }
+        .el-dialog__body {
+            height: calc(100% - 60px);
+            padding: 20px;
+        }
+        .el-dialog__footer{
+            padding: 0px 20px 20px;
+        }
     }
 </style>
