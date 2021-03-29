@@ -17,6 +17,7 @@
     Route::get('/formularios', 'OrdenTrabajoTerrenoController@index');
     Route::get('/formularios/todas-las-ordenes', 'OrdenTrabajoTerrenoController@todasLasOrdenes');
     Route::get('/formularios/editar-formulario', 'OrdenTrabajoTerrenoController@editarFormulario');
+    Route::get('/formularios/ver-ott/{id}', 'OrdenTrabajoTerrenoController@verFormulario');
     Route::post('/formularios/guardar-formulario', 'OrdenTrabajoTerrenoController@guardarFormulario');
     Route::post('/formularios/guardar-ensayo-compresion', 'OrdenTrabajoTerrenoController@guardarFormulario');
     Route::post('/formularios/eliminar-formulario', 'OrdenTrabajoTerrenoController@eliminarFormulario');

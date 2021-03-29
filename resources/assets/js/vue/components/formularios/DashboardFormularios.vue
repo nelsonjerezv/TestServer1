@@ -70,6 +70,7 @@
             };
         },
         mounted() {
+            console.log('ordenes', this.ordenes);
         },
         methods: {
             cambiarMain: function(contenido){
