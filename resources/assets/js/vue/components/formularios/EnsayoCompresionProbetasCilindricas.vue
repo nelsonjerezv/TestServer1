@@ -3,7 +3,7 @@
         <el-form ref="formularioCompresion" :model="form" :rules="reglas" label-width="150px">
             <el-row >
                 <el-col :span="8" >
-                    <el-form-item label="N° Ingreso" prop="numMuestra">
+                    <el-form-item label="N° Muestra" prop="numMuestra">
                         <el-input class="no-click" v-model="form.numIngreso"></el-input>
                     </el-form-item>
                 </el-col>

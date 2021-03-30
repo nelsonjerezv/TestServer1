@@ -266,7 +266,7 @@
                         <div class="label-item">N° Ingreso</div>
                         <el-input class="contenido-item" v-model="placeholderNumIngreso"></el-input>
                     </div> -->
-                    <el-form-item label="N° Ingreso" prop="numIngreso">
+                    <el-form-item label="N° Muestra" prop="numIngreso">
                         <el-input v-model="form.numIngreso"></el-input>
                     </el-form-item>
                     <el-divider class="el-divider-5 margin-l-5"/>
