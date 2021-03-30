@@ -95488,7 +95488,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             tipoEnsayo: ''
         };
     },
-    mounted: function mounted() {},
+    mounted: function mounted() {
+        console.log('ordenes', this.ordenes);
+    },
 
     methods: {
         cambiarMain: function cambiarMain(contenido) {
@@ -96718,12 +96720,70 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['tipoOtt'],
+    props: ['ottCargada', 'tipoOtt'],
     data: function data() {
         var _reglas;
 
@@ -96737,6 +96797,7 @@ var moment = __webpack_require__(0);
             form: {
                 numClienteObra: '',
                 numOtt: '',
+                numIngreso: '',
                 nombreCliente: '',
                 nombreObra: '',
                 fonoObra: '',
@@ -96745,13 +96806,13 @@ var moment = __webpack_require__(0);
                 muestreoDe: '',
                 extraccion: '',
                 compactacion: '',
-                tipoMoldeUno: '',
-                tipoMoldeDos: '',
-                tipoMoldeTres: '',
-                tipoMoldeCuatro: '',
-                tipoMoldeCinco: '',
-                tipoMoldeSeis: '',
-                tipoMoldeSiete: '',
+                tipoMoldeUno: false,
+                tipoMoldeDos: false,
+                tipoMoldeTres: false,
+                tipoMoldeCuatro: false,
+                tipoMoldeCinco: false,
+                tipoMoldeSeis: false,
+                tipoMoldeSiete: false,
                 muestreadoPor: '',
                 ensayadoPor: '',
                 tipoMuestra: '',
@@ -96833,6 +96894,7 @@ var moment = __webpack_require__(0);
             reglas: (_reglas = {
                 numClienteObra: [{ required: true, message: '', trigger: 'blur' }],
                 numOtt: [{ required: true, message: '', trigger: 'blur' }],
+                numIngreso: [{ required: true, message: '', trigger: 'blur' }],
                 nombreCliente: [{ required: true, message: '', trigger: 'blur' }],
                 nombreObra: [{ required: true, message: '', trigger: 'blur' }],
                 fonoObra: [{ required: true, message: '', trigger: 'blur' }],
@@ -97527,7 +97589,7 @@ var render = function() {
             [
               _c(
                 "el-col",
-                { staticClass: "padding-5", attrs: { span: 24 } },
+                { staticClass: "padding-5", attrs: { span: 10 } },
                 [
                   _c(
                     "el-form-item",
@@ -97567,20 +97629,11 @@ var render = function() {
                   )
                 ],
                 1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("el-divider", { staticClass: "el-divider-5" }),
-          _vm._v(" "),
-          _c(
-            "el-row",
-            { staticClass: "margin-b-5" },
-            [
+              ),
+              _vm._v(" "),
               _c(
                 "el-col",
-                { staticClass: "padding-5", attrs: { span: 6 } },
+                { staticClass: "padding-5", attrs: { span: 3 } },
                 [
                   _c(
                     "el-form-item",
@@ -97615,7 +97668,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "el-col",
-                { staticClass: "padding-5", attrs: { span: 6 } },
+                { staticClass: "padding-5", attrs: { span: 3 } },
                 [
                   _c(
                     "el-form-item",
@@ -97646,7 +97699,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "el-col",
-                { staticClass: "padding-5", attrs: { span: 6 } },
+                { staticClass: "padding-5", attrs: { span: 3 } },
                 [
                   _c(
                     "el-form-item",
@@ -97677,7 +97730,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "el-col",
-                { staticClass: "padding-5", attrs: { span: 6 } },
+                { staticClass: "padding-5", attrs: { span: 5 } },
                 [
                   _c(
                     "el-form-item",
@@ -97865,8 +97918,7 @@ var render = function() {
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeUno,
                                 callback: function($$v) {
@@ -97884,13 +97936,12 @@ var render = function() {
                           {
                             staticClass: "item-no-margin cantidad-otros",
                             attrs: {
-                              label: "20x20x20 | 400-02",
+                              label: "20x20x20 | 400-01",
                               prop: "tipoMoldeDos"
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeDos,
                                 callback: function($$v) {
@@ -97908,13 +97959,12 @@ var render = function() {
                           {
                             staticClass: "item-no-margin cantidad-otros",
                             attrs: {
-                              label: "15x30 | 400-03",
+                              label: "15x30 | 400-02",
                               prop: "tipoMoldeTres"
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeTres,
                                 callback: function($$v) {
@@ -97937,8 +97987,7 @@ var render = function() {
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeCuatro,
                                 callback: function($$v) {
@@ -97956,13 +98005,12 @@ var render = function() {
                           {
                             staticClass: "item-no-margin cantidad-otros",
                             attrs: {
-                              label: "53x15x15 | 400-05",
+                              label: "53x15x15 | 400-03",
                               prop: "tipoMoldeCinco"
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeCinco,
                                 callback: function($$v) {
@@ -97985,8 +98033,7 @@ var render = function() {
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeSeis,
                                 callback: function($$v) {
@@ -98009,8 +98056,7 @@ var render = function() {
                             }
                           },
                           [
-                            _c("el-input", {
-                              attrs: { size: "mini" },
+                            _c("el-checkbox", {
                               model: {
                                 value: _vm.form.tipoMoldeSiete,
                                 callback: function($$v) {
@@ -98351,21 +98397,16 @@ var render = function() {
                 },
                 [
                   _c(
-                    "div",
-                    { staticClass: "container-item no-click una-linea" },
+                    "el-form-item",
+                    { attrs: { label: "N° Ingreso", prop: "numIngreso" } },
                     [
-                      _c("div", { staticClass: "label-item" }, [
-                        _vm._v("N° Ingreso")
-                      ]),
-                      _vm._v(" "),
                       _c("el-input", {
-                        staticClass: "contenido-item",
                         model: {
-                          value: _vm.placeholderNumIngreso,
+                          value: _vm.form.numIngreso,
                           callback: function($$v) {
-                            _vm.placeholderNumIngreso = $$v
+                            _vm.$set(_vm.form, "numIngreso", $$v)
                           },
-                          expression: "placeholderNumIngreso"
+                          expression: "form.numIngreso"
                         }
                       })
                     ],
@@ -101595,7 +101636,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n.item-lista-formularios[data-v-88ecfba6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-88ecfba6] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-88ecfba6] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-88ecfba6] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-88ecfba6] {\n  margin-left: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.item-lista-formularios[data-v-88ecfba6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-88ecfba6] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-88ecfba6] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-88ecfba6] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-88ecfba6] {\n  margin-left: 0px;\n}\n[data-v-88ecfba6] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-88ecfba6] .el-dialog .el-dialog__header {\n    padding: 0px;\n}\n[data-v-88ecfba6] .el-dialog .el-dialog__body {\n    height: calc(100% - 60px);\n    padding: 20px;\n}\n[data-v-88ecfba6] .el-dialog .el-dialog__footer {\n    padding: 0px 20px 20px;\n}\n", ""]);
 
 // exports
 
@@ -101633,6 +101674,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -101642,7 +101696,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             item: '',
             urlEliminarFormulario: GLOBAL.URL + 'formularios/eliminar-formulario',
-            urlEditarFormulario: GLOBAL.URL + 'formularios/editar-formulario'
+            urlEditarFormulario: GLOBAL.URL + 'formularios/editar-formulario',
+            dialogVisible: false,
+            dialogVerVisible: false
+
         };
     },
     mounted: function mounted() {
@@ -101679,6 +101736,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 done();
             }).catch(function (_) {});
         }
+    },
+    computed: {
+        rutaVerInforme: function rutaVerInforme() {
+            // return `${GLOBAL.URL}` + '/formularios';
+            return '' + GLOBAL.URL + '/formularios/ver-ott/' + this.item.id
+            /* + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-'
+            + '/' + '-' */;
+        }
     }
 });
 
@@ -101714,9 +101784,73 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "primary", plain: "" },
-              on: { click: _vm.handleInner }
+              on: {
+                click: function($event) {
+                  _vm.dialogVerVisible = true
+                }
+              }
             },
-            [_vm._v("Ver")]
+            [_vm._v("Ver OTT")]
+          ),
+          _vm._v(" "),
+          _c(
+            "el-dialog",
+            {
+              attrs: { visible: _vm.dialogVerVisible, width: "90%" },
+              on: {
+                "update:visible": function($event) {
+                  _vm.dialogVerVisible = $event
+                }
+              }
+            },
+            [
+              _c("iframe", {
+                staticStyle: { width: "100%", height: "100%" },
+                attrs: { src: _vm.rutaVerInforme }
+              }),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "dialog-footer",
+                  attrs: { slot: "footer" },
+                  slot: "footer"
+                },
+                [
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "success", plain: "" },
+                      on: { click: _vm.handleInner }
+                    },
+                    [_vm._v("Validar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "warning", plain: "" },
+                      on: { click: _vm.handleInner }
+                    },
+                    [_vm._v("Rechazar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "danger", plain: "" },
+                      on: {
+                        click: function($event) {
+                          _vm.dialogVerVisible = false
+                        }
+                      }
+                    },
+                    [_vm._v("Volver")]
+                  )
+                ],
+                1
+              )
+            ]
           ),
           _vm._v(" "),
           _c(
@@ -105762,12 +105896,13 @@ var render = function() {
                       { attrs: { prop: "dUnoMuestraUnoCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dUnoMuestraUnoCorregida,
+                            value: _vm.form.dUnoMuestraUno,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "dUnoMuestraUnoCorregida", $$v)
+                              _vm.$set(_vm.form, "dUnoMuestraUno", $$v)
                             },
-                            expression: "form.dUnoMuestraUnoCorregida"
+                            expression: "form.dUnoMuestraUno"
                           }
                         })
                       ],
@@ -105786,12 +105921,13 @@ var render = function() {
                       { attrs: { prop: "dUnoMuestraDosCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dUnoMuestraDosCorregida,
+                            value: _vm.form.dUnoMuestraDos,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "dUnoMuestraDosCorregida", $$v)
+                              _vm.$set(_vm.form, "dUnoMuestraDos", $$v)
                             },
-                            expression: "form.dUnoMuestraDosCorregida"
+                            expression: "form.dUnoMuestraDos"
                           }
                         })
                       ],
@@ -105810,16 +105946,13 @@ var render = function() {
                       { attrs: { prop: "dUnoMuestraTresCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dUnoMuestraTresCorregida,
+                            value: _vm.form.dUnoMuestraTres,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "dUnoMuestraTresCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "dUnoMuestraTres", $$v)
                             },
-                            expression: "form.dUnoMuestraTresCorregida"
+                            expression: "form.dUnoMuestraTres"
                           }
                         })
                       ],
@@ -105838,16 +105971,13 @@ var render = function() {
                       { attrs: { prop: "dUnoMuestraCuatroCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dUnoMuestraCuatroCorregida,
+                            value: _vm.form.dUnoMuestraCuatro,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "dUnoMuestraCuatroCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "dUnoMuestraCuatro", $$v)
                             },
-                            expression: "form.dUnoMuestraCuatroCorregida"
+                            expression: "form.dUnoMuestraCuatro"
                           }
                         })
                       ],
@@ -105872,12 +106002,13 @@ var render = function() {
                       { attrs: { prop: "dDosMuestraUnoCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dDosMuestraUnoCorregida,
+                            value: _vm.form.dDosMuestraUno,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "dDosMuestraUnoCorregida", $$v)
+                              _vm.$set(_vm.form, "dDosMuestraUno", $$v)
                             },
-                            expression: "form.dDosMuestraUnoCorregida"
+                            expression: "form.dDosMuestraUno"
                           }
                         })
                       ],
@@ -105896,12 +106027,13 @@ var render = function() {
                       { attrs: { prop: "dDosMuestraDosCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dDosMuestraDosCorregida,
+                            value: _vm.form.dDosMuestraDos,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "dDosMuestraDosCorregida", $$v)
+                              _vm.$set(_vm.form, "dDosMuestraDos", $$v)
                             },
-                            expression: "form.dDosMuestraDosCorregida"
+                            expression: "form.dDosMuestraDos"
                           }
                         })
                       ],
@@ -105920,16 +106052,13 @@ var render = function() {
                       { attrs: { prop: "dDosMuestraTresCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dDosMuestraTresCorregida,
+                            value: _vm.form.dDosMuestraTres,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "dDosMuestraTresCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "dDosMuestraTres", $$v)
                             },
-                            expression: "form.dDosMuestraTresCorregida"
+                            expression: "form.dDosMuestraTres"
                           }
                         })
                       ],
@@ -105948,16 +106077,13 @@ var render = function() {
                       { attrs: { prop: "dDosMuestraCuatroCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.dDosMuestraCuatroCorregida,
+                            value: _vm.form.dDosMuestraCuatro,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "dDosMuestraCuatroCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "dDosMuestraCuatro", $$v)
                             },
-                            expression: "form.dDosMuestraCuatroCorregida"
+                            expression: "form.dDosMuestraCuatro"
                           }
                         })
                       ],
@@ -105982,12 +106108,13 @@ var render = function() {
                       { attrs: { prop: "hUnoMuestraUnoCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hUnoMuestraUnoCorregida,
+                            value: _vm.form.hUnoMuestraUno,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "hUnoMuestraUnoCorregida", $$v)
+                              _vm.$set(_vm.form, "hUnoMuestraUno", $$v)
                             },
-                            expression: "form.hUnoMuestraUnoCorregida"
+                            expression: "form.hUnoMuestraUno"
                           }
                         })
                       ],
@@ -106006,12 +106133,13 @@ var render = function() {
                       { attrs: { prop: "hUnoMuestraDosCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hUnoMuestraDosCorregida,
+                            value: _vm.form.hUnoMuestraDos,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "hUnoMuestraDosCorregida", $$v)
+                              _vm.$set(_vm.form, "hUnoMuestraDos", $$v)
                             },
-                            expression: "form.hUnoMuestraDosCorregida"
+                            expression: "form.hUnoMuestraDos"
                           }
                         })
                       ],
@@ -106030,16 +106158,13 @@ var render = function() {
                       { attrs: { prop: "hUnoMuestraTresCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hUnoMuestraTresCorregida,
+                            value: _vm.form.hUnoMuestraTres,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "hUnoMuestraTresCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "hUnoMuestraTres", $$v)
                             },
-                            expression: "form.hUnoMuestraTresCorregida"
+                            expression: "form.hUnoMuestraTres"
                           }
                         })
                       ],
@@ -106058,16 +106183,13 @@ var render = function() {
                       { attrs: { prop: "hUnoMuestraCuatroCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hUnoMuestraCuatroCorregida,
+                            value: _vm.form.hUnoMuestraCuatro,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "hUnoMuestraCuatroCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "hUnoMuestraCuatro", $$v)
                             },
-                            expression: "form.hUnoMuestraCuatroCorregida"
+                            expression: "form.hUnoMuestraCuatro"
                           }
                         })
                       ],
@@ -106092,12 +106214,13 @@ var render = function() {
                       { attrs: { prop: "hDosMuestraUnoCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hDosMuestraUnoCorregida,
+                            value: _vm.form.hDosMuestraUno,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "hDosMuestraUnoCorregida", $$v)
+                              _vm.$set(_vm.form, "hDosMuestraUno", $$v)
                             },
-                            expression: "form.hDosMuestraUnoCorregida"
+                            expression: "form.hDosMuestraUno"
                           }
                         })
                       ],
@@ -106116,12 +106239,13 @@ var render = function() {
                       { attrs: { prop: "hDosMuestraDosCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hDosMuestraDosCorregida,
+                            value: _vm.form.hDosMuestraDos,
                             callback: function($$v) {
-                              _vm.$set(_vm.form, "hDosMuestraDosCorregida", $$v)
+                              _vm.$set(_vm.form, "hDosMuestraDos", $$v)
                             },
-                            expression: "form.hDosMuestraDosCorregida"
+                            expression: "form.hDosMuestraDos"
                           }
                         })
                       ],
@@ -106140,16 +106264,13 @@ var render = function() {
                       { attrs: { prop: "hDosMuestraTresCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hDosMuestraTresCorregida,
+                            value: _vm.form.hDosMuestraTres,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "hDosMuestraTresCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "hDosMuestraTres", $$v)
                             },
-                            expression: "form.hDosMuestraTresCorregida"
+                            expression: "form.hDosMuestraTres"
                           }
                         })
                       ],
@@ -106168,16 +106289,13 @@ var render = function() {
                       { attrs: { prop: "hDosMuestraCuatroCorregida" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.hDosMuestraCuatroCorregida,
+                            value: _vm.form.hDosMuestraCuatro,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "hDosMuestraCuatroCorregida",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "hDosMuestraCuatro", $$v)
                             },
-                            expression: "form.hDosMuestraCuatroCorregida"
+                            expression: "form.hDosMuestraCuatro"
                           }
                         })
                       ],
@@ -106204,16 +106322,13 @@ var render = function() {
                       { attrs: { prop: "refrentadoCorregidoMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.refrentadoCorregidoMuestraUno,
+                            value: _vm.form.refrentadoUno,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "refrentadoCorregidoMuestraUno",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "refrentadoUno", $$v)
                             },
-                            expression: "form.refrentadoCorregidoMuestraUno"
+                            expression: "form.refrentadoUno"
                           }
                         })
                       ],
@@ -106232,16 +106347,13 @@ var render = function() {
                       { attrs: { prop: "refrentadoCorregidoMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.refrentadoCorregidoMuestraDos,
+                            value: _vm.form.refrentadoDos,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "refrentadoCorregidoMuestraDos",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "refrentadoDos", $$v)
                             },
-                            expression: "form.refrentadoCorregidoMuestraDos"
+                            expression: "form.refrentadoDos"
                           }
                         })
                       ],
@@ -106260,16 +106372,13 @@ var render = function() {
                       { attrs: { prop: "refrentadoCorregidoMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.refrentadoCorregidoMuestraTres,
+                            value: _vm.form.refrentadoTres,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "refrentadoCorregidoMuestraTres",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "refrentadoTres", $$v)
                             },
-                            expression: "form.refrentadoCorregidoMuestraTres"
+                            expression: "form.refrentadoTres"
                           }
                         })
                       ],
@@ -106288,16 +106397,13 @@ var render = function() {
                       { attrs: { prop: "refrentadoCorregidoMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
-                            value: _vm.form.refrentadoCorregidoMuestraCuatro,
+                            value: _vm.form.refrentadoCuatro,
                             callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "refrentadoCorregidoMuestraCuatro",
-                                $$v
-                              )
+                              _vm.$set(_vm.form, "refrentadoCuatro", $$v)
                             },
-                            expression: "form.refrentadoCorregidoMuestraCuatro"
+                            expression: "form.refrentadoCuatro"
                           }
                         })
                       ],
