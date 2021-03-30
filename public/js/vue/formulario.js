@@ -101765,7 +101765,7 @@ var render = function() {
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
           _c("strong", [_vm._v("N° OTT:")]),
-          _vm._v(" " + _vm._s(_vm.item.id))
+          _vm._v(" " + _vm._s(_vm.item.num_ott))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
