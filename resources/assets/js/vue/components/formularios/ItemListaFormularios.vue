@@ -7,7 +7,7 @@
             </div>
             <div class="item-contenedor-botones">
                 <!-- <el-button type="primary" @click="dialogVerVisible = true" plain>Ver Ensayo</el-button> -->
-                <el-button type="primary" @click="dialogVerVisible = true"  plain>Ver OTT</el-button>
+                <el-button type="primary" @click="handleInner"  plain>Ver OTT</el-button>
                 <el-dialog
                     :visible.sync="dialogVerVisible"
                     width="90%">

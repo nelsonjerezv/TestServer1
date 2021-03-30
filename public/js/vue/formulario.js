@@ -101784,11 +101784,7 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "primary", plain: "" },
-              on: {
-                click: function($event) {
-                  _vm.dialogVerVisible = true
-                }
-              }
+              on: { click: _vm.handleInner }
             },
             [_vm._v("Ver OTT")]
           ),
