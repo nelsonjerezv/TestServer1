@@ -98398,7 +98398,7 @@ var render = function() {
                 [
                   _c(
                     "el-form-item",
-                    { attrs: { label: "N° Ingreso", prop: "numIngreso" } },
+                    { attrs: { label: "N° Muestra", prop: "numIngreso" } },
                     [
                       _c("el-input", {
                         model: {
@@ -103796,7 +103796,7 @@ var render = function() {
                 [
                   _c(
                     "el-form-item",
-                    { attrs: { label: "N° Ingreso", prop: "numMuestra" } },
+                    { attrs: { label: "N° Muestra", prop: "numMuestra" } },
                     [
                       _c("el-input", {
                         staticClass: "no-click",
