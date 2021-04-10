@@ -13,12 +13,18 @@ const { forIn } = require('lodash');
  */
 
 const directoriosVue = {
+   'resources/assets/js/vue/controllers/': {
+      'archivos': [
+         'verFormulario.js'
+      ],
+      'destino': ""
+   },
    'resources/assets/js/vue/controllers/formularios/' : {
       'archivos' : [
          'formulario.js'
       ],
       'destino' : ""
-   }
+   },
 }
 
 const destinoVue = 'js/vue';

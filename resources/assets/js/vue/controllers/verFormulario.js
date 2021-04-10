@@ -1,6 +1,6 @@
 
 // componentes
-import OrdenTrabajoTerreno from '../../components/formularios/OrdenTrabajoTerreno.vue';
+import OrdenTrabajoTerreno from '../components/formularios/OrdenTrabajoTerreno.vue';
 // librerias
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
@@ -17,7 +17,8 @@ new Vue({
     },
     data() {
         return {
-            orden: window.orden
+            orden: window.orden,
+            accion: window.accion
         }
     }
 });
