@@ -102323,7 +102323,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -102421,9 +102420,13 @@ var render = function() {
             "el-button",
             {
               attrs: { type: "primary", plain: "" },
-              on: { click: _vm.handleInner }
+              on: {
+                click: function($event) {
+                  _vm.dialogVerVisible = true
+                }
+              }
             },
-            [_vm._v("Ver OTT")]
+            [_vm._v("Ver Ensayo")]
           ),
           _vm._v(" "),
           _c(

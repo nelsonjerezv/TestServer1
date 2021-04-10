@@ -6,8 +6,7 @@
                 <div class="item-atributo"><strong>N° Cliente Obra:</strong> {{item.num_cliente_obra}} &emsp; &emsp; <strong>Laboratorista:</strong> {{item.laboratorista}}</div>
             </div>
             <div class="item-contenedor-botones">
-                <!-- <el-button type="primary" @click="dialogVerVisible = true" plain>Ver Ensayo</el-button> -->
-                <el-button type="primary" @click="handleInner"  plain>Ver OTT</el-button>
+                <el-button type="primary" @click="dialogVerVisible = true" plain>Ver Ensayo</el-button>
                 <el-dialog
                     :visible.sync="dialogVerVisible"
                     width="90%">
