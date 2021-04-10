@@ -1302,7 +1302,7 @@
                 this.$refs[nombreFormulario].resetFields();
             },
             handleResize() {
-                this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
+                this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12
             },
             cargaDatosOtt(){
                 this.form.id = this.ottCargada.id;
