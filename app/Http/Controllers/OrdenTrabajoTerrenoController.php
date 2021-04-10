@@ -156,18 +156,8 @@ class OrdenTrabajoTerrenoController extends Controller
 
     public function verFormulario($id){
         $orden = OrdenTrabajoTerreno::where('id', $id)->first();
-        // $datos = (object) [
-        //         'direccionSolicitante' => '-',
-        //         'localizacionObra' => '-',
-        //         'numProyecto' => '-',
-        //         'numCorrelativoInformeObra' => '-',
-        //         'numCorrelativoObra' => '-',
-        //         'curadoInicial' => '-',
-        //         'lugarEnsayos' => '-',
-        //         'ensayo' => $ensayo
-        //     ];
-        // dd($orden, $datos);
+        $accion = 'ver';
 
-        return view('ver_formulario_ott', compact('orden'));
+        return view('ver_formulario_ott', compact('accion', 'orden') );
     }
 }

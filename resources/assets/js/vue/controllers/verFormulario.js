@@ -17,7 +17,8 @@ new Vue({
     },
     data() {
         return {
-            orden: window.orden
+            orden: window.orden,
+            accion: window.accion
         }
     }
 });
