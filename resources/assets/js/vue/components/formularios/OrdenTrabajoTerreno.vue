@@ -822,8 +822,19 @@
                 </el-col>
             </el-row>
             <el-divider class="el-divider-5"/>
-            <el-form-item class="comentarios" prop="">
-                <el-button type="primary" @click.prevent="onSubmit('formularioOtt')" plain>Crear OTT</el-button>
+            <el-form-item class="comentarios" prop="" v-if="visualizacion != 'ver'">
+                <el-button type="primary"
+                           @click.prevent="onSubmit('formularioOtt', 'crear')"
+                           v-if="visualizacion != 'editar'"
+                           plain>
+                                Crear OTT
+                </el-button>
+                <el-button type="primary"
+                           @click.prevent="onSubmit('formularioOtt', 'editar')"
+                           v-if="visualizacion == 'editar'"
+                           plain>
+                                Actualizar OTT
+                </el-button>
                 <el-popconfirm
                     confirm-button-text='Vaciar campos'
                     cancel-button-text='volver'
@@ -854,9 +865,11 @@
                 labelPosition: 'left',
                 unaDosColumnas: 24,
                 urlGuardarFormulario: `${GLOBAL.URL}formularios/guardar-formulario`,
+                urlActualizarFormulario: `${GLOBAL.URL}formularios/actualizar-formulario`,
                 visualizacion: '',
                 placeholderNumIngreso: 'Se generará automáticamente',
                 form: {
+                    id: null,
                     numClienteObra: '',
                     numOtt: '',
                     numIngreso: '',
@@ -1224,38 +1237,66 @@
         },
         mounted () {
             this.visualizacion = this.tipoOtt;
+            console.log(this.visualizacion);
             if(this.ottCargada){
                 this.cargaDatosOtt();
             }
         },
         methods: {
-            onSubmit(nombreFormulario) {
-                // this.$refs[nombreFormulario].validate((valid) => {
-                //     if (valid) {
-                        this.$http.post(this.urlGuardarFormulario,{
-                            formulario: this.form
-                        }).then(response => {
-                            console.log(response);
-                            if(response.body[1] == true){
-                                Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
-                                setTimeout(()=>{
-                                    this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
-                                }, 5000);
-                            } else{
-                                if(response.body[0].errorInfo[0] == "23000"){
-                                    return Tools.mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
+            onSubmit(nombreFormulario, accion) {
+                if(accion === 'crear'){
+                    // this.$refs[nombreFormulario].validate((valid) => {
+                    //     if (valid) {
+                            this.$http.post(this.urlGuardarFormulario,{
+                                formulario: this.form
+                            }).then(response => {
+                                console.log(response);
+                                if(response.body[1] == true){
+                                    Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
+                                    setTimeout(()=>{
+                                        this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
+                                    }, 5000);
+                                } else{
+                                    if(response.body[0].errorInfo[0] == "23000"){
+                                        return Tools.mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
+                                    }
+                                    return Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
                                 }
-                                return Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
-                            }
-                        }, response => {
-                            console.log(response)
-                            Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
-                        });
-                //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                //         return false;
-                //     }
-                // });
+                            }, response => {
+                                console.log(response)
+                                Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                            });
+                    //     } else {
+                    //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+                    //         return false;
+                    //     }
+                    // });
+                } else if(accion === 'editar'){
+                    // this.$refs[nombreFormulario].validate((valid) => {
+                    //     if (valid) {
+                            this.$http.post(this.urlActualizarFormulario,{
+                                formulario: this.form
+                            }).then(response => {
+                                console.log(response);
+                                if(response.body[1] == true){
+                                    Tools.mensajeAlerta("Formulario actualizado.", Tools.MENSAJE.EXITO, '', 7);
+                                } else{
+                                    if(response.body[0].errorInfo[0] == "23000"){
+                                        return Tools.mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
+                                    }
+                                    return Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                                }
+                            }, response => {
+                                console.log(response)
+                                Tools.mensajeAlerta("No se pudo guardar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                            });
+                    //     } else {
+                    //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+                    //         return false;
+                    //     }
+                    // });
+
+                }
             },
             resetForm(nombreFormulario) {
                 this.$refs[nombreFormulario].resetFields();
@@ -1264,86 +1305,87 @@
                 this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12
             },
             cargaDatosOtt(){
-                this.form.numClienteObra = this.ottCargada.num_cliente_obra.toLowerCase();
-                this.form.numOtt = this.ottCargada.num_ott.toLowerCase();
-                this.form.numIngreso = this.ottCargada.num_ingreso.toLowerCase();
-                this.form.nombreCliente = this.ottCargada.nombre_cliente.toLowerCase();
-                this.form.nombreObra = this.ottCargada.nombre_obra.toLowerCase();
-                this.form.fonoObra = this.ottCargada.fono_obra.toLowerCase();
-                this.form.direccionObra = this.ottCargada.direccion_obra.toLowerCase();
-                this.form.encargadoObra = this.ottCargada.encargado_obra.toLowerCase();
-                this.form.muestreoDe = this.ottCargada.muestreo_de.toLowerCase();
-                this.form.extraccion = this.ottCargada.extraccion.toLowerCase();
-                this.form.compactacion = this.ottCargada.compactacion.toLowerCase();
-                this.form.muestreadoPor = this.ottCargada.muestreado_por.toLowerCase();
-                this.form.ensayadoPor = this.ottCargada.ensayado_por.toLowerCase();
-                this.form.tipoMuestra = this.ottCargada.tipo_muestra.toLowerCase();
-                this.form.amasadaHormigon = this.ottCargada.amasada_hormigon.toLowerCase();
-                this.form.asentamientoCono = this.ottCargada.asentamiento_cono.toLowerCase();
-                this.form.numInforme = this.ottCargada.num_informe.toLowerCase();
-                this.form.segregacion = this.ottCargada.segregacion.toLowerCase();
-                this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams.toLowerCase();
-                this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion.toLowerCase();
-                this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido.toLowerCase();
-                this.form.horaMuestreo = this.ottCargada.hora_muestreo.toLowerCase();
-                this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado.toLowerCase();
-                this.form.tAmbiente = this.ottCargada.t_ambiente.toLowerCase();
-                this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero.toLowerCase();
-                this.form.proveedor = this.ottCargada.proveedor.toLowerCase();
-                this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho.toLowerCase();
-                this.form.nombreChofer = this.ottCargada.nombre_chofer.toLowerCase();
-                this.form.curadoInicial = this.ottCargada.curado_inicial.toLowerCase();
-                this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado.toLowerCase();
-                this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento.toLowerCase();
-                this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero.toLowerCase();
-                this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada.toLowerCase();
-                this.form.fechaConfeccion = this.ottCargada.fecha_confeccion.toLowerCase();
-                this.form.aditivo = this.ottCargada.aditivo.toLowerCase();
-                this.form.numMixer = this.ottCargada.num_mixer.toLowerCase();
-                this.form.trasladoProbetas = this.ottCargada.traslado_probetas.toLowerCase();
-                this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros.toLowerCase();
-                this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia.toLowerCase();
-                this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias.toLowerCase();
-                this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias.toLowerCase();
-                this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias.toLowerCase();
-                this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias.toLowerCase();
-                this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros.toLowerCase();
-                this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia.toLowerCase();
-                this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias.toLowerCase();
-                this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias.toLowerCase();
-                this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias.toLowerCase();
-                this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias.toLowerCase();
-                this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros.toLowerCase();
-                this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia.toLowerCase();
-                this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias.toLowerCase();
-                this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias.toLowerCase();
-                this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias.toLowerCase();
-                this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias.toLowerCase();
-                this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros.toLowerCase();
-                this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion.toLowerCase();
-                this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente.toLowerCase();
-                this.form.fechaIngreso = this.ottCargada.fecha_ingreso.toLowerCase();
-                this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra.toLowerCase();
-                this.form.horaLlegada = this.ottCargada.hora_llegada.toLowerCase();
-                this.form.horaSalida = this.ottCargada.hora_salida.toLowerCase();
-                this.form.responsableEnObra = this.ottCargada.responsable_en_obra.toLowerCase();
-                this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml.toLowerCase();
-                this.form.observaciones = this.ottCargada.observaciones.toLowerCase();
-                this.form.alteracionMuestra = this.ottCargada.alteracion_muestra.toLowerCase();
-                this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra.toLowerCase();
-                this.form.laboratorista = this.ottCargada.laboratorista.toLowerCase();
-                this.form.ayudante = this.ottCargada.ayudante.toLowerCase();
-                this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea.toLowerCase();
-                this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno.toLowerCase();
-                this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos.toLowerCase();
-                this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres.toLowerCase();
-                this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro.toLowerCase();
-                this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis.toLowerCase();
-                this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro.toLowerCase();
-                this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total.toLowerCase();
-                this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis.toLowerCase();
-                this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro.toLowerCase();
-                this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total.toLowerCase();
+                this.form.id = this.ottCargada.id;
+                this.form.numClienteObra = this.ottCargada.num_cliente_obra;
+                this.form.numOtt = this.ottCargada.num_ott;
+                this.form.numIngreso = this.ottCargada.num_ingreso;
+                this.form.nombreCliente = this.ottCargada.nombre_cliente;
+                this.form.nombreObra = this.ottCargada.nombre_obra;
+                this.form.fonoObra = this.ottCargada.fono_obra;
+                this.form.direccionObra = this.ottCargada.direccion_obra;
+                this.form.encargadoObra = this.ottCargada.encargado_obra;
+                this.form.muestreoDe = this.ottCargada.muestreo_de;
+                this.form.extraccion = this.ottCargada.extraccion;
+                this.form.compactacion = this.ottCargada.compactacion;
+                this.form.muestreadoPor = this.ottCargada.muestreado_por;
+                this.form.ensayadoPor = this.ottCargada.ensayado_por;
+                this.form.tipoMuestra = this.ottCargada.tipo_muestra;
+                this.form.amasadaHormigon = this.ottCargada.amasada_hormigon;
+                this.form.asentamientoCono = this.ottCargada.asentamiento_cono;
+                this.form.numInforme = this.ottCargada.num_informe;
+                this.form.segregacion = this.ottCargada.segregacion;
+                this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
+                this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
+                this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
+                this.form.horaMuestreo = this.ottCargada.hora_muestreo;
+                this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
+                this.form.tAmbiente = this.ottCargada.t_ambiente;
+                this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero;
+                this.form.proveedor = this.ottCargada.proveedor;
+                this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho;
+                this.form.nombreChofer = this.ottCargada.nombre_chofer;
+                this.form.curadoInicial = this.ottCargada.curado_inicial;
+                this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
+                this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
+                this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
+                this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
+                this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
+                this.form.aditivo = this.ottCargada.aditivo;
+                this.form.numMixer = this.ottCargada.num_mixer;
+                this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
+                this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
+                this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
+                this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
+                this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
+                this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
+                this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
+                this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
+                this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
+                this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
+                this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
+                this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
+                this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
+                this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
+                this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
+                this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
+                this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
+                this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
+                this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
+                this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
+                this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
+                this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
+                this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
+                this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
+                this.form.horaLlegada = this.ottCargada.hora_llegada;
+                this.form.horaSalida = this.ottCargada.hora_salida;
+                this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
+                this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
+                this.form.observaciones = this.ottCargada.observaciones;
+                this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
+                this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
+                this.form.laboratorista = this.ottCargada.laboratorista;
+                this.form.ayudante = this.ottCargada.ayudante;
+                this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
+                this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
+                this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
+                this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
+                this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
+                this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
+                this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
+                this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
+                this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
+                this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
+                this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
 
                 this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
                 this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
