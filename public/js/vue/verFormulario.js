@@ -96414,7 +96414,7 @@ var moment = __webpack_require__(0);
             this.$refs[nombreFormulario].resetFields();
         },
         handleResize: function handleResize() {
-            this.unaDosColumnas = window.innerWidth < 1200 ? 24 : 12;
+            this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;
         },
         cargaDatosOtt: function cargaDatosOtt() {
             this.form.id = this.ottCargada.id;
