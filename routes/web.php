@@ -18,10 +18,12 @@ if (App::environment('production')) {
 
 
     Route::get('/formularios', 'OrdenTrabajoTerrenoController@index');
-    Route::get('/formularios/todas-las-ordenes', 'OrdenTrabajoTerrenoController@todasLasOrdenes');
+    Route::get('/formularios/todas-las-ordenes/{modo}', 'OrdenTrabajoTerrenoController@todasLasOrdenes');
     Route::get('/formularios/editar-formulario', 'OrdenTrabajoTerrenoController@editarFormulario');
     Route::get('/formularios/ver-ott/{id}', 'OrdenTrabajoTerrenoController@verFormulario');
     Route::get('/formularios/editar-ott/{id}', 'OrdenTrabajoTerrenoController@editarFormulario');
+    Route::post('/formularios/validar-ott', 'OrdenTrabajoTerrenoController@validarFormulario');
+    Route::post('/formularios/rechazar-ott', 'OrdenTrabajoTerrenoController@rechazarFormulario');
     Route::post('/formularios/guardar-formulario', 'OrdenTrabajoTerrenoController@guardarFormulario');
     Route::post('/formularios/actualizar-formulario', 'OrdenTrabajoTerrenoController@actualizarFormulario');
     Route::post('/formularios/guardar-ensayo-compresion', 'OrdenTrabajoTerrenoController@guardarFormulario');

@@ -13,8 +13,8 @@
                     <!-- :before-close="handleClose" -->
                     <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
                     <span slot="footer" class="dialog-footer">
-                        <el-button type="success" @click="handleInner" plain>Validar</el-button>
-                        <el-button type="warning" @click="handleInner" plain>Rechazar</el-button>
+                        <el-button type="success" @click="validarOtt"  v-if="!item.validado" plain>Validar</el-button>
+                        <el-button type="warning" @click="rechazarOtt" v-if="item.validado" plain>Rechazar</el-button>
                         <el-button type="danger" @click="dialogVerVisible = false" plain>Volver</el-button>
                         <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
                     </span>
@@ -27,8 +27,8 @@
                     <!-- :before-close="handleClose" -->
                     <iframe style="width: 100%; height: 100%;" :src="rutaEditarInforme"></iframe>
                     <span slot="footer" class="dialog-footer">
-                        <el-button type="success" @click="handleInner" plain>Validar</el-button>
-                        <el-button type="warning" @click="handleInner" plain>Rechazar</el-button>
+                        <el-button type="success" @click="validarOtt"  v-if="!item.validado" plain>Validar</el-button>
+                        <el-button type="warning" @click="rechazarOtt" v-if="item.validado" plain>Rechazar</el-button>
                         <el-button type="danger" @click="dialogEditarVisible = false" plain>Volver</el-button>
                         <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
                     </span>
@@ -61,6 +61,8 @@
                 item: '',
                 urlEliminarFormulario: `${GLOBAL.URL}formularios/eliminar-formulario`,
                 urlEditarFormulario: `${GLOBAL.URL}formularios/editar-formulario`,
+                urlValidarFormulario: `${GLOBAL.URL}` + '/formularios/validar-ott',
+                urlRechazarFormulario: `${GLOBAL.URL}` + '/formularios/rechazar-ott',
                 dialogVisible: false,
                 dialogVerVisible: false,
                 dialogEditarVisible: false,
@@ -69,6 +71,7 @@
         },
         mounted () {
             this.item = this.itemLista;
+            console.log('itemlistaformularios mounted', this.item.id, this.item);
         },
         methods: {
             eliminarFormulario() {
@@ -99,7 +102,31 @@
                     done();
                 })
                 .catch(_ => {});
-            }
+            },
+            validarOtt(){
+                this.$http.post(this.urlValidarFormulario,{
+                    id: this.item.id
+                }).then(response => {
+                    Tools.mensajeAlerta("Formulario validado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    this.dialogVerVisible = false;
+                    this.dialogEditarVisible = false;
+                    this.$emit("actualizar");
+                }, response => {
+                    Tools.mensajeAlerta("No se pudo validar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                });
+            },
+            rechazarOtt(){
+                this.$http.post(this.urlRechazarFormulario,{
+                    id: this.item.id
+                }).then(response => {
+                    Tools.mensajeAlerta("Formulario rechazado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    this.dialogVerVisible = false;
+                    this.dialogEditarVisible = false;
+                    this.$emit("actualizar");
+                }, response => {
+                    Tools.mensajeAlerta("No se pudo rechazar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                });
+            },
         },
         computed: {
             rutaVerInforme() {
@@ -107,7 +134,12 @@
             },
             rutaEditarInforme() {
                 return this.dialogEditarVisible ? `${GLOBAL.URL}` + '/formularios/editar-ott/' + this.item.id : '';
-
+            },
+            rutaValidarInforme() {
+                return `${GLOBAL.URL}` + '/formularios/validar-ott';
+            },
+            rutaRechazarInforme() {
+                return `${GLOBAL.URL}` + '/formularios/rechazar-ott';
             }
         },
     }

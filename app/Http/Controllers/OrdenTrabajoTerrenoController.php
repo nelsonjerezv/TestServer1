@@ -20,7 +20,12 @@ class OrdenTrabajoTerrenoController extends Controller
         return view('formularios', compact('datos'));
     }
 
-    public function todasLasOrdenes(){
+    public function todasLasOrdenes($modo = false){
+        if($modo){
+            $busqueda = $modo == "porvalidar" ? false : true;
+            $result = OrdenTrabajoTerreno::where('validado', $busqueda)->get();
+            return $result;
+        }
         return OrdenTrabajoTerreno::get();
     }
 
@@ -52,6 +57,7 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['num_cliente_obra'] = $request->formulario['numClienteObra'];
         $formulario['num_ingreso'] = $request->formulario['numIngreso'];
         // $formulario['num_ingreso'] = $ultimoNumIngres;
+        $formulario['validado'] = false;
         $formulario['nombre_cliente'] = $request->formulario['nombreCliente'];
         $formulario['nombre_obra'] = $request->formulario['nombreObra'];
         $formulario['fono_obra'] = $request->formulario['fonoObra'];
@@ -170,7 +176,6 @@ class OrdenTrabajoTerrenoController extends Controller
         // }
 
         $formulario = OrdenTrabajoTerreno::find($request->formulario['id']);
-
 
         $formulario->num_ott = $request->formulario['numOtt'];
         $formulario->num_cliente_obra = $request->formulario['numClienteObra'];
@@ -292,5 +297,29 @@ class OrdenTrabajoTerrenoController extends Controller
         $accion = 'editar';
 
         return view('ver_formulario_ott', compact('accion', 'orden') );
+    }
+
+    public function validarFormulario(Request $request){
+        $orden = OrdenTrabajoTerreno::where('id', $request->id)->first();
+        // dd($orden);
+        $orden->validado = true;
+        try {
+            $orden->save();
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$orden, true];
+    }
+
+    public function rechazarFormulario(Request $request){
+        $orden = OrdenTrabajoTerreno::where('id', $request->id)->first();
+
+        $orden->validado = false;
+        try {
+            $orden->save();
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$orden, true];
     }
 }

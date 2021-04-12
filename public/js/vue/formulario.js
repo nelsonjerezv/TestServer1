@@ -101718,6 +101718,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -101742,7 +101743,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // componenteMain: 'EnsayoCompresionProbetasCilindricas',
             // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
-            tipoEnsayo: ''
+            tipoEnsayo: '',
+            modoListadoOtt: 'porvalidar'
         };
     },
     mounted: function mounted() {
@@ -101757,6 +101759,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
                 this.tipoEnsayo = contenido.condicion;
+            }
+            if (contenido.vista === 'ListadoFormularios') {
+                this.modoListadoOtt = contenido.condicion;
             }
         }
     }
@@ -101892,8 +101897,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         nuevaOTT: function nuevaOTT() {
             this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
         },
-        listadoOTTs: function listadoOTTs() {
-            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
+        listadoOTTsPorValidar: function listadoOTTsPorValidar() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'porvalidar' });
+        },
+        listadoOTTsValidadas: function listadoOTTsValidadas() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'validadas' });
         },
         nuevoEnsayo: function nuevoEnsayo() {
             this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
@@ -101965,7 +101975,7 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "2-2" },
-                          on: { click: _vm.listadoOTTs }
+                          on: { click: _vm.listadoOTTsPorValidar }
                         },
                         [
                           _vm._v(
@@ -101976,7 +101986,10 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "2-3", disabled: "" } },
+                        {
+                          attrs: { index: "2-3" },
+                          on: { click: _vm.listadoOTTsValidadas }
+                        },
                         [
                           _vm._v(
                             "\n                        OTTs validadas\n                    "
@@ -102217,7 +102230,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
     },
-    props: [],
+    props: ['modo'],
     data: function data() {
         return {
             urltodasLasOrdenes: GLOBAL.URL + 'formularios/todas-las-ordenes',
@@ -102234,7 +102247,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getOrdenes: function getOrdenes() {
             var _this = this;
 
-            this.$http.get(this.urltodasLasOrdenes).then(function (response) {
+            this.ordenesDeTrabajo = [];
+            this.todasLasOrdenes = [];
+            this.$http.get(this.urltodasLasOrdenes + '/' + this.modo).then(function (response) {
                 _this.todasLasOrdenes = response.body;
                 _this.ordenesDeTrabajo = response.body;
             }, function (response) {
@@ -102252,6 +102267,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     watch: {
         buscador: function buscador() {
             this.filtraOrdenes();
+        },
+        modo: function modo() {
+            this.getOrdenes();
         }
     }
 });
@@ -102415,6 +102433,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             item: '',
             urlEliminarFormulario: GLOBAL.URL + 'formularios/eliminar-formulario',
             urlEditarFormulario: GLOBAL.URL + 'formularios/editar-formulario',
+            urlValidarFormulario: '' + GLOBAL.URL + '/formularios/validar-ott',
+            urlRechazarFormulario: '' + GLOBAL.URL + '/formularios/rechazar-ott',
             dialogVisible: false,
             dialogVerVisible: false,
             dialogEditarVisible: false
@@ -102423,6 +102443,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         this.item = this.itemLista;
+        console.log('itemlistaformularios mounted', this.item.id, this.item);
     },
 
     methods: {
@@ -102454,6 +102475,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$confirm('Pendiente').then(function (_) {
                 done();
             }).catch(function (_) {});
+        },
+        validarOtt: function validarOtt() {
+            var _this2 = this;
+
+            this.$http.post(this.urlValidarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this2.dialogVerVisible = false;
+                _this2.dialogEditarVisible = false;
+                _this2.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
+        },
+        rechazarOtt: function rechazarOtt() {
+            var _this3 = this;
+
+            this.$http.post(this.urlRechazarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this3.dialogVerVisible = false;
+                _this3.dialogEditarVisible = false;
+                _this3.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
         }
     },
     computed: {
@@ -102462,6 +102511,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         rutaEditarInforme: function rutaEditarInforme() {
             return this.dialogEditarVisible ? '' + GLOBAL.URL + '/formularios/editar-ott/' + this.item.id : '';
+        },
+        rutaValidarInforme: function rutaValidarInforme() {
+            return '' + GLOBAL.URL + '/formularios/validar-ott';
+        },
+        rutaRechazarInforme: function rutaRechazarInforme() {
+            return '' + GLOBAL.URL + '/formularios/rechazar-ott';
         }
     }
 });
@@ -102531,23 +102586,27 @@ var render = function() {
                   slot: "footer"
                 },
                 [
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "success", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Validar")]
-                  ),
+                  !_vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "success", plain: "" },
+                          on: { click: _vm.validarOtt }
+                        },
+                        [_vm._v("Validar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "warning", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Rechazar")]
-                  ),
+                  _vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "warning", plain: "" },
+                          on: { click: _vm.rechazarOtt }
+                        },
+                        [_vm._v("Rechazar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "el-button",
@@ -102604,23 +102663,27 @@ var render = function() {
                   slot: "footer"
                 },
                 [
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "success", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Validar")]
-                  ),
+                  !_vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "success", plain: "" },
+                          on: { click: _vm.validarOtt }
+                        },
+                        [_vm._v("Validar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "warning", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Rechazar")]
-                  ),
+                  _vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "warning", plain: "" },
+                          on: { click: _vm.rechazarOtt }
+                        },
+                        [_vm._v("Rechazar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "el-button",
@@ -111278,7 +111341,9 @@ var render = function() {
                     : _vm._e(),
                   _vm._v(" "),
                   _vm.componenteMain == "ListadoFormularios"
-                    ? _c("listado-formularios")
+                    ? _c("listado-formularios", {
+                        attrs: { modo: _vm.modoListadoOtt }
+                      })
                     : _vm._e(),
                   _vm._v(" "),
                   _vm.componenteMain == "OrdenTrabajoTerreno"

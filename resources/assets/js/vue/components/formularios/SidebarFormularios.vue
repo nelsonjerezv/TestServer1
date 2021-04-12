@@ -15,10 +15,10 @@
                         <el-menu-item index="2-1" @click="nuevaOTT">
                             Nueva OTT
                         </el-menu-item>
-                        <el-menu-item index="2-2" @click="listadoOTTs">
+                        <el-menu-item index="2-2" @click="listadoOTTsPorValidar">
                             OTTs por validar
                         </el-menu-item>
-                        <el-menu-item index="2-3" disabled>
+                        <el-menu-item index="2-3" @click="listadoOTTsValidadas">
                             OTTs validadas
                         </el-menu-item>
                     </el-menu-item-group>
@@ -81,8 +81,13 @@
             nuevaOTT() {
                 this.$emit("cambiaMain", {vista: "OrdenTrabajoTerreno", condicion:'nueva'});
             },
-            listadoOTTs() {
-                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
+            listadoOTTsPorValidar() {
+                this.inicio();
+                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:'porvalidar'});
+            },
+            listadoOTTsValidadas() {
+                this.inicio();
+                this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:'validadas'});
             },
             nuevoEnsayo() {
                 this.$emit("cambiaMain", {vista: "EnsayoCompresionProbetasCilindricas", condicion:'nueva'});

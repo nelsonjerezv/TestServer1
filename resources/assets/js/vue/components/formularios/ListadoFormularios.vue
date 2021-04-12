@@ -22,7 +22,9 @@
         components: {
             ItemListaFormularios
         },
-        props: [],
+        props: [
+            'modo'
+        ],
         data(){
             return{
                 urltodasLasOrdenes: `${GLOBAL.URL}formularios/todas-las-ordenes`,
@@ -36,7 +38,9 @@
         },
         methods: {
             getOrdenes() {
-                this.$http.get(this.urltodasLasOrdenes)
+                this.ordenesDeTrabajo = [];
+                this.todasLasOrdenes =  [];
+                this.$http.get(`${this.urltodasLasOrdenes}/${this.modo}`)
                 .then(response => {
                     this.todasLasOrdenes =  response.body;
                     this.ordenesDeTrabajo = response.body;
@@ -54,6 +58,9 @@
         watch: {
             buscador() {
                 this.filtraOrdenes();
+            },
+            modo(){
+                this.getOrdenes();
             }
         },
     }
