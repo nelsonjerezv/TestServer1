@@ -14,6 +14,7 @@
                     </div>
                     <listado-formularios
                         v-if="componenteMain == 'ListadoFormularios'"
+                        :modo="modoListadoOtt"
                     />
                     <orden-trabajo-terreno
                         v-if="componenteMain == 'OrdenTrabajoTerreno'"
@@ -67,6 +68,7 @@
                 // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',
                 tipoEnsayo: '',
+                modoListadoOtt: 'porvalidar',
             };
         },
         mounted() {
@@ -80,6 +82,9 @@
                 }
                 if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
                     this.tipoEnsayo = contenido.condicion;
+                }
+                if (contenido.vista === 'ListadoFormularios') {
+                    this.modoListadoOtt = contenido.condicion;
                 }
             }
         }

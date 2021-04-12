@@ -16,6 +16,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
         Schema::create('orden_trabajo_terreno', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->boolean('validado');
             $table->string('num_ott', 75)->unique();
             $table->string('num_cliente_obra', 75)->nullable();
             $table->string('nombre_cliente', 75)->nullable();

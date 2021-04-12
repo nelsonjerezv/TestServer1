@@ -12,6 +12,7 @@ class OrdenTrabajoTerreno extends Model
         'num_cliente_obra',
         'num_ott',
         'nombre_cliente',
+        'validado',
         'nombre_obra',
         'fono_obra',
         'direccion_obra',
