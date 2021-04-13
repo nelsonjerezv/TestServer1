@@ -112,7 +112,7 @@
     }
 </style>
 <script type="text/javascript">
-    console.log($orden, $data);
+    console.log($orden, $datos);
     window.orden = @json($orden);
     window.datos = @json($datos);
     </script>
@@ -230,7 +230,13 @@
   <tr>
     <td class="tg-0pky">Fecha de muestreo</td>
     <td class="tg-0pky">:</td>
-    <td class="tg-0pky width-50" colspan="2">{{-- {{ $orden->{'nombre_cliente'} }} --}}PENDIENTE</td>
+    <td class="tg-0pky width-50" colspan="2">
+      @if ($orden->{'muestreado_por'} === 'lacem' || $orden->{'muestreado_por'} === 'LACEM' )
+          {{ $orden->{'fecha_confeccion'} }}
+      @else
+              {{ $datos->{'fechaMuestreoManual'} }}
+      @endif
+    </td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Número  de  OTT</td>
     <td class="tg-0pky">:</td>
