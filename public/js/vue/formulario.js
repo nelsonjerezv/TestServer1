@@ -110980,15 +110980,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         rutaVerInforme: function rutaVerInforme() {
             var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
             var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
-            console.log(ruta);
+
             return ruta;
-            /* + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-' */;
         }
     }
 });
@@ -111233,8 +111226,9 @@ var render = function() {
                     "div",
                     { staticClass: "una-linea" },
                     [
-                      _vm._v("Fecha de muestreo: "),
-                      _vm._v(" "),
+                      _vm._v(
+                        "Fecha de muestreo:\n                                                                                               "
+                      ),
                       _c("el-date-picker", {
                         attrs: {
                           type: "date",
