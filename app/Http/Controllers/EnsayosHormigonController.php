@@ -28,7 +28,7 @@ class EnsayosHormigonController extends Controller
     }
 
     public function todosLosEnsayos(){
-        return EnsayoProbetasHormigon::get();
+        return EnsayoProbetasHormigon::with('ott')->get();
     }
 
     public function eliminarEnsayo(Request $request){
@@ -216,7 +216,7 @@ class EnsayosHormigonController extends Controller
         return [$result, true];
     }
 
-    public function exportarEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos){
+    public function exportarEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos, $fechaMuestreoManual){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
@@ -227,6 +227,7 @@ class EnsayosHormigonController extends Controller
             'numCorrelativoObra' => $numCorrelativoObra,
             'curadoInicial' => $curadoInicial,
             'lugarEnsayos' => $lugarEnsayos,
+            'fechaMuestreoManual' => $fechaMuestreoManual,
             'ensayo' => $ensayo
         ];
         // dd($orden, $datos);
@@ -236,7 +237,7 @@ class EnsayosHormigonController extends Controller
         return $pdf->stream();
     }
 
-    public function exportarEnsayoExcel($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos){
+    public function exportarEnsayoExcel($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos, $fechaMuestreoManual = false){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
@@ -247,6 +248,7 @@ class EnsayosHormigonController extends Controller
             'numCorrelativoObra' => $numCorrelativoObra,
             'curadoInicial' => $curadoInicial,
             'lugarEnsayos' => $lugarEnsayos,
+            'fechaMuestreoManual' => !$fechaMuestreoManual ? '-' : $fechaMuestreoManual,
             'ensayo' => $ensayo
         ];
 
@@ -260,19 +262,20 @@ class EnsayosHormigonController extends Controller
         // });
     }
 
-    public function verEnsayoPdf($id){
+    public function verEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos, $fechaMuestreoManual = false){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
-                'direccionSolicitante' => '-',
-                'localizacionObra' => '-',
-                'numProyecto' => '-',
-                'numCorrelativoInformeObra' => '-',
-                'numCorrelativoObra' => '-',
-                'curadoInicial' => '-',
-                'lugarEnsayos' => '-',
-                'ensayo' => $ensayo
-            ];
+            'direccionSolicitante' => $direccionSolicitante,
+            'localizacionObra' => $localizacionObra,
+            'numProyecto' => $numProyecto,
+            'numCorrelativoInformeObra' => $numCorrelativoInformeObra,
+            'numCorrelativoObra' => $numCorrelativoObra,
+            'curadoInicial' => $curadoInicial,
+            'lugarEnsayos' => $lugarEnsayos,
+            'fechaMuestreoManual' => !$fechaMuestreoManual ? '-' : $fechaMuestreoManual,
+            'ensayo' => $ensayo
+        ];
         // dd($orden, $datos);
 
         return view('informe_hormigon', compact('datos', 'orden'));

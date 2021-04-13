@@ -104141,10 +104141,10 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 numMoldeMuestraDos: '',
                 numMoldeMuestraTres: '',
                 numMoldeMuestraCuatro: '',
-                fechaConfeccionMuestraUno: '',
-                fechaConfeccionMuestraDos: '',
-                fechaConfeccionMuestraTres: '',
-                fechaConfeccionMuestraCuatro: '',
+                fechaConfeccionMuestraUno: 'Cargado desde OTT',
+                fechaConfeccionMuestraDos: 'Cargado desde OTT',
+                fechaConfeccionMuestraTres: 'Cargado desde OTT',
+                fechaConfeccionMuestraCuatro: 'Cargado desde OTT',
                 fechaEnsayoMuestraUno: '',
                 fechaEnsayoMuestraDos: '',
                 fechaEnsayoMuestraTres: '',
@@ -104374,7 +104374,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                         return { 'value': orden.num_ott,
                             'id': orden.num_ott };
                     }) : [];
-                    // console.log('resultados', this.opcionesSearchBoxOTT);
+                    console.log('resultados', _this2.results);
                     _this2.opcionesSearchBoxOTT = results;
                     _this2.ordenes = resultados;
                 }, function (response) {
@@ -105908,6 +105908,8 @@ var render = function() {
                       { attrs: { prop: "edadDiasMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
+                          attrs: { placeholder: "Calculado automáticamente" },
                           model: {
                             value: _vm.form.edadDiasMuestraUno,
                             callback: function($$v) {
@@ -105932,6 +105934,8 @@ var render = function() {
                       { attrs: { prop: "edadDiasMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
+                          attrs: { placeholder: "Calculado automáticamente" },
                           model: {
                             value: _vm.form.edadDiasMuestraDos,
                             callback: function($$v) {
@@ -105956,6 +105960,8 @@ var render = function() {
                       { attrs: { prop: "edadDiasMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
+                          attrs: { placeholder: "Calculado automáticamente" },
                           model: {
                             value: _vm.form.edadDiasMuestraTres,
                             callback: function($$v) {
@@ -105980,6 +105986,8 @@ var render = function() {
                       { attrs: { prop: "edadDiasMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
+                          attrs: { placeholder: "Calculado automáticamente" },
                           model: {
                             value: _vm.form.edadDiasMuestraCuatro,
                             callback: function($$v) {
@@ -110363,7 +110371,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.ott))
+          _vm._v("N° Ott: " + _vm._s(_vm.item.ott.num_ott))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -110871,6 +110879,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -110890,11 +110907,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             numCorrelativoObra: 'n° corelativo obra',
             curadoInicial: 'Piscina de Curado',
             lugarEnsayos: 'Laboratorio LACEM',
+            fechaMuestreoManual: '',
             dialogVisible: false
         };
     },
     mounted: function mounted() {
         this.item = this.itemLista;
+        console.log('item.muestreadoPor', this.item.ott.muestreado_por);
     },
 
     methods: {
@@ -110917,6 +110936,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             console.log('editar ensayo');
         },
         exportarPDF: function exportarPDF() {
+            console.log(this.fechaMuestreoManual);
             var data = {
                 id: this.item.id,
                 direccionSolicitante: this.direccionSolicitante,
@@ -110924,10 +110944,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 numProyecto: this.numProyecto,
                 numCorrelativoInformeObra: this.numCorrelativoInformeObra,
                 numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial
+                curadoInicial: this.curadoInicial,
+                fechaMuestreoManual: this.fechaMuestreoManual
             };
-            window.open(this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
-            console.log('exportarPDF');
+
+            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
+
+            var url = this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
+            console.log('exportarPDF', url);
+            window.open(url, '_blank');
         },
         exportarExcel: function exportarExcel() {
             var data = {
@@ -110953,7 +110978,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     computed: {
         rutaVerInforme: function rutaVerInforme() {
-            return '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id
+            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
+            var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
+            console.log(ruta);
+            return ruta;
             /* + '/' + '-'
             + '/' + '-'
             + '/' + '-'
@@ -110981,7 +111009,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.ott))
+          _vm._v("N° Ott: " + _vm._s(_vm.item.ott.num_ott))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -111199,6 +111227,33 @@ var render = function() {
                 ],
                 1
               ),
+              _vm._v(" "),
+              _vm.item.ott.muestreado_por.toUpperCase() != "LACEM"
+                ? _c(
+                    "div",
+                    { staticClass: "una-linea" },
+                    [
+                      _vm._v("Fecha de muestreo: "),
+                      _vm._v(" "),
+                      _c("el-date-picker", {
+                        attrs: {
+                          type: "date",
+                          size: "mini",
+                          format: "dd-MM-yyyy",
+                          "value-format": "dd-MM-yyyy"
+                        },
+                        model: {
+                          value: _vm.fechaMuestreoManual,
+                          callback: function($$v) {
+                            _vm.fechaMuestreoManual = $$v
+                          },
+                          expression: "fechaMuestreoManual"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                : _vm._e(),
               _vm._v(" "),
               _c(
                 "div",

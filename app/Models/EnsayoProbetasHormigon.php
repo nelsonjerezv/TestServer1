@@ -177,4 +177,9 @@ class EnsayoProbetasHormigon extends Model
         'vb',
 
     ];
+
+    public function ott()
+    {
+        return $this->belongsTo(OrdenTrabajoTerreno::class, 'ott', 'num_ott');
+    }
 }

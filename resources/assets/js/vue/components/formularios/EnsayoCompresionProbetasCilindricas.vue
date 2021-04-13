@@ -223,22 +223,22 @@
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="edadDiasMuestraUno">
-                            <el-input v-model="form.edadDiasMuestraUno"></el-input>
+                            <el-input class="no-click" placeholder="Calculado automáticamente" v-model="form.edadDiasMuestraUno"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="edadDiasMuestraDos">
-                            <el-input v-model="form.edadDiasMuestraDos"></el-input>
+                            <el-input class="no-click" placeholder="Calculado automáticamente" v-model="form.edadDiasMuestraDos"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="edadDiasMuestraTres">
-                            <el-input v-model="form.edadDiasMuestraTres"></el-input>
+                            <el-input class="no-click" placeholder="Calculado automáticamente" v-model="form.edadDiasMuestraTres"></el-input>
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="edadDiasMuestraCuatro">
-                            <el-input v-model="form.edadDiasMuestraCuatro"></el-input>
+                            <el-input class="no-click" placeholder="Calculado automáticamente" v-model="form.edadDiasMuestraCuatro"></el-input>
                         </el-form-item>
                     </div>
                 </el-col>
@@ -1238,10 +1238,10 @@
                     numMoldeMuestraDos: '',
                     numMoldeMuestraTres: '',
                     numMoldeMuestraCuatro: '',
-                    fechaConfeccionMuestraUno: '',
-                    fechaConfeccionMuestraDos: '',
-                    fechaConfeccionMuestraTres: '',
-                    fechaConfeccionMuestraCuatro: '',
+                    fechaConfeccionMuestraUno: 'Cargado desde OTT',
+                    fechaConfeccionMuestraDos: 'Cargado desde OTT',
+                    fechaConfeccionMuestraTres: 'Cargado desde OTT',
+                    fechaConfeccionMuestraCuatro: 'Cargado desde OTT',
                     fechaEnsayoMuestraUno: '',
                     fechaEnsayoMuestraDos: '',
                     fechaEnsayoMuestraTres: '',
@@ -1465,7 +1465,7 @@
                         let resultados = response.body;
                         var results = resultados.length > 0 ? resultados.map(orden => {return {'value': orden.num_ott,
                                                                                                'id': orden.num_ott}} ) : [];
-                        // console.log('resultados', this.opcionesSearchBoxOTT);
+                        console.log('resultados', this.results);
                         this.opcionesSearchBoxOTT = results;
                         this.ordenes = resultados;
                     }, response => {

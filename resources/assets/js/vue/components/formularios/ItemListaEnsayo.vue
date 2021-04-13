@@ -3,7 +3,7 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <div class="item-atributo">N° Ott: {{item.ott}}</div>
+                <div class="item-atributo">N° Ott: {{item.ott.num_ott}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
 
