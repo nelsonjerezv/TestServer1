@@ -8,7 +8,7 @@
             </div>
 
             <div class="item-contenedor-botones">
-                <el-button type="primary" @click="dialogVisible = true" plain>Ver Ensayo</el-button>
+                <el-button type="primary" @click="dialogVisible = true" plain>Ver</el-button>
                 <el-dialog
                     :visible.sync="dialogVisible"
                     width="90%">
@@ -124,14 +124,17 @@
         },
         computed: {
             rutaVerInforme() {
-                return `${GLOBAL.URL}` + '/ensayos/ver-ensayo-pdf/' + this.item.id
-                                                      /* + '/' + '-'
+                let ruta = `${GLOBAL.URL}` + '/ensayos/ver-ensayo-pdf/' + this.item.id
                                                       + '/' + '-'
                                                       + '/' + '-'
                                                       + '/' + '-'
                                                       + '/' + '-'
                                                       + '/' + '-'
-                                                      + '/' + '-' */;
+                                                      + '/' + '-'
+                                                      + '/' + '-'
+                                                      + '/' + '-';
+
+                return ruta;
             }
         },
     }
