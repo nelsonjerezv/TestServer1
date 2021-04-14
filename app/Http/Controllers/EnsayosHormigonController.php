@@ -27,8 +27,17 @@ class EnsayosHormigonController extends Controller
         return view('informe_hormigon', compact('ensayo'));
     }
 
-    public function todosLosEnsayos(){
-        return EnsayoProbetasHormigon::with('ott')->get();
+    /*public function todosLosEnsayos(){
+       // return EnsayoProbetasHormigon::with('ott')->get();
+    }*/
+
+    public function todosLosEnsayos($modo = false){
+        if($modo){
+            $busqueda = $modo == "porvalidar" ? false : true;
+            $result = EnsayoProbetasHormigon::where('validado', $busqueda)->get();
+            return $result;
+        }
+        return EnsayoProbetasHormigon::get();
     }
 
     public function eliminarEnsayo(Request $request){
