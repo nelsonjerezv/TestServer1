@@ -96365,10 +96365,10 @@ var moment = __webpack_require__(0);
                 }).then(function (response) {
                     console.log(response);
                     if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                         setTimeout(function () {
                             _this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
-                        }, 5000);
+                        }, 0);
                     } else {
                         if (response.body[0].errorInfo[0] == "23000") {
                             return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);

@@ -96365,10 +96365,10 @@ var moment = __webpack_require__(0);
                 }).then(function (response) {
                     console.log(response);
                     if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                         setTimeout(function () {
                             _this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
-                        }, 5000);
+                        }, 0);
                     } else {
                         if (response.body[0].errorInfo[0] == "23000") {
                             return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
@@ -101739,7 +101739,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['ordenes'],
     data: function data() {
         return {
-            componenteMain: 'ListadoFormularios',
+            componenteMain: '',
             // componenteMain: 'EnsayoCompresionProbetasCilindricas',
             // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
@@ -101936,7 +101936,7 @@ var render = function() {
             "el-menu",
             {
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "4-1" }
+              attrs: { "default-active": "1" }
             },
             [
               _c(
@@ -104338,10 +104338,10 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 ensayo: this.form
             }).then(function (response) {
                 if (response.body[1] == true) {
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                     setTimeout(function () {
                         _this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
-                    }, 5000);
+                    }, 0);
                 } else {
                     if (response.body[0].errorInfo[0] == "23000") {
                         return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
@@ -108247,7 +108247,7 @@ var render = function() {
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
                   _vm._v("\n                    Volumen ( ÷ "),
-                  _c("p", { staticStyle: { margin: "0px !importan  t" } }, [
+                  _c("p", { staticStyle: { margin: "0px !important" } }, [
                     _vm._v("10"),
                     _c("sup", [_vm._v("9")])
                   ]),

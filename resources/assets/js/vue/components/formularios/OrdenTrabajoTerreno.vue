@@ -1252,10 +1252,10 @@
                             }).then(response => {
                                 console.log(response);
                                 if(response.body[1] == true){
-                                    Tools.mensajeAlerta("Formulario guardado. Será redirigido a la lista de formularios OTT en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
+                                    Tools.mensajeAlerta("Formulario guardado.", Tools.MENSAJE.EXITO, '', 5);
                                     setTimeout(()=>{
                                         this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:''});
-                                    }, 5000);
+                                    }, 0);
                                 } else{
                                     if(response.body[0].errorInfo[0] == "23000"){
                                         return Tools.mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", Tools.MENSAJE.ERROR, '', 5);

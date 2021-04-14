@@ -777,7 +777,7 @@
                 <!-- Volumen metro cubico-->
                 <el-col :span="24">
                     <div class="texto">
-                        Volumen ( &divide; <p style="margin: 0px !importan  t;">10<sup>9</sup></p> ) <div class="texto-derecha">(m<sup>3</sup>)</div>
+                        Volumen ( &divide; <p style="margin: 0px !important;">10<sup>9</sup></p> ) <div class="texto-derecha">(m<sup>3</sup>)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="volumenMetroCubicoMuestraUno">
@@ -1432,10 +1432,10 @@
                             ensayo: this.form
                         }).then(response => {
                             if(response.body[1] == true){
-                                Tools.mensajeAlerta("Ensayo guardado. Será redirigido a la lista de ensayos en 5 segundos.", Tools.MENSAJE.EXITO, '', 5);
+                                Tools.mensajeAlerta("Ensayo guardado.", Tools.MENSAJE.EXITO, '', 5);
                                 setTimeout(()=>{
                                     this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
-                                }, 5000);
+                                }, 0);
                             } else{
                                 if(response.body[0].errorInfo[0] == "23000"){
                                     return Tools.mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", Tools.MENSAJE.ERROR, '', 5);
