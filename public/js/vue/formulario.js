@@ -102887,7 +102887,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-0a1f17df] {\n  pointer-events: none;\n}\n.contenedor-vue[data-v-0a1f17df] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 20px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input__inner {\n    line-height: 20px;\n    height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-col {\n    padding: 3px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-divider--horizontal {\n    display: block;\n    height: 1px;\n    width: 100%;\n    margin: 5px 0;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    width: auto !important;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    margin: 0px !important;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item {\n    white-space: nowrap;\n    margin-bottom: 0px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input--mini .el-input__icon {\n    line-height: 20px;\n}\n.contenedor-vue .texto[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 28%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-ancho-full[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-muestras[data-v-0a1f17df] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 18%;\n    border-style: none solid none none;\n    border-color: #484b50;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .muestras .el-col[data-v-0a1f17df] {\n    -ms-flex-wrap: nowrap;\n        flex-wrap: nowrap;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: solid none none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n}\n.contenedor-vue .contenedor-botones[data-v-0a1f17df] {\n    padding-top: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-0a1f17df] {\n  pointer-events: none;\n}\n.contenedor-vue[data-v-0a1f17df] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 20px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input__inner {\n    line-height: 20px;\n    height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-col {\n    padding: 3px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-divider--horizontal {\n    display: block;\n    height: 1px;\n    width: 100%;\n    margin: 5px 0;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    width: auto !important;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    margin: 0px !important;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item {\n    white-space: nowrap;\n    margin-bottom: 0px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input--mini .el-input__icon {\n    line-height: 20px;\n}\n.contenedor-vue .texto[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 28%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-ancho-full[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-muestras[data-v-0a1f17df] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 18%;\n    border-style: none solid none none;\n    border-color: #484b50;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-derecha[data-v-0a1f17df] {\n    margin-left: auto;\n}\n.contenedor-vue .muestras .el-col[data-v-0a1f17df] {\n    -ms-flex-wrap: nowrap;\n        flex-wrap: nowrap;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: solid none none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n}\n.contenedor-vue .contenedor-botones[data-v-0a1f17df] {\n    padding-top: 20px;\n}\n", ""]);
 
 // exports
 
@@ -105775,7 +105775,10 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "fechaEnsayoMuestraUno" } },
+                      {
+                        staticStyle: { "max-width": "-webkit-fill-available" },
+                        attrs: { prop: "fechaEnsayoMuestraUno" }
+                      },
                       [
                         _c("el-date-picker", {
                           attrs: {
@@ -105805,7 +105808,10 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "fechaEnsayoMuestraDos" } },
+                      {
+                        staticStyle: { "max-width": "-webkit-fill-available" },
+                        attrs: { prop: "fechaEnsayoMuestraDos" }
+                      },
                       [
                         _c("el-date-picker", {
                           attrs: {
@@ -105835,7 +105841,10 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "fechaEnsayoMuestraTres" } },
+                      {
+                        staticStyle: { "max-width": "-webkit-fill-available" },
+                        attrs: { prop: "fechaEnsayoMuestraTres" }
+                      },
                       [
                         _c("el-date-picker", {
                           attrs: {
@@ -105865,7 +105874,10 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "fechaEnsayoMuestraCuatro" } },
+                      {
+                        staticStyle: { "max-width": "-webkit-fill-available" },
+                        attrs: { prop: "fechaEnsayoMuestraCuatro" }
+                      },
                       [
                         _c("el-date-picker", {
                           attrs: {
@@ -106006,7 +106018,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Refrentado\n                ")
+                  _vm._v("\n                    Refrentado "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(SI/NO)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106108,9 +106123,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    perpendicularidad\n                "
-                  )
+                  _vm._v("\n                    perpendicularidad "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(SI/NO)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106228,7 +106244,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    planeidad\n                ")
+                  _vm._v("\n                    planeidad "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(SI/NO)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106330,9 +106349,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Espesor Superior\n                "
-                  )
+                  _vm._v("\n                    Espesor Superior "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106450,9 +106468,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Espesor Inferior\n                "
-                  )
+                  _vm._v("\n                    Espesor Inferior "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106570,9 +106587,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Espesor Promedio\n                "
-                  )
+                  _vm._v("\n                    Espesor Promedio "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106696,7 +106712,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 1\n                ")
+                  _vm._v("\n                    d 1 "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106798,7 +106815,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 2\n                ")
+                  _vm._v("\n                    d 2 "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106900,7 +106918,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 1\n                ")
+                  _vm._v("\n                    h 1 "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107002,7 +107021,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 2\n                ")
+                  _vm._v("\n                    h 2 "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107104,7 +107124,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h refrentado\n                ")
+                  _vm._v("\n                    h refrentado "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107214,7 +107235,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 1'\n                ")
+                  _vm._v("\n                    d 1' "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107328,7 +107350,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 2'\n                ")
+                  _vm._v("\n                    d 2' "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107442,7 +107465,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 1'\n                ")
+                  _vm._v("\n                    h 1' "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107556,7 +107580,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 2'\n                ")
+                  _vm._v("\n                    h 2' "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107670,9 +107695,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    h refrentado'\n                "
-                  )
+                  _vm._v("\n                    h refrentado' "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107794,7 +107818,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Masa\n                ")
+                  _vm._v("\n                    Masa "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107896,7 +107921,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Error\n                ")
+                  _vm._v("\n                    Error "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -107998,9 +108024,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Masa Corregida\n                "
-                  )
+                  _vm._v("\n                    Masa Corregida "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108114,7 +108139,12 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Volumen\n                ")
+                  _vm._v("\n                    Volumen  "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(mm"),
+                    _c("sup", [_vm._v("3")]),
+                    _vm._v(")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108216,7 +108246,17 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Volumen m3\n                ")
+                  _vm._v("\n                    Volumen ( ÷ "),
+                  _c("p", { staticStyle: { margin: "0px !importan  t" } }, [
+                    _vm._v("10"),
+                    _c("sup", [_vm._v("9")])
+                  ]),
+                  _vm._v(" ) "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(m"),
+                    _c("sup", [_vm._v("3")]),
+                    _vm._v(")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108334,9 +108374,12 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Densidad (masa / vol)\n                "
-                  )
+                  _vm._v("\n                    Densidad (masa / vol) "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(kg/m"),
+                    _c("sup", [_vm._v("3")]),
+                    _vm._v(")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108442,9 +108485,16 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Área = 0,196 ( d1'+d2' )2\n                "
-                  )
+                  _vm._v("\n                    Área = 0,196 ( d1'+d2' )"),
+                  _c("p", { staticStyle: { margin: "0px !important" } }, [
+                    _c("sup", [_vm._v("2")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(mm"),
+                    _c("sup", [_vm._v("2")]),
+                    _vm._v(")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108546,9 +108596,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    P (Carga de ensayo)\n                "
-                  )
+                  _vm._v("\n                    P (Carga de ensayo) "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(KN)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108654,7 +108703,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    X 1000\n                ")
+                  _vm._v("\n                    X 1000 "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(N)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108772,9 +108822,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Tiempo de Carga\n                "
-                  )
+                  _vm._v("\n                    Tiempo de Carga "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(seg)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -108880,9 +108929,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Resistencia compresión (P/S)\n                "
-                  )
+                  _vm._v("\n                    Resistencia compresión (P/S) "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109125,9 +109173,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Resistencia Corregida\n                "
-                  )
+                  _vm._v("\n                    Resistencia Corregida "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109245,9 +109292,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Velocidad de ensayo\n                "
-                  )
+                  _vm._v("\n                    Velocidad de ensayo "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(MPa/s)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109365,7 +109413,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Tipo rotura\n                ")
+                  _vm._v("\n                    Tipo rotura "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("Anexo s Nch 1037")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109467,9 +109518,8 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Aseguramiento (por Rango)\n                "
-                  )
+                  _vm._v("\n                    Aseguramiento (por Rango) "),
+                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109579,7 +109629,10 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Cumple\n                ")
+                  _vm._v("\n                    Cumple "),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("SI / NO")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -109681,7 +109734,12 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Velocidad\n                ")
+                  _vm._v(
+                    "\n                    Velocidad     0,20 a 0,30 Mpa/s "
+                  ),
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("SI / NO")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
