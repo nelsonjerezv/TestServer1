@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("5c703696", content, false, {});
+var update = __webpack_require__(20)("291376d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101629,7 +101629,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("90f904da", content, false, {});
+var update = __webpack_require__(20)("7f484553", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101778,7 +101778,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4483b016", content, false, {});
+var update = __webpack_require__(20)("68dc4096", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102169,7 +102169,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("d85e086a", content, false, {});
+var update = __webpack_require__(20)("fcb698ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102336,7 +102336,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ac06352", content, false, {});
+var update = __webpack_require__(20)("db36d3d2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102864,7 +102864,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("565ee958", content, false, {});
+var update = __webpack_require__(20)("c52968d8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -104142,10 +104142,10 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 numMoldeMuestraDos: '',
                 numMoldeMuestraTres: '',
                 numMoldeMuestraCuatro: '',
-                fechaConfeccionMuestraUno: '',
-                fechaConfeccionMuestraDos: '',
-                fechaConfeccionMuestraTres: '',
-                fechaConfeccionMuestraCuatro: '',
+                fechaConfeccionMuestraUno: 'Cargado desde OTT',
+                fechaConfeccionMuestraDos: 'Cargado desde OTT',
+                fechaConfeccionMuestraTres: 'Cargado desde OTT',
+                fechaConfeccionMuestraCuatro: 'Cargado desde OTT',
                 fechaEnsayoMuestraUno: '',
                 fechaEnsayoMuestraDos: '',
                 fechaEnsayoMuestraTres: '',
@@ -110027,7 +110027,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("26089aab", content, false, {});
+var update = __webpack_require__(20)("18ff1aeb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110189,7 +110189,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("66e7f8b4", content, false, {});
+var update = __webpack_require__(20)("7b5963e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110616,7 +110616,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("f9988668", content, false, {});
+var update = __webpack_require__(20)("6ce5948c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110778,7 +110778,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("09c84c24", content, false, {});
+var update = __webpack_require__(20)("4e6333e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
