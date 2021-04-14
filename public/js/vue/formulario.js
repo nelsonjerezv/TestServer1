@@ -110205,7 +110205,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.id.toString().includes(_this2.buscador) || ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
+                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
