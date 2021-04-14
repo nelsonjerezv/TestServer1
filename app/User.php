@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+//prueba de Git
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

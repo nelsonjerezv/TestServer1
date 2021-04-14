@@ -3,7 +3,8 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <div class="item-atributo">N° Ott: {{item.ott.num_ott}}</div>
+                <!-- se cambia item.ott.num_ott (daba error)-->
+                <div class="item-atributo">N° Ott: {{item.num_ott}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
 
@@ -15,8 +16,8 @@
                     <!-- :before-close="handleClose" -->
                     <iframe style="width: 100%; height: 100%;" :src="rutaVerInforme"></iframe>
                     <span slot="footer" class="dialog-footer">
-                        <el-button type="success" @click="handleInner" plain>Validar</el-button>
-                        <el-button type="warning" @click="handleInner" plain>Rechazar</el-button>
+                        <el-button type="success" @click="validarEnsayo" v-if="!item.validado" plain>Validar</el-button>
+                        <el-button type="warning" @click="rechazarEnsayo" v-if="item.validado" plain>Rechazar</el-button>
                         <el-button type="danger" @click="dialogVisible = false" plain>Volver</el-button>
                         <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
                     </span>
@@ -30,7 +31,7 @@
                     icon="el-icon-info"
                     icon-color="red"
                     :hide-icon="true"
-                    title="Está seguro quiere eliminar el formulario?">
+                    title="Está seguro quiere eliminar el ensayo?">
                     <el-button slot="reference" type="danger" plain>Eliminar</el-button>
                 </el-popconfirm>
             </div>
@@ -51,6 +52,8 @@
                 dialogVisible: false,
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
+                urlValidarFormulario: `${GLOBAL.URL}` + '/formularios/validar-ensayo',
+                urlRechazarFormulario: `${GLOBAL.URL}` + '/formularios/rechazar-ensayo',
                 urlExportarEnsayoPdf: `${GLOBAL.URL}ensayos/exportar-ensayo-pdf`,
             }
         },
@@ -120,7 +123,31 @@
                     done();
                 })
                 .catch(_ => {});
-            }
+            },
+            validarEnsayo(){
+                this.$http.post(this.urlValidarFormulario,{
+                    id: this.item.id
+                }).then(response => {
+                    Tools.mensajeAlerta("Ensayo validado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    this.dialogVerVisible = false;
+                    this.dialogEditarVisible = false;
+                    this.$emit("actualizar");
+                }, response => {
+                    Tools.mensajeAlerta("No se pudo validar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
+                });
+            },
+            rechazarEnsayo(){
+                this.$http.post(this.urlRechazarFormulario,{
+                    id: this.item.id
+                }).then(response => {
+                    Tools.mensajeAlerta("Ensayo rechazado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    this.dialogVerVisible = false;
+                    this.dialogEditarVisible = false;
+                    this.$emit("actualizar");
+                }, response => {
+                    Tools.mensajeAlerta("No se pudo rechazar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
+                });
+            },
         },
         computed: {
             rutaVerInforme() {

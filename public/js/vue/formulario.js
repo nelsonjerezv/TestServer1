@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("5c703696", content, false, {});
+var update = __webpack_require__(20)("291376d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101629,7 +101629,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("90f904da", content, false, {});
+var update = __webpack_require__(20)("7f484553", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101719,6 +101719,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -101744,7 +101746,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
             tipoEnsayo: '',
-            modoListadoOtt: 'porvalidar'
+            modoListadoOtt: '',
+            modoListadoEnsayo: ''
         };
     },
     mounted: function mounted() {
@@ -101763,6 +101766,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (contenido.vista === 'ListadoFormularios') {
                 this.modoListadoOtt = contenido.condicion;
             }
+            if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
+                this.modoListadoEnsayo = contenido.condicion;
+            }
         }
     }
 });
@@ -101778,7 +101784,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4483b016", content, false, {});
+var update = __webpack_require__(20)("68dc4096", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101909,7 +101915,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
         },
         listadoEnsayos: function listadoEnsayos() {
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
+        },
+        listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
+        },
+        listadoEnsayosValidos: function listadoEnsayosValidos() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
             this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: '' });
@@ -102033,7 +102048,7 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "3-2" },
-                          on: { click: _vm.listadoEnsayos }
+                          on: { click: _vm.listadoEnsayosPorValidar }
                         },
                         [
                           _vm._v(
@@ -102044,7 +102059,10 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "3-2", disabled: "" } },
+                        {
+                          attrs: { index: "3-3" },
+                          on: { click: _vm.listadoEnsayosValidos }
+                        },
                         [
                           _vm._v(
                             "\n                        Ensayos validados\n                    "
@@ -102169,7 +102187,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("d85e086a", content, false, {});
+var update = __webpack_require__(20)("fcb698ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102246,6 +102264,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         getOrdenes: function getOrdenes() {
             var _this = this;
+
+            console.log(this.modo);
 
             this.ordenesDeTrabajo = [];
             this.todasLasOrdenes = [];
@@ -102336,7 +102356,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ac06352", content, false, {});
+var update = __webpack_require__(20)("db36d3d2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102863,7 +102883,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("565ee958", content, false, {});
+var update = __webpack_require__(20)("c52968d8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110092,7 +110112,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("26089aab", content, false, {});
+var update = __webpack_require__(20)("18ff1aeb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110153,7 +110173,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
     },
-    props: [],
+    props: ['modo'],
     data: function data() {
         return {
             urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
@@ -110170,7 +110190,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            this.$http.get(this.urlTodosLosEnsayos).then(function (response) {
+            console.log(this.modo);
+
+            this.ensayosHormigon = [];
+            this.todosLosEnsayos = [];
+            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
                 _this.todosLosEnsayos = response.body;
                 _this.ensayosHormigon = response.body;
             }, function (response) {
@@ -110181,13 +110205,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.num_muestra.includes(_this2.buscador);
+                return ensayo.id.toString().includes(_this2.buscador) || ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
     watch: {
         buscador: function buscador() {
             this.filtraEnsayos();
+        },
+        modo: function modo() {
+            this.getEnsayos();
         }
     }
 });
@@ -110254,7 +110281,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("66e7f8b4", content, false, {});
+var update = __webpack_require__(20)("7b5963e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110330,6 +110357,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -110341,6 +110369,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             dialogVisible: false,
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
+            urlValidarFormulario: '' + GLOBAL.URL + '/formularios/validar-ensayo',
+            urlRechazarFormulario: '' + GLOBAL.URL + '/formularios/rechazar-ensayo',
             urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf'
         };
     },
@@ -110397,6 +110427,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$confirm('Pendiente').then(function (_) {
                 done();
             }).catch(function (_) {});
+        },
+        validarEnsayo: function validarEnsayo() {
+            var _this2 = this;
+
+            this.$http.post(this.urlValidarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this2.dialogVerVisible = false;
+                _this2.dialogEditarVisible = false;
+                _this2.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
+        },
+        rechazarEnsayo: function rechazarEnsayo() {
+            var _this3 = this;
+
+            this.$http.post(this.urlRechazarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this3.dialogVerVisible = false;
+                _this3.dialogEditarVisible = false;
+                _this3.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
         }
     },
     computed: {
@@ -110424,7 +110482,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.ott.num_ott))
+          _vm._v("N° Ott: " + _vm._s(_vm.item.num_ott))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -110473,23 +110531,27 @@ var render = function() {
                   slot: "footer"
                 },
                 [
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "success", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Validar")]
-                  ),
+                  !_vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "success", plain: "" },
+                          on: { click: _vm.validarEnsayo }
+                        },
+                        [_vm._v("Validar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "warning", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Rechazar")]
-                  ),
+                  _vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "warning", plain: "" },
+                          on: { click: _vm.rechazarEnsayo }
+                        },
+                        [_vm._v("Rechazar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "el-button",
@@ -110528,7 +110590,7 @@ var render = function() {
                 icon: "el-icon-info",
                 "icon-color": "red",
                 "hide-icon": true,
-                title: "Está seguro quiere eliminar el formulario?"
+                title: "Está seguro quiere eliminar el ensayo?"
               },
               on: { confirm: _vm.eliminarEnsayo }
             },
@@ -110676,7 +110738,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("f9988668", content, false, {});
+var update = __webpack_require__(20)("6ce5948c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110838,7 +110900,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("09c84c24", content, false, {});
+var update = __webpack_require__(20)("4e6333e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -111465,6 +111527,7 @@ var render = function() {
                   _vm.componenteMain ==
                   "ListadoEnsayosCompresionProbetasCilindricas"
                     ? _c("listado-ensayos-compresion-probetas-cilindricas", {
+                        attrs: { modo: _vm.modoListadoEnsayo },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e(),

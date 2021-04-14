@@ -38,10 +38,10 @@
                         <el-menu-item index="3-1" @click="nuevoEnsayo">
                             Nuevo Ensayo
                         </el-menu-item>
-                        <el-menu-item index="3-2" @click="listadoEnsayos">
+                        <el-menu-item index="3-2" @click="listadoEnsayosPorValidar">
                             Ensayos por validar
                         </el-menu-item>
-                        <el-menu-item index="3-2" disabled>
+                        <el-menu-item index="3-3" @click="listadoEnsayosValidos">
                             Ensayos validados
                         </el-menu-item>
                     </el-menu-item-group>
@@ -93,7 +93,16 @@
                 this.$emit("cambiaMain", {vista: "EnsayoCompresionProbetasCilindricas", condicion:'nueva'});
             },
             listadoEnsayos() {
+                //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
+            },
+            listadoEnsayosPorValidar() {
+                this.inicio();
+                this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:'porvalidar'});
+            },
+            listadoEnsayosValidos() {
+                this.inicio();
+                this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:'validadas'});
             },
             exportaEnsayos() {
                 this.$emit("cambiaMain", {vista: "ListadoExportarEnsayos", condicion:''});
