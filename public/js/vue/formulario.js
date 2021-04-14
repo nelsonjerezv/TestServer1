@@ -110401,14 +110401,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     computed: {
         rutaVerInforme: function rutaVerInforme() {
-            return '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id
-            /* + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-'
-            + '/' + '-' */;
+            var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-';
+
+            return ruta;
         }
     }
 });
@@ -110451,7 +110446,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("Ver Ensayo")]
+            [_vm._v("Ver")]
           ),
           _vm._v(" "),
           _c(
