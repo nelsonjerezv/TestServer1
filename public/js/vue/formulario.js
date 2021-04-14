@@ -101746,7 +101746,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
             tipoOTT: '',
             tipoEnsayo: '',
-            modoListadoOtt: 'porvalidar'
+            modoListadoOtt: '',
+            modoListadoEnsayo: ''
         };
     },
     mounted: function mounted() {
@@ -101766,7 +101767,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.modoListadoOtt = contenido.condicion;
             }
             if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
-                this.tipoEnsayo = contenido.condicion;
+                this.modoListadoEnsayo = contenido.condicion;
             }
         }
     }
@@ -110203,9 +110204,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         filtraEnsayos: function filtraEnsayos() {
             var _this2 = this;
 
-            //this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.num_muestra.includes(this.buscador));
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.id.toString().includes(_this2.buscador);
+                return ensayo.id.toString().includes(_this2.buscador) || ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
@@ -110434,12 +110434,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$http.post(this.urlValidarFormulario, {
                 id: this.item.id
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                 _this2.dialogVerVisible = false;
                 _this2.dialogEditarVisible = false;
                 _this2.$emit("actualizar");
             }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
             });
         },
         rechazarEnsayo: function rechazarEnsayo() {
@@ -110448,12 +110448,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$http.post(this.urlRechazarFormulario, {
                 id: this.item.id
             }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
                 _this3.dialogVerVisible = false;
                 _this3.dialogEditarVisible = false;
                 _this3.$emit("actualizar");
             }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
             });
         }
     },
@@ -110590,7 +110590,7 @@ var render = function() {
                 icon: "el-icon-info",
                 "icon-color": "red",
                 "hide-icon": true,
-                title: "Está seguro quiere eliminar el formulario?"
+                title: "Está seguro quiere eliminar el ensayo?"
               },
               on: { confirm: _vm.eliminarEnsayo }
             },
@@ -111527,7 +111527,7 @@ var render = function() {
                   _vm.componenteMain ==
                   "ListadoEnsayosCompresionProbetasCilindricas"
                     ? _c("listado-ensayos-compresion-probetas-cilindricas", {
-                        attrs: { modo: _vm.modoListadoOtt },
+                        attrs: { modo: _vm.modoListadoEnsayo },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e(),

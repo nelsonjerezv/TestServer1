@@ -29,7 +29,7 @@
                     <listado-ensayos-compresion-probetas-cilindricas
                         v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
                         @cambiaMain="cambiarMain"
-                        :modo="modoListadoOtt"
+                        :modo="modoListadoEnsayo"
 
                     />
                     <listado-exportar-ensayos
@@ -70,7 +70,8 @@
                 // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',
                 tipoEnsayo: '',
-                modoListadoOtt: 'porvalidar',
+                modoListadoOtt: '',
+                modoListadoEnsayo: '',
             };
         },
         mounted() {
@@ -89,7 +90,7 @@
                     this.modoListadoOtt = contenido.condicion;
                 }
                 if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
-                    this.tipoEnsayo = contenido.condicion;
+                    this.modoListadoEnsayo = contenido.condicion;
                 }
             }
         }

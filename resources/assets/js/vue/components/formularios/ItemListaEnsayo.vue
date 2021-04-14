@@ -31,7 +31,7 @@
                     icon="el-icon-info"
                     icon-color="red"
                     :hide-icon="true"
-                    title="Está seguro quiere eliminar el formulario?">
+                    title="Está seguro quiere eliminar el ensayo?">
                     <el-button slot="reference" type="danger" plain>Eliminar</el-button>
                 </el-popconfirm>
             </div>
@@ -128,24 +128,24 @@
                 this.$http.post(this.urlValidarFormulario,{
                     id: this.item.id
                 }).then(response => {
-                    Tools.mensajeAlerta("Formulario validado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    Tools.mensajeAlerta("Ensayo validado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
                     this.dialogVerVisible = false;
                     this.dialogEditarVisible = false;
                     this.$emit("actualizar");
                 }, response => {
-                    Tools.mensajeAlerta("No se pudo validar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                    Tools.mensajeAlerta("No se pudo validar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
             rechazarEnsayo(){
                 this.$http.post(this.urlRechazarFormulario,{
                     id: this.item.id
                 }).then(response => {
-                    Tools.mensajeAlerta("Formulario rechazado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
+                    Tools.mensajeAlerta("Ensayo rechazado exitosamente.", Tools.MENSAJE.EXITO, '', 5);
                     this.dialogVerVisible = false;
                     this.dialogEditarVisible = false;
                     this.$emit("actualizar");
                 }, response => {
-                    Tools.mensajeAlerta("No se pudo rechazar el formulario.", Tools.MENSAJE.ERROR, '', 5);
+                    Tools.mensajeAlerta("No se pudo rechazar el ensayo.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
         },
