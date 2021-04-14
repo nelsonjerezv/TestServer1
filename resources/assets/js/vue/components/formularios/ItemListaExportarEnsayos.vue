@@ -3,7 +3,7 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <div class="item-atributo">N° Ott: {{item.ott}}</div>
+                <div class="item-atributo">N° Ott: {{item.ott.num_ott}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
             <div class="item-contenedor-botones">
@@ -31,6 +31,15 @@
                     <div class="una-linea">Nº Correlativo de obra:           <el-input placeholder="" size="mini" v-model="numCorrelativoObra"/></div>
                     <div class="una-linea">Curado inicial:                   <el-input placeholder="" size="mini" v-model="curadoInicial"/></div>
                     <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
+                    <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
+                                                                                                   <el-date-picker
+                                                                                                        v-model="fechaMuestreoManual"
+                                                                                                        type="date"
+                                                                                                        size="mini"
+                                                                                                        format="dd-MM-yyyy"
+                                                                                                        value-format="dd-MM-yyyy">
+                                                                                                    </el-date-picker>
+                    </div>
                     <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar Informe</el-button></div>
                 <el-button slot="reference" type="primary" plain>Exportar a PDF</el-button>
                 </el-popover>
@@ -77,11 +86,13 @@
                 numCorrelativoObra: 'n° corelativo obra',
                 curadoInicial: 'Piscina de Curado',
                 lugarEnsayos: 'Laboratorio LACEM',
+                fechaMuestreoManual: '',
                 dialogVisible: false,
             }
         },
         mounted () {
             this.item = this.itemLista;
+            console.log('item.muestreadoPor', this.item.ott.muestreado_por);
         },
         methods: {
             eliminarEnsayo() {
@@ -101,6 +112,7 @@
                 console.log('editar ensayo');
             },
             exportarPDF(){
+                console.log(this.fechaMuestreoManual);
                 let data = {
                     id: this.item.id,
                     direccionSolicitante: this.direccionSolicitante,
@@ -109,16 +121,22 @@
                     numCorrelativoInformeObra: this.numCorrelativoInformeObra,
                     numCorrelativoObra: this.numCorrelativoObra,
                     curadoInicial:this.curadoInicial,
+                    fechaMuestreoManual: this.fechaMuestreoManual,
                 };
-                window.open(this.urlExportarEnsayoPdf + '/' + this.item.id
+
+                let fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
+
+                let url = this.urlExportarEnsayoPdf + '/' + this.item.id
                                                       + '/' + this.direccionSolicitante
                                                       + '/' + this.localizacionObra
                                                       + '/' + this.numProyecto
                                                       + '/' + this.numCorrelativoInformeObra
                                                       + '/' + this.numCorrelativoObra
                                                       + '/' + this.curadoInicial
-                                                      + '/' + this.lugarEnsayos, '_blank');
-                console.log('exportarPDF');
+                                                      + '/' + this.lugarEnsayos
+                                                      + '/' + fecha;
+                console.log('exportarPDF', url);
+                window.open(url, '_blank');
             },
             exportarExcel(){
                 let data = {
@@ -153,14 +171,18 @@
         },
         computed: {
             rutaVerInforme() {
-                return `${GLOBAL.URL}` + '/ensayos/ver-ensayo-pdf/' + this.item.id
-                                                      /* + '/' + '-'
-                                                      + '/' + '-'
-                                                      + '/' + '-'
-                                                      + '/' + '-'
-                                                      + '/' + '-'
-                                                      + '/' + '-'
-                                                      + '/' + '-' */;
+                let fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
+                let ruta = `${GLOBAL.URL}` + '/ensayos/ver-ensayo-pdf/' + this.item.id
+                                                      + '/' + this.direccionSolicitante
+                                                      + '/' + this.localizacionObra
+                                                      + '/' + this.numProyecto
+                                                      + '/' + this.numCorrelativoInformeObra
+                                                      + '/' + this.numCorrelativoObra
+                                                      + '/' + this.curadoInicial
+                                                      + '/' + this.lugarEnsayos
+                                                      + '/' + fecha;
+
+                return ruta;
             }
         },
     }

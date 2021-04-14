@@ -63,7 +63,7 @@
         ],
         data() {
             return {
-                componenteMain: 'ListadoFormularios',
+                componenteMain: '',
                 // componenteMain: 'EnsayoCompresionProbetasCilindricas',
                 // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
                 tipoOTT: '',
