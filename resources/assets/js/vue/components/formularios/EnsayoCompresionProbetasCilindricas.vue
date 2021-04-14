@@ -172,7 +172,7 @@
                         Fecha de Ensayo
                     </div>
                     <div class="texto-muestras">
-                        <el-form-item prop="fechaEnsayoMuestraUno">
+                        <el-form-item prop="fechaEnsayoMuestraUno" style="max-width: -webkit-fill-available;">
                             <el-date-picker
                                 v-model="form.fechaEnsayoMuestraUno"
                                 type="date"
@@ -183,7 +183,7 @@
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
-                        <el-form-item prop="fechaEnsayoMuestraDos">
+                        <el-form-item prop="fechaEnsayoMuestraDos" style="max-width: -webkit-fill-available;">
                             <el-date-picker
                                 v-model="form.fechaEnsayoMuestraDos"
                                 type="date"
@@ -194,7 +194,7 @@
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
-                        <el-form-item prop="fechaEnsayoMuestraTres">
+                        <el-form-item prop="fechaEnsayoMuestraTres" style="max-width: -webkit-fill-available;">
                             <el-date-picker
                                 v-model="form.fechaEnsayoMuestraTres"
                                 type="date"
@@ -205,7 +205,7 @@
                         </el-form-item>
                     </div>
                     <div class="texto-muestras">
-                        <el-form-item prop="fechaEnsayoMuestraCuatro">
+                        <el-form-item prop="fechaEnsayoMuestraCuatro" style="max-width: -webkit-fill-available;">
                             <el-date-picker
                                 v-model="form.fechaEnsayoMuestraCuatro"
                                 type="date"
@@ -245,7 +245,7 @@
                 <!-- Refrentado -->
                 <el-col :span="24">
                     <div class="texto">
-                        Refrentado
+                        Refrentado <div class="texto-derecha">(SI/NO)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoMuestraUno">
@@ -271,7 +271,7 @@
                 <!-- perpendicularidad -->
                 <el-col :span="24">
                     <div class="texto">
-                        perpendicularidad
+                        perpendicularidad <div class="texto-derecha">(SI/NO)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="perpendicularidadMuestraUno">
@@ -297,7 +297,7 @@
                 <!-- planeidad -->
                 <el-col :span="24">
                     <div class="texto">
-                        planeidad
+                        planeidad <div class="texto-derecha">(SI/NO)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="planeidadMuestraUno">
@@ -323,7 +323,7 @@
                 <!-- Espesor Superior -->
                 <el-col :span="24">
                     <div class="texto">
-                        Espesor Superior
+                        Espesor Superior <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="espesorSuperiorMuestraUno">
@@ -349,7 +349,7 @@
                 <!-- Espesor Inferior -->
                 <el-col :span="24">
                     <div class="texto">
-                        Espesor Inferior
+                        Espesor Inferior <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="espesorInferiorMuestraUno">
@@ -375,7 +375,7 @@
                 <!-- Espesor Promedio -->
                 <el-col :span="24">
                     <div class="texto">
-                        Espesor Promedio
+                        Espesor Promedio <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="espesorPromedioMuestraUno">
@@ -407,7 +407,7 @@
                 <!-- d 1 -->
                 <el-col :span="24">
                     <div class="texto">
-                        d 1
+                        d 1 <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraUno">
@@ -433,7 +433,7 @@
                 <!-- d 2 -->
                 <el-col :span="24">
                     <div class="texto">
-                        d 2
+                        d 2 <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraUno">
@@ -459,7 +459,7 @@
                 <!-- h 1-->
                 <el-col :span="24">
                     <div class="texto">
-                        h 1
+                        h 1 <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraUno">
@@ -485,7 +485,7 @@
                 <!-- h 2 -->
                 <el-col :span="24">
                     <div class="texto">
-                        h 2
+                        h 2 <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraUno">
@@ -511,7 +511,7 @@
                 <!-- h refrentado -->
                 <el-col :span="24">
                     <div class="texto">
-                        h refrentado
+                        h refrentado <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoUno">
@@ -543,7 +543,7 @@
                 <!-- d 1 -->
                 <el-col :span="24">
                     <div class="texto">
-                        d 1'
+                        d 1' <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dUnoMuestraUnoCorregida">
@@ -569,7 +569,7 @@
                 <!-- d 2 -->
                 <el-col :span="24">
                     <div class="texto">
-                        d 2'
+                        d 2' <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="dDosMuestraUnoCorregida">
@@ -595,7 +595,7 @@
                 <!-- h 1-->
                 <el-col :span="24">
                     <div class="texto">
-                        h 1'
+                        h 1' <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hUnoMuestraUnoCorregida">
@@ -621,7 +621,7 @@
                 <!-- h 2 -->
                 <el-col :span="24">
                     <div class="texto">
-                        h 2'
+                        h 2' <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="hDosMuestraUnoCorregida">
@@ -647,7 +647,7 @@
                 <!-- h refrentado -->
                 <el-col :span="24">
                     <div class="texto">
-                        h refrentado'
+                        h refrentado' <div class="texto-derecha">mm</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="refrentadoCorregidoMuestraUno">
@@ -673,7 +673,7 @@
                 <!-- Masa -->
                 <el-col :span="24">
                     <div class="texto">
-                        Masa
+                        Masa <div class="texto-derecha">(Kg)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaMuestraUno">
@@ -699,7 +699,7 @@
                 <!-- Error -->
                 <el-col :span="24">
                     <div class="texto">
-                        Error
+                        Error <div class="texto-derecha">(Kg)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="errorMuestraUno">
@@ -725,7 +725,7 @@
                 <!-- Masa Corregida -->
                 <el-col :span="24">
                     <div class="texto">
-                        Masa Corregida
+                        Masa Corregida <div class="texto-derecha">(Kg)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="masaCorregidaMuestraUno">
@@ -751,7 +751,7 @@
                 <!-- Volumen -->
                 <el-col :span="24">
                     <div class="texto">
-                        Volumen
+                        Volumen  <div class="texto-derecha">(mm<sup>3</sup>)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="volumenMuestraUno">
@@ -777,7 +777,7 @@
                 <!-- Volumen metro cubico-->
                 <el-col :span="24">
                     <div class="texto">
-                        Volumen m3
+                        Volumen ( &divide; <p style="margin: 0px !importan  t;">10<sup>9</sup></p> ) <div class="texto-derecha">(m<sup>3</sup>)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="volumenMetroCubicoMuestraUno">
@@ -803,7 +803,7 @@
                 <!-- Densidad -->
                 <el-col :span="24">
                     <div class="texto">
-                        Densidad (masa / vol)
+                        Densidad (masa / vol) <div class="texto-derecha">(kg/m<sup>3</sup>)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="densidadMuestraUno">
@@ -829,7 +829,7 @@
                 <!-- Area -->
                 <el-col :span="24">
                     <div class="texto">
-                        Área = 0,196 ( d1'+d2' )2
+                        Área = 0,196 ( d1'+d2' )<p style="margin: 0px !important;"><sup>2</sup></p> <div class="texto-derecha">(mm<sup>2</sup>)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="areaMuestraUno">
@@ -855,7 +855,7 @@
                 <!-- P (Carga de ensayo) -->
                 <el-col :span="24">
                     <div class="texto">
-                        P (Carga de ensayo)
+                        P (Carga de ensayo) <div class="texto-derecha">(KN)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="cargaEnsayoMuestraUno">
@@ -881,7 +881,7 @@
                 <!-- X 1000 -->
                 <el-col :span="24">
                     <div class="texto">
-                        X 1000
+                        X 1000 <div class="texto-derecha">(N)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="cargaEnsayoMilMuestraUno">
@@ -907,7 +907,7 @@
                 <!-- Tiempo de Carga -->
                 <el-col :span="24">
                     <div class="texto">
-                        Tiempo de Carga
+                        Tiempo de Carga <div class="texto-derecha">(seg)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="tiempoCargaMuestraUno">
@@ -933,7 +933,7 @@
                 <!-- Resistencia compresión (P/S) -->
                 <el-col :span="24">
                     <div class="texto">
-                        Resistencia compresión (P/S)
+                        Resistencia compresión (P/S) <div class="texto-derecha">(MPa)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="errorresistenciaCompresionraUno">
@@ -987,7 +987,7 @@
                 <!-- Resistencia Corregida -->
                 <el-col :span="24">
                     <div class="texto">
-                        Resistencia Corregida
+                        Resistencia Corregida <div class="texto-derecha">(MPa)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="resistenciaCorregidaMuestraUno">
@@ -1013,7 +1013,7 @@
                 <!-- Velocidad de ensayo -->
                 <el-col :span="24">
                     <div class="texto">
-                        Velocidad de ensayo
+                        Velocidad de ensayo <div class="texto-derecha">(MPa/s)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="velocidadEnsayoMuestraUno">
@@ -1039,7 +1039,7 @@
                 <!-- Tipo rotura -->
                 <el-col :span="24">
                     <div class="texto">
-                        Tipo rotura
+                        Tipo rotura <div class="texto-derecha">Anexo s Nch 1037</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="tipoRoturaMuestraUno">
@@ -1065,7 +1065,7 @@
                 <!-- Aseguramiento (por Rango) -->
                 <el-col :span="24">
                     <div class="texto">
-                        Aseguramiento (por Rango)
+                        Aseguramiento (por Rango) <div class="texto-derecha">(MPa)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="aseguramientoMuestraUno">
@@ -1091,7 +1091,7 @@
                 <!-- Cumple -->
                 <el-col :span="24">
                     <div class="texto">
-                        Cumple
+                        Cumple <div class="texto-derecha">SI / NO</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="cumpleMuestraUno">
@@ -1117,7 +1117,7 @@
                 <!-- Velocidad -->
                 <el-col :span="24">
                     <div class="texto">
-                        Velocidad
+                        Velocidad &nbsp; &nbsp; 0,20 a 0,30 Mpa/s <div class="texto-derecha">SI / NO</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="velocidadMuestraUno">
@@ -2220,6 +2220,9 @@
             border-color: #484b50;
             border-width: 1px;
             padding: 0px 10px;
+        }
+        .texto-derecha{
+            margin-left: auto;
         }
         .muestras{
             .el-col{
