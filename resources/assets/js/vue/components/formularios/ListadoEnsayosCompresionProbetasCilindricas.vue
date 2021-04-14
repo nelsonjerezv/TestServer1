@@ -22,7 +22,9 @@
         components: {
             ItemListaEnsayo
         },
-        props: [],
+        props: [
+            'modo'
+        ],
         data(){
             return{
                 urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos`,
@@ -36,21 +38,29 @@
         },
         methods: {
             getEnsayos() {
-                this.$http.get(this.urlTodosLosEnsayos)
+                console.log(this.modo);
+
+                this.ensayosHormigon = [];
+                this.todosLosEnsayos = [];
+                this.$http.get(`${this.urlTodosLosEnsayos}/${this.modo}`)
                 .then(response => {
-                    this.todosLosEnsayos =  response.body;
+                    this.todosLosEnsayos = response.body;
                     this.ensayosHormigon = response.body;
                 }, response => {
                     Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
             filtraEnsayos(){
-                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.num_muestra.includes(this.buscador));
+                //this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.num_muestra.includes(this.buscador));
+                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.id.toString().includes(this.buscador));
             }
         },
         watch: {
             buscador() {
                 this.filtraEnsayos();
+            },
+            modo(){
+                this.getEnsayos();
             }
         },
     }

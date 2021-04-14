@@ -29,8 +29,10 @@
 
 
     Route::get('/ensayos', 'EnsayosHormigonController@index');
-    Route::get('/ensayos/todos-los-ensayos', 'EnsayosHormigonController@todosLosEnsayos');
+    Route::get('/ensayos/todos-los-ensayos/{modo}', 'EnsayosHormigonController@todosLosEnsayos');
     Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
+    Route::post('/formularios/validar-ensayo', 'EnsayosHormigonController@validarFormulario');
+    Route::post('/formularios/rechazar-ensayo', 'EnsayosHormigonController@rechazarFormulario');
     Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}', 'EnsayosHormigonController@exportarEnsayoPdf');
     Route::get('/ensayos/exportar-ensayo-excel/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}', 'EnsayosHormigonController@exportarEnsayoExcel');
     Route::get('/ensayos/ver-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}', 'EnsayosHormigonController@verEnsayoPdf');

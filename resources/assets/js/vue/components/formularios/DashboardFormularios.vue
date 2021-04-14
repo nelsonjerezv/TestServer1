@@ -29,6 +29,8 @@
                     <listado-ensayos-compresion-probetas-cilindricas
                         v-if="componenteMain == 'ListadoEnsayosCompresionProbetasCilindricas' "
                         @cambiaMain="cambiarMain"
+                        :modo="modoListadoOtt"
+
                     />
                     <listado-exportar-ensayos
                         v-if="componenteMain == 'ListadoExportarEnsayos' "
@@ -85,6 +87,9 @@
                 }
                 if (contenido.vista === 'ListadoFormularios') {
                     this.modoListadoOtt = contenido.condicion;
+                }
+                if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
+                    this.tipoEnsayo = contenido.condicion;
                 }
             }
         }

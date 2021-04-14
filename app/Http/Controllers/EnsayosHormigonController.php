@@ -27,13 +27,13 @@ class EnsayosHormigonController extends Controller
         return view('informe_hormigon', compact('ensayo'));
     }
 
-    /*public function todosLosEnsayos(){
-       // return EnsayoProbetasHormigon::with('ott')->get();
-    }*/
+    public function todosLosEnsayosXX(){
+       //return EnsayoProbetasHormigon::with('ott')->get();
+    }
 
     public function todosLosEnsayos($modo = false){
         if($modo){
-            $busqueda = $modo == "porvalidar" ? false : true;
+            $busqueda = ($modo == "porvalidar") ? false : true;
             $result = EnsayoProbetasHormigon::where('validado', $busqueda)->get();
             return $result;
         }
@@ -300,4 +300,30 @@ class EnsayosHormigonController extends Controller
 
         return $ordenes;
     }
+
+
+    public function validarFormulario(Request $request){
+        $orden = EnsayoProbetasHormigon::where('id', $request->id)->first();
+        // dd($orden);
+        $orden->validado = true;
+        try {
+            $orden->save();
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$orden, true];
+    }
+
+    public function rechazarFormulario(Request $request){
+        $orden = EnsayoProbetasHormigon::where('id', $request->id)->first();
+
+        $orden->validado = false;
+        try {
+            $orden->save();
+        } catch (QueryException $e) {
+            return [$e, false];
+        }
+        return [$orden, true];
+    }
+
 }

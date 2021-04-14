@@ -101719,6 +101719,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -101762,6 +101764,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             if (contenido.vista === 'ListadoFormularios') {
                 this.modoListadoOtt = contenido.condicion;
+            }
+            if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
+                this.tipoEnsayo = contenido.condicion;
             }
         }
     }
@@ -101909,7 +101914,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
         },
         listadoEnsayos: function listadoEnsayos() {
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
+        },
+        listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
+        },
+        listadoEnsayosValidos: function listadoEnsayosValidos() {
+            this.inicio();
+            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
             this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: '' });
@@ -102033,7 +102047,7 @@ var render = function() {
                         "el-menu-item",
                         {
                           attrs: { index: "3-2" },
-                          on: { click: _vm.listadoEnsayos }
+                          on: { click: _vm.listadoEnsayosPorValidar }
                         },
                         [
                           _vm._v(
@@ -102044,7 +102058,10 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "el-menu-item",
-                        { attrs: { index: "3-2", disabled: "" } },
+                        {
+                          attrs: { index: "3-3" },
+                          on: { click: _vm.listadoEnsayosValidos }
+                        },
                         [
                           _vm._v(
                             "\n                        Ensayos validados\n                    "
@@ -102246,6 +102263,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         getOrdenes: function getOrdenes() {
             var _this = this;
+
+            console.log(this.modo);
 
             this.ordenesDeTrabajo = [];
             this.todasLasOrdenes = [];
@@ -110153,7 +110172,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
     },
-    props: [],
+    props: ['modo'],
     data: function data() {
         return {
             urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
@@ -110170,7 +110189,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            this.$http.get(this.urlTodosLosEnsayos).then(function (response) {
+            console.log(this.modo);
+
+            this.ensayosHormigon = [];
+            this.todosLosEnsayos = [];
+            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
                 _this.todosLosEnsayos = response.body;
                 _this.ensayosHormigon = response.body;
             }, function (response) {
@@ -110180,14 +110203,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         filtraEnsayos: function filtraEnsayos() {
             var _this2 = this;
 
+            //this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.num_muestra.includes(this.buscador));
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.num_muestra.includes(_this2.buscador);
+                return ensayo.id.toString().includes(_this2.buscador);
             });
         }
     },
     watch: {
         buscador: function buscador() {
             this.filtraEnsayos();
+        },
+        modo: function modo() {
+            this.getEnsayos();
         }
     }
 });
@@ -110330,6 +110357,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -110341,6 +110369,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             dialogVisible: false,
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
+            urlValidarFormulario: '' + GLOBAL.URL + '/formularios/validar-ensayo',
+            urlRechazarFormulario: '' + GLOBAL.URL + '/formularios/rechazar-ensayo',
             urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf'
         };
     },
@@ -110397,6 +110427,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$confirm('Pendiente').then(function (_) {
                 done();
             }).catch(function (_) {});
+        },
+        validarEnsayo: function validarEnsayo() {
+            var _this2 = this;
+
+            this.$http.post(this.urlValidarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this2.dialogVerVisible = false;
+                _this2.dialogEditarVisible = false;
+                _this2.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
+        },
+        rechazarEnsayo: function rechazarEnsayo() {
+            var _this3 = this;
+
+            this.$http.post(this.urlRechazarFormulario, {
+                id: this.item.id
+            }).then(function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
+                _this3.dialogVerVisible = false;
+                _this3.dialogEditarVisible = false;
+                _this3.$emit("actualizar");
+            }, function (response) {
+                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
+            });
         }
     },
     computed: {
@@ -110424,7 +110482,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.ott.num_ott))
+          _vm._v("N° Ott: " + _vm._s(_vm.item.num_ott))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -110473,23 +110531,27 @@ var render = function() {
                   slot: "footer"
                 },
                 [
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "success", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Validar")]
-                  ),
+                  !_vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "success", plain: "" },
+                          on: { click: _vm.validarEnsayo }
+                        },
+                        [_vm._v("Validar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
-                  _c(
-                    "el-button",
-                    {
-                      attrs: { type: "warning", plain: "" },
-                      on: { click: _vm.handleInner }
-                    },
-                    [_vm._v("Rechazar")]
-                  ),
+                  _vm.item.validado
+                    ? _c(
+                        "el-button",
+                        {
+                          attrs: { type: "warning", plain: "" },
+                          on: { click: _vm.rechazarEnsayo }
+                        },
+                        [_vm._v("Rechazar")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "el-button",
@@ -111465,6 +111527,7 @@ var render = function() {
                   _vm.componenteMain ==
                   "ListadoEnsayosCompresionProbetasCilindricas"
                     ? _c("listado-ensayos-compresion-probetas-cilindricas", {
+                        attrs: { modo: _vm.modoListadoOtt },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e(),
