@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("291376d6", content, false, {});
+var update = __webpack_require__(20)("5c703696", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101629,7 +101629,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("7f484553", content, false, {});
+var update = __webpack_require__(20)("90f904da", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101784,7 +101784,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("68dc4096", content, false, {});
+var update = __webpack_require__(20)("4483b016", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102187,7 +102187,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("fcb698ea", content, false, {});
+var update = __webpack_require__(20)("d85e086a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102356,7 +102356,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("db36d3d2", content, false, {});
+var update = __webpack_require__(20)("6ac06352", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102883,7 +102883,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("c52968d8", content, false, {});
+var update = __webpack_require__(20)("565ee958", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110112,7 +110112,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("18ff1aeb", content, false, {});
+var update = __webpack_require__(20)("26089aab", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110281,7 +110281,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("7b5963e6", content, false, {});
+var update = __webpack_require__(20)("66e7f8b4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110738,7 +110738,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ce5948c", content, false, {});
+var update = __webpack_require__(20)("f9988668", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110802,7 +110802,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: [],
     data: function data() {
         return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
+            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos/validadas',
             ensayosHormigon: '',
             todosLosEnsayos: '',
             buscador: ''
@@ -110900,7 +110900,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4e6333e4", content, false, {});
+var update = __webpack_require__(20)("09c84c24", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -111028,7 +111028,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         this.item = this.itemLista;
-        console.log('item.muestreadoPor', this.item.ott.muestreado_por);
+        // console.log('item.muestreadoPor', this.item.ott.muestreado_por);
     },
 
     methods: {
@@ -111051,7 +111051,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             console.log('editar ensayo');
         },
         exportarPDF: function exportarPDF() {
-            console.log(this.fechaMuestreoManual);
             var data = {
                 id: this.item.id,
                 direccionSolicitante: this.direccionSolicitante,
@@ -111116,9 +111115,7 @@ var render = function() {
           _vm._v("N° Ingreso: " + _vm._s(_vm.item.num_ingreso))
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.ott.num_ott))
-        ]),
+        _c("div", { staticClass: "item-atributo" }, [_vm._v("N° Ott: ")]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
           _vm._v("Ensayado por: " + _vm._s(_vm.item.ensayado_por))
@@ -111335,34 +111332,6 @@ var render = function() {
                 ],
                 1
               ),
-              _vm._v(" "),
-              _vm.item.ott.muestreado_por.toUpperCase() != "LACEM"
-                ? _c(
-                    "div",
-                    { staticClass: "una-linea" },
-                    [
-                      _vm._v(
-                        "Fecha de muestreo:\n                                                                                               "
-                      ),
-                      _c("el-date-picker", {
-                        attrs: {
-                          type: "date",
-                          size: "mini",
-                          format: "dd-MM-yyyy",
-                          "value-format": "dd-MM-yyyy"
-                        },
-                        model: {
-                          value: _vm.fechaMuestreoManual,
-                          callback: function($$v) {
-                            _vm.fechaMuestreoManual = $$v
-                          },
-                          expression: "fechaMuestreoManual"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                : _vm._e(),
               _vm._v(" "),
               _c(
                 "div",

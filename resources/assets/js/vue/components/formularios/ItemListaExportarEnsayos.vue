@@ -3,7 +3,7 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <div class="item-atributo">N° Ott: {{item.ott.num_ott}}</div>
+                <div class="item-atributo">N° Ott: <!-- {{item.ott.num_ott}} --></div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
             <div class="item-contenedor-botones">
@@ -31,7 +31,7 @@
                     <div class="una-linea">Nº Correlativo de obra:           <el-input placeholder="" size="mini" v-model="numCorrelativoObra"/></div>
                     <div class="una-linea">Curado inicial:                   <el-input placeholder="" size="mini" v-model="curadoInicial"/></div>
                     <div class="una-linea">Lugar de realizaci&oacute;n de ensayos: <el-input placeholder="" size="mini" v-model="lugarEnsayos"/></div>
-                    <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
+                    <!-- <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
                                                                                                    <el-date-picker
                                                                                                         v-model="fechaMuestreoManual"
                                                                                                         type="date"
@@ -39,7 +39,7 @@
                                                                                                         format="dd-MM-yyyy"
                                                                                                         value-format="dd-MM-yyyy">
                                                                                                     </el-date-picker>
-                    </div>
+                    </div> -->
                     <div class="una-linea"><el-button type="primary" @click="exportarPDF" plain>Exportar Informe</el-button></div>
                 <el-button slot="reference" type="primary" plain>Exportar a PDF</el-button>
                 </el-popover>
@@ -92,7 +92,7 @@
         },
         mounted () {
             this.item = this.itemLista;
-            console.log('item.muestreadoPor', this.item.ott.muestreado_por);
+            // console.log('item.muestreadoPor', this.item.ott.muestreado_por);
         },
         methods: {
             eliminarEnsayo() {
@@ -112,7 +112,6 @@
                 console.log('editar ensayo');
             },
             exportarPDF(){
-                console.log(this.fechaMuestreoManual);
                 let data = {
                     id: this.item.id,
                     direccionSolicitante: this.direccionSolicitante,
