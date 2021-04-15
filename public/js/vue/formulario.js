@@ -104119,6 +104119,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -105177,6 +105178,7 @@ var render = function() {
                             clearable: "",
                             remote: "",
                             "reserve-keyword": "",
+                            "no-data-text": "Sin resultados",
                             placeholder: "Seleccione OTT",
                             "remote-method": _vm.querySearchNumeroOtt,
                             loading: _vm.loading
