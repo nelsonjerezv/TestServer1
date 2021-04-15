@@ -38,6 +38,9 @@
         },
         methods: {
             getOrdenes() {
+
+                console.log(this.modo);
+
                 this.ordenesDeTrabajo = [];
                 this.todasLasOrdenes =  [];
                 this.$http.get(`${this.urltodasLasOrdenes}/${this.modo}`)
