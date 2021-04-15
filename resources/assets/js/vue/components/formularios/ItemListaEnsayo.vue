@@ -3,8 +3,7 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <!-- se cambia item.ott.num_ott (daba error)-->
-                <div class="item-atributo">N° Ott: {{item.num_ott}}</div>
+                <div class="item-atributo">N° Ott: {{numeroOtt}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
 
@@ -49,6 +48,7 @@
         data() {
             return {
                 item: '',
+                numeroOtt: '',
                 dialogVisible: false,
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
@@ -59,6 +59,7 @@
         },
         mounted () {
             this.item = this.itemLista;
+            this.numeroOtt = this.item.ott.num_ott;
         },
         methods: {
             eliminarEnsayo() {

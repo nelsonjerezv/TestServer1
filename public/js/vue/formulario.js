@@ -110357,7 +110357,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -110366,6 +110365,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             item: '',
+            numeroOtt: '',
             dialogVisible: false,
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
@@ -110376,6 +110376,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         this.item = this.itemLista;
+        this.numeroOtt = this.item.ott.num_ott;
     },
 
     methods: {
@@ -110482,7 +110483,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.item.num_ott))
+          _vm._v("N° Ott: " + _vm._s(_vm.numeroOtt))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -111011,6 +111012,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             item: '',
+            numeroOtt: '',
             urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
             urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
             urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf',
@@ -111028,7 +111030,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         this.item = this.itemLista;
-        // console.log('item.muestreadoPor', this.item.ott.muestreado_por);
+        this.numeroOtt = this.item.ott.num_ott;
+        console.log('item.muestreadoPor', this.item);
     },
 
     methods: {
@@ -111115,7 +111118,9 @@ var render = function() {
           _vm._v("N° Ingreso: " + _vm._s(_vm.item.num_ingreso))
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "item-atributo" }, [_vm._v("N° Ott: ")]),
+        _c("div", { staticClass: "item-atributo" }, [
+          _vm._v("N° Ott: " + _vm._s(_vm.numeroOtt))
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
           _vm._v("Ensayado por: " + _vm._s(_vm.item.ensayado_por))

@@ -27,14 +27,10 @@ class EnsayosHormigonController extends Controller
         return view('informe_hormigon', compact('ensayo'));
     }
 
-    public function todosLosEnsayosXX(){
-       //return EnsayoProbetasHormigon::with('ott')->get();
-    }
-
     public function todosLosEnsayos($modo = false){
         if($modo){
             $busqueda = ($modo == "porvalidar") ? false : true;
-            $result = EnsayoProbetasHormigon::where('validado', $busqueda)->get();
+            $result = EnsayoProbetasHormigon::where('validado', $busqueda)->with('ott')->get();
             return $result;
         }
         return EnsayoProbetasHormigon::get();
