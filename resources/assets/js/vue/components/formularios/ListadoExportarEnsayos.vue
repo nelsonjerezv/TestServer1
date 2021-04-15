@@ -25,7 +25,7 @@
         props: [],
         data(){
             return{
-                urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos`,
+                urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos/validadas`,
                 ensayosHormigon: '',
                 todosLosEnsayos: '',
                 buscador: ''
