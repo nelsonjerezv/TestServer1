@@ -287,7 +287,9 @@ class EnsayosHormigonController extends Controller
     }
 
     public function buscarOtt($busqueda){
-        $ordenes = OrdenTrabajoTerreno::where('num_ott' , 'like', '%' . $busqueda . '%')->get();
+        $ordenes = OrdenTrabajoTerreno::where('num_ott' , 'like', '%' . $busqueda . '%')
+                                        ->where('validado', true)
+                                        ->get();
 
         // $ordenes = OrdenTrabajoTerreno::where('num_cliente_obra' , 'like', '%' . $busqueda . '%')
         //                                 ->orWhere('laboratorista' , 'like', '%' . $busqueda . '%')
