@@ -112,7 +112,6 @@
     }
 </style>
 <script type="text/javascript">
-    console.log($orden, $datos);
     window.orden = @json($orden);
     window.datos = @json($datos);
     </script>

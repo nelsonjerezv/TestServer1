@@ -3,7 +3,7 @@
         <div class="item">
             <div class="atributos">
                 <div class="item-atributo">N° Ingreso: {{item.num_ingreso}}</div>
-                <div class="item-atributo">N° Ott: <!-- {{item.ott.num_ott}} --></div>
+                <div class="item-atributo">N° Ott: {{numeroOtt}}</div>
                 <div class="item-atributo">Ensayado por: {{item.ensayado_por}}</div>
             </div>
             <div class="item-contenedor-botones">
@@ -75,6 +75,7 @@
         data() {
             return {
                 item: '',
+                numeroOtt: '',
                 urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
                 urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
                 urlExportarEnsayoPdf: `${GLOBAL.URL}ensayos/exportar-ensayo-pdf`,
@@ -92,7 +93,8 @@
         },
         mounted () {
             this.item = this.itemLista;
-            // console.log('item.muestreadoPor', this.item.ott.muestreado_por);
+            this.numeroOtt = this.item.ott.num_ott;
+            console.log('item.muestreadoPor', this.item);
         },
         methods: {
             eliminarEnsayo() {
