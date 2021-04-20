@@ -22,7 +22,9 @@
         components: {
             ItemListaExportarEnsayos
         },
-        props: [],
+        props: [
+            'modo'
+        ],
         data(){
             return{
                 urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos/validadas`,
@@ -51,6 +53,9 @@
         watch: {
             buscador() {
                 this.filtraEnsayos();
+            },
+            modo(){
+                this.getEnsayos();
             }
         },
     }

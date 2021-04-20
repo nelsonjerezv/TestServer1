@@ -110799,7 +110799,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
     },
-    props: [],
+    props: ['modo'],
     data: function data() {
         return {
             urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos/validadas',
@@ -110834,6 +110834,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     watch: {
         buscador: function buscador() {
             this.filtraEnsayos();
+        },
+        modo: function modo() {
+            this.getEnsayos();
         }
     }
 });
