@@ -10,6 +10,10 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class OrdenTrabajoTerrenoController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index(){
         $ordenes = $this->todasLasOrdenes();
         $ensayos = $this->todosLosEnsayos();

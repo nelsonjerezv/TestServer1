@@ -12,6 +12,10 @@ use PDF;
 
 class EnsayosHormigonController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index($indice = false){
         if ($indice == false) {
             $ensayos = $this->todosLosEnsayos();

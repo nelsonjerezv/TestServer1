@@ -64,3 +64,7 @@
         return $pdf->inline('record.pdf');
 
     });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
