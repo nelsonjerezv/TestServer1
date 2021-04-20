@@ -35,6 +35,8 @@
                     <listado-exportar-ensayos
                         v-if="componenteMain == 'ListadoExportarEnsayos' "
                         @cambiaMain="cambiarMain"
+                        :modo="modoListadoEnsayo"
+
                     />
                 </el-main>
                 <el-footer>Footer</el-footer>

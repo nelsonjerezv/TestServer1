@@ -38,8 +38,6 @@
         },
         methods: {
             getEnsayos() {
-                console.log(this.modo);
-
                 this.ensayosHormigon = [];
                 this.todosLosEnsayos = [];
                 this.$http.get(`${this.urlTodosLosEnsayos}/${this.modo}`)

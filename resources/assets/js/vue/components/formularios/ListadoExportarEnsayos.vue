@@ -38,16 +38,21 @@
         },
         methods: {
             getEnsayos() {
-                this.$http.get(this.urlTodosLosEnsayos)
+                this.ensayosHormigon = [];
+                this.todosLosEnsayos = [];
+                this.$http.get(`${this.urlTodosLosEnsayos}/${this.modo}`)
                 .then(response => {
-                    this.todosLosEnsayos =  response.body;
+                    this.todosLosEnsayos = response.body;
                     this.ensayosHormigon = response.body;
                 }, response => {
                     Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
                 });
             },
             filtraEnsayos(){
-                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo => ensayo.num_muestra.includes(this.buscador));
+                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo =>  ensayo.ott.toString().includes(this.buscador) ||
+                                                                              ensayo.num_ingreso.toString().includes(this.buscador) ||
+                                                                              ensayo.num_informe.includes(this.buscador)
+                                                                    );
             }
         },
         watch: {

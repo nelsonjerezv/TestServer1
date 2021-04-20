@@ -101721,6 +101721,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -110192,8 +110194,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            console.log(this.modo);
-
             this.ensayosHormigon = [];
             this.todosLosEnsayos = [];
             this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
@@ -110819,7 +110819,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            this.$http.get(this.urlTodosLosEnsayos).then(function (response) {
+            this.ensayosHormigon = [];
+            this.todosLosEnsayos = [];
+            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
                 _this.todosLosEnsayos = response.body;
                 _this.ensayosHormigon = response.body;
             }, function (response) {
@@ -110830,7 +110832,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.num_muestra.includes(_this2.buscador);
+                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
@@ -111513,6 +111515,7 @@ var render = function() {
                   _vm._v(" "),
                   _vm.componenteMain == "ListadoExportarEnsayos"
                     ? _c("listado-exportar-ensayos", {
+                        attrs: { modo: _vm.modoListadoEnsayo },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e()
