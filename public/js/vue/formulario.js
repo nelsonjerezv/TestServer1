@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("5c703696", content, false, {});
+var update = __webpack_require__(20)("291376d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101629,7 +101629,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("90f904da", content, false, {});
+var update = __webpack_require__(20)("7f484553", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101676,6 +101676,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue__ = __webpack_require__(383);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue__);
+//
+//
 //
 //
 //
@@ -101784,7 +101786,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4483b016", content, false, {});
+var update = __webpack_require__(20)("68dc4096", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102187,7 +102189,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("d85e086a", content, false, {});
+var update = __webpack_require__(20)("fcb698ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102356,7 +102358,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ac06352", content, false, {});
+var update = __webpack_require__(20)("db36d3d2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102883,7 +102885,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("565ee958", content, false, {});
+var update = __webpack_require__(20)("c52968d8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110114,7 +110116,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("26089aab", content, false, {});
+var update = __webpack_require__(20)("18ff1aeb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110192,8 +110194,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            console.log(this.modo);
-
             this.ensayosHormigon = [];
             this.todosLosEnsayos = [];
             this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
@@ -110207,7 +110207,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.id.toString().includes(_this2.buscador) || ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
+                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
@@ -110283,7 +110283,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("66e7f8b4", content, false, {});
+var update = __webpack_require__(20)("7b5963e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110741,7 +110741,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("f9988668", content, false, {});
+var update = __webpack_require__(20)("6ce5948c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110802,7 +110802,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
     },
-    props: [],
+    props: ['modo'],
     data: function data() {
         return {
             urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos/validadas',
@@ -110819,7 +110819,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getEnsayos: function getEnsayos() {
             var _this = this;
 
-            this.$http.get(this.urlTodosLosEnsayos).then(function (response) {
+            this.ensayosHormigon = [];
+            this.todosLosEnsayos = [];
+            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
                 _this.todosLosEnsayos = response.body;
                 _this.ensayosHormigon = response.body;
             }, function (response) {
@@ -110830,13 +110832,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.num_muestra.includes(_this2.buscador);
+                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
             });
         }
     },
     watch: {
         buscador: function buscador() {
             this.filtraEnsayos();
+        },
+        modo: function modo() {
+            this.getEnsayos();
         }
     }
 });
@@ -110903,7 +110908,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("09c84c24", content, false, {});
+var update = __webpack_require__(20)("4e6333e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -111510,6 +111515,7 @@ var render = function() {
                   _vm._v(" "),
                   _vm.componenteMain == "ListadoExportarEnsayos"
                     ? _c("listado-exportar-ensayos", {
+                        attrs: { modo: _vm.modoListadoEnsayo },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e()
