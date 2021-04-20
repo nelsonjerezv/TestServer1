@@ -15,6 +15,7 @@
                             clearable
                             remote
                             reserve-keyword
+                            no-data-text="Sin resultados"
                             placeholder="Seleccione OTT"
                             :remote-method="querySearchNumeroOtt"
                             :loading="loading">
