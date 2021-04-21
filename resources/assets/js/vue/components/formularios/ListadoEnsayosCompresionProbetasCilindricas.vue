@@ -38,8 +38,6 @@
         },
         methods: {
             getEnsayos() {
-                console.log(this.modo);
-
                 this.ensayosHormigon = [];
                 this.todosLosEnsayos = [];
                 this.$http.get(`${this.urlTodosLosEnsayos}/${this.modo}`)
@@ -51,8 +49,7 @@
                 });
             },
             filtraEnsayos(){
-                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo =>  ensayo.id.toString().includes(this.buscador) ||
-                                                                              ensayo.ott.toString().includes(this.buscador) ||
+                this.ensayosHormigon = this.todosLosEnsayos.filter(ensayo =>  ensayo.ott.toString().includes(this.buscador) ||
                                                                               ensayo.num_ingreso.toString().includes(this.buscador) ||
                                                                               ensayo.num_informe.includes(this.buscador)
                                                             );
