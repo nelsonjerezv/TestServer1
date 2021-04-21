@@ -1213,7 +1213,7 @@
                 ordenes: [],
                 opcionesSearchBoxOTT: [],
                 loading: false,
-                cantidadDecimales: 2,
+                cantidadDecimales: 6,
                 pickerOptionsFechaEnsayo:{
                     // disabledDate(time) {
                         //     this.calculaFechaEnsayoInicio()
@@ -1615,7 +1615,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraUno = 'No valido';
                 } else{
-                    this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno));
                 }
             },
             'form.masaCorregidaMuestraUno': function (newVal, oldVal){
@@ -1624,7 +1624,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraUno = 'No valido';
                 } else{
-                    this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno));
                 }
             },
             'form.masaCorregidaMuestraDos': function (newVal, oldVal){
@@ -1633,7 +1633,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraDos = 'No valido';
                 } else{
-                    this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos));
                 }
             },
             'form.volumenMetroCubicoMuestraDos': function (newVal, oldVal){
@@ -1642,7 +1642,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraDos = 'No valido';
                 } else{
-                    this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos));
                 }
             },
             'form.masaCorregidaMuestraTres': function (newVal, oldVal){
@@ -1652,7 +1652,7 @@
                     this.form.densidadMuestraTres = 'No valido';
                 } else{
                 }
-                this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres));
             },
             'form.volumenMetroCubicoMuestraTres': function (newVal, oldVal){
                 var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
@@ -1660,7 +1660,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraTres = 'No valido';
                 } else{
-                    this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres));
                 }
             },
             'form.masaCorregidaMuestraCuatro': function (newVal, oldVal){
@@ -1669,7 +1669,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraCuatro = 'No valido';
                 } else{
-                    this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro));
                 }
             },
             'form.volumenMetroCubicoMuestraCuatro': function (newVal, oldVal){
@@ -1678,7 +1678,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.densidadMuestraCuatro = 'No valido';
                 } else{
-                    this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
+                    this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro));
                 }
             },
             'form.OTT': function(newVal, oldVal){
@@ -1776,56 +1776,56 @@
                 if( isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno)) ){
                     this.form.masaCorregidaMuestraUno = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno));
                 }
             },
             'form.errorMuestraUno': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno)) ){
                     this.form.masaCorregidaMuestraUno = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno));
                 }
             },
             'form.masaMuestraDos': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos)) ){
                     this.form.masaCorregidaMuestraDos = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos));
                 }
             },
             'form.errorMuestraDos': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos)) ){
                     this.form.masaCorregidaMuestraDos = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos));
                 }
             },
             'form.masaMuestraTres': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres)) ){
                     this.form.masaCorregidaMuestraTres = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres));
                 }
             },
             'form.errorMuestraTres': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres)) ){
                     this.form.masaCorregidaMuestraTres = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres));
                 }
             },
             'form.masaMuestraCuatro': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro)) ){
                     this.form.masaCorregidaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro));
                 }
             },
             'form.errorMuestraCuatro': function(newVal, oldVal){
                 if( isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro)) ){
                     this.form.masaCorregidaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(this.cantidadDecimales);
+                    this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro));
                 }
             },
             'form.dUnoMuestraUnoCorregida': function(newVal, oldVal){
@@ -1834,7 +1834,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraUno = 'No valido';
                 } else{
-                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dDosMuestraUnoCorregida': function(newVal, oldVal){
@@ -1843,7 +1843,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraUno = 'No valido';
                 } else{
-                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraUno = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dUnoMuestraDosCorregida': function(newVal, oldVal){
@@ -1852,7 +1852,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraDos = 'No valido';
                 } else{
-                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dDosMuestraDosCorregida': function(newVal, oldVal){
@@ -1861,7 +1861,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraDos = 'No valido';
                 } else{
-                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraDos = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dUnoMuestraTresCorregida': function(newVal, oldVal){
@@ -1870,7 +1870,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraTres = 'No valido';
                 } else{
-                    this.form.areaMuestraTres = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraTres = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dDosMuestraTresCorregida': function(newVal, oldVal){
@@ -1879,7 +1879,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraTres = 'No valido';
                 } else{
-                    this.form.areaMuestraTres = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraTres = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dUnoMuestraCuatroCorregida': function(newVal, oldVal){
@@ -1888,7 +1888,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.areaMuestraCuatro = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraCuatro = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.dDosMuestraCuatroCorregida': function(newVal, oldVal){
@@ -1897,7 +1897,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.areaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.areaMuestraCuatro = (0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(this.cantidadDecimales);
+                    this.form.areaMuestraCuatro = (0.196 * (dUno + dDos) * (dUno + dDos));
                 }
             },
             'form.cargaEnsayoMuestraUno': function(newVal, oldVal){
@@ -1905,7 +1905,7 @@
                 if( isNaN(carga) ){
                     this.form.cargaEnsayoMilMuestraUno = 'No valido';
                 } else{
-                    this.form.cargaEnsayoMilMuestraUno = (1000 * carga).toFixed(this.cantidadDecimales);
+                    this.form.cargaEnsayoMilMuestraUno = (1000 * carga);
                 }
             },
             'form.cargaEnsayoMuestraDos': function(newVal, oldVal){
@@ -1913,7 +1913,7 @@
                 if( isNaN(carga) ){
                     this.form.cargaEnsayoMilMuestraDos = 'No valido';
                 } else{
-                    this.form.cargaEnsayoMilMuestraDos = (1000 * carga).toFixed(this.cantidadDecimales);
+                    this.form.cargaEnsayoMilMuestraDos = (1000 * carga);
                 }
             },
             'form.cargaEnsayoMuestraTres': function(newVal, oldVal){
@@ -1921,7 +1921,7 @@
                 if( isNaN(carga) ){
                     this.form.cargaEnsayoMilMuestraTres = 'No valido';
                 } else{
-                    this.form.cargaEnsayoMilMuestraTres = (1000 * carga).toFixed(this.cantidadDecimales);
+                    this.form.cargaEnsayoMilMuestraTres = (1000 * carga);
                 }
             },
             'form.cargaEnsayoMuestraCuatro': function(newVal, oldVal){
@@ -1929,7 +1929,7 @@
                 if( isNaN(carga) ){
                     this.form.cargaEnsayoMilMuestraCuatro = 'No valido';
                 } else{
-                    this.form.cargaEnsayoMilMuestraCuatro = (1000 * carga).toFixed(this.cantidadDecimales);
+                    this.form.cargaEnsayoMilMuestraCuatro = (1000 * carga);
                 }
             },
             'form.cargaEnsayoMilMuestraUno': function(newVal, oldVal){
@@ -1938,7 +1938,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraUno = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraUno = (dUno / dDos);
                 }
             },
             'form.areaMuestraUno': function(newVal, oldVal){
@@ -1947,7 +1947,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraUno = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraUno = (dUno / dDos);
                 }
             },
             'form.cargaEnsayoMilMuestraDos': function(newVal, oldVal){
@@ -1956,7 +1956,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraDos = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraDos = (dUno / dDos);
                 }
             },
             'form.areaMuestraDos': function(newVal, oldVal){
@@ -1965,7 +1965,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraDos = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraDos = (dUno / dDos);
                 }
             },
             'form.cargaEnsayoMilMuestraTres': function(newVal, oldVal){
@@ -1974,7 +1974,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraTres = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraTres = (dUno / dDos);
                 }
             },
             'form.areaMuestraTres': function(newVal, oldVal){
@@ -1983,7 +1983,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraTres = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraTres = (dUno / dDos);
                 }
             },
             'form.cargaEnsayoMilMuestraCuatro': function(newVal, oldVal){
@@ -1992,7 +1992,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraCuatro = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos);
                 }
             },
             'form.areaMuestraCuatro': function(newVal, oldVal){
@@ -2001,7 +2001,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCompresionMuestraCuatro = 'No valido';
                 } else{
-                    this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos);
                 }
             },
             'form.resistenciaCompresionMuestraUno': function(newVal, oldVal){
@@ -2010,7 +2010,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraUno = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraUno = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraUno = (dUno / dDos);
                 }
             },
             'form.factoresConversionMuestraUno': function(newVal, oldVal){
@@ -2019,7 +2019,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraUno = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraUno = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraUno = (dUno / dDos);
                 }
             },
             'form.resistenciaCompresionMuestraDos': function(newVal, oldVal){
@@ -2028,7 +2028,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraDos = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraDos = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraDos = (dUno / dDos);
                 }
             },
             'form.factoresConversionMuestraDos': function(newVal, oldVal){
@@ -2037,7 +2037,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraDos = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraDos = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraDos = (dUno / dDos);
                 }
             },
             'form.resistenciaCompresionMuestraTres': function(newVal, oldVal){
@@ -2046,7 +2046,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraTres = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraTres = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraTres = (dUno / dDos);
                 }
             },
             'form.factoresConversionMuestraTres': function(newVal, oldVal){
@@ -2055,7 +2055,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraTres = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraTres = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraTres = (dUno / dDos);
                 }
             },
             'form.resistenciaCompresionMuestraCuatro': function(newVal, oldVal){
@@ -2064,7 +2064,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraCuatro = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraCuatro = (dUno / dDos);
                 }
             },
             'form.factoresConversionMuestraCuatro': function(newVal, oldVal){
@@ -2073,7 +2073,7 @@
                 if( isNaN(dUno) || isNaN(dDos) ){
                     this.form.resistenciaCorregidaMuestraCuatro = 'No valido';
                 } else{
-                    this.form.resistenciaCorregidaMuestraCuatro = (dUno / dDos).toFixed(this.cantidadDecimales);
+                    this.form.resistenciaCorregidaMuestraCuatro = (dUno / dDos);
                 }
             },
             'form.errorCientoCincuentaMm': function(newVal, oldVal){
@@ -2221,6 +2221,11 @@
             border-color: #484b50;
             border-width: 1px;
             padding: 0px 10px;
+        }
+        .texto-right{
+            /deep/ .el-input__inner{
+                text-align: right;
+            }
         }
         .texto-derecha{
             margin-left: auto;
