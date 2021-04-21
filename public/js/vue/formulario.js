@@ -104428,50 +104428,50 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 this.form.dDosMuestraCuatroCorregida = 'No valido';
             }
             if (!isNaN(dUnoMuestraUno) && !isNaN(error)) {
-                calc = dUnoMuestraUno * error / 100;
-                this.form.dUnoMuestraUnoCorregida = (dUnoMuestraUno - calc).toFixed(this.cantidadDecimales) + ', ' + (dUnoMuestraUno + calc).toFixed(this.cantidadDecimales);
+                calc = dUnoMuestraUno + error;
+                this.form.dUnoMuestraUnoCorregida = calc;
             } else {
                 this.form.dUnoMuestraUnoCorregida = 'No valido';
             }
             if (!isNaN(dDosMuestraUno) && !isNaN(error)) {
-                calc = dDosMuestraUno * error / 100;
-                this.form.dDosMuestraUnoCorregida = (dDosMuestraUno - calc).toFixed(this.cantidadDecimales) + ', ' + (dDosMuestraUno + calc).toFixed(this.cantidadDecimales);
+                calc = dDosMuestraUno + error;
+                this.form.dDosMuestraUnoCorregida = calc;
             } else {
                 this.form.dDosMuestraUnoCorregida = 'No valido';
             }
             if (!isNaN(dUnoMuestraDos) && !isNaN(error)) {
-                calc = dUnoMuestraDos * error / 100;
-                this.form.dUnoMuestraDosCorregida = (dUnoMuestraDos - calc).toFixed(this.cantidadDecimales) + ', ' + (dUnoMuestraDos + calc).toFixed(this.cantidadDecimales);
+                calc = dUnoMuestraDos + error;
+                this.form.dUnoMuestraDosCorregida = calc;
             } else {
                 this.form.dUnoMuestraDosCorregida = 'No valido';
             }
             if (!isNaN(dDosMuestraDos) && !isNaN(error)) {
-                calc = dDosMuestraDos * error / 100;
-                this.form.dDosMuestraDosCorregida = (dDosMuestraDos - calc).toFixed(this.cantidadDecimales) + ', ' + (dDosMuestraDos + calc).toFixed(this.cantidadDecimales);
+                calc = dDosMuestraDos + error;
+                this.form.dDosMuestraDosCorregida = calc;
             } else {
                 this.form.dDosMuestraDosCorregida = 'No valido';
             }
             if (!isNaN(dUnoMuestraTres) && !isNaN(error)) {
-                calc = dUnoMuestraTres * error / 100;
-                this.form.dUnoMuestraTresCorregida = (dUnoMuestraTres - calc).toFixed(this.cantidadDecimales) + ', ' + (dUnoMuestraTres + calc).toFixed(this.cantidadDecimales);
+                calc = dUnoMuestraTres + error;
+                this.form.dUnoMuestraTresCorregida = calc;
             } else {
                 this.form.dUnoMuestraTresCorregida = 'No valido';
             }
             if (!isNaN(dDosMuestraTres) && !isNaN(error)) {
-                calc = dDosMuestraTres * error / 100;
-                this.form.dDosMuestraTresCorregida = (dDosMuestraTres - calc).toFixed(this.cantidadDecimales) + ', ' + (dDosMuestraTres + calc).toFixed(this.cantidadDecimales);
+                calc = dDosMuestraTres + error;
+                this.form.dDosMuestraTresCorregida = calc;
             } else {
                 this.form.dDosMuestraTresCorregida = 'No valido';
             }
             if (!isNaN(dUnoMuestraCuatro) && !isNaN(error)) {
-                calc = dUnoMuestraCuatro * error / 100;
-                this.form.dUnoMuestraCuatroCorregida = (dUnoMuestraCuatro - calc).toFixed(this.cantidadDecimales) + ', ' + (dUnoMuestraCuatro + calc).toFixed(this.cantidadDecimales);
+                calc = dUnoMuestraCuatro + error;
+                this.form.dUnoMuestraCuatroCorregida = calc;
             } else {
                 this.form.dUnoMuestraCuatroCorregida = 'No valido';
             }
             if (!isNaN(dDosMuestraCuatro) && !isNaN(error)) {
-                calc = dDosMuestraCuatro * error / 100;
-                this.form.dDosMuestraCuatroCorregida = (dDosMuestraCuatro - calc).toFixed(this.cantidadDecimales) + ', ' + (dDosMuestraCuatro + calc).toFixed(this.cantidadDecimales);
+                calc = dDosMuestraCuatro + error;
+                this.form.dDosMuestraCuatroCorregida = calc;
             } else {
                 this.form.dDosMuestraCuatroCorregida = 'No valido';
             }
@@ -104506,74 +104506,74 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
                 this.form.refrentadoCorregidoMuestraCuatro = 'No valido';
             }
             if (!isNaN(hUnoMuestraUno) && !isNaN(error)) {
-                calc = hUnoMuestraUno * error / 100;
-                this.form.hUnoMuestraUnoCorregida = (hUnoMuestraUno - calc).toFixed(this.cantidadDecimales) + ', ' + (hUnoMuestraUno + calc).toFixed(this.cantidadDecimales);
+                calc = hUnoMuestraUno + error;
+                this.form.hUnoMuestraUnoCorregida = calc;
             } else {
                 this.form.hUnoMuestraUnoCorregida = 'No valido';
             }
             if (!isNaN(hDosMuestraUno) && !isNaN(error)) {
-                calc = hDosMuestraUno * error / 100;
-                this.form.hDosMuestraUnoCorregida = (hDosMuestraUno - calc).toFixed(this.cantidadDecimales) + ', ' + (hDosMuestraUno + calc).toFixed(this.cantidadDecimales);
+                calc = hDosMuestraUno + error;
+                this.form.hDosMuestraUnoCorregida = calc;
             } else {
                 this.form.hDosMuestraUnoCorregida = 'No valido';
             }
             if (!isNaN(hUnoMuestraDos) && !isNaN(error)) {
-                calc = hUnoMuestraDos * error / 100;
-                this.form.hUnoMuestraDosCorregida = (hUnoMuestraDos - calc).toFixed(this.cantidadDecimales) + ', ' + (hUnoMuestraDos + calc).toFixed(this.cantidadDecimales);
+                calc = hUnoMuestraDos + error;
+                this.form.hUnoMuestraDosCorregida = calc;
             } else {
                 this.form.hUnoMuestraDosCorregida = 'No valido';
             }
             if (!isNaN(hDosMuestraDos) && !isNaN(error)) {
-                calc = hDosMuestraDos * error / 100;
-                this.form.hDosMuestraDosCorregida = (hDosMuestraDos - calc).toFixed(this.cantidadDecimales) + ', ' + (hDosMuestraDos + calc).toFixed(this.cantidadDecimales);
+                calc = hDosMuestraDos + error;
+                this.form.hDosMuestraDosCorregida = calc;
             } else {
                 this.form.hDosMuestraDosCorregida = 'No valido';
             }
             if (!isNaN(hUnoMuestraTres) && !isNaN(error)) {
-                calc = hUnoMuestraTres * error / 100;
-                this.form.hUnoMuestraTresCorregida = (hUnoMuestraTres - calc).toFixed(this.cantidadDecimales) + ', ' + (hUnoMuestraTres + calc).toFixed(this.cantidadDecimales);
+                calc = hUnoMuestraTres + error;
+                this.form.hUnoMuestraTresCorregida = calc;
             } else {
                 this.form.hUnoMuestraTresCorregida = 'No valido';
             }
             if (!isNaN(hDosMuestraTres) && !isNaN(error)) {
-                calc = hDosMuestraTres * error / 100;
-                this.form.hDosMuestraTresCorregida = (hDosMuestraTres - calc).toFixed(this.cantidadDecimales) + ', ' + (hDosMuestraTres + calc).toFixed(this.cantidadDecimales);
+                calc = hDosMuestraTres + error;
+                this.form.hDosMuestraTresCorregida = calc;
             } else {
                 this.form.hDosMuestraTresCorregida = 'No valido';
             }
             if (!isNaN(hUnoMuestraCuatro) && !isNaN(error)) {
-                calc = hUnoMuestraCuatro * error / 100;
-                this.form.hUnoMuestraCuatroCorregida = (hUnoMuestraCuatro - calc).toFixed(this.cantidadDecimales) + ', ' + (hUnoMuestraCuatro + calc).toFixed(this.cantidadDecimales);
+                calc = hUnoMuestraCuatro + error;
+                this.form.hUnoMuestraCuatroCorregida = calc;
             } else {
                 this.form.hUnoMuestraCuatroCorregida = 'No valido';
             }
             if (!isNaN(hDosMuestraCuatro) && !isNaN(error)) {
-                calc = hDosMuestraCuatro * error / 100;
-                this.form.hDosMuestraCuatroCorregida = (hDosMuestraCuatro - calc).toFixed(this.cantidadDecimales) + ', ' + (hDosMuestraCuatro + calc).toFixed(this.cantidadDecimales);
+                calc = hDosMuestraCuatro + error;
+                this.form.hDosMuestraCuatroCorregida = calc;
             } else {
                 this.form.hDosMuestraCuatroCorregida = 'No valido';
             }
             if (!isNaN(refrentadoUno) && !isNaN(error)) {
-                calc = refrentadoUno * error / 100;
-                this.form.refrentadoCorregidoMuestraUno = (refrentadoUno - calc).toFixed(this.cantidadDecimales) + ', ' + (refrentadoUno + calc).toFixed(this.cantidadDecimales);
+                calc = refrentadoUno + error;
+                this.form.refrentadoCorregidoMuestraUno = calc;
             } else {
                 this.form.refrentadoCorregidoMuestraUno = 'No valido';
             }
             if (!isNaN(refrentadoDos) && !isNaN(error)) {
-                calc = refrentadoDos * error / 100;
-                this.form.refrentadoCorregidoMuestraDos = (refrentadoDos - calc).toFixed(this.cantidadDecimales) + ', ' + (refrentadoDos + calc).toFixed(this.cantidadDecimales);
+                calc = refrentadoDos + error;
+                this.form.refrentadoCorregidoMuestraDos = calc;
             } else {
                 this.form.refrentadoCorregidoMuestraDos = 'No valido';
             }
             if (!isNaN(refrentadoTres) && !isNaN(error)) {
-                calc = refrentadoTres * error / 100;
-                this.form.refrentadoCorregidoMuestraTres = (refrentadoTres - calc).toFixed(this.cantidadDecimales) + ', ' + (refrentadoTres + calc).toFixed(this.cantidadDecimales);
+                calc = refrentadoTres + error;
+                this.form.refrentadoCorregidoMuestraTres = calc;
             } else {
                 this.form.refrentadoCorregidoMuestraTres = 'No valido';
             }
             if (!isNaN(refrentadoCuatro) && !isNaN(error)) {
-                calc = refrentadoCuatro * error / 100;
-                this.form.refrentadoCorregidoMuestraCuatro = (refrentadoCuatro - calc).toFixed(this.cantidadDecimales) + ', ' + (refrentadoCuatro + calc).toFixed(this.cantidadDecimales);
+                calc = refrentadoCuatro + error;
+                this.form.refrentadoCorregidoMuestraCuatro = calc;
             } else {
                 this.form.refrentadoCorregidoMuestraCuatro = 'No valido';
             }
@@ -104586,7 +104586,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraUno = 'No valido';
             } else {
-                this.form.densidadMuestraUno = (parseInt(this.form.masaCorregidaMuestraUno) / parseInt(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
             }
         },
         'form.masaCorregidaMuestraUno': function formMasaCorregidaMuestraUno(newVal, oldVal) {
@@ -104595,7 +104595,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraUno = 'No valido';
             } else {
-                this.form.densidadMuestraUno = (parseInt(this.form.masaCorregidaMuestraUno) / parseInt(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraUno = (parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno)).toFixed(this.cantidadDecimales);
             }
         },
         'form.masaCorregidaMuestraDos': function formMasaCorregidaMuestraDos(newVal, oldVal) {
@@ -104604,7 +104604,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraDos = 'No valido';
             } else {
-                this.form.densidadMuestraDos = (parseInt(this.form.masaCorregidaMuestraDos) / parseInt(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
             }
         },
         'form.volumenMetroCubicoMuestraDos': function formVolumenMetroCubicoMuestraDos(newVal, oldVal) {
@@ -104613,7 +104613,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraDos = 'No valido';
             } else {
-                this.form.densidadMuestraDos = (parseInt(this.form.masaCorregidaMuestraDos) / parseInt(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraDos = (parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos)).toFixed(this.cantidadDecimales);
             }
         },
         'form.masaCorregidaMuestraTres': function formMasaCorregidaMuestraTres(newVal, oldVal) {
@@ -104622,7 +104622,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraTres = 'No valido';
             } else {}
-            this.form.densidadMuestraTres = (parseInt(this.form.masaCorregidaMuestraTres) / parseInt(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
+            this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
         },
         'form.volumenMetroCubicoMuestraTres': function formVolumenMetroCubicoMuestraTres(newVal, oldVal) {
             var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
@@ -104630,7 +104630,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraTres = 'No valido';
             } else {
-                this.form.densidadMuestraTres = (parseInt(this.form.masaCorregidaMuestraTres) / parseInt(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraTres = (parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres)).toFixed(this.cantidadDecimales);
             }
         },
         'form.masaCorregidaMuestraCuatro': function formMasaCorregidaMuestraCuatro(newVal, oldVal) {
@@ -104639,7 +104639,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraCuatro = 'No valido';
             } else {
-                this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
             }
         },
         'form.volumenMetroCubicoMuestraCuatro': function formVolumenMetroCubicoMuestraCuatro(newVal, oldVal) {
@@ -104648,7 +104648,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
             if (isNaN(dUno) || isNaN(dDos)) {
                 this.form.densidadMuestraCuatro = 'No valido';
             } else {
-                this.form.densidadMuestraCuatro = (parseInt(this.form.masaCorregidaMuestraCuatro) / parseInt(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
+                this.form.densidadMuestraCuatro = (parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro)).toFixed(this.cantidadDecimales);
             }
         },
         'form.OTT': function formOTT(newVal, oldVal) {
@@ -105400,7 +105400,7 @@ var render = function() {
                     "el-form-item",
                     {
                       attrs: {
-                        label: "Error: 150mm (%)",
+                        label: "Error: 150mm (mm)",
                         prop: "errorCientoCincuentaMm"
                       }
                     },
@@ -105429,7 +105429,7 @@ var render = function() {
                     "el-form-item",
                     {
                       attrs: {
-                        label: "Error: 300mm (%)",
+                        label: "Error: 300mm (mm)",
                         prop: "errorTrescientosMm"
                       }
                     },
