@@ -1,3 +1,5 @@
+
+
 @extends ('master')
 @section('content')
 <div id="formularios">
