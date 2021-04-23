@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  height: 100%;
+  height: calc(100% - 47px);
   width: 100%;
   max-width: 10000px;
   padding: 0px !important;
