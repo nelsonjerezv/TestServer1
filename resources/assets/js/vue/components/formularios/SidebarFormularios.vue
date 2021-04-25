@@ -105,20 +105,14 @@
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:'validadas'});
             },
             exportaEnsayos() {
-                this.$emit("cambiaMain", {vista: "ListadoExportarEnsayos", condicion:''});
+                this.$emit("cambiaMain", {vista: "ListadoExportarEnsayos", condicion:'validadas'});
             },
         }
     }
 </script>
 
 <style>
-    .el-aside {
-        background-color: #d3dce6;
-        height: 100%;
-        color: #333;
-        text-align: left;
-        overflow-x: hidden;
-    }
+
     .el-menu-vertical-demo:not(.el-menu--collapse) {
         width: fit-content;
         min-height: 400px;
