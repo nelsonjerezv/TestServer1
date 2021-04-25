@@ -101653,7 +101653,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-header{\n    font-size: xx-large;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -101749,7 +101749,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             tipoOTT: '',
             tipoEnsayo: '',
             modoListadoOtt: '',
-            modoListadoEnsayo: ''
+            modoListadoEnsayo: '',
+            modoListadoExportar: ''
         };
     },
     mounted: function mounted() {
@@ -101770,6 +101771,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
                 this.modoListadoEnsayo = contenido.condicion;
+            }
+            if (contenido.vista === 'ListadoExportarEnsayos') {
+                this.modoListadoExportar = contenido.condicion;
             }
         }
     }
@@ -101810,7 +101814,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.el-aside {\n    background-color: #d3dce6;\n    height: 100%;\n    color: #333;\n    text-align: left;\n    overflow-x: hidden;\n}\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
 
 // exports
 
@@ -101929,7 +101933,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
-            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: '' });
+            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: 'validadas' });
         }
     }
 });
@@ -110358,7 +110362,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -110481,15 +110484,15 @@ var render = function() {
     _c("div", { staticClass: "item" }, [
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ingreso: " + _vm._s(_vm.item.num_ingreso))
+          _c("strong", [_vm._v("N° Ingreso:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_ingreso))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.numeroOtt))
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("Ensayado por: " + _vm._s(_vm.item.ensayado_por))
+          _c("strong", [_vm._v("N° Ott:")]),
+          _vm._v(" " + _vm._s(_vm.numeroOtt) + "     "),
+          _c("strong", [_vm._v("Ensayado por:")]),
+          _vm._v(" " + _vm._s(_vm.item.ensayado_por))
         ])
       ]),
       _vm._v(" "),
@@ -110805,7 +110808,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['modo'],
     data: function data() {
         return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos/validadas',
+            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
             ensayosHormigon: '',
             todosLosEnsayos: '',
             buscador: ''
@@ -111467,7 +111470,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "el-container",
-        { staticStyle: { height: "calc(100% - 60px) !important" } },
+        { staticStyle: { height: "calc(100% - 0px) !important" } },
         [
           _c("sidebar-formularios", { on: { cambiaMain: _vm.cambiarMain } }),
           _vm._v(" "),
@@ -111515,7 +111518,7 @@ var render = function() {
                   _vm._v(" "),
                   _vm.componenteMain == "ListadoExportarEnsayos"
                     ? _c("listado-exportar-ensayos", {
-                        attrs: { modo: _vm.modoListadoEnsayo },
+                        attrs: { modo: _vm.modoListadoExportar },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e()
