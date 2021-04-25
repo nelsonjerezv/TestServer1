@@ -1,3 +1,10 @@
+$fondo-top: #b3c0d1;
+$fondo-main: #e9eef3;
+$fondo-sidebar: #d3dce6;
+
+$color-letra-base: #333;
+
+
 html,
 body{
     height: 100% !important;
@@ -20,10 +27,32 @@ body{
     margin: 0px !important;
 }
 
-.el-main{
+.el-main {
     line-height: 40px;
     overflow: hidden;
     height: 100%;
+    background-color: $fondo-main;
+    color: $color-letra-base;
+    text-align: center;
+    line-height: 160px;
+    display: flex;
+}
+.el-header, .el-footer {
+    background-color: $fondo-top;
+    color: $color-letra-base;
+    text-align: center;
+    line-height: 60px;
+}
+.el-header{
+    font-size: xx-large;
+    height: 0px !important;
+}
+.el-aside {
+    background-color: $fondo-sidebar;
+    height: 100%;
+    color: $color-letra-base;
+    text-align: left;
+    overflow-x: hidden;
 }
 
 #msgcontainer{
@@ -50,4 +79,15 @@ body{
             border-color: #F56C6C;
             color: #FFF;
         }
+}
+
+.navbar-laravel{
+    background-color: $fondo-top;
+}
+#app{
+    background-color: $fondo-main;
+    height: 100%;
+}
+.card-header{
+    background-color: $fondo-sidebar;
 }

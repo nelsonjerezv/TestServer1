@@ -27,7 +27,7 @@
         ],
         data(){
             return{
-                urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos/validadas`,
+                urlTodosLosEnsayos: `${GLOBAL.URL}ensayos/todos-los-ensayos`,
                 ensayosHormigon: '',
                 todosLosEnsayos: '',
                 buscador: ''

@@ -25,6 +25,33 @@ body {
   line-height: 40px;
   overflow: hidden;
   height: 100%;
+  background-color: #e9eef3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.el-header, .el-footer {
+  background-color: #b3c0d1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+.el-header {
+  font-size: xx-large;
+  height: 0px !important;
+}
+
+.el-aside {
+  background-color: #d3dce6;
+  height: 100%;
+  color: #333;
+  text-align: left;
+  overflow-x: hidden;
 }
 
 #msgcontainer {
@@ -51,4 +78,17 @@ body {
   background: #F56C6C;
   border-color: #F56C6C;
   color: #FFF;
+}
+
+.navbar-laravel {
+  background-color: #b3c0d1;
+}
+
+#app {
+  background-color: #e9eef3;
+  height: 100%;
+}
+
+.card-header {
+  background-color: #d3dce6;
 }
