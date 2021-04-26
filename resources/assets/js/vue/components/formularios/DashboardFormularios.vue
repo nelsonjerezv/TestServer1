@@ -3,7 +3,7 @@
         <el-header>
             Prototipo
         </el-header>
-        <el-container style="height: calc(100% - 60px) !important;">
+        <el-container style="height: calc(100% - 0px) !important;">
             <sidebar-formularios
                 @cambiaMain="cambiarMain"
             />
@@ -35,7 +35,7 @@
                     <listado-exportar-ensayos
                         v-if="componenteMain == 'ListadoExportarEnsayos' "
                         @cambiaMain="cambiarMain"
-                        :modo="modoListadoEnsayo"
+                        :modo="modoListadoExportar"
 
                     />
                 </el-main>
@@ -74,6 +74,7 @@
                 tipoEnsayo: '',
                 modoListadoOtt: '',
                 modoListadoEnsayo: '',
+                modoListadoExportar: '',
             };
         },
         mounted() {
@@ -94,33 +95,20 @@
                 if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
                     this.modoListadoEnsayo = contenido.condicion;
                 }
+                if (contenido.vista === 'ListadoExportarEnsayos') {
+                    this.modoListadoExportar = contenido.condicion;
+                }
             }
         }
     };
 </script>
 
-<style>
+<style style="scss">
     .height-max-percent{
         height: 100%;
     }
 
-    .el-header,
-    .el-footer {
-        background-color: #b3c0d1;
-        color: #333;
-        text-align: center;
-        line-height: 60px;
-    }
-    .el-header{
-        font-size: xx-large;
-    }
-    .el-main {
-        background-color: #e9eef3;
-        color: #333;
-        text-align: center;
-        line-height: 160px;
-        display: flex;
-    }
+
     body > .el-container {
         margin-bottom: 40px;
     }
