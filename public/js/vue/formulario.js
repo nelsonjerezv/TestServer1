@@ -102305,8 +102305,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getOrdenes: function getOrdenes() {
             var _this = this;
 
-            console.log(this.modo);
-
             this.ordenesDeTrabajo = [];
             this.todasLasOrdenes = [];
             this.$http.get(this.urltodasLasOrdenes + '/' + this.modo).then(function (response) {

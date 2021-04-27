@@ -1,4 +1,4 @@
-@extends ('master')
+@extends ('masterSimple')
 @section('content')
 <div id="ver-ott">
     <orden-trabajo-terreno
