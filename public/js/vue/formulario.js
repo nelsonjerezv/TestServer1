@@ -96137,6 +96137,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -96196,7 +96201,7 @@ var moment = __webpack_require__(0);
                 ubicacionElemento: '',
                 tipoHormigonMortero: '',
                 resistenciaEspecificada: '',
-                fechaConfeccion: '',
+                fechaConfeccion: new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()),
                 aditivo: '',
                 numMixer: '',
                 trasladoProbetas: '',
@@ -96244,7 +96249,7 @@ var moment = __webpack_require__(0);
                 seccionTestigosHabilitada: false,
                 seccionAridosHabilitada: false,
                 seccionOtrosHabilitada: false,
-                seccionRetiroMuestrasHabilitada: '',
+                seccionRetiroMuestrasHabilitada: false,
                 testigosExtraidosSeis: '0',
                 testigosExtraidosCuatro: '0',
                 testigosExtraidosTotal: '0',
@@ -96258,9 +96263,9 @@ var moment = __webpack_require__(0);
                 numIngreso: [{ required: true, message: '', trigger: 'blur' }],
                 nombreCliente: [{ required: true, message: '', trigger: 'blur' }],
                 nombreObra: [{ required: true, message: '', trigger: 'blur' }],
-                fonoObra: [{ required: true, message: '', trigger: 'blur' }],
+                fonoObra: [{ required: false, message: '', trigger: 'blur' }],
                 direccionObra: [{ required: true, message: '', trigger: 'blur' }],
-                encargadoObra: [{ required: true, message: '', trigger: 'blur' }],
+                encargadoObra: [{ required: false, message: '', trigger: 'blur' }],
                 muestreoDe: [{ required: true, message: '', trigger: 'change' }],
                 extraccion: [{ required: true, message: '', trigger: 'change' }],
                 compactacion: [{ required: true, message: '', trigger: 'change' }],
@@ -96274,6 +96279,7 @@ var moment = __webpack_require__(0);
                 muestreadoPor: [{ required: true, message: '', trigger: 'change' }],
                 ensayadoPor: [{ required: true, message: '', trigger: 'change' }],
                 tipoMuestra: [{ required: true, message: '', trigger: 'change' }],
+                seccionTestigosHabilitada: [{ required: false, message: '', trigger: 'change' }],
                 amasadaHormigon: [{ required: true, message: '', trigger: 'blur' }],
                 asentamientoCono: [{ required: true, message: '', trigger: 'blur' }],
                 numInforme: [{ required: true, message: '', trigger: 'blur' }],
@@ -96282,7 +96288,7 @@ var moment = __webpack_require__(0);
                 numVibradorInmersion: [{ required: true, message: '', trigger: 'blur' }],
                 numEquipoConoReducido: [{ required: true, message: '', trigger: 'blur' }],
                 horaMuestreo: [{ required: true, message: '', trigger: 'blur' }],
-                horaInicioAmasado: [{ required: true, message: '', trigger: 'blur' }],
+                horaInicioAmasado: [{ required: false, message: '', trigger: 'blur' }],
                 tAmbiente: [{ required: true, message: '', trigger: 'blur' }],
                 tHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
                 proveedor: [{ required: true, message: '', trigger: 'blur' }],
@@ -96294,8 +96300,8 @@ var moment = __webpack_require__(0);
                 tipoHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
                 resistenciaEspecificada: [{ required: true, message: '', trigger: 'blur' }],
                 fechaConfeccion: [{ required: true, message: '', trigger: 'blur' }],
-                aditivo: [{ required: true, message: '', trigger: 'blur' }],
-                numMixer: [{ required: true, message: '', trigger: 'blur' }],
+                aditivo: [{ required: false, message: '', trigger: 'blur' }],
+                numMixer: [{ required: false, message: '', trigger: 'blur' }],
                 retiroMuestraCantidadUnDia: [{ required: true, message: '', trigger: 'blur' }],
                 retiroMuestraFechaUnDia: [{ required: true, message: '', trigger: 'change' }],
                 retiroMuestraInformeUnDia: [{ required: true, message: '', trigger: 'blur' }],
@@ -96327,7 +96333,7 @@ var moment = __webpack_require__(0);
                 irregularidadSuperficial: [{ required: true, message: '', trigger: 'change' }],
                 irregularidadSuperficialMl: [{ required: true, message: '', trigger: 'blur' }],
                 muestraIngresadaPorCliente: [{ required: true, message: '', trigger: 'change' }],
-                responsableEnObra: [{ required: true, message: '', trigger: 'blur' }],
+                responsableEnObra: [{ required: false, message: '', trigger: 'blur' }],
                 fechaIngreso: [{ required: true, message: '', trigger: 'change' }],
                 fechaVisitaObra: [{ required: true, message: '', trigger: 'change' }],
                 horaLlegada: [{ required: true, message: '', trigger: 'change' }],
@@ -97135,6 +97141,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionTestigosHabilitada,
                             callback: function($$v) {
@@ -97147,7 +97159,7 @@ var render = function() {
                             expression: "form.seccionTestigosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Testigos")]
+                        [_vm._v("\n                    Sección Testigos")]
                       )
                     ],
                     1
@@ -97170,6 +97182,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionAridosHabilitada,
                             callback: function($$v) {
@@ -97178,7 +97196,7 @@ var render = function() {
                             expression: "form.seccionAridosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Áridos")]
+                        [_vm._v("\n                        Sección Áridos")]
                       )
                     ],
                     1
@@ -97201,6 +97219,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionOtrosHabilitada,
                             callback: function($$v) {
@@ -97209,7 +97233,7 @@ var render = function() {
                             expression: "form.seccionOtrosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Otros")]
+                        [_vm._v("\n                        Sección Otros")]
                       )
                     ],
                     1
@@ -97232,6 +97256,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionRetiroMuestrasHabilitada,
                             callback: function($$v) {
@@ -97244,7 +97274,11 @@ var render = function() {
                             expression: "form.seccionRetiroMuestrasHabilitada"
                           }
                         },
-                        [_vm._v("Sección Retiro de Muestras")]
+                        [
+                          _vm._v(
+                            "\n                        Sección Retiro de Muestras"
+                          )
+                        ]
                       )
                     ],
                     1
@@ -101653,7 +101687,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\n.el-header,\n.el-footer {\n    background-color: #b3c0d1;\n    color: #333;\n    text-align: center;\n    line-height: 60px;\n}\n.el-header{\n    font-size: xx-large;\n}\n.el-main {\n    background-color: #e9eef3;\n    color: #333;\n    text-align: center;\n    line-height: 160px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -101749,7 +101783,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             tipoOTT: '',
             tipoEnsayo: '',
             modoListadoOtt: '',
-            modoListadoEnsayo: ''
+            modoListadoEnsayo: '',
+            modoListadoExportar: ''
         };
     },
     mounted: function mounted() {
@@ -101770,6 +101805,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
                 this.modoListadoEnsayo = contenido.condicion;
+            }
+            if (contenido.vista === 'ListadoExportarEnsayos') {
+                this.modoListadoExportar = contenido.condicion;
             }
         }
     }
@@ -101810,7 +101848,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.el-aside {\n    background-color: #d3dce6;\n    height: 100%;\n    color: #333;\n    text-align: left;\n    overflow-x: hidden;\n}\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
 
 // exports
 
@@ -101929,7 +101967,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
-            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: '' });
+            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: 'validadas' });
         }
     }
 });
@@ -110358,7 +110396,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -110481,15 +110518,15 @@ var render = function() {
     _c("div", { staticClass: "item" }, [
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ingreso: " + _vm._s(_vm.item.num_ingreso))
+          _c("strong", [_vm._v("N° Ingreso:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_ingreso))
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.numeroOtt))
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("Ensayado por: " + _vm._s(_vm.item.ensayado_por))
+          _c("strong", [_vm._v("N° Ott:")]),
+          _vm._v(" " + _vm._s(_vm.numeroOtt) + "     "),
+          _c("strong", [_vm._v("Ensayado por:")]),
+          _vm._v(" " + _vm._s(_vm.item.ensayado_por))
         ])
       ]),
       _vm._v(" "),
@@ -110805,7 +110842,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['modo'],
     data: function data() {
         return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos/validadas',
+            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
             ensayosHormigon: '',
             todosLosEnsayos: '',
             buscador: ''
@@ -111467,7 +111504,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "el-container",
-        { staticStyle: { height: "calc(100% - 60px) !important" } },
+        { staticStyle: { height: "calc(100% - 0px) !important" } },
         [
           _c("sidebar-formularios", { on: { cambiaMain: _vm.cambiarMain } }),
           _vm._v(" "),
@@ -111515,7 +111552,7 @@ var render = function() {
                   _vm._v(" "),
                   _vm.componenteMain == "ListadoExportarEnsayos"
                     ? _c("listado-exportar-ensayos", {
-                        attrs: { modo: _vm.modoListadoEnsayo },
+                        attrs: { modo: _vm.modoListadoExportar },
                         on: { cambiaMain: _vm.cambiarMain }
                       })
                     : _vm._e()

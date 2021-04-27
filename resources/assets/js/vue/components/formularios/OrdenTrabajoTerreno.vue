@@ -93,22 +93,27 @@
                 </el-col>
                 <el-col :span="3" class="padding-5">
                     <el-form-item class="form-item-no-label" prop="seccionTestigosHabilitada">
-                        <el-checkbox v-model="form.seccionTestigosHabilitada">Secci&oacute;n Testigos</el-checkbox>
+                        <el-checkbox v-model="form.seccionTestigosHabilitada"
+                        :disabled="form.seccionAridosHabilitada || form.seccionOtrosHabilitada || form.seccionRetiroMuestrasHabilitada">
+                        Secci&oacute;n Testigos</el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="3" class="padding-5">
                     <el-form-item class="form-item-no-label" prop="seccionAridosHabilitada">
-                        <el-checkbox v-model="form.seccionAridosHabilitada">Secci&oacute;n &Aacute;ridos</el-checkbox>
+                        <el-checkbox v-model="form.seccionAridosHabilitada" :disabled="form.seccionTestigosHabilitada || form.seccionOtrosHabilitada || form.seccionRetiroMuestrasHabilitada">
+                            Secci&oacute;n &Aacute;ridos</el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="3" class="padding-5">
                     <el-form-item class="form-item-no-label" prop="seccionOtrosHabilitada">
-                        <el-checkbox v-model="form.seccionOtrosHabilitada">Secci&oacute;n Otros</el-checkbox>
+                        <el-checkbox v-model="form.seccionOtrosHabilitada" :disabled="form.seccionTestigosHabilitada || form.seccionAridosHabilitada || form.seccionRetiroMuestrasHabilitada">
+                            Secci&oacute;n Otros</el-checkbox>
                     </el-form-item>
                 </el-col>
                 <el-col :span="5" class="padding-5">
                     <el-form-item class="form-item-no-label" prop="seccionRetiroMuestrasHabilitada">
-                        <el-checkbox v-model="form.seccionRetiroMuestrasHabilitada">Secci&oacute;n Retiro de Muestras</el-checkbox>
+                        <el-checkbox v-model="form.seccionRetiroMuestrasHabilitada" :disabled="form.seccionTestigosHabilitada || form.seccionAridosHabilitada || form.seccionOtrosHabilitada">
+                            Secci&oacute;n Retiro de Muestras</el-checkbox>
                     </el-form-item>
                 </el-col>
             </el-row>
@@ -910,7 +915,7 @@
                     ubicacionElemento: '',
                     tipoHormigonMortero: '',
                     resistenciaEspecificada: '',
-                    fechaConfeccion: '',
+                    fechaConfeccion: new Date(new Date().getFullYear(), new Date().getMonth(),  new Date().getDate()),
                     aditivo: '',
                     numMixer: '',
                     trasladoProbetas: '',
@@ -958,7 +963,7 @@
                     seccionTestigosHabilitada: false,
                     seccionAridosHabilitada: false,
                     seccionOtrosHabilitada: false,
-                    seccionRetiroMuestrasHabilitada: '',
+                    seccionRetiroMuestrasHabilitada: false,
                     testigosExtraidosSeis: '0',
                     testigosExtraidosCuatro: '0',
                     testigosExtraidosTotal: '0',
@@ -983,13 +988,13 @@
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     fonoObra: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     direccionObra: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     encargadoObra: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     muestreoDe: [
                         { required: true, message: '', trigger: 'change' }
@@ -1030,6 +1035,9 @@
                     tipoMuestra: [
                         { required: true, message: '', trigger: 'change' }
                     ],
+                    seccionTestigosHabilitada: [
+                        { required: false, message: '', trigger: 'change' }
+                    ],
                     amasadaHormigon: [
                         { required: true, message: '', trigger: 'blur' }
                     ],
@@ -1055,7 +1063,7 @@
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     horaInicioAmasado: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     tAmbiente: [
                         { required: true, message: '', trigger: 'blur' }
@@ -1091,10 +1099,10 @@
                         { required: true, message: '', trigger: 'blur' }
                     ],
                     aditivo: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     numMixer: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     retiroMuestraCantidadUnDia: [
                         { required: true, message: '', trigger: 'blur' }
@@ -1190,7 +1198,7 @@
                         { required: true, message: '', trigger: 'change' }
                     ],
                     responsableEnObra: [
-                        { required: true, message: '', trigger: 'blur' }
+                        { required: false, message: '', trigger: 'blur' }
                     ],
                     fechaIngreso: [
                         { required: true, message: '', trigger: 'change' }
