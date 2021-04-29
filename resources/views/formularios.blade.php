@@ -1,6 +1,5 @@
-
-
 @extends ('master')
+
 @section('content')
 <div id="formularios">
     <dashboard-formularios
