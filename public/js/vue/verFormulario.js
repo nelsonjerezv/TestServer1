@@ -96137,6 +96137,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -96196,7 +96201,7 @@ var moment = __webpack_require__(0);
                 ubicacionElemento: '',
                 tipoHormigonMortero: '',
                 resistenciaEspecificada: '',
-                fechaConfeccion: '',
+                fechaConfeccion: new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()),
                 aditivo: '',
                 numMixer: '',
                 trasladoProbetas: '',
@@ -96244,7 +96249,7 @@ var moment = __webpack_require__(0);
                 seccionTestigosHabilitada: false,
                 seccionAridosHabilitada: false,
                 seccionOtrosHabilitada: false,
-                seccionRetiroMuestrasHabilitada: '',
+                seccionRetiroMuestrasHabilitada: false,
                 testigosExtraidosSeis: '0',
                 testigosExtraidosCuatro: '0',
                 testigosExtraidosTotal: '0',
@@ -96258,9 +96263,9 @@ var moment = __webpack_require__(0);
                 numIngreso: [{ required: true, message: '', trigger: 'blur' }],
                 nombreCliente: [{ required: true, message: '', trigger: 'blur' }],
                 nombreObra: [{ required: true, message: '', trigger: 'blur' }],
-                fonoObra: [{ required: true, message: '', trigger: 'blur' }],
+                fonoObra: [{ required: false, message: '', trigger: 'blur' }],
                 direccionObra: [{ required: true, message: '', trigger: 'blur' }],
-                encargadoObra: [{ required: true, message: '', trigger: 'blur' }],
+                encargadoObra: [{ required: false, message: '', trigger: 'blur' }],
                 muestreoDe: [{ required: true, message: '', trigger: 'change' }],
                 extraccion: [{ required: true, message: '', trigger: 'change' }],
                 compactacion: [{ required: true, message: '', trigger: 'change' }],
@@ -96274,6 +96279,7 @@ var moment = __webpack_require__(0);
                 muestreadoPor: [{ required: true, message: '', trigger: 'change' }],
                 ensayadoPor: [{ required: true, message: '', trigger: 'change' }],
                 tipoMuestra: [{ required: true, message: '', trigger: 'change' }],
+                seccionTestigosHabilitada: [{ required: false, message: '', trigger: 'change' }],
                 amasadaHormigon: [{ required: true, message: '', trigger: 'blur' }],
                 asentamientoCono: [{ required: true, message: '', trigger: 'blur' }],
                 numInforme: [{ required: true, message: '', trigger: 'blur' }],
@@ -96282,7 +96288,7 @@ var moment = __webpack_require__(0);
                 numVibradorInmersion: [{ required: true, message: '', trigger: 'blur' }],
                 numEquipoConoReducido: [{ required: true, message: '', trigger: 'blur' }],
                 horaMuestreo: [{ required: true, message: '', trigger: 'blur' }],
-                horaInicioAmasado: [{ required: true, message: '', trigger: 'blur' }],
+                horaInicioAmasado: [{ required: false, message: '', trigger: 'blur' }],
                 tAmbiente: [{ required: true, message: '', trigger: 'blur' }],
                 tHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
                 proveedor: [{ required: true, message: '', trigger: 'blur' }],
@@ -96294,8 +96300,8 @@ var moment = __webpack_require__(0);
                 tipoHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
                 resistenciaEspecificada: [{ required: true, message: '', trigger: 'blur' }],
                 fechaConfeccion: [{ required: true, message: '', trigger: 'blur' }],
-                aditivo: [{ required: true, message: '', trigger: 'blur' }],
-                numMixer: [{ required: true, message: '', trigger: 'blur' }],
+                aditivo: [{ required: false, message: '', trigger: 'blur' }],
+                numMixer: [{ required: false, message: '', trigger: 'blur' }],
                 retiroMuestraCantidadUnDia: [{ required: true, message: '', trigger: 'blur' }],
                 retiroMuestraFechaUnDia: [{ required: true, message: '', trigger: 'change' }],
                 retiroMuestraInformeUnDia: [{ required: true, message: '', trigger: 'blur' }],
@@ -96327,7 +96333,7 @@ var moment = __webpack_require__(0);
                 irregularidadSuperficial: [{ required: true, message: '', trigger: 'change' }],
                 irregularidadSuperficialMl: [{ required: true, message: '', trigger: 'blur' }],
                 muestraIngresadaPorCliente: [{ required: true, message: '', trigger: 'change' }],
-                responsableEnObra: [{ required: true, message: '', trigger: 'blur' }],
+                responsableEnObra: [{ required: false, message: '', trigger: 'blur' }],
                 fechaIngreso: [{ required: true, message: '', trigger: 'change' }],
                 fechaVisitaObra: [{ required: true, message: '', trigger: 'change' }],
                 horaLlegada: [{ required: true, message: '', trigger: 'change' }],
@@ -97135,6 +97141,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionTestigosHabilitada,
                             callback: function($$v) {
@@ -97147,7 +97159,7 @@ var render = function() {
                             expression: "form.seccionTestigosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Testigos")]
+                        [_vm._v("\n                    Sección Testigos")]
                       )
                     ],
                     1
@@ -97170,6 +97182,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionAridosHabilitada,
                             callback: function($$v) {
@@ -97178,7 +97196,7 @@ var render = function() {
                             expression: "form.seccionAridosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Áridos")]
+                        [_vm._v("\n                        Sección Áridos")]
                       )
                     ],
                     1
@@ -97201,6 +97219,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionRetiroMuestrasHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionOtrosHabilitada,
                             callback: function($$v) {
@@ -97209,7 +97233,7 @@ var render = function() {
                             expression: "form.seccionOtrosHabilitada"
                           }
                         },
-                        [_vm._v("Sección Otros")]
+                        [_vm._v("\n                        Sección Otros")]
                       )
                     ],
                     1
@@ -97232,6 +97256,12 @@ var render = function() {
                       _c(
                         "el-checkbox",
                         {
+                          attrs: {
+                            disabled:
+                              _vm.form.seccionTestigosHabilitada ||
+                              _vm.form.seccionAridosHabilitada ||
+                              _vm.form.seccionOtrosHabilitada
+                          },
                           model: {
                             value: _vm.form.seccionRetiroMuestrasHabilitada,
                             callback: function($$v) {
@@ -97244,7 +97274,11 @@ var render = function() {
                             expression: "form.seccionRetiroMuestrasHabilitada"
                           }
                         },
-                        [_vm._v("Sección Retiro de Muestras")]
+                        [
+                          _vm._v(
+                            "\n                        Sección Retiro de Muestras"
+                          )
+                        ]
                       )
                     ],
                     1
