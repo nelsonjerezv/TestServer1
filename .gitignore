@@ -1,8 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
-/public/js/*
-/public/
+/public/js/vue/*
 /public/json
 /storage/*.key
 /vendor
