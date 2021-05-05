@@ -225,7 +225,17 @@ class EnsayosHormigonController extends Controller
         return [$result, true];
     }
 
-    public function exportarEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos, $fechaMuestreoManual){
+    public function exportarEnsayoPdf($id,
+                                      $direccionSolicitante,
+                                      $localizacionObra,
+                                      $numProyecto,
+                                      $numCorrelativoInformeObra,
+                                      $numCorrelativoObra,
+                                      $curadoInicial,
+                                      $lugarEnsayos,
+                                      $fechaMuestreoManual,
+                                      $paginaActual,
+                                      $totalPaginas){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
@@ -237,7 +247,10 @@ class EnsayosHormigonController extends Controller
             'curadoInicial' => $curadoInicial,
             'lugarEnsayos' => $lugarEnsayos,
             'fechaMuestreoManual' => $fechaMuestreoManual,
-            'ensayo' => $ensayo
+            'paginaActual' => $paginaActual,
+            'totalPaginas' => $totalPaginas,
+            'ensayo' => $ensayo,
+            'accion' => 'exportar'
         ];
         // dd($orden, $datos);
         $pdf = PDF::loadView('informe_hormigon',  compact('datos', 'orden') )->setOption('dpi', 600);
@@ -283,7 +296,8 @@ class EnsayosHormigonController extends Controller
             'curadoInicial' => $curadoInicial,
             'lugarEnsayos' => $lugarEnsayos,
             'fechaMuestreoManual' => !$fechaMuestreoManual ? '-' : $fechaMuestreoManual,
-            'ensayo' => $ensayo
+            'ensayo' => $ensayo,
+            'accion' => 'ver'
         ];
         // dd($orden, $datos);
 
