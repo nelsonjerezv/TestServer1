@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("5c703696", content, false, {});
+var update = __webpack_require__(20)("291376d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101663,7 +101663,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("90f904da", content, false, {});
+var update = __webpack_require__(20)("7f484553", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101824,7 +101824,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4483b016", content, false, {});
+var update = __webpack_require__(20)("68dc4096", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102227,7 +102227,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("d85e086a", content, false, {});
+var update = __webpack_require__(20)("fcb698ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102394,7 +102394,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ac06352", content, false, {});
+var update = __webpack_require__(20)("db36d3d2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102921,7 +102921,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("565ee958", content, false, {});
+var update = __webpack_require__(20)("c52968d8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110152,7 +110152,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("26089aab", content, false, {});
+var update = __webpack_require__(20)("18ff1aeb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110319,7 +110319,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("66e7f8b4", content, false, {});
+var update = __webpack_require__(20)("7b5963e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110776,7 +110776,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("f9988668", content, false, {});
+var update = __webpack_require__(20)("6ce5948c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110943,7 +110943,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("09c84c24", content, false, {});
+var update = __webpack_require__(20)("4e6333e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -111046,103 +111046,159 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['itemLista'],
-    data: function data() {
-        return {
-            item: '',
-            numeroOtt: '',
-            urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
-            urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
-            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf',
-            urlExportarEnsayoExcel: GLOBAL.URL + 'ensayos/exportar-ensayo-excel',
-            direccionSolicitante: 'Dirección Solicitante',
-            localizacionObra: 'localizacion obra',
-            numProyecto: 'numero de proyecto',
-            numCorrelativoInformeObra: 'n° corelativo informe obra',
-            numCorrelativoObra: 'n° corelativo obra',
-            curadoInicial: 'Piscina de Curado',
-            lugarEnsayos: 'Laboratorio LACEM',
-            fechaMuestreoManual: '',
-            dialogVisible: false
-        };
+  props: ["itemLista"],
+  data: function data() {
+    return {
+      item: "",
+      numeroOtt: "",
+      urlEliminarEnsayo: GLOBAL.URL + "ensayos/eliminar-ensayo",
+      urlEditarEnsayo: GLOBAL.URL + "ensayos/editar-ensayo",
+      urlExportarEnsayoPdf: GLOBAL.URL + "ensayos/exportar-ensayo-pdf",
+      urlExportarEnsayoExcel: GLOBAL.URL + "ensayos/exportar-ensayo-excel",
+      direccionSolicitante: "Dirección Solicitante",
+      localizacionObra: "localizacion obra",
+      numProyecto: "numero de proyecto",
+      numCorrelativoInformeObra: "n° corelativo informe obra",
+      numCorrelativoObra: "n° corelativo obra",
+      curadoInicial: "Piscina de Curado",
+      lugarEnsayos: "Laboratorio LACEM",
+      fechaMuestreoManual: "",
+      paginaActual: "1",
+      totalPaginas: "1",
+      dialogVisible: false
+    };
+  },
+  mounted: function mounted() {
+    this.item = this.itemLista;
+    this.numeroOtt = this.item.ott.num_ott;
+    console.log("item.muestreadoPor", this.item);
+  },
+
+  methods: {
+    eliminarEnsayo: function eliminarEnsayo() {
+      var _this = this;
+
+      this.$http.post(this.urlEliminarEnsayo, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     },
-    mounted: function mounted() {
-        this.item = this.itemLista;
-        this.numeroOtt = this.item.ott.num_ott;
-        console.log('item.muestreadoPor', this.item);
+    editarEnsayo: function editarEnsayo() {
+      // this.$http.get(this.urlEditarFormulario,{
+      //     id: this.item.id
+      // });
+      console.log("editar ensayo");
     },
+    exportarPDF: function exportarPDF() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial,
+        fechaMuestreoManual: this.fechaMuestreoManual
+      };
 
-    methods: {
-        eliminarEnsayo: function eliminarEnsayo() {
-            var _this = this;
+      var fecha = this.fechaMuestreoManual == "" ? "-" : this.fechaMuestreoManual;
 
-            this.$http.post(this.urlEliminarEnsayo, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        editarEnsayo: function editarEnsayo() {
-            // this.$http.get(this.urlEditarFormulario,{
-            //     id: this.item.id
-            // });
-            console.log('editar ensayo');
-        },
-        exportarPDF: function exportarPDF() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial,
-                fechaMuestreoManual: this.fechaMuestreoManual
-            };
-
-            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
-
-            var url = this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
-            console.log('exportarPDF', url);
-            window.open(url, '_blank');
-        },
-        exportarExcel: function exportarExcel() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial
-            };
-            window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
-            console.log('exportarExcel');
-        },
-        handleClose: function handleClose(done) {
-            done().catch(function (_) {});
-        },
-        handleInner: function handleInner(done) {
-            this.$confirm('Pendiente').then(function (_) {
-                done();
-            }).catch(function (_) {});
-        }
+      var url = this.urlExportarEnsayoPdf + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos + "/" + fecha + "/" + this.paginaActual + "/" + this.totalPaginas;
+      console.log("exportarPDF", url);
+      window.open(url, "_blank");
     },
-    computed: {
-        rutaVerInforme: function rutaVerInforme() {
-            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
-            var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
-
-            return ruta;
-        }
+    exportarExcel: function exportarExcel() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial
+      };
+      window.open(this.urlExportarEnsayoExcel + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos, "_blank");
+      console.log("exportarExcel");
+    },
+    handleClose: function handleClose(done) {
+      done();
+      // .catch(_ => {});
+    },
+    handleInner: function handleInner(done) {
+      this.$confirm("Pendiente").then(function (_) {
+        done();
+      });
+      // .catch(_ => {});
     }
+  },
+  computed: {
+    rutaVerInforme: function rutaVerInforme() {
+      var fecha = this.fechaMuestreoManual == "" ? "-" : this.fechaMuestreoManual;
+      var ruta = "" + GLOBAL.URL + "/ensayos/ver-ensayo-pdf/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos + "/" + fecha;
+
+      return ruta;
+    }
+  }
 });
 
 /***/ }),
@@ -111251,7 +111307,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Dirección Solicitante:     "),
+                  _vm._v("\n          Dirección Solicitante:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111270,7 +111326,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Localización Obra:         "),
+                  _vm._v("\n          Localización Obra:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111289,7 +111345,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Proyecto N°:                      "),
+                  _vm._v("\n          Proyecto N°:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111308,7 +111364,9 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Nº Correlativo de informe obra:   "),
+                  _vm._v(
+                    "\n          Nº Correlativo de informe obra:\n          "
+                  ),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111327,7 +111385,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Nº Correlativo de obra:           "),
+                  _vm._v("\n          Nº Correlativo de obra:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111346,7 +111404,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Curado inicial:                   "),
+                  _vm._v("\n          Curado inicial:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111365,7 +111423,9 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Lugar de realización de ensayos: "),
+                  _vm._v(
+                    "\n          Lugar de realización de ensayos:\n          "
+                  ),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111374,6 +111434,46 @@ var render = function() {
                         _vm.lugarEnsayos = $$v
                       },
                       expression: "lugarEnsayos"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v(
+                    "\n          Número de página de este informe:\n          "
+                  ),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.paginaActual,
+                      callback: function($$v) {
+                        _vm.paginaActual = $$v
+                      },
+                      expression: "paginaActual"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("\n          Número de páginas total:\n          "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.totalPaginas,
+                      callback: function($$v) {
+                        _vm.totalPaginas = $$v
+                      },
+                      expression: "totalPaginas"
                     }
                   })
                 ],
