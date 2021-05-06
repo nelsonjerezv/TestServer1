@@ -20,7 +20,9 @@
             :src="rutaVerInforme"
           ></iframe>
           <span slot="footer" class="dialog-footer">
-            <el-button @click="dialogVisible = false" plain>Volver</el-button>
+            <el-button @click="dialogVisible = false" plain
+              >Cerrar visualizaci&oacute;n</el-button
+            >
             <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
           </span>
         </el-dialog>
@@ -74,6 +76,18 @@
           <div class="una-linea">
             N&uacute;mero de p&aacute;ginas total:
             <el-input placeholder="" size="mini" v-model="totalPaginas" />
+          </div>
+          <div class="una-linea">
+            Persona que firma:
+            <el-input placeholder="" size="mini" v-model="firmador" />
+          </div>
+          <div class="una-linea">
+            Profeci&0acute;n de quien firma:
+            <el-input placeholder="" size="mini" v-model="profesionFirmador" />
+          </div>
+          <div class="una-linea">
+            Cargo de quien firma:
+            <el-input placeholder="" size="mini" v-model="cargoFirmador" />
           </div>
           <!-- <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
                                                                                                    <el-date-picker
@@ -140,6 +154,9 @@ export default {
       fechaMuestreoManual: "",
       paginaActual: "1",
       totalPaginas: "1",
+      firmador: "CRISTIAN ALARCON BRAVO",
+      profesionFirmador: "Ingeniero Civil U.C.",
+      cargoFirmador: "Jefe Área Hormigones",
       dialogVisible: false,
     };
   },
@@ -218,7 +235,13 @@ export default {
         "/" +
         this.paginaActual +
         "/" +
-        this.totalPaginas;
+        this.totalPaginas +
+        "/" +
+        this.firmador +
+        "/" +
+        this.profesionFirmador +
+        "/" +
+        this.cargoFirmador;
       console.log("exportarPDF", url);
       window.open(url, "_blank");
     },
@@ -288,7 +311,13 @@ export default {
         "/" +
         this.lugarEnsayos +
         "/" +
-        fecha;
+        fecha +
+        "/" +
+        "quien firma" +
+        "/" +
+        "profesion de quien firma" +
+        "/" +
+        "cargo de quien firma";
 
       return ruta;
     },

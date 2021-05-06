@@ -155,9 +155,9 @@
       <tr>
         <td rowspan="10">
           @if ($datos->{'accion'} == 'ver')
-            <img src="/images/logoLacemVer1.jpg" style="position: absolute;">
+            <img src="/images/logoLacemVer2.png" style="position: absolute;     width: 292px;">
           @else
-            <img src="{{public_path('\images\logoLacemVer1.jpg')}}" style="position: absolute;">
+            <img src="{{public_path('\images\logoLacemVer2.png')}}" style="position: absolute;     width: 292px;">
           @endif
         </td>
       </tr>
@@ -171,7 +171,7 @@
       </tr>
       <tr>
         <td class="titulo izquierda">Fecha de emision</td>
-        <td class="titulo derecha">{{date("Y-m-d")}}</td>
+        <td class="titulo derecha">{{date("d.m.Y")}}</td>
       </tr>
       <tr>
         <td class="titulo izquierda">Pagina</td>
@@ -468,7 +468,7 @@
         <td class="tg-amwm bleft centro">2</td>
         <td class="tg-amwm bleft centro">3</td>
         <td class="tg-amwm bleft centro">4</td>
-        <td class="tg-amwm bleft centro">---</td>
+        <td class="tg-amwm bleft centro">5</td>
       </tr>
       <tr>
         <td class="tg-0pky">EDAD</td>
@@ -499,7 +499,7 @@
       </tr>
       <tr>
         <td class="tg-0pky">DENSIDAD (*)</td>
-        <td class="tg-0pky">(Kg/m3)</td>
+        <td class="tg-0pky">(Kg/m<sup>3</sup>)</td>
         <td class="tg-c3ow bleft centro">{{ $datos->{'ensayo'}->{'densidad_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_uno'} }}</td>
         <td class="tg-c3ow bleft centro">{{ $datos->{'ensayo'}->{'densidad_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_dos'} }}</td>
         <td class="tg-c3ow bleft centro">{{ $datos->{'ensayo'}->{'densidad_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'densidad_muestra_tres'} }}</td>
@@ -508,7 +508,7 @@
       </tr>
       <tr>
         <td class="tg-0lax">SECCION DE ENSAYO</td>
-        <td class="tg-0lax">(mm2)</td>
+        <td class="tg-0lax">(mm<sup>2</sup>)</td>
         <td class="tg-baqh bleft centro">{{ $datos->{'ensayo'}->{'area_muestra_uno'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_uno'} }}</td>
         <td class="tg-baqh bleft centro">{{ $datos->{'ensayo'}->{'area_muestra_dos'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_dos'} }}</td>
         <td class="tg-baqh bleft centro">{{ $datos->{'ensayo'}->{'area_muestra_tres'} === "" ? "---" : $datos->{'ensayo'}->{'area_muestra_tres'} }}</td>
@@ -536,19 +536,19 @@
       <tr>
         <td class="tg-0lax">RESISTENCIA CUBICA 15x15</td>
         <td class="tg-0lax">(MPa)</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_uno'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_dos'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_tres'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_uno'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_dos'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_tres'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
       </tr>
       <tr>
         <td class="tg-0lax">RESISTENCIA CUBICA 20x20 CONVERTIDA</td>
         <td class="tg-0lax">(MPa)</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_uno'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_dos'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_tres'} }} --}}</td>
-        <td class="tg-baqh bleft centro">*{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_uno'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_dos'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_tres'} }} --}}</td>
+        <td class="tg-baqh bleft centro">---{{-- {{ $datos->{'ensayo'}->{'muestra_cuatro'} }} --}}</td>
         <td class="tg-baqh bleft centro">---</td>
       </tr>
     </tbody>
@@ -562,15 +562,20 @@
 </tbody>
 </table></div>
 {{-- tabla 7 --}}
-<div class="tg-wrap"><table class="tg">
-<tbody>
-  <tr>
-    <td class="tg-1wig">OBSERVACIONES :</td>
-    <td class="tg-cly1 width-100" colspan="9">{{ $datos->{'ensayo'}->{'observaciones'} }}</td>
-    <td class="tg-cly1" colspan="10">(*) Densidad calculada según NCh 1037, pto.&nbsp;&nbsp;&nbsp;6.2.1</td>
-  </tr>
-</tbody>
-</table></div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td class="tg-1wig titulo" colspan="2">OBSERVACIONES:</td>
+        <td class="tg-cly1 width-100" colspan="8">(*) Densidad calculada según NCh 1037, pto.&nbsp;&nbsp;&nbsp;6.2.1</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig" colspan="2"></td>
+        <td class="tg-cly1" colspan="10">{{ $datos->{'ensayo'}->{'observaciones'} }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div class="tg-wrap"><table class="tg">
 <tbody>
   <tr>
@@ -578,28 +583,84 @@
   </tr>
 </tbody>
 </table></div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 {{-- tabla 8 --}}
 <div class="tg-wrap"><table class="tg">
 <tbody>
   <tr>
     <td class="tg-1wig" colspan="5" rowspan="3" style="width: 50%;text-align: center;">&nbsp;</td>
-    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">CRISTIAN ALARCON BRAVO</td>
+    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">{{ $datos->{'firmador'} }}</td>
   </tr>
   <tr>
-    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">Ingeniero Civil U.C.</td>
+    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">{{ $datos->{'profesionFirmador'} }}</td>
   </tr>
   <tr>
-    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">Jefe Area Hormigones</td>
+    <td class="tg-baqh" colspan="5" style="width: 50%;text-align: center;">{{ $datos->{'cargoFirmador'} }}</td>
   </tr>
 </tbody>
 </table></div>
-<div class="tg-wrap"><table class="tg">
-<tbody>
-  <tr>
-    <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
-  </tr>
-</tbody>
-</table></div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="tg-wrap">
+  <table class="tg">
+    <tbody>
+      <tr>
+        <td colspan="10" class="tg-0lax subtitulo izquierda"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 {{-- tabla 9 --}}
 <div class="tg-wrap"><table class="tg">
 <tbody>

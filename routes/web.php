@@ -36,9 +36,9 @@ if (App::environment('production')) {
     Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
     Route::post('/formularios/validar-ensayo', 'EnsayosHormigonController@validarFormulario');
     Route::post('/formularios/rechazar-ensayo', 'EnsayosHormigonController@rechazarFormulario');
-    Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{paginaActual}/{totalPaginas}', 'EnsayosHormigonController@exportarEnsayoPdf');
+    Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{paginaActual}/{totalPaginas}/{firmador}/{profesionFirmador}/{cargoFirmador}', 'EnsayosHormigonController@exportarEnsayoPdf');
     Route::get('/ensayos/exportar-ensayo-excel/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}', 'EnsayosHormigonController@exportarEnsayoExcel');
-    Route::get('/ensayos/ver-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}', 'EnsayosHormigonController@verEnsayoPdf');
+    Route::get('/ensayos/ver-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{firmador}/{profesionFirmador}/{cargoFirmador}', 'EnsayosHormigonController@verEnsayoPdf');
     Route::get('/ensayos/buscar-ott/{busqueda}', 'EnsayosHormigonController@buscarOtt');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
     Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
