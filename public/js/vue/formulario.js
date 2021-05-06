@@ -102481,102 +102481,141 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['itemLista'],
-    data: function data() {
-        return {
-            item: '',
-            urlEliminarFormulario: GLOBAL.URL + 'formularios/eliminar-formulario',
-            urlEditarFormulario: GLOBAL.URL + 'formularios/editar-formulario',
-            urlValidarFormulario: '' + GLOBAL.URL + '/formularios/validar-ott',
-            urlRechazarFormulario: '' + GLOBAL.URL + '/formularios/rechazar-ott',
-            dialogVisible: false,
-            dialogVerVisible: false,
-            dialogEditarVisible: false
+  props: ["itemLista"],
+  data: function data() {
+    return {
+      item: "",
+      urlEliminarFormulario: GLOBAL.URL + "formularios/eliminar-formulario",
+      urlEditarFormulario: GLOBAL.URL + "formularios/editar-formulario",
+      urlValidarFormulario: "" + GLOBAL.URL + "/formularios/validar-ott",
+      urlRechazarFormulario: "" + GLOBAL.URL + "/formularios/rechazar-ott",
+      dialogVisible: false,
+      dialogVerVisible: false,
+      dialogEditarVisible: false
+    };
+  },
+  mounted: function mounted() {
+    this.item = this.itemLista;
+    console.log("itemlistaformularios mounted", this.item.id, this.item);
+  },
 
-        };
+  methods: {
+    eliminarFormulario: function eliminarFormulario() {
+      var _this = this;
+
+      this.$http.post(this.urlEliminarFormulario, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     },
-    mounted: function mounted() {
-        this.item = this.itemLista;
-        console.log('itemlistaformularios mounted', this.item.id, this.item);
+    verFormulario: function verFormulario() {
+      // this.$http.get(this.urlEditarFormulario,{
+      //     id: this.item.id
+      // });
+      console.log("ver formulario");
     },
-
-    methods: {
-        eliminarFormulario: function eliminarFormulario() {
-            var _this = this;
-
-            this.$http.post(this.urlEliminarFormulario, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        verFormulario: function verFormulario() {
-            // this.$http.get(this.urlEditarFormulario,{
-            //     id: this.item.id
-            // });
-            console.log('ver formulario');
-        },
-        editarFormulario: function editarFormulario() {
-            // this.$http.get(this.urlEditarFormulario,{
-            //     id: this.item.id
-            // });
-            console.log('editar formulario');
-        },
-        handleInner: function handleInner(done) {
-            this.$confirm('Pendiente').then(function (_) {
-                done();
-            }).catch(function (_) {});
-        },
-        validarOtt: function validarOtt() {
-            var _this2 = this;
-
-            this.$http.post(this.urlValidarFormulario, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this2.dialogVerVisible = false;
-                _this2.dialogEditarVisible = false;
-                _this2.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        rechazarOtt: function rechazarOtt() {
-            var _this3 = this;
-
-            this.$http.post(this.urlRechazarFormulario, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this3.dialogVerVisible = false;
-                _this3.dialogEditarVisible = false;
-                _this3.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        }
+    editarFormulario: function editarFormulario() {
+      // this.$http.get(this.urlEditarFormulario,{
+      //     id: this.item.id
+      // });
+      console.log("editar formulario");
     },
-    computed: {
-        rutaVerInforme: function rutaVerInforme() {
-            return this.dialogVerVisible ? '' + GLOBAL.URL + '/formularios/ver-ott/' + this.item.id : '';
-        },
-        rutaEditarInforme: function rutaEditarInforme() {
-            return this.dialogEditarVisible ? '' + GLOBAL.URL + '/formularios/editar-ott/' + this.item.id : '';
-        },
-        rutaValidarInforme: function rutaValidarInforme() {
-            return '' + GLOBAL.URL + '/formularios/validar-ott';
-        },
-        rutaRechazarInforme: function rutaRechazarInforme() {
-            return '' + GLOBAL.URL + '/formularios/rechazar-ott';
-        }
+    handleInner: function handleInner(done) {
+      this.$confirm("Pendiente").then(function (_) {
+        done();
+      }).catch(function (_) {});
+    },
+    validarOtt: function validarOtt() {
+      var _this2 = this;
+
+      this.$http.post(this.urlValidarFormulario, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this2.dialogVerVisible = false;
+        _this2.dialogEditarVisible = false;
+        _this2.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
+    },
+    rechazarOtt: function rechazarOtt() {
+      var _this3 = this;
+
+      this.$http.post(this.urlRechazarFormulario, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this3.dialogVerVisible = false;
+        _this3.dialogEditarVisible = false;
+        _this3.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     }
+  },
+  computed: {
+    rutaVerInforme: function rutaVerInforme() {
+      return this.dialogVerVisible ? "" + GLOBAL.URL + "/formularios/ver-ott/" + this.item.id : "";
+    },
+    rutaEditarInforme: function rutaEditarInforme() {
+      return this.dialogEditarVisible ? "" + GLOBAL.URL + "/formularios/editar-ott/" + this.item.id : "";
+    },
+    rutaValidarInforme: function rutaValidarInforme() {
+      return "" + GLOBAL.URL + "/formularios/validar-ott";
+    },
+    rutaRechazarInforme: function rutaRechazarInforme() {
+      return "" + GLOBAL.URL + "/formularios/rechazar-ott";
+    }
+  }
 });
 
 /***/ }),
@@ -102592,14 +102631,14 @@ var render = function() {
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
           _c("strong", [_vm._v("N° OTT:")]),
-          _vm._v(" " + _vm._s(_vm.item.num_ott))
+          _vm._v(" " + _vm._s(_vm.item.num_ott) + "\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
           _c("strong", [_vm._v("N° Cliente Obra:")]),
-          _vm._v(" " + _vm._s(_vm.item.num_cliente_obra) + "     "),
+          _vm._v(" " + _vm._s(_vm.item.num_cliente_obra) + "  \n          "),
           _c("strong", [_vm._v("Laboratorista:")]),
-          _vm._v(" " + _vm._s(_vm.item.laboratorista))
+          _vm._v(" " + _vm._s(_vm.item.laboratorista) + "\n      ")
         ])
       ]),
       _vm._v(" "),
@@ -102676,7 +102715,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Volver")]
+                    [_vm._v("Cerrar visualización")]
                   )
                 ],
                 1
@@ -102753,7 +102792,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Volver")]
+                    [_vm._v("Cerrar visualización")]
                   )
                 ],
                 1
@@ -110394,114 +110433,137 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['itemLista'],
-    data: function data() {
-        return {
-            item: '',
-            numeroOtt: '',
-            dialogVisible: false,
-            urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
-            urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
-            urlValidarFormulario: '' + GLOBAL.URL + '/formularios/validar-ensayo',
-            urlRechazarFormulario: '' + GLOBAL.URL + '/formularios/rechazar-ensayo',
-            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf'
-        };
+  props: ["itemLista"],
+  data: function data() {
+    return {
+      item: "",
+      numeroOtt: "",
+      dialogVisible: false,
+      urlEliminarEnsayo: GLOBAL.URL + "ensayos/eliminar-ensayo",
+      urlEditarEnsayo: GLOBAL.URL + "ensayos/editar-ensayo",
+      urlValidarFormulario: "" + GLOBAL.URL + "/formularios/validar-ensayo",
+      urlRechazarFormulario: "" + GLOBAL.URL + "/formularios/rechazar-ensayo",
+      urlExportarEnsayoPdf: GLOBAL.URL + "ensayos/exportar-ensayo-pdf"
+    };
+  },
+  mounted: function mounted() {
+    this.item = this.itemLista;
+    this.numeroOtt = this.item.ott.num_ott;
+  },
+
+  methods: {
+    eliminarEnsayo: function eliminarEnsayo() {
+      var _this = this;
+
+      this.$http.post(this.urlEliminarEnsayo, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     },
-    mounted: function mounted() {
-        this.item = this.itemLista;
-        this.numeroOtt = this.item.ott.num_ott;
+    editarEnsayo: function editarEnsayo() {
+      // this.$http.get(this.urlEditarFormulario,{
+      //     id: this.item.id
+      // });
+      console.log("editar ensayo");
     },
-
-    methods: {
-        eliminarEnsayo: function eliminarEnsayo() {
-            var _this = this;
-
-            this.$http.post(this.urlEliminarEnsayo, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        editarEnsayo: function editarEnsayo() {
-            // this.$http.get(this.urlEditarFormulario,{
-            //     id: this.item.id
-            // });
-            console.log('editar ensayo');
-        },
-        exportarPDF: function exportarPDF() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial
-            };
-            window.open(this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
-            console.log('exportarPDF');
-        },
-        exportarExcel: function exportarExcel() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial
-            };
-            window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
-            console.log('exportarExcel');
-        },
-        handleInner: function handleInner(done) {
-            this.$confirm('Pendiente').then(function (_) {
-                done();
-            }).catch(function (_) {});
-        },
-        validarEnsayo: function validarEnsayo() {
-            var _this2 = this;
-
-            this.$http.post(this.urlValidarFormulario, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this2.dialogVerVisible = false;
-                _this2.dialogEditarVisible = false;
-                _this2.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        rechazarEnsayo: function rechazarEnsayo() {
-            var _this3 = this;
-
-            this.$http.post(this.urlRechazarFormulario, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this3.dialogVerVisible = false;
-                _this3.dialogEditarVisible = false;
-                _this3.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        }
+    exportarPDF: function exportarPDF() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial
+      };
+      window.open(this.urlExportarEnsayoPdf + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos, "_blank");
+      console.log("exportarPDF");
     },
-    computed: {
-        rutaVerInforme: function rutaVerInforme() {
-            var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-' + '/' + '-';
+    exportarExcel: function exportarExcel() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial
+      };
+      window.open(this.urlExportarEnsayoExcel + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos, "_blank");
+      console.log("exportarExcel");
+    },
+    handleInner: function handleInner(done) {
+      this.$confirm("Pendiente").then(function (_) {
+        done();
+      }).catch(function (_) {});
+    },
+    validarEnsayo: function validarEnsayo() {
+      var _this2 = this;
 
-            return ruta;
-        }
+      this.$http.post(this.urlValidarFormulario, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo validado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this2.dialogVerVisible = false;
+        _this2.dialogEditarVisible = false;
+        _this2.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo validar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
+    },
+    rechazarEnsayo: function rechazarEnsayo() {
+      var _this3 = this;
+
+      this.$http.post(this.urlRechazarFormulario, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo rechazado exitosamente.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this3.dialogVerVisible = false;
+        _this3.dialogEditarVisible = false;
+        _this3.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo rechazar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     }
+  },
+  computed: {
+    rutaVerInforme: function rutaVerInforme() {
+      var ruta = "" + GLOBAL.URL + "/ensayos/ver-ensayo-pdf/" + this.item.id + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-";
+
+      return ruta;
+    }
+  }
 });
 
 /***/ }),
@@ -110517,14 +110579,14 @@ var render = function() {
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
           _c("strong", [_vm._v("N° Ingreso:")]),
-          _vm._v(" " + _vm._s(_vm.item.num_ingreso))
+          _vm._v(" " + _vm._s(_vm.item.num_ingreso) + "\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
           _c("strong", [_vm._v("N° Ott:")]),
-          _vm._v(" " + _vm._s(_vm.numeroOtt) + "     "),
+          _vm._v(" " + _vm._s(_vm.numeroOtt) + "    \n        "),
           _c("strong", [_vm._v("Ensayado por:")]),
-          _vm._v(" " + _vm._s(_vm.item.ensayado_por))
+          _vm._v(" " + _vm._s(_vm.item.ensayado_por) + "\n      ")
         ])
       ]),
       _vm._v(" "),
@@ -110601,7 +110663,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Volver")]
+                    [_vm._v("Cerrar visualización")]
                   )
                 ],
                 1
@@ -111046,103 +111108,176 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['itemLista'],
-    data: function data() {
-        return {
-            item: '',
-            numeroOtt: '',
-            urlEliminarEnsayo: GLOBAL.URL + 'ensayos/eliminar-ensayo',
-            urlEditarEnsayo: GLOBAL.URL + 'ensayos/editar-ensayo',
-            urlExportarEnsayoPdf: GLOBAL.URL + 'ensayos/exportar-ensayo-pdf',
-            urlExportarEnsayoExcel: GLOBAL.URL + 'ensayos/exportar-ensayo-excel',
-            direccionSolicitante: 'Dirección Solicitante',
-            localizacionObra: 'localizacion obra',
-            numProyecto: 'numero de proyecto',
-            numCorrelativoInformeObra: 'n° corelativo informe obra',
-            numCorrelativoObra: 'n° corelativo obra',
-            curadoInicial: 'Piscina de Curado',
-            lugarEnsayos: 'Laboratorio LACEM',
-            fechaMuestreoManual: '',
-            dialogVisible: false
-        };
+  props: ["itemLista"],
+  data: function data() {
+    return {
+      item: "",
+      numeroOtt: "",
+      urlEliminarEnsayo: GLOBAL.URL + "ensayos/eliminar-ensayo",
+      urlEditarEnsayo: GLOBAL.URL + "ensayos/editar-ensayo",
+      urlExportarEnsayoPdf: GLOBAL.URL + "ensayos/exportar-ensayo-pdf",
+      urlExportarEnsayoExcel: GLOBAL.URL + "ensayos/exportar-ensayo-excel",
+      direccionSolicitante: "Dirección Solicitante",
+      localizacionObra: "localizacion obra",
+      numProyecto: "numero de proyecto",
+      numCorrelativoInformeObra: "n° corelativo informe obra",
+      numCorrelativoObra: "n° corelativo obra",
+      curadoInicial: "Piscina de Curado",
+      lugarEnsayos: "Laboratorio LACEM",
+      fechaMuestreoManual: "",
+      paginaActual: "1",
+      totalPaginas: "1",
+      firmador: "CRISTIAN ALARCON BRAVO",
+      profesionFirmador: "Ingeniero Civil U.C.",
+      cargoFirmador: "Jefe Área Hormigones",
+      dialogVisible: false
+    };
+  },
+  mounted: function mounted() {
+    this.item = this.itemLista;
+    this.numeroOtt = this.item.ott.num_ott;
+    console.log("item.muestreadoPor", this.item);
+  },
+
+  methods: {
+    eliminarEnsayo: function eliminarEnsayo() {
+      var _this = this;
+
+      this.$http.post(this.urlEliminarEnsayo, {
+        id: this.item.id
+      }).then(function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+        _this.$emit("actualizar");
+      }, function (response) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
     },
-    mounted: function mounted() {
-        this.item = this.itemLista;
-        this.numeroOtt = this.item.ott.num_ott;
-        console.log('item.muestreadoPor', this.item);
+    editarEnsayo: function editarEnsayo() {
+      // this.$http.get(this.urlEditarFormulario,{
+      //     id: this.item.id
+      // });
+      console.log("editar ensayo");
     },
+    exportarPDF: function exportarPDF() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial,
+        fechaMuestreoManual: this.fechaMuestreoManual
+      };
 
-    methods: {
-        eliminarEnsayo: function eliminarEnsayo() {
-            var _this = this;
+      var fecha = this.fechaMuestreoManual == "" ? "-" : this.fechaMuestreoManual;
 
-            this.$http.post(this.urlEliminarEnsayo, {
-                id: this.item.id
-            }).then(function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo eliminado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                _this.$emit("actualizar");
-            }, function (response) {
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo eliminar el ensayoo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-        },
-        editarEnsayo: function editarEnsayo() {
-            // this.$http.get(this.urlEditarFormulario,{
-            //     id: this.item.id
-            // });
-            console.log('editar ensayo');
-        },
-        exportarPDF: function exportarPDF() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial,
-                fechaMuestreoManual: this.fechaMuestreoManual
-            };
-
-            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
-
-            var url = this.urlExportarEnsayoPdf + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
-            console.log('exportarPDF', url);
-            window.open(url, '_blank');
-        },
-        exportarExcel: function exportarExcel() {
-            var data = {
-                id: this.item.id,
-                direccionSolicitante: this.direccionSolicitante,
-                localizacionObra: this.localizacionObra,
-                numProyecto: this.numProyecto,
-                numCorrelativoInformeObra: this.numCorrelativoInformeObra,
-                numCorrelativoObra: this.numCorrelativoObra,
-                curadoInicial: this.curadoInicial
-            };
-            window.open(this.urlExportarEnsayoExcel + '/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos, '_blank');
-            console.log('exportarExcel');
-        },
-        handleClose: function handleClose(done) {
-            done().catch(function (_) {});
-        },
-        handleInner: function handleInner(done) {
-            this.$confirm('Pendiente').then(function (_) {
-                done();
-            }).catch(function (_) {});
-        }
+      var url = this.urlExportarEnsayoPdf + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos + "/" + fecha + "/" + this.paginaActual + "/" + this.totalPaginas + "/" + this.firmador + "/" + this.profesionFirmador + "/" + this.cargoFirmador;
+      console.log("exportarPDF", url);
+      window.open(url, "_blank");
     },
-    computed: {
-        rutaVerInforme: function rutaVerInforme() {
-            var fecha = this.fechaMuestreoManual == '' ? '-' : this.fechaMuestreoManual;
-            var ruta = '' + GLOBAL.URL + '/ensayos/ver-ensayo-pdf/' + this.item.id + '/' + this.direccionSolicitante + '/' + this.localizacionObra + '/' + this.numProyecto + '/' + this.numCorrelativoInformeObra + '/' + this.numCorrelativoObra + '/' + this.curadoInicial + '/' + this.lugarEnsayos + '/' + fecha;
-
-            return ruta;
-        }
+    exportarExcel: function exportarExcel() {
+      var data = {
+        id: this.item.id,
+        direccionSolicitante: this.direccionSolicitante,
+        localizacionObra: this.localizacionObra,
+        numProyecto: this.numProyecto,
+        numCorrelativoInformeObra: this.numCorrelativoInformeObra,
+        numCorrelativoObra: this.numCorrelativoObra,
+        curadoInicial: this.curadoInicial
+      };
+      window.open(this.urlExportarEnsayoExcel + "/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos, "_blank");
+      console.log("exportarExcel");
+    },
+    handleClose: function handleClose(done) {
+      done();
+      // .catch(_ => {});
+    },
+    handleInner: function handleInner(done) {
+      this.$confirm("Pendiente").then(function (_) {
+        done();
+      });
+      // .catch(_ => {});
     }
+  },
+  computed: {
+    rutaVerInforme: function rutaVerInforme() {
+      var fecha = this.fechaMuestreoManual == "" ? "-" : this.fechaMuestreoManual;
+      var ruta = "" + GLOBAL.URL + "/ensayos/ver-ensayo-pdf/" + this.item.id + "/" + this.direccionSolicitante + "/" + this.localizacionObra + "/" + this.numProyecto + "/" + this.numCorrelativoInformeObra + "/" + this.numCorrelativoObra + "/" + this.curadoInicial + "/" + this.lugarEnsayos + "/" + fecha + "/" + "quien firma" + "/" + "profesion de quien firma" + "/" + "cargo de quien firma";
+
+      return ruta;
+    }
+  }
 });
 
 /***/ }),
@@ -111224,7 +111359,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Volver")]
+                    [_vm._v("Cerrar visualización")]
                   )
                 ],
                 1
@@ -111251,7 +111386,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Dirección Solicitante:     "),
+                  _vm._v("\n          Dirección Solicitante:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111270,7 +111405,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Localización Obra:         "),
+                  _vm._v("\n          Localización Obra:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111289,7 +111424,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Proyecto N°:                      "),
+                  _vm._v("\n          Proyecto N°:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111308,7 +111443,9 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Nº Correlativo de informe obra:   "),
+                  _vm._v(
+                    "\n          Nº Correlativo de informe obra:\n          "
+                  ),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111327,7 +111464,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Nº Correlativo de obra:           "),
+                  _vm._v("\n          Nº Correlativo de obra:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111346,7 +111483,7 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Curado inicial:                   "),
+                  _vm._v("\n          Curado inicial:\n          "),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111365,7 +111502,9 @@ var render = function() {
                 "div",
                 { staticClass: "una-linea" },
                 [
-                  _vm._v("Lugar de realización de ensayos: "),
+                  _vm._v(
+                    "\n          Lugar de realización de ensayos:\n          "
+                  ),
                   _c("el-input", {
                     attrs: { placeholder: "", size: "mini" },
                     model: {
@@ -111374,6 +111513,105 @@ var render = function() {
                         _vm.lugarEnsayos = $$v
                       },
                       expression: "lugarEnsayos"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v(
+                    "\n          Número de página de este informe:\n          "
+                  ),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.paginaActual,
+                      callback: function($$v) {
+                        _vm.paginaActual = $$v
+                      },
+                      expression: "paginaActual"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("\n          Número de páginas total:\n          "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.totalPaginas,
+                      callback: function($$v) {
+                        _vm.totalPaginas = $$v
+                      },
+                      expression: "totalPaginas"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("\n          Persona que firma:\n          "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.firmador,
+                      callback: function($$v) {
+                        _vm.firmador = $$v
+                      },
+                      expression: "firmador"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v(
+                    "\n          Profeci&0acute;n de quien firma:\n          "
+                  ),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.profesionFirmador,
+                      callback: function($$v) {
+                        _vm.profesionFirmador = $$v
+                      },
+                      expression: "profesionFirmador"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "una-linea" },
+                [
+                  _vm._v("\n          Cargo de quien firma:\n          "),
+                  _c("el-input", {
+                    attrs: { placeholder: "", size: "mini" },
+                    model: {
+                      value: _vm.cargoFirmador,
+                      callback: function($$v) {
+                        _vm.cargoFirmador = $$v
+                      },
+                      expression: "cargoFirmador"
                     }
                   })
                 ],
