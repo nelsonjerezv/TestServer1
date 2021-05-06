@@ -235,7 +235,10 @@ class EnsayosHormigonController extends Controller
                                       $lugarEnsayos,
                                       $fechaMuestreoManual,
                                       $paginaActual,
-                                      $totalPaginas){
+                                      $totalPaginas,
+                                      $firmador,
+                                      $profesionFirmador,
+                                      $cargoFirmador){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
@@ -249,6 +252,9 @@ class EnsayosHormigonController extends Controller
             'fechaMuestreoManual' => $fechaMuestreoManual,
             'paginaActual' => $paginaActual,
             'totalPaginas' => $totalPaginas,
+            'firmador' => $firmador,
+            'profesionFirmador' => $profesionFirmador,
+            'cargoFirmador' => $cargoFirmador,
             'ensayo' => $ensayo,
             'accion' => 'exportar'
         ];
@@ -284,7 +290,18 @@ class EnsayosHormigonController extends Controller
         // });
     }
 
-    public function verEnsayoPdf($id, $direccionSolicitante, $localizacionObra, $numProyecto, $numCorrelativoInformeObra, $numCorrelativoObra, $curadoInicial, $lugarEnsayos, $fechaMuestreoManual = false){
+    public function verEnsayoPdf($id,
+                                 $direccionSolicitante,
+                                 $localizacionObra,
+                                 $numProyecto,
+                                 $numCorrelativoInformeObra,
+                                 $numCorrelativoObra,
+                                 $curadoInicial,
+                                 $lugarEnsayos,
+                                 $fechaMuestreoManual = false,
+                                 $firmador,
+                                 $profesionFirmador,
+                                 $cargoFirmador){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo['ott'])->first();
         $datos = (object) [
@@ -296,6 +313,9 @@ class EnsayosHormigonController extends Controller
             'curadoInicial' => $curadoInicial,
             'lugarEnsayos' => $lugarEnsayos,
             'fechaMuestreoManual' => !$fechaMuestreoManual ? '-' : $fechaMuestreoManual,
+            'firmador' => $firmador,
+            'profesionFirmador' => $profesionFirmador,
+            'cargoFirmador' => $cargoFirmador,
             'ensayo' => $ensayo,
             'accion' => 'ver'
         ];
