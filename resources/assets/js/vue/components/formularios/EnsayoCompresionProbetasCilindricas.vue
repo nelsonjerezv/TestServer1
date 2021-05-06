@@ -934,7 +934,7 @@
                 <!-- Resistencia compresión (P/S) -->
                 <el-col :span="24">
                     <div class="texto">
-                        Resistencia compresión (P/S) <div class="texto-derecha">(MPa)</div>
+                        Resistencia compresión (P/S) <div class="texto-derecha">(MPa/S)</div>
                     </div>
                     <div class="texto-muestras">
                         <el-form-item prop="errorresistenciaCompresionraUno">

@@ -109029,7 +109029,9 @@ var render = function() {
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
                   _vm._v("\n                    Resistencia compresión (P/S) "),
-                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(MPa/S)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
