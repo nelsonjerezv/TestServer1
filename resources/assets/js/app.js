@@ -21,6 +21,12 @@ import locale from 'element-ui/lib/locale/lang/es';
 
 Vue.use(Element, {locale});
 
+
+/**
+ *Genera error componente-prueba
+ **/
+
+/**
 var prueba = new Vue({
     el: '#componente-prueba',
     components: {
@@ -32,3 +38,4 @@ var prueba = new Vue({
         }
     }
 });
+**/

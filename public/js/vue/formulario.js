@@ -101944,26 +101944,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
         },
         listadoOTTsPorValidar: function listadoOTTsPorValidar() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'porvalidar' });
         },
         listadoOTTsValidadas: function listadoOTTsValidadas() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'validadas' });
         },
         nuevoEnsayo: function nuevoEnsayo() {
             this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
         },
         listadoEnsayos: function listadoEnsayos() {
+            //esta cometariado
             //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
         },
         listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
         },
         listadoEnsayosValidos: function listadoEnsayosValidos() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
