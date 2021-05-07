@@ -82,26 +82,27 @@
                 this.$emit("cambiaMain", {vista: "OrdenTrabajoTerreno", condicion:'nueva'});
             },
             listadoOTTsPorValidar() {
-                this.inicio();
+                //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:'porvalidar'});
             },
             listadoOTTsValidadas() {
-                this.inicio();
+                //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoFormularios", condicion:'validadas'});
             },
             nuevoEnsayo() {
                 this.$emit("cambiaMain", {vista: "EnsayoCompresionProbetasCilindricas", condicion:'nueva'});
             },
             listadoEnsayos() {
+                //esta cometariado
                 //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:''});
             },
             listadoEnsayosPorValidar() {
-                this.inicio();
+                //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:'porvalidar'});
             },
             listadoEnsayosValidos() {
-                this.inicio();
+                //this.inicio();
                 this.$emit("cambiaMain", {vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion:'validadas'});
             },
             exportaEnsayos() {

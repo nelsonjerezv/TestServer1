@@ -106818,15 +106818,23 @@ window.Vue = __webpack_require__(3);
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_1_element_ui___default.a, { locale: __WEBPACK_IMPORTED_MODULE_2_element_ui_lib_locale_lang_es___default.a });
 
+/**
+ *Genera error componente-prueba
+ **/
+
+/**
 var prueba = new Vue({
     el: '#componente-prueba',
     components: {
-        componentePrueba: __WEBPACK_IMPORTED_MODULE_0__vue_components_ExampleComponent_vue___default.a
+        componentePrueba
     },
-    data: function data() {
-        return {};
+    data() {
+        return {
+            
+        }
     }
 });
+**/
 
 /***/ }),
 /* 403 */
