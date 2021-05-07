@@ -4,7 +4,7 @@
       <h1>Buscar Ensayos</h1>
       <el-input
         class="width-100"
-        placeholder="Filtre por N° Muestra"
+        placeholder="Filtre por N° Ott, N° Muestra, N° Informe o quien realizó el ensayo"
         v-model="buscador"
       ></el-input>
     </div>
@@ -60,9 +60,13 @@ export default {
     filtraEnsayos() {
       this.ensayosHormigon = this.todosLosEnsayos.filter(
         (ensayo) =>
-          ensayo.ott.toString().includes(this.buscador) ||
-          ensayo.num_ingreso.toString().includes(this.buscador) ||
-          ensayo.num_informe.includes(this.buscador)
+          ensayo.ott.num_ott.toString().includes(this.buscador.toLowerCase()) ||
+          ensayo.num_ingreso.toString().includes(this.buscador.toLowerCase()) ||
+          ensayo.num_informe.toString().includes(this.buscador.toLowerCase()) ||
+          ensayo.ensayado_por
+            .toString()
+            .toLowerCase()
+            .includes(this.buscador.toLowerCase())
       );
     },
   },
