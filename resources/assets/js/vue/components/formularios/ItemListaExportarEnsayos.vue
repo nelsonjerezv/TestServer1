@@ -2,9 +2,13 @@
   <div class="item-lista-formularios">
     <div class="item">
       <div class="atributos">
-        <div class="item-atributo">N° Ingreso: {{ item.num_ingreso }}</div>
-        <div class="item-atributo">N° Ott: {{ numeroOtt }}</div>
-        <div class="item-atributo">Ensayado por: {{ item.ensayado_por }}</div>
+        <div class="item-atributo">
+          <strong>N° Muestra:</strong> {{ item.num_ingreso }}
+        </div>
+        <div class="item-atributo">
+          <strong>N° Ott:</strong> {{ numeroOtt }} &emsp; &emsp;
+          <strong>Ensayado por:</strong> {{ item.ensayado_por }}
+        </div>
       </div>
       <div class="item-contenedor-botones">
         <el-button type="warning" @click="dialogVisible = true" plain
@@ -135,9 +139,9 @@
                     <div class="una-linea"><el-button type="success" @click="exportarExcel" plain>Exportar Excel</el-button></div>
                     <el-button slot="reference" type="success" plain>Exportar a Excel</el-button>
                 </el-popover> -->
-        <el-button type="success" @click="handleInner" plain
-          >Exportar a Excel</el-button
-        >
+        <el-button type="success" @click="handleInner" disabled plain>
+          Exportar a Excel
+        </el-button>
       </div>
     </div>
   </div>
