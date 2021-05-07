@@ -32,72 +32,84 @@
           trigger="click"
           popper-class="datos-informe"
         >
-          <div class="una-linea"><h2>Complete Datos faltantes</h2></div>
           <div class="una-linea">
-            Direcci&oacute;n Solicitante:
-            <el-input
-              placeholder=""
-              size="mini"
-              v-model="direccionSolicitante"
-            />
+            <h3>Complete Datos faltantes</h3>
           </div>
-          <div class="una-linea">
-            Localizaci&oacute;n Obra:
-            <el-input placeholder="" size="mini" v-model="localizacionObra" />
+          <div id="campos-completar-manual">
+            <div class="una-linea">
+              Direcci&oacute;n Solicitante:
+              <el-input
+                placeholder=""
+                size="mini"
+                v-model="direccionSolicitante"
+              />
+            </div>
+            <div class="una-linea">
+              Localizaci&oacute;n Obra:
+              <el-input placeholder="" size="mini" v-model="localizacionObra" />
+            </div>
+            <div class="una-linea">
+              Proyecto N°:
+              <el-input placeholder="" size="mini" v-model="numProyecto" />
+            </div>
+            <div class="una-linea">
+              Nº Correlativo de informe obra:
+              <el-input
+                placeholder=""
+                size="mini"
+                v-model="numCorrelativoInformeObra"
+              />
+            </div>
+            <div class="una-linea">
+              Nº Correlativo de obra:
+              <el-input
+                placeholder=""
+                size="mini"
+                v-model="numCorrelativoObra"
+              />
+            </div>
+            <div class="una-linea">
+              Curado inicial:
+              <el-input placeholder="" size="mini" v-model="curadoInicial" />
+            </div>
+            <div class="una-linea">
+              Lugar de realizaci&oacute;n de ensayos:
+              <el-input placeholder="" size="mini" v-model="lugarEnsayos" />
+            </div>
+            <div class="una-linea">
+              N&uacute;mero de p&aacute;gina de este informe:
+              <el-input placeholder="" size="mini" v-model="paginaActual" />
+            </div>
+            <div class="una-linea">
+              N&uacute;mero de p&aacute;ginas total:
+              <el-input placeholder="" size="mini" v-model="totalPaginas" />
+            </div>
+            <div class="una-linea">
+              Persona que firma:
+              <el-input placeholder="" size="mini" v-model="firmador" />
+            </div>
+            <div class="una-linea">
+              Profesi&oacute;n de quien firma:
+              <el-input
+                placeholder=""
+                size="mini"
+                v-model="profesionFirmador"
+              />
+            </div>
+            <div class="una-linea">
+              Cargo de quien firma:
+              <el-input placeholder="" size="mini" v-model="cargoFirmador" />
+            </div>
+            <!-- <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
+                                                                                                    <el-date-picker
+                                                                                                          v-model="fechaMuestreoManual"
+                                                                                                          type="date"
+                                                                                                          size="mini"
+                                                                                                          format="dd-MM-yyyy"
+                                                                                                          value-format="dd-MM-yyyy">
+                                                                                                      </el-date-picker>
+                      </div> -->
           </div>
-          <div class="una-linea">
-            Proyecto N°:
-            <el-input placeholder="" size="mini" v-model="numProyecto" />
-          </div>
-          <div class="una-linea">
-            Nº Correlativo de informe obra:
-            <el-input
-              placeholder=""
-              size="mini"
-              v-model="numCorrelativoInformeObra"
-            />
-          </div>
-          <div class="una-linea">
-            Nº Correlativo de obra:
-            <el-input placeholder="" size="mini" v-model="numCorrelativoObra" />
-          </div>
-          <div class="una-linea">
-            Curado inicial:
-            <el-input placeholder="" size="mini" v-model="curadoInicial" />
-          </div>
-          <div class="una-linea">
-            Lugar de realizaci&oacute;n de ensayos:
-            <el-input placeholder="" size="mini" v-model="lugarEnsayos" />
-          </div>
-          <div class="una-linea">
-            N&uacute;mero de p&aacute;gina de este informe:
-            <el-input placeholder="" size="mini" v-model="paginaActual" />
-          </div>
-          <div class="una-linea">
-            N&uacute;mero de p&aacute;ginas total:
-            <el-input placeholder="" size="mini" v-model="totalPaginas" />
-          </div>
-          <div class="una-linea">
-            Persona que firma:
-            <el-input placeholder="" size="mini" v-model="firmador" />
-          </div>
-          <div class="una-linea">
-            Profeci&0acute;n de quien firma:
-            <el-input placeholder="" size="mini" v-model="profesionFirmador" />
-          </div>
-          <div class="una-linea">
-            Cargo de quien firma:
-            <el-input placeholder="" size="mini" v-model="cargoFirmador" />
-          </div>
-          <!-- <div class="una-linea" v-if="item.ott.muestreado_por.toUpperCase() != 'LACEM'">Fecha de muestreo:
-                                                                                                   <el-date-picker
-                                                                                                        v-model="fechaMuestreoManual"
-                                                                                                        type="date"
-                                                                                                        size="mini"
-                                                                                                        format="dd-MM-yyyy"
-                                                                                                        value-format="dd-MM-yyyy">
-                                                                                                    </el-date-picker>
-                    </div> -->
           <div class="una-linea">
             <el-button type="primary" @click="exportarPDF" plain
               >Exportar Informe</el-button
@@ -326,6 +338,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#campos-completar-manual {
+  height: 28em;
+  overflow: auto;
+}
 .una-linea {
   white-space: nowrap;
   display: flex;
