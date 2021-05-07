@@ -95247,7 +95247,7 @@ var content = __webpack_require__(312);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("5c703696", content, false, {});
+var update = __webpack_require__(20)("291376d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101663,7 +101663,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("90f904da", content, false, {});
+var update = __webpack_require__(20)("7f484553", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101824,7 +101824,7 @@ var content = __webpack_require__(355);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("4483b016", content, false, {});
+var update = __webpack_require__(20)("68dc4096", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -101944,26 +101944,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
         },
         listadoOTTsPorValidar: function listadoOTTsPorValidar() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'porvalidar' });
         },
         listadoOTTsValidadas: function listadoOTTsValidadas() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'validadas' });
         },
         nuevoEnsayo: function nuevoEnsayo() {
             this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
         },
         listadoEnsayos: function listadoEnsayos() {
+            //esta cometariado
             //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
         },
         listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
         },
         listadoEnsayosValidos: function listadoEnsayosValidos() {
-            this.inicio();
+            //this.inicio();
             this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
         },
         exportaEnsayos: function exportaEnsayos() {
@@ -102227,7 +102228,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("d85e086a", content, false, {});
+var update = __webpack_require__(20)("fcb698ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102251,7 +102252,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  max-height: calc(100% - 128px);\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -102281,55 +102282,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urltodasLasOrdenes: GLOBAL.URL + 'formularios/todas-las-ordenes',
-            ordenesDeTrabajo: '',
-            todasLasOrdenes: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getOrdenes();
-    },
+  components: {
+    ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urltodasLasOrdenes: GLOBAL.URL + "formularios/todas-las-ordenes",
+      ordenesDeTrabajo: "",
+      todasLasOrdenes: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getOrdenes();
+  },
 
-    methods: {
-        getOrdenes: function getOrdenes() {
-            var _this = this;
+  methods: {
+    getOrdenes: function getOrdenes() {
+      var _this = this;
 
-            this.ordenesDeTrabajo = [];
-            this.todasLasOrdenes = [];
-            this.$http.get(this.urltodasLasOrdenes + '/' + this.modo).then(function (response) {
-                _this.todasLasOrdenes = response.body;
-                _this.ordenesDeTrabajo = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraOrdenes: function filtraOrdenes() {
-            var _this2 = this;
-
-            this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
-                return orden.num_cliente_obra.includes(_this2.buscador) || orden.laboratorista.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.id.toString().includes(_this2.buscador);
-            });
-        }
+      this.ordenesDeTrabajo = [];
+      this.todasLasOrdenes = [];
+      this.$http.get(this.urltodasLasOrdenes + "/" + this.modo).then(function (response) {
+        _this.todasLasOrdenes = response.body;
+        _this.ordenesDeTrabajo = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraOrdenes();
-        },
-        modo: function modo() {
-            this.getOrdenes();
-        }
+    filtraOrdenes: function filtraOrdenes() {
+      var _this2 = this;
+
+      this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
+        return orden.num_cliente_obra.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.laboratorista.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.id.toString().includes(_this2.buscador.toLowerCase());
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraOrdenes();
+    },
+    modo: function modo() {
+      this.getOrdenes();
+    }
+  }
 });
 
 /***/ }),
@@ -102394,7 +102399,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("6ac06352", content, false, {});
+var update = __webpack_require__(20)("db36d3d2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -102850,43 +102855,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Listado Órdenes de Trabajo de Terreno")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: {
-            placeholder: "Filtre por N° OTT, N° Cliente Obra o Laboratorista"
-          },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Listado Órdenes de Trabajo de Terreno")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: {
+              placeholder: "Filtre por N° OTT, N° Cliente Obra o Laboratorista"
             },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
-        return _c("item-lista-formularios", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getOrdenes }
-        })
-      }),
-      1
-    )
-  ])
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
+          return _c("item-lista-formularios", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getOrdenes }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -102960,7 +102972,7 @@ var content = __webpack_require__(370);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("565ee958", content, false, {});
+var update = __webpack_require__(20)("c52968d8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -109029,7 +109041,9 @@ var render = function() {
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
                   _vm._v("\n                    Resistencia compresión (P/S) "),
-                  _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
+                  _c("div", { staticClass: "texto-derecha" }, [
+                    _vm._v("(MPa/S)")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c(
@@ -110191,7 +110205,7 @@ var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("26089aab", content, false, {});
+var update = __webpack_require__(20)("18ff1aeb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110215,7 +110229,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  max-height: calc(100% - 128px);\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -110245,55 +110259,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
-            ensayosHormigon: '',
-            todosLosEnsayos: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getEnsayos();
-    },
+  components: {
+    ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urlTodosLosEnsayos: GLOBAL.URL + "ensayos/todos-los-ensayos",
+      ensayosHormigon: "",
+      todosLosEnsayos: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getEnsayos();
+  },
 
-    methods: {
-        getEnsayos: function getEnsayos() {
-            var _this = this;
+  methods: {
+    getEnsayos: function getEnsayos() {
+      var _this = this;
 
-            this.ensayosHormigon = [];
-            this.todosLosEnsayos = [];
-            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
-                _this.todosLosEnsayos = response.body;
-                _this.ensayosHormigon = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraEnsayos: function filtraEnsayos() {
-            var _this2 = this;
-
-            this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
-            });
-        }
+      this.ensayosHormigon = [];
+      this.todosLosEnsayos = [];
+      this.$http.get(this.urlTodosLosEnsayos + "/" + this.modo).then(function (response) {
+        _this.todosLosEnsayos = response.body;
+        _this.ensayosHormigon = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraEnsayos();
-        },
-        modo: function modo() {
-            this.getEnsayos();
-        }
+    filtraEnsayos: function filtraEnsayos() {
+      var _this2 = this;
+
+      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
+        return ensayo.ott.num_ott.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_ingreso.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_informe.toString().includes(_this2.buscador.toLowerCase()) || ensayo.ensayado_por.toString().toLowerCase().includes(_this2.buscador.toLowerCase());
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraEnsayos();
+    },
+    modo: function modo() {
+      this.getEnsayos();
+    }
+  }
 });
 
 /***/ }),
@@ -110358,7 +110376,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("66e7f8b4", content, false, {});
+var update = __webpack_require__(20)("7b5963e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110394,6 +110412,7 @@ exports.push([module.i, "\n.una-linea[data-v-77211b5e] {\n  white-space: nowrap;
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
+//
 //
 //
 //
@@ -110578,8 +110597,10 @@ var render = function() {
     _c("div", { staticClass: "item" }, [
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
-          _c("strong", [_vm._v("N° Ingreso:")]),
-          _vm._v(" " + _vm._s(_vm.item.num_ingreso) + "\n      ")
+          _c("strong", [_vm._v("N° Muestra:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_ingreso) + "    \n        "),
+          _c("strong", [_vm._v("N° Informe:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_informe) + "\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
@@ -110730,41 +110751,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Listado Ensayos Compresión")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: { placeholder: "Filtre por N° Muestra" },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Listado Ensayos Compresión")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: {
+              placeholder:
+                "Filtre por N° Ott, N° Muestra, N° Informe o quien realizó el ensayo"
             },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ensayosHormigon, function(orden, index) {
-        return _c("item-lista-ensayo", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getEnsayos }
-        })
-      }),
-      1
-    )
-  ])
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ensayosHormigon, function(orden, index) {
+          return _c("item-lista-ensayo", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getEnsayos }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -110838,7 +110869,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("f9988668", content, false, {});
+var update = __webpack_require__(20)("6ce5948c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -110862,7 +110893,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -110892,55 +110923,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
-            ensayosHormigon: '',
-            todosLosEnsayos: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getEnsayos();
-    },
+  components: {
+    ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urlTodosLosEnsayos: GLOBAL.URL + "ensayos/todos-los-ensayos",
+      ensayosHormigon: "",
+      todosLosEnsayos: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getEnsayos();
+  },
 
-    methods: {
-        getEnsayos: function getEnsayos() {
-            var _this = this;
+  methods: {
+    getEnsayos: function getEnsayos() {
+      var _this = this;
 
-            this.ensayosHormigon = [];
-            this.todosLosEnsayos = [];
-            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
-                _this.todosLosEnsayos = response.body;
-                _this.ensayosHormigon = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraEnsayos: function filtraEnsayos() {
-            var _this2 = this;
-
-            this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
-            });
-        }
+      this.ensayosHormigon = [];
+      this.todosLosEnsayos = [];
+      this.$http.get(this.urlTodosLosEnsayos + "/" + this.modo).then(function (response) {
+        _this.todosLosEnsayos = response.body;
+        _this.ensayosHormigon = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraEnsayos();
-        },
-        modo: function modo() {
-            this.getEnsayos();
-        }
+    filtraEnsayos: function filtraEnsayos() {
+      var _this2 = this;
+
+      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
+        return ensayo.ott.num_ott.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_ingreso.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_informe.toString().includes(_this2.buscador.toLowerCase()) || ensayo.ensayado_por.toString().toLowerCase().includes(_this2.buscador.toLowerCase());
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraEnsayos();
+    },
+    modo: function modo() {
+      this.getEnsayos();
+    }
+  }
 });
 
 /***/ }),
@@ -111005,7 +111040,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(20)("09c84c24", content, false, {});
+var update = __webpack_require__(20)("4e6333e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -111029,7 +111064,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.una-linea[data-v-ca5f8e66] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-ca5f8e66] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-ca5f8e66] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-ca5f8e66] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-ca5f8e66] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-ca5f8e66] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-ca5f8e66] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-ca5f8e66] {\n  margin-left: 0px;\n}\n[data-v-ca5f8e66] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__header {\n    padding: 0px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__body {\n    height: calc(100% - 60px);\n    padding: 20px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__footer {\n    padding: 0px 20px 20px;\n}\n", ""]);
+exports.push([module.i, "\n#campos-completar-manual[data-v-ca5f8e66] {\n  height: 28em;\n  overflow: auto;\n}\n.una-linea[data-v-ca5f8e66] {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  line-height: 40px;\n  margin-bottom: 6px;\n}\n.una-linea .el-input[data-v-ca5f8e66] {\n    margin-left: 5px;\n}\n.datos-informe[data-v-ca5f8e66] {\n  width: 700px;\n}\n.item-lista-formularios[data-v-ca5f8e66] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background-color: #e4e4e4;\n  line-height: 20px;\n  padding: 10px;\n  border-radius: 15px;\n  border: 1px solid #888787;\n  margin-bottom: 10px;\n}\n.item[data-v-ca5f8e66] {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -moz-text-align-last: left;\n       text-align-last: left;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.item-atributo[data-v-ca5f8e66] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.item-contenedor-botones[data-v-ca5f8e66] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  -moz-text-align-last: end;\n       text-align-last: end;\n}\n.el-button--warning.is-plain[data-v-ca5f8e66] {\n  margin-left: 0px;\n}\n[data-v-ca5f8e66] .el-dialog {\n  width: 90% !important;\n  height: 90% !important;\n  margin: 3% auto !important;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__header {\n    padding: 0px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__body {\n    height: calc(100% - 60px);\n    padding: 20px;\n}\n[data-v-ca5f8e66] .el-dialog .el-dialog__footer {\n    padding: 0px 20px 20px;\n}\n", ""]);
 
 // exports
 
@@ -111041,6 +111076,23 @@ exports.push([module.i, "\n.una-linea[data-v-ca5f8e66] {\n  white-space: nowrap;
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -111292,15 +111344,17 @@ var render = function() {
     _c("div", { staticClass: "item" }, [
       _c("div", { staticClass: "atributos" }, [
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ingreso: " + _vm._s(_vm.item.num_ingreso))
+          _c("strong", [_vm._v("N° Muestra:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_ingreso) + "    \n        "),
+          _c("strong", [_vm._v("N° Informe:")]),
+          _vm._v(" " + _vm._s(_vm.item.num_informe) + "\n      ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("N° Ott: " + _vm._s(_vm.numeroOtt))
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "item-atributo" }, [
-          _vm._v("Ensayado por: " + _vm._s(_vm.item.ensayado_por))
+          _c("strong", [_vm._v("N° Ott:")]),
+          _vm._v(" " + _vm._s(_vm.numeroOtt) + "    \n        "),
+          _c("strong", [_vm._v("Ensayado por:")]),
+          _vm._v(" " + _vm._s(_vm.item.ensayado_por) + "\n      ")
         ])
       ]),
       _vm._v(" "),
@@ -111379,244 +111433,252 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "una-linea" }, [
-                _c("h2", [_vm._v("Complete Datos faltantes")])
+                _c("h3", [_vm._v("Complete Datos faltantes")])
               ]),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Dirección Solicitante:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.direccionSolicitante,
-                      callback: function($$v) {
-                        _vm.direccionSolicitante = $$v
-                      },
-                      expression: "direccionSolicitante"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Localización Obra:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.localizacionObra,
-                      callback: function($$v) {
-                        _vm.localizacionObra = $$v
-                      },
-                      expression: "localizacionObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Proyecto N°:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numProyecto,
-                      callback: function($$v) {
-                        _vm.numProyecto = $$v
-                      },
-                      expression: "numProyecto"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v(
-                    "\n          Nº Correlativo de informe obra:\n          "
-                  ),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoInformeObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoInformeObra = $$v
-                      },
-                      expression: "numCorrelativoInformeObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Nº Correlativo de obra:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.numCorrelativoObra,
-                      callback: function($$v) {
-                        _vm.numCorrelativoObra = $$v
-                      },
-                      expression: "numCorrelativoObra"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Curado inicial:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.curadoInicial,
-                      callback: function($$v) {
-                        _vm.curadoInicial = $$v
-                      },
-                      expression: "curadoInicial"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v(
-                    "\n          Lugar de realización de ensayos:\n          "
-                  ),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.lugarEnsayos,
-                      callback: function($$v) {
-                        _vm.lugarEnsayos = $$v
-                      },
-                      expression: "lugarEnsayos"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v(
-                    "\n          Número de página de este informe:\n          "
-                  ),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.paginaActual,
-                      callback: function($$v) {
-                        _vm.paginaActual = $$v
-                      },
-                      expression: "paginaActual"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Número de páginas total:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.totalPaginas,
-                      callback: function($$v) {
-                        _vm.totalPaginas = $$v
-                      },
-                      expression: "totalPaginas"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Persona que firma:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.firmador,
-                      callback: function($$v) {
-                        _vm.firmador = $$v
-                      },
-                      expression: "firmador"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v(
-                    "\n          Profeci&0acute;n de quien firma:\n          "
-                  ),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.profesionFirmador,
-                      callback: function($$v) {
-                        _vm.profesionFirmador = $$v
-                      },
-                      expression: "profesionFirmador"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "una-linea" },
-                [
-                  _vm._v("\n          Cargo de quien firma:\n          "),
-                  _c("el-input", {
-                    attrs: { placeholder: "", size: "mini" },
-                    model: {
-                      value: _vm.cargoFirmador,
-                      callback: function($$v) {
-                        _vm.cargoFirmador = $$v
-                      },
-                      expression: "cargoFirmador"
-                    }
-                  })
-                ],
-                1
-              ),
+              _c("div", { attrs: { id: "campos-completar-manual" } }, [
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Dirección Solicitante:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.direccionSolicitante,
+                        callback: function($$v) {
+                          _vm.direccionSolicitante = $$v
+                        },
+                        expression: "direccionSolicitante"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v("\n            Localización Obra:\n            "),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.localizacionObra,
+                        callback: function($$v) {
+                          _vm.localizacionObra = $$v
+                        },
+                        expression: "localizacionObra"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v("\n            Proyecto N°:\n            "),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.numProyecto,
+                        callback: function($$v) {
+                          _vm.numProyecto = $$v
+                        },
+                        expression: "numProyecto"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Nº Correlativo de informe obra:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.numCorrelativoInformeObra,
+                        callback: function($$v) {
+                          _vm.numCorrelativoInformeObra = $$v
+                        },
+                        expression: "numCorrelativoInformeObra"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Nº Correlativo de obra:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.numCorrelativoObra,
+                        callback: function($$v) {
+                          _vm.numCorrelativoObra = $$v
+                        },
+                        expression: "numCorrelativoObra"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v("\n            Curado inicial:\n            "),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.curadoInicial,
+                        callback: function($$v) {
+                          _vm.curadoInicial = $$v
+                        },
+                        expression: "curadoInicial"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Lugar de realización de ensayos:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.lugarEnsayos,
+                        callback: function($$v) {
+                          _vm.lugarEnsayos = $$v
+                        },
+                        expression: "lugarEnsayos"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Número de página de este informe:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.paginaActual,
+                        callback: function($$v) {
+                          _vm.paginaActual = $$v
+                        },
+                        expression: "paginaActual"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Número de páginas total:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.totalPaginas,
+                        callback: function($$v) {
+                          _vm.totalPaginas = $$v
+                        },
+                        expression: "totalPaginas"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v("\n            Persona que firma:\n            "),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.firmador,
+                        callback: function($$v) {
+                          _vm.firmador = $$v
+                        },
+                        expression: "firmador"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v(
+                      "\n            Profesión de quien firma:\n            "
+                    ),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.profesionFirmador,
+                        callback: function($$v) {
+                          _vm.profesionFirmador = $$v
+                        },
+                        expression: "profesionFirmador"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "una-linea" },
+                  [
+                    _vm._v("\n            Cargo de quien firma:\n            "),
+                    _c("el-input", {
+                      attrs: { placeholder: "", size: "mini" },
+                      model: {
+                        value: _vm.cargoFirmador,
+                        callback: function($$v) {
+                          _vm.cargoFirmador = $$v
+                        },
+                        expression: "cargoFirmador"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ]),
               _vm._v(" "),
               _c(
                 "div",
@@ -111649,10 +111711,10 @@ var render = function() {
           _c(
             "el-button",
             {
-              attrs: { type: "success", plain: "" },
+              attrs: { type: "success", disabled: "", plain: "" },
               on: { click: _vm.handleInner }
             },
-            [_vm._v("Exportar a Excel")]
+            [_vm._v("\n        Exportar a Excel\n      ")]
           )
         ],
         1
@@ -111678,41 +111740,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Buscar Ensayos")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: { placeholder: "Filtre por N° Muestra" },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Buscar Ensayos")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: {
+              placeholder:
+                "Filtre por N° Ott, N° Muestra, N° Informe o quien realizó el ensayo"
             },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ensayosHormigon, function(orden, index) {
-        return _c("item-lista-exportar-ensayos", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getEnsayos }
-        })
-      }),
-      1
-    )
-  ])
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ensayosHormigon, function(orden, index) {
+          return _c("item-lista-exportar-ensayos", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getEnsayos }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
