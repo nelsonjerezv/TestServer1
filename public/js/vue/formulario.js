@@ -102251,7 +102251,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  max-height: calc(100% - 128px);\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -102281,55 +102281,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urltodasLasOrdenes: GLOBAL.URL + 'formularios/todas-las-ordenes',
-            ordenesDeTrabajo: '',
-            todasLasOrdenes: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getOrdenes();
-    },
+  components: {
+    ItemListaFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaFormularios_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urltodasLasOrdenes: GLOBAL.URL + "formularios/todas-las-ordenes",
+      ordenesDeTrabajo: "",
+      todasLasOrdenes: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getOrdenes();
+  },
 
-    methods: {
-        getOrdenes: function getOrdenes() {
-            var _this = this;
+  methods: {
+    getOrdenes: function getOrdenes() {
+      var _this = this;
 
-            this.ordenesDeTrabajo = [];
-            this.todasLasOrdenes = [];
-            this.$http.get(this.urltodasLasOrdenes + '/' + this.modo).then(function (response) {
-                _this.todasLasOrdenes = response.body;
-                _this.ordenesDeTrabajo = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraOrdenes: function filtraOrdenes() {
-            var _this2 = this;
-
-            this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
-                return orden.num_cliente_obra.includes(_this2.buscador) || orden.laboratorista.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.id.toString().includes(_this2.buscador);
-            });
-        }
+      this.ordenesDeTrabajo = [];
+      this.todasLasOrdenes = [];
+      this.$http.get(this.urltodasLasOrdenes + "/" + this.modo).then(function (response) {
+        _this.todasLasOrdenes = response.body;
+        _this.ordenesDeTrabajo = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar las ordenes.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraOrdenes();
-        },
-        modo: function modo() {
-            this.getOrdenes();
-        }
+    filtraOrdenes: function filtraOrdenes() {
+      var _this2 = this;
+
+      this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
+        return orden.num_cliente_obra.includes(_this2.buscador) || orden.laboratorista.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.id.toString().includes(_this2.buscador);
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraOrdenes();
+    },
+    modo: function modo() {
+      this.getOrdenes();
+    }
+  }
 });
 
 /***/ }),
@@ -102850,43 +102854,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Listado Órdenes de Trabajo de Terreno")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: {
-            placeholder: "Filtre por N° OTT, N° Cliente Obra o Laboratorista"
-          },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Listado Órdenes de Trabajo de Terreno")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: {
+              placeholder: "Filtre por N° OTT, N° Cliente Obra o Laboratorista"
             },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
-        return _c("item-lista-formularios", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getOrdenes }
-        })
-      }),
-      1
-    )
-  ])
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ordenesDeTrabajo, function(orden, index) {
+          return _c("item-lista-formularios", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getOrdenes }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -110217,7 +110228,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  max-height: calc(100% - 128px);\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -110247,55 +110258,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
-            ensayosHormigon: '',
-            todosLosEnsayos: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getEnsayos();
-    },
+  components: {
+    ItemListaEnsayo: __WEBPACK_IMPORTED_MODULE_0__components_formularios_ItemListaEnsayo_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urlTodosLosEnsayos: GLOBAL.URL + "ensayos/todos-los-ensayos",
+      ensayosHormigon: "",
+      todosLosEnsayos: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getEnsayos();
+  },
 
-    methods: {
-        getEnsayos: function getEnsayos() {
-            var _this = this;
+  methods: {
+    getEnsayos: function getEnsayos() {
+      var _this = this;
 
-            this.ensayosHormigon = [];
-            this.todosLosEnsayos = [];
-            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
-                _this.todosLosEnsayos = response.body;
-                _this.ensayosHormigon = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraEnsayos: function filtraEnsayos() {
-            var _this2 = this;
-
-            this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
-            });
-        }
+      this.ensayosHormigon = [];
+      this.todosLosEnsayos = [];
+      this.$http.get(this.urlTodosLosEnsayos + "/" + this.modo).then(function (response) {
+        _this.todosLosEnsayos = response.body;
+        _this.ensayosHormigon = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraEnsayos();
-        },
-        modo: function modo() {
-            this.getEnsayos();
-        }
+    filtraEnsayos: function filtraEnsayos() {
+      var _this2 = this;
+
+      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
+        return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraEnsayos();
+    },
+    modo: function modo() {
+      this.getEnsayos();
+    }
+  }
 });
 
 /***/ }),
@@ -110732,41 +110747,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Listado Ensayos Compresión")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: { placeholder: "Filtre por N° Muestra" },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
-            },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ensayosHormigon, function(orden, index) {
-        return _c("item-lista-ensayo", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getEnsayos }
-        })
-      }),
-      1
-    )
-  ])
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Listado Ensayos Compresión")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: { placeholder: "Filtre por N° Muestra" },
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ensayosHormigon, function(orden, index) {
+          return _c("item-lista-ensayo", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getEnsayos }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -110864,7 +110886,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.width-100{\n    width: 100%;\n}\n.container-elementos{\n    margin-bottom: 20px;\n}\n.container-items-formulario{\n    max-height: calc(100% - 128px);\n    overflow: auto;\n    padding: 10px;\n}\n", ""]);
+exports.push([module.i, "\n.width-100 {\n  width: 100%;\n}\n.container-elementos {\n  margin-bottom: 20px;\n}\n.container-items-formulario {\n  overflow: auto;\n  padding: 10px;\n}\n", ""]);
 
 // exports
 
@@ -110894,55 +110916,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
-    },
-    props: ['modo'],
-    data: function data() {
-        return {
-            urlTodosLosEnsayos: GLOBAL.URL + 'ensayos/todos-los-ensayos',
-            ensayosHormigon: '',
-            todosLosEnsayos: '',
-            buscador: ''
-        };
-    },
-    mounted: function mounted() {
-        this.getEnsayos();
-    },
+  components: {
+    ItemListaExportarEnsayos: __WEBPACK_IMPORTED_MODULE_0__ItemListaExportarEnsayos_vue___default.a
+  },
+  props: ["modo"],
+  data: function data() {
+    return {
+      urlTodosLosEnsayos: GLOBAL.URL + "ensayos/todos-los-ensayos",
+      ensayosHormigon: "",
+      todosLosEnsayos: "",
+      buscador: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getEnsayos();
+  },
 
-    methods: {
-        getEnsayos: function getEnsayos() {
-            var _this = this;
+  methods: {
+    getEnsayos: function getEnsayos() {
+      var _this = this;
 
-            this.ensayosHormigon = [];
-            this.todosLosEnsayos = [];
-            this.$http.get(this.urlTodosLosEnsayos + '/' + this.modo).then(function (response) {
-                _this.todosLosEnsayos = response.body;
-                _this.ensayosHormigon = response.body;
-            }, function (response) {
-                Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, '', 5);
-            });
-        },
-        filtraEnsayos: function filtraEnsayos() {
-            var _this2 = this;
-
-            this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-                return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
-            });
-        }
+      this.ensayosHormigon = [];
+      this.todosLosEnsayos = [];
+      this.$http.get(this.urlTodosLosEnsayos + "/" + this.modo).then(function (response) {
+        _this.todosLosEnsayos = response.body;
+        _this.ensayosHormigon = response.body;
+      }, function (response) {
+        Tools.mensajeAlerta("No se pueden cargar los ensayos.", Tools.MENSAJE.ERROR, "", 5);
+      });
     },
-    watch: {
-        buscador: function buscador() {
-            this.filtraEnsayos();
-        },
-        modo: function modo() {
-            this.getEnsayos();
-        }
+    filtraEnsayos: function filtraEnsayos() {
+      var _this2 = this;
+
+      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
+        return ensayo.ott.toString().includes(_this2.buscador) || ensayo.num_ingreso.toString().includes(_this2.buscador) || ensayo.num_informe.includes(_this2.buscador);
+      });
     }
+  },
+  watch: {
+    buscador: function buscador() {
+      this.filtraEnsayos();
+    },
+    modo: function modo() {
+      this.getEnsayos();
+    }
+  }
 });
 
 /***/ }),
@@ -111680,41 +111706,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "contenedor-vue" }, [
-    _c(
-      "div",
-      { staticClass: "container-elementos" },
-      [
-        _c("h1", [_vm._v("Buscar Ensayos")]),
-        _vm._v(" "),
-        _c("el-input", {
-          staticClass: "width-100",
-          attrs: { placeholder: "Filtre por N° Muestra" },
-          model: {
-            value: _vm.buscador,
-            callback: function($$v) {
-              _vm.buscador = $$v
-            },
-            expression: "buscador"
-          }
-        })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "container-items-formulario" },
-      _vm._l(_vm.ensayosHormigon, function(orden, index) {
-        return _c("item-lista-exportar-ensayos", {
-          key: orden.id,
-          attrs: { itemLista: orden, index: index },
-          on: { actualizar: _vm.getEnsayos }
-        })
-      }),
-      1
-    )
-  ])
+  return _c(
+    "div",
+    {
+      staticClass: "contenedor-vue",
+      staticStyle: { display: "flex", "flex-direction": "column" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container-elementos" },
+        [
+          _c("h1", [_vm._v("Buscar Ensayos")]),
+          _vm._v(" "),
+          _c("el-input", {
+            staticClass: "width-100",
+            attrs: { placeholder: "Filtre por N° Muestra" },
+            model: {
+              value: _vm.buscador,
+              callback: function($$v) {
+                _vm.buscador = $$v
+              },
+              expression: "buscador"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container-items-formulario" },
+        _vm._l(_vm.ensayosHormigon, function(orden, index) {
+          return _c("item-lista-exportar-ensayos", {
+            key: orden.id,
+            attrs: { itemLista: orden, index: index },
+            on: { actualizar: _vm.getEnsayos }
+          })
+        }),
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
