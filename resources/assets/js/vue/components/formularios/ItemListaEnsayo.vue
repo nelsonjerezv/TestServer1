@@ -3,7 +3,8 @@
     <div class="item">
       <div class="atributos">
         <div class="item-atributo">
-          <strong>N° Ingreso:</strong> {{ item.num_ingreso }}
+          <strong>N° Muestra:</strong> {{ item.num_ingreso }} &emsp; &emsp;
+          <strong>N° Informe:</strong> {{ item.num_informe }}
         </div>
         <div class="item-atributo">
           <strong>N° Ott:</strong> {{ numeroOtt }} &emsp; &emsp;
