@@ -915,7 +915,7 @@
                     ubicacionElemento: '',
                     tipoHormigonMortero: '',
                     resistenciaEspecificada: '',
-                    fechaConfeccion: new Date(new Date().getFullYear(), new Date().getMonth(),  new Date().getDate()),
+                    fechaConfeccion: moment().format("DD-MM-YYYY"),
                     aditivo: '',
                     numMixer: '',
                     trasladoProbetas: '',
