@@ -60,11 +60,13 @@ export default {
     filtraOrdenes() {
       this.ordenesDeTrabajo = this.todasLasOrdenes.filter(
         (orden) =>
-          orden.num_cliente_obra.includes(this.buscador) ||
+          orden.num_cliente_obra
+            .toLowerCase()
+            .includes(this.buscador.toLowerCase()) ||
           orden.laboratorista
             .toLowerCase()
             .includes(this.buscador.toLowerCase()) ||
-          orden.id.toString().includes(this.buscador)
+          orden.id.toString().includes(this.buscador.toLowerCase())
       );
     },
   },
