@@ -58,16 +58,38 @@ export default {
       );
     },
     filtraEnsayos() {
-      this.ensayosHormigon = this.todosLosEnsayos.filter(
-        (ensayo) =>
-          ensayo.ott.num_ott.toString().includes(this.buscador.toLowerCase()) ||
-          ensayo.num_ingreso.toString().includes(this.buscador.toLowerCase()) ||
-          ensayo.num_informe.toString().includes(this.buscador.toLowerCase()) ||
-          ensayo.ensayado_por
-            .toString()
-            .toLowerCase()
-            .includes(this.buscador.toLowerCase())
-      );
+      this.ensayosHormigon = this.todosLosEnsayos;
+      let aciertos = [];
+      for (let index = 0; index < this.ensayosHormigon.length; index++) {
+        let numInforme = this.ensayosHormigon[index].num_informe
+          ? this.ensayosHormigon[index].num_informe
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        let numMuestra = this.ensayosHormigon[index].num_ingreso
+          ? this.ensayosHormigon[index].num_ingreso
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        let numOtt = this.ensayosHormigon[index].ott.num_ott
+          ? this.ensayosHormigon[index].ott.num_ott
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        let ensayador = this.ensayosHormigon[index].ensayado_por
+          ? this.ensayosHormigon[index].ensayado_por
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        if (numMuestra || numInforme || ensayador || numOtt) {
+          aciertos.push(this.ensayosHormigon[index]);
+        }
+      }
+      this.ensayosHormigon = aciertos;
     },
   },
   watch: {

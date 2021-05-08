@@ -58,16 +58,32 @@ export default {
       );
     },
     filtraOrdenes() {
-      this.ordenesDeTrabajo = this.todasLasOrdenes.filter(
-        (orden) =>
-          orden.num_cliente_obra
-            .toLowerCase()
-            .includes(this.buscador.toLowerCase()) ||
-          orden.laboratorista
-            .toLowerCase()
-            .includes(this.buscador.toLowerCase()) ||
-          orden.id.toString().includes(this.buscador.toLowerCase())
-      );
+      this.ordenesDeTrabajo = this.todasLasOrdenes;
+      let aciertos = [];
+      for (let index = 0; index < this.ordenesDeTrabajo.length; index++) {
+        let laboratorista = this.ordenesDeTrabajo[index].laboratorista
+          ? this.ordenesDeTrabajo[index].laboratorista
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        let numClienteObra = this.ordenesDeTrabajo[index].num_cliente_obra
+          ? this.ordenesDeTrabajo[index].num_cliente_obra
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        let numOtt = this.ordenesDeTrabajo[index].num_ott
+          ? this.ordenesDeTrabajo[index].num_ott
+              .toLowerCase()
+              .includes(this.buscador.toLowerCase())
+          : false;
+
+        if (laboratorista || numClienteObra || numOtt) {
+          aciertos.push(this.ordenesDeTrabajo[index]);
+        }
+      }
+      this.ordenesDeTrabajo = aciertos;
     },
   },
   watch: {
