@@ -95271,7 +95271,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -96142,413 +96142,886 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['tipoOtt', 'ottCargada'],
-    data: function data() {
-        var _reglas;
+  props: ["tipoOtt", "ottCargada"],
+  data: function data() {
+    var _reglas;
 
-        return {
-            moment: moment,
-            labelPosition: 'left',
-            unaDosColumnas: 24,
-            urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario',
-            urlActualizarFormulario: GLOBAL.URL + 'formularios/actualizar-formulario',
-            visualizacion: '',
-            placeholderNumIngreso: 'Se generará automáticamente',
-            form: {
-                id: null,
-                numClienteObra: '',
-                numOtt: '',
-                numIngreso: '',
-                nombreCliente: '',
-                nombreObra: '',
-                fonoObra: '',
-                direccionObra: '',
-                encargadoObra: '',
-                muestreoDe: '',
-                extraccion: '',
-                compactacion: '',
-                tipoMoldeUno: false,
-                tipoMoldeDos: false,
-                tipoMoldeTres: false,
-                tipoMoldeCuatro: false,
-                tipoMoldeCinco: false,
-                tipoMoldeSeis: false,
-                tipoMoldeSiete: false,
-                muestreadoPor: '',
-                ensayadoPor: '',
-                tipoMuestra: '',
-                amasadaHormigon: '',
-                asentamientoCono: '',
-                numInforme: '400-08',
-                segregacion: '',
-                numEquipoConoAbrams: '',
-                numVibradorInmersion: '',
-                numEquipoConoReducido: '',
-                horaMuestreo: '',
-                horaInicioAmasado: '',
-                tAmbiente: '',
-                tHormigonMortero: '',
-                proveedor: '',
-                numGuiaDespacho: '',
-                nombreChofer: '',
-                curadoInicial: 'Piscina de curado',
-                elementoHormigonado: '',
-                ubicacionElemento: '',
-                tipoHormigonMortero: '',
-                resistenciaEspecificada: '',
-                fechaConfeccion: moment().format("DD-MM-YYYY"),
-                aditivo: '',
-                numMixer: '',
-                trasladoProbetas: '',
-                retiroMuestraOtros: '',
-                retiroMuestraCantidadUnDia: '',
-                retiroMuestraCantidadTresDias: '',
-                retiroMuestraCantidadSieteDias: '',
-                retiroMuestraCantidadCatorceDias: '',
-                retiroMuestraCantidadVeintiochoDias: '',
-                retiroMuestraCantidadOtros: '',
-                retiroMuestraFechaUnDia: '',
-                retiroMuestraFechaTresDias: '',
-                retiroMuestraFechaSieteDias: '',
-                retiroMuestraFechaCatorceDias: '',
-                retiroMuestraFechaVeintiochoDias: '',
-                retiroMuestraFechaOtros: '',
-                retiroMuestraInformeUnDia: '',
-                retiroMuestraInformeTresDias: '',
-                retiroMuestraInformeSieteDias: '',
-                retiroMuestraInformeCatorceDias: '',
-                retiroMuestraInformeVeintiochoDias: '',
-                retiroMuestraInformeOtros: '',
-                procedimientoExtraccion: '',
-                muestraIngresadaPorCliente: '',
-                fechaIngreso: '',
-                fechaVisitaObra: '',
-                horaLlegada: '',
-                horaSalida: '',
-                responsableEnObra: '',
-                densAparenteHormigon: '',
-                densAparenteMortero: '',
-                indiceEsclerometrico: '',
-                irregularidadSuperficial: '',
-                irregularidadSuperficialMl: '',
-                observaciones: '',
-                alteracionMuestra: '',
-                observacionesAlteracionesMuestra: '',
-                laboratorista: '',
-                ayudante: '',
-                recibeOMuestrea: '',
-                aridosHormigonMuestraUno: '',
-                aridosHormigonMuestraDos: '',
-                aridosHormigonMuestraTres: '',
-                aridosHormigonMuestraCuatro: '',
-                seccionTestigosHabilitada: false,
-                seccionAridosHabilitada: false,
-                seccionOtrosHabilitada: false,
-                seccionRetiroMuestrasHabilitada: false,
-                testigosExtraidosSeis: '0',
-                testigosExtraidosCuatro: '0',
-                testigosExtraidosTotal: '0',
-                testigosEnsayadosSeis: '0',
-                testigosEnsayadosCuatro: '0',
-                testigosEnsayadosTotal: '0'
-            },
-            reglas: (_reglas = {
-                numClienteObra: [{ required: true, message: '', trigger: 'blur' }],
-                numOtt: [{ required: true, message: '', trigger: 'blur' }],
-                numIngreso: [{ required: true, message: '', trigger: 'blur' }],
-                nombreCliente: [{ required: true, message: '', trigger: 'blur' }],
-                nombreObra: [{ required: true, message: '', trigger: 'blur' }],
-                fonoObra: [{ required: false, message: '', trigger: 'blur' }],
-                direccionObra: [{ required: true, message: '', trigger: 'blur' }],
-                encargadoObra: [{ required: false, message: '', trigger: 'blur' }],
-                muestreoDe: [{ required: true, message: '', trigger: 'change' }],
-                extraccion: [{ required: true, message: '', trigger: 'change' }],
-                compactacion: [{ required: true, message: '', trigger: 'change' }],
-                tipoMoldeUno: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeDos: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeTres: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeCuatro: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeCinco: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeSeis: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeSiete: [{ required: true, message: '', trigger: 'blur' }],
-                muestreadoPor: [{ required: true, message: '', trigger: 'change' }],
-                ensayadoPor: [{ required: true, message: '', trigger: 'change' }],
-                tipoMuestra: [{ required: true, message: '', trigger: 'change' }],
-                seccionTestigosHabilitada: [{ required: false, message: '', trigger: 'change' }],
-                amasadaHormigon: [{ required: true, message: '', trigger: 'blur' }],
-                asentamientoCono: [{ required: true, message: '', trigger: 'blur' }],
-                numInforme: [{ required: true, message: '', trigger: 'blur' }],
-                segregacion: [{ required: true, message: '', trigger: 'blur' }],
-                numEquipoConoAbrams: [{ required: true, message: '', trigger: 'blur' }],
-                numVibradorInmersion: [{ required: true, message: '', trigger: 'blur' }],
-                numEquipoConoReducido: [{ required: true, message: '', trigger: 'blur' }],
-                horaMuestreo: [{ required: true, message: '', trigger: 'blur' }],
-                horaInicioAmasado: [{ required: false, message: '', trigger: 'blur' }],
-                tAmbiente: [{ required: true, message: '', trigger: 'blur' }],
-                tHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
-                proveedor: [{ required: true, message: '', trigger: 'blur' }],
-                numGuiaDespacho: [{ required: true, message: '', trigger: 'blur' }],
-                nombreChofer: [{ required: true, message: '', trigger: 'blur' }],
-                curadoInicial: [{ required: true, message: '', trigger: 'blur' }],
-                elementoHormigonado: [{ required: true, message: '', trigger: 'blur' }],
-                ubicacionElemento: [{ required: true, message: '', trigger: 'blur' }],
-                tipoHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
-                resistenciaEspecificada: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccion: [{ required: true, message: '', trigger: 'blur' }],
-                aditivo: [{ required: false, message: '', trigger: 'blur' }],
-                numMixer: [{ required: false, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadUnDia: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaUnDia: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeUnDia: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadTresDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaTresDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeTresDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadSieteDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaSieteDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeSieteDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadCatorceDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaCatorceDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeCatorceDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadVeintiochoDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaVeintiochoDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeVeintiochoDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraOtros: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadOtros: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaOtros: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeOtros: [{ required: true, message: '', trigger: 'blur' }],
-                trasladoProbetas: [{ required: true, message: '', trigger: 'blur' }],
-                procedimientoExtraccion: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraUno: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraDos: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraTres: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraCuatro: [{ required: true, message: '', trigger: 'change' }],
-                densAparenteHormigon: [{ required: true, message: '', trigger: 'change' }],
-                densAparenteMortero: [{ required: true, message: '', trigger: 'change' }],
-                indiceEsclerometrico: [{ required: true, message: '', trigger: 'change' }],
-                irregularidadSuperficial: [{ required: true, message: '', trigger: 'change' }],
-                irregularidadSuperficialMl: [{ required: true, message: '', trigger: 'blur' }],
-                muestraIngresadaPorCliente: [{ required: true, message: '', trigger: 'change' }],
-                responsableEnObra: [{ required: false, message: '', trigger: 'blur' }],
-                fechaIngreso: [{ required: true, message: '', trigger: 'change' }],
-                fechaVisitaObra: [{ required: true, message: '', trigger: 'change' }],
-                horaLlegada: [{ required: true, message: '', trigger: 'change' }],
-                horaSalida: [{ required: true, message: '', trigger: 'change' }],
-                observaciones: [{ required: true, message: '', trigger: 'blur' }],
-                alteracionMuestra: [{ required: true, message: '', trigger: 'change' }],
-                observacionesAlteracionesMuestra: [{ required: true, message: '', trigger: 'change' }]
-            }, _defineProperty(_reglas, 'observaciones', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'laboratorista', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'ayudante', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'recibeOMuestrea', [{ required: true, message: '', trigger: 'change' }]), _reglas)
-        };
-    },
-    created: function created() {
-        window.addEventListener('resize', this.handleResize);
-        this.handleResize();
-    },
-    destroyed: function destroyed() {
-        window.removeEventListener('resize', this.handleResize);
-    },
-    mounted: function mounted() {
-        this.visualizacion = this.tipoOtt;
-        console.log(this.visualizacion);
-        if (this.ottCargada) {
-            this.cargaDatosOtt();
-        }
-    },
-
-    methods: {
-        onSubmit: function onSubmit(nombreFormulario, accion) {
-            var _this = this;
-
-            if (accion === 'crear') {
-                // this.$refs[nombreFormulario].validate((valid) => {
-                //     if (valid) {
-                this.$http.post(this.urlGuardarFormulario, {
-                    formulario: this.form
-                }).then(function (response) {
-                    console.log(response);
-                    if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                        setTimeout(function () {
-                            _this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
-                        }, 0);
-                    } else {
-                        if (response.body[0].errorInfo[0] == "23000") {
-                            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                        }
-                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                    }
-                }, function (response) {
-                    console.log(response);
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                });
-                //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                //         return false;
-                //     }
-                // });
-            } else if (accion === 'editar') {
-                // this.$refs[nombreFormulario].validate((valid) => {
-                //     if (valid) {
-                this.$http.post(this.urlActualizarFormulario, {
-                    formulario: this.form
-                }).then(function (response) {
-                    console.log(response);
-                    if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 7);
-                    } else {
-                        if (response.body[0].errorInfo[0] == "23000") {
-                            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                        }
-                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                    }
-                }, function (response) {
-                    console.log(response);
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                });
-                //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                //         return false;
-                //     }
-                // });
-            }
-        },
-        resetForm: function resetForm(nombreFormulario) {
-            this.$refs[nombreFormulario].resetFields();
-        },
-        handleResize: function handleResize() {
-            this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;
-        },
-        cargaDatosOtt: function cargaDatosOtt() {
-            this.form.id = this.ottCargada.id;
-            this.form.numClienteObra = this.ottCargada.num_cliente_obra;
-            this.form.numOtt = this.ottCargada.num_ott;
-            this.form.numIngreso = this.ottCargada.num_ingreso;
-            this.form.nombreCliente = this.ottCargada.nombre_cliente;
-            this.form.nombreObra = this.ottCargada.nombre_obra;
-            this.form.fonoObra = this.ottCargada.fono_obra;
-            this.form.direccionObra = this.ottCargada.direccion_obra;
-            this.form.encargadoObra = this.ottCargada.encargado_obra;
-            this.form.muestreoDe = this.ottCargada.muestreo_de;
-            this.form.extraccion = this.ottCargada.extraccion;
-            this.form.compactacion = this.ottCargada.compactacion;
-            this.form.muestreadoPor = this.ottCargada.muestreado_por;
-            this.form.ensayadoPor = this.ottCargada.ensayado_por;
-            this.form.tipoMuestra = this.ottCargada.tipo_muestra;
-            this.form.amasadaHormigon = this.ottCargada.amasada_hormigon;
-            this.form.asentamientoCono = this.ottCargada.asentamiento_cono;
-            this.form.numInforme = this.ottCargada.num_informe;
-            this.form.segregacion = this.ottCargada.segregacion;
-            this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
-            this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
-            this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
-            this.form.horaMuestreo = this.ottCargada.hora_muestreo;
-            this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
-            this.form.tAmbiente = this.ottCargada.t_ambiente;
-            this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero;
-            this.form.proveedor = this.ottCargada.proveedor;
-            this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho;
-            this.form.nombreChofer = this.ottCargada.nombre_chofer;
-            this.form.curadoInicial = this.ottCargada.curado_inicial;
-            this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
-            this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
-            this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
-            this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
-            this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
-            this.form.aditivo = this.ottCargada.aditivo;
-            this.form.numMixer = this.ottCargada.num_mixer;
-            this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
-            this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
-            this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
-            this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
-            this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
-            this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
-            this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
-            this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
-            this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
-            this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
-            this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
-            this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
-            this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
-            this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
-            this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
-            this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
-            this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
-            this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
-            this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
-            this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
-            this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
-            this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
-            this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
-            this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
-            this.form.horaLlegada = this.ottCargada.hora_llegada;
-            this.form.horaSalida = this.ottCargada.hora_salida;
-            this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
-            this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
-            this.form.observaciones = this.ottCargada.observaciones;
-            this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
-            this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
-            this.form.laboratorista = this.ottCargada.laboratorista;
-            this.form.ayudante = this.ottCargada.ayudante;
-            this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
-            this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
-            this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
-            this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
-            this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
-            this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
-            this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
-            this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
-            this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
-            this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
-            this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
-
-            this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
-            this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
-            this.form.seccionOtrosHabilitada = this.ottCargada.seccion_otros_habilitada == 1 ? true : this.ottCargada.seccion_otros_habilitada;
-            this.form.seccionRetiroMuestrasHabilitada = this.ottCargada.seccion_retiro_muestras_habilitada == 1 ? true : this.ottCargada.seccion_retiro_muestras_habilitada;
-            this.form.tipoMoldeUno = this.ottCargada.tipo_molde_uno == 1 ? true : this.ottCargada.tipo_molde_uno;
-            this.form.tipoMoldeDos = this.ottCargada.tipo_molde_dos == 1 ? true : this.ottCargada.tipo_molde_dos;
-            this.form.tipoMoldeTres = this.ottCargada.tipo_molde_tres == 1 ? true : this.ottCargada.tipo_molde_tres;
-            this.form.tipoMoldeCuatro = this.ottCargada.tipo_molde_cuatro == 1 ? true : this.ottCargada.tipo_molde_cuatro;
-            this.form.tipoMoldeCinco = this.ottCargada.tipo_molde_cinco == 1 ? true : this.ottCargada.tipo_molde_cinco;
-            this.form.tipoMoldeSeis = this.ottCargada.tipo_molde_seis == 1 ? true : this.ottCargada.tipo_molde_seis;
-            this.form.tipoMoldeSiete = this.ottCargada.tipo_molde_siete == 1 ? true : this.ottCargada.tipo_molde_siete;
-            this.form.densAparenteHormigon = this.ottCargada.dens_aparente_hormigon == 1 ? true : this.ottCargada.dens_aparente_hormigon;
-            this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
-            this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
-            this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
-        }
-    },
-    computed: {
-        esClickeable: function esClickeable() {
-            return {
-                'no-click': this.visualizacion === 'ver'
-            };
-        }
-    },
-    watch: {
-        'form.testigosExtraidosCuatro': function formTestigosExtraidosCuatro(newVal, oldVal) {
-            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
-        },
-        'form.testigosExtraidosSeis': function formTestigosExtraidosSeis(newVal, oldVal) {
-            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
-        },
-        'form.testigosEnsayadosSeis': function formTestigosEnsayadosSeis(newVal, oldVal) {
-            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
-        },
-        'form.testigosEnsayadosCuatro': function formTestigosEnsayadosCuatro(newVal, oldVal) {
-            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
-        },
-        'form.muestreadoPor': function formMuestreadoPor(newVal, oldVal) {
-            if (newVal == 'lacem') {
-                this.form.ensayadoPor = 'lacem';
-            }
-        }
-
+    return {
+      moment: moment,
+      labelPosition: "left",
+      unaDosColumnas: 24,
+      urlGuardarFormulario: GLOBAL.URL + "formularios/guardar-formulario",
+      urlActualizarFormulario: GLOBAL.URL + "formularios/actualizar-formulario",
+      visualizacion: "",
+      placeholderNumIngreso: "Se generará automáticamente",
+      form: {
+        id: null,
+        numClienteObra: "",
+        numOtt: "",
+        numIngreso: "",
+        nombreCliente: "",
+        nombreObra: "",
+        fonoObra: "",
+        direccionObra: "",
+        encargadoObra: "",
+        muestreoDe: "",
+        extraccion: "",
+        compactacion: "",
+        tipoMoldeUno: false,
+        tipoMoldeDos: false,
+        tipoMoldeTres: false,
+        tipoMoldeCuatro: false,
+        tipoMoldeCinco: false,
+        tipoMoldeSeis: false,
+        tipoMoldeSiete: false,
+        muestreadoPor: "",
+        ensayadoPor: "",
+        tipoMuestra: "",
+        amasadaHormigon: "",
+        asentamientoCono: "",
+        numInforme: "400-08",
+        segregacion: "",
+        numEquipoConoAbrams: "",
+        numVibradorInmersion: "",
+        numEquipoConoReducido: "",
+        horaMuestreo: "",
+        horaInicioAmasado: "",
+        tAmbiente: "",
+        tHormigonMortero: "",
+        proveedor: "",
+        numGuiaDespacho: "",
+        nombreChofer: "",
+        curadoInicial: "Piscina de curado",
+        elementoHormigonado: "",
+        ubicacionElemento: "",
+        tipoHormigonMortero: "",
+        resistenciaEspecificada: "",
+        fechaConfeccion: moment().format("DD-MM-YYYY"),
+        aditivo: "",
+        numMixer: "",
+        trasladoProbetas: "",
+        retiroMuestraOtros: "",
+        retiroMuestraCantidadUnDia: "",
+        retiroMuestraCantidadTresDias: "",
+        retiroMuestraCantidadSieteDias: "",
+        retiroMuestraCantidadCatorceDias: "",
+        retiroMuestraCantidadVeintiochoDias: "",
+        retiroMuestraCantidadOtros: "",
+        retiroMuestraFechaUnDia: "",
+        retiroMuestraFechaTresDias: "",
+        retiroMuestraFechaSieteDias: "",
+        retiroMuestraFechaCatorceDias: "",
+        retiroMuestraFechaVeintiochoDias: "",
+        retiroMuestraFechaOtros: "",
+        retiroMuestraInformeUnDia: "",
+        retiroMuestraInformeTresDias: "",
+        retiroMuestraInformeSieteDias: "",
+        retiroMuestraInformeCatorceDias: "",
+        retiroMuestraInformeVeintiochoDias: "",
+        retiroMuestraInformeOtros: "",
+        procedimientoExtraccion: "",
+        muestraIngresadaPorCliente: "",
+        fechaIngreso: "",
+        fechaVisitaObra: "",
+        horaLlegada: "",
+        horaSalida: "",
+        responsableEnObra: "",
+        densAparenteHormigon: "",
+        densAparenteMortero: "",
+        indiceEsclerometrico: "",
+        irregularidadSuperficial: "",
+        irregularidadSuperficialMl: "",
+        observaciones: "",
+        alteracionMuestra: "",
+        observacionesAlteracionesMuestra: "",
+        laboratorista: "",
+        ayudante: "",
+        recibeOMuestrea: "",
+        aridosHormigonMuestraUno: "",
+        aridosHormigonMuestraDos: "",
+        aridosHormigonMuestraTres: "",
+        aridosHormigonMuestraCuatro: "",
+        seccionTestigosHabilitada: false,
+        seccionAridosHabilitada: false,
+        seccionOtrosHabilitada: false,
+        seccionRetiroMuestrasHabilitada: false,
+        testigosExtraidosSeis: "0",
+        testigosExtraidosCuatro: "0",
+        testigosExtraidosTotal: "0",
+        testigosEnsayadosSeis: "0",
+        testigosEnsayadosCuatro: "0",
+        testigosEnsayadosTotal: "0"
+      },
+      reglas: (_reglas = {
+        numClienteObra: [{ required: true, message: "", trigger: "blur" }],
+        numOtt: [{ required: true, message: "", trigger: "blur" }],
+        numIngreso: [{ required: true, message: "", trigger: "blur" }],
+        nombreCliente: [{ required: true, message: "", trigger: "blur" }],
+        nombreObra: [{ required: true, message: "", trigger: "blur" }],
+        fonoObra: [{ required: false, message: "", trigger: "blur" }],
+        direccionObra: [{ required: true, message: "", trigger: "blur" }],
+        encargadoObra: [{ required: false, message: "", trigger: "blur" }],
+        muestreoDe: [{ required: true, message: "", trigger: "change" }],
+        extraccion: [{ required: true, message: "", trigger: "change" }],
+        compactacion: [{ required: true, message: "", trigger: "change" }],
+        tipoMoldeUno: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeDos: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeTres: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeCuatro: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeCinco: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeSeis: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeSiete: [{ required: true, message: "", trigger: "blur" }],
+        muestreadoPor: [{ required: true, message: "", trigger: "change" }],
+        ensayadoPor: [{ required: true, message: "", trigger: "change" }],
+        tipoMuestra: [{ required: true, message: "", trigger: "change" }],
+        seccionTestigosHabilitada: [{ required: false, message: "", trigger: "change" }],
+        amasadaHormigon: [{ required: true, message: "", trigger: "blur" }],
+        asentamientoCono: [{ required: true, message: "", trigger: "blur" }],
+        numInforme: [{ required: true, message: "", trigger: "blur" }],
+        segregacion: [{ required: true, message: "", trigger: "blur" }],
+        numEquipoConoAbrams: [{ required: true, message: "", trigger: "blur" }],
+        numVibradorInmersion: [{ required: true, message: "", trigger: "blur" }],
+        numEquipoConoReducido: [{ required: true, message: "", trigger: "blur" }],
+        horaMuestreo: [{ required: true, message: "", trigger: "blur" }],
+        horaInicioAmasado: [{ required: false, message: "", trigger: "blur" }],
+        tAmbiente: [{ required: true, message: "", trigger: "blur" }],
+        tHormigonMortero: [{ required: true, message: "", trigger: "blur" }],
+        proveedor: [{ required: true, message: "", trigger: "blur" }],
+        numGuiaDespacho: [{ required: true, message: "", trigger: "blur" }],
+        nombreChofer: [{ required: true, message: "", trigger: "blur" }],
+        curadoInicial: [{ required: true, message: "", trigger: "blur" }],
+        elementoHormigonado: [{ required: true, message: "", trigger: "blur" }],
+        ubicacionElemento: [{ required: true, message: "", trigger: "blur" }],
+        tipoHormigonMortero: [{ required: true, message: "", trigger: "blur" }],
+        resistenciaEspecificada: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccion: [{ required: true, message: "", trigger: "blur" }],
+        aditivo: [{ required: false, message: "", trigger: "blur" }],
+        numMixer: [{ required: false, message: "", trigger: "blur" }],
+        retiroMuestraCantidadUnDia: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaUnDia: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeUnDia: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadTresDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaTresDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeTresDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadSieteDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaSieteDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeSieteDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadCatorceDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaCatorceDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeCatorceDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaVeintiochoDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadOtros: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaOtros: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeOtros: [{ required: true, message: "", trigger: "blur" }],
+        trasladoProbetas: [{ required: true, message: "", trigger: "blur" }],
+        procedimientoExtraccion: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraUno: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraDos: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraTres: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraCuatro: [{ required: true, message: "", trigger: "change" }],
+        densAparenteHormigon: [{ required: true, message: "", trigger: "change" }],
+        densAparenteMortero: [{ required: true, message: "", trigger: "change" }],
+        indiceEsclerometrico: [{ required: true, message: "", trigger: "change" }],
+        irregularidadSuperficial: [{ required: true, message: "", trigger: "change" }],
+        irregularidadSuperficialMl: [{ required: true, message: "", trigger: "blur" }],
+        muestraIngresadaPorCliente: [{ required: true, message: "", trigger: "change" }],
+        responsableEnObra: [{ required: false, message: "", trigger: "blur" }],
+        fechaIngreso: [{ required: true, message: "", trigger: "change" }],
+        fechaVisitaObra: [{ required: true, message: "", trigger: "change" }],
+        horaLlegada: [{ required: true, message: "", trigger: "change" }],
+        horaSalida: [{ required: true, message: "", trigger: "change" }],
+        observaciones: [{ required: true, message: "", trigger: "blur" }],
+        alteracionMuestra: [{ required: true, message: "", trigger: "change" }],
+        observacionesAlteracionesMuestra: [{ required: true, message: "", trigger: "change" }]
+      }, _defineProperty(_reglas, "observaciones", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "laboratorista", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "ayudante", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "recibeOMuestrea", [{ required: true, message: "", trigger: "change" }]), _reglas)
+    };
+  },
+  created: function created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed: function destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  mounted: function mounted() {
+    this.visualizacion = this.tipoOtt;
+    console.log(this.visualizacion);
+    if (this.ottCargada) {
+      this.cargaDatosOtt();
     }
+  },
+
+  methods: {
+    onSubmit: function onSubmit(nombreFormulario, accion) {
+      var _this = this;
+
+      if (accion === "crear") {
+        // this.$refs[nombreFormulario].validate((valid) => {
+        //     if (valid) {
+        this.$http.post(this.urlGuardarFormulario, {
+          formulario: this.form
+        }).then(function (response) {
+          console.log(response);
+          if (response.body[1] == true) {
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+            _this.$emit("cambiaMain", {
+              vista: "ListadoFormularios",
+              condicion: "porvalidar"
+            });
+          } else {
+            if (response.body[0].errorInfo[0] == "23000") {
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+            }
+            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }
+        }, function (response) {
+          console.log(response);
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+        });
+        //     } else {
+        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+        //         return false;
+        //     }
+        // });
+      } else if (accion === "editar") {
+        var estado = this.ottCargada.validado ? "validadas" : "porvalidar";
+        console.log("estado vale " + estado);
+        // this.$refs[nombreFormulario].validate((valid) => {
+        //     if (valid) {
+        this.$http.post(this.urlActualizarFormulario, {
+          formulario: this.form
+        }).then(function (response) {
+          console.log(response);
+          if (response.body[1] == true) {
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 7);
+            console.log("ahora emito el edit");
+            _this.$emit("cambiaMain", {
+              vista: "ListadoFormularios",
+              condicion: estado
+            });
+          } else {
+            if (response.body[0].errorInfo[0] == "23000") {
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+            }
+            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }
+        }, function (response) {
+          console.log(response);
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+        });
+        //     } else {
+        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+        //         return false;
+        //     }
+        // });
+      }
+    },
+    resetForm: function resetForm(nombreFormulario) {
+      this.$refs[nombreFormulario].resetFields();
+    },
+    handleResize: function handleResize() {
+      this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;
+    },
+    cargaDatosOtt: function cargaDatosOtt() {
+      this.form.id = this.ottCargada.id;
+      this.form.numClienteObra = this.ottCargada.num_cliente_obra;
+      this.form.numOtt = this.ottCargada.num_ott;
+      this.form.numIngreso = this.ottCargada.num_ingreso;
+      this.form.nombreCliente = this.ottCargada.nombre_cliente;
+      this.form.nombreObra = this.ottCargada.nombre_obra;
+      this.form.fonoObra = this.ottCargada.fono_obra;
+      this.form.direccionObra = this.ottCargada.direccion_obra;
+      this.form.encargadoObra = this.ottCargada.encargado_obra;
+      this.form.muestreoDe = this.ottCargada.muestreo_de;
+      this.form.extraccion = this.ottCargada.extraccion;
+      this.form.compactacion = this.ottCargada.compactacion;
+      this.form.muestreadoPor = this.ottCargada.muestreado_por;
+      this.form.ensayadoPor = this.ottCargada.ensayado_por;
+      this.form.tipoMuestra = this.ottCargada.tipo_muestra;
+      this.form.amasadaHormigon = this.ottCargada.amasada_hormigon;
+      this.form.asentamientoCono = this.ottCargada.asentamiento_cono;
+      this.form.numInforme = this.ottCargada.num_informe;
+      this.form.segregacion = this.ottCargada.segregacion;
+      this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
+      this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
+      this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
+      this.form.horaMuestreo = this.ottCargada.hora_muestreo;
+      this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
+      this.form.tAmbiente = this.ottCargada.t_ambiente;
+      this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero;
+      this.form.proveedor = this.ottCargada.proveedor;
+      this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho;
+      this.form.nombreChofer = this.ottCargada.nombre_chofer;
+      this.form.curadoInicial = this.ottCargada.curado_inicial;
+      this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
+      this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
+      this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
+      this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
+      this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
+      this.form.aditivo = this.ottCargada.aditivo;
+      this.form.numMixer = this.ottCargada.num_mixer;
+      this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
+      this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
+      this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
+      this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
+      this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
+      this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
+      this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
+      this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
+      this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
+      this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
+      this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
+      this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
+      this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
+      this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
+      this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
+      this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
+      this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
+      this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
+      this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
+      this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
+      this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
+      this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
+      this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
+      this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
+      this.form.horaLlegada = this.ottCargada.hora_llegada;
+      this.form.horaSalida = this.ottCargada.hora_salida;
+      this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
+      this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
+      this.form.observaciones = this.ottCargada.observaciones;
+      this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
+      this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
+      this.form.laboratorista = this.ottCargada.laboratorista;
+      this.form.ayudante = this.ottCargada.ayudante;
+      this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
+      this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
+      this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
+      this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
+      this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
+      this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
+      this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
+      this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
+      this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
+      this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
+      this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
+
+      this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
+      this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
+      this.form.seccionOtrosHabilitada = this.ottCargada.seccion_otros_habilitada == 1 ? true : this.ottCargada.seccion_otros_habilitada;
+      this.form.seccionRetiroMuestrasHabilitada = this.ottCargada.seccion_retiro_muestras_habilitada == 1 ? true : this.ottCargada.seccion_retiro_muestras_habilitada;
+      this.form.tipoMoldeUno = this.ottCargada.tipo_molde_uno == 1 ? true : this.ottCargada.tipo_molde_uno;
+      this.form.tipoMoldeDos = this.ottCargada.tipo_molde_dos == 1 ? true : this.ottCargada.tipo_molde_dos;
+      this.form.tipoMoldeTres = this.ottCargada.tipo_molde_tres == 1 ? true : this.ottCargada.tipo_molde_tres;
+      this.form.tipoMoldeCuatro = this.ottCargada.tipo_molde_cuatro == 1 ? true : this.ottCargada.tipo_molde_cuatro;
+      this.form.tipoMoldeCinco = this.ottCargada.tipo_molde_cinco == 1 ? true : this.ottCargada.tipo_molde_cinco;
+      this.form.tipoMoldeSeis = this.ottCargada.tipo_molde_seis == 1 ? true : this.ottCargada.tipo_molde_seis;
+      this.form.tipoMoldeSiete = this.ottCargada.tipo_molde_siete == 1 ? true : this.ottCargada.tipo_molde_siete;
+      this.form.densAparenteHormigon = this.ottCargada.dens_aparente_hormigon == 1 ? true : this.ottCargada.dens_aparente_hormigon;
+      this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
+      this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
+      this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
+    }
+  },
+  computed: {
+    esClickeable: function esClickeable() {
+      return {
+        "no-click": this.visualizacion === "ver"
+      };
+    }
+  },
+  watch: {
+    "form.testigosExtraidosCuatro": function formTestigosExtraidosCuatro(newVal, oldVal) {
+      this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+    },
+    "form.testigosExtraidosSeis": function formTestigosExtraidosSeis(newVal, oldVal) {
+      this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+    },
+    "form.testigosEnsayadosSeis": function formTestigosEnsayadosSeis(newVal, oldVal) {
+      this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+    },
+    "form.testigosEnsayadosCuatro": function formTestigosEnsayadosCuatro(newVal, oldVal) {
+      this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+    },
+    "form.muestreadoPor": function formMuestreadoPor(newVal, oldVal) {
+      if (newVal == "lacem") {
+        this.form.ensayadoPor = "lacem";
+      }
+    }
+  }
 });
 
 /***/ }),
@@ -97159,7 +97632,7 @@ var render = function() {
                             expression: "form.seccionTestigosHabilitada"
                           }
                         },
-                        [_vm._v("\n                    Sección Testigos")]
+                        [_vm._v("\n            Sección Testigos")]
                       )
                     ],
                     1
@@ -97196,7 +97669,7 @@ var render = function() {
                             expression: "form.seccionAridosHabilitada"
                           }
                         },
-                        [_vm._v("\n                        Sección Áridos")]
+                        [_vm._v("\n            Sección Áridos")]
                       )
                     ],
                     1
@@ -97233,7 +97706,7 @@ var render = function() {
                             expression: "form.seccionOtrosHabilitada"
                           }
                         },
-                        [_vm._v("\n                        Sección Otros")]
+                        [_vm._v("\n            Sección Otros")]
                       )
                     ],
                     1
@@ -97274,11 +97747,7 @@ var render = function() {
                             expression: "form.seccionRetiroMuestrasHabilitada"
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Sección Retiro de Muestras"
-                          )
-                        ]
+                        [_vm._v("\n            Sección Retiro de Muestras")]
                       )
                     ],
                     1
@@ -97419,7 +97888,11 @@ var render = function() {
                           display: "flex"
                         }
                       },
-                      [_vm._v("Tipo de Molde (en cm)")]
+                      [
+                        _vm._v(
+                          "\n            Tipo de Molde (en cm)\n          "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -99084,7 +99557,7 @@ var render = function() {
                         staticClass: "tabla-extraccion-cell",
                         staticStyle: { width: "30%" }
                       },
-                      [_vm._v("Diámetro")]
+                      [_vm._v("\n            Diámetro\n          ")]
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "tabla-extraccion-cell" }, [
@@ -99129,7 +99602,7 @@ var render = function() {
                           "text-align": "center"
                         }
                       },
-                      [_vm._v("N° de Informe")]
+                      [_vm._v("\n            N° de Informe\n          ")]
                     ),
                     _vm._v(" "),
                     _c("div", {
@@ -99151,7 +99624,11 @@ var render = function() {
                         staticClass: "tabla-extraccion-cell",
                         staticStyle: { width: "30%" }
                       },
-                      [_vm._v("N° de Testigos Extraídos")]
+                      [
+                        _vm._v(
+                          "\n            N° de Testigos Extraídos\n          "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -99287,7 +99764,11 @@ var render = function() {
                           {
                             staticStyle: { display: "flex", "flex-grow": "1" }
                           },
-                          [_vm._v("N° de Testigos Ensayados")]
+                          [
+                            _vm._v(
+                              "\n              N° de Testigos Ensayados\n            "
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -99296,7 +99777,7 @@ var render = function() {
                             staticClass:
                               "tabla-extraccion-cell extraccion-cell-borde-left"
                           },
-                          [_vm._v("400-14")]
+                          [_vm._v("\n              400-14\n            ")]
                         )
                       ]
                     ),
@@ -99512,7 +99993,7 @@ var render = function() {
                             expression: "form.procedimientoExtraccion"
                           }
                         },
-                        [_vm._v("Obra ")]
+                        [_vm._v("Obra\n          ")]
                       )
                     ],
                     1
@@ -100034,7 +100515,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "90%" }
                     },
-                    [_vm._v("Ensayos para aceptación de áridos")]
+                    [
+                      _vm._v(
+                        "\n            Ensayos para aceptación de áridos\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100052,7 +100537,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "90%" }
                     },
-                    [_vm._v("Ensayos para dosificació de hormigón")]
+                    [
+                      _vm._v(
+                        "\n            Ensayos para dosificació de hormigón\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100070,7 +100559,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "75%" }
                     },
-                    [_vm._v("- Sin probetas de prueba")]
+                    [
+                      _vm._v(
+                        "\n            - Sin probetas de prueba\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100097,7 +100590,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "75%" }
                     },
-                    [_vm._v("- Con probetas de prueba")]
+                    [
+                      _vm._v(
+                        "\n            - Con probetas de prueba\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100861,11 +101358,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                            Crear OTT\n            "
-                          )
-                        ]
+                        [_vm._v("\n        Crear OTT\n      ")]
                       )
                     : _vm._e(),
                   _vm._v(" "),
@@ -100881,11 +101374,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                            Actualizar OTT\n            "
-                          )
-                        ]
+                        [_vm._v("\n        Actualizar OTT\n      ")]
                       )
                     : _vm._e(),
                   _vm._v(" "),
