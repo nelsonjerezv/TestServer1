@@ -102176,7 +102176,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent {\r\n  height: 100%;\n}\nbody > .el-container {\r\n  margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\r\n.el-container:nth-child(6) .el-aside {\r\n  line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\r\n  line-height: 320px;\n}\n#formularios {\r\n  height: 100%;\r\n  width: 100%;\n}\n.el-menu-item-group__title {\r\n  padding: 0px 0px 0px 20px;\n}\n.bienvenido {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\r\n", ""]);
 
 // exports
 
@@ -102240,12 +102240,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -102255,51 +102249,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        SidebarFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default.a,
-        OrdenTrabajoTerreno: __WEBPACK_IMPORTED_MODULE_1__components_formularios_OrdenTrabajoTerreno_vue___default.a,
-        ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a,
-        EnsayoCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default.a,
-        ListadoEnsayosCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default.a,
-        ListadoExportarEnsayos: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default.a
-    },
-    props: ['ordenes'],
-    data: function data() {
-        return {
-            componenteMain: '',
-            // componenteMain: 'EnsayoCompresionProbetasCilindricas',
-            // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
-            tipoOTT: '',
-            tipoEnsayo: '',
-            modoListadoOtt: '',
-            modoListadoEnsayo: '',
-            modoListadoExportar: ''
-        };
-    },
-    mounted: function mounted() {
-        console.log('ordenes', this.ordenes);
-    },
+  components: {
+    SidebarFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default.a,
+    OrdenTrabajoTerreno: __WEBPACK_IMPORTED_MODULE_1__components_formularios_OrdenTrabajoTerreno_vue___default.a,
+    ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a,
+    EnsayoCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default.a,
+    ListadoEnsayosCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default.a,
+    ListadoExportarEnsayos: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default.a
+  },
+  props: ["ordenes"],
+  data: function data() {
+    return {
+      componenteMain: "",
+      // componenteMain: 'EnsayoCompresionProbetasCilindricas',
+      // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+      tipoOTT: "",
+      tipoEnsayo: "",
+      modoListadoOtt: "",
+      modoListadoEnsayo: "",
+      modoListadoExportar: ""
+    };
+  },
+  mounted: function mounted() {
+    console.log("ordenes", this.ordenes);
+  },
 
-    methods: {
-        cambiarMain: function cambiarMain(contenido) {
-            this.componenteMain = contenido.vista;
-            if (contenido.vista === 'OrdenTrabajoTerreno') {
-                this.tipoOTT = contenido.condicion;
-            }
-            if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
-                this.tipoEnsayo = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoFormularios') {
-                this.modoListadoOtt = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
-                this.modoListadoEnsayo = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoExportarEnsayos') {
-                this.modoListadoExportar = contenido.condicion;
-            }
+  methods: {
+    cambiarMain: function cambiarMain(contenido) {
+      this.componenteMain = contenido.vista;
+      if (contenido.vista === "OrdenTrabajoTerreno") {
+        this.tipoOTT = contenido.condicion;
+      }
+      if (contenido.vista === "EnsayoCompresionProbetasCilindricas") {
+        this.tipoEnsayo = contenido.condicion;
+      }
+      if (contenido.vista === "ListadoFormularios") {
+        this.modoListadoOtt = contenido.condicion;
+        if (this.modoListadoOtt == "porvalidar") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "2-2";
+        } else if (this.modoListadoOtt == "validadas") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "2-3";
         }
+      }
+      if (contenido.vista === "ListadoEnsayosCompresionProbetasCilindricas") {
+        this.modoListadoEnsayo = contenido.condicion;
+        if (this.modoListadoOtt == "porvalidar") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "3-2";
+        } else if (this.modoListadoOtt == "validadas") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "3-3";
+        }
+      }
+      if (contenido.vista === "ListadoExportarEnsayos") {
+        this.modoListadoExportar = contenido.condicion;
+      }
     }
+  }
 });
 
 /***/ }),
@@ -102337,7 +102341,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\r\n  width: -webkit-fit-content;\r\n  width: -moz-fit-content;\r\n  width: fit-content;\r\n  min-height: 400px;\n}\n.el-menu {\r\n  background-color: transparent;\n}\n.el-menu-item,\r\n.el-submenu__title,\r\n.el-submenu .el-menu-item {\r\n  height: 40px;\r\n  line-height: 40px;\n}\r\n", ""]);
 
 // exports
 
@@ -102419,47 +102423,72 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            isCollapse: true
-        };
-    },
+  data: function data() {
+    return {
+      isCollapse: true,
+      activeLink: "1"
+    };
+  },
 
-    methods: {
-        inicio: function inicio() {
-            this.$emit("cambiaMain", "");
-        },
-        nuevaOTT: function nuevaOTT() {
-            this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
-        },
-        listadoOTTsPorValidar: function listadoOTTsPorValidar() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'porvalidar' });
-        },
-        listadoOTTsValidadas: function listadoOTTsValidadas() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'validadas' });
-        },
-        nuevoEnsayo: function nuevoEnsayo() {
-            this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
-        },
-        listadoEnsayos: function listadoEnsayos() {
-            //esta cometariado
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
-        },
-        listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
-        },
-        listadoEnsayosValidos: function listadoEnsayosValidos() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
-        },
-        exportaEnsayos: function exportaEnsayos() {
-            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: 'validadas' });
-        }
+  methods: {
+    inicio: function inicio() {
+      this.$emit("cambiaMain", "");
+    },
+    nuevaOTT: function nuevaOTT() {
+      this.$emit("cambiaMain", {
+        vista: "OrdenTrabajoTerreno",
+        condicion: "nueva"
+      });
+    },
+    listadoOTTsPorValidar: function listadoOTTsPorValidar() {
+      //this.inicio();
+      this.$emit("cambiaMain", {
+        vista: "ListadoFormularios",
+        condicion: "porvalidar"
+      });
+    },
+    listadoOTTsValidadas: function listadoOTTsValidadas() {
+      //this.inicio();
+      this.$emit("cambiaMain", {
+        vista: "ListadoFormularios",
+        condicion: "validadas"
+      });
+    },
+    nuevoEnsayo: function nuevoEnsayo() {
+      this.$emit("cambiaMain", {
+        vista: "EnsayoCompresionProbetasCilindricas",
+        condicion: "nueva"
+      });
+    },
+    listadoEnsayos: function listadoEnsayos() {
+      //esta cometariado
+      //this.inicio();
+      this.$emit("cambiaMain", {
+        vista: "ListadoEnsayosCompresionProbetasCilindricas",
+        condicion: ""
+      });
+    },
+    listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
+      //this.inicio();
+      this.$emit("cambiaMain", {
+        vista: "ListadoEnsayosCompresionProbetasCilindricas",
+        condicion: "porvalidar"
+      });
+    },
+    listadoEnsayosValidos: function listadoEnsayosValidos() {
+      //this.inicio();
+      this.$emit("cambiaMain", {
+        vista: "ListadoEnsayosCompresionProbetasCilindricas",
+        condicion: "validadas"
+      });
+    },
+    exportaEnsayos: function exportaEnsayos() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoExportarEnsayos",
+        condicion: "validadas"
+      });
     }
+  }
 });
 
 /***/ }),
@@ -102480,14 +102509,15 @@ var render = function() {
           _c(
             "el-menu",
             {
+              ref: "menuLateral",
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": "1" }
+              attrs: { "default-active": _vm.activeLink }
             },
             [
               _c(
                 "el-menu-item",
                 { attrs: { index: "1" }, on: { click: _vm.inicio } },
-                [_vm._v("\n                Inicio\n            ")]
+                [_vm._v(" Inicio ")]
               ),
               _vm._v(" "),
               _c(
@@ -102509,11 +102539,7 @@ var render = function() {
                           attrs: { index: "2-1" },
                           on: { click: _vm.nuevaOTT }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Nueva OTT\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Nueva OTT\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102522,11 +102548,7 @@ var render = function() {
                           attrs: { index: "2-2" },
                           on: { click: _vm.listadoOTTsPorValidar }
                         },
-                        [
-                          _vm._v(
-                            "\n                        OTTs por validar\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            OTTs por validar\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102535,11 +102557,7 @@ var render = function() {
                           attrs: { index: "2-3" },
                           on: { click: _vm.listadoOTTsValidadas }
                         },
-                        [
-                          _vm._v(
-                            "\n                        OTTs validadas\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            OTTs validadas\n          ")]
                       )
                     ],
                     1
@@ -102567,11 +102585,7 @@ var render = function() {
                           attrs: { index: "3-1" },
                           on: { click: _vm.nuevoEnsayo }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Nuevo Ensayo\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Nuevo Ensayo\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102582,7 +102596,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Ensayos por validar\n                    "
+                            "\n            Ensayos por validar\n          "
                           )
                         ]
                       ),
@@ -102593,11 +102607,7 @@ var render = function() {
                           attrs: { index: "3-3" },
                           on: { click: _vm.listadoEnsayosValidos }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Ensayos validados\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Ensayos validados\n          ")]
                       )
                     ],
                     1
@@ -102623,11 +102633,7 @@ var render = function() {
                           attrs: { index: "4-1" },
                           on: { click: _vm.exportaEnsayos }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Ensayos\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Ensayos\n          ")]
                       )
                     ],
                     1
@@ -112490,13 +112496,16 @@ var render = function() {
     "div",
     { staticClass: "contenedor-vue height-max-percent" },
     [
-      _c("el-header", [_vm._v("\n        Prototipo\n    ")]),
+      _c("el-header", [_vm._v(" Prototipo ")]),
       _vm._v(" "),
       _c(
         "el-container",
         { staticStyle: { height: "calc(100% - 0px) !important" } },
         [
-          _c("sidebar-formularios", { on: { cambiaMain: _vm.cambiarMain } }),
+          _c("sidebar-formularios", {
+            ref: "sidebar",
+            on: { cambiaMain: _vm.cambiarMain }
+          }),
           _vm._v(" "),
           _c(
             "el-container",
@@ -112506,9 +112515,7 @@ var render = function() {
                 [
                   _vm.componenteMain == ""
                     ? _c("div", { staticClass: "bienvenido" }, [
-                        _vm._v(
-                          "\n                    Bienvenido\n                "
-                        )
+                        _vm._v("Bienvenido")
                       ])
                     : _vm._e(),
                   _vm._v(" "),
