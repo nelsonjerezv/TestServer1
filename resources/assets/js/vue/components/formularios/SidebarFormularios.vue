@@ -2,7 +2,7 @@
   <div>
     <el-aside width="fit-content">
       <el-menu
-        :default-active="activeLink"
+        default-active="1"
         class="el-menu-vertical-demo"
         ref="menuLateral"
       >
@@ -70,68 +70,61 @@
 <script>
 export default {
   data() {
-    return {
-      isCollapse: true,
-      activeLink: "1",
-    };
+    return {};
   },
   methods: {
     inicio() {
       this.$emit("cambiaMain", "");
+      this.$refs.menuLateral.activeIndex = "1";
     },
     nuevaOTT() {
       this.$emit("cambiaMain", {
         vista: "OrdenTrabajoTerreno",
         condicion: "nueva",
       });
+      this.$refs.menuLateral.activeIndex = "2-1";
     },
     listadoOTTsPorValidar() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoFormularios",
         condicion: "porvalidar",
       });
+      this.$refs.menuLateral.activeIndex = "2-2";
     },
     listadoOTTsValidadas() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoFormularios",
         condicion: "validadas",
       });
+      this.$refs.menuLateral.activeIndex = "2-3";
     },
     nuevoEnsayo() {
       this.$emit("cambiaMain", {
         vista: "EnsayoCompresionProbetasCilindricas",
         condicion: "nueva",
       });
-    },
-    listadoEnsayos() {
-      //esta cometariado
-      //this.inicio();
-      this.$emit("cambiaMain", {
-        vista: "ListadoEnsayosCompresionProbetasCilindricas",
-        condicion: "",
-      });
+      this.$refs.menuLateral.activeIndex = "3-1";
     },
     listadoEnsayosPorValidar() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoEnsayosCompresionProbetasCilindricas",
         condicion: "porvalidar",
       });
+      this.$refs.menuLateral.activeIndex = "3-2";
     },
     listadoEnsayosValidos() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoEnsayosCompresionProbetasCilindricas",
         condicion: "validadas",
       });
+      this.$refs.menuLateral.activeIndex = "3-3";
     },
     exportaEnsayos() {
       this.$emit("cambiaMain", {
         vista: "ListadoExportarEnsayos",
         condicion: "validadas",
       });
+      this.$refs.menuLateral.activeIndex = "4-1";
     },
   },
 };

@@ -102424,69 +102424,62 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {
-      isCollapse: true,
-      activeLink: "1"
-    };
+    return {};
   },
 
   methods: {
     inicio: function inicio() {
       this.$emit("cambiaMain", "");
+      this.$refs.menuLateral.activeIndex = "1";
     },
     nuevaOTT: function nuevaOTT() {
       this.$emit("cambiaMain", {
         vista: "OrdenTrabajoTerreno",
         condicion: "nueva"
       });
+      this.$refs.menuLateral.activeIndex = "2-1";
     },
     listadoOTTsPorValidar: function listadoOTTsPorValidar() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoFormularios",
         condicion: "porvalidar"
       });
+      this.$refs.menuLateral.activeIndex = "2-2";
     },
     listadoOTTsValidadas: function listadoOTTsValidadas() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoFormularios",
         condicion: "validadas"
       });
+      this.$refs.menuLateral.activeIndex = "2-3";
     },
     nuevoEnsayo: function nuevoEnsayo() {
       this.$emit("cambiaMain", {
         vista: "EnsayoCompresionProbetasCilindricas",
         condicion: "nueva"
       });
-    },
-    listadoEnsayos: function listadoEnsayos() {
-      //esta cometariado
-      //this.inicio();
-      this.$emit("cambiaMain", {
-        vista: "ListadoEnsayosCompresionProbetasCilindricas",
-        condicion: ""
-      });
+      this.$refs.menuLateral.activeIndex = "3-1";
     },
     listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoEnsayosCompresionProbetasCilindricas",
         condicion: "porvalidar"
       });
+      this.$refs.menuLateral.activeIndex = "3-2";
     },
     listadoEnsayosValidos: function listadoEnsayosValidos() {
-      //this.inicio();
       this.$emit("cambiaMain", {
         vista: "ListadoEnsayosCompresionProbetasCilindricas",
         condicion: "validadas"
       });
+      this.$refs.menuLateral.activeIndex = "3-3";
     },
     exportaEnsayos: function exportaEnsayos() {
       this.$emit("cambiaMain", {
         vista: "ListadoExportarEnsayos",
         condicion: "validadas"
       });
+      this.$refs.menuLateral.activeIndex = "4-1";
     }
   }
 });
@@ -102511,7 +102504,7 @@ var render = function() {
             {
               ref: "menuLateral",
               staticClass: "el-menu-vertical-demo",
-              attrs: { "default-active": _vm.activeLink }
+              attrs: { "default-active": "1" }
             },
             [
               _c(
