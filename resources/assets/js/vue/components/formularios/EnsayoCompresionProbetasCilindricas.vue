@@ -1128,22 +1128,32 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="factoresConversionMuestraUno">
-              <el-input v-model="form.factoresConversionMuestraUno"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.factoresConversionMuestraUno"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="factoresConversionMuestraDos">
-              <el-input v-model="form.factoresConversionMuestraDos"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.factoresConversionMuestraDos"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="factoresConversionMuestraTres">
-              <el-input v-model="form.factoresConversionMuestraTres"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.factoresConversionMuestraTres"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="factoresConversionMuestraCuatro">
               <el-input
+                class="no-click"
                 v-model="form.factoresConversionMuestraCuatro"
               ></el-input>
             </el-form-item>
@@ -1158,6 +1168,7 @@
           <div class="texto-muestras">
             <el-form-item prop="resistenciaCorregidaMuestraUno">
               <el-input
+                class="no-click"
                 v-model="form.resistenciaCorregidaMuestraUno"
               ></el-input>
             </el-form-item>
@@ -1165,6 +1176,7 @@
           <div class="texto-muestras">
             <el-form-item prop="resistenciaCorregidaMuestraDos">
               <el-input
+                class="no-click"
                 v-model="form.resistenciaCorregidaMuestraDos"
               ></el-input>
             </el-form-item>
@@ -1172,6 +1184,7 @@
           <div class="texto-muestras">
             <el-form-item prop="resistenciaCorregidaMuestraTres">
               <el-input
+                class="no-click"
                 v-model="form.resistenciaCorregidaMuestraTres"
               ></el-input>
             </el-form-item>
@@ -1179,6 +1192,7 @@
           <div class="texto-muestras">
             <el-form-item prop="resistenciaCorregidaMuestraCuatro">
               <el-input
+                class="no-click"
                 v-model="form.resistenciaCorregidaMuestraCuatro"
               ></el-input>
             </el-form-item>
@@ -1396,6 +1410,15 @@ export default {
       opcionesSearchBoxOTT: [],
       loading: false,
       cantidadDecimales: 6,
+      factoresConversion: {
+        20: 1.25,
+        25: 1.2,
+        30: 1.17,
+        35: 1.14,
+        40: 1.13,
+        45: 1.11,
+        50: 1.1,
+      },
       pickerOptionsFechaEnsayo: {
         // disabledDate(time) {
         //     this.calculaFechaEnsayoInicio()
@@ -1888,6 +1911,19 @@ export default {
         this.form.refrentadoCorregidoMuestraCuatro = "No valido";
       }
     },
+    calculaFactorCompresion(
+      resistenciaUno,
+      resistenciaDos,
+      factorUno,
+      factorDos,
+      valorRecibido
+    ) {
+      return (
+        ((valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno)) *
+          (factorDos - factorUno) +
+        factorUno
+      );
+    },
   },
   watch: {
     "form.volumenMetroCubicoMuestraUno": function (newVal, oldVal) {
@@ -2375,74 +2411,406 @@ export default {
     },
     "form.resistenciaCompresionMuestraUno": function (newVal, oldVal) {
       var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
-      var dDos = parseFloat(this.form.factoresConversionMuestraUno);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraUno = "No valido";
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.factoresConversion[
+            "20"
+          ];
+          this.form.resistenciaCorregidaMuestraUno =
+            this.factoresConversion["20"] * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            20,
+            25,
+            this.factoresConversion["20"],
+            this.factoresConversion["25"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            25,
+            30,
+            this.factoresConversion["25"],
+            this.factoresConversion["30"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            30,
+            35,
+            this.factoresConversion["30"],
+            this.factoresConversion["35"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            35,
+            40,
+            this.factoresConversion["35"],
+            this.factoresConversion["40"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            40,
+            45,
+            this.factoresConversion["40"],
+            this.factoresConversion["45"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(
+            45,
+            50,
+            this.factoresConversion["45"],
+            this.factoresConversion["50"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraUno = this.factoresConversion[
+            "50"
+          ];
+          this.form.resistenciaCorregidaMuestraUno =
+            this.form.factoresConversionMuestraUno * dUno;
+        }
       } else {
-        this.form.resistenciaCorregidaMuestraUno = dUno / dDos;
-      }
-    },
-    "form.factoresConversionMuestraUno": function (newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
-      var dDos = parseFloat(this.form.factoresConversionMuestraUno);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraUno = "No valido";
-      } else {
-        this.form.resistenciaCorregidaMuestraUno = dUno / dDos;
+        this.form.factoresConversionMuestraUno = "-";
+        this.form.resistenciaCorregidaMuestraUno = "-";
       }
     },
     "form.resistenciaCompresionMuestraDos": function (newVal, oldVal) {
       var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
-      var dDos = parseFloat(this.form.factoresConversionMuestraDos);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraDos = "No valido";
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.factoresConversion[
+            "20"
+          ];
+          this.form.resistenciaCorregidaMuestraDos =
+            this.factoresConversion["20"] * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            20,
+            25,
+            this.factoresConversion["20"],
+            this.factoresConversion["25"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            25,
+            30,
+            this.factoresConversion["25"],
+            this.factoresConversion["30"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            30,
+            35,
+            this.factoresConversion["30"],
+            this.factoresConversion["35"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            35,
+            40,
+            this.factoresConversion["35"],
+            this.factoresConversion["40"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            40,
+            45,
+            this.factoresConversion["40"],
+            this.factoresConversion["45"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(
+            45,
+            50,
+            this.factoresConversion["45"],
+            this.factoresConversion["50"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraDos = this.factoresConversion[
+            "50"
+          ];
+          this.form.resistenciaCorregidaMuestraDos =
+            this.form.factoresConversionMuestraDos * dUno;
+        }
       } else {
-        this.form.resistenciaCorregidaMuestraDos = dUno / dDos;
-      }
-    },
-    "form.factoresConversionMuestraDos": function (newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
-      var dDos = parseFloat(this.form.factoresConversionMuestraDos);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraDos = "No valido";
-      } else {
-        this.form.resistenciaCorregidaMuestraDos = dUno / dDos;
+        this.form.factoresConversionMuestraDos = "-";
+        this.form.resistenciaCorregidaMuestraDos = "-";
       }
     },
     "form.resistenciaCompresionMuestraTres": function (newVal, oldVal) {
       var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
-      var dDos = parseFloat(this.form.factoresConversionMuestraTres);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraTres = "No valido";
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.factoresConversion[
+            "20"
+          ];
+          this.form.resistenciaCorregidaMuestraTres =
+            this.factoresConversion["20"] * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            20,
+            25,
+            this.factoresConversion["20"],
+            this.factoresConversion["25"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            25,
+            30,
+            this.factoresConversion["25"],
+            this.factoresConversion["30"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            30,
+            35,
+            this.factoresConversion["30"],
+            this.factoresConversion["35"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            35,
+            40,
+            this.factoresConversion["35"],
+            this.factoresConversion["40"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            40,
+            45,
+            this.factoresConversion["40"],
+            this.factoresConversion["45"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
+            45,
+            50,
+            this.factoresConversion["45"],
+            this.factoresConversion["50"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraTres = this.factoresConversion[
+            "50"
+          ];
+          this.form.resistenciaCorregidaMuestraTres =
+            this.form.factoresConversionMuestraTres * dUno;
+        }
       } else {
-        this.form.resistenciaCorregidaMuestraTres = dUno / dDos;
-      }
-    },
-    "form.factoresConversionMuestraTres": function (newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
-      var dDos = parseFloat(this.form.factoresConversionMuestraTres);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraTres = "No valido";
-      } else {
-        this.form.resistenciaCorregidaMuestraTres = dUno / dDos;
+        this.form.factoresConversionMuestraTres = "-";
+        this.form.resistenciaCorregidaMuestraTres = "-";
       }
     },
     "form.resistenciaCompresionMuestraCuatro": function (newVal, oldVal) {
       var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
-      var dDos = parseFloat(this.form.factoresConversionMuestraCuatro);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraCuatro = "No valido";
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.factoresConversion[
+            "20"
+          ];
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.factoresConversion["20"] * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            20,
+            25,
+            this.factoresConversion["20"],
+            this.factoresConversion["25"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            25,
+            30,
+            this.factoresConversion["25"],
+            this.factoresConversion["30"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            30,
+            35,
+            this.factoresConversion["30"],
+            this.factoresConversion["35"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            35,
+            40,
+            this.factoresConversion["35"],
+            this.factoresConversion["40"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            40,
+            45,
+            this.factoresConversion["40"],
+            this.factoresConversion["45"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
+          Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
+            45,
+            50,
+            this.factoresConversion["45"],
+            this.factoresConversion["50"],
+            dUno
+          );
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (
+          Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
+        ) {
+          this.form.factoresConversionMuestraCuatro = this.factoresConversion[
+            "50"
+          ];
+          this.form.resistenciaCorregidaMuestraCuatro =
+            this.form.factoresConversionMuestraCuatro * dUno;
+        }
       } else {
-        this.form.resistenciaCorregidaMuestraCuatro = dUno / dDos;
-      }
-    },
-    "form.factoresConversionMuestraCuatro": function (newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
-      var dDos = parseFloat(this.form.factoresConversionMuestraCuatro);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCorregidaMuestraCuatro = "No valido";
-      } else {
-        this.form.resistenciaCorregidaMuestraCuatro = dUno / dDos;
+        this.form.factoresConversionMuestraCuatro = "-";
+        this.form.resistenciaCorregidaMuestraCuatro = "-";
       }
     },
     "form.errorCientoCincuentaMm": function (newVal, oldVal) {
