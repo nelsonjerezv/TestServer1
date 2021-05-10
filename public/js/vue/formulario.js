@@ -105378,7 +105378,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraUno = "No valido";
       } else {
-        this.form.densidadMuestraUno = parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno);
+        this.form.densidadMuestraUno = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.masaCorregidaMuestraUno": function formMasaCorregidaMuestraUno(newVal, oldVal) {
@@ -105387,7 +105387,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraUno = "No valido";
       } else {
-        this.form.densidadMuestraUno = parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno);
+        this.form.densidadMuestraUno = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.masaCorregidaMuestraDos": function formMasaCorregidaMuestraDos(newVal, oldVal) {
@@ -105396,7 +105396,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraDos = "No valido";
       } else {
-        this.form.densidadMuestraDos = parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos);
+        this.form.densidadMuestraDos = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.volumenMetroCubicoMuestraDos": function formVolumenMetroCubicoMuestraDos(newVal, oldVal) {
@@ -105405,7 +105405,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraDos = "No valido";
       } else {
-        this.form.densidadMuestraDos = parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos);
+        this.form.densidadMuestraDos = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.masaCorregidaMuestraTres": function formMasaCorregidaMuestraTres(newVal, oldVal) {
@@ -105414,7 +105414,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraTres = "No valido";
       } else {}
-      this.form.densidadMuestraTres = parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres);
+      this.form.densidadMuestraTres = parseInt(Math.round(dUno / dDos / 10) * 10);
     },
     "form.volumenMetroCubicoMuestraTres": function formVolumenMetroCubicoMuestraTres(newVal, oldVal) {
       var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
@@ -105422,7 +105422,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraTres = "No valido";
       } else {
-        this.form.densidadMuestraTres = parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres);
+        this.form.densidadMuestraTres = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.masaCorregidaMuestraCuatro": function formMasaCorregidaMuestraCuatro(newVal, oldVal) {
@@ -105431,7 +105431,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraCuatro = "No valido";
       } else {
-        this.form.densidadMuestraCuatro = parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
+        this.form.densidadMuestraCuatro = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.volumenMetroCubicoMuestraCuatro": function formVolumenMetroCubicoMuestraCuatro(newVal, oldVal) {
@@ -105440,7 +105440,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (isNaN(dUno) || isNaN(dDos)) {
         this.form.densidadMuestraCuatro = "No valido";
       } else {
-        this.form.densidadMuestraCuatro = parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
+        this.form.densidadMuestraCuatro = parseInt(Math.round(dUno / dDos / 10) * 10);
       }
     },
     "form.OTT": function formOTT(newVal, oldVal) {
