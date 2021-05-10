@@ -109052,7 +109052,7 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "errorresistenciaCompresionraUno" } },
+                      { attrs: { prop: "resistenciaCompresionMuestraUno" } },
                       [
                         _c("el-input", {
                           model: {

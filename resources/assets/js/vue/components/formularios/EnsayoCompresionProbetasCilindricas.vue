@@ -937,7 +937,7 @@
                         Resistencia compresión (P/S) <div class="texto-derecha">(MPa/S)</div>
                     </div>
                     <div class="texto-muestras">
-                        <el-form-item prop="errorresistenciaCompresionraUno">
+                        <el-form-item prop="resistenciaCompresionMuestraUno">
                             <el-input v-model="form.resistenciaCompresionMuestraUno"></el-input>
                         </el-form-item>
                     </div>
