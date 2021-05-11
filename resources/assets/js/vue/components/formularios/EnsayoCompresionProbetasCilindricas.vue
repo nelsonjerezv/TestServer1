@@ -1400,6 +1400,7 @@ import moment from "moment";
 Vue.prototype.moment = moment;
 
 export default {
+  props: ["tipoEnsayo", "ensayoCargado"],
   data() {
     return {
       urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
@@ -1426,6 +1427,7 @@ export default {
         // },
       },
       form: {
+        id: null,
         numIngreso: "Cargado desde la OTT",
         OTT: "",
         numInforme: "",
@@ -1650,7 +1652,15 @@ export default {
           { required: true, message: "", trigger: "blur" },
         ],
       },
+      visualizacion: "",
     };
+  },
+  mounted() {
+    this.visualizacion = this.tipoEnsayo;
+    console.log(this.visualizacion);
+    if (this.ensayoCargado) {
+      this.cargaDatosEnsayo();
+    }
   },
   methods: {
     onSubmit(nombreEnsayo) {
@@ -1751,62 +1761,62 @@ export default {
       var dDosMuestraCuatro = parseFloat(this.form.dDosMuestraCuatro);
       let calc;
       if (isNaN(error)) {
-        this.form.dUnoMuestraUnoCorregida = "No valido";
-        this.form.dDosMuestraUnoCorregida = "No valido";
-        this.form.dUnoMuestraDosCorregida = "No valido";
-        this.form.dDosMuestraDosCorregida = "No valido";
-        this.form.dUnoMuestraTresCorregida = "No valido";
-        this.form.dDosMuestraTresCorregida = "No valido";
-        this.form.dUnoMuestraCuatroCorregida = "No valido";
-        this.form.dDosMuestraCuatroCorregida = "No valido";
+        this.form.dUnoMuestraUnoCorregida = "---";
+        this.form.dDosMuestraUnoCorregida = "---";
+        this.form.dUnoMuestraDosCorregida = "---";
+        this.form.dDosMuestraDosCorregida = "---";
+        this.form.dUnoMuestraTresCorregida = "---";
+        this.form.dDosMuestraTresCorregida = "---";
+        this.form.dUnoMuestraCuatroCorregida = "---";
+        this.form.dDosMuestraCuatroCorregida = "---";
       }
       if (!isNaN(dUnoMuestraUno) && !isNaN(error)) {
         calc = dUnoMuestraUno + error;
         this.form.dUnoMuestraUnoCorregida = calc;
       } else {
-        this.form.dUnoMuestraUnoCorregida = "No valido";
+        this.form.dUnoMuestraUnoCorregida = "---";
       }
       if (!isNaN(dDosMuestraUno) && !isNaN(error)) {
         calc = dDosMuestraUno + error;
         this.form.dDosMuestraUnoCorregida = calc;
       } else {
-        this.form.dDosMuestraUnoCorregida = "No valido";
+        this.form.dDosMuestraUnoCorregida = "---";
       }
       if (!isNaN(dUnoMuestraDos) && !isNaN(error)) {
         calc = dUnoMuestraDos + error;
         this.form.dUnoMuestraDosCorregida = calc;
       } else {
-        this.form.dUnoMuestraDosCorregida = "No valido";
+        this.form.dUnoMuestraDosCorregida = "---";
       }
       if (!isNaN(dDosMuestraDos) && !isNaN(error)) {
         calc = dDosMuestraDos + error;
         this.form.dDosMuestraDosCorregida = calc;
       } else {
-        this.form.dDosMuestraDosCorregida = "No valido";
+        this.form.dDosMuestraDosCorregida = "---";
       }
       if (!isNaN(dUnoMuestraTres) && !isNaN(error)) {
         calc = dUnoMuestraTres + error;
         this.form.dUnoMuestraTresCorregida = calc;
       } else {
-        this.form.dUnoMuestraTresCorregida = "No valido";
+        this.form.dUnoMuestraTresCorregida = "---";
       }
       if (!isNaN(dDosMuestraTres) && !isNaN(error)) {
         calc = dDosMuestraTres + error;
         this.form.dDosMuestraTresCorregida = calc;
       } else {
-        this.form.dDosMuestraTresCorregida = "No valido";
+        this.form.dDosMuestraTresCorregida = "---";
       }
       if (!isNaN(dUnoMuestraCuatro) && !isNaN(error)) {
         calc = dUnoMuestraCuatro + error;
         this.form.dUnoMuestraCuatroCorregida = calc;
       } else {
-        this.form.dUnoMuestraCuatroCorregida = "No valido";
+        this.form.dUnoMuestraCuatroCorregida = "---";
       }
       if (!isNaN(dDosMuestraCuatro) && !isNaN(error)) {
         calc = dDosMuestraCuatro + error;
         this.form.dDosMuestraCuatroCorregida = calc;
       } else {
-        this.form.dDosMuestraCuatroCorregida = "No valido";
+        this.form.dDosMuestraCuatroCorregida = "---";
       }
     },
     calculaLongitudCorregida() {
@@ -1825,90 +1835,90 @@ export default {
       var refrentadoCuatro = parseFloat(this.form.refrentadoCuatro);
       let calc;
       if (isNaN(error)) {
-        this.form.hUnoMuestraUnoCorregida = "No valido";
-        this.form.hDosMuestraUnoCorregida = "No valido";
-        this.form.hUnoMuestraDosCorregida = "No valido";
-        this.form.hDosMuestraDosCorregida = "No valido";
-        this.form.hUnoMuestraTresCorregida = "No valido";
-        this.form.hDosMuestraTresCorregida = "No valido";
-        this.form.hUnoMuestraCuatroCorregida = "No valido";
-        this.form.hDosMuestraCuatroCorregida = "No valido";
-        this.form.refrentadoCorregidoMuestraUno = "No valido";
-        this.form.refrentadoCorregidoMuestraDos = "No valido";
-        this.form.refrentadoCorregidoMuestraTres = "No valido";
-        this.form.refrentadoCorregidoMuestraCuatro = "No valido";
+        this.form.hUnoMuestraUnoCorregida = "---";
+        this.form.hDosMuestraUnoCorregida = "---";
+        this.form.hUnoMuestraDosCorregida = "---";
+        this.form.hDosMuestraDosCorregida = "---";
+        this.form.hUnoMuestraTresCorregida = "---";
+        this.form.hDosMuestraTresCorregida = "---";
+        this.form.hUnoMuestraCuatroCorregida = "---";
+        this.form.hDosMuestraCuatroCorregida = "---";
+        this.form.refrentadoCorregidoMuestraUno = "---";
+        this.form.refrentadoCorregidoMuestraDos = "---";
+        this.form.refrentadoCorregidoMuestraTres = "---";
+        this.form.refrentadoCorregidoMuestraCuatro = "---";
       }
       if (!isNaN(hUnoMuestraUno) && !isNaN(error)) {
         calc = hUnoMuestraUno + error;
         this.form.hUnoMuestraUnoCorregida = calc;
       } else {
-        this.form.hUnoMuestraUnoCorregida = "No valido";
+        this.form.hUnoMuestraUnoCorregida = "---";
       }
       if (!isNaN(hDosMuestraUno) && !isNaN(error)) {
         calc = hDosMuestraUno + error;
         this.form.hDosMuestraUnoCorregida = calc;
       } else {
-        this.form.hDosMuestraUnoCorregida = "No valido";
+        this.form.hDosMuestraUnoCorregida = "---";
       }
       if (!isNaN(hUnoMuestraDos) && !isNaN(error)) {
         calc = hUnoMuestraDos + error;
         this.form.hUnoMuestraDosCorregida = calc;
       } else {
-        this.form.hUnoMuestraDosCorregida = "No valido";
+        this.form.hUnoMuestraDosCorregida = "---";
       }
       if (!isNaN(hDosMuestraDos) && !isNaN(error)) {
         calc = hDosMuestraDos + error;
         this.form.hDosMuestraDosCorregida = calc;
       } else {
-        this.form.hDosMuestraDosCorregida = "No valido";
+        this.form.hDosMuestraDosCorregida = "---";
       }
       if (!isNaN(hUnoMuestraTres) && !isNaN(error)) {
         calc = hUnoMuestraTres + error;
         this.form.hUnoMuestraTresCorregida = calc;
       } else {
-        this.form.hUnoMuestraTresCorregida = "No valido";
+        this.form.hUnoMuestraTresCorregida = "---";
       }
       if (!isNaN(hDosMuestraTres) && !isNaN(error)) {
         calc = hDosMuestraTres + error;
         this.form.hDosMuestraTresCorregida = calc;
       } else {
-        this.form.hDosMuestraTresCorregida = "No valido";
+        this.form.hDosMuestraTresCorregida = "---";
       }
       if (!isNaN(hUnoMuestraCuatro) && !isNaN(error)) {
         calc = hUnoMuestraCuatro + error;
         this.form.hUnoMuestraCuatroCorregida = calc;
       } else {
-        this.form.hUnoMuestraCuatroCorregida = "No valido";
+        this.form.hUnoMuestraCuatroCorregida = "---";
       }
       if (!isNaN(hDosMuestraCuatro) && !isNaN(error)) {
         calc = hDosMuestraCuatro + error;
         this.form.hDosMuestraCuatroCorregida = calc;
       } else {
-        this.form.hDosMuestraCuatroCorregida = "No valido";
+        this.form.hDosMuestraCuatroCorregida = "---";
       }
       if (!isNaN(refrentadoUno) && !isNaN(error)) {
         calc = refrentadoUno + error;
         this.form.refrentadoCorregidoMuestraUno = calc;
       } else {
-        this.form.refrentadoCorregidoMuestraUno = "No valido";
+        this.form.refrentadoCorregidoMuestraUno = "---";
       }
       if (!isNaN(refrentadoDos) && !isNaN(error)) {
         calc = refrentadoDos + error;
         this.form.refrentadoCorregidoMuestraDos = calc;
       } else {
-        this.form.refrentadoCorregidoMuestraDos = "No valido";
+        this.form.refrentadoCorregidoMuestraDos = "---";
       }
       if (!isNaN(refrentadoTres) && !isNaN(error)) {
         calc = refrentadoTres + error;
         this.form.refrentadoCorregidoMuestraTres = calc;
       } else {
-        this.form.refrentadoCorregidoMuestraTres = "No valido";
+        this.form.refrentadoCorregidoMuestraTres = "---";
       }
       if (!isNaN(refrentadoCuatro) && !isNaN(error)) {
         calc = refrentadoCuatro + error;
         this.form.refrentadoCorregidoMuestraCuatro = calc;
       } else {
-        this.form.refrentadoCorregidoMuestraCuatro = "No valido";
+        this.form.refrentadoCorregidoMuestraCuatro = "---";
       }
     },
     calculaFactorCompresion(
@@ -1924,13 +1934,253 @@ export default {
         factorUno
       );
     },
+    cargaDatosEnsayo() {
+      this.form.id = this.ensayoCargado.id;
+      this.form.numIngreso = this.ensayoCargado.num_ingreso;
+      this.form.OTT = this.ensayoCargado.ott;
+      this.form.numInforme = this.ensayoCargado.num_informe;
+      this.form.camaraHumeda = this.ensayoCargado.camara_humeda;
+      this.form.piscina = this.ensayoCargado.piscina;
+      this.form.balanza = this.ensayoCargado.balanza;
+      this.form.numPieDeMetro = this.ensayoCargado.num_pie_de_metro;
+      this.form.numPrensa = this.ensayoCargado.num_prensa;
+      this.form.numCronometro = this.ensayoCargado.num_cronometro;
+      this.form.errorCientoCincuentaMm = this.ensayoCargado.error_cientocincuenta_mm;
+      this.form.errorTrescientosMm = this.ensayoCargado.error_trescientos_mm;
+      this.form.numMarmita = this.ensayoCargado.num_marmita;
+      this.form.numDispositivoRefrentado = this.ensayoCargado.num_dispositivo_refrentado;
+      this.form.numMicrometro = this.ensayoCargado.num_micrometro;
+      this.form.numMoldeMuestraUno = this.ensayoCargado.num_molde_muestra_uno;
+      this.form.numMoldeMuestraDos = this.ensayoCargado.num_molde_muestra_dos;
+      this.form.numMoldeMuestraTres = this.ensayoCargado.num_molde_muestra_tres;
+      this.form.numMoldeMuestraCuatro = this.ensayoCargado.num_molde_muestra_cuatro;
+      this.form.fechaConfeccionMuestraUno = this.ensayoCargado.fecha_confeccion_muestra_uno;
+      this.form.fechaConfeccionMuestraDos = this.ensayoCargado.fecha_confeccion_muestra_dos;
+      this.form.fechaConfeccionMuestraTres = this.ensayoCargado.fecha_confeccion_muestra_tres;
+      this.form.fechaConfeccionMuestraCuatro = this.ensayoCargado.fecha_confeccion_muestra_cuatro;
+      this.form.fechaEnsayoMuestraUno = this.ensayoCargado.fecha_ensayo_muestra_uno;
+      this.form.fechaEnsayoMuestraDos = this.ensayoCargado.fecha_ensayo_muestra_dos;
+      this.form.fechaEnsayoMuestraTres = this.ensayoCargado.fecha_ensayo_muestra_tres;
+      this.form.fechaEnsayoMuestraCuatro = this.ensayoCargado.fecha_ensayo_muestra_cuatro;
+      this.form.edadDiasMuestraUno = this.ensayoCargado.edad_dias_muestra_uno;
+      this.form.edadDiasMuestraDos = this.ensayoCargado.edad_dias_muestra_dos;
+      this.form.edadDiasMuestraTres = this.ensayoCargado.edad_dias_muestra_tres;
+      this.form.edadDiasMuestraCuatro = this.ensayoCargado.edad_dias_muestra_cuatro;
+      this.form.refrentadoCorregidoMuestraUno = this.ensayoCargado.refrentado_corregido_muestra_uno;
+      this.form.refrentadoCorregidoMuestraDos = this.ensayoCargado.refrentado_corregido_muestra_dos;
+      this.form.refrentadoCorregidoMuestraTres = this.ensayoCargado.refrentado_corregido_muestra_tres;
+      this.form.refrentadoCorregidoMuestraCuatro = this.ensayoCargado.refrentado_corregido_muestra_cuatro;
+      this.form.espesorSuperiorMuestraUno = this.ensayoCargado.espesor_superior_muestra_uno;
+      this.form.espesorSuperiorMuestraDos = this.ensayoCargado.espesor_superior_muestra_dos;
+      this.form.espesorSuperiorMuestraTres = this.ensayoCargado.espesor_superior_muestra_tres;
+      this.form.espesorSuperiorMuestraCuatro = this.ensayoCargado.espesor_superior_muestra_cuatro;
+      this.form.espesorInferiorMuestraUno = this.ensayoCargado.espesor_inferior_muestra_uno;
+      this.form.espesorInferiorMuestraDos = this.ensayoCargado.espesor_inferior_muestra_dos;
+      this.form.espesorInferiorMuestraTres = this.ensayoCargado.espesor_inferior_muestra_tres;
+      this.form.espesorInferiorMuestraCuatro = this.ensayoCargado.espesor_inferior_muestra_cuatro;
+      this.form.espesorPromedioMuestraUno = this.ensayoCargado.espesor_promedio_muestra_uno;
+      this.form.espesorPromedioMuestraDos = this.ensayoCargado.espesor_promedio_muestra_dos;
+      this.form.espesorPromedioMuestraTres = this.ensayoCargado.espesor_promedio_muestra_tres;
+      this.form.espesorPromedioMuestraCuatro = this.ensayoCargado.espesor_promedio_muestra_cuatro;
+      this.form.dUnoMuestraUno = this.ensayoCargado.d_uno_muestra_uno;
+      this.form.dUnoMuestraDos = this.ensayoCargado.d_uno_muestra_dos;
+      this.form.dUnoMuestraTres = this.ensayoCargado.d_uno_muestra_tres;
+      this.form.dUnoMuestraCuatro = this.ensayoCargado.d_uno_muestra_cuatro;
+      this.form.dDosMuestraUno = this.ensayoCargado.d_dos_muestra_uno;
+      this.form.dDosMuestraDos = this.ensayoCargado.d_dos_muestra_dos;
+      this.form.dDosMuestraTres = this.ensayoCargado.d_dos_muestra_tres;
+      this.form.dDosMuestraCuatro = this.ensayoCargado.d_dos_muestra_cuatro;
+      this.form.hUnoMuestraUno = this.ensayoCargado.h_uno_muestra_uno;
+      this.form.hUnoMuestraDos = this.ensayoCargado.h_uno_muestra_dos;
+      this.form.hUnoMuestraTres = this.ensayoCargado.h_uno_muestra_tres;
+      this.form.hUnoMuestraCuatro = this.ensayoCargado.h_uno_muestra_cuatro;
+      this.form.hDosMuestraUno = this.ensayoCargado.h_dos_muestra_uno;
+      this.form.hDosMuestraDos = this.ensayoCargado.h_dos_muestra_dos;
+      this.form.hDosMuestraTres = this.ensayoCargado.h_dos_muestra_tres;
+      this.form.hDosMuestraCuatro = this.ensayoCargado.h_dos_muestra_cuatro;
+      this.form.refrentadoUno = this.ensayoCargado.refrentado_uno;
+      this.form.refrentadoDos = this.ensayoCargado.refrentado_dos;
+      this.form.refrentadoTres = this.ensayoCargado.refrentado_tres;
+      this.form.refrentadoCuatro = this.ensayoCargado.refrentado_cuatro;
+      this.form.dUnoMuestraUnoCorregida = this.ensayoCargado.d_uno_muestra_uno_corregida;
+      this.form.dUnoMuestraDosCorregida = this.ensayoCargado.d_uno_muestra_dos_corregida;
+      this.form.dUnoMuestraTresCorregida = this.ensayoCargado.d_uno_muestra_tres_corregida;
+      this.form.dUnoMuestraCuatroCorregida = this.ensayoCargado.d_uno_muestra_cuatro_corregida;
+      this.form.dDosMuestraUnoCorregida = this.ensayoCargado.d_dos_muestra_uno_corregida;
+      this.form.dDosMuestraDosCorregida = this.ensayoCargado.d_dos_muestra_dos_corregida;
+      this.form.dDosMuestraTresCorregida = this.ensayoCargado.d_dos_muestra_tres_corregida;
+      this.form.dDosMuestraCuatroCorregida = this.ensayoCargado.d_dos_muestra_cuatro_corregida;
+      this.form.hUnoMuestraUnoCorregida = this.ensayoCargado.h_uno_muestra_uno_corregida;
+      this.form.hUnoMuestraDosCorregida = this.ensayoCargado.h_uno_muestra_dos_corregida;
+      this.form.hUnoMuestraTresCorregida = this.ensayoCargado.h_uno_muestra_tres_corregida;
+      this.form.hUnoMuestraCuatroCorregida = this.ensayoCargado.h_uno_muestra_cuatro_corregida;
+      this.form.hDosMuestraUnoCorregida = this.ensayoCargado.h_dos_muestra_uno_corregida;
+      this.form.hDosMuestraDosCorregida = this.ensayoCargado.h_dos_muestra_dos_corregida;
+      this.form.hDosMuestraTresCorregida = this.ensayoCargado.h_dos_muestra_tres_corregida;
+      this.form.hDosMuestraCuatroCorregida = this.ensayoCargado.h_dos_muestra_cuatro_corregida;
+      this.form.masaMuestraUno = this.ensayoCargado.masa_muestra_uno;
+      this.form.masaMuestraDos = this.ensayoCargado.masa_muestra_dos;
+      this.form.masaMuestraTres = this.ensayoCargado.masa_muestra_tres;
+      this.form.masaMuestraCuatro = this.ensayoCargado.masa_muestra_cuatro;
+      this.form.errorMuestraUno = this.ensayoCargado.error_muestra_uno;
+      this.form.errorMuestraDos = this.ensayoCargado.error_muestra_dos;
+      this.form.errorMuestraTres = this.ensayoCargado.error_muestra_tres;
+      this.form.errorMuestraCuatro = this.ensayoCargado.error_muestra_cuatro;
+      this.form.masaCorregidaMuestraUno = this.ensayoCargado.masa_corregida_muestra_uno;
+      this.form.masaCorregidaMuestraDos = this.ensayoCargado.masa_corregida_muestra_dos;
+      this.form.masaCorregidaMuestraTres = this.ensayoCargado.masa_corregida_muestra_tres;
+      this.form.masaCorregidaMuestraCuatro = this.ensayoCargado.masa_corregida_muestra_cuatro;
+      this.form.volumenMuestraUno = this.ensayoCargado.volumen_muestra_uno;
+      this.form.volumenMuestraDos = this.ensayoCargado.volumen_muestra_dos;
+      this.form.volumenMuestraTres = this.ensayoCargado.volumen_muestra_tres;
+      this.form.volumenMuestraCuatro = this.ensayoCargado.volumen_muestra_cuatro;
+      this.form.volumenMetroCubicoMuestraUno = this.ensayoCargado.volumen_metro_cubico_muestra_uno;
+      this.form.volumenMetroCubicoMuestraDos = this.ensayoCargado.volumen_metro_cubico_muestra_dos;
+      this.form.volumenMetroCubicoMuestraTres = this.ensayoCargado.volumen_metro_cubico_muestra_tres;
+      this.form.volumenMetroCubicoMuestraCuatro = this.ensayoCargado.volumen_metro_cubico_muestra_cuatro;
+      this.form.densidadMuestraUno = this.ensayoCargado.densidad_muestra_uno;
+      this.form.densidadMuestraDos = this.ensayoCargado.densidad_muestra_dos;
+      this.form.densidadMuestraTres = this.ensayoCargado.densidad_muestra_tres;
+      this.form.densidadMuestraCuatro = this.ensayoCargado.densidad_muestra_cuatro;
+      this.form.areaMuestraUno = this.ensayoCargado.area_muestra_uno;
+      this.form.areaMuestraDos = this.ensayoCargado.area_muestra_dos;
+      this.form.areaMuestraTres = this.ensayoCargado.area_muestra_tres;
+      this.form.areaMuestraCuatro = this.ensayoCargado.area_muestra_cuatro;
+      this.form.cargaEnsayoMuestraUno = this.ensayoCargado.carga_ensayo_muestra_uno;
+      this.form.cargaEnsayoMuestraDos = this.ensayoCargado.carga_ensayo_muestra_dos;
+      this.form.cargaEnsayoMuestraTres = this.ensayoCargado.carga_ensayo_muestra_tres;
+      this.form.cargaEnsayoMuestraCuatro = this.ensayoCargado.carga_ensayo_muestra_cuatro;
+      this.form.cargaEnsayoMilMuestraUno = this.ensayoCargado.carga_ensayo_mil_muestra_uno;
+      this.form.cargaEnsayoMilMuestraDos = this.ensayoCargado.carga_ensayo_mil_muestra_dos;
+      this.form.cargaEnsayoMilMuestraTres = this.ensayoCargado.carga_ensayo_mil_muestra_tres;
+      this.form.cargaEnsayoMilMuestraCuatro = this.ensayoCargado.carga_ensayo_mil_muestra_cuatro;
+      this.form.tiempoCargaMuestraUno = this.ensayoCargado.tiempo_carga_muestra_uno;
+      this.form.tiempoCargaMuestraDos = this.ensayoCargado.tiempo_carga_muestra_dos;
+      this.form.tiempoCargaMuestraTres = this.ensayoCargado.tiempo_carga_muestra_tres;
+      this.form.tiempoCargaMuestraCuatro = this.ensayoCargado.tiempo_carga_muestra_cuatro;
+      this.form.resistenciaCompresionMuestraUno = this.ensayoCargado.resistencia_compresion_muestra_uno;
+      this.form.resistenciaCompresionMuestraDos = this.ensayoCargado.resistencia_compresion_muestra_dos;
+      this.form.resistenciaCompresionMuestraTres = this.ensayoCargado.resistencia_compresion_muestra_tres;
+      this.form.resistenciaCompresionMuestraCuatro = this.ensayoCargado.resistencia_compresion_muestra_cuatro;
+      this.form.factoresConversionMuestraUno = this.ensayoCargado.factores_conversion_muestra_uno;
+      this.form.factoresConversionMuestraDos = this.ensayoCargado.factores_conversion_muestra_dos;
+      this.form.factoresConversionMuestraTres = this.ensayoCargado.factores_conversion_muestra_tres;
+      this.form.factoresConversionMuestraCuatro = this.ensayoCargado.factores_conversion_muestra_cuatro;
+      this.form.resistenciaCorregidaMuestraUno = this.ensayoCargado.resistencia_corregida_muestra_uno;
+      this.form.resistenciaCorregidaMuestraDos = this.ensayoCargado.resistencia_corregida_muestra_dos;
+      this.form.resistenciaCorregidaMuestraTres = this.ensayoCargado.resistencia_corregida_muestra_tres;
+      this.form.resistenciaCorregidaMuestraCuatro = this.ensayoCargado.resistencia_corregida_muestra_cuatro;
+      this.form.velocidadEnsayoMuestraUno = this.ensayoCargado.velocidad_ensayo_muestra_uno;
+      this.form.velocidadEnsayoMuestraDos = this.ensayoCargado.velocidad_ensayo_muestra_dos;
+      this.form.velocidadEnsayoMuestraTres = this.ensayoCargado.velocidad_ensayo_muestra_tres;
+      this.form.velocidadEnsayoMuestraCuatro = this.ensayoCargado.velocidad_ensayo_muestra_cuatro;
+      this.form.tipoRoturaMuestraUno = this.ensayoCargado.tipo_rotura_muestra_uno;
+      this.form.tipoRoturaMuestraDos = this.ensayoCargado.tipo_rotura_muestra_dos;
+      this.form.tipoRoturaMuestraTres = this.ensayoCargado.tipo_rotura_muestra_tres;
+      this.form.tipoRoturaMuestraCuatro = this.ensayoCargado.tipo_rotura_muestra_cuatro;
+      this.form.aseguramientoMuestraUno = this.ensayoCargado.aseguramiento_muestra_uno;
+      this.form.aseguramientoMuestraDos = this.ensayoCargado.aseguramiento_muestra_dos;
+      this.form.aseguramientoMuestraTres = this.ensayoCargado.aseguramiento_muestra_tres;
+      this.form.aseguramientoMuestraCuatro = this.ensayoCargado.aseguramiento_muestra_cuatro;
+      this.form.observaciones = this.ensayoCargado.observaciones;
+      this.form.ensayadoPor = this.ensayoCargado.ensayado_por;
+      this.form.fecha = this.ensayoCargado.fecha;
+      this.form.vb = this.ensayoCargado.vb;
+      this.form.refrentadoMuestraUno =
+        this.ensayoCargado.refrentado_muestra_uno == 1
+          ? true
+          : this.ensayoCargado.refrentado_muestra_uno;
+      this.form.refrentadoMuestraDos =
+        this.ensayoCargado.refrentado_muestra_dos == 1
+          ? true
+          : this.ensayoCargado.refrentado_muestra_dos;
+      this.form.refrentadoMuestraTres =
+        this.ensayoCargado.refrentado_muestra_tres == 1
+          ? true
+          : this.ensayoCargado.refrentado_muestra_tres;
+      this.form.refrentadoMuestraCuatro =
+        this.ensayoCargado.refrentado_muestra_cuatro == 1
+          ? true
+          : this.ensayoCargado.refrentado_muestra_cuatro;
+      this.form.perpendicularidadMuestraUno =
+        this.ensayoCargado.perpendicularidad_muestra_uno == 1
+          ? true
+          : this.ensayoCargado.perpendicularidad_muestra_uno;
+      this.form.perpendicularidadMuestraDos =
+        this.ensayoCargado.perpendicularidad_muestra_dos == 1
+          ? true
+          : this.ensayoCargado.perpendicularidad_muestra_dos;
+      this.form.perpendicularidadMuestraTres =
+        this.ensayoCargado.perpendicularidad_muestra_tres == 1
+          ? true
+          : this.ensayoCargado.perpendicularidad_muestra_tres;
+      this.form.perpendicularidadMuestraCuatro =
+        this.ensayoCargado.perpendicularidad_muestra_cuatro == 1
+          ? true
+          : this.ensayoCargado.perpendicularidad_muestra_cuatro;
+      this.form.planeidadMuestraUno =
+        this.ensayoCargado.planeidad_muestra_uno == 1
+          ? true
+          : this.ensayoCargado.planeidad_muestra_uno;
+      this.form.planeidadMuestraDos =
+        this.ensayoCargado.planeidad_muestra_dos == 1
+          ? true
+          : this.ensayoCargado.planeidad_muestra_dos;
+      this.form.planeidadMuestraTres =
+        this.ensayoCargado.planeidad_muestra_tres == 1
+          ? true
+          : this.ensayoCargado.planeidad_muestra_tres;
+      this.form.planeidadMuestraCuatro =
+        this.ensayoCargado.planeidad_muestra_cuatro == 1
+          ? true
+          : this.ensayoCargado.planeidad_muestra_cuatro;
+      this.form.cumpleMuestraUno =
+        this.ensayoCargado.cumple_muestra_uno == 1
+          ? true
+          : this.ensayoCargado.cumple_muestra_uno;
+      this.form.cumpleMuestraDos =
+        this.ensayoCargado.cumple_muestra_dos == 1
+          ? true
+          : this.ensayoCargado.cumple_muestra_dos;
+      this.form.cumpleMuestraTres =
+        this.ensayoCargado.cumple_muestra_tres == 1
+          ? true
+          : this.ensayoCargado.cumple_muestra_tres;
+      this.form.cumpleMuestraCuatro =
+        this.ensayoCargado.cumple_muestra_cuatro == 1
+          ? true
+          : this.ensayoCargado.cumple_muestra_cuatro;
+      this.form.velocidadMuestraUno =
+        this.ensayoCargado.velocidad_muestra_uno == 1
+          ? true
+          : this.ensayoCargado.velocidad_muestra_uno;
+      this.form.velocidadMuestraDos =
+        this.ensayoCargado.velocidad_muestra_dos == 1
+          ? true
+          : this.ensayoCargado.velocidad_muestra_dos;
+      this.form.velocidadMuestraTres =
+        this.ensayoCargado.velocidad_muestra_tres == 1
+          ? true
+          : this.ensayoCargado.velocidad_muestra_tres;
+      this.form.velocidadMuestraCuatro =
+        this.ensayoCargado.velocidad_muestra_cuatro == 1
+          ? true
+          : this.ensayoCargado.velocidad_muestra_cuatro;
+    },
+  },
+  computed: {
+    esClickeable: function () {
+      return {
+        "no-click": this.visualizacion === "ver",
+      };
+    },
   },
   watch: {
     "form.volumenMetroCubicoMuestraUno": function (newVal, oldVal) {
       var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraUno = "No valido";
+        this.form.densidadMuestraUno = "---";
       } else {
         this.form.densidadMuestraUno = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -1941,7 +2191,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraUno = "No valido";
+        this.form.densidadMuestraUno = "---";
       } else {
         this.form.densidadMuestraUno = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -1952,7 +2202,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraDos = "No valido";
+        this.form.densidadMuestraDos = "---";
       } else {
         this.form.densidadMuestraDos = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -1963,7 +2213,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraDos = "No valido";
+        this.form.densidadMuestraDos = "---";
       } else {
         this.form.densidadMuestraDos = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -1974,7 +2224,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraTres = "No valido";
+        this.form.densidadMuestraTres = "---";
       } else {
       }
       this.form.densidadMuestraTres = parseInt(
@@ -1985,7 +2235,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraTres = "No valido";
+        this.form.densidadMuestraTres = "---";
       } else {
         this.form.densidadMuestraTres = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -1996,7 +2246,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraCuatro = "No valido";
+        this.form.densidadMuestraCuatro = "---";
       } else {
         this.form.densidadMuestraCuatro = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -2007,7 +2257,7 @@ export default {
       var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.densidadMuestraCuatro = "No valido";
+        this.form.densidadMuestraCuatro = "---";
       } else {
         this.form.densidadMuestraCuatro = parseInt(
           Math.round(dUno / dDos / 10) * 10
@@ -2142,7 +2392,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraUno)) ||
         isNaN(parseFloat(this.form.errorMuestraUno))
       ) {
-        this.form.masaCorregidaMuestraUno = "No valido";
+        this.form.masaCorregidaMuestraUno = "---";
       } else {
         this.form.masaCorregidaMuestraUno =
           parseFloat(this.form.masaMuestraUno) +
@@ -2154,7 +2404,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraUno)) ||
         isNaN(parseFloat(this.form.errorMuestraUno))
       ) {
-        this.form.masaCorregidaMuestraUno = "No valido";
+        this.form.masaCorregidaMuestraUno = "---";
       } else {
         this.form.masaCorregidaMuestraUno =
           parseFloat(this.form.masaMuestraUno) +
@@ -2166,7 +2416,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraDos)) ||
         isNaN(parseFloat(this.form.errorMuestraDos))
       ) {
-        this.form.masaCorregidaMuestraDos = "No valido";
+        this.form.masaCorregidaMuestraDos = "---";
       } else {
         this.form.masaCorregidaMuestraDos =
           parseFloat(this.form.masaMuestraDos) +
@@ -2178,7 +2428,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraDos)) ||
         isNaN(parseFloat(this.form.errorMuestraDos))
       ) {
-        this.form.masaCorregidaMuestraDos = "No valido";
+        this.form.masaCorregidaMuestraDos = "---";
       } else {
         this.form.masaCorregidaMuestraDos =
           parseFloat(this.form.masaMuestraDos) +
@@ -2190,7 +2440,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraTres)) ||
         isNaN(parseFloat(this.form.errorMuestraTres))
       ) {
-        this.form.masaCorregidaMuestraTres = "No valido";
+        this.form.masaCorregidaMuestraTres = "---";
       } else {
         this.form.masaCorregidaMuestraTres =
           parseFloat(this.form.masaMuestraTres) +
@@ -2202,7 +2452,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraTres)) ||
         isNaN(parseFloat(this.form.errorMuestraTres))
       ) {
-        this.form.masaCorregidaMuestraTres = "No valido";
+        this.form.masaCorregidaMuestraTres = "---";
       } else {
         this.form.masaCorregidaMuestraTres =
           parseFloat(this.form.masaMuestraTres) +
@@ -2214,7 +2464,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraCuatro)) ||
         isNaN(parseFloat(this.form.errorMuestraCuatro))
       ) {
-        this.form.masaCorregidaMuestraCuatro = "No valido";
+        this.form.masaCorregidaMuestraCuatro = "---";
       } else {
         this.form.masaCorregidaMuestraCuatro =
           parseFloat(this.form.masaMuestraCuatro) +
@@ -2226,7 +2476,7 @@ export default {
         isNaN(parseFloat(this.form.masaMuestraCuatro)) ||
         isNaN(parseFloat(this.form.errorMuestraCuatro))
       ) {
-        this.form.masaCorregidaMuestraCuatro = "No valido";
+        this.form.masaCorregidaMuestraCuatro = "---";
       } else {
         this.form.masaCorregidaMuestraCuatro =
           parseFloat(this.form.masaMuestraCuatro) +
@@ -2237,7 +2487,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
       var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraUno = "No valido";
+        this.form.areaMuestraUno = "---";
       } else {
         this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2246,7 +2496,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
       var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraUno = "No valido";
+        this.form.areaMuestraUno = "---";
       } else {
         this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2255,7 +2505,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
       var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraDos = "No valido";
+        this.form.areaMuestraDos = "---";
       } else {
         this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2264,7 +2514,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
       var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraDos = "No valido";
+        this.form.areaMuestraDos = "---";
       } else {
         this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2273,7 +2523,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
       var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraTres = "No valido";
+        this.form.areaMuestraTres = "---";
       } else {
         this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2282,7 +2532,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
       var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraTres = "No valido";
+        this.form.areaMuestraTres = "---";
       } else {
         this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2291,7 +2541,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
       var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraCuatro = "No valido";
+        this.form.areaMuestraCuatro = "---";
       } else {
         this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2300,7 +2550,7 @@ export default {
       var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
       var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraCuatro = "No valido";
+        this.form.areaMuestraCuatro = "---";
       } else {
         this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
       }
@@ -2308,7 +2558,7 @@ export default {
     "form.cargaEnsayoMuestraUno": function (newVal, oldVal) {
       var carga = parseFloat(this.form.cargaEnsayoMuestraUno);
       if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraUno = "No valido";
+        this.form.cargaEnsayoMilMuestraUno = "---";
       } else {
         this.form.cargaEnsayoMilMuestraUno = 1000 * carga;
       }
@@ -2316,7 +2566,7 @@ export default {
     "form.cargaEnsayoMuestraDos": function (newVal, oldVal) {
       var carga = parseFloat(this.form.cargaEnsayoMuestraDos);
       if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraDos = "No valido";
+        this.form.cargaEnsayoMilMuestraDos = "---";
       } else {
         this.form.cargaEnsayoMilMuestraDos = 1000 * carga;
       }
@@ -2324,7 +2574,7 @@ export default {
     "form.cargaEnsayoMuestraTres": function (newVal, oldVal) {
       var carga = parseFloat(this.form.cargaEnsayoMuestraTres);
       if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraTres = "No valido";
+        this.form.cargaEnsayoMilMuestraTres = "---";
       } else {
         this.form.cargaEnsayoMilMuestraTres = 1000 * carga;
       }
@@ -2332,7 +2582,7 @@ export default {
     "form.cargaEnsayoMuestraCuatro": function (newVal, oldVal) {
       var carga = parseFloat(this.form.cargaEnsayoMuestraCuatro);
       if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraCuatro = "No valido";
+        this.form.cargaEnsayoMilMuestraCuatro = "---";
       } else {
         this.form.cargaEnsayoMilMuestraCuatro = 1000 * carga;
       }
@@ -2341,7 +2591,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
       var dDos = parseFloat(this.form.areaMuestraUno);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraUno = "No valido";
+        this.form.resistenciaCompresionMuestraUno = "---";
       } else {
         this.form.resistenciaCompresionMuestraUno = dUno / dDos;
       }
@@ -2350,7 +2600,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
       var dDos = parseFloat(this.form.areaMuestraUno);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraUno = "No valido";
+        this.form.resistenciaCompresionMuestraUno = "---";
       } else {
         this.form.resistenciaCompresionMuestraUno = dUno / dDos;
       }
@@ -2359,7 +2609,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
       var dDos = parseFloat(this.form.areaMuestraDos);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraDos = "No valido";
+        this.form.resistenciaCompresionMuestraDos = "---";
       } else {
         this.form.resistenciaCompresionMuestraDos = dUno / dDos;
       }
@@ -2368,7 +2618,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
       var dDos = parseFloat(this.form.areaMuestraDos);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraDos = "No valido";
+        this.form.resistenciaCompresionMuestraDos = "---";
       } else {
         this.form.resistenciaCompresionMuestraDos = dUno / dDos;
       }
@@ -2377,7 +2627,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
       var dDos = parseFloat(this.form.areaMuestraTres);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraTres = "No valido";
+        this.form.resistenciaCompresionMuestraTres = "---";
       } else {
         this.form.resistenciaCompresionMuestraTres = dUno / dDos;
       }
@@ -2386,7 +2636,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
       var dDos = parseFloat(this.form.areaMuestraTres);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraTres = "No valido";
+        this.form.resistenciaCompresionMuestraTres = "---";
       } else {
         this.form.resistenciaCompresionMuestraTres = dUno / dDos;
       }
@@ -2395,7 +2645,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
       var dDos = parseFloat(this.form.areaMuestraCuatro);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraCuatro = "No valido";
+        this.form.resistenciaCompresionMuestraCuatro = "---";
       } else {
         this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
       }
@@ -2404,7 +2654,7 @@ export default {
       var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
       var dDos = parseFloat(this.form.areaMuestraCuatro);
       if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraCuatro = "No valido";
+        this.form.resistenciaCompresionMuestraCuatro = "---";
       } else {
         this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
       }

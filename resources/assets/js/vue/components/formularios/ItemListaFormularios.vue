@@ -15,7 +15,6 @@
           >Ver OTT</el-button
         >
         <el-dialog :visible.sync="dialogVerVisible" width="90%">
-          <!-- :before-close="handleClose" -->
           <iframe
             style="width: 100%; height: 100%"
             :src="rutaVerInforme"
@@ -38,7 +37,6 @@
             <el-button type="danger" @click="dialogVerVisible = false" plain
               >Cerrar visualizaci&oacute;n</el-button
             >
-            <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
           </span>
         </el-dialog>
 
@@ -46,7 +44,6 @@
           >Editar OTT</el-button
         >
         <el-dialog :visible.sync="dialogEditarVisible" width="90%">
-          <!-- :before-close="handleClose" -->
           <iframe
             style="width: 100%; height: 100%"
             :src="rutaEditarInforme"
@@ -69,7 +66,6 @@
             <el-button type="danger" @click="dialogEditarVisible = false" plain
               >Cerrar visualizaci&oacute;n</el-button
             >
-            <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
           </span>
         </el-dialog>
         <el-popconfirm
@@ -108,7 +104,6 @@ export default {
   },
   mounted() {
     this.item = this.itemLista;
-    console.log("itemlistaformularios mounted", this.item.id, this.item);
   },
   methods: {
     eliminarFormulario() {
@@ -135,18 +130,6 @@ export default {
             );
           }
         );
-    },
-    verFormulario() {
-      // this.$http.get(this.urlEditarFormulario,{
-      //     id: this.item.id
-      // });
-      console.log("ver formulario");
-    },
-    editarFormulario() {
-      // this.$http.get(this.urlEditarFormulario,{
-      //     id: this.item.id
-      // });
-      console.log("editar formulario");
     },
     handleInner(done) {
       this.$confirm("Pendiente")

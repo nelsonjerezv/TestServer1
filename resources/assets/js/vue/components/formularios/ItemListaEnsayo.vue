@@ -43,7 +43,35 @@
             <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
           </span>
         </el-dialog>
-        <el-button type="warning" @click="handleInner" plain>Editar</el-button>
+        <el-button type="warning" @click="dialogEditarVisible = true" plain
+          >Editar Ensayo</el-button
+        >
+        <el-dialog :visible.sync="dialogEditarVisible" width="90%">
+          <iframe
+            style="width: 100%; height: 100%"
+            :src="rutaEditarEnsayo"
+          ></iframe>
+          <span slot="footer" class="dialog-footer">
+            <el-button
+              type="success"
+              @click="validarEnsayo"
+              v-if="!item.validado"
+              plain
+              >Validar</el-button
+            >
+            <el-button
+              type="warning"
+              @click="rechazarEnsayo"
+              v-if="item.validado"
+              plain
+              >Rechazar</el-button
+            >
+            <el-button type="danger" @click="dialogEditarVisible = false" plain
+              >Cerrar visualizaci&oacute;n</el-button
+            >
+          </span>
+        </el-dialog>
+
         <el-popconfirm
           confirm-button-text="Eliminar"
           cancel-button-text="volver"
@@ -71,6 +99,7 @@ export default {
       item: "",
       numeroOtt: "",
       dialogVisible: false,
+      dialogEditarVisible: false,
       urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
       urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
       urlValidarFormulario: `${GLOBAL.URL}` + "/formularios/validar-ensayo",
@@ -270,6 +299,11 @@ export default {
         "-";
 
       return ruta;
+    },
+    rutaEditarEnsayo() {
+      return this.dialogEditarVisible
+        ? `${GLOBAL.URL}` + "/ensayos/editar-ensayo/" + this.item.id
+        : "";
     },
   },
 };
