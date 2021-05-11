@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
         <title>{{ config('app.name', 'Laravel') }}</title>
+
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -35,30 +35,27 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
+
+
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ __('Cerrar sesión') }} ({{ Auth::user()->name }}) 
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Cerrar sesión') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
+                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                             </form>
                             </li>
+                            
                         @endguest
                     </ul>
                 </div>

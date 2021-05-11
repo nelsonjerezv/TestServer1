@@ -95271,7 +95271,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c], .Rtable-cell > h2[data-v-1e744d4c], .Rtable-cell > h3[data-v-1e744d4c], .Rtable-cell > h4[data-v-1e744d4c], .Rtable-cell > h5[data-v-1e744d4c], .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c], .tabla-extraccion-cell > h2[data-v-1e744d4c], .tabla-extraccion-cell > h3[data-v-1e744d4c], .tabla-extraccion-cell > h4[data-v-1e744d4c], .tabla-extraccion-cell > h5[data-v-1e744d4c], .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content, .comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c], .tabla-aridos-cell > h2[data-v-1e744d4c], .tabla-aridos-cell > h3[data-v-1e744d4c], .tabla-aridos-cell > h4[data-v-1e744d4c], .tabla-aridos-cell > h5[data-v-1e744d4c], .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -96142,413 +96142,1001 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['tipoOtt', 'ottCargada'],
-    data: function data() {
-        var _reglas;
+  props: ["tipoOtt", "ottCargada"],
+  data: function data() {
+    var _reglas;
 
-        return {
-            moment: moment,
-            labelPosition: 'left',
-            unaDosColumnas: 24,
-            urlGuardarFormulario: GLOBAL.URL + 'formularios/guardar-formulario',
-            urlActualizarFormulario: GLOBAL.URL + 'formularios/actualizar-formulario',
-            visualizacion: '',
-            placeholderNumIngreso: 'Se generará automáticamente',
-            form: {
-                id: null,
-                numClienteObra: '',
-                numOtt: '',
-                numIngreso: '',
-                nombreCliente: '',
-                nombreObra: '',
-                fonoObra: '',
-                direccionObra: '',
-                encargadoObra: '',
-                muestreoDe: '',
-                extraccion: '',
-                compactacion: '',
-                tipoMoldeUno: false,
-                tipoMoldeDos: false,
-                tipoMoldeTres: false,
-                tipoMoldeCuatro: false,
-                tipoMoldeCinco: false,
-                tipoMoldeSeis: false,
-                tipoMoldeSiete: false,
-                muestreadoPor: '',
-                ensayadoPor: '',
-                tipoMuestra: '',
-                amasadaHormigon: '',
-                asentamientoCono: '',
-                numInforme: '400-08',
-                segregacion: '',
-                numEquipoConoAbrams: '',
-                numVibradorInmersion: '',
-                numEquipoConoReducido: '',
-                horaMuestreo: '',
-                horaInicioAmasado: '',
-                tAmbiente: '',
-                tHormigonMortero: '',
-                proveedor: '',
-                numGuiaDespacho: '',
-                nombreChofer: '',
-                curadoInicial: 'Piscina de curado',
-                elementoHormigonado: '',
-                ubicacionElemento: '',
-                tipoHormigonMortero: '',
-                resistenciaEspecificada: '',
-                fechaConfeccion: moment().format("DD-MM-YYYY"),
-                aditivo: '',
-                numMixer: '',
-                trasladoProbetas: '',
-                retiroMuestraOtros: '',
-                retiroMuestraCantidadUnDia: '',
-                retiroMuestraCantidadTresDias: '',
-                retiroMuestraCantidadSieteDias: '',
-                retiroMuestraCantidadCatorceDias: '',
-                retiroMuestraCantidadVeintiochoDias: '',
-                retiroMuestraCantidadOtros: '',
-                retiroMuestraFechaUnDia: '',
-                retiroMuestraFechaTresDias: '',
-                retiroMuestraFechaSieteDias: '',
-                retiroMuestraFechaCatorceDias: '',
-                retiroMuestraFechaVeintiochoDias: '',
-                retiroMuestraFechaOtros: '',
-                retiroMuestraInformeUnDia: '',
-                retiroMuestraInformeTresDias: '',
-                retiroMuestraInformeSieteDias: '',
-                retiroMuestraInformeCatorceDias: '',
-                retiroMuestraInformeVeintiochoDias: '',
-                retiroMuestraInformeOtros: '',
-                procedimientoExtraccion: '',
-                muestraIngresadaPorCliente: '',
-                fechaIngreso: '',
-                fechaVisitaObra: '',
-                horaLlegada: '',
-                horaSalida: '',
-                responsableEnObra: '',
-                densAparenteHormigon: '',
-                densAparenteMortero: '',
-                indiceEsclerometrico: '',
-                irregularidadSuperficial: '',
-                irregularidadSuperficialMl: '',
-                observaciones: '',
-                alteracionMuestra: '',
-                observacionesAlteracionesMuestra: '',
-                laboratorista: '',
-                ayudante: '',
-                recibeOMuestrea: '',
-                aridosHormigonMuestraUno: '',
-                aridosHormigonMuestraDos: '',
-                aridosHormigonMuestraTres: '',
-                aridosHormigonMuestraCuatro: '',
-                seccionTestigosHabilitada: false,
-                seccionAridosHabilitada: false,
-                seccionOtrosHabilitada: false,
-                seccionRetiroMuestrasHabilitada: false,
-                testigosExtraidosSeis: '0',
-                testigosExtraidosCuatro: '0',
-                testigosExtraidosTotal: '0',
-                testigosEnsayadosSeis: '0',
-                testigosEnsayadosCuatro: '0',
-                testigosEnsayadosTotal: '0'
-            },
-            reglas: (_reglas = {
-                numClienteObra: [{ required: true, message: '', trigger: 'blur' }],
-                numOtt: [{ required: true, message: '', trigger: 'blur' }],
-                numIngreso: [{ required: true, message: '', trigger: 'blur' }],
-                nombreCliente: [{ required: true, message: '', trigger: 'blur' }],
-                nombreObra: [{ required: true, message: '', trigger: 'blur' }],
-                fonoObra: [{ required: false, message: '', trigger: 'blur' }],
-                direccionObra: [{ required: true, message: '', trigger: 'blur' }],
-                encargadoObra: [{ required: false, message: '', trigger: 'blur' }],
-                muestreoDe: [{ required: true, message: '', trigger: 'change' }],
-                extraccion: [{ required: true, message: '', trigger: 'change' }],
-                compactacion: [{ required: true, message: '', trigger: 'change' }],
-                tipoMoldeUno: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeDos: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeTres: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeCuatro: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeCinco: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeSeis: [{ required: true, message: '', trigger: 'blur' }],
-                tipoMoldeSiete: [{ required: true, message: '', trigger: 'blur' }],
-                muestreadoPor: [{ required: true, message: '', trigger: 'change' }],
-                ensayadoPor: [{ required: true, message: '', trigger: 'change' }],
-                tipoMuestra: [{ required: true, message: '', trigger: 'change' }],
-                seccionTestigosHabilitada: [{ required: false, message: '', trigger: 'change' }],
-                amasadaHormigon: [{ required: true, message: '', trigger: 'blur' }],
-                asentamientoCono: [{ required: true, message: '', trigger: 'blur' }],
-                numInforme: [{ required: true, message: '', trigger: 'blur' }],
-                segregacion: [{ required: true, message: '', trigger: 'blur' }],
-                numEquipoConoAbrams: [{ required: true, message: '', trigger: 'blur' }],
-                numVibradorInmersion: [{ required: true, message: '', trigger: 'blur' }],
-                numEquipoConoReducido: [{ required: true, message: '', trigger: 'blur' }],
-                horaMuestreo: [{ required: true, message: '', trigger: 'blur' }],
-                horaInicioAmasado: [{ required: false, message: '', trigger: 'blur' }],
-                tAmbiente: [{ required: true, message: '', trigger: 'blur' }],
-                tHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
-                proveedor: [{ required: true, message: '', trigger: 'blur' }],
-                numGuiaDespacho: [{ required: true, message: '', trigger: 'blur' }],
-                nombreChofer: [{ required: true, message: '', trigger: 'blur' }],
-                curadoInicial: [{ required: true, message: '', trigger: 'blur' }],
-                elementoHormigonado: [{ required: true, message: '', trigger: 'blur' }],
-                ubicacionElemento: [{ required: true, message: '', trigger: 'blur' }],
-                tipoHormigonMortero: [{ required: true, message: '', trigger: 'blur' }],
-                resistenciaEspecificada: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccion: [{ required: true, message: '', trigger: 'blur' }],
-                aditivo: [{ required: false, message: '', trigger: 'blur' }],
-                numMixer: [{ required: false, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadUnDia: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaUnDia: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeUnDia: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadTresDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaTresDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeTresDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadSieteDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaSieteDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeSieteDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadCatorceDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaCatorceDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeCatorceDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadVeintiochoDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaVeintiochoDias: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeVeintiochoDias: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraOtros: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraCantidadOtros: [{ required: true, message: '', trigger: 'blur' }],
-                retiroMuestraFechaOtros: [{ required: true, message: '', trigger: 'change' }],
-                retiroMuestraInformeOtros: [{ required: true, message: '', trigger: 'blur' }],
-                trasladoProbetas: [{ required: true, message: '', trigger: 'blur' }],
-                procedimientoExtraccion: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraUno: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraDos: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraTres: [{ required: true, message: '', trigger: 'change' }],
-                aridosHormigonMuestraCuatro: [{ required: true, message: '', trigger: 'change' }],
-                densAparenteHormigon: [{ required: true, message: '', trigger: 'change' }],
-                densAparenteMortero: [{ required: true, message: '', trigger: 'change' }],
-                indiceEsclerometrico: [{ required: true, message: '', trigger: 'change' }],
-                irregularidadSuperficial: [{ required: true, message: '', trigger: 'change' }],
-                irregularidadSuperficialMl: [{ required: true, message: '', trigger: 'blur' }],
-                muestraIngresadaPorCliente: [{ required: true, message: '', trigger: 'change' }],
-                responsableEnObra: [{ required: false, message: '', trigger: 'blur' }],
-                fechaIngreso: [{ required: true, message: '', trigger: 'change' }],
-                fechaVisitaObra: [{ required: true, message: '', trigger: 'change' }],
-                horaLlegada: [{ required: true, message: '', trigger: 'change' }],
-                horaSalida: [{ required: true, message: '', trigger: 'change' }],
-                observaciones: [{ required: true, message: '', trigger: 'blur' }],
-                alteracionMuestra: [{ required: true, message: '', trigger: 'change' }],
-                observacionesAlteracionesMuestra: [{ required: true, message: '', trigger: 'change' }]
-            }, _defineProperty(_reglas, 'observaciones', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'laboratorista', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'ayudante', [{ required: true, message: '', trigger: 'blur' }]), _defineProperty(_reglas, 'recibeOMuestrea', [{ required: true, message: '', trigger: 'change' }]), _reglas)
-        };
-    },
-    created: function created() {
-        window.addEventListener('resize', this.handleResize);
-        this.handleResize();
-    },
-    destroyed: function destroyed() {
-        window.removeEventListener('resize', this.handleResize);
-    },
-    mounted: function mounted() {
-        this.visualizacion = this.tipoOtt;
-        console.log(this.visualizacion);
-        if (this.ottCargada) {
-            this.cargaDatosOtt();
-        }
-    },
-
-    methods: {
-        onSubmit: function onSubmit(nombreFormulario, accion) {
-            var _this = this;
-
-            if (accion === 'crear') {
-                // this.$refs[nombreFormulario].validate((valid) => {
-                //     if (valid) {
-                this.$http.post(this.urlGuardarFormulario, {
-                    formulario: this.form
-                }).then(function (response) {
-                    console.log(response);
-                    if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                        setTimeout(function () {
-                            _this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: '' });
-                        }, 0);
-                    } else {
-                        if (response.body[0].errorInfo[0] == "23000") {
-                            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                        }
-                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                    }
-                }, function (response) {
-                    console.log(response);
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                });
-                //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                //         return false;
-                //     }
-                // });
-            } else if (accion === 'editar') {
-                // this.$refs[nombreFormulario].validate((valid) => {
-                //     if (valid) {
-                this.$http.post(this.urlActualizarFormulario, {
-                    formulario: this.form
-                }).then(function (response) {
-                    console.log(response);
-                    if (response.body[1] == true) {
-                        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 7);
-                    } else {
-                        if (response.body[0].errorInfo[0] == "23000") {
-                            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                        }
-                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                    }
-                }, function (response) {
-                    console.log(response);
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                });
-                //     } else {
-                //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-                //         return false;
-                //     }
-                // });
-            }
-        },
-        resetForm: function resetForm(nombreFormulario) {
-            this.$refs[nombreFormulario].resetFields();
-        },
-        handleResize: function handleResize() {
-            this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;
-        },
-        cargaDatosOtt: function cargaDatosOtt() {
-            this.form.id = this.ottCargada.id;
-            this.form.numClienteObra = this.ottCargada.num_cliente_obra;
-            this.form.numOtt = this.ottCargada.num_ott;
-            this.form.numIngreso = this.ottCargada.num_ingreso;
-            this.form.nombreCliente = this.ottCargada.nombre_cliente;
-            this.form.nombreObra = this.ottCargada.nombre_obra;
-            this.form.fonoObra = this.ottCargada.fono_obra;
-            this.form.direccionObra = this.ottCargada.direccion_obra;
-            this.form.encargadoObra = this.ottCargada.encargado_obra;
-            this.form.muestreoDe = this.ottCargada.muestreo_de;
-            this.form.extraccion = this.ottCargada.extraccion;
-            this.form.compactacion = this.ottCargada.compactacion;
-            this.form.muestreadoPor = this.ottCargada.muestreado_por;
-            this.form.ensayadoPor = this.ottCargada.ensayado_por;
-            this.form.tipoMuestra = this.ottCargada.tipo_muestra;
-            this.form.amasadaHormigon = this.ottCargada.amasada_hormigon;
-            this.form.asentamientoCono = this.ottCargada.asentamiento_cono;
-            this.form.numInforme = this.ottCargada.num_informe;
-            this.form.segregacion = this.ottCargada.segregacion;
-            this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
-            this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
-            this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
-            this.form.horaMuestreo = this.ottCargada.hora_muestreo;
-            this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
-            this.form.tAmbiente = this.ottCargada.t_ambiente;
-            this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero;
-            this.form.proveedor = this.ottCargada.proveedor;
-            this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho;
-            this.form.nombreChofer = this.ottCargada.nombre_chofer;
-            this.form.curadoInicial = this.ottCargada.curado_inicial;
-            this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
-            this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
-            this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
-            this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
-            this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
-            this.form.aditivo = this.ottCargada.aditivo;
-            this.form.numMixer = this.ottCargada.num_mixer;
-            this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
-            this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
-            this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
-            this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
-            this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
-            this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
-            this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
-            this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
-            this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
-            this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
-            this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
-            this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
-            this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
-            this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
-            this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
-            this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
-            this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
-            this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
-            this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
-            this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
-            this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
-            this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
-            this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
-            this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
-            this.form.horaLlegada = this.ottCargada.hora_llegada;
-            this.form.horaSalida = this.ottCargada.hora_salida;
-            this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
-            this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
-            this.form.observaciones = this.ottCargada.observaciones;
-            this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
-            this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
-            this.form.laboratorista = this.ottCargada.laboratorista;
-            this.form.ayudante = this.ottCargada.ayudante;
-            this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
-            this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
-            this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
-            this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
-            this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
-            this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
-            this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
-            this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
-            this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
-            this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
-            this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
-
-            this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
-            this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
-            this.form.seccionOtrosHabilitada = this.ottCargada.seccion_otros_habilitada == 1 ? true : this.ottCargada.seccion_otros_habilitada;
-            this.form.seccionRetiroMuestrasHabilitada = this.ottCargada.seccion_retiro_muestras_habilitada == 1 ? true : this.ottCargada.seccion_retiro_muestras_habilitada;
-            this.form.tipoMoldeUno = this.ottCargada.tipo_molde_uno == 1 ? true : this.ottCargada.tipo_molde_uno;
-            this.form.tipoMoldeDos = this.ottCargada.tipo_molde_dos == 1 ? true : this.ottCargada.tipo_molde_dos;
-            this.form.tipoMoldeTres = this.ottCargada.tipo_molde_tres == 1 ? true : this.ottCargada.tipo_molde_tres;
-            this.form.tipoMoldeCuatro = this.ottCargada.tipo_molde_cuatro == 1 ? true : this.ottCargada.tipo_molde_cuatro;
-            this.form.tipoMoldeCinco = this.ottCargada.tipo_molde_cinco == 1 ? true : this.ottCargada.tipo_molde_cinco;
-            this.form.tipoMoldeSeis = this.ottCargada.tipo_molde_seis == 1 ? true : this.ottCargada.tipo_molde_seis;
-            this.form.tipoMoldeSiete = this.ottCargada.tipo_molde_siete == 1 ? true : this.ottCargada.tipo_molde_siete;
-            this.form.densAparenteHormigon = this.ottCargada.dens_aparente_hormigon == 1 ? true : this.ottCargada.dens_aparente_hormigon;
-            this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
-            this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
-            this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
-        }
-    },
-    computed: {
-        esClickeable: function esClickeable() {
-            return {
-                'no-click': this.visualizacion === 'ver'
-            };
-        }
-    },
-    watch: {
-        'form.testigosExtraidosCuatro': function formTestigosExtraidosCuatro(newVal, oldVal) {
-            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
-        },
-        'form.testigosExtraidosSeis': function formTestigosExtraidosSeis(newVal, oldVal) {
-            this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
-        },
-        'form.testigosEnsayadosSeis': function formTestigosEnsayadosSeis(newVal, oldVal) {
-            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
-        },
-        'form.testigosEnsayadosCuatro': function formTestigosEnsayadosCuatro(newVal, oldVal) {
-            this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
-        },
-        'form.muestreadoPor': function formMuestreadoPor(newVal, oldVal) {
-            if (newVal == 'lacem') {
-                this.form.ensayadoPor = 'lacem';
-            }
-        }
-
+    return {
+      ayudante: [{
+        value: 'OSCAR ALARCON REYES',
+        label: 'OSCAR ALARCON REYES'
+      }, {
+        value: 'CRISTIAN GARRIDO PAINEO',
+        label: 'CRISTIAN GARRIDO PAINEO'
+      }, {
+        value: 'BAYHRON ITURRA PRADENAS',
+        label: 'BAYHRON ITURRA PRADENAS'
+      }, {
+        value: 'JOSE PALMA ASTORGA',
+        label: 'JOSE PALMA ASTORGA'
+      }, {
+        value: 'DANIEL PINCHEIRA BECERRA',
+        label: 'DANIEL PINCHEIRA BECERRA'
+      }, {
+        value: 'FELIPE PIZARRO ARAYA',
+        label: 'FELIPE PIZARRO ARAYA'
+      }, {
+        value: 'CARLOS QUIROGA ABURTO',
+        label: 'CARLOS QUIROGA ABURTO'
+      }, {
+        value: 'MARCELO RETAMALES MATELUNA',
+        label: 'MARCELO RETAMALES MATELUNA'
+      }, {
+        value: 'MIGUEL ROJAS GARRIDO',
+        label: 'MIGUEL ROJAS GARRIDO'
+      }, {
+        value: 'GONZALO ROJAS SANCHEZ',
+        label: 'GONZALO ROJAS SANCHEZ'
+      }, {
+        value: 'ALFREDO ROJAS SANCHEZ',
+        label: 'ALFREDO ROJAS SANCHEZ'
+      }, {
+        value: 'LUIS VELASQUEZ ATABALES',
+        label: 'LUIS VELASQUEZ ATABALES'
+      }, {
+        value: 'LUIS VERA MORALES',
+        label: 'LUIS VERA MORALES'
+      }],
+      laboratorista: [{
+        value: 'NELSON CARDENAS RODRIGUEZ',
+        label: 'NELSON CARDENAS RODRIGUEZ'
+      }, {
+        value: 'FABIAN DIAZ LOYOLA',
+        label: 'FABIAN DIAZ LOYOLA'
+      }, {
+        value: 'RICARDO MOYA GONZALEZ',
+        label: 'RICARDO MOYA GONZALEZ'
+      }, {
+        value: 'LUIS NAVARRO NAVARRO',
+        label: 'LUIS NAVARRO NAVARRO'
+      }, {
+        value: 'CRISTIAN REYES MARTINEZ',
+        label: 'CRISTIAN REYES MARTINEZ'
+      }, {
+        value: 'WALTER ROJAS SAN MARTIN',
+        label: 'WALTER ROJAS SAN MARTIN'
+      }, {
+        value: 'VICTOR SANDOVAL HERNANDEZ',
+        label: 'VICTOR SANDOVAL HERNANDEZ'
+      }, {
+        value: 'ERNESTO  VARGAS GONZALEZ',
+        label: 'ERNESTO  VARGAS GONZALEZ'
+      }, {
+        value: 'FRANCISCO VARGAS MARTINEZ',
+        label: 'FRANCISCO VARGAS MARTINEZ'
+      }, {
+        value: 'JORGE PINTO CONCHA',
+        label: 'JORGE PINTO CONCHA'
+      }, {
+        value: 'GUILLERMO NEIRA ROJAS',
+        label: 'GUILLERMO NEIRA ROJAS'
+      }, {
+        value: 'EVICTOR SAEZ BARRIOS',
+        label: 'VICTOR SAEZ BARRIOS'
+      }, {
+        value: 'VICTOR MUÑOZ ANDRADE',
+        label: 'VICTOR MUÑOZ ANDRADE'
+      }, {
+        value: 'ALEX ORTIZ  PASTEN',
+        label: 'ALEX ORTIZ  PASTEN'
+      }, {
+        value: 'IGNACIO ORTIZ  PASTEN',
+        label: 'IGNACIO ORTIZ  PASTEN'
+      }, {
+        value: 'ANGELO ESPINOZA HERNANDEZ',
+        label: 'ANGELO ESPINOZA HERNANDEZ'
+      }],
+      moment: moment,
+      labelPosition: "left",
+      unaDosColumnas: 24,
+      urlGuardarFormulario: GLOBAL.URL + "formularios/guardar-formulario",
+      urlActualizarFormulario: GLOBAL.URL + "formularios/actualizar-formulario",
+      visualizacion: "",
+      placeholderNumIngreso: "Se generará automáticamente",
+      form: {
+        id: null,
+        numClienteObra: "",
+        numOtt: "",
+        numIngreso: "",
+        nombreCliente: "",
+        nombreObra: "",
+        fonoObra: "",
+        direccionObra: "",
+        encargadoObra: "",
+        muestreoDe: "",
+        extraccion: "",
+        compactacion: "",
+        tipoMoldeUno: false,
+        tipoMoldeDos: false,
+        tipoMoldeTres: false,
+        tipoMoldeCuatro: false,
+        tipoMoldeCinco: false,
+        tipoMoldeSeis: false,
+        tipoMoldeSiete: false,
+        muestreadoPor: "",
+        ensayadoPor: "",
+        tipoMuestra: "",
+        amasadaHormigon: "",
+        asentamientoCono: "",
+        numInforme: "400-08",
+        segregacion: "",
+        numEquipoConoAbrams: "",
+        numVibradorInmersion: "",
+        numEquipoConoReducido: "",
+        horaMuestreo: "",
+        horaInicioAmasado: "",
+        tAmbiente: "",
+        tHormigonMortero: "",
+        proveedor: "",
+        numGuiaDespacho: "",
+        nombreChofer: "",
+        curadoInicial: "Piscina de curado",
+        elementoHormigonado: "",
+        ubicacionElemento: "",
+        tipoHormigonMortero: "",
+        resistenciaEspecificada: "",
+        fechaConfeccion: moment().format("DD-MM-YYYY"),
+        aditivo: "",
+        numMixer: "",
+        trasladoProbetas: "",
+        retiroMuestraOtros: "",
+        retiroMuestraCantidadUnDia: "",
+        retiroMuestraCantidadTresDias: "",
+        retiroMuestraCantidadSieteDias: "",
+        retiroMuestraCantidadCatorceDias: "",
+        retiroMuestraCantidadVeintiochoDias: "",
+        retiroMuestraCantidadOtros: "",
+        retiroMuestraFechaUnDia: "",
+        retiroMuestraFechaTresDias: "",
+        retiroMuestraFechaSieteDias: "",
+        retiroMuestraFechaCatorceDias: "",
+        retiroMuestraFechaVeintiochoDias: "",
+        retiroMuestraFechaOtros: "",
+        retiroMuestraInformeUnDia: "",
+        retiroMuestraInformeTresDias: "",
+        retiroMuestraInformeSieteDias: "",
+        retiroMuestraInformeCatorceDias: "",
+        retiroMuestraInformeVeintiochoDias: "",
+        retiroMuestraInformeOtros: "",
+        procedimientoExtraccion: "",
+        muestraIngresadaPorCliente: "",
+        fechaIngreso: "",
+        fechaVisitaObra: "",
+        horaLlegada: "",
+        horaSalida: "",
+        responsableEnObra: "",
+        densAparenteHormigon: "",
+        densAparenteMortero: "",
+        indiceEsclerometrico: "",
+        irregularidadSuperficial: "",
+        irregularidadSuperficialMl: "",
+        observaciones: "",
+        alteracionMuestra: "",
+        observacionesAlteracionesMuestra: "",
+        laboratorista: "",
+        ayudante: "",
+        recibeOMuestrea: "",
+        aridosHormigonMuestraUno: "",
+        aridosHormigonMuestraDos: "",
+        aridosHormigonMuestraTres: "",
+        aridosHormigonMuestraCuatro: "",
+        seccionTestigosHabilitada: false,
+        seccionAridosHabilitada: false,
+        seccionOtrosHabilitada: false,
+        seccionRetiroMuestrasHabilitada: false,
+        testigosExtraidosSeis: "0",
+        testigosExtraidosCuatro: "0",
+        testigosExtraidosTotal: "0",
+        testigosEnsayadosSeis: "0",
+        testigosEnsayadosCuatro: "0",
+        testigosEnsayadosTotal: "0"
+      },
+      reglas: (_reglas = {
+        numClienteObra: [{ required: true, message: "", trigger: "blur" }],
+        numOtt: [{ required: true, message: "", trigger: "blur" }],
+        numIngreso: [{ required: true, message: "", trigger: "blur" }],
+        nombreCliente: [{ required: true, message: "", trigger: "blur" }],
+        nombreObra: [{ required: true, message: "", trigger: "blur" }],
+        fonoObra: [{ required: false, message: "", trigger: "blur" }],
+        direccionObra: [{ required: true, message: "", trigger: "blur" }],
+        encargadoObra: [{ required: false, message: "", trigger: "blur" }],
+        muestreoDe: [{ required: true, message: "", trigger: "change" }],
+        extraccion: [{ required: true, message: "", trigger: "change" }],
+        compactacion: [{ required: true, message: "", trigger: "change" }],
+        tipoMoldeUno: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeDos: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeTres: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeCuatro: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeCinco: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeSeis: [{ required: true, message: "", trigger: "blur" }],
+        tipoMoldeSiete: [{ required: true, message: "", trigger: "blur" }],
+        muestreadoPor: [{ required: true, message: "", trigger: "change" }],
+        ensayadoPor: [{ required: true, message: "", trigger: "change" }],
+        tipoMuestra: [{ required: true, message: "", trigger: "change" }],
+        seccionTestigosHabilitada: [{ required: false, message: "", trigger: "change" }],
+        amasadaHormigon: [{ required: true, message: "", trigger: "blur" }],
+        asentamientoCono: [{ required: true, message: "", trigger: "blur" }],
+        numInforme: [{ required: true, message: "", trigger: "blur" }],
+        segregacion: [{ required: true, message: "", trigger: "blur" }],
+        numEquipoConoAbrams: [{ required: true, message: "", trigger: "blur" }],
+        numVibradorInmersion: [{ required: true, message: "", trigger: "blur" }],
+        numEquipoConoReducido: [{ required: true, message: "", trigger: "blur" }],
+        horaMuestreo: [{ required: true, message: "", trigger: "blur" }],
+        horaInicioAmasado: [{ required: false, message: "", trigger: "blur" }],
+        tAmbiente: [{ required: true, message: "", trigger: "blur" }],
+        tHormigonMortero: [{ required: true, message: "", trigger: "blur" }],
+        proveedor: [{ required: true, message: "", trigger: "blur" }],
+        numGuiaDespacho: [{ required: true, message: "", trigger: "blur" }],
+        nombreChofer: [{ required: true, message: "", trigger: "blur" }],
+        curadoInicial: [{ required: true, message: "", trigger: "blur" }],
+        elementoHormigonado: [{ required: true, message: "", trigger: "blur" }],
+        ubicacionElemento: [{ required: true, message: "", trigger: "blur" }],
+        tipoHormigonMortero: [{ required: true, message: "", trigger: "blur" }],
+        resistenciaEspecificada: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccion: [{ required: true, message: "", trigger: "blur" }],
+        aditivo: [{ required: false, message: "", trigger: "blur" }],
+        numMixer: [{ required: false, message: "", trigger: "blur" }],
+        retiroMuestraCantidadUnDia: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaUnDia: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeUnDia: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadTresDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaTresDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeTresDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadSieteDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaSieteDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeSieteDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadCatorceDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaCatorceDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeCatorceDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaVeintiochoDias: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraCantidadOtros: [{ required: true, message: "", trigger: "blur" }],
+        retiroMuestraFechaOtros: [{ required: true, message: "", trigger: "change" }],
+        retiroMuestraInformeOtros: [{ required: true, message: "", trigger: "blur" }],
+        trasladoProbetas: [{ required: true, message: "", trigger: "blur" }],
+        procedimientoExtraccion: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraUno: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraDos: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraTres: [{ required: true, message: "", trigger: "change" }],
+        aridosHormigonMuestraCuatro: [{ required: true, message: "", trigger: "change" }],
+        densAparenteHormigon: [{ required: true, message: "", trigger: "change" }],
+        densAparenteMortero: [{ required: true, message: "", trigger: "change" }],
+        indiceEsclerometrico: [{ required: true, message: "", trigger: "change" }],
+        irregularidadSuperficial: [{ required: true, message: "", trigger: "change" }],
+        irregularidadSuperficialMl: [{ required: true, message: "", trigger: "blur" }],
+        muestraIngresadaPorCliente: [{ required: true, message: "", trigger: "change" }],
+        responsableEnObra: [{ required: false, message: "", trigger: "blur" }],
+        fechaIngreso: [{ required: true, message: "", trigger: "change" }],
+        fechaVisitaObra: [{ required: true, message: "", trigger: "change" }],
+        horaLlegada: [{ required: true, message: "", trigger: "change" }],
+        horaSalida: [{ required: true, message: "", trigger: "change" }],
+        observaciones: [{ required: true, message: "", trigger: "blur" }],
+        alteracionMuestra: [{ required: true, message: "", trigger: "change" }],
+        observacionesAlteracionesMuestra: [{ required: true, message: "", trigger: "change" }]
+      }, _defineProperty(_reglas, "observaciones", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "laboratorista", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "ayudante", [{ required: true, message: "", trigger: "blur" }]), _defineProperty(_reglas, "recibeOMuestrea", [{ required: true, message: "", trigger: "change" }]), _reglas)
+    };
+  },
+  created: function created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed: function destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  mounted: function mounted() {
+    this.visualizacion = this.tipoOtt;
+    console.log(this.visualizacion);
+    if (this.ottCargada) {
+      this.cargaDatosOtt();
     }
+  },
+
+  methods: {
+    onSubmit: function onSubmit(nombreFormulario, accion) {
+      var _this = this;
+
+      if (accion === "crear") {
+        // this.$refs[nombreFormulario].validate((valid) => {
+        //     if (valid) {
+        this.$http.post(this.urlGuardarFormulario, {
+          formulario: this.form
+        }).then(function (response) {
+          console.log(response);
+          if (response.body[1] == true) {
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+            _this.$emit("cambiaMain", {
+              vista: "ListadoFormularios",
+              condicion: "porvalidar"
+            });
+          } else {
+            if (response.body[0].errorInfo[0] == "23000") {
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+            }
+            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }
+        }, function (response) {
+          console.log(response);
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+        });
+        //     } else {
+        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+        //         return false;
+        //     }
+        // });
+      } else if (accion === "editar") {
+        var estado = this.ottCargada.validado ? "validadas" : "porvalidar";
+        console.log("estado vale " + estado);
+        // this.$refs[nombreFormulario].validate((valid) => {
+        //     if (valid) {
+        this.$http.post(this.urlActualizarFormulario, {
+          formulario: this.form
+        }).then(function (response) {
+          console.log(response);
+          if (response.body[1] == true) {
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Formulario actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 7);
+            console.log("ahora emito el edit");
+            _this.$emit("cambiaMain", {
+              vista: "ListadoFormularios",
+              condicion: estado
+            });
+          } else {
+            if (response.body[0].errorInfo[0] == "23000") {
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+            }
+            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }
+        }, function (response) {
+          console.log(response);
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+        });
+        //     } else {
+        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+        //         return false;
+        //     }
+        // });
+      }
+    },
+    resetForm: function resetForm(nombreFormulario) {
+      this.$refs[nombreFormulario].resetFields();
+    },
+    handleResize: function handleResize() {
+      this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;
+    },
+    cargaDatosOtt: function cargaDatosOtt() {
+      this.form.id = this.ottCargada.id;
+      this.form.numClienteObra = this.ottCargada.num_cliente_obra;
+      this.form.numOtt = this.ottCargada.num_ott;
+      this.form.numIngreso = this.ottCargada.num_ingreso;
+      this.form.nombreCliente = this.ottCargada.nombre_cliente;
+      this.form.nombreObra = this.ottCargada.nombre_obra;
+      this.form.fonoObra = this.ottCargada.fono_obra;
+      this.form.direccionObra = this.ottCargada.direccion_obra;
+      this.form.encargadoObra = this.ottCargada.encargado_obra;
+      this.form.muestreoDe = this.ottCargada.muestreo_de;
+      this.form.extraccion = this.ottCargada.extraccion;
+      this.form.compactacion = this.ottCargada.compactacion;
+      this.form.muestreadoPor = this.ottCargada.muestreado_por;
+      this.form.ensayadoPor = this.ottCargada.ensayado_por;
+      this.form.tipoMuestra = this.ottCargada.tipo_muestra;
+      this.form.amasadaHormigon = this.ottCargada.amasada_hormigon;
+      this.form.asentamientoCono = this.ottCargada.asentamiento_cono;
+      this.form.numInforme = this.ottCargada.num_informe;
+      this.form.segregacion = this.ottCargada.segregacion;
+      this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
+      this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
+      this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
+      this.form.horaMuestreo = this.ottCargada.hora_muestreo;
+      this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
+      this.form.tAmbiente = this.ottCargada.t_ambiente;
+      this.form.tHormigonMortero = this.ottCargada.t_hormigon_mortero;
+      this.form.proveedor = this.ottCargada.proveedor;
+      this.form.numGuiaDespacho = this.ottCargada.num_guia_despacho;
+      this.form.nombreChofer = this.ottCargada.nombre_chofer;
+      this.form.curadoInicial = this.ottCargada.curado_inicial;
+      this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
+      this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
+      this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
+      this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
+      this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
+      this.form.aditivo = this.ottCargada.aditivo;
+      this.form.numMixer = this.ottCargada.num_mixer;
+      this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
+      this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
+      this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
+      this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
+      this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
+      this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
+      this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
+      this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
+      this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
+      this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
+      this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
+      this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
+      this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
+      this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
+      this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
+      this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
+      this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
+      this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
+      this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
+      this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
+      this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
+      this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
+      this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
+      this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
+      this.form.horaLlegada = this.ottCargada.hora_llegada;
+      this.form.horaSalida = this.ottCargada.hora_salida;
+      this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
+      this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
+      this.form.observaciones = this.ottCargada.observaciones;
+      this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
+      this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
+      this.form.laboratorista = this.ottCargada.laboratorista;
+      this.form.ayudante = this.ottCargada.ayudante;
+      this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
+      this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
+      this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
+      this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
+      this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
+      this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
+      this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
+      this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
+      this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
+      this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
+      this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
+
+      this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
+      this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
+      this.form.seccionOtrosHabilitada = this.ottCargada.seccion_otros_habilitada == 1 ? true : this.ottCargada.seccion_otros_habilitada;
+      this.form.seccionRetiroMuestrasHabilitada = this.ottCargada.seccion_retiro_muestras_habilitada == 1 ? true : this.ottCargada.seccion_retiro_muestras_habilitada;
+      this.form.tipoMoldeUno = this.ottCargada.tipo_molde_uno == 1 ? true : this.ottCargada.tipo_molde_uno;
+      this.form.tipoMoldeDos = this.ottCargada.tipo_molde_dos == 1 ? true : this.ottCargada.tipo_molde_dos;
+      this.form.tipoMoldeTres = this.ottCargada.tipo_molde_tres == 1 ? true : this.ottCargada.tipo_molde_tres;
+      this.form.tipoMoldeCuatro = this.ottCargada.tipo_molde_cuatro == 1 ? true : this.ottCargada.tipo_molde_cuatro;
+      this.form.tipoMoldeCinco = this.ottCargada.tipo_molde_cinco == 1 ? true : this.ottCargada.tipo_molde_cinco;
+      this.form.tipoMoldeSeis = this.ottCargada.tipo_molde_seis == 1 ? true : this.ottCargada.tipo_molde_seis;
+      this.form.tipoMoldeSiete = this.ottCargada.tipo_molde_siete == 1 ? true : this.ottCargada.tipo_molde_siete;
+      this.form.densAparenteHormigon = this.ottCargada.dens_aparente_hormigon == 1 ? true : this.ottCargada.dens_aparente_hormigon;
+      this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
+      this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
+      this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
+    }
+  },
+  computed: {
+    esClickeable: function esClickeable() {
+      return {
+        "no-click": this.visualizacion === "ver"
+      };
+    }
+  },
+  watch: {
+    "form.testigosExtraidosCuatro": function formTestigosExtraidosCuatro(newVal, oldVal) {
+      this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+    },
+    "form.testigosExtraidosSeis": function formTestigosExtraidosSeis(newVal, oldVal) {
+      this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
+    },
+    "form.testigosEnsayadosSeis": function formTestigosEnsayadosSeis(newVal, oldVal) {
+      this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+    },
+    "form.testigosEnsayadosCuatro": function formTestigosEnsayadosCuatro(newVal, oldVal) {
+      this.form.testigosEnsayadosTotal = parseInt(this.form.testigosEnsayadosCuatro) + parseInt(this.form.testigosEnsayadosSeis);
+    },
+    "form.muestreadoPor": function formMuestreadoPor(newVal, oldVal) {
+      if (newVal == "lacem") {
+        this.form.ensayadoPor = "lacem";
+      }
+    }
+  }
 });
 
 /***/ }),
@@ -97159,7 +97747,7 @@ var render = function() {
                             expression: "form.seccionTestigosHabilitada"
                           }
                         },
-                        [_vm._v("\n                    Sección Testigos")]
+                        [_vm._v("\n            Sección Testigos")]
                       )
                     ],
                     1
@@ -97196,7 +97784,7 @@ var render = function() {
                             expression: "form.seccionAridosHabilitada"
                           }
                         },
-                        [_vm._v("\n                        Sección Áridos")]
+                        [_vm._v("\n            Sección Áridos")]
                       )
                     ],
                     1
@@ -97233,7 +97821,7 @@ var render = function() {
                             expression: "form.seccionOtrosHabilitada"
                           }
                         },
-                        [_vm._v("\n                        Sección Otros")]
+                        [_vm._v("\n            Sección Otros")]
                       )
                     ],
                     1
@@ -97274,11 +97862,7 @@ var render = function() {
                             expression: "form.seccionRetiroMuestrasHabilitada"
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Sección Retiro de Muestras"
-                          )
-                        ]
+                        [_vm._v("\n            Sección Retiro de Muestras")]
                       )
                     ],
                     1
@@ -97419,7 +98003,11 @@ var render = function() {
                           display: "flex"
                         }
                       },
-                      [_vm._v("Tipo de Molde (en cm)")]
+                      [
+                        _vm._v(
+                          "\n            Tipo de Molde (en cm)\n          "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -99084,7 +99672,7 @@ var render = function() {
                         staticClass: "tabla-extraccion-cell",
                         staticStyle: { width: "30%" }
                       },
-                      [_vm._v("Diámetro")]
+                      [_vm._v("\n            Diámetro\n          ")]
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "tabla-extraccion-cell" }, [
@@ -99129,7 +99717,7 @@ var render = function() {
                           "text-align": "center"
                         }
                       },
-                      [_vm._v("N° de Informe")]
+                      [_vm._v("\n            N° de Informe\n          ")]
                     ),
                     _vm._v(" "),
                     _c("div", {
@@ -99151,7 +99739,11 @@ var render = function() {
                         staticClass: "tabla-extraccion-cell",
                         staticStyle: { width: "30%" }
                       },
-                      [_vm._v("N° de Testigos Extraídos")]
+                      [
+                        _vm._v(
+                          "\n            N° de Testigos Extraídos\n          "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
@@ -99287,7 +99879,11 @@ var render = function() {
                           {
                             staticStyle: { display: "flex", "flex-grow": "1" }
                           },
-                          [_vm._v("N° de Testigos Ensayados")]
+                          [
+                            _vm._v(
+                              "\n              N° de Testigos Ensayados\n            "
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -99296,7 +99892,7 @@ var render = function() {
                             staticClass:
                               "tabla-extraccion-cell extraccion-cell-borde-left"
                           },
-                          [_vm._v("400-14")]
+                          [_vm._v("\n              400-14\n            ")]
                         )
                       ]
                     ),
@@ -99512,7 +100108,7 @@ var render = function() {
                             expression: "form.procedimientoExtraccion"
                           }
                         },
-                        [_vm._v("Obra ")]
+                        [_vm._v("Obra\n          ")]
                       )
                     ],
                     1
@@ -100034,7 +100630,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "90%" }
                     },
-                    [_vm._v("Ensayos para aceptación de áridos")]
+                    [
+                      _vm._v(
+                        "\n            Ensayos para aceptación de áridos\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100052,7 +100652,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "90%" }
                     },
-                    [_vm._v("Ensayos para dosificació de hormigón")]
+                    [
+                      _vm._v(
+                        "\n            Ensayos para dosificació de hormigón\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100070,7 +100674,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "75%" }
                     },
-                    [_vm._v("- Sin probetas de prueba")]
+                    [
+                      _vm._v(
+                        "\n            - Sin probetas de prueba\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100097,7 +100705,11 @@ var render = function() {
                       staticClass: "tabla-aridos-cell",
                       staticStyle: { width: "75%" }
                     },
-                    [_vm._v("- Con probetas de prueba")]
+                    [
+                      _vm._v(
+                        "\n            - Con probetas de prueba\n          "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
@@ -100743,22 +101355,28 @@ var render = function() {
                   attrs: { span: _vm.unaDosColumnas }
                 },
                 [
+                  _vm._v("\n        \n        Laboratorista\n        "),
                   _c(
-                    "el-form-item",
+                    "el-select",
                     {
-                      attrs: { label: "Laboratorista", prop: "laboratorista" }
+                      attrs: {
+                        placeholder: "Seleccione..",
+                        prop: "laboratorista"
+                      },
+                      model: {
+                        value: _vm.form.laboratorista,
+                        callback: function($$v) {
+                          _vm.$set(_vm.form, "laboratorista", $$v)
+                        },
+                        expression: "form.laboratorista"
+                      }
                     },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.laboratorista,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "laboratorista", $$v)
-                          },
-                          expression: "form.laboratorista"
-                        }
+                    _vm._l(_vm.laboratorista, function(item) {
+                      return _c("el-option", {
+                        key: item.value,
+                        attrs: { label: item.label, value: item.value }
                       })
-                    ],
+                    }),
                     1
                   )
                 ],
@@ -100772,20 +101390,25 @@ var render = function() {
                   attrs: { span: _vm.unaDosColumnas }
                 },
                 [
+                  _vm._v("\n\n        Ayudante\n        "),
                   _c(
-                    "el-form-item",
-                    { attrs: { label: "Ayudante", prop: "ayudante" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.ayudante,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "ayudante", $$v)
-                          },
-                          expression: "form.ayudante"
-                        }
+                    "el-select",
+                    {
+                      attrs: { placeholder: "Seleccione..", prop: "ayudante" },
+                      model: {
+                        value: _vm.form.ayudante,
+                        callback: function($$v) {
+                          _vm.$set(_vm.form, "ayudante", $$v)
+                        },
+                        expression: "form.ayudante"
+                      }
+                    },
+                    _vm._l(_vm.ayudante, function(item) {
+                      return _c("el-option", {
+                        key: item.value,
+                        attrs: { label: item.label, value: item.value }
                       })
-                    ],
+                    }),
                     1
                   )
                 ],
@@ -100861,11 +101484,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                            Crear OTT\n            "
-                          )
-                        ]
+                        [_vm._v("\n        Crear OTT\n      ")]
                       )
                     : _vm._e(),
                   _vm._v(" "),
@@ -100881,11 +101500,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                            Actualizar OTT\n            "
-                          )
-                        ]
+                        [_vm._v("\n        Actualizar OTT\n      ")]
                       )
                     : _vm._e(),
                   _vm._v(" "),
@@ -101687,7 +102302,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.height-max-percent{\n    height: 100%;\n}\nbody > .el-container {\n    margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n    line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n    line-height: 320px;\n}\n#formularios {\n    height: 100%;\n    width: 100%;\n}\n.el-menu-item-group__title {\n    padding: 0px 0px 0px 20px;\n}\n.bienvenido{\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 100%;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n", ""]);
+exports.push([module.i, "\n.height-max-percent {\n  height: 100%;\n}\nbody > .el-container {\n  margin-bottom: 40px;\n}\n.el-container:nth-child(5) .el-aside,\n.el-container:nth-child(6) .el-aside {\n  line-height: 260px;\n}\n.el-container:nth-child(7) .el-aside {\n  line-height: 320px;\n}\n#formularios {\n  height: 100%;\n  width: 100%;\n}\n.el-menu-item-group__title {\n  padding: 0px 0px 0px 20px;\n}\n.bienvenido {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -101751,12 +102366,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -101766,51 +102375,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        SidebarFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default.a,
-        OrdenTrabajoTerreno: __WEBPACK_IMPORTED_MODULE_1__components_formularios_OrdenTrabajoTerreno_vue___default.a,
-        ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a,
-        EnsayoCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default.a,
-        ListadoEnsayosCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default.a,
-        ListadoExportarEnsayos: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default.a
-    },
-    props: ['ordenes'],
-    data: function data() {
-        return {
-            componenteMain: '',
-            // componenteMain: 'EnsayoCompresionProbetasCilindricas',
-            // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
-            tipoOTT: '',
-            tipoEnsayo: '',
-            modoListadoOtt: '',
-            modoListadoEnsayo: '',
-            modoListadoExportar: ''
-        };
-    },
-    mounted: function mounted() {
-        console.log('ordenes', this.ordenes);
-    },
+  components: {
+    SidebarFormularios: __WEBPACK_IMPORTED_MODULE_0__components_formularios_SidebarFormularios_vue___default.a,
+    OrdenTrabajoTerreno: __WEBPACK_IMPORTED_MODULE_1__components_formularios_OrdenTrabajoTerreno_vue___default.a,
+    ListadoFormularios: __WEBPACK_IMPORTED_MODULE_2__components_formularios_ListadoFormularios_vue___default.a,
+    EnsayoCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_3__components_formularios_EnsayoCompresionProbetasCilindricas_vue___default.a,
+    ListadoEnsayosCompresionProbetasCilindricas: __WEBPACK_IMPORTED_MODULE_4__components_formularios_ListadoEnsayosCompresionProbetasCilindricas_vue___default.a,
+    ListadoExportarEnsayos: __WEBPACK_IMPORTED_MODULE_5__components_formularios_ListadoExportarEnsayos_vue___default.a
+  },
+  props: ["ordenes"],
+  data: function data() {
+    return {
+      componenteMain: "",
+      // componenteMain: 'EnsayoCompresionProbetasCilindricas',
+      // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
+      tipoOTT: "",
+      tipoEnsayo: "",
+      modoListadoOtt: "",
+      modoListadoEnsayo: "",
+      modoListadoExportar: ""
+    };
+  },
+  mounted: function mounted() {
+    console.log("ordenes", this.ordenes);
+  },
 
-    methods: {
-        cambiarMain: function cambiarMain(contenido) {
-            this.componenteMain = contenido.vista;
-            if (contenido.vista === 'OrdenTrabajoTerreno') {
-                this.tipoOTT = contenido.condicion;
-            }
-            if (contenido.vista === 'EnsayoCompresionProbetasCilindricas') {
-                this.tipoEnsayo = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoFormularios') {
-                this.modoListadoOtt = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoEnsayosCompresionProbetasCilindricas') {
-                this.modoListadoEnsayo = contenido.condicion;
-            }
-            if (contenido.vista === 'ListadoExportarEnsayos') {
-                this.modoListadoExportar = contenido.condicion;
-            }
+  methods: {
+    cambiarMain: function cambiarMain(contenido) {
+      this.componenteMain = contenido.vista;
+      if (contenido.vista === "OrdenTrabajoTerreno") {
+        this.tipoOTT = contenido.condicion;
+      }
+      if (contenido.vista === "EnsayoCompresionProbetasCilindricas") {
+        this.tipoEnsayo = contenido.condicion;
+      }
+      if (contenido.vista === "ListadoFormularios") {
+        this.modoListadoOtt = contenido.condicion;
+        if (this.modoListadoOtt == "porvalidar") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "2-2";
+        } else if (this.modoListadoOtt == "validadas") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "2-3";
         }
+      }
+      if (contenido.vista === "ListadoEnsayosCompresionProbetasCilindricas") {
+        this.modoListadoEnsayo = contenido.condicion;
+        if (this.modoListadoOtt == "porvalidar") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "3-2";
+        } else if (this.modoListadoOtt == "validadas") {
+          this.$refs.sidebar.$refs.menuLateral.activeIndex = "3-3";
+        }
+      }
+      if (contenido.vista === "ListadoExportarEnsayos") {
+        this.modoListadoExportar = contenido.condicion;
+      }
     }
+  }
 });
 
 /***/ }),
@@ -101848,7 +102467,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    min-height: 400px;\n}\n.el-menu{\n    background-color: transparent;\n}\n.el-menu-item, .el-submenu__title, .el-submenu .el-menu-item {\n    height: 40px;\n    line-height: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  min-height: 400px;\n}\n.el-menu {\n  background-color: transparent;\n}\n.el-menu-item,\n.el-submenu__title,\n.el-submenu .el-menu-item {\n  height: 40px;\n  line-height: 40px;\n}\n", ""]);
 
 // exports
 
@@ -101928,49 +102547,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            isCollapse: true
-        };
-    },
+  data: function data() {
+    return {};
+  },
 
-    methods: {
-        inicio: function inicio() {
-            this.$emit("cambiaMain", "");
-        },
-        nuevaOTT: function nuevaOTT() {
-            this.$emit("cambiaMain", { vista: "OrdenTrabajoTerreno", condicion: 'nueva' });
-        },
-        listadoOTTsPorValidar: function listadoOTTsPorValidar() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'porvalidar' });
-        },
-        listadoOTTsValidadas: function listadoOTTsValidadas() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoFormularios", condicion: 'validadas' });
-        },
-        nuevoEnsayo: function nuevoEnsayo() {
-            this.$emit("cambiaMain", { vista: "EnsayoCompresionProbetasCilindricas", condicion: 'nueva' });
-        },
-        listadoEnsayos: function listadoEnsayos() {
-            //esta cometariado
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
-        },
-        listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'porvalidar' });
-        },
-        listadoEnsayosValidos: function listadoEnsayosValidos() {
-            //this.inicio();
-            this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: 'validadas' });
-        },
-        exportaEnsayos: function exportaEnsayos() {
-            this.$emit("cambiaMain", { vista: "ListadoExportarEnsayos", condicion: 'validadas' });
-        }
+  methods: {
+    inicio: function inicio() {
+      this.$emit("cambiaMain", "");
+      this.$refs.menuLateral.activeIndex = "1";
+    },
+    nuevaOTT: function nuevaOTT() {
+      this.$emit("cambiaMain", {
+        vista: "OrdenTrabajoTerreno",
+        condicion: "nueva"
+      });
+      this.$refs.menuLateral.activeIndex = "2-1";
+    },
+    listadoOTTsPorValidar: function listadoOTTsPorValidar() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoFormularios",
+        condicion: "porvalidar"
+      });
+      this.$refs.menuLateral.activeIndex = "2-2";
+    },
+    listadoOTTsValidadas: function listadoOTTsValidadas() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoFormularios",
+        condicion: "validadas"
+      });
+      this.$refs.menuLateral.activeIndex = "2-3";
+    },
+    nuevoEnsayo: function nuevoEnsayo() {
+      this.$emit("cambiaMain", {
+        vista: "EnsayoCompresionProbetasCilindricas",
+        condicion: "nueva"
+      });
+      this.$refs.menuLateral.activeIndex = "3-1";
+    },
+    listadoEnsayosPorValidar: function listadoEnsayosPorValidar() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoEnsayosCompresionProbetasCilindricas",
+        condicion: "porvalidar"
+      });
+      this.$refs.menuLateral.activeIndex = "3-2";
+    },
+    listadoEnsayosValidos: function listadoEnsayosValidos() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoEnsayosCompresionProbetasCilindricas",
+        condicion: "validadas"
+      });
+      this.$refs.menuLateral.activeIndex = "3-3";
+    },
+    exportaEnsayos: function exportaEnsayos() {
+      this.$emit("cambiaMain", {
+        vista: "ListadoExportarEnsayos",
+        condicion: "validadas"
+      });
+      this.$refs.menuLateral.activeIndex = "4-1";
     }
+  }
 });
 
 /***/ }),
@@ -101991,6 +102643,7 @@ var render = function() {
           _c(
             "el-menu",
             {
+              ref: "menuLateral",
               staticClass: "el-menu-vertical-demo",
               attrs: { "default-active": "1" }
             },
@@ -101998,7 +102651,7 @@ var render = function() {
               _c(
                 "el-menu-item",
                 { attrs: { index: "1" }, on: { click: _vm.inicio } },
-                [_vm._v("\n                Inicio\n            ")]
+                [_vm._v(" Inicio ")]
               ),
               _vm._v(" "),
               _c(
@@ -102020,11 +102673,7 @@ var render = function() {
                           attrs: { index: "2-1" },
                           on: { click: _vm.nuevaOTT }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Nueva OTT\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Nueva OTT\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102033,11 +102682,7 @@ var render = function() {
                           attrs: { index: "2-2" },
                           on: { click: _vm.listadoOTTsPorValidar }
                         },
-                        [
-                          _vm._v(
-                            "\n                        OTTs por validar\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            OTTs por validar\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102046,11 +102691,7 @@ var render = function() {
                           attrs: { index: "2-3" },
                           on: { click: _vm.listadoOTTsValidadas }
                         },
-                        [
-                          _vm._v(
-                            "\n                        OTTs validadas\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            OTTs validadas\n          ")]
                       )
                     ],
                     1
@@ -102078,11 +102719,7 @@ var render = function() {
                           attrs: { index: "3-1" },
                           on: { click: _vm.nuevoEnsayo }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Nuevo Ensayo\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Nuevo Ensayo\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -102093,7 +102730,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Ensayos por validar\n                    "
+                            "\n            Ensayos por validar\n          "
                           )
                         ]
                       ),
@@ -102104,11 +102741,7 @@ var render = function() {
                           attrs: { index: "3-3" },
                           on: { click: _vm.listadoEnsayosValidos }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Ensayos validados\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Ensayos validados\n          ")]
                       )
                     ],
                     1
@@ -102134,11 +102767,33 @@ var render = function() {
                           attrs: { index: "4-1" },
                           on: { click: _vm.exportaEnsayos }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Ensayos\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Ensayos\n          ")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-submenu",
+                { attrs: { index: "5" } },
+                [
+                  _c("span", { attrs: { slot: "title" }, slot: "title" }, [
+                    _vm._v("Mantenedores")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "el-menu-item-group",
+                    [
+                      _c(
+                        "el-menu-item",
+                        {
+                          attrs: { index: "5-1", disabled: "" },
+                          on: { click: _vm.inicio }
+                        },
+                        [_vm._v("\n            Usuarios\n          ")]
                       )
                     ],
                     1
@@ -102320,11 +102975,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     filtraOrdenes: function filtraOrdenes() {
-      var _this2 = this;
+      this.ordenesDeTrabajo = this.todasLasOrdenes;
+      var aciertos = [];
+      for (var index = 0; index < this.ordenesDeTrabajo.length; index++) {
+        var laboratorista = this.ordenesDeTrabajo[index].laboratorista ? this.ordenesDeTrabajo[index].laboratorista.toLowerCase().includes(this.buscador.toLowerCase()) : false;
 
-      this.ordenesDeTrabajo = this.todasLasOrdenes.filter(function (orden) {
-        return orden.num_cliente_obra.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.laboratorista.toLowerCase().includes(_this2.buscador.toLowerCase()) || orden.id.toString().includes(_this2.buscador.toLowerCase());
-      });
+        var numClienteObra = this.ordenesDeTrabajo[index].num_cliente_obra ? this.ordenesDeTrabajo[index].num_cliente_obra.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        var numOtt = this.ordenesDeTrabajo[index].num_ott ? this.ordenesDeTrabajo[index].num_ott.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        if (laboratorista || numClienteObra || numOtt) {
+          aciertos.push(this.ordenesDeTrabajo[index]);
+        }
+      }
+      this.ordenesDeTrabajo = aciertos;
     }
   },
   watch: {
@@ -104209,999 +104873,1318 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            urlGuardarEnsayo: GLOBAL.URL + 'ensayos/guardar-ensayo-compresion',
-            urlBuscarOtt: GLOBAL.URL + 'ensayos/buscar-ott',
-            timeout: null,
-            ordenSeleccionada: '',
-            ordenes: [],
-            opcionesSearchBoxOTT: [],
-            loading: false,
-            cantidadDecimales: 6,
-            pickerOptionsFechaEnsayo: {
-                // disabledDate(time) {
-                //     this.calculaFechaEnsayoInicio()
-                //     return time.getTime() > Date.now();
-                // },
-            },
-            form: {
-                numIngreso: 'Cargado desde la OTT',
-                OTT: '',
-                numInforme: '',
-                camaraHumeda: '',
-                piscina: '',
-                balanza: '',
-                numPieDeMetro: '',
-                numPrensa: '',
-                numCronometro: '',
-                errorCientoCincuentaMm: 0,
-                errorTrescientosMm: 0,
-                numMarmita: '',
-                numDispositivoRefrentado: '',
-                numMicrometro: '',
-                numMoldeMuestraUno: '',
-                numMoldeMuestraDos: '',
-                numMoldeMuestraTres: '',
-                numMoldeMuestraCuatro: '',
-                fechaConfeccionMuestraUno: 'Cargado desde OTT',
-                fechaConfeccionMuestraDos: 'Cargado desde OTT',
-                fechaConfeccionMuestraTres: 'Cargado desde OTT',
-                fechaConfeccionMuestraCuatro: 'Cargado desde OTT',
-                fechaEnsayoMuestraUno: '',
-                fechaEnsayoMuestraDos: '',
-                fechaEnsayoMuestraTres: '',
-                fechaEnsayoMuestraCuatro: '',
-                edadDiasMuestraUno: '',
-                edadDiasMuestraDos: '',
-                edadDiasMuestraTres: '',
-                edadDiasMuestraCuatro: '',
-                refrentadoMuestraUno: '',
-                refrentadoMuestraDos: '',
-                refrentadoMuestraTres: '',
-                refrentadoMuestraCuatro: '',
-                refrentadoCorregidoMuestraUno: '',
-                refrentadoCorregidoMuestraDos: '',
-                refrentadoCorregidoMuestraTres: '',
-                refrentadoCorregidoMuestraCuatro: '',
-                perpendicularidadMuestraUno: '',
-                perpendicularidadMuestraDos: '',
-                perpendicularidadMuestraTres: '',
-                perpendicularidadMuestraCuatro: '',
-                planeidadMuestraUno: '',
-                planeidadMuestraDos: '',
-                planeidadMuestraTres: '',
-                planeidadMuestraCuatro: '',
-                espesorSuperiorMuestraUno: '',
-                espesorSuperiorMuestraDos: '',
-                espesorSuperiorMuestraTres: '',
-                espesorSuperiorMuestraCuatro: '',
-                espesorInferiorMuestraUno: '',
-                espesorInferiorMuestraDos: '',
-                espesorInferiorMuestraTres: '',
-                espesorInferiorMuestraCuatro: '',
-                espesorPromedioMuestraUno: '',
-                espesorPromedioMuestraDos: '',
-                espesorPromedioMuestraTres: '',
-                espesorPromedioMuestraCuatro: '',
-                dUnoMuestraUno: '',
-                dUnoMuestraDos: '',
-                dUnoMuestraTres: '',
-                dUnoMuestraCuatro: '',
-                dDosMuestraUno: '',
-                dDosMuestraDos: '',
-                dDosMuestraTres: '',
-                dDosMuestraCuatro: '',
-                hUnoMuestraUno: '',
-                hUnoMuestraDos: '',
-                hUnoMuestraTres: '',
-                hUnoMuestraCuatro: '',
-                hDosMuestraUno: '',
-                hDosMuestraDos: '',
-                hDosMuestraTres: '',
-                hDosMuestraCuatro: '',
-                refrentadoUno: '',
-                refrentadoDos: '',
-                refrentadoTres: '',
-                refrentadoCuatro: '',
-                dUnoMuestraUnoCorregida: '',
-                dUnoMuestraDosCorregida: '',
-                dUnoMuestraTresCorregida: '',
-                dUnoMuestraCuatroCorregida: '',
-                dDosMuestraUnoCorregida: '',
-                dDosMuestraDosCorregida: '',
-                dDosMuestraTresCorregida: '',
-                dDosMuestraCuatroCorregida: '',
-                hUnoMuestraUnoCorregida: '',
-                hUnoMuestraDosCorregida: '',
-                hUnoMuestraTresCorregida: '',
-                hUnoMuestraCuatroCorregida: '',
-                hDosMuestraUnoCorregida: '',
-                hDosMuestraDosCorregida: '',
-                hDosMuestraTresCorregida: '',
-                hDosMuestraCuatroCorregida: '',
-                masaMuestraUno: '',
-                masaMuestraDos: '',
-                masaMuestraTres: '',
-                masaMuestraCuatro: '',
-                errorMuestraUno: '',
-                errorMuestraDos: '',
-                errorMuestraTres: '',
-                errorMuestraCuatro: '',
-                masaCorregidaMuestraUno: '',
-                masaCorregidaMuestraDos: '',
-                masaCorregidaMuestraTres: '',
-                masaCorregidaMuestraCuatro: '',
-                volumenMuestraUno: '',
-                volumenMuestraDos: '',
-                volumenMuestraTres: '',
-                volumenMuestraCuatro: '',
-                volumenMetroCubicoMuestraUno: '',
-                volumenMetroCubicoMuestraDos: '',
-                volumenMetroCubicoMuestraTres: '',
-                volumenMetroCubicoMuestraCuatro: '',
-                densidadMuestraUno: '',
-                densidadMuestraDos: '',
-                densidadMuestraTres: '',
-                densidadMuestraCuatro: '',
-                areaMuestraUno: '',
-                areaMuestraDos: '',
-                areaMuestraTres: '',
-                areaMuestraCuatro: '',
-                cargaEnsayoMuestraUno: '',
-                cargaEnsayoMuestraDos: '',
-                cargaEnsayoMuestraTres: '',
-                cargaEnsayoMuestraCuatro: '',
-                cargaEnsayoMilMuestraUno: '',
-                cargaEnsayoMilMuestraDos: '',
-                cargaEnsayoMilMuestraTres: '',
-                cargaEnsayoMilMuestraCuatro: '',
-                tiempoCargaMuestraUno: '',
-                tiempoCargaMuestraDos: '',
-                tiempoCargaMuestraTres: '',
-                tiempoCargaMuestraCuatro: '',
-                resistenciaCompresionMuestraUno: '',
-                resistenciaCompresionMuestraDos: '',
-                resistenciaCompresionMuestraTres: '',
-                resistenciaCompresionMuestraCuatro: '',
-                factoresConversionMuestraUno: '',
-                factoresConversionMuestraDos: '',
-                factoresConversionMuestraTres: '',
-                factoresConversionMuestraCuatro: '',
-                resistenciaCorregidaMuestraUno: '',
-                resistenciaCorregidaMuestraDos: '',
-                resistenciaCorregidaMuestraTres: '',
-                resistenciaCorregidaMuestraCuatro: '',
-                velocidadEnsayoMuestraUno: '',
-                velocidadEnsayoMuestraDos: '',
-                velocidadEnsayoMuestraTres: '',
-                velocidadEnsayoMuestraCuatro: '',
-                tipoRoturaMuestraUno: '',
-                tipoRoturaMuestraDos: '',
-                tipoRoturaMuestraTres: '',
-                tipoRoturaMuestraCuatro: '',
-                aseguramientoMuestraUno: '',
-                aseguramientoMuestraDos: '',
-                aseguramientoMuestraTres: '',
-                aseguramientoMuestraCuatro: '',
-                cumpleMuestraUno: false,
-                cumpleMuestraDos: false,
-                cumpleMuestraTres: false,
-                cumpleMuestraCuatro: false,
-                velocidadMuestraUno: false,
-                velocidadMuestraDos: false,
-                velocidadMuestraTres: false,
-                velocidadMuestraCuatro: false,
-                observaciones: '',
-                ensayadoPor: '',
-                fecha: '',
-                vb: ''
-            },
-            reglas: {
-                numIngreso: [{ required: true, message: '', trigger: 'blur' }],
-                OTT: [{ required: true, message: '', trigger: 'change' }],
-                numInforme: [{ required: true, message: '', trigger: 'blur' }],
-                camaraHumeda: [{ required: true, message: '', trigger: 'blur' }],
-                piscina: [{ required: true, message: '', trigger: 'blur' }],
-                balanza: [{ required: true, message: '', trigger: 'blur' }],
-                numPieDeMetro: [{ required: true, message: '', trigger: 'blur' }],
-                numPrensa: [{ required: true, message: '', trigger: 'blur' }],
-                numCronometro: [{ required: true, message: '', trigger: 'blur' }],
-                errorTrescientosMm: [{ required: true, message: '', trigger: 'blur' }],
-                numMarmita: [{ required: true, message: '', trigger: 'blur' }],
-                numDispositivoRefrentado: [{ required: true, message: '', trigger: 'blur' }],
-                numMicrometro: [{ required: true, message: '', trigger: 'blur' }],
-                numMoldeMuestraUno: [{ required: true, message: '', trigger: 'blur' }],
-                numMoldeMuestraDos: [{ required: true, message: '', trigger: 'blur' }],
-                numMoldeMuestraTres: [{ required: true, message: '', trigger: 'blur' }],
-                numMoldeMuestraCuatro: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccionMuestraUno: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccionMuestraDos: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccionMuestraTres: [{ required: true, message: '', trigger: 'blur' }],
-                fechaConfeccionMuestraCuatro: [{ required: true, message: '', trigger: 'blur' }],
-                fechaEnsayoMuestraUno: [{ required: true, message: '', trigger: 'blur' }],
-                fechaEnsayoMuestraDos: [{ required: true, message: '', trigger: 'blur' }],
-                fechaEnsayoMuestraTres: [{ required: true, message: '', trigger: 'blur' }],
-                fechaEnsayoMuestraCuatro: [{ required: true, message: '', trigger: 'blur' }],
-                edadDiasMuestraUno: [{ required: true, message: '', trigger: 'blur' }],
-                edadDiasMuestraDos: [{ required: true, message: '', trigger: 'blur' }],
-                edadDiasMuestraTres: [{ required: true, message: '', trigger: 'blur' }],
-                edadDiasMuestraCuatro: [{ required: true, message: '', trigger: 'blur' }]
-            }
-        };
-    },
+  data: function data() {
+    return {
+      urlGuardarEnsayo: GLOBAL.URL + "ensayos/guardar-ensayo-compresion",
+      urlBuscarOtt: GLOBAL.URL + "ensayos/buscar-ott",
+      timeout: null,
+      ordenSeleccionada: "",
+      ordenes: [],
+      opcionesSearchBoxOTT: [],
+      loading: false,
+      cantidadDecimales: 6,
+      factoresConversion: {
+        20: 1.25,
+        25: 1.2,
+        30: 1.17,
+        35: 1.14,
+        40: 1.13,
+        45: 1.11,
+        50: 1.1
+      },
+      options: [{
+        value: 'NELSON CARDENAS RODRIGUEZ',
+        label: 'NELSON CARDENAS RODRIGUEZ'
+      }, {
+        value: 'FABIAN DIAZ LOYOLA',
+        label: 'FABIAN DIAZ LOYOLA'
+      }, {
+        value: 'RICARDO MOYA GONZALEZ',
+        label: 'RICARDO MOYA GONZALEZ'
+      }, {
+        value: 'LUIS NAVARRO NAVARRO',
+        label: 'LUIS NAVARRO NAVARRO'
+      }, {
+        value: 'CRISTIAN REYES MARTINEZ',
+        label: 'CRISTIAN REYES MARTINEZ'
+      }, {
+        value: 'WALTER ROJAS SAN MARTIN',
+        label: 'WALTER ROJAS SAN MARTIN'
+      }, {
+        value: 'VICTOR SANDOVAL HERNANDEZ',
+        label: 'VICTOR SANDOVAL HERNANDEZ'
+      }, {
+        value: 'ERNESTO  VARGAS GONZALEZ',
+        label: 'ERNESTO  VARGAS GONZALEZ'
+      }, {
+        value: 'FRANCISCO VARGAS MARTINEZ',
+        label: 'FRANCISCO VARGAS MARTINEZ'
+      }, {
+        value: 'JORGE PINTO CONCHA',
+        label: 'JORGE PINTO CONCHA'
+      }, {
+        value: 'GUILLERMO NEIRA ROJAS',
+        label: 'GUILLERMO NEIRA ROJAS'
+      }, {
+        value: 'EVICTOR SAEZ BARRIOS',
+        label: 'VICTOR SAEZ BARRIOS'
+      }, {
+        value: 'VICTOR MUÑOZ ANDRADE',
+        label: 'VICTOR MUÑOZ ANDRADE'
+      }, {
+        value: 'ALEX ORTIZ  PASTEN',
+        label: 'ALEX ORTIZ  PASTEN'
+      }, {
+        value: 'IGNACIO ORTIZ  PASTEN',
+        label: 'IGNACIO ORTIZ  PASTEN'
+      }, {
+        value: 'ANGELO ESPINOZA HERNANDEZ',
+        label: 'ANGELO ESPINOZA HERNANDEZ'
+      }],
+      pickerOptionsFechaEnsayo: {
+        // disabledDate(time) {
+        //     this.calculaFechaEnsayoInicio()
+        //     return time.getTime() > Date.now();
+        // },
+      },
+      form: {
+        numIngreso: "Cargado desde la OTT",
+        OTT: "",
+        numInforme: "",
+        camaraHumeda: "",
+        piscina: "",
+        balanza: "",
+        numPieDeMetro: "",
+        numPrensa: "",
+        numCronometro: "",
+        errorCientoCincuentaMm: 0,
+        errorTrescientosMm: 0,
+        numMarmita: "",
+        numDispositivoRefrentado: "",
+        numMicrometro: "",
+        numMoldeMuestraUno: "",
+        numMoldeMuestraDos: "",
+        numMoldeMuestraTres: "",
+        numMoldeMuestraCuatro: "",
+        fechaConfeccionMuestraUno: "Cargado desde OTT",
+        fechaConfeccionMuestraDos: "Cargado desde OTT",
+        fechaConfeccionMuestraTres: "Cargado desde OTT",
+        fechaConfeccionMuestraCuatro: "Cargado desde OTT",
+        fechaEnsayoMuestraUno: "",
+        fechaEnsayoMuestraDos: "",
+        fechaEnsayoMuestraTres: "",
+        fechaEnsayoMuestraCuatro: "",
+        edadDiasMuestraUno: "",
+        edadDiasMuestraDos: "",
+        edadDiasMuestraTres: "",
+        edadDiasMuestraCuatro: "",
+        refrentadoMuestraUno: "",
+        refrentadoMuestraDos: "",
+        refrentadoMuestraTres: "",
+        refrentadoMuestraCuatro: "",
+        refrentadoCorregidoMuestraUno: "",
+        refrentadoCorregidoMuestraDos: "",
+        refrentadoCorregidoMuestraTres: "",
+        refrentadoCorregidoMuestraCuatro: "",
+        perpendicularidadMuestraUno: "",
+        perpendicularidadMuestraDos: "",
+        perpendicularidadMuestraTres: "",
+        perpendicularidadMuestraCuatro: "",
+        planeidadMuestraUno: "",
+        planeidadMuestraDos: "",
+        planeidadMuestraTres: "",
+        planeidadMuestraCuatro: "",
+        espesorSuperiorMuestraUno: "",
+        espesorSuperiorMuestraDos: "",
+        espesorSuperiorMuestraTres: "",
+        espesorSuperiorMuestraCuatro: "",
+        espesorInferiorMuestraUno: "",
+        espesorInferiorMuestraDos: "",
+        espesorInferiorMuestraTres: "",
+        espesorInferiorMuestraCuatro: "",
+        espesorPromedioMuestraUno: "",
+        espesorPromedioMuestraDos: "",
+        espesorPromedioMuestraTres: "",
+        espesorPromedioMuestraCuatro: "",
+        dUnoMuestraUno: "",
+        dUnoMuestraDos: "",
+        dUnoMuestraTres: "",
+        dUnoMuestraCuatro: "",
+        dDosMuestraUno: "",
+        dDosMuestraDos: "",
+        dDosMuestraTres: "",
+        dDosMuestraCuatro: "",
+        hUnoMuestraUno: "",
+        hUnoMuestraDos: "",
+        hUnoMuestraTres: "",
+        hUnoMuestraCuatro: "",
+        hDosMuestraUno: "",
+        hDosMuestraDos: "",
+        hDosMuestraTres: "",
+        hDosMuestraCuatro: "",
+        refrentadoUno: "",
+        refrentadoDos: "",
+        refrentadoTres: "",
+        refrentadoCuatro: "",
+        dUnoMuestraUnoCorregida: "",
+        dUnoMuestraDosCorregida: "",
+        dUnoMuestraTresCorregida: "",
+        dUnoMuestraCuatroCorregida: "",
+        dDosMuestraUnoCorregida: "",
+        dDosMuestraDosCorregida: "",
+        dDosMuestraTresCorregida: "",
+        dDosMuestraCuatroCorregida: "",
+        hUnoMuestraUnoCorregida: "",
+        hUnoMuestraDosCorregida: "",
+        hUnoMuestraTresCorregida: "",
+        hUnoMuestraCuatroCorregida: "",
+        hDosMuestraUnoCorregida: "",
+        hDosMuestraDosCorregida: "",
+        hDosMuestraTresCorregida: "",
+        hDosMuestraCuatroCorregida: "",
+        masaMuestraUno: "",
+        masaMuestraDos: "",
+        masaMuestraTres: "",
+        masaMuestraCuatro: "",
+        errorMuestraUno: "",
+        errorMuestraDos: "",
+        errorMuestraTres: "",
+        errorMuestraCuatro: "",
+        masaCorregidaMuestraUno: "",
+        masaCorregidaMuestraDos: "",
+        masaCorregidaMuestraTres: "",
+        masaCorregidaMuestraCuatro: "",
+        volumenMuestraUno: "",
+        volumenMuestraDos: "",
+        volumenMuestraTres: "",
+        volumenMuestraCuatro: "",
+        volumenMetroCubicoMuestraUno: "",
+        volumenMetroCubicoMuestraDos: "",
+        volumenMetroCubicoMuestraTres: "",
+        volumenMetroCubicoMuestraCuatro: "",
+        densidadMuestraUno: "",
+        densidadMuestraDos: "",
+        densidadMuestraTres: "",
+        densidadMuestraCuatro: "",
+        areaMuestraUno: "",
+        areaMuestraDos: "",
+        areaMuestraTres: "",
+        areaMuestraCuatro: "",
+        cargaEnsayoMuestraUno: "",
+        cargaEnsayoMuestraDos: "",
+        cargaEnsayoMuestraTres: "",
+        cargaEnsayoMuestraCuatro: "",
+        cargaEnsayoMilMuestraUno: "",
+        cargaEnsayoMilMuestraDos: "",
+        cargaEnsayoMilMuestraTres: "",
+        cargaEnsayoMilMuestraCuatro: "",
+        tiempoCargaMuestraUno: "",
+        tiempoCargaMuestraDos: "",
+        tiempoCargaMuestraTres: "",
+        tiempoCargaMuestraCuatro: "",
+        resistenciaCompresionMuestraUno: "",
+        resistenciaCompresionMuestraDos: "",
+        resistenciaCompresionMuestraTres: "",
+        resistenciaCompresionMuestraCuatro: "",
+        factoresConversionMuestraUno: "",
+        factoresConversionMuestraDos: "",
+        factoresConversionMuestraTres: "",
+        factoresConversionMuestraCuatro: "",
+        resistenciaCorregidaMuestraUno: "",
+        resistenciaCorregidaMuestraDos: "",
+        resistenciaCorregidaMuestraTres: "",
+        resistenciaCorregidaMuestraCuatro: "",
+        velocidadEnsayoMuestraUno: "",
+        velocidadEnsayoMuestraDos: "",
+        velocidadEnsayoMuestraTres: "",
+        velocidadEnsayoMuestraCuatro: "",
+        tipoRoturaMuestraUno: "",
+        tipoRoturaMuestraDos: "",
+        tipoRoturaMuestraTres: "",
+        tipoRoturaMuestraCuatro: "",
+        aseguramientoMuestraUno: "",
+        aseguramientoMuestraDos: "",
+        aseguramientoMuestraTres: "",
+        aseguramientoMuestraCuatro: "",
+        cumpleMuestraUno: false,
+        cumpleMuestraDos: false,
+        cumpleMuestraTres: false,
+        cumpleMuestraCuatro: false,
+        velocidadMuestraUno: false,
+        velocidadMuestraDos: false,
+        velocidadMuestraTres: false,
+        velocidadMuestraCuatro: false,
+        observaciones: "",
+        ensayadoPor: "",
+        fecha: "",
+        vb: ""
+      },
+      reglas: {
+        numIngreso: [{ required: true, message: "", trigger: "blur" }],
+        OTT: [{ required: true, message: "", trigger: "change" }],
+        numInforme: [{ required: true, message: "", trigger: "blur" }],
+        camaraHumeda: [{ required: true, message: "", trigger: "blur" }],
+        piscina: [{ required: true, message: "", trigger: "blur" }],
+        balanza: [{ required: true, message: "", trigger: "blur" }],
+        numPieDeMetro: [{ required: true, message: "", trigger: "blur" }],
+        numPrensa: [{ required: true, message: "", trigger: "blur" }],
+        numCronometro: [{ required: true, message: "", trigger: "blur" }],
+        errorTrescientosMm: [{ required: true, message: "", trigger: "blur" }],
+        numMarmita: [{ required: true, message: "", trigger: "blur" }],
+        numDispositivoRefrentado: [{ required: true, message: "", trigger: "blur" }],
+        numMicrometro: [{ required: true, message: "", trigger: "blur" }],
+        numMoldeMuestraUno: [{ required: true, message: "", trigger: "blur" }],
+        numMoldeMuestraDos: [{ required: true, message: "", trigger: "blur" }],
+        numMoldeMuestraTres: [{ required: true, message: "", trigger: "blur" }],
+        numMoldeMuestraCuatro: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccionMuestraUno: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccionMuestraDos: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccionMuestraTres: [{ required: true, message: "", trigger: "blur" }],
+        fechaConfeccionMuestraCuatro: [{ required: true, message: "", trigger: "blur" }],
+        fechaEnsayoMuestraUno: [{ required: true, message: "", trigger: "blur" }],
+        fechaEnsayoMuestraDos: [{ required: true, message: "", trigger: "blur" }],
+        fechaEnsayoMuestraTres: [{ required: true, message: "", trigger: "blur" }],
+        fechaEnsayoMuestraCuatro: [{ required: true, message: "", trigger: "blur" }],
+        edadDiasMuestraUno: [{ required: true, message: "", trigger: "blur" }],
+        edadDiasMuestraDos: [{ required: true, message: "", trigger: "blur" }],
+        edadDiasMuestraTres: [{ required: true, message: "", trigger: "blur" }],
+        edadDiasMuestraCuatro: [{ required: true, message: "", trigger: "blur" }]
+      }
+    };
+  },
 
-    methods: {
-        onSubmit: function onSubmit(nombreEnsayo) {
-            var _this = this;
+  methods: {
+    onSubmit: function onSubmit(nombreEnsayo) {
+      var _this = this;
 
-            // this.$refs[nombreEnsayo].validate((valid) => {
-            //     if (valid) {
-            this.$http.post(this.urlGuardarEnsayo, {
-                ensayo: this.form
-            }).then(function (response) {
-                if (response.body[1] == true) {
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, '', 5);
-                    setTimeout(function () {
-                        _this.$emit("cambiaMain", { vista: "ListadoEnsayosCompresionProbetasCilindricas", condicion: '' });
-                    }, 0);
-                } else {
-                    if (response.body[0].errorInfo[0] == "23000") {
-                        return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                    }
-                    return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                }
-            }, function (response) {
-                console.log(response);
-                __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-            });
-            //     } else {
-            //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-            //         return false;
-            //     }
-            // });
-        },
-        resetForm: function resetForm(nombreFormulario) {
-            this.$refs[nombreFormulario].resetFields();
-        },
-        querySearchNumeroOtt: function querySearchNumeroOtt(query) {
-            var _this2 = this;
-
-            if (query !== '') {
-                this.loading = true;
-
-                this.$http.get(this.urlBuscarOtt + '/' + query, {}).then(function (response) {
-                    _this2.loading = false;
-                    var resultados = response.body;
-                    var results = resultados.length > 0 ? resultados.map(function (orden) {
-                        return { 'value': orden.num_ott,
-                            'id': orden.num_ott };
-                    }) : [];
-                    console.log('resultados', _this2.results);
-                    _this2.opcionesSearchBoxOTT = results;
-                    _this2.ordenes = resultados;
-                }, function (response) {
-                    console.log(response);
-                    __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo encontrar ott para su criterio de busqueda.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, '', 5);
-                });
-            }
-        },
-        calculaDiametroCorregido: function calculaDiametroCorregido() {
-            var error = parseFloat(this.form.errorCientoCincuentaMm);
-            var dUnoMuestraUno = parseFloat(this.form.dUnoMuestraUno);
-            var dDosMuestraUno = parseFloat(this.form.dDosMuestraUno);
-            var dUnoMuestraDos = parseFloat(this.form.dUnoMuestraDos);
-            var dDosMuestraDos = parseFloat(this.form.dDosMuestraDos);
-            var dUnoMuestraTres = parseFloat(this.form.dUnoMuestraTres);
-            var dDosMuestraTres = parseFloat(this.form.dDosMuestraTres);
-            var dUnoMuestraCuatro = parseFloat(this.form.dUnoMuestraCuatro);
-            var dDosMuestraCuatro = parseFloat(this.form.dDosMuestraCuatro);
-            var calc = void 0;
-            if (isNaN(error)) {
-                this.form.dUnoMuestraUnoCorregida = 'No valido';
-                this.form.dDosMuestraUnoCorregida = 'No valido';
-                this.form.dUnoMuestraDosCorregida = 'No valido';
-                this.form.dDosMuestraDosCorregida = 'No valido';
-                this.form.dUnoMuestraTresCorregida = 'No valido';
-                this.form.dDosMuestraTresCorregida = 'No valido';
-                this.form.dUnoMuestraCuatroCorregida = 'No valido';
-                this.form.dDosMuestraCuatroCorregida = 'No valido';
-            }
-            if (!isNaN(dUnoMuestraUno) && !isNaN(error)) {
-                calc = dUnoMuestraUno + error;
-                this.form.dUnoMuestraUnoCorregida = calc;
-            } else {
-                this.form.dUnoMuestraUnoCorregida = 'No valido';
-            }
-            if (!isNaN(dDosMuestraUno) && !isNaN(error)) {
-                calc = dDosMuestraUno + error;
-                this.form.dDosMuestraUnoCorregida = calc;
-            } else {
-                this.form.dDosMuestraUnoCorregida = 'No valido';
-            }
-            if (!isNaN(dUnoMuestraDos) && !isNaN(error)) {
-                calc = dUnoMuestraDos + error;
-                this.form.dUnoMuestraDosCorregida = calc;
-            } else {
-                this.form.dUnoMuestraDosCorregida = 'No valido';
-            }
-            if (!isNaN(dDosMuestraDos) && !isNaN(error)) {
-                calc = dDosMuestraDos + error;
-                this.form.dDosMuestraDosCorregida = calc;
-            } else {
-                this.form.dDosMuestraDosCorregida = 'No valido';
-            }
-            if (!isNaN(dUnoMuestraTres) && !isNaN(error)) {
-                calc = dUnoMuestraTres + error;
-                this.form.dUnoMuestraTresCorregida = calc;
-            } else {
-                this.form.dUnoMuestraTresCorregida = 'No valido';
-            }
-            if (!isNaN(dDosMuestraTres) && !isNaN(error)) {
-                calc = dDosMuestraTres + error;
-                this.form.dDosMuestraTresCorregida = calc;
-            } else {
-                this.form.dDosMuestraTresCorregida = 'No valido';
-            }
-            if (!isNaN(dUnoMuestraCuatro) && !isNaN(error)) {
-                calc = dUnoMuestraCuatro + error;
-                this.form.dUnoMuestraCuatroCorregida = calc;
-            } else {
-                this.form.dUnoMuestraCuatroCorregida = 'No valido';
-            }
-            if (!isNaN(dDosMuestraCuatro) && !isNaN(error)) {
-                calc = dDosMuestraCuatro + error;
-                this.form.dDosMuestraCuatroCorregida = calc;
-            } else {
-                this.form.dDosMuestraCuatroCorregida = 'No valido';
-            }
-        },
-        calculaLongitudCorregida: function calculaLongitudCorregida() {
-            var error = parseFloat(this.form.errorTrescientosMm);
-            var hUnoMuestraUno = parseFloat(this.form.hUnoMuestraUno);
-            var hDosMuestraUno = parseFloat(this.form.hDosMuestraUno);
-            var hUnoMuestraDos = parseFloat(this.form.hUnoMuestraDos);
-            var hDosMuestraDos = parseFloat(this.form.hDosMuestraDos);
-            var hUnoMuestraTres = parseFloat(this.form.hUnoMuestraTres);
-            var hDosMuestraTres = parseFloat(this.form.hDosMuestraTres);
-            var hUnoMuestraCuatro = parseFloat(this.form.hUnoMuestraCuatro);
-            var hDosMuestraCuatro = parseFloat(this.form.hDosMuestraCuatro);
-            var refrentadoUno = parseFloat(this.form.refrentadoUno);
-            var refrentadoDos = parseFloat(this.form.refrentadoDos);
-            var refrentadoTres = parseFloat(this.form.refrentadoTres);
-            var refrentadoCuatro = parseFloat(this.form.refrentadoCuatro);
-            var calc = void 0;
-            if (isNaN(error)) {
-                this.form.hUnoMuestraUnoCorregida = 'No valido';
-                this.form.hDosMuestraUnoCorregida = 'No valido';
-                this.form.hUnoMuestraDosCorregida = 'No valido';
-                this.form.hDosMuestraDosCorregida = 'No valido';
-                this.form.hUnoMuestraTresCorregida = 'No valido';
-                this.form.hDosMuestraTresCorregida = 'No valido';
-                this.form.hUnoMuestraCuatroCorregida = 'No valido';
-                this.form.hDosMuestraCuatroCorregida = 'No valido';
-                this.form.refrentadoCorregidoMuestraUno = 'No valido';
-                this.form.refrentadoCorregidoMuestraDos = 'No valido';
-                this.form.refrentadoCorregidoMuestraTres = 'No valido';
-                this.form.refrentadoCorregidoMuestraCuatro = 'No valido';
-            }
-            if (!isNaN(hUnoMuestraUno) && !isNaN(error)) {
-                calc = hUnoMuestraUno + error;
-                this.form.hUnoMuestraUnoCorregida = calc;
-            } else {
-                this.form.hUnoMuestraUnoCorregida = 'No valido';
-            }
-            if (!isNaN(hDosMuestraUno) && !isNaN(error)) {
-                calc = hDosMuestraUno + error;
-                this.form.hDosMuestraUnoCorregida = calc;
-            } else {
-                this.form.hDosMuestraUnoCorregida = 'No valido';
-            }
-            if (!isNaN(hUnoMuestraDos) && !isNaN(error)) {
-                calc = hUnoMuestraDos + error;
-                this.form.hUnoMuestraDosCorregida = calc;
-            } else {
-                this.form.hUnoMuestraDosCorregida = 'No valido';
-            }
-            if (!isNaN(hDosMuestraDos) && !isNaN(error)) {
-                calc = hDosMuestraDos + error;
-                this.form.hDosMuestraDosCorregida = calc;
-            } else {
-                this.form.hDosMuestraDosCorregida = 'No valido';
-            }
-            if (!isNaN(hUnoMuestraTres) && !isNaN(error)) {
-                calc = hUnoMuestraTres + error;
-                this.form.hUnoMuestraTresCorregida = calc;
-            } else {
-                this.form.hUnoMuestraTresCorregida = 'No valido';
-            }
-            if (!isNaN(hDosMuestraTres) && !isNaN(error)) {
-                calc = hDosMuestraTres + error;
-                this.form.hDosMuestraTresCorregida = calc;
-            } else {
-                this.form.hDosMuestraTresCorregida = 'No valido';
-            }
-            if (!isNaN(hUnoMuestraCuatro) && !isNaN(error)) {
-                calc = hUnoMuestraCuatro + error;
-                this.form.hUnoMuestraCuatroCorregida = calc;
-            } else {
-                this.form.hUnoMuestraCuatroCorregida = 'No valido';
-            }
-            if (!isNaN(hDosMuestraCuatro) && !isNaN(error)) {
-                calc = hDosMuestraCuatro + error;
-                this.form.hDosMuestraCuatroCorregida = calc;
-            } else {
-                this.form.hDosMuestraCuatroCorregida = 'No valido';
-            }
-            if (!isNaN(refrentadoUno) && !isNaN(error)) {
-                calc = refrentadoUno + error;
-                this.form.refrentadoCorregidoMuestraUno = calc;
-            } else {
-                this.form.refrentadoCorregidoMuestraUno = 'No valido';
-            }
-            if (!isNaN(refrentadoDos) && !isNaN(error)) {
-                calc = refrentadoDos + error;
-                this.form.refrentadoCorregidoMuestraDos = calc;
-            } else {
-                this.form.refrentadoCorregidoMuestraDos = 'No valido';
-            }
-            if (!isNaN(refrentadoTres) && !isNaN(error)) {
-                calc = refrentadoTres + error;
-                this.form.refrentadoCorregidoMuestraTres = calc;
-            } else {
-                this.form.refrentadoCorregidoMuestraTres = 'No valido';
-            }
-            if (!isNaN(refrentadoCuatro) && !isNaN(error)) {
-                calc = refrentadoCuatro + error;
-                this.form.refrentadoCorregidoMuestraCuatro = calc;
-            } else {
-                this.form.refrentadoCorregidoMuestraCuatro = 'No valido';
-            }
+      // this.$refs[nombreEnsayo].validate((valid) => {
+      //     if (valid) {
+      this.$http.post(this.urlGuardarEnsayo, {
+        ensayo: this.form
+      }).then(function (response) {
+        if (response.body[1] == true) {
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+          _this.$emit("cambiaMain", {
+            vista: "ListadoEnsayosCompresionProbetasCilindricas",
+            condicion: "porvalidar"
+          });
+        } else {
+          if (response.body[0].errorInfo[0] == "23000") {
+            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }
+          return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
         }
+      }, function (response) {
+        console.log(response);
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      });
+      //     } else {
+      //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+      //         return false;
+      //     }
+      // });
     },
-    watch: {
-        'form.volumenMetroCubicoMuestraUno': function formVolumenMetroCubicoMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraUno = 'No valido';
-            } else {
-                this.form.densidadMuestraUno = parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno);
-            }
-        },
-        'form.masaCorregidaMuestraUno': function formMasaCorregidaMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraUno = 'No valido';
-            } else {
-                this.form.densidadMuestraUno = parseFloat(this.form.masaCorregidaMuestraUno) / parseFloat(this.form.volumenMetroCubicoMuestraUno);
-            }
-        },
-        'form.masaCorregidaMuestraDos': function formMasaCorregidaMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraDos = 'No valido';
-            } else {
-                this.form.densidadMuestraDos = parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos);
-            }
-        },
-        'form.volumenMetroCubicoMuestraDos': function formVolumenMetroCubicoMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraDos = 'No valido';
-            } else {
-                this.form.densidadMuestraDos = parseFloat(this.form.masaCorregidaMuestraDos) / parseFloat(this.form.volumenMetroCubicoMuestraDos);
-            }
-        },
-        'form.masaCorregidaMuestraTres': function formMasaCorregidaMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraTres = 'No valido';
-            } else {}
-            this.form.densidadMuestraTres = parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres);
-        },
-        'form.volumenMetroCubicoMuestraTres': function formVolumenMetroCubicoMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraTres = 'No valido';
-            } else {
-                this.form.densidadMuestraTres = parseFloat(this.form.masaCorregidaMuestraTres) / parseFloat(this.form.volumenMetroCubicoMuestraTres);
-            }
-        },
-        'form.masaCorregidaMuestraCuatro': function formMasaCorregidaMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraCuatro = 'No valido';
-            } else {
-                this.form.densidadMuestraCuatro = parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
-            }
-        },
-        'form.volumenMetroCubicoMuestraCuatro': function formVolumenMetroCubicoMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
-            var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.densidadMuestraCuatro = 'No valido';
-            } else {
-                this.form.densidadMuestraCuatro = parseFloat(this.form.masaCorregidaMuestraCuatro) / parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
-            }
-        },
-        'form.OTT': function formOTT(newVal, oldVal) {
-            this.ordenSeleccionada = this.ordenes.filter(function (orden) {
-                return orden.num_ott == newVal;
-            });
-            if (this.ordenSeleccionada.length != 0) {
-                this.ordenSeleccionada = this.ordenSeleccionada[0];
-                this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
-                this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
-                this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
-            }
-        },
-        'form.fechaEnsayoMuestraUno': function formFechaEnsayoMuestraUno(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+    resetForm: function resetForm(nombreFormulario) {
+      this.$refs[nombreFormulario].resetFields();
+    },
+    querySearchNumeroOtt: function querySearchNumeroOtt(query) {
+      var _this2 = this;
 
-            if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraUno = diff;
-            }
-        },
-        'form.fechaConfeccionMuestraUno': function formFechaConfeccionMuestraUno(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraUno = diff;
-            }
-        },
-        'form.fechaEnsayoMuestraDos': function formFechaEnsayoMuestraDos(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraDos) && patronFecha.test(this.form.fechaConfeccionMuestraDos)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraDos, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraDos = diff;
-            }
-        },
-        'form.fechaConfeccionMuestraDos': function formFechaConfeccionMuestraDos(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraDos)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraDos = diff;
-            }
-        },
-        'form.fechaEnsayoMuestraTres': function formFechaEnsayoMuestraTres(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraTres = diff;
-            }
-        },
-        'form.fechaConfeccionMuestraTres': function formFechaConfeccionMuestraTres(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraTres = diff;
-            }
-        },
-        'form.fechaEnsayoMuestraCuatro': function formFechaEnsayoMuestraCuatro(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraCuatro = diff;
-            }
-        },
-        'form.fechaConfeccionMuestraCuatro': function formFechaConfeccionMuestraCuatro(newVal, oldVal) {
-            var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
-            if (patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro)) {
-                var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
-                var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
-                var diff = date1.diff(date2, 'days');
-                this.form.edadDiasMuestraCuatro = diff;
-            }
-        },
-        'form.masaMuestraUno': function formMasaMuestraUno(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
-                this.form.masaCorregidaMuestraUno = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
-            }
-        },
-        'form.errorMuestraUno': function formErrorMuestraUno(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
-                this.form.masaCorregidaMuestraUno = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
-            }
-        },
-        'form.masaMuestraDos': function formMasaMuestraDos(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
-                this.form.masaCorregidaMuestraDos = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
-            }
-        },
-        'form.errorMuestraDos': function formErrorMuestraDos(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
-                this.form.masaCorregidaMuestraDos = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
-            }
-        },
-        'form.masaMuestraTres': function formMasaMuestraTres(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
-                this.form.masaCorregidaMuestraTres = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
-            }
-        },
-        'form.errorMuestraTres': function formErrorMuestraTres(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
-                this.form.masaCorregidaMuestraTres = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
-            }
-        },
-        'form.masaMuestraCuatro': function formMasaMuestraCuatro(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
-                this.form.masaCorregidaMuestraCuatro = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
-            }
-        },
-        'form.errorMuestraCuatro': function formErrorMuestraCuatro(newVal, oldVal) {
-            if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
-                this.form.masaCorregidaMuestraCuatro = 'No valido';
-            } else {
-                this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
-            }
-        },
-        'form.dUnoMuestraUnoCorregida': function formDUnoMuestraUnoCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraUno = 'No valido';
-            } else {
-                this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dDosMuestraUnoCorregida': function formDDosMuestraUnoCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraUno = 'No valido';
-            } else {
-                this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dUnoMuestraDosCorregida': function formDUnoMuestraDosCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraDos = 'No valido';
-            } else {
-                this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dDosMuestraDosCorregida': function formDDosMuestraDosCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraDos = 'No valido';
-            } else {
-                this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dUnoMuestraTresCorregida': function formDUnoMuestraTresCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraTres = 'No valido';
-            } else {
-                this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dDosMuestraTresCorregida': function formDDosMuestraTresCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraTres = 'No valido';
-            } else {
-                this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dUnoMuestraCuatroCorregida': function formDUnoMuestraCuatroCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraCuatro = 'No valido';
-            } else {
-                this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.dDosMuestraCuatroCorregida': function formDDosMuestraCuatroCorregida(newVal, oldVal) {
-            var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
-            var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.areaMuestraCuatro = 'No valido';
-            } else {
-                this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
-            }
-        },
-        'form.cargaEnsayoMuestraUno': function formCargaEnsayoMuestraUno(newVal, oldVal) {
-            var carga = parseFloat(this.form.cargaEnsayoMuestraUno);
-            if (isNaN(carga)) {
-                this.form.cargaEnsayoMilMuestraUno = 'No valido';
-            } else {
-                this.form.cargaEnsayoMilMuestraUno = 1000 * carga;
-            }
-        },
-        'form.cargaEnsayoMuestraDos': function formCargaEnsayoMuestraDos(newVal, oldVal) {
-            var carga = parseFloat(this.form.cargaEnsayoMuestraDos);
-            if (isNaN(carga)) {
-                this.form.cargaEnsayoMilMuestraDos = 'No valido';
-            } else {
-                this.form.cargaEnsayoMilMuestraDos = 1000 * carga;
-            }
-        },
-        'form.cargaEnsayoMuestraTres': function formCargaEnsayoMuestraTres(newVal, oldVal) {
-            var carga = parseFloat(this.form.cargaEnsayoMuestraTres);
-            if (isNaN(carga)) {
-                this.form.cargaEnsayoMilMuestraTres = 'No valido';
-            } else {
-                this.form.cargaEnsayoMilMuestraTres = 1000 * carga;
-            }
-        },
-        'form.cargaEnsayoMuestraCuatro': function formCargaEnsayoMuestraCuatro(newVal, oldVal) {
-            var carga = parseFloat(this.form.cargaEnsayoMuestraCuatro);
-            if (isNaN(carga)) {
-                this.form.cargaEnsayoMilMuestraCuatro = 'No valido';
-            } else {
-                this.form.cargaEnsayoMilMuestraCuatro = 1000 * carga;
-            }
-        },
-        'form.cargaEnsayoMilMuestraUno': function formCargaEnsayoMilMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
-            var dDos = parseFloat(this.form.areaMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraUno = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraUno = dUno / dDos;
-            }
-        },
-        'form.areaMuestraUno': function formAreaMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
-            var dDos = parseFloat(this.form.areaMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraUno = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraUno = dUno / dDos;
-            }
-        },
-        'form.cargaEnsayoMilMuestraDos': function formCargaEnsayoMilMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
-            var dDos = parseFloat(this.form.areaMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraDos = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraDos = dUno / dDos;
-            }
-        },
-        'form.areaMuestraDos': function formAreaMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
-            var dDos = parseFloat(this.form.areaMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraDos = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraDos = dUno / dDos;
-            }
-        },
-        'form.cargaEnsayoMilMuestraTres': function formCargaEnsayoMilMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
-            var dDos = parseFloat(this.form.areaMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraTres = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraTres = dUno / dDos;
-            }
-        },
-        'form.areaMuestraTres': function formAreaMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
-            var dDos = parseFloat(this.form.areaMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraTres = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraTres = dUno / dDos;
-            }
-        },
-        'form.cargaEnsayoMilMuestraCuatro': function formCargaEnsayoMilMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
-            var dDos = parseFloat(this.form.areaMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraCuatro = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
-            }
-        },
-        'form.areaMuestraCuatro': function formAreaMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
-            var dDos = parseFloat(this.form.areaMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCompresionMuestraCuatro = 'No valido';
-            } else {
-                this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
-            }
-        },
-        'form.resistenciaCompresionMuestraUno': function formResistenciaCompresionMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
-            var dDos = parseFloat(this.form.factoresConversionMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraUno = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraUno = dUno / dDos;
-            }
-        },
-        'form.factoresConversionMuestraUno': function formFactoresConversionMuestraUno(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
-            var dDos = parseFloat(this.form.factoresConversionMuestraUno);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraUno = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraUno = dUno / dDos;
-            }
-        },
-        'form.resistenciaCompresionMuestraDos': function formResistenciaCompresionMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
-            var dDos = parseFloat(this.form.factoresConversionMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraDos = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraDos = dUno / dDos;
-            }
-        },
-        'form.factoresConversionMuestraDos': function formFactoresConversionMuestraDos(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
-            var dDos = parseFloat(this.form.factoresConversionMuestraDos);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraDos = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraDos = dUno / dDos;
-            }
-        },
-        'form.resistenciaCompresionMuestraTres': function formResistenciaCompresionMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
-            var dDos = parseFloat(this.form.factoresConversionMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraTres = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraTres = dUno / dDos;
-            }
-        },
-        'form.factoresConversionMuestraTres': function formFactoresConversionMuestraTres(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
-            var dDos = parseFloat(this.form.factoresConversionMuestraTres);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraTres = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraTres = dUno / dDos;
-            }
-        },
-        'form.resistenciaCompresionMuestraCuatro': function formResistenciaCompresionMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
-            var dDos = parseFloat(this.form.factoresConversionMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraCuatro = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraCuatro = dUno / dDos;
-            }
-        },
-        'form.factoresConversionMuestraCuatro': function formFactoresConversionMuestraCuatro(newVal, oldVal) {
-            var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
-            var dDos = parseFloat(this.form.factoresConversionMuestraCuatro);
-            if (isNaN(dUno) || isNaN(dDos)) {
-                this.form.resistenciaCorregidaMuestraCuatro = 'No valido';
-            } else {
-                this.form.resistenciaCorregidaMuestraCuatro = dUno / dDos;
-            }
-        },
-        'form.errorCientoCincuentaMm': function formErrorCientoCincuentaMm(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dUnoMuestraUno': function formDUnoMuestraUno(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dDosMuestraUno': function formDDosMuestraUno(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dUnoMuestraDos': function formDUnoMuestraDos(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dDosMuestraDos': function formDDosMuestraDos(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dUnoMuestraTres': function formDUnoMuestraTres(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dDosMuestraTres': function formDDosMuestraTres(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dUnoMuestraCuatro': function formDUnoMuestraCuatro(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.dDosMuestraCuatro': function formDDosMuestraCuatro(newVal, oldVal) {
-            this.calculaDiametroCorregido();
-        },
-        'form.errorTrescientosMm': function formErrorTrescientosMm(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hUnoMuestraUno': function formHUnoMuestraUno(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hDosMuestraUno': function formHDosMuestraUno(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hUnoMuestraDos': function formHUnoMuestraDos(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hDosMuestraDos': function formHDosMuestraDos(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hUnoMuestraTres': function formHUnoMuestraTres(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hDosMuestraTres': function formHDosMuestraTres(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hUnoMuestraCuatro': function formHUnoMuestraCuatro(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.hDosMuestraCuatro': function formHDosMuestraCuatro(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.refrentadoUno': function formRefrentadoUno(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.refrentadoDos': function formRefrentadoDos(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.refrentadoTres': function formRefrentadoTres(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        },
-        'form.refrentadoCuatro': function formRefrentadoCuatro(newVal, oldVal) {
-            this.calculaLongitudCorregida();
-        }
+      if (query !== "") {
+        this.loading = true;
+        this.$http.get(this.urlBuscarOtt + "/" + query, {}).then(function (response) {
+          _this2.loading = false;
+          var resultados = response.body;
+          var results = resultados.length > 0 ? resultados.map(function (orden) {
+            return { value: orden.num_ott, id: orden.num_ott };
+          }) : [];
+          console.log("resultados", results, resultados);
+          _this2.opcionesSearchBoxOTT = results;
+          _this2.ordenes = resultados;
+        }, function (response) {
+          console.log(response);
+          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo encontrar ott para su criterio de busqueda.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+        });
+      }
+    },
+    calculaDiametroCorregido: function calculaDiametroCorregido() {
+      var error = parseFloat(this.form.errorCientoCincuentaMm);
+      var dUnoMuestraUno = parseFloat(this.form.dUnoMuestraUno);
+      var dDosMuestraUno = parseFloat(this.form.dDosMuestraUno);
+      var dUnoMuestraDos = parseFloat(this.form.dUnoMuestraDos);
+      var dDosMuestraDos = parseFloat(this.form.dDosMuestraDos);
+      var dUnoMuestraTres = parseFloat(this.form.dUnoMuestraTres);
+      var dDosMuestraTres = parseFloat(this.form.dDosMuestraTres);
+      var dUnoMuestraCuatro = parseFloat(this.form.dUnoMuestraCuatro);
+      var dDosMuestraCuatro = parseFloat(this.form.dDosMuestraCuatro);
+      var calc = void 0;
+      if (isNaN(error)) {
+        this.form.dUnoMuestraUnoCorregida = "No valido";
+        this.form.dDosMuestraUnoCorregida = "No valido";
+        this.form.dUnoMuestraDosCorregida = "No valido";
+        this.form.dDosMuestraDosCorregida = "No valido";
+        this.form.dUnoMuestraTresCorregida = "No valido";
+        this.form.dDosMuestraTresCorregida = "No valido";
+        this.form.dUnoMuestraCuatroCorregida = "No valido";
+        this.form.dDosMuestraCuatroCorregida = "No valido";
+      }
+      if (!isNaN(dUnoMuestraUno) && !isNaN(error)) {
+        calc = dUnoMuestraUno + error;
+        this.form.dUnoMuestraUnoCorregida = calc;
+      } else {
+        this.form.dUnoMuestraUnoCorregida = "No valido";
+      }
+      if (!isNaN(dDosMuestraUno) && !isNaN(error)) {
+        calc = dDosMuestraUno + error;
+        this.form.dDosMuestraUnoCorregida = calc;
+      } else {
+        this.form.dDosMuestraUnoCorregida = "No valido";
+      }
+      if (!isNaN(dUnoMuestraDos) && !isNaN(error)) {
+        calc = dUnoMuestraDos + error;
+        this.form.dUnoMuestraDosCorregida = calc;
+      } else {
+        this.form.dUnoMuestraDosCorregida = "No valido";
+      }
+      if (!isNaN(dDosMuestraDos) && !isNaN(error)) {
+        calc = dDosMuestraDos + error;
+        this.form.dDosMuestraDosCorregida = calc;
+      } else {
+        this.form.dDosMuestraDosCorregida = "No valido";
+      }
+      if (!isNaN(dUnoMuestraTres) && !isNaN(error)) {
+        calc = dUnoMuestraTres + error;
+        this.form.dUnoMuestraTresCorregida = calc;
+      } else {
+        this.form.dUnoMuestraTresCorregida = "No valido";
+      }
+      if (!isNaN(dDosMuestraTres) && !isNaN(error)) {
+        calc = dDosMuestraTres + error;
+        this.form.dDosMuestraTresCorregida = calc;
+      } else {
+        this.form.dDosMuestraTresCorregida = "No valido";
+      }
+      if (!isNaN(dUnoMuestraCuatro) && !isNaN(error)) {
+        calc = dUnoMuestraCuatro + error;
+        this.form.dUnoMuestraCuatroCorregida = calc;
+      } else {
+        this.form.dUnoMuestraCuatroCorregida = "No valido";
+      }
+      if (!isNaN(dDosMuestraCuatro) && !isNaN(error)) {
+        calc = dDosMuestraCuatro + error;
+        this.form.dDosMuestraCuatroCorregida = calc;
+      } else {
+        this.form.dDosMuestraCuatroCorregida = "No valido";
+      }
+    },
+    calculaLongitudCorregida: function calculaLongitudCorregida() {
+      var error = parseFloat(this.form.errorTrescientosMm);
+      var hUnoMuestraUno = parseFloat(this.form.hUnoMuestraUno);
+      var hDosMuestraUno = parseFloat(this.form.hDosMuestraUno);
+      var hUnoMuestraDos = parseFloat(this.form.hUnoMuestraDos);
+      var hDosMuestraDos = parseFloat(this.form.hDosMuestraDos);
+      var hUnoMuestraTres = parseFloat(this.form.hUnoMuestraTres);
+      var hDosMuestraTres = parseFloat(this.form.hDosMuestraTres);
+      var hUnoMuestraCuatro = parseFloat(this.form.hUnoMuestraCuatro);
+      var hDosMuestraCuatro = parseFloat(this.form.hDosMuestraCuatro);
+      var refrentadoUno = parseFloat(this.form.refrentadoUno);
+      var refrentadoDos = parseFloat(this.form.refrentadoDos);
+      var refrentadoTres = parseFloat(this.form.refrentadoTres);
+      var refrentadoCuatro = parseFloat(this.form.refrentadoCuatro);
+      var calc = void 0;
+      if (isNaN(error)) {
+        this.form.hUnoMuestraUnoCorregida = "No valido";
+        this.form.hDosMuestraUnoCorregida = "No valido";
+        this.form.hUnoMuestraDosCorregida = "No valido";
+        this.form.hDosMuestraDosCorregida = "No valido";
+        this.form.hUnoMuestraTresCorregida = "No valido";
+        this.form.hDosMuestraTresCorregida = "No valido";
+        this.form.hUnoMuestraCuatroCorregida = "No valido";
+        this.form.hDosMuestraCuatroCorregida = "No valido";
+        this.form.refrentadoCorregidoMuestraUno = "No valido";
+        this.form.refrentadoCorregidoMuestraDos = "No valido";
+        this.form.refrentadoCorregidoMuestraTres = "No valido";
+        this.form.refrentadoCorregidoMuestraCuatro = "No valido";
+      }
+      if (!isNaN(hUnoMuestraUno) && !isNaN(error)) {
+        calc = hUnoMuestraUno + error;
+        this.form.hUnoMuestraUnoCorregida = calc;
+      } else {
+        this.form.hUnoMuestraUnoCorregida = "No valido";
+      }
+      if (!isNaN(hDosMuestraUno) && !isNaN(error)) {
+        calc = hDosMuestraUno + error;
+        this.form.hDosMuestraUnoCorregida = calc;
+      } else {
+        this.form.hDosMuestraUnoCorregida = "No valido";
+      }
+      if (!isNaN(hUnoMuestraDos) && !isNaN(error)) {
+        calc = hUnoMuestraDos + error;
+        this.form.hUnoMuestraDosCorregida = calc;
+      } else {
+        this.form.hUnoMuestraDosCorregida = "No valido";
+      }
+      if (!isNaN(hDosMuestraDos) && !isNaN(error)) {
+        calc = hDosMuestraDos + error;
+        this.form.hDosMuestraDosCorregida = calc;
+      } else {
+        this.form.hDosMuestraDosCorregida = "No valido";
+      }
+      if (!isNaN(hUnoMuestraTres) && !isNaN(error)) {
+        calc = hUnoMuestraTres + error;
+        this.form.hUnoMuestraTresCorregida = calc;
+      } else {
+        this.form.hUnoMuestraTresCorregida = "No valido";
+      }
+      if (!isNaN(hDosMuestraTres) && !isNaN(error)) {
+        calc = hDosMuestraTres + error;
+        this.form.hDosMuestraTresCorregida = calc;
+      } else {
+        this.form.hDosMuestraTresCorregida = "No valido";
+      }
+      if (!isNaN(hUnoMuestraCuatro) && !isNaN(error)) {
+        calc = hUnoMuestraCuatro + error;
+        this.form.hUnoMuestraCuatroCorregida = calc;
+      } else {
+        this.form.hUnoMuestraCuatroCorregida = "No valido";
+      }
+      if (!isNaN(hDosMuestraCuatro) && !isNaN(error)) {
+        calc = hDosMuestraCuatro + error;
+        this.form.hDosMuestraCuatroCorregida = calc;
+      } else {
+        this.form.hDosMuestraCuatroCorregida = "No valido";
+      }
+      if (!isNaN(refrentadoUno) && !isNaN(error)) {
+        calc = refrentadoUno + error;
+        this.form.refrentadoCorregidoMuestraUno = calc;
+      } else {
+        this.form.refrentadoCorregidoMuestraUno = "No valido";
+      }
+      if (!isNaN(refrentadoDos) && !isNaN(error)) {
+        calc = refrentadoDos + error;
+        this.form.refrentadoCorregidoMuestraDos = calc;
+      } else {
+        this.form.refrentadoCorregidoMuestraDos = "No valido";
+      }
+      if (!isNaN(refrentadoTres) && !isNaN(error)) {
+        calc = refrentadoTres + error;
+        this.form.refrentadoCorregidoMuestraTres = calc;
+      } else {
+        this.form.refrentadoCorregidoMuestraTres = "No valido";
+      }
+      if (!isNaN(refrentadoCuatro) && !isNaN(error)) {
+        calc = refrentadoCuatro + error;
+        this.form.refrentadoCorregidoMuestraCuatro = calc;
+      } else {
+        this.form.refrentadoCorregidoMuestraCuatro = "No valido";
+      }
+    },
+    calculaFactorCompresion: function calculaFactorCompresion(resistenciaUno, resistenciaDos, factorUno, factorDos, valorRecibido) {
+      return (valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno) * (factorDos - factorUno) + factorUno;
     }
+  },
+  watch: {
+    "form.volumenMetroCubicoMuestraUno": function formVolumenMetroCubicoMuestraUno(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraUno = "No valido";
+      } else {
+        this.form.densidadMuestraUno = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.masaCorregidaMuestraUno": function formMasaCorregidaMuestraUno(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraUno = "No valido";
+      } else {
+        this.form.densidadMuestraUno = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.masaCorregidaMuestraDos": function formMasaCorregidaMuestraDos(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraDos = "No valido";
+      } else {
+        this.form.densidadMuestraDos = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.volumenMetroCubicoMuestraDos": function formVolumenMetroCubicoMuestraDos(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraDos);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraDos);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraDos = "No valido";
+      } else {
+        this.form.densidadMuestraDos = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.masaCorregidaMuestraTres": function formMasaCorregidaMuestraTres(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraTres = "No valido";
+      } else {}
+      this.form.densidadMuestraTres = parseInt(Math.round(dUno / dDos / 10) * 10);
+    },
+    "form.volumenMetroCubicoMuestraTres": function formVolumenMetroCubicoMuestraTres(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraTres);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraTres);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraTres = "No valido";
+      } else {
+        this.form.densidadMuestraTres = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.masaCorregidaMuestraCuatro": function formMasaCorregidaMuestraCuatro(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraCuatro = "No valido";
+      } else {
+        this.form.densidadMuestraCuatro = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.volumenMetroCubicoMuestraCuatro": function formVolumenMetroCubicoMuestraCuatro(newVal, oldVal) {
+      var dUno = parseFloat(this.form.masaCorregidaMuestraCuatro);
+      var dDos = parseFloat(this.form.volumenMetroCubicoMuestraCuatro);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.densidadMuestraCuatro = "No valido";
+      } else {
+        this.form.densidadMuestraCuatro = parseInt(Math.round(dUno / dDos / 10) * 10);
+      }
+    },
+    "form.OTT": function formOTT(newVal, oldVal) {
+      this.ordenSeleccionada = this.ordenes.filter(function (orden) {
+        return orden.num_ott == newVal;
+      });
+      if (this.ordenSeleccionada.length != 0) {
+        this.ordenSeleccionada = this.ordenSeleccionada[0];
+        this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
+        this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+      }
+    },
+    "form.fechaEnsayoMuestraUno": function formFechaEnsayoMuestraUno(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraUno = diff;
+      }
+    },
+    "form.fechaConfeccionMuestraUno": function formFechaConfeccionMuestraUno(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraUno)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraUno = diff;
+      }
+    },
+    "form.fechaEnsayoMuestraDos": function formFechaEnsayoMuestraDos(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraDos) && patronFecha.test(this.form.fechaConfeccionMuestraDos)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraDos, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraDos = diff;
+      }
+    },
+    "form.fechaConfeccionMuestraDos": function formFechaConfeccionMuestraDos(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraUno) && patronFecha.test(this.form.fechaConfeccionMuestraDos)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraUno, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraDos = diff;
+      }
+    },
+    "form.fechaEnsayoMuestraTres": function formFechaEnsayoMuestraTres(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraTres = diff;
+      }
+    },
+    "form.fechaConfeccionMuestraTres": function formFechaConfeccionMuestraTres(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraTres) && patronFecha.test(this.form.fechaConfeccionMuestraTres)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraTres, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraTres = diff;
+      }
+    },
+    "form.fechaEnsayoMuestraCuatro": function formFechaEnsayoMuestraCuatro(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraCuatro = diff;
+      }
+    },
+    "form.fechaConfeccionMuestraCuatro": function formFechaConfeccionMuestraCuatro(newVal, oldVal) {
+      var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
+      if (patronFecha.test(this.form.fechaEnsayoMuestraCuatro) && patronFecha.test(this.form.fechaConfeccionMuestraCuatro)) {
+        var date1 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaEnsayoMuestraCuatro, "DD-MM-YYYY");
+        var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
+        var diff = date1.diff(date2, "days");
+        this.form.edadDiasMuestraCuatro = diff;
+      }
+    },
+    "form.masaMuestraUno": function formMasaMuestraUno(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
+        this.form.masaCorregidaMuestraUno = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
+      }
+    },
+    "form.errorMuestraUno": function formErrorMuestraUno(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
+        this.form.masaCorregidaMuestraUno = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
+      }
+    },
+    "form.masaMuestraDos": function formMasaMuestraDos(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
+        this.form.masaCorregidaMuestraDos = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
+      }
+    },
+    "form.errorMuestraDos": function formErrorMuestraDos(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
+        this.form.masaCorregidaMuestraDos = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
+      }
+    },
+    "form.masaMuestraTres": function formMasaMuestraTres(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
+        this.form.masaCorregidaMuestraTres = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
+      }
+    },
+    "form.errorMuestraTres": function formErrorMuestraTres(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
+        this.form.masaCorregidaMuestraTres = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
+      }
+    },
+    "form.masaMuestraCuatro": function formMasaMuestraCuatro(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
+        this.form.masaCorregidaMuestraCuatro = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
+      }
+    },
+    "form.errorMuestraCuatro": function formErrorMuestraCuatro(newVal, oldVal) {
+      if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
+        this.form.masaCorregidaMuestraCuatro = "No valido";
+      } else {
+        this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
+      }
+    },
+    "form.dUnoMuestraUnoCorregida": function formDUnoMuestraUnoCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraUno = "No valido";
+      } else {
+        this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dDosMuestraUnoCorregida": function formDDosMuestraUnoCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraUno = "No valido";
+      } else {
+        this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dUnoMuestraDosCorregida": function formDUnoMuestraDosCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraDos = "No valido";
+      } else {
+        this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dDosMuestraDosCorregida": function formDDosMuestraDosCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraDos = "No valido";
+      } else {
+        this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dUnoMuestraTresCorregida": function formDUnoMuestraTresCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraTres = "No valido";
+      } else {
+        this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dDosMuestraTresCorregida": function formDDosMuestraTresCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraTres = "No valido";
+      } else {
+        this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dUnoMuestraCuatroCorregida": function formDUnoMuestraCuatroCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraCuatro = "No valido";
+      } else {
+        this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.dDosMuestraCuatroCorregida": function formDDosMuestraCuatroCorregida(newVal, oldVal) {
+      var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
+      var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.areaMuestraCuatro = "No valido";
+      } else {
+        this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+      }
+    },
+    "form.cargaEnsayoMuestraUno": function formCargaEnsayoMuestraUno(newVal, oldVal) {
+      var carga = parseFloat(this.form.cargaEnsayoMuestraUno);
+      if (isNaN(carga)) {
+        this.form.cargaEnsayoMilMuestraUno = "No valido";
+      } else {
+        this.form.cargaEnsayoMilMuestraUno = 1000 * carga;
+      }
+    },
+    "form.cargaEnsayoMuestraDos": function formCargaEnsayoMuestraDos(newVal, oldVal) {
+      var carga = parseFloat(this.form.cargaEnsayoMuestraDos);
+      if (isNaN(carga)) {
+        this.form.cargaEnsayoMilMuestraDos = "No valido";
+      } else {
+        this.form.cargaEnsayoMilMuestraDos = 1000 * carga;
+      }
+    },
+    "form.cargaEnsayoMuestraTres": function formCargaEnsayoMuestraTres(newVal, oldVal) {
+      var carga = parseFloat(this.form.cargaEnsayoMuestraTres);
+      if (isNaN(carga)) {
+        this.form.cargaEnsayoMilMuestraTres = "No valido";
+      } else {
+        this.form.cargaEnsayoMilMuestraTres = 1000 * carga;
+      }
+    },
+    "form.cargaEnsayoMuestraCuatro": function formCargaEnsayoMuestraCuatro(newVal, oldVal) {
+      var carga = parseFloat(this.form.cargaEnsayoMuestraCuatro);
+      if (isNaN(carga)) {
+        this.form.cargaEnsayoMilMuestraCuatro = "No valido";
+      } else {
+        this.form.cargaEnsayoMilMuestraCuatro = 1000 * carga;
+      }
+    },
+    "form.cargaEnsayoMilMuestraUno": function formCargaEnsayoMilMuestraUno(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
+      var dDos = parseFloat(this.form.areaMuestraUno);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraUno = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraUno = dUno / dDos;
+      }
+    },
+    "form.areaMuestraUno": function formAreaMuestraUno(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
+      var dDos = parseFloat(this.form.areaMuestraUno);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraUno = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraUno = dUno / dDos;
+      }
+    },
+    "form.cargaEnsayoMilMuestraDos": function formCargaEnsayoMilMuestraDos(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
+      var dDos = parseFloat(this.form.areaMuestraDos);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraDos = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraDos = dUno / dDos;
+      }
+    },
+    "form.areaMuestraDos": function formAreaMuestraDos(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
+      var dDos = parseFloat(this.form.areaMuestraDos);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraDos = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraDos = dUno / dDos;
+      }
+    },
+    "form.cargaEnsayoMilMuestraTres": function formCargaEnsayoMilMuestraTres(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
+      var dDos = parseFloat(this.form.areaMuestraTres);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraTres = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraTres = dUno / dDos;
+      }
+    },
+    "form.areaMuestraTres": function formAreaMuestraTres(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
+      var dDos = parseFloat(this.form.areaMuestraTres);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraTres = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraTres = dUno / dDos;
+      }
+    },
+    "form.cargaEnsayoMilMuestraCuatro": function formCargaEnsayoMilMuestraCuatro(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
+      var dDos = parseFloat(this.form.areaMuestraCuatro);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraCuatro = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
+      }
+    },
+    "form.areaMuestraCuatro": function formAreaMuestraCuatro(newVal, oldVal) {
+      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
+      var dDos = parseFloat(this.form.areaMuestraCuatro);
+      if (isNaN(dUno) || isNaN(dDos)) {
+        this.form.resistenciaCompresionMuestraCuatro = "No valido";
+      } else {
+        this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
+      }
+    },
+    "form.resistenciaCompresionMuestraUno": function formResistenciaCompresionMuestraUno(newVal, oldVal) {
+      var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.factoresConversion["20"];
+          this.form.resistenciaCorregidaMuestraUno = this.factoresConversion["20"] * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraUno = this.factoresConversion["50"];
+          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+        }
+      } else {
+        this.form.factoresConversionMuestraUno = "-";
+        this.form.resistenciaCorregidaMuestraUno = "-";
+      }
+    },
+    "form.resistenciaCompresionMuestraDos": function formResistenciaCompresionMuestraDos(newVal, oldVal) {
+      var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.factoresConversion["20"];
+          this.form.resistenciaCorregidaMuestraDos = this.factoresConversion["20"] * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraDos = this.factoresConversion["50"];
+          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+        }
+      } else {
+        this.form.factoresConversionMuestraDos = "-";
+        this.form.resistenciaCorregidaMuestraDos = "-";
+      }
+    },
+    "form.resistenciaCompresionMuestraTres": function formResistenciaCompresionMuestraTres(newVal, oldVal) {
+      var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.factoresConversion["20"];
+          this.form.resistenciaCorregidaMuestraTres = this.factoresConversion["20"] * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraTres = this.factoresConversion["50"];
+          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+        }
+      } else {
+        this.form.factoresConversionMuestraTres = "-";
+        this.form.resistenciaCorregidaMuestraTres = "-";
+      }
+    },
+    "form.resistenciaCompresionMuestraCuatro": function formResistenciaCompresionMuestraCuatro(newVal, oldVal) {
+      var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
+      if (!isNaN(dUno)) {
+        if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.factoresConversion["20"];
+          this.form.resistenciaCorregidaMuestraCuatro = this.factoresConversion["20"] * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
+          this.form.factoresConversionMuestraCuatro = this.factoresConversion["50"];
+          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+        }
+      } else {
+        this.form.factoresConversionMuestraCuatro = "-";
+        this.form.resistenciaCorregidaMuestraCuatro = "-";
+      }
+    },
+    "form.errorCientoCincuentaMm": function formErrorCientoCincuentaMm(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dUnoMuestraUno": function formDUnoMuestraUno(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dDosMuestraUno": function formDDosMuestraUno(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dUnoMuestraDos": function formDUnoMuestraDos(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dDosMuestraDos": function formDDosMuestraDos(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dUnoMuestraTres": function formDUnoMuestraTres(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dDosMuestraTres": function formDDosMuestraTres(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dUnoMuestraCuatro": function formDUnoMuestraCuatro(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.dDosMuestraCuatro": function formDDosMuestraCuatro(newVal, oldVal) {
+      this.calculaDiametroCorregido();
+    },
+    "form.errorTrescientosMm": function formErrorTrescientosMm(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hUnoMuestraUno": function formHUnoMuestraUno(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hDosMuestraUno": function formHDosMuestraUno(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hUnoMuestraDos": function formHUnoMuestraDos(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hDosMuestraDos": function formHDosMuestraDos(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hUnoMuestraTres": function formHUnoMuestraTres(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hDosMuestraTres": function formHDosMuestraTres(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hUnoMuestraCuatro": function formHUnoMuestraCuatro(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.hDosMuestraCuatro": function formHDosMuestraCuatro(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.refrentadoUno": function formRefrentadoUno(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.refrentadoDos": function formRefrentadoDos(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.refrentadoTres": function formRefrentadoTres(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    },
+    "form.refrentadoCuatro": function formRefrentadoCuatro(newVal, oldVal) {
+      this.calculaLongitudCorregida();
+    }
+  }
 });
 
 /***/ }),
@@ -105328,7 +106311,7 @@ var render = function() {
             "el-row",
             [
               _c("el-col", { attrs: { span: 24 } }, [
-                _vm._v("\n                Método de curado\n            ")
+                _vm._v(" Método de curado ")
               ]),
               _vm._v(" "),
               _c(
@@ -105626,31 +106609,19 @@ var render = function() {
             { staticClass: "muestras" },
             [
               _c("el-col", { attrs: { span: 24 } }, [
-                _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Probeta N°\n                ")
-                ]),
+                _c("div", { staticClass: "texto" }, [_vm._v("Probeta N°")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "texto-muestras" }, [
-                  _vm._v("\n                    1\n                ")
-                ]),
+                _c("div", { staticClass: "texto-muestras" }, [_vm._v("1")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "texto-muestras" }, [
-                  _vm._v("\n                    2\n                ")
-                ]),
+                _c("div", { staticClass: "texto-muestras" }, [_vm._v("2")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "texto-muestras" }, [
-                  _vm._v("\n                    3\n                ")
-                ]),
+                _c("div", { staticClass: "texto-muestras" }, [_vm._v("3")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "texto-muestras" }, [
-                  _vm._v("\n                    4\n                ")
-                ])
+                _c("div", { staticClass: "texto-muestras" }, [_vm._v("4")])
               ]),
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
-                _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Nº de molde\n                ")
-                ]),
+                _c("div", { staticClass: "texto" }, [_vm._v("Nº de molde")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -105751,9 +106722,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Fecha de Confección\n                "
-                  )
+                  _vm._v("Fecha de Confección")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -105875,9 +106844,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v(
-                    "\n                    Fecha de Ensayo\n                "
-                  )
+                  _vm._v("Fecha de Ensayo")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -106018,9 +106985,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
-                _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Edad - Días\n                ")
-                ]),
+                _c("div", { staticClass: "texto" }, [_vm._v("Edad - Días")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -106129,7 +107094,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Refrentado "),
+                  _vm._v("\n          Refrentado\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(SI/NO)")
                   ])
@@ -106234,7 +107199,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    perpendicularidad "),
+                  _vm._v("\n          perpendicularidad\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(SI/NO)")
                   ])
@@ -106355,7 +107320,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    planeidad "),
+                  _vm._v("\n          planeidad\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(SI/NO)")
                   ])
@@ -106460,7 +107425,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Espesor Superior "),
+                  _vm._v("\n          Espesor Superior\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -106579,7 +107544,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Espesor Inferior "),
+                  _vm._v("\n          Espesor Inferior\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -106698,7 +107663,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Espesor Promedio "),
+                  _vm._v("\n          Espesor Promedio\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -106817,13 +107782,13 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto-ancho-full" }, [
-                  _vm._v("\n                    Dimensiones\n                ")
+                  _vm._v("Dimensiones")
                 ])
               ]),
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 1 "),
+                  _vm._v("\n          d 1\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -106926,7 +107891,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 2 "),
+                  _vm._v("\n          d 2\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107029,7 +107994,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 1 "),
+                  _vm._v("\n          h 1\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107132,7 +108097,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 2 "),
+                  _vm._v("\n          h 2\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107235,7 +108200,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h refrentado "),
+                  _vm._v("\n          h refrentado\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107338,15 +108303,13 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto-ancho-full" }, [
-                  _vm._v(
-                    "\n                    Dimensiones Corregidas\n                "
-                  )
+                  _vm._v("Dimensiones Corregidas")
                 ])
               ]),
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 1' "),
+                  _vm._v("\n          d 1'\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107461,7 +108424,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    d 2' "),
+                  _vm._v("\n          d 2'\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107576,7 +108539,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 1' "),
+                  _vm._v("\n          h 1'\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107691,7 +108654,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h 2' "),
+                  _vm._v("\n          h 2'\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107806,7 +108769,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    h refrentado' "),
+                  _vm._v("\n          h refrentado'\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("mm")])
                 ]),
                 _vm._v(" "),
@@ -107929,7 +108892,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Masa "),
+                  _vm._v("\n          Masa\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
@@ -108032,7 +108995,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Error "),
+                  _vm._v("\n          Error\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
@@ -108135,7 +109098,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Masa Corregida "),
+                  _vm._v("\n          Masa Corregida\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(Kg)")])
                 ]),
                 _vm._v(" "),
@@ -108250,7 +109213,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Volumen  "),
+                  _vm._v("\n          Volumen\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(mm"),
                     _c("sup", [_vm._v("3")]),
@@ -108357,12 +109320,12 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Volumen ( ÷ "),
+                  _vm._v("\n          Volumen ( ÷\n          "),
                   _c("p", { staticStyle: { margin: "0px !important" } }, [
                     _vm._v("10"),
                     _c("sup", [_vm._v("9")])
                   ]),
-                  _vm._v(" ) "),
+                  _vm._v("\n          )\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(m"),
                     _c("sup", [_vm._v("3")]),
@@ -108485,7 +109448,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Densidad (masa / vol) "),
+                  _vm._v("\n          Densidad (masa / vol)\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(kg/m"),
                     _c("sup", [_vm._v("3")]),
@@ -108596,7 +109559,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Área = 0,196 ( d1'+d2' )"),
+                  _vm._v("\n          Área = 0,196 ( d1'+d2' )\n          "),
                   _c("p", { staticStyle: { margin: "0px !important" } }, [
                     _c("sup", [_vm._v("2")])
                   ]),
@@ -108707,7 +109670,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    P (Carga de ensayo) "),
+                  _vm._v("\n          P (Carga de ensayo)\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(KN)")])
                 ]),
                 _vm._v(" "),
@@ -108814,7 +109777,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    X 1000 "),
+                  _vm._v("\n          X 1000\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(N)")])
                 ]),
                 _vm._v(" "),
@@ -108933,7 +109896,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Tiempo de Carga "),
+                  _vm._v("\n          Tiempo de Carga\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(seg)")])
                 ]),
                 _vm._v(" "),
@@ -109040,7 +110003,9 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Resistencia compresión (P/S) "),
+                  _vm._v(
+                    "\n          Resistencia compresión (P/S)\n          "
+                  ),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(MPa/S)")
                   ])
@@ -109052,7 +110017,7 @@ var render = function() {
                   [
                     _c(
                       "el-form-item",
-                      { attrs: { prop: "resistenciaCompresionMuestraUno" } },
+                      { attrs: { prop: "errorresistenciaCompresionraUno" } },
                       [
                         _c("el-input", {
                           model: {
@@ -109163,11 +110128,11 @@ var render = function() {
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
                   _vm._v(
-                    "\n                    Factores de conversión cil. 15x30  a  cubo 20x20\n                    "
+                    "\n          Factores de conversión cil. 15x30 a cubo 20x20\n          "
                   ),
                   _c("br"),
                   _vm._v(
-                    "\n                    Fcil  a 20 MPa * 1,25 | Fcil  20 Mpa ver nota (*)\n                "
+                    "\n          Fcil a 20 MPa * 1,25 | Fcil 20 Mpa ver nota (*)\n        "
                   )
                 ]),
                 _vm._v(" "),
@@ -109180,6 +110145,7 @@ var render = function() {
                       { attrs: { prop: "factoresConversionMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.factoresConversionMuestraUno,
                             callback: function($$v) {
@@ -109208,6 +110174,7 @@ var render = function() {
                       { attrs: { prop: "factoresConversionMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.factoresConversionMuestraDos,
                             callback: function($$v) {
@@ -109236,6 +110203,7 @@ var render = function() {
                       { attrs: { prop: "factoresConversionMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.factoresConversionMuestraTres,
                             callback: function($$v) {
@@ -109264,6 +110232,7 @@ var render = function() {
                       { attrs: { prop: "factoresConversionMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.factoresConversionMuestraCuatro,
                             callback: function($$v) {
@@ -109286,7 +110255,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Resistencia Corregida "),
+                  _vm._v("\n          Resistencia Corregida\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
                 ]),
                 _vm._v(" "),
@@ -109299,6 +110268,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCorregidaMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCorregidaMuestraUno,
                             callback: function($$v) {
@@ -109327,6 +110297,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCorregidaMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCorregidaMuestraDos,
                             callback: function($$v) {
@@ -109355,6 +110326,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCorregidaMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCorregidaMuestraTres,
                             callback: function($$v) {
@@ -109383,6 +110355,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCorregidaMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCorregidaMuestraCuatro,
                             callback: function($$v) {
@@ -109405,7 +110378,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Velocidad de ensayo "),
+                  _vm._v("\n          Velocidad de ensayo\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("(MPa/s)")
                   ])
@@ -109526,7 +110499,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Tipo rotura "),
+                  _vm._v("\n          Tipo rotura\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("Anexo s Nch 1037")
                   ])
@@ -109631,7 +110604,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Aseguramiento (por Rango) "),
+                  _vm._v("\n          Aseguramiento (por Rango)\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [_vm._v("(MPa)")])
                 ]),
                 _vm._v(" "),
@@ -109742,7 +110715,7 @@ var render = function() {
               _vm._v(" "),
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
-                  _vm._v("\n                    Cumple "),
+                  _vm._v("\n          Cumple\n          "),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("SI / NO")
                   ])
@@ -109848,7 +110821,7 @@ var render = function() {
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto" }, [
                   _vm._v(
-                    "\n                    Velocidad     0,20 a 0,30 Mpa/s "
+                    "\n          Velocidad     0,20 a 0,30 Mpa/s\n          "
                   ),
                   _c("div", { staticClass: "texto-derecha" }, [
                     _vm._v("SI / NO")
@@ -109962,9 +110935,7 @@ var render = function() {
             [
               _c("el-col", { attrs: { span: 24 } }, [
                 _c("div", { staticClass: "texto-ancho-full" }, [
-                  _vm._v(
-                    "\n                    Observaciones\n                "
-                  )
+                  _vm._v("Observaciones")
                 ])
               ]),
               _vm._v(" "),
@@ -109997,20 +110968,28 @@ var render = function() {
                 "el-col",
                 { attrs: { span: 8 } },
                 [
+                  _vm._v("\n        \n        Ensayado por\n        "),
                   _c(
-                    "el-form-item",
-                    { attrs: { label: "Ensayado por", prop: "ensayadoPor" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.ensayadoPor,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "ensayadoPor", $$v)
-                          },
-                          expression: "form.ensayadoPor"
-                        }
+                    "el-select",
+                    {
+                      attrs: {
+                        placeholder: "Seleccione..",
+                        prop: "ensayadoPor"
+                      },
+                      model: {
+                        value: _vm.form.ensayadoPor,
+                        callback: function($$v) {
+                          _vm.$set(_vm.form, "ensayadoPor", $$v)
+                        },
+                        expression: "form.ensayadoPor"
+                      }
+                    },
+                    _vm._l(_vm.options, function(item) {
+                      return _c("el-option", {
+                        key: item.value,
+                        attrs: { label: item.label, value: item.value }
                       })
-                    ],
+                    }),
                     1
                   )
                 ],
@@ -110297,11 +111276,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     filtraEnsayos: function filtraEnsayos() {
-      var _this2 = this;
+      this.ensayosHormigon = this.todosLosEnsayos;
+      var aciertos = [];
+      for (var index = 0; index < this.ensayosHormigon.length; index++) {
+        var numInforme = this.ensayosHormigon[index].num_informe ? this.ensayosHormigon[index].num_informe.toLowerCase().includes(this.buscador.toLowerCase()) : false;
 
-      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-        return ensayo.ott.num_ott.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_ingreso.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_informe.toString().includes(_this2.buscador.toLowerCase()) || ensayo.ensayado_por.toString().toLowerCase().includes(_this2.buscador.toLowerCase());
-      });
+        var numMuestra = this.ensayosHormigon[index].num_ingreso ? this.ensayosHormigon[index].num_ingreso.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        var numOtt = this.ensayosHormigon[index].ott.num_ott ? this.ensayosHormigon[index].ott.num_ott.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        var ensayador = this.ensayosHormigon[index].ensayado_por ? this.ensayosHormigon[index].ensayado_por.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        if (numMuestra || numInforme || ensayador || numOtt) {
+          aciertos.push(this.ensayosHormigon[index]);
+        }
+      }
+      this.ensayosHormigon = aciertos;
     }
   },
   watch: {
@@ -110961,11 +111951,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     filtraEnsayos: function filtraEnsayos() {
-      var _this2 = this;
+      this.ensayosHormigon = this.todosLosEnsayos;
+      var aciertos = [];
+      for (var index = 0; index < this.ensayosHormigon.length; index++) {
+        var numInforme = this.ensayosHormigon[index].num_informe ? this.ensayosHormigon[index].num_informe.toLowerCase().includes(this.buscador.toLowerCase()) : false;
 
-      this.ensayosHormigon = this.todosLosEnsayos.filter(function (ensayo) {
-        return ensayo.ott.num_ott.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_ingreso.toString().includes(_this2.buscador.toLowerCase()) || ensayo.num_informe.toString().includes(_this2.buscador.toLowerCase()) || ensayo.ensayado_por.toString().toLowerCase().includes(_this2.buscador.toLowerCase());
-      });
+        var numMuestra = this.ensayosHormigon[index].num_ingreso ? this.ensayosHormigon[index].num_ingreso.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        var numOtt = this.ensayosHormigon[index].ott.num_ott ? this.ensayosHormigon[index].ott.num_ott.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        var ensayador = this.ensayosHormigon[index].ensayado_por ? this.ensayosHormigon[index].ensayado_por.toLowerCase().includes(this.buscador.toLowerCase()) : false;
+
+        if (numMuestra || numInforme || ensayador || numOtt) {
+          aciertos.push(this.ensayosHormigon[index]);
+        }
+      }
+      this.ensayosHormigon = aciertos;
     }
   },
   watch: {
@@ -111808,13 +112809,16 @@ var render = function() {
     "div",
     { staticClass: "contenedor-vue height-max-percent" },
     [
-      _c("el-header", [_vm._v("\n        Prototipo\n    ")]),
+      _c("el-header", [_vm._v(" Prototipo ")]),
       _vm._v(" "),
       _c(
         "el-container",
         { staticStyle: { height: "calc(100% - 0px) !important" } },
         [
-          _c("sidebar-formularios", { on: { cambiaMain: _vm.cambiarMain } }),
+          _c("sidebar-formularios", {
+            ref: "sidebar",
+            on: { cambiaMain: _vm.cambiarMain }
+          }),
           _vm._v(" "),
           _c(
             "el-container",
@@ -111824,9 +112828,7 @@ var render = function() {
                 [
                   _vm.componenteMain == ""
                     ? _c("div", { staticClass: "bienvenido" }, [
-                        _vm._v(
-                          "\n                    Bienvenido\n                "
-                        )
+                        _vm._v("Bienvenido")
                       ])
                     : _vm._e(),
                   _vm._v(" "),
