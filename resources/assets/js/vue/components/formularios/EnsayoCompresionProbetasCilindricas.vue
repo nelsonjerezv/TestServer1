@@ -1346,9 +1346,22 @@
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="Ensayado por" prop="ensayadoPor">
+
+          <!--el-form-item label="Ensayado por" prop="ensayadoPor">
             <el-input v-model="form.ensayadoPor"></el-input>
-          </el-form-item>
+          </el-form-item-->
+          
+          Ensayado por
+          <el-select v-model="form.ensayadoPor" placeholder="Seleccione.." prop="ensayadoPor">
+          <el-option
+            v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+
+
         </el-col>
         <el-col :span="8">
           <el-form-item label="Fecha" prop="fecha">
@@ -1396,9 +1409,7 @@
 <script>
 import Tools from "../../../tools.js";
 import moment from "moment";
-
 Vue.prototype.moment = moment;
-
 export default {
   props: ["tipoEnsayo", "ensayoCargado"],
   data() {
@@ -1420,6 +1431,56 @@ export default {
         45: 1.11,
         50: 1.1,
       },
+      options: [{
+          value: 'NELSON CARDENAS RODRIGUEZ',
+          label: 'NELSON CARDENAS RODRIGUEZ'
+        }, {
+          value: 'FABIAN DIAZ LOYOLA',
+          label: 'FABIAN DIAZ LOYOLA'
+        }, {
+          value: 'RICARDO MOYA GONZALEZ',
+          label: 'RICARDO MOYA GONZALEZ'
+        }, {
+          value: 'LUIS NAVARRO NAVARRO',
+          label: 'LUIS NAVARRO NAVARRO'
+        }, {
+          value: 'CRISTIAN REYES MARTINEZ',
+          label: 'CRISTIAN REYES MARTINEZ'
+        }, {
+          value: 'WALTER ROJAS SAN MARTIN',
+          label: 'WALTER ROJAS SAN MARTIN'
+        }, {
+          value: 'VICTOR SANDOVAL HERNANDEZ',
+          label: 'VICTOR SANDOVAL HERNANDEZ'
+        }, {
+          value: 'ERNESTO  VARGAS GONZALEZ',
+          label: 'ERNESTO  VARGAS GONZALEZ'
+        }, {
+          value: 'FRANCISCO VARGAS MARTINEZ',
+          label: 'FRANCISCO VARGAS MARTINEZ'
+        }, {
+          value: 'JORGE PINTO CONCHA',
+          label: 'JORGE PINTO CONCHA'
+        }, {
+          value: 'GUILLERMO NEIRA ROJAS',
+          label: 'GUILLERMO NEIRA ROJAS'
+        }, {
+          value: 'EVICTOR SAEZ BARRIOS',
+          label: 'VICTOR SAEZ BARRIOS'
+        }, {
+          value: 'VICTOR MUÑOZ ANDRADE',
+          label: 'VICTOR MUÑOZ ANDRADE'
+        }, {
+          value: 'ALEX ORTIZ  PASTEN',
+          label: 'ALEX ORTIZ  PASTEN'
+        }, {
+          value: 'IGNACIO ORTIZ  PASTEN',
+          label: 'IGNACIO ORTIZ  PASTEN'
+        }, {
+          value: 'ANGELO ESPINOZA HERNANDEZ',
+          label: 'ANGELO ESPINOZA HERNANDEZ'
+        }
+      ],
       pickerOptionsFechaEnsayo: {
         // disabledDate(time) {
         //     this.calculaFechaEnsayoInicio()
@@ -1722,7 +1783,6 @@ export default {
     querySearchNumeroOtt(query) {
       if (query !== "") {
         this.loading = true;
-
         this.$http.get(this.urlBuscarOtt + "/" + query, {}).then(
           (response) => {
             this.loading = false;
@@ -2279,7 +2339,6 @@ export default {
     },
     "form.fechaEnsayoMuestraUno": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraUno) &&
         patronFecha.test(this.form.fechaConfeccionMuestraUno)
@@ -2292,7 +2351,6 @@ export default {
     },
     "form.fechaConfeccionMuestraUno": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraUno) &&
         patronFecha.test(this.form.fechaConfeccionMuestraUno)
@@ -2305,7 +2363,6 @@ export default {
     },
     "form.fechaEnsayoMuestraDos": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraDos) &&
         patronFecha.test(this.form.fechaConfeccionMuestraDos)
@@ -2318,7 +2375,6 @@ export default {
     },
     "form.fechaConfeccionMuestraDos": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraUno) &&
         patronFecha.test(this.form.fechaConfeccionMuestraDos)
@@ -2331,7 +2387,6 @@ export default {
     },
     "form.fechaEnsayoMuestraTres": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraTres) &&
         patronFecha.test(this.form.fechaConfeccionMuestraTres)
@@ -2344,7 +2399,6 @@ export default {
     },
     "form.fechaConfeccionMuestraTres": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraTres) &&
         patronFecha.test(this.form.fechaConfeccionMuestraTres)
@@ -2357,7 +2411,6 @@ export default {
     },
     "form.fechaEnsayoMuestraCuatro": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraCuatro) &&
         patronFecha.test(this.form.fechaConfeccionMuestraCuatro)
@@ -2373,7 +2426,6 @@ export default {
     },
     "form.fechaConfeccionMuestraCuatro": function (newVal, oldVal) {
       var patronFecha = /[0-9]{2}-[0-9]{2}-[0-9]{4}/;
-
       if (
         patronFecha.test(this.form.fechaEnsayoMuestraCuatro) &&
         patronFecha.test(this.form.fechaConfeccionMuestraCuatro)

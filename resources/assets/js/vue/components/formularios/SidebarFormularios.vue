@@ -30,6 +30,7 @@
                         <el-menu-item index="2-4-1">item one</el-menu-item>
                     </el-submenu> -->
         </el-submenu>
+
         <el-submenu index="3">
           <template slot="title">
             <span slot="title">Ensayos</span>
@@ -46,6 +47,7 @@
             </el-menu-item>
           </el-menu-item-group>
         </el-submenu>
+
         <el-submenu index="4">
           <span slot="title">Exportar</span>
           <el-menu-item-group>
@@ -59,7 +61,20 @@
                         </el-menu-item>
                     </el-menu-item-group> -->
         </el-submenu>
-        <!-- <el-menu-item index="5" disabled>
+
+        <el-submenu index="5">
+          <span slot="title">Mantenedores</span>
+          <el-menu-item-group>
+            <el-menu-item index="5-1" @click="inicio" disabled>
+              Usuarios
+            </el-menu-item>
+          </el-menu-item-group>
+ 
+        </el-submenu>
+
+
+
+        <!-- <el-menu-item index="6" disabled>
                     <span slot="title">Navigator Four</span>
                 </el-menu-item> -->
       </el-menu>

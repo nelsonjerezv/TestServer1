@@ -1267,14 +1267,40 @@
       <el-divider class="el-divider-5" />
       <el-row class="margin-b-5">
         <el-col :span="unaDosColumnas" class="padding-5">
-          <el-form-item label="Laboratorista" prop="laboratorista">
+
+          <!--el-form-item label="Laboratorista" prop="laboratorista">
             <el-input v-model="form.laboratorista"></el-input>
-          </el-form-item>
+          </el-form-item-->
+          
+          Laboratorista
+          <el-select v-model="form.laboratorista" placeholder="Seleccione.." prop="laboratorista">
+          <el-option
+            v-for="item in laboratorista"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+
+
         </el-col>
         <el-col :span="unaDosColumnas" class="padding-5">
-          <el-form-item label="Ayudante" prop="ayudante">
+
+          <!--el-form-item label="Ayudante" prop="ayudante">
             <el-input v-model="form.ayudante"></el-input>
-          </el-form-item>
+          </el-form-item-->
+
+          Ayudante
+          <el-select v-model="form.ayudante" placeholder="Seleccione.." prop="ayudante">
+          <el-option
+            v-for="item in ayudante"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+
+
         </el-col>
         <el-col :span="unaDosColumnas" class="comentarios">
           <el-form-item prop="recibeOMuestrea">
@@ -1329,6 +1355,97 @@ export default {
   props: ["tipoOtt", "ottCargada"],
   data() {
     return {
+      ayudante: [{
+          value: 'OSCAR ALARCON REYES',
+          label: 'OSCAR ALARCON REYES'
+        }, {
+          value: 'CRISTIAN GARRIDO PAINEO',
+          label: 'CRISTIAN GARRIDO PAINEO'
+        },{
+          value: 'BAYHRON ITURRA PRADENAS',
+          label: 'BAYHRON ITURRA PRADENAS'
+        },{
+          value: 'JOSE PALMA ASTORGA',
+          label: 'JOSE PALMA ASTORGA'
+        },{
+          value: 'DANIEL PINCHEIRA BECERRA',
+          label: 'DANIEL PINCHEIRA BECERRA'
+        },{
+          value: 'FELIPE PIZARRO ARAYA',
+          label: 'FELIPE PIZARRO ARAYA'
+        },{
+          value: 'CARLOS QUIROGA ABURTO',
+          label: 'CARLOS QUIROGA ABURTO'
+        },{
+          value: 'MARCELO RETAMALES MATELUNA',
+          label: 'MARCELO RETAMALES MATELUNA'
+        },{
+          value: 'MIGUEL ROJAS GARRIDO',
+          label: 'MIGUEL ROJAS GARRIDO'
+        },{
+          value: 'GONZALO ROJAS SANCHEZ',
+          label: 'GONZALO ROJAS SANCHEZ'
+        },{
+          value: 'ALFREDO ROJAS SANCHEZ',
+          label: 'ALFREDO ROJAS SANCHEZ'
+        },{
+          value: 'LUIS VELASQUEZ ATABALES',
+          label: 'LUIS VELASQUEZ ATABALES'
+        },{
+          value: 'LUIS VERA MORALES',
+          label: 'LUIS VERA MORALES'
+        },
+      ],
+        laboratorista: [{
+          value: 'NELSON CARDENAS RODRIGUEZ',
+          label: 'NELSON CARDENAS RODRIGUEZ'
+        }, {
+          value: 'FABIAN DIAZ LOYOLA',
+          label: 'FABIAN DIAZ LOYOLA'
+        }, {
+          value: 'RICARDO MOYA GONZALEZ',
+          label: 'RICARDO MOYA GONZALEZ'
+        }, {
+          value: 'LUIS NAVARRO NAVARRO',
+          label: 'LUIS NAVARRO NAVARRO'
+        }, {
+          value: 'CRISTIAN REYES MARTINEZ',
+          label: 'CRISTIAN REYES MARTINEZ'
+        }, {
+          value: 'WALTER ROJAS SAN MARTIN',
+          label: 'WALTER ROJAS SAN MARTIN'
+        }, {
+          value: 'VICTOR SANDOVAL HERNANDEZ',
+          label: 'VICTOR SANDOVAL HERNANDEZ'
+        }, {
+          value: 'ERNESTO  VARGAS GONZALEZ',
+          label: 'ERNESTO  VARGAS GONZALEZ'
+        }, {
+          value: 'FRANCISCO VARGAS MARTINEZ',
+          label: 'FRANCISCO VARGAS MARTINEZ'
+        }, {
+          value: 'JORGE PINTO CONCHA',
+          label: 'JORGE PINTO CONCHA'
+        }, {
+          value: 'GUILLERMO NEIRA ROJAS',
+          label: 'GUILLERMO NEIRA ROJAS'
+        }, {
+          value: 'EVICTOR SAEZ BARRIOS',
+          label: 'VICTOR SAEZ BARRIOS'
+        }, {
+          value: 'VICTOR MUÑOZ ANDRADE',
+          label: 'VICTOR MUÑOZ ANDRADE'
+        }, {
+          value: 'ALEX ORTIZ  PASTEN',
+          label: 'ALEX ORTIZ  PASTEN'
+        }, {
+          value: 'IGNACIO ORTIZ  PASTEN',
+          label: 'IGNACIO ORTIZ  PASTEN'
+        }, {
+          value: 'ANGELO ESPINOZA HERNANDEZ',
+          label: 'ANGELO ESPINOZA HERNANDEZ'
+        }
+      ],
       moment: moment,
       labelPosition: "left",
       unaDosColumnas: 24,
