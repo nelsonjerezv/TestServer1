@@ -15,15 +15,16 @@ const { forIn } = require('lodash');
 const directoriosVue = {
    'resources/assets/js/vue/controllers/': {
       'archivos': [
-         'verFormulario.js'
+         'verFormulario.js',
+         'verEnsayo.js'
       ],
       'destino': ""
    },
-   'resources/assets/js/vue/controllers/formularios/' : {
-      'archivos' : [
+   'resources/assets/js/vue/controllers/formularios/': {
+      'archivos': [
          'formulario.js'
       ],
-      'destino' : ""
+      'destino': ""
    },
 }
 
@@ -50,7 +51,7 @@ const sass = [
    'layout.scss'
 ];
 
-for(let archivo in sass){
+for (let archivo in sass) {
    mix.sass(sass_dir + sass[archivo], sass_dest).options({
       processCssUrls: false,
       uglyfy: {
