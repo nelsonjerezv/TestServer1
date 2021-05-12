@@ -63,7 +63,11 @@
               plain
               >Rechazar</el-button
             >
-            <el-button type="danger" @click="dialogEditarVisible = false" plain
+            <el-button
+              type="danger"
+              id="cerrar-visualizacion"
+              @click="dialogEditarVisible = false"
+              plain
               >Cerrar visualizaci&oacute;n</el-button
             >
           </span>
@@ -209,6 +213,13 @@ export default {
     },
     rutaRechazarInforme() {
       return `${GLOBAL.URL}` + "/formularios/rechazar-ott";
+    },
+  },
+  watch: {
+    dialogEditarVisible() {
+      if (!this.dialogEditarVisible) {
+        this.$emit("actualizar");
+      }
     },
   },
 };

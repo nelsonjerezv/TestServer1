@@ -38,6 +38,7 @@
     Route::get('/ensayos/ver-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{firmador}/{profesionFirmador}/{cargoFirmador}', 'EnsayosHormigonController@verEnsayoPdf');
     Route::get('/ensayos/buscar-ott/{busqueda}', 'EnsayosHormigonController@buscarOtt');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
+    Route::post('/ensayos/actualizar-ensayo-compresion', 'EnsayosHormigonController@actualizarEnsayo');
     Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
     Route::resource('ensayos', 'EnsayosHormigonController', ['only'=> ['index','create','store']]);
 

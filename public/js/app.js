@@ -106832,7 +106832,7 @@ var prueba = new Vue({
     },
     data() {
         return {
-            
+
         }
     }
 });
@@ -106845,6 +106845,9 @@ var prueba = new Vue({
 
 window._ = __webpack_require__(346);
 window.Popper = __webpack_require__(348).default;
+
+window.$ = __webpack_require__(317);
+window.JQuery = __webpack_require__(317);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support

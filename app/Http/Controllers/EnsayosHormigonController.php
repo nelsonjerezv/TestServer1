@@ -229,7 +229,7 @@ class EnsayosHormigonController extends Controller
     }
 
     public function actualizarEnsayo(Request $request){
-        dd($request);
+        // dd($request);
         $ensayo = EnsayoProbetasHormigon::find($request->ensayo['id']);;
 
         $ensayo->num_ingreso = $request->ensayo['numIngreso'];

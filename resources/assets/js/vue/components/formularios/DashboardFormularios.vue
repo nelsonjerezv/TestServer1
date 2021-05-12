@@ -60,8 +60,6 @@ export default {
   data() {
     return {
       componenteMain: "",
-      // componenteMain: 'EnsayoCompresionProbetasCilindricas',
-      // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
       tipoOTT: "",
       tipoEnsayo: "",
       modoListadoOtt: "",
@@ -70,7 +68,7 @@ export default {
     };
   },
   mounted() {
-    console.log("ordenes", this.ordenes);
+    // console.log("ordenes", this.ordenes);
   },
   methods: {
     cambiarMain: function (contenido) {

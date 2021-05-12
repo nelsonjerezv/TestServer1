@@ -50,6 +50,7 @@
           <iframe
             style="width: 100%; height: 100%"
             :src="rutaEditarEnsayo"
+            ref="iframe"
           ></iframe>
           <span slot="footer" class="dialog-footer">
             <el-button
@@ -66,7 +67,11 @@
               plain
               >Rechazar</el-button
             >
-            <el-button type="danger" @click="dialogEditarVisible = false" plain
+            <el-button
+              type="danger"
+              id="cerrar-visualizacion"
+              @click="dialogEditarVisible = false"
+              plain
               >Cerrar visualizaci&oacute;n</el-button
             >
           </span>
@@ -304,6 +309,13 @@ export default {
       return this.dialogEditarVisible
         ? `${GLOBAL.URL}` + "/ensayos/editar-ensayo/" + this.item.id
         : "";
+    },
+  },
+  watch: {
+    dialogEditarVisible() {
+      if (!this.dialogEditarVisible) {
+        this.$emit("actualizar");
+      }
     },
   },
 };
