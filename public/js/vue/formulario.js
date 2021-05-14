@@ -102177,7 +102177,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-0a1f17df] {\n  pointer-events: none;\n}\n.contenedor-vue[data-v-0a1f17df] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 20px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input__inner {\n    line-height: 20px;\n    height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-col {\n    padding: 3px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-divider--horizontal {\n    display: block;\n    height: 1px;\n    width: 100%;\n    margin: 5px 0;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    width: auto !important;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    margin: 0px !important;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item {\n    white-space: nowrap;\n    margin-bottom: 0px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input--mini .el-input__icon {\n    line-height: 20px;\n}\n.contenedor-vue .texto[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 28%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-ancho-full[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-muestras[data-v-0a1f17df] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 18%;\n    border-style: none solid none none;\n    border-color: #484b50;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-right[data-v-0a1f17df] .el-input__inner {\n    text-align: right;\n}\n.contenedor-vue .texto-derecha[data-v-0a1f17df] {\n    margin-left: auto;\n}\n.contenedor-vue .muestras .el-col[data-v-0a1f17df] {\n    -ms-flex-wrap: nowrap;\n        flex-wrap: nowrap;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: solid none none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n}\n.contenedor-vue .contenedor-botones[data-v-0a1f17df] {\n    padding-top: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-0a1f17df] {\n  pointer-events: none;\n}\n.no-click[data-v-0a1f17df] .el-input__inner {\n    background-color: #eee !important;\n}\n.contenedor-vue[data-v-0a1f17df] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 20px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    line-height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input__inner {\n    line-height: 20px;\n    height: 20px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-col {\n    padding: 3px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-divider--horizontal {\n    display: block;\n    height: 1px;\n    width: 100%;\n    margin: 5px 0;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__label {\n    width: auto !important;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item__content {\n    margin: 0px !important;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.contenedor-vue[data-v-0a1f17df] .el-form-item {\n    white-space: nowrap;\n    margin-bottom: 0px;\n}\n.contenedor-vue[data-v-0a1f17df] .el-input--mini .el-input__icon {\n    line-height: 20px;\n}\n.contenedor-vue .texto[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 28%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-ancho-full[data-v-0a1f17df] {\n    min-width: 200px;\n    width: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: none solid none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-muestras[data-v-0a1f17df] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 18%;\n    border-style: none solid none none;\n    border-color: #484b50;\n    border-width: 1px;\n    padding: 0px 10px;\n}\n.contenedor-vue .texto-right[data-v-0a1f17df] .el-input__inner {\n    text-align: right;\n}\n.contenedor-vue .texto-derecha[data-v-0a1f17df] {\n    margin-left: auto;\n}\n.contenedor-vue .muestras .el-col[data-v-0a1f17df] {\n    -ms-flex-wrap: nowrap;\n        flex-wrap: nowrap;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    border-style: solid none none none;\n    border-color: #adb0b7;\n    border-width: 1px;\n}\n.contenedor-vue .contenedor-botones[data-v-0a1f17df] {\n    padding-top: 20px;\n}\n", ""]);
 
 // exports
 
@@ -102191,6 +102191,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -103996,17 +104034,17 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     calculaDiametroCorregido: function calculaDiametroCorregido() {
-      var error = parseFloat(this.form.errorCientoCincuentaMm);
-      var dUnoMuestraUno = parseFloat(this.form.dUnoMuestraUno);
-      var dDosMuestraUno = parseFloat(this.form.dDosMuestraUno);
-      var dUnoMuestraDos = parseFloat(this.form.dUnoMuestraDos);
-      var dDosMuestraDos = parseFloat(this.form.dDosMuestraDos);
-      var dUnoMuestraTres = parseFloat(this.form.dUnoMuestraTres);
-      var dDosMuestraTres = parseFloat(this.form.dDosMuestraTres);
-      var dUnoMuestraCuatro = parseFloat(this.form.dUnoMuestraCuatro);
-      var dDosMuestraCuatro = parseFloat(this.form.dDosMuestraCuatro);
+      var error = this.form.errorCientoCincuentaMm.toString().replace(",", ".");
+      var dUnoMuestraUno = this.form.dUnoMuestraUno.toString().replace(",", ".");
+      var dDosMuestraUno = this.form.dDosMuestraUno.toString().replace(",", ".");
+      var dUnoMuestraDos = this.form.dUnoMuestraDos.toString().replace(",", ".");
+      var dDosMuestraDos = this.form.dDosMuestraDos.toString().replace(",", ".");
+      var dUnoMuestraTres = this.form.dUnoMuestraTres.toString().replace(",", ".");
+      var dDosMuestraTres = this.form.dDosMuestraTres.toString().replace(",", ".");
+      var dUnoMuestraCuatro = this.form.dUnoMuestraCuatro.toString().replace(",", ".");
+      var dDosMuestraCuatro = this.form.dDosMuestraCuatro.toString().replace(",", ".");
       var calc = void 0;
-      if (isNaN(error)) {
+      if (isNaN(error) || error.trim() == "") {
         this.form.dUnoMuestraUnoCorregida = "---";
         this.form.dDosMuestraUnoCorregida = "---";
         this.form.dUnoMuestraDosCorregida = "---";
@@ -104016,71 +104054,71 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.dUnoMuestraCuatroCorregida = "---";
         this.form.dDosMuestraCuatroCorregida = "---";
       }
-      if (!isNaN(dUnoMuestraUno) && !isNaN(error)) {
-        calc = dUnoMuestraUno + error;
+      if (!isNaN(dUnoMuestraUno) && !isNaN(error) && dUnoMuestraUno.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dUnoMuestraUno) + parseFloat(error);
         this.form.dUnoMuestraUnoCorregida = calc;
       } else {
         this.form.dUnoMuestraUnoCorregida = "---";
       }
-      if (!isNaN(dDosMuestraUno) && !isNaN(error)) {
-        calc = dDosMuestraUno + error;
+      if (!isNaN(dDosMuestraUno) && !isNaN(error) && dDosMuestraUno.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dDosMuestraUno) + parseFloat(error);
         this.form.dDosMuestraUnoCorregida = calc;
       } else {
         this.form.dDosMuestraUnoCorregida = "---";
       }
-      if (!isNaN(dUnoMuestraDos) && !isNaN(error)) {
-        calc = dUnoMuestraDos + error;
+      if (!isNaN(dUnoMuestraDos) && !isNaN(error) && dUnoMuestraDos.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dUnoMuestraDos) + parseFloat(error);
         this.form.dUnoMuestraDosCorregida = calc;
       } else {
         this.form.dUnoMuestraDosCorregida = "---";
       }
-      if (!isNaN(dDosMuestraDos) && !isNaN(error)) {
-        calc = dDosMuestraDos + error;
+      if (!isNaN(dDosMuestraDos) && !isNaN(error) && dDosMuestraDos.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dDosMuestraDos) + parseFloat(error);
         this.form.dDosMuestraDosCorregida = calc;
       } else {
         this.form.dDosMuestraDosCorregida = "---";
       }
-      if (!isNaN(dUnoMuestraTres) && !isNaN(error)) {
-        calc = dUnoMuestraTres + error;
+      if (!isNaN(dUnoMuestraTres) && !isNaN(error) && dUnoMuestraTres.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dUnoMuestraTres) + parseFloat(error);
         this.form.dUnoMuestraTresCorregida = calc;
       } else {
         this.form.dUnoMuestraTresCorregida = "---";
       }
-      if (!isNaN(dDosMuestraTres) && !isNaN(error)) {
-        calc = dDosMuestraTres + error;
+      if (!isNaN(dDosMuestraTres) && !isNaN(error) && dDosMuestraTres.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dDosMuestraTres) + parseFloat(error);
         this.form.dDosMuestraTresCorregida = calc;
       } else {
         this.form.dDosMuestraTresCorregida = "---";
       }
-      if (!isNaN(dUnoMuestraCuatro) && !isNaN(error)) {
-        calc = dUnoMuestraCuatro + error;
+      if (!isNaN(dUnoMuestraCuatro) && !isNaN(error) && dUnoMuestraCuatro.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dUnoMuestraCuatro) + parseFloat(error);
         this.form.dUnoMuestraCuatroCorregida = calc;
       } else {
         this.form.dUnoMuestraCuatroCorregida = "---";
       }
-      if (!isNaN(dDosMuestraCuatro) && !isNaN(error)) {
-        calc = dDosMuestraCuatro + error;
+      if (!isNaN(dDosMuestraCuatro) && !isNaN(error) && dDosMuestraCuatro.trim() != "" && error.trim() != "") {
+        calc = parseFloat(dDosMuestraCuatro) + parseFloat(error);
         this.form.dDosMuestraCuatroCorregida = calc;
       } else {
         this.form.dDosMuestraCuatroCorregida = "---";
       }
     },
     calculaLongitudCorregida: function calculaLongitudCorregida() {
-      var error = parseFloat(this.form.errorTrescientosMm);
-      var hUnoMuestraUno = parseFloat(this.form.hUnoMuestraUno);
-      var hDosMuestraUno = parseFloat(this.form.hDosMuestraUno);
-      var hUnoMuestraDos = parseFloat(this.form.hUnoMuestraDos);
-      var hDosMuestraDos = parseFloat(this.form.hDosMuestraDos);
-      var hUnoMuestraTres = parseFloat(this.form.hUnoMuestraTres);
-      var hDosMuestraTres = parseFloat(this.form.hDosMuestraTres);
-      var hUnoMuestraCuatro = parseFloat(this.form.hUnoMuestraCuatro);
-      var hDosMuestraCuatro = parseFloat(this.form.hDosMuestraCuatro);
-      var refrentadoUno = parseFloat(this.form.refrentadoUno);
-      var refrentadoDos = parseFloat(this.form.refrentadoDos);
-      var refrentadoTres = parseFloat(this.form.refrentadoTres);
-      var refrentadoCuatro = parseFloat(this.form.refrentadoCuatro);
+      var error = this.form.errorTrescientosMm.toString().replace(",", ".");
+      var hUnoMuestraUno = this.form.hUnoMuestraUno.toString().replace(",", ".");
+      var hDosMuestraUno = this.form.hDosMuestraUno.toString().replace(",", ".");
+      var hUnoMuestraDos = this.form.hUnoMuestraDos.toString().replace(",", ".");
+      var hDosMuestraDos = this.form.hDosMuestraDos.toString().replace(",", ".");
+      var hUnoMuestraTres = this.form.hUnoMuestraTres.toString().replace(",", ".");
+      var hDosMuestraTres = this.form.hDosMuestraTres.toString().replace(",", ".");
+      var hUnoMuestraCuatro = this.form.hUnoMuestraCuatro.toString().replace(",", ".");
+      var hDosMuestraCuatro = this.form.hDosMuestraCuatro.toString().replace(",", ".");
+      var refrentadoUno = this.form.refrentadoUno.toString().replace(",", ".");
+      var refrentadoDos = this.form.refrentadoDos.toString().replace(",", ".");
+      var refrentadoTres = this.form.refrentadoTres.toString().replace(",", ".");
+      var refrentadoCuatro = this.form.refrentadoCuatro.toString().replace(",", ".");
       var calc = void 0;
-      if (isNaN(error)) {
+      if (isNaN(error) || error.trim() == "") {
         this.form.hUnoMuestraUnoCorregida = "---";
         this.form.hDosMuestraUnoCorregida = "---";
         this.form.hUnoMuestraDosCorregida = "---";
@@ -104094,81 +104132,81 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.refrentadoCorregidoMuestraTres = "---";
         this.form.refrentadoCorregidoMuestraCuatro = "---";
       }
-      if (!isNaN(hUnoMuestraUno) && !isNaN(error)) {
-        calc = hUnoMuestraUno + error;
+      if (!isNaN(hUnoMuestraUno) && !isNaN(error) && hUnoMuestraUno.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hUnoMuestraUno) + parseFloat(error);
         this.form.hUnoMuestraUnoCorregida = calc;
       } else {
         this.form.hUnoMuestraUnoCorregida = "---";
       }
-      if (!isNaN(hDosMuestraUno) && !isNaN(error)) {
-        calc = hDosMuestraUno + error;
+      if (!isNaN(hDosMuestraUno) && !isNaN(error) && hDosMuestraUno.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hDosMuestraUno) + parseFloat(error);
         this.form.hDosMuestraUnoCorregida = calc;
       } else {
         this.form.hDosMuestraUnoCorregida = "---";
       }
-      if (!isNaN(hUnoMuestraDos) && !isNaN(error)) {
-        calc = hUnoMuestraDos + error;
+      if (!isNaN(hUnoMuestraDos) && !isNaN(error) && hUnoMuestraDos.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hUnoMuestraDos) + parseFloat(error);
         this.form.hUnoMuestraDosCorregida = calc;
       } else {
         this.form.hUnoMuestraDosCorregida = "---";
       }
-      if (!isNaN(hDosMuestraDos) && !isNaN(error)) {
-        calc = hDosMuestraDos + error;
+      if (!isNaN(hDosMuestraDos) && !isNaN(error) && hDosMuestraDos.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hDosMuestraDos) + parseFloat(error);
         this.form.hDosMuestraDosCorregida = calc;
       } else {
         this.form.hDosMuestraDosCorregida = "---";
       }
-      if (!isNaN(hUnoMuestraTres) && !isNaN(error)) {
-        calc = hUnoMuestraTres + error;
+      if (!isNaN(hUnoMuestraTres) && !isNaN(error) && hUnoMuestraTres.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hUnoMuestraTres) + parseFloat(error);
         this.form.hUnoMuestraTresCorregida = calc;
       } else {
         this.form.hUnoMuestraTresCorregida = "---";
       }
-      if (!isNaN(hDosMuestraTres) && !isNaN(error)) {
-        calc = hDosMuestraTres + error;
+      if (!isNaN(hDosMuestraTres) && !isNaN(error) && hDosMuestraTres.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hDosMuestraTres) + parseFloat(error);
         this.form.hDosMuestraTresCorregida = calc;
       } else {
         this.form.hDosMuestraTresCorregida = "---";
       }
-      if (!isNaN(hUnoMuestraCuatro) && !isNaN(error)) {
-        calc = hUnoMuestraCuatro + error;
+      if (!isNaN(hUnoMuestraCuatro) && !isNaN(error) && hUnoMuestraCuatro.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hUnoMuestraCuatro) + parseFloat(error);
         this.form.hUnoMuestraCuatroCorregida = calc;
       } else {
         this.form.hUnoMuestraCuatroCorregida = "---";
       }
-      if (!isNaN(hDosMuestraCuatro) && !isNaN(error)) {
-        calc = hDosMuestraCuatro + error;
+      if (!isNaN(hDosMuestraCuatro) && !isNaN(error) && hDosMuestraCuatro.trim() != "" && error.trim() != "") {
+        calc = parseFloat(hDosMuestraCuatro) + parseFloat(error);
         this.form.hDosMuestraCuatroCorregida = calc;
       } else {
         this.form.hDosMuestraCuatroCorregida = "---";
       }
-      if (!isNaN(refrentadoUno) && !isNaN(error)) {
-        calc = refrentadoUno + error;
+      if (!isNaN(refrentadoUno) && !isNaN(error) && refrentadoUno.trim() != "" && error.trim() != "") {
+        calc = parseFloat(refrentadoUno) + parseFloat(error);
         this.form.refrentadoCorregidoMuestraUno = calc;
       } else {
         this.form.refrentadoCorregidoMuestraUno = "---";
       }
-      if (!isNaN(refrentadoDos) && !isNaN(error)) {
-        calc = refrentadoDos + error;
+      if (!isNaN(refrentadoDos) && !isNaN(error) && refrentadoDos.trim() != "" && error.trim() != "") {
+        calc = parseFloat(refrentadoDos) + parseFloat(error);
         this.form.refrentadoCorregidoMuestraDos = calc;
       } else {
         this.form.refrentadoCorregidoMuestraDos = "---";
       }
-      if (!isNaN(refrentadoTres) && !isNaN(error)) {
-        calc = refrentadoTres + error;
+      if (!isNaN(refrentadoTres) && !isNaN(error) && refrentadoTres.trim() != "" && error.trim() != "") {
+        calc = parseFloat(refrentadoTres) + parseFloat(error);
         this.form.refrentadoCorregidoMuestraTres = calc;
       } else {
         this.form.refrentadoCorregidoMuestraTres = "---";
       }
-      if (!isNaN(refrentadoCuatro) && !isNaN(error)) {
-        calc = refrentadoCuatro + error;
+      if (!isNaN(refrentadoCuatro) && !isNaN(error) && refrentadoCuatro.trim() != "" && error.trim() != "") {
+        calc = parseFloat(refrentadoCuatro) + parseFloat(error);
         this.form.refrentadoCorregidoMuestraCuatro = calc;
       } else {
         this.form.refrentadoCorregidoMuestraCuatro = "---";
       }
     },
     calculaFactorCompresion: function calculaFactorCompresion(resistenciaUno, resistenciaDos, factorUno, factorDos, valorRecibido) {
-      return (valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno) * (factorDos - factorUno) + factorUno;
+      return ((valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno) * (factorDos - factorUno) + factorUno).toPrecision(1);
     },
     cargaDatosEnsayo: function cargaDatosEnsayo() {
       this.form.id = this.ensayoCargado.id;
@@ -104509,367 +104547,519 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     "form.masaMuestraUno": function formMasaMuestraUno(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
-        this.form.masaCorregidaMuestraUno = "---";
+      var commaReplaced = this.form.masaMuestraUno.toString().replace(",", ".");
+      this.form.masaMuestraUno = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraUno.toString().replace(",", ".");
+      this.form.errorMuestraUno = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraUno) && !isNaN(this.form.errorMuestraUno) && this.form.masaMuestraUno.trim() != "" && this.form.errorMuestraUno.trim() != "") {
+        this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
+        this.form.masaCorregidaMuestraUno = "---";
       }
     },
     "form.errorMuestraUno": function formErrorMuestraUno(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraUno)) || isNaN(parseFloat(this.form.errorMuestraUno))) {
-        this.form.masaCorregidaMuestraUno = "---";
+      var commaReplaced = this.form.masaMuestraUno.toString().replace(",", ".");
+      this.form.masaMuestraUno = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraUno.toString().replace(",", ".");
+      this.form.errorMuestraUno = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraUno) && !isNaN(this.form.errorMuestraUno) && this.form.masaMuestraUno.trim() != "" && this.form.errorMuestraUno.trim() != "") {
+        this.form.masaCorregidaMuestraUno = (parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraUno = parseFloat(this.form.masaMuestraUno) + parseFloat(this.form.errorMuestraUno);
+        this.form.masaCorregidaMuestraUno = "---";
       }
     },
     "form.masaMuestraDos": function formMasaMuestraDos(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
-        this.form.masaCorregidaMuestraDos = "---";
+      var commaReplaced = this.form.masaMuestraDos.toString().replace(",", ".");
+      this.form.masaMuestraDos = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraDos.toString().replace(",", ".");
+      this.form.errorMuestraDos = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraDos) && !isNaN(this.form.errorMuestraDos) && this.form.masaMuestraDos.trim() != "" && this.form.errorMuestraDos.trim() != "") {
+        this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
+        this.form.masaCorregidaMuestraDos = "---";
       }
     },
     "form.errorMuestraDos": function formErrorMuestraDos(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraDos)) || isNaN(parseFloat(this.form.errorMuestraDos))) {
-        this.form.masaCorregidaMuestraDos = "---";
+      var commaReplaced = this.form.masaMuestraDos.toString().replace(",", ".");
+      this.form.masaMuestraDos = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraDos.toString().replace(",", ".");
+      this.form.errorMuestraDos = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraDos) && !isNaN(this.form.errorMuestraDos) && this.form.masaMuestraDos.trim() != "" && this.form.errorMuestraDos.trim() != "") {
+        this.form.masaCorregidaMuestraDos = (parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraDos = parseFloat(this.form.masaMuestraDos) + parseFloat(this.form.errorMuestraDos);
+        this.form.masaCorregidaMuestraDos = "---";
       }
     },
     "form.masaMuestraTres": function formMasaMuestraTres(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
-        this.form.masaCorregidaMuestraTres = "---";
+      var commaReplaced = this.form.masaMuestraTres.toString().replace(",", ".");
+      this.form.masaMuestraTres = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraTres.toString().replace(",", ".");
+      this.form.errorMuestraTres = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraTres) && !isNaN(this.form.errorMuestraTres) && this.form.masaMuestraTres.trim() != "" && this.form.errorMuestraTres.trim() != "") {
+        this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
+        this.form.masaCorregidaMuestraTres = "---";
       }
     },
     "form.errorMuestraTres": function formErrorMuestraTres(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraTres)) || isNaN(parseFloat(this.form.errorMuestraTres))) {
-        this.form.masaCorregidaMuestraTres = "---";
+      var commaReplaced = this.form.masaMuestraTres.toString().replace(",", ".");
+      this.form.masaMuestraTres = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraTres.toString().replace(",", ".");
+      this.form.errorMuestraTres = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraTres) && !isNaN(this.form.errorMuestraTres) && this.form.masaMuestraTres.trim() != "" && this.form.errorMuestraTres.trim() != "") {
+        this.form.masaCorregidaMuestraTres = (parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraTres = parseFloat(this.form.masaMuestraTres) + parseFloat(this.form.errorMuestraTres);
+        this.form.masaCorregidaMuestraTres = "---";
       }
     },
     "form.masaMuestraCuatro": function formMasaMuestraCuatro(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
-        this.form.masaCorregidaMuestraCuatro = "---";
+      var commaReplaced = this.form.masaMuestraCuatro.toString().replace(",", ".");
+      this.form.masaMuestraCuatro = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraCuatro.toString().replace(",", ".");
+      this.form.errorMuestraCuatro = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraCuatro) && !isNaN(this.form.errorMuestraCuatro) && this.form.masaMuestraCuatro.trim() != "" && this.form.errorMuestraCuatro.trim() != "") {
+        this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
+        this.form.masaCorregidaMuestraCuatro = "---";
       }
     },
     "form.errorMuestraCuatro": function formErrorMuestraCuatro(newVal, oldVal) {
-      if (isNaN(parseFloat(this.form.masaMuestraCuatro)) || isNaN(parseFloat(this.form.errorMuestraCuatro))) {
-        this.form.masaCorregidaMuestraCuatro = "---";
+      var commaReplaced = this.form.masaMuestraCuatro.toString().replace(",", ".");
+      this.form.masaMuestraCuatro = commaReplaced;
+      var commaReplacedDos = this.form.errorMuestraCuatro.toString().replace(",", ".");
+      this.form.errorMuestraCuatro = commaReplacedDos;
+      if (!isNaN(this.form.masaMuestraCuatro) && !isNaN(this.form.errorMuestraCuatro) && this.form.masaMuestraCuatro.trim() != "" && this.form.errorMuestraCuatro.trim() != "") {
+        this.form.masaCorregidaMuestraCuatro = (parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro)).toFixed(2);
       } else {
-        this.form.masaCorregidaMuestraCuatro = parseFloat(this.form.masaMuestraCuatro) + parseFloat(this.form.errorMuestraCuatro);
+        this.form.masaCorregidaMuestraCuatro = "---";
       }
     },
     "form.dUnoMuestraUnoCorregida": function formDUnoMuestraUnoCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraUno = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraUnoCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraUnoCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraUnoCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraUnoCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraUnoCorregida;
+      var dDos = this.form.dDosMuestraUnoCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+        dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
         this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraUno = "---";
       }
     },
     "form.dDosMuestraUnoCorregida": function formDDosMuestraUnoCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraUno = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraUnoCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraUnoCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraUnoCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraUnoCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraUnoCorregida;
+      var dDos = this.form.dDosMuestraUnoCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
+        dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
         this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraUno = "---";
       }
     },
     "form.dUnoMuestraDosCorregida": function formDUnoMuestraDosCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraDos = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraDosCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraDosCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraDosCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraDosCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraDosCorregida;
+      var dDos = this.form.dDosMuestraDosCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+        dDos = parseFloat(this.form.dDosMuestraDosCorregida);
         this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraDos = "---";
       }
     },
     "form.dDosMuestraDosCorregida": function formDDosMuestraDosCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraDos = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraDosCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraDosCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraDosCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraDosCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraDosCorregida;
+      var dDos = this.form.dDosMuestraDosCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
+        dDos = parseFloat(this.form.dDosMuestraDosCorregida);
         this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraDos = "---";
       }
     },
     "form.dUnoMuestraTresCorregida": function formDUnoMuestraTresCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraTres = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraTresCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraTresCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraTresCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraTresCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraTresCorregida;
+      var dDos = this.form.dDosMuestraTresCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+        dDos = parseFloat(this.form.dDosMuestraTresCorregida);
         this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraTres = "---";
       }
     },
     "form.dDosMuestraTresCorregida": function formDDosMuestraTresCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraTres = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraTresCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraTresCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraTresCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraTresCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraTresCorregida;
+      var dDos = this.form.dDosMuestraTresCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
+        dDos = parseFloat(this.form.dDosMuestraTresCorregida);
         this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraTres = "---";
       }
     },
     "form.dUnoMuestraCuatroCorregida": function formDUnoMuestraCuatroCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraCuatro = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraCuatroCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraCuatroCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraCuatroCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraCuatroCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraCuatroCorregida;
+      var dDos = this.form.dDosMuestraCuatroCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
+        dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
         this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraCuatro = "---";
       }
     },
     "form.dDosMuestraCuatroCorregida": function formDDosMuestraCuatroCorregida(newVal, oldVal) {
-      var dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
-      var dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.areaMuestraCuatro = "---";
-      } else {
+      var commaReplaced = this.form.dUnoMuestraCuatroCorregida.toString().replace(",", ".");
+      this.form.dUnoMuestraCuatroCorregida = commaReplaced;
+      var commaReplacedDos = this.form.dDosMuestraCuatroCorregida.toString().replace(",", ".");
+      this.form.dDosMuestraCuatroCorregida = commaReplacedDos;
+      var dUno = this.form.dUnoMuestraCuatroCorregida;
+      var dDos = this.form.dDosMuestraCuatroCorregida;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
+        dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
         this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+      } else {
+        this.form.areaMuestraCuatro = "---";
       }
     },
     "form.cargaEnsayoMuestraUno": function formCargaEnsayoMuestraUno(newVal, oldVal) {
-      var carga = parseFloat(this.form.cargaEnsayoMuestraUno);
-      if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraUno = "---";
-      } else {
+      var commaReplaced = this.form.cargaEnsayoMuestraUno.toString().replace(",", ".");
+      this.form.cargaEnsayoMuestraUno = commaReplaced;
+      var carga = this.form.cargaEnsayoMuestraUno;
+      if (!isNaN(carga) && carga.trim() != "") {
+        carga = parseFloat(this.form.cargaEnsayoMuestraUno);
         this.form.cargaEnsayoMilMuestraUno = 1000 * carga;
+      } else {
+        this.form.cargaEnsayoMilMuestraUno = "---";
       }
     },
     "form.cargaEnsayoMuestraDos": function formCargaEnsayoMuestraDos(newVal, oldVal) {
-      var carga = parseFloat(this.form.cargaEnsayoMuestraDos);
-      if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraDos = "---";
-      } else {
+      var commaReplaced = this.form.cargaEnsayoMuestraDos.toString().replace(",", ".");
+      this.form.cargaEnsayoMuestraDos = commaReplaced;
+      var carga = this.form.cargaEnsayoMuestraDos;
+      if (!isNaN(carga) && carga.trim() != "") {
+        carga = parseFloat(this.form.cargaEnsayoMuestraDos);
         this.form.cargaEnsayoMilMuestraDos = 1000 * carga;
+      } else {
+        this.form.cargaEnsayoMilMuestraDos = "---";
       }
     },
     "form.cargaEnsayoMuestraTres": function formCargaEnsayoMuestraTres(newVal, oldVal) {
-      var carga = parseFloat(this.form.cargaEnsayoMuestraTres);
-      if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraTres = "---";
-      } else {
+      var commaReplaced = this.form.cargaEnsayoMuestraTres.toString().replace(",", ".");
+      this.form.cargaEnsayoMuestraTres = commaReplaced;
+      var carga = this.form.cargaEnsayoMuestraTres;
+      if (!isNaN(carga) && carga.trim() != "") {
+        carga = parseFloat(this.form.cargaEnsayoMuestraTres);
         this.form.cargaEnsayoMilMuestraTres = 1000 * carga;
+      } else {
+        this.form.cargaEnsayoMilMuestraTres = "---";
       }
     },
     "form.cargaEnsayoMuestraCuatro": function formCargaEnsayoMuestraCuatro(newVal, oldVal) {
-      var carga = parseFloat(this.form.cargaEnsayoMuestraCuatro);
-      if (isNaN(carga)) {
-        this.form.cargaEnsayoMilMuestraCuatro = "---";
-      } else {
+      var commaReplaced = this.form.cargaEnsayoMuestraCuatro.toString().replace(",", ".");
+      this.form.cargaEnsayoMuestraCuatro = commaReplaced;
+      var carga = this.form.cargaEnsayoMuestraCuatro;
+      if (!isNaN(carga) && carga.trim() != "") {
+        carga = parseFloat(this.form.cargaEnsayoMuestraCuatro);
         this.form.cargaEnsayoMilMuestraCuatro = 1000 * carga;
+      } else {
+        this.form.cargaEnsayoMilMuestraCuatro = "---";
       }
     },
     "form.cargaEnsayoMilMuestraUno": function formCargaEnsayoMilMuestraUno(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
-      var dDos = parseFloat(this.form.areaMuestraUno);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraUno = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraUno.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraUno = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraUno.toString().replace(",", ".");
+      this.form.areaMuestraUno = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraUno;
+      var dDos = this.form.areaMuestraUno;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
+        dDos = parseFloat(this.form.areaMuestraUno);
+        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraUno = dUno / dDos;
+        this.form.resistenciaCompresionMuestrUnos = "---";
       }
     },
     "form.areaMuestraUno": function formAreaMuestraUno(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
-      var dDos = parseFloat(this.form.areaMuestraUno);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraUno = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraUno.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraUno = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraUno.toString().replace(",", ".");
+      this.form.areaMuestraUno = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraUno;
+      var dDos = this.form.areaMuestraUno;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
+        dDos = parseFloat(this.form.areaMuestraUno);
+        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraUno = dUno / dDos;
+        this.form.resistenciaCompresionMuestrUnos = "---";
       }
     },
     "form.cargaEnsayoMilMuestraDos": function formCargaEnsayoMilMuestraDos(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
-      var dDos = parseFloat(this.form.areaMuestraDos);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraDos = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraDos.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraDos = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraDos.toString().replace(",", ".");
+      this.form.areaMuestraDos = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraDos;
+      var dDos = this.form.areaMuestraDos;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
+        dDos = parseFloat(this.form.areaMuestraDos);
+        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraDos = dUno / dDos;
+        this.form.resistenciaCompresionMuestraDos = "---";
       }
     },
     "form.areaMuestraDos": function formAreaMuestraDos(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
-      var dDos = parseFloat(this.form.areaMuestraDos);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraDos = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraDos.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraDos = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraDos.toString().replace(",", ".");
+      this.form.areaMuestraDos = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraDos;
+      var dDos = this.form.areaMuestraDos;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
+        dDos = parseFloat(this.form.areaMuestraDos);
+        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraDos = dUno / dDos;
+        this.form.resistenciaCompresionMuestraDos = "---";
       }
     },
     "form.cargaEnsayoMilMuestraTres": function formCargaEnsayoMilMuestraTres(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
-      var dDos = parseFloat(this.form.areaMuestraTres);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraTres = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraTres.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraTres = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraTres.toString().replace(",", ".");
+      this.form.areaMuestraTres = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraTres;
+      var dDos = this.form.areaMuestraTres;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
+        dDos = parseFloat(this.form.areaMuestraTres);
+        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraTres = dUno / dDos;
+        this.form.resistenciaCompresionMuestraTres = "---";
       }
     },
     "form.areaMuestraTres": function formAreaMuestraTres(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
-      var dDos = parseFloat(this.form.areaMuestraTres);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraTres = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraTres.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraTres = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraTres.toString().replace(",", ".");
+      this.form.areaMuestraTres = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraTres;
+      var dDos = this.form.areaMuestraTres;
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
+        dDos = parseFloat(this.form.areaMuestraTres);
+        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraTres = dUno / dDos;
+        this.form.resistenciaCompresionMuestraTres = "---";
       }
     },
     "form.cargaEnsayoMilMuestraCuatro": function formCargaEnsayoMilMuestraCuatro(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
-      var dDos = parseFloat(this.form.areaMuestraCuatro);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraCuatro = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraCuatro.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraCuatro = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraCuatro.toString().replace(",", ".");
+      this.form.areaMuestraCuatro = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraCuatro.toString();
+      var dDos = this.form.areaMuestraCuatro.toString();
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
+        dDos = parseFloat(this.form.areaMuestraCuatro);
+        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
+        this.form.resistenciaCompresionMuestraCuatro = "---";
       }
     },
     "form.areaMuestraCuatro": function formAreaMuestraCuatro(newVal, oldVal) {
-      var dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
-      var dDos = parseFloat(this.form.areaMuestraCuatro);
-      if (isNaN(dUno) || isNaN(dDos)) {
-        this.form.resistenciaCompresionMuestraCuatro = "---";
+      var commaReplaced = this.form.cargaEnsayoMilMuestraCuatro.toString().replace(",", ".");
+      this.form.cargaEnsayoMilMuestraCuatro = commaReplaced;
+      var commaReplacedDos = this.form.areaMuestraCuatro.toString().replace(",", ".");
+      this.form.areaMuestraCuatro = commaReplacedDos;
+      var dUno = this.form.cargaEnsayoMilMuestraCuatro.toString();
+      var dDos = this.form.areaMuestraCuatro.toString();
+      if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
+        dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
+        dDos = parseFloat(this.form.areaMuestraCuatro);
+        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(1);
       } else {
-        this.form.resistenciaCompresionMuestraCuatro = dUno / dDos;
+        this.form.resistenciaCompresionMuestraCuatro = "---";
       }
     },
     "form.resistenciaCompresionMuestraUno": function formResistenciaCompresionMuestraUno(newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
-      if (!isNaN(dUno)) {
+      var commaReplaced = this.form.resistenciaCompresionMuestraUno.toString().replace(",", ".");
+      this.form.resistenciaCompresionMuestraUno = commaReplaced;
+      var dUno = this.form.resistenciaCompresionMuestraUno;
+      if (!isNaN(dUno) && dUno.trim() != "") {
+        dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
           this.form.factoresConversionMuestraUno = this.factoresConversion["20"];
-          this.form.resistenciaCorregidaMuestraUno = this.factoresConversion["20"] * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.factoresConversion["20"] * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraUno = this.factoresConversion["50"];
-          this.form.resistenciaCorregidaMuestraUno = this.form.factoresConversionMuestraUno * dUno;
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
         }
       } else {
-        this.form.factoresConversionMuestraUno = "-";
-        this.form.resistenciaCorregidaMuestraUno = "-";
+        this.form.factoresConversionMuestraUno = "---";
+        this.form.resistenciaCorregidaMuestraUno = "---";
       }
     },
     "form.resistenciaCompresionMuestraDos": function formResistenciaCompresionMuestraDos(newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
-      if (!isNaN(dUno)) {
+      var commaReplaced = this.form.resistenciaCompresionMuestraDos.toString().replace(",", ".");
+      this.form.resistenciaCompresionMuestraDos = commaReplaced;
+      var dUno = this.form.resistenciaCompresionMuestraDos;
+      if (!isNaN(dUno) && dUno.trim() != "") {
+        dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
           this.form.factoresConversionMuestraDos = this.factoresConversion["20"];
-          this.form.resistenciaCorregidaMuestraDos = this.factoresConversion["20"] * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.factoresConversion["20"] * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraDos = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraDos = this.factoresConversion["50"];
-          this.form.resistenciaCorregidaMuestraDos = this.form.factoresConversionMuestraDos * dUno;
+          this.form.resistenciaCorregidaMuestraDos = (this.form.factoresConversionMuestraDos * dUno).toFixed(1);
         }
       } else {
-        this.form.factoresConversionMuestraDos = "-";
-        this.form.resistenciaCorregidaMuestraDos = "-";
+        this.form.factoresConversionMuestraDos = "---";
+        this.form.resistenciaCorregidaMuestraDos = "---";
       }
     },
     "form.resistenciaCompresionMuestraTres": function formResistenciaCompresionMuestraTres(newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
-      if (!isNaN(dUno)) {
+      var commaReplaced = this.form.resistenciaCompresionMuestraTres.toString().replace(",", ".");
+      this.form.resistenciaCompresionMuestraTres = commaReplaced;
+      var dUno = this.form.resistenciaCompresionMuestraTres;
+      if (!isNaN(dUno) && dUno.trim() != "") {
+        dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
           this.form.factoresConversionMuestraTres = this.factoresConversion["20"];
-          this.form.resistenciaCorregidaMuestraTres = this.factoresConversion["20"] * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.factoresConversion["20"] * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraTres = this.factoresConversion["50"];
-          this.form.resistenciaCorregidaMuestraTres = this.form.factoresConversionMuestraTres * dUno;
+          this.form.resistenciaCorregidaMuestraTres = (this.form.factoresConversionMuestraTres * dUno).toFixed(1);
         }
       } else {
-        this.form.factoresConversionMuestraTres = "-";
-        this.form.resistenciaCorregidaMuestraTres = "-";
+        this.form.factoresConversionMuestraTres = "---";
+        this.form.resistenciaCorregidaMuestraTres = "---";
       }
     },
     "form.resistenciaCompresionMuestraCuatro": function formResistenciaCompresionMuestraCuatro(newVal, oldVal) {
-      var dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
-      if (!isNaN(dUno)) {
+      var commaReplaced = this.form.resistenciaCompresionMuestraCuatro.toString().replace(",", ".");
+      this.form.resistenciaCompresionMuestraCuatro = commaReplaced;
+      var dUno = this.form.resistenciaCompresionMuestraCuatro;
+      if (!isNaN(dUno) && dUno.trim() != "") {
+        dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.factoresConversion["20"];
-          this.form.resistenciaCorregidaMuestraCuatro = this.factoresConversion["20"] * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.factoresConversion["20"] * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraCuatro = this.factoresConversion["50"];
-          this.form.resistenciaCorregidaMuestraCuatro = this.form.factoresConversionMuestraCuatro * dUno;
+          this.form.resistenciaCorregidaMuestraCuatro = (this.form.factoresConversionMuestraCuatro * dUno).toFixed(1);
         }
       } else {
-        this.form.factoresConversionMuestraCuatro = "-";
-        this.form.resistenciaCorregidaMuestraCuatro = "-";
+        this.form.factoresConversionMuestraCuatro = "---";
+        this.form.resistenciaCorregidaMuestraCuatro = "---";
       }
     },
     "form.errorCientoCincuentaMm": function formErrorCientoCincuentaMm(newVal, oldVal) {
@@ -104937,6 +105127,42 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     },
     "form.refrentadoCuatro": function formRefrentadoCuatro(newVal, oldVal) {
       this.calculaLongitudCorregida();
+    },
+    "form.volumenMuestraUno": function formVolumenMuestraUno(newVal, oldVal) {
+      var commaReplaced = this.form.volumenMuestraUno.toString().replace(",", ".");
+      this.form.volumenMuestraUno = commaReplaced;
+      if (!isNaN(this.form.volumenMuestraUno) && this.form.volumenMuestraUno.trim() != "") {
+        this.form.volumenMetroCubicoMuestraUno = parseFloat((this.form.volumenMuestraUno / 100000000).toPrecision(6)).toString();
+      } else {
+        this.form.volumenMetroCubicoMuestraUno = "---";
+      }
+    },
+    "form.volumenMuestraDos": function formVolumenMuestraDos(newVal, oldVal) {
+      var commaReplaced = this.form.volumenMuestraDos.toString().replace(",", ".");
+      this.form.volumenMuestraDos = commaReplaced;
+      if (!isNaN(this.form.volumenMuestraDos) && this.form.volumenMuestraDos.trim() != "") {
+        this.form.volumenMetroCubicoMuestraDos = parseFloat((this.form.volumenMuestraDos / 100000000).toPrecision(6)).toString();
+      } else {
+        this.form.volumenMetroCubicoMuestraDos = "---";
+      }
+    },
+    "form.volumenMuestraTres": function formVolumenMuestraTres(newVal, oldVal) {
+      var commaReplaced = this.form.volumenMuestraTres.toString().replace(",", ".");
+      this.form.volumenMuestraTres = commaReplaced;
+      if (!isNaN(this.form.volumenMuestraTres) && this.form.volumenMuestraTres.trim() != "") {
+        this.form.volumenMetroCubicoMuestraTres = parseFloat((this.form.volumenMuestraTres / 100000000).toPrecision(6)).toString();
+      } else {
+        this.form.volumenMetroCubicoMuestraTres = "---";
+      }
+    },
+    "form.volumenMuestraCuatro": function formVolumenMuestraCuatro(newVal, oldVal) {
+      var commaReplaced = this.form.volumenMuestraCuatro.toString().replace(",", ".");
+      this.form.volumenMuestraCuatro = commaReplaced;
+      if (!isNaN(this.form.volumenMuestraCuatro) && this.form.volumenMuestraCuatro.trim() != "") {
+        this.form.volumenMetroCubicoMuestraCuatro = parseFloat((this.form.volumenMuestraCuatro / 100000000).toPrecision(6)).toString();
+      } else {
+        this.form.volumenMetroCubicoMuestraCuatro = "---";
+      }
     }
   }
 });
@@ -108096,6 +108322,7 @@ var render = function() {
                       { attrs: { prop: "volumenMetroCubicoMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMetroCubicoMuestraUno,
                             callback: function($$v) {
@@ -108124,6 +108351,7 @@ var render = function() {
                       { attrs: { prop: "volumenMetroCubicoMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMetroCubicoMuestraDos,
                             callback: function($$v) {
@@ -108152,6 +108380,7 @@ var render = function() {
                       { attrs: { prop: "volumenMetroCubicoMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMetroCubicoMuestraTres,
                             callback: function($$v) {
@@ -108180,6 +108409,7 @@ var render = function() {
                       { attrs: { prop: "volumenMetroCubicoMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMetroCubicoMuestraCuatro,
                             callback: function($$v) {
@@ -108334,6 +108564,7 @@ var render = function() {
                       { attrs: { prop: "areaMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.areaMuestraUno,
                             callback: function($$v) {
@@ -108358,6 +108589,7 @@ var render = function() {
                       { attrs: { prop: "areaMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.areaMuestraDos,
                             callback: function($$v) {
@@ -108382,6 +108614,7 @@ var render = function() {
                       { attrs: { prop: "areaMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.areaMuestraTres,
                             callback: function($$v) {
@@ -108406,6 +108639,7 @@ var render = function() {
                       { attrs: { prop: "areaMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.areaMuestraCuatro,
                             callback: function($$v) {
@@ -108544,6 +108778,7 @@ var render = function() {
                       { attrs: { prop: "cargaEnsayoMilMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.cargaEnsayoMilMuestraUno,
                             callback: function($$v) {
@@ -108572,6 +108807,7 @@ var render = function() {
                       { attrs: { prop: "cargaEnsayoMilMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.cargaEnsayoMilMuestraDos,
                             callback: function($$v) {
@@ -108600,6 +108836,7 @@ var render = function() {
                       { attrs: { prop: "cargaEnsayoMilMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.cargaEnsayoMilMuestraTres,
                             callback: function($$v) {
@@ -108628,6 +108865,7 @@ var render = function() {
                       { attrs: { prop: "cargaEnsayoMilMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.cargaEnsayoMilMuestraCuatro,
                             callback: function($$v) {
@@ -108774,6 +109012,7 @@ var render = function() {
                       { attrs: { prop: "errorresistenciaCompresionraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCompresionMuestraUno,
                             callback: function($$v) {
@@ -108802,6 +109041,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCompresionMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCompresionMuestraDos,
                             callback: function($$v) {
@@ -108830,6 +109070,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCompresionMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCompresionMuestraTres,
                             callback: function($$v) {
@@ -108858,6 +109099,7 @@ var render = function() {
                       { attrs: { prop: "resistenciaCompresionMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.resistenciaCompresionMuestraCuatro,
                             callback: function($$v) {
