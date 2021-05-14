@@ -97959,6 +97959,15 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     calculaDiametroCorregido: function calculaDiametroCorregido() {
+      this.form.errorCientoCincuentaMm = this.form.errorCientoCincuentaMm.toString().replace(",", ".");
+      this.form.dUnoMuestraUno = this.form.dUnoMuestraUno.toString().replace(",", ".");
+      this.form.dDosMuestraUno = this.form.dDosMuestraUno.toString().replace(",", ".");
+      this.form.dUnoMuestraDos = this.form.dUnoMuestraDos.toString().replace(",", ".");
+      this.form.dDosMuestraDos = this.form.dDosMuestraDos.toString().replace(",", ".");
+      this.form.dUnoMuestraTres = this.form.dUnoMuestraTres.toString().replace(",", ".");
+      this.form.dDosMuestraTres = this.form.dDosMuestraTres.toString().replace(",", ".");
+      this.form.dUnoMuestraCuatro = this.form.dUnoMuestraCuatro.toString().replace(",", ".");
+      this.form.dDosMuestraCuatro = this.form.dDosMuestraCuatro.toString().replace(",", ".");
       var error = this.form.errorCientoCincuentaMm.toString().replace(",", ".");
       var dUnoMuestraUno = this.form.dUnoMuestraUno.toString().replace(",", ".");
       var dDosMuestraUno = this.form.dDosMuestraUno.toString().replace(",", ".");
@@ -98029,6 +98038,19 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     calculaLongitudCorregida: function calculaLongitudCorregida() {
+      this.form.errorTrescientosMm = this.form.errorTrescientosMm.toString().replace(",", ".");
+      this.form.hUnoMuestraUno = this.form.hUnoMuestraUno.toString().replace(",", ".");
+      this.form.hDosMuestraUno = this.form.hDosMuestraUno.toString().replace(",", ".");
+      this.form.hUnoMuestraDos = this.form.hUnoMuestraDos.toString().replace(",", ".");
+      this.form.hDosMuestraDos = this.form.hDosMuestraDos.toString().replace(",", ".");
+      this.form.hUnoMuestraTres = this.form.hUnoMuestraTres.toString().replace(",", ".");
+      this.form.hDosMuestraTres = this.form.hDosMuestraTres.toString().replace(",", ".");
+      this.form.hUnoMuestraCuatro = this.form.hUnoMuestraCuatro.toString().replace(",", ".");
+      this.form.hDosMuestraCuatro = this.form.hDosMuestraCuatro.toString().replace(",", ".");
+      this.form.refrentadoUno = this.form.refrentadoUno.toString().replace(",", ".");
+      this.form.refrentadoDos = this.form.refrentadoDos.toString().replace(",", ".");
+      this.form.refrentadoTres = this.form.refrentadoTres.toString().replace(",", ".");
+      this.form.refrentadoCuatro = this.form.refrentadoCuatro.toString().replace(",", ".");
       var error = this.form.errorTrescientosMm.toString().replace(",", ".");
       var hUnoMuestraUno = this.form.hUnoMuestraUno.toString().replace(",", ".");
       var hDosMuestraUno = this.form.hDosMuestraUno.toString().replace(",", ".");
@@ -98569,7 +98591,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
         dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-        this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraUno = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraUno = "---";
       }
@@ -98584,7 +98606,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraUnoCorregida);
         dDos = parseFloat(this.form.dDosMuestraUnoCorregida);
-        this.form.areaMuestraUno = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraUno = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraUno = "---";
       }
@@ -98599,7 +98621,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
         dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-        this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraDos = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraDos = "---";
       }
@@ -98614,7 +98636,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraDosCorregida);
         dDos = parseFloat(this.form.dDosMuestraDosCorregida);
-        this.form.areaMuestraDos = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraDos = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraDos = "---";
       }
@@ -98629,7 +98651,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
         dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-        this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraTres = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraTres = "---";
       }
@@ -98644,7 +98666,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraTresCorregida);
         dDos = parseFloat(this.form.dDosMuestraTresCorregida);
-        this.form.areaMuestraTres = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraTres = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraTres = "---";
       }
@@ -98659,7 +98681,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
         dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-        this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraCuatro = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraCuatro = "---";
       }
@@ -98674,7 +98696,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && !isNaN(dDos) && dUno.trim() != "" && dDos.trim() != "") {
         dUno = parseFloat(this.form.dUnoMuestraCuatroCorregida);
         dDos = parseFloat(this.form.dDosMuestraCuatroCorregida);
-        this.form.areaMuestraCuatro = 0.196 * (dUno + dDos) * (dUno + dDos);
+        this.form.areaMuestraCuatro = parseFloat((0.196 * (dUno + dDos) * (dUno + dDos)).toFixed(2)).toString();
       } else {
         this.form.areaMuestraCuatro = "---";
       }
