@@ -915,22 +915,32 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMetroCubicoMuestraUno">
-              <el-input v-model="form.volumenMetroCubicoMuestraUno"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMetroCubicoMuestraUno"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMetroCubicoMuestraDos">
-              <el-input v-model="form.volumenMetroCubicoMuestraDos"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMetroCubicoMuestraDos"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMetroCubicoMuestraTres">
-              <el-input v-model="form.volumenMetroCubicoMuestraTres"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMetroCubicoMuestraTres"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMetroCubicoMuestraCuatro">
               <el-input
+                class="no-click"
                 v-model="form.volumenMetroCubicoMuestraCuatro"
               ></el-input>
             </el-form-item>
@@ -3268,6 +3278,46 @@ export default {
     },
     "form.refrentadoCuatro": function (newVal, oldVal) {
       this.calculaLongitudCorregida();
+    },
+    "form.volumenMuestraUno": function (newVal, oldVal) {
+      var dUno = parseFloat(this.form.volumenMuestraUno);
+      if (!isNaN(dUno)) {
+        this.form.volumenMetroCubicoMuestraUno = parseFloat(
+          (dUno / 100000000).toPrecision(6)
+        );
+      } else {
+        this.form.volumenMetroCubicoMuestraUno = "---";
+      }
+    },
+    "form.volumenMuestraDos": function (newVal, oldVal) {
+      var dUno = parseFloat(this.form.volumenMuestraDos);
+      if (!isNaN(dUno)) {
+        this.form.volumenMetroCubicoMuestraDos = parseFloat(
+          (dUno / 100000000).toPrecision(6)
+        );
+      } else {
+        this.form.volumenMetroCubicoMuestraDos = "---";
+      }
+    },
+    "form.volumenMuestraTres": function (newVal, oldVal) {
+      var dUno = parseFloat(this.form.volumenMuestraTres);
+      if (!isNaN(dUno)) {
+        this.form.volumenMetroCubicoMuestraTres = parseFloat(
+          (dUno / 100000000).toPrecision(6)
+        );
+      } else {
+        this.form.volumenMetroCubicoMuestraTres = "---";
+      }
+    },
+    "form.volumenMuestraCuatro": function (newVal, oldVal) {
+      var dUno = parseFloat(this.form.volumenMuestraCuatro);
+      if (!isNaN(dUno)) {
+        this.form.volumenMetroCubicoMuestraCuatro = parseFloat(
+          (dUno / 100000000).toPrecision(6)
+        );
+      } else {
+        this.form.volumenMetroCubicoMuestraCuatro = "---";
+      }
     },
   },
 };
