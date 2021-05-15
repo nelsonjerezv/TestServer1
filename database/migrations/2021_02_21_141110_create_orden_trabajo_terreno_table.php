@@ -17,7 +17,7 @@ class CreateOrdenTrabajoTerrenoTable extends Migration
             $table->increments('id');
 
             $table->boolean('validado');
-            $table->string('num_ott', 75)->unique();
+            $table->string('num_ott', 75)->nullable();
             $table->string('num_cliente_obra', 75)->nullable();
             $table->string('nombre_cliente', 75)->nullable();
             $table->string('nombre_obra', 75)->nullable();
