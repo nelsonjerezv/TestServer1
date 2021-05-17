@@ -113451,7 +113451,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "contenedor-vue height-max-percent" },
+    {
+      staticClass: "contenedor-vue height-max-percent",
+      attrs: { id: Date.now().toString() }
+    },
     [
       _c("el-header", [_vm._v(" Prototipo ")]),
       _vm._v(" "),
