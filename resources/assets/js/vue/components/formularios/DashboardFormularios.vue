@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor-vue height-max-percent">
+  <div class="contenedor-vue height-max-percent" :id="Date.now().toString()">
     <el-header> Prototipo </el-header>
     <el-container style="height: calc(100% - 0px) !important">
       <sidebar-formularios @cambiaMain="cambiarMain" ref="sidebar" />
