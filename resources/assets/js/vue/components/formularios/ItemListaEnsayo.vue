@@ -13,10 +13,10 @@
       </div>
 
       <div class="item-contenedor-botones">
-        <el-button type="primary" @click="dialogVisible = true" plain
-          >Ver</el-button
+        <el-button type="primary" @click="dialogVerVisible = true" plain
+          >Ver Ensayo</el-button
         >
-        <el-dialog :visible.sync="dialogVisible" width="90%">
+        <el-dialog :visible.sync="dialogVerVisible" width="90%">
           <!-- :before-close="handleClose" -->
           <iframe
             style="width: 100%; height: 100%"
@@ -37,10 +37,10 @@
               plain
               >Rechazar</el-button
             >
-            <el-button type="danger" @click="dialogVisible = false" plain
+            <el-button type="danger" @click="dialogVerVisible = false" plain
               >Cerrar visualizaci&oacute;n</el-button
             >
-            <!-- <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
+            <!-- <el-button type="primary" @click="dialogVerVisible = false">Confirm</el-button> -->
           </span>
         </el-dialog>
         <el-button type="warning" @click="dialogEditarVisible = true" plain
@@ -103,7 +103,7 @@ export default {
     return {
       item: "",
       numeroOtt: "",
-      dialogVisible: false,
+      dialogVerVisible: false,
       dialogEditarVisible: false,
       urlEliminarEnsayo: `${GLOBAL.URL}ensayos/eliminar-ensayo`,
       urlEditarEnsayo: `${GLOBAL.URL}ensayos/editar-ensayo`,
@@ -276,34 +276,9 @@ export default {
   },
   computed: {
     rutaVerInforme() {
-      let ruta =
-        `${GLOBAL.URL}` +
-        "/ensayos/ver-ensayo-pdf/" +
-        this.item.id +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-" +
-        "/" +
-        "-";
-
-      return ruta;
+      return this.dialogVerVisible
+        ? `${GLOBAL.URL}` + "/ensayos/ver-ensayo/" + this.item.id
+        : "";
     },
     rutaEditarEnsayo() {
       return this.dialogEditarVisible
@@ -314,6 +289,11 @@ export default {
   watch: {
     dialogEditarVisible() {
       if (!this.dialogEditarVisible) {
+        this.$emit("actualizar");
+      }
+    },
+    dialogVerVisible() {
+      if (!this.dialogVerVisible) {
         this.$emit("actualizar");
       }
     },

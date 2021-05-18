@@ -33,6 +33,7 @@ if (App::environment('production')) {
 
     Route::get('/ensayos', 'EnsayosHormigonController@index');
     Route::get('/ensayos/todos-los-ensayos/{modo}', 'EnsayosHormigonController@todosLosEnsayos');
+    Route::get('/ensayos/ver-ensayo/{id}', 'EnsayosHormigonController@verEnsayo');
     Route::get('/ensayos/editar-ensayo/{id}', 'EnsayosHormigonController@editarEnsayo');
     Route::post('/formularios/validar-ensayo', 'EnsayosHormigonController@validarFormulario');
     Route::post('/formularios/rechazar-ensayo', 'EnsayosHormigonController@rechazarFormulario');
