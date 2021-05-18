@@ -3927,7 +3927,7 @@ export default {
         this.form.volumenMuestraUno.trim() != ""
       ) {
         this.form.volumenMetroCubicoMuestraUno = parseFloat(
-          (this.form.volumenMuestraUno / 100000000).toPrecision(6)
+          (this.form.volumenMuestraUno / 1000000000).toPrecision(6)
         ).toString();
       } else {
         this.form.volumenMetroCubicoMuestraUno = "---";
