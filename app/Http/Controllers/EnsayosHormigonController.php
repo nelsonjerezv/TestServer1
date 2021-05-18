@@ -551,6 +551,13 @@ class EnsayosHormigonController extends Controller
         return [$orden, true];
     }
 
+    public function verEnsayo($id){
+        $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+        $accion = 'ver';
+
+        return view('ver_ensayo', compact('accion', 'ensayo') );
+    }
+
     public function editarEnsayo($id){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
         $accion = 'editar';

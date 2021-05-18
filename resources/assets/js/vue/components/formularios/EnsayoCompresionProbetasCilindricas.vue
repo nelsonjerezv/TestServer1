@@ -5,6 +5,7 @@
       :model="form"
       :rules="reglas"
       label-width="150px"
+      :class="esClickeable"
     >
       <el-row>
         <el-col :span="8">
