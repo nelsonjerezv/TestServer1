@@ -97577,6 +97577,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -99130,6 +99131,7 @@ var render = function() {
         "el-form",
         {
           ref: "formularioCompresion",
+          class: _vm.esClickeable,
           attrs: { model: _vm.form, rules: _vm.reglas, "label-width": "150px" }
         },
         [

@@ -103652,6 +103652,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -105205,6 +105206,7 @@ var render = function() {
         "el-form",
         {
           ref: "formularioCompresion",
+          class: _vm.esClickeable,
           attrs: { model: _vm.form, rules: _vm.reglas, "label-width": "150px" }
         },
         [
@@ -112034,7 +112036,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       item: "",
       numeroOtt: "",
-      dialogVisible: false,
+      dialogVerVisible: false,
       dialogEditarVisible: false,
       urlEliminarEnsayo: GLOBAL.URL + "ensayos/eliminar-ensayo",
       urlEditarEnsayo: GLOBAL.URL + "ensayos/editar-ensayo",
@@ -112129,9 +112131,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   computed: {
     rutaVerInforme: function rutaVerInforme() {
-      var ruta = "" + GLOBAL.URL + "/ensayos/ver-ensayo-pdf/" + this.item.id + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-" + "/" + "-";
-
-      return ruta;
+      return this.dialogVerVisible ? "" + GLOBAL.URL + "/ensayos/ver-ensayo/" + this.item.id : "";
     },
     rutaEditarEnsayo: function rutaEditarEnsayo() {
       return this.dialogEditarVisible ? "" + GLOBAL.URL + "/ensayos/editar-ensayo/" + this.item.id : "";
@@ -112140,6 +112140,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   watch: {
     dialogEditarVisible: function dialogEditarVisible() {
       if (!this.dialogEditarVisible) {
+        this.$emit("actualizar");
+      }
+    },
+    dialogVerVisible: function dialogVerVisible() {
+      if (!this.dialogVerVisible) {
         this.$emit("actualizar");
       }
     }
@@ -112182,20 +112187,20 @@ var render = function() {
               attrs: { type: "primary", plain: "" },
               on: {
                 click: function($event) {
-                  _vm.dialogVisible = true
+                  _vm.dialogVerVisible = true
                 }
               }
             },
-            [_vm._v("Ver")]
+            [_vm._v("Ver Ensayo")]
           ),
           _vm._v(" "),
           _c(
             "el-dialog",
             {
-              attrs: { visible: _vm.dialogVisible, width: "90%" },
+              attrs: { visible: _vm.dialogVerVisible, width: "90%" },
               on: {
                 "update:visible": function($event) {
-                  _vm.dialogVisible = $event
+                  _vm.dialogVerVisible = $event
                 }
               }
             },
@@ -112241,7 +112246,7 @@ var render = function() {
                       attrs: { type: "danger", plain: "" },
                       on: {
                         click: function($event) {
-                          _vm.dialogVisible = false
+                          _vm.dialogVerVisible = false
                         }
                       }
                     },
