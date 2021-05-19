@@ -2,6 +2,7 @@
 /public/hot
 /public/storage
 /public/json
+/public/js/vue/
 /storage/*.key
 /vendor
 /.idea
