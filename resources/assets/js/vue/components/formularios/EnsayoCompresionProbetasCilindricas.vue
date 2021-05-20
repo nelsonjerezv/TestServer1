@@ -3927,15 +3927,11 @@ export default {
         !isNaN(this.form.volumenMuestraUno) &&
         this.form.volumenMuestraUno.trim() != ""
       ) {
-
-
-        //this.form.volumenMetroCubicoMuestraUno = parseFloat(
-          //(this.form.volumenMuestraUno / 1000000000).toPrecision(6)
-        //).toString();
-
-        this.form.volumenMetroCubicoMuestraUno = this.form.volumenMuestraUno / 1000000000;
-
-
+        this.form.volumenMetroCubicoMuestraUno = (
+          parseFloat(this.form.volumenMuestraUno) / 1000000000
+        )
+          .toFixed(12)
+          .toString();
       } else {
         this.form.volumenMetroCubicoMuestraUno = "---";
       }
@@ -3949,9 +3945,11 @@ export default {
         !isNaN(this.form.volumenMuestraDos) &&
         this.form.volumenMuestraDos.trim() != ""
       ) {
-        this.form.volumenMetroCubicoMuestraDos = parseFloat(
-          (this.form.volumenMuestraDos / 100000000).toPrecision(6)
-        ).toString();
+        this.form.volumenMetroCubicoMuestraDos = (
+          parseFloat(this.form.volumenMuestraDos) / 100000000
+        )
+          .toFixed(12)
+          .toString();
       } else {
         this.form.volumenMetroCubicoMuestraDos = "---";
       }
@@ -3965,9 +3963,11 @@ export default {
         !isNaN(this.form.volumenMuestraTres) &&
         this.form.volumenMuestraTres.trim() != ""
       ) {
-        this.form.volumenMetroCubicoMuestraTres = parseFloat(
-          (this.form.volumenMuestraTres / 100000000).toPrecision(6)
-        ).toString();
+        this.form.volumenMetroCubicoMuestraTres = (
+          parseFloat(this.form.volumenMuestraTres) / 100000000
+        )
+          .toFixed(12)
+          .toString();
       } else {
         this.form.volumenMetroCubicoMuestraTres = "---";
       }
@@ -3981,9 +3981,11 @@ export default {
         !isNaN(this.form.volumenMuestraCuatro) &&
         this.form.volumenMuestraCuatro.trim() != ""
       ) {
-        this.form.volumenMetroCubicoMuestraCuatro = parseFloat(
-          (this.form.volumenMuestraCuatro / 100000000).toPrecision(6)
-        ).toString();
+        this.form.volumenMetroCubicoMuestraCuatro = (
+          parseFloat(this.form.volumenMuestraCuatro) / 100000000
+        )
+          .toFixed(12)
+          .toString();
       } else {
         this.form.volumenMetroCubicoMuestraCuatro = "---";
       }

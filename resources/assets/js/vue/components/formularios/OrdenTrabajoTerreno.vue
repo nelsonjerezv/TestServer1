@@ -103,7 +103,7 @@
                 </el-col>
             </el-row> -->
       <el-row class="margin-b-5">
-        <el-col :span="10" class="padding-5">
+        <el-col :span="24" class="padding-5">
           <el-form-item label="Muestreo de:" prop="muestreoDe">
             <el-radio v-model="form.muestreoDe" label="hormigon"
               >Hormig&oacute;n</el-radio
@@ -111,8 +111,21 @@
             <el-radio v-model="form.muestreoDe" label="mortero"
               >Mortero</el-radio
             >
+            <el-radio v-model="form.muestreoDe" label="seccionTestigos"
+              >Secci&oacute;n Testigos</el-radio
+            >
+            <el-radio v-model="form.muestreoDe" label="seccionAridos"
+              >Secci&oacute;n &Aacute;ridos</el-radio
+            >
+            <el-radio v-model="form.muestreoDe" label="seccionOtros"
+              >Secci&oacute;n Otros</el-radio
+            >
+            <el-radio v-model="form.muestreoDe" label="seccionRetiro"
+              >Secci&oacute;n Retiro de Muestras</el-radio
+            >
           </el-form-item>
         </el-col>
+        <!--
         <el-col :span="3" class="padding-5">
           <el-form-item
             class="form-item-no-label"
@@ -181,6 +194,7 @@
             >
           </el-form-item>
         </el-col>
+        -->
       </el-row>
       <!-- <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
