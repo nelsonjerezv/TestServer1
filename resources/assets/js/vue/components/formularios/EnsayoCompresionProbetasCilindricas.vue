@@ -3927,9 +3927,15 @@ export default {
         !isNaN(this.form.volumenMuestraUno) &&
         this.form.volumenMuestraUno.trim() != ""
       ) {
-        this.form.volumenMetroCubicoMuestraUno = parseFloat(
-          (this.form.volumenMuestraUno / 1000000000).toPrecision(6)
-        ).toString();
+
+
+        //this.form.volumenMetroCubicoMuestraUno = parseFloat(
+          //(this.form.volumenMuestraUno / 1000000000).toPrecision(6)
+        //).toString();
+
+        this.form.volumenMetroCubicoMuestraUno = this.form.volumenMuestraUno / 1000000000;
+
+
       } else {
         this.form.volumenMetroCubicoMuestraUno = "---";
       }
