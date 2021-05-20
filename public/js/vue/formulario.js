@@ -105073,7 +105073,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraUno.toString().replace(",", ".");
       this.form.volumenMuestraUno = commaReplaced;
       if (!isNaN(this.form.volumenMuestraUno) && this.form.volumenMuestraUno.trim() != "") {
-        this.form.volumenMetroCubicoMuestraUno = parseFloat((this.form.volumenMuestraUno / 1000000000).toPrecision(6)).toString();
+        this.form.volumenMetroCubicoMuestraUno = (parseFloat(this.form.volumenMuestraUno) / 1000000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraUno = "---";
       }
@@ -105082,7 +105082,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraDos.toString().replace(",", ".");
       this.form.volumenMuestraDos = commaReplaced;
       if (!isNaN(this.form.volumenMuestraDos) && this.form.volumenMuestraDos.trim() != "") {
-        this.form.volumenMetroCubicoMuestraDos = parseFloat((this.form.volumenMuestraDos / 100000000).toPrecision(6)).toString();
+        this.form.volumenMetroCubicoMuestraDos = (parseFloat(this.form.volumenMuestraDos) / 100000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraDos = "---";
       }
@@ -105091,7 +105091,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraTres.toString().replace(",", ".");
       this.form.volumenMuestraTres = commaReplaced;
       if (!isNaN(this.form.volumenMuestraTres) && this.form.volumenMuestraTres.trim() != "") {
-        this.form.volumenMetroCubicoMuestraTres = parseFloat((this.form.volumenMuestraTres / 100000000).toPrecision(6)).toString();
+        this.form.volumenMetroCubicoMuestraTres = (parseFloat(this.form.volumenMuestraTres) / 100000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraTres = "---";
       }
@@ -105100,7 +105100,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraCuatro.toString().replace(",", ".");
       this.form.volumenMuestraCuatro = commaReplaced;
       if (!isNaN(this.form.volumenMuestraCuatro) && this.form.volumenMuestraCuatro.trim() != "") {
-        this.form.volumenMetroCubicoMuestraCuatro = parseFloat((this.form.volumenMuestraCuatro / 100000000).toPrecision(6)).toString();
+        this.form.volumenMetroCubicoMuestraCuatro = (parseFloat(this.form.volumenMuestraCuatro) / 100000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraCuatro = "---";
       }
