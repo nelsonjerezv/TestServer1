@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor-vue height-max-percent">
+  <div class="contenedor-vue height-max-percent" :id="Date.now().toString()">
     <el-header> Prototipo </el-header>
     <el-container style="height: calc(100% - 0px) !important">
       <sidebar-formularios @cambiaMain="cambiarMain" ref="sidebar" />
@@ -60,8 +60,6 @@ export default {
   data() {
     return {
       componenteMain: "",
-      // componenteMain: 'EnsayoCompresionProbetasCilindricas',
-      // componenteMain: 'ListadoEnsayosCompresionProbetasCilindricas',
       tipoOTT: "",
       tipoEnsayo: "",
       modoListadoOtt: "",
@@ -70,7 +68,7 @@ export default {
     };
   },
   mounted() {
-    console.log("ordenes", this.ordenes);
+    // console.log("ordenes", this.ordenes);
   },
   methods: {
     cambiarMain: function (contenido) {

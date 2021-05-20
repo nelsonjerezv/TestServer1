@@ -19,7 +19,7 @@ import componentePrueba from './vue/components/ExampleComponent.vue';
 import Element from 'element-ui';
 import locale from 'element-ui/lib/locale/lang/es';
 
-Vue.use(Element, {locale});
+Vue.use(Element, { locale });
 
 
 /**
@@ -34,7 +34,7 @@ var prueba = new Vue({
     },
     data() {
         return {
-            
+
         }
     }
 });

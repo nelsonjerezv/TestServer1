@@ -30,7 +30,8 @@
 
     Route::get('/ensayos', 'EnsayosHormigonController@index');
     Route::get('/ensayos/todos-los-ensayos/{modo}', 'EnsayosHormigonController@todosLosEnsayos');
-    Route::get('/ensayos/editar-ensayo', 'EnsayosHormigonController@editarEnsayo');
+    Route::get('/ensayos/ver-ensayo/{id}', 'EnsayosHormigonController@verEnsayo');
+    Route::get('/ensayos/editar-ensayo/{id}', 'EnsayosHormigonController@editarEnsayo');
     Route::post('/formularios/validar-ensayo', 'EnsayosHormigonController@validarFormulario');
     Route::post('/formularios/rechazar-ensayo', 'EnsayosHormigonController@rechazarFormulario');
     Route::get('/ensayos/exportar-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{paginaActual}/{totalPaginas}/{firmador}/{profesionFirmador}/{cargoFirmador}', 'EnsayosHormigonController@exportarEnsayoPdf');
@@ -38,6 +39,7 @@
     Route::get('/ensayos/ver-ensayo-pdf/{id}/{direccionSolicitante}/{localizacionObra}/{numProyecto}/{numCorrelativoInformeObra}/{numCorrelativoObra}/{curadoInicial}/{lugarEnsayos}/{fechaMuestreoManual}/{firmador}/{profesionFirmador}/{cargoFirmador}', 'EnsayosHormigonController@verEnsayoPdf');
     Route::get('/ensayos/buscar-ott/{busqueda}', 'EnsayosHormigonController@buscarOtt');
     Route::post('/ensayos/guardar-ensayo-compresion', 'EnsayosHormigonController@guardarEnsayo');
+    Route::post('/ensayos/actualizar-ensayo-compresion', 'EnsayosHormigonController@actualizarEnsayo');
     Route::post('/ensayos/eliminar-ensayo', 'EnsayosHormigonController@eliminarEnsayo');
     Route::resource('ensayos', 'EnsayosHormigonController', ['only'=> ['index','create','store']]);
 
