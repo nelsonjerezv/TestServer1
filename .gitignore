@@ -2,6 +2,11 @@
 /public/hot
 /public/storage
 /public/js/vue/*
+/public/js/vue/
+/public/js/*
+/public/js/
+/public/css/*
+/public/css/
 /public/json
 /storage/*.key
 /vendor
