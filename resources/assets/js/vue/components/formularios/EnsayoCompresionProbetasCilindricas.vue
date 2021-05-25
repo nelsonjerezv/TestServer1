@@ -45,64 +45,79 @@
       <el-divider />
       <el-row>
         <el-col :span="24"> M&eacute;todo de curado </el-col>
-        <el-col :span="8">
-          <el-form-item label="Cámara Húmeda" prop="camaraHumeda">
-            <el-input v-model="form.camaraHumeda"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Piscina N°" prop="piscina">
-            <el-input v-model="form.piscina"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Balanza N°" prop="balanza">
-            <el-input v-model="form.balanza"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Pie de Metro N°" prop="numPieDeMetro">
-            <el-input v-model="form.numPieDeMetro"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Prensa N°" prop="numPrensa">
-            <el-input v-model="form.numPrensa"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Cronómetro N°" prop="numCronometro">
-            <el-input v-model="form.numCronometro"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Error: 150mm (mm)" prop="errorCientoCincuentaMm">
-            <el-input v-model="form.errorCientoCincuentaMm"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Error: 300mm (mm)" prop="errorTrescientosMm">
-            <el-input v-model="form.errorTrescientosMm"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Marmita N°" prop="numMarmita">
-            <el-input v-model="form.numMarmita"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item
-            label="Dispositivo de refrentado N°"
-            prop="numDispositivoRefrentado"
-          >
-            <el-input v-model="form.numDispositivoRefrentado"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="Micrómetro N°" prop="numMicrometro">
-            <el-input v-model="form.numMicrometro"></el-input>
-          </el-form-item>
-        </el-col>
+        <div style="display: flex; width: 100%">
+          <div style="display: flex; width: 100%">
+            <el-col :span="24">
+              <el-col :span="8">
+                <el-form-item label="Cámara Húmeda" prop="camaraHumeda">
+                  <el-input v-model="form.camaraHumeda"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Piscina N°" prop="piscina">
+                  <el-input v-model="form.piscina"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Balanza N°" prop="balanza">
+                  <el-input v-model="form.balanza"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Pie de Metro N°" prop="numPieDeMetro">
+                  <el-input v-model="form.numPieDeMetro"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Prensa N°" prop="numPrensa">
+                  <el-input v-model="form.numPrensa"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Cronómetro N°" prop="numCronometro">
+                  <el-input v-model="form.numCronometro"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item
+                  label="Error: 150mm (mm)"
+                  prop="errorCientoCincuentaMm"
+                >
+                  <el-input v-model="form.errorCientoCincuentaMm"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item
+                  label="Error: 300mm (mm)"
+                  prop="errorTrescientosMm"
+                >
+                  <el-input v-model="form.errorTrescientosMm"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Marmita N°" prop="numMarmita">
+                  <el-input v-model="form.numMarmita"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item
+                  label="Dispositivo de refrentado N°"
+                  prop="numDispositivoRefrentado"
+                >
+                  <el-input v-model="form.numDispositivoRefrentado"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="8">
+                <el-form-item label="Micrómetro N°" prop="numMicrometro">
+                  <el-input v-model="form.numMicrometro"></el-input>
+                </el-form-item>
+              </el-col>
+            </el-col>
+          </div>
+          <div style="display: flex; width: fit-content; margin: 0px">
+            <img style="width: 102px; height: 103px" :src="imagenCilindro" />
+          </div>
+        </div>
       </el-row>
       <el-divider />
       <el-row class="muestras">
@@ -1471,6 +1486,7 @@ export default {
       urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
       urlActualizarEnsayo: `${GLOBAL.URL}ensayos/actualizar-ensayo-compresion`,
       urlBuscarOtt: `${GLOBAL.URL}ensayos/buscar-ott`,
+      imagenCilindro: "/images/cilindro.jpg",
       timeout: null,
       ordenSeleccionada: "",
       ordenes: [],
