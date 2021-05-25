@@ -7,6 +7,38 @@
       label-width="150px"
       :class="esClickeable"
     >
+       
+    <!-- Cabecera / EPC -->
+    <table>
+    <tr>
+      <td rowspan="2" style="width:250px;" align="left" valign="top">
+        <img src="/images/logo-lacem.png" style="width: 100px;">
+      </td>
+      <td colspan="3" align="center" style="width:500px;">
+         <b>Hormigón: Ensayo de Compresión de Probetas Cilíndricas</b>
+      </td>
+      <td align="right" style="width:250px;">
+        Página<br>
+            1 de 1
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        Revisión&nbsp;&nbsp;&nbsp;012
+      </td>
+      <td>
+        Código&nbsp;&nbsp;&nbsp;FE-H-006
+      </td>
+      <td colspan="2" align="right">
+        Fecha aprobación:&nbsp;&nbsp;&nbsp;08-09-2016
+      </td>
+    </tr>  
+    </table>
+      
+    <el-divider class="el-divider-5" />
+
+
+
       <el-row>
         <el-col :span="8">
           <el-form-item label="N° Muestra" prop="numMuestra">
