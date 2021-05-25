@@ -155,9 +155,9 @@
       <tr>
         <td rowspan="10">
           @if ($datos->{'accion'} == 'ver')
-            <img src="/images/logoLacemVer2.jpg" style="position: absolute;width: 200px;">
+            <img src="/images/logoLacemVer2.jpg" style="position: absolute;width: 200px; z-index: -1;">
           @else
-            <img src="{{public_path('\images\logoLacemVer2.jpg')}}" style="position: absolute;width: 200px;">
+            <img src="{{public_path('\images\logoLacemVer2.jpg')}}" style="position: absolute;width: 200px; z-index: -1;">
           @endif
         </td>
       </tr>
