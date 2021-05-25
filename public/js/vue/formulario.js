@@ -97707,7 +97707,7 @@ var moment = __webpack_require__(0);
         seccionTestigosHabilitada: [{ required: false, message: "", trigger: "change" }],
         amasadaHormigon: [{ required: true, message: "", trigger: "blur" }],
         asentamientoCono: [{ required: true, message: "", trigger: "blur" }],
-        numInforme: [{ required: true, message: "", trigger: "blur" }],
+        // numInforme: [{ required: true, message: "", trigger: "blur" }],
         segregacion: [{ required: true, message: "", trigger: "blur" }],
         numEquipoConoAbrams: [{ required: true, message: "", trigger: "blur" }],
         numVibradorInmersion: [{ required: true, message: "", trigger: "blur" }],
@@ -97742,7 +97742,7 @@ var moment = __webpack_require__(0);
         retiroMuestraCantidadVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
         retiroMuestraFechaVeintiochoDias: [{ required: true, message: "", trigger: "change" }],
         retiroMuestraInformeVeintiochoDias: [{ required: true, message: "", trigger: "blur" }],
-        retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
+        // retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
         retiroMuestraCantidadOtros: [{ required: true, message: "", trigger: "blur" }],
         retiroMuestraFechaOtros: [{ required: true, message: "", trigger: "change" }],
         retiroMuestraInformeOtros: [{ required: true, message: "", trigger: "blur" }],
@@ -98843,24 +98843,6 @@ var render = function() {
                   _vm._v(" "),
                   _c("el-divider", { staticClass: "el-divider-5" }),
                   _vm._v(" "),
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "N° Informe", prop: "numInforme" } },
-                    [
-                      _c("el-input", {
-                        attrs: { disabled: "" },
-                        model: {
-                          value: _vm.form.numInforme,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numInforme", $$v)
-                          },
-                          expression: "form.numInforme"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
                   _c("el-divider", { staticClass: "el-divider-5" }),
                   _vm._v(" "),
                   _c(
@@ -99445,7 +99427,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "Rtable-cell width-35" }, [
-                          _c("label", [_vm._v("3 dia")])
+                          _c("label", [_vm._v("3 dias")])
                         ]),
                         _vm._v(" "),
                         _c(
@@ -99555,7 +99537,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "Rtable-cell width-35" }, [
-                          _c("label", [_vm._v("7 dia")])
+                          _c("label", [_vm._v("7 dias")])
                         ]),
                         _vm._v(" "),
                         _c(
@@ -99667,7 +99649,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "Rtable-cell width-35" }, [
-                          _c("label", [_vm._v("14 dia")])
+                          _c("label", [_vm._v("14 dias")])
                         ]),
                         _vm._v(" "),
                         _c(
@@ -99782,7 +99764,7 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "Rtable-cell width-35" }, [
-                          _c("label", [_vm._v("28 dia")])
+                          _c("label", [_vm._v("28 dias")])
                         ]),
                         _vm._v(" "),
                         _c(
@@ -103571,6 +103553,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -103582,6 +103579,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       urlGuardarEnsayo: GLOBAL.URL + "ensayos/guardar-ensayo-compresion",
       urlActualizarEnsayo: GLOBAL.URL + "ensayos/actualizar-ensayo-compresion",
       urlBuscarOtt: GLOBAL.URL + "ensayos/buscar-ott",
+      imagenCilindro: "/images/cilindro.jpg",
       timeout: null,
       ordenSeleccionada: "",
       ordenes: [],
@@ -105236,290 +105234,360 @@ var render = function() {
                 _vm._v(" Método de curado ")
               ]),
               _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "Cámara Húmeda", prop: "camaraHumeda" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.camaraHumeda,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "camaraHumeda", $$v)
-                          },
-                          expression: "form.camaraHumeda"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "Piscina N°", prop: "piscina" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.piscina,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "piscina", $$v)
-                          },
-                          expression: "form.piscina"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "Balanza N°", prop: "balanza" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.balanza,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "balanza", $$v)
-                          },
-                          expression: "form.balanza"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: { label: "Pie de Metro N°", prop: "numPieDeMetro" }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numPieDeMetro,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numPieDeMetro", $$v)
-                          },
-                          expression: "form.numPieDeMetro"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "Prensa N°", prop: "numPrensa" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numPrensa,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numPrensa", $$v)
-                          },
-                          expression: "form.numPrensa"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: { label: "Cronómetro N°", prop: "numCronometro" }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numCronometro,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numCronometro", $$v)
-                          },
-                          expression: "form.numCronometro"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Error: 150mm (mm)",
-                        prop: "errorCientoCincuentaMm"
-                      }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.errorCientoCincuentaMm,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "errorCientoCincuentaMm", $$v)
-                          },
-                          expression: "form.errorCientoCincuentaMm"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Error: 300mm (mm)",
-                        prop: "errorTrescientosMm"
-                      }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.errorTrescientosMm,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "errorTrescientosMm", $$v)
-                          },
-                          expression: "form.errorTrescientosMm"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    { attrs: { label: "Marmita N°", prop: "numMarmita" } },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numMarmita,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numMarmita", $$v)
-                          },
-                          expression: "form.numMarmita"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Dispositivo de refrentado N°",
-                        prop: "numDispositivoRefrentado"
-                      }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numDispositivoRefrentado,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numDispositivoRefrentado", $$v)
-                          },
-                          expression: "form.numDispositivoRefrentado"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "el-col",
-                { attrs: { span: 8 } },
-                [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: { label: "Micrómetro N°", prop: "numMicrometro" }
-                    },
-                    [
-                      _c("el-input", {
-                        model: {
-                          value: _vm.form.numMicrometro,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numMicrometro", $$v)
-                          },
-                          expression: "form.numMicrometro"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
+              _c("div", { staticStyle: { display: "flex", width: "100%" } }, [
+                _c(
+                  "div",
+                  { staticStyle: { display: "flex", width: "100%" } },
+                  [
+                    _c(
+                      "el-col",
+                      { attrs: { span: 24 } },
+                      [
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Cámara Húmeda",
+                                  prop: "camaraHumeda"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.camaraHumeda,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "camaraHumeda", $$v)
+                                    },
+                                    expression: "form.camaraHumeda"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: { label: "Piscina N°", prop: "piscina" }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.piscina,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "piscina", $$v)
+                                    },
+                                    expression: "form.piscina"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: { label: "Balanza N°", prop: "balanza" }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.balanza,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "balanza", $$v)
+                                    },
+                                    expression: "form.balanza"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Pie de Metro N°",
+                                  prop: "numPieDeMetro"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numPieDeMetro,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "numPieDeMetro", $$v)
+                                    },
+                                    expression: "form.numPieDeMetro"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: { label: "Prensa N°", prop: "numPrensa" }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numPrensa,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "numPrensa", $$v)
+                                    },
+                                    expression: "form.numPrensa"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Cronómetro N°",
+                                  prop: "numCronometro"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numCronometro,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "numCronometro", $$v)
+                                    },
+                                    expression: "form.numCronometro"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Error: 150mm (mm)",
+                                  prop: "errorCientoCincuentaMm"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.errorCientoCincuentaMm,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "errorCientoCincuentaMm",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.errorCientoCincuentaMm"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Error: 300mm (mm)",
+                                  prop: "errorTrescientosMm"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.errorTrescientosMm,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "errorTrescientosMm",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.errorTrescientosMm"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Marmita N°",
+                                  prop: "numMarmita"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numMarmita,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "numMarmita", $$v)
+                                    },
+                                    expression: "form.numMarmita"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Dispositivo de refrentado N°",
+                                  prop: "numDispositivoRefrentado"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numDispositivoRefrentado,
+                                    callback: function($$v) {
+                                      _vm.$set(
+                                        _vm.form,
+                                        "numDispositivoRefrentado",
+                                        $$v
+                                      )
+                                    },
+                                    expression: "form.numDispositivoRefrentado"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-col",
+                          { attrs: { span: 8 } },
+                          [
+                            _c(
+                              "el-form-item",
+                              {
+                                attrs: {
+                                  label: "Micrómetro N°",
+                                  prop: "numMicrometro"
+                                }
+                              },
+                              [
+                                _c("el-input", {
+                                  model: {
+                                    value: _vm.form.numMicrometro,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "numMicrometro", $$v)
+                                    },
+                                    expression: "form.numMicrometro"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticStyle: {
+                      display: "flex",
+                      width: "fit-content",
+                      margin: "0px"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticStyle: { width: "102px", height: "103px" },
+                      attrs: { src: _vm.imagenCilindro }
+                    })
+                  ]
+                )
+              ])
             ],
             1
           ),
