@@ -1696,7 +1696,7 @@ export default {
         retiroMuestraInformeVeintiochoDias: [
           { required: true, message: "", trigger: "blur" },
         ],
-        retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
+        // retiroMuestraOtros: [{ required: true, message: "", trigger: "blur" }],
         retiroMuestraCantidadOtros: [
           { required: true, message: "", trigger: "blur" },
         ],
