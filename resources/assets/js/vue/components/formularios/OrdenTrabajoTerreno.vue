@@ -388,9 +388,9 @@
             <el-input v-model="form.asentamientoCono"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
-          <el-form-item label="N° Informe" prop="numInforme">
+          <!-- <el-form-item label="N° Informe" prop="numInforme">
             <el-input disabled v-model="form.numInforme"></el-input>
-          </el-form-item>
+          </el-form-item> -->
           <el-divider class="el-divider-5" />
           <el-form-item label="Segregación" prop="segregacion">
             <el-input v-model="form.segregacion"></el-input>
@@ -1625,7 +1625,7 @@ export default {
         ],
         amasadaHormigon: [{ required: true, message: "", trigger: "blur" }],
         asentamientoCono: [{ required: true, message: "", trigger: "blur" }],
-        numInforme: [{ required: true, message: "", trigger: "blur" }],
+        // numInforme: [{ required: true, message: "", trigger: "blur" }],
         segregacion: [{ required: true, message: "", trigger: "blur" }],
         numEquipoConoAbrams: [{ required: true, message: "", trigger: "blur" }],
         numVibradorInmersion: [
