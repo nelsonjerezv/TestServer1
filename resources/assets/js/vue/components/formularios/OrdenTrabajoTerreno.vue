@@ -560,7 +560,7 @@
                 </el-form-item>
               </div>
               <!-- 3 dias -->
-              <div class="Rtable-cell width-35"><label>3 dia</label></div>
+              <div class="Rtable-cell width-35"><label>3 dias</label></div>
               <div class="Rtable-cell width-15">
                 <el-form-item
                   class="item-no-margin"
@@ -599,7 +599,7 @@
                 </el-form-item>
               </div>
               <!-- 7 dias -->
-              <div class="Rtable-cell width-35"><label>7 dia</label></div>
+              <div class="Rtable-cell width-35"><label>7 dias</label></div>
               <div class="Rtable-cell width-15">
                 <el-form-item
                   class="item-no-margin"
@@ -638,7 +638,7 @@
                 </el-form-item>
               </div>
               <!-- 14 dias -->
-              <div class="Rtable-cell width-35"><label>14 dia</label></div>
+              <div class="Rtable-cell width-35"><label>14 dias</label></div>
               <div class="Rtable-cell width-15">
                 <el-form-item
                   class="item-no-margin"
@@ -677,7 +677,7 @@
                 </el-form-item>
               </div>
               <!-- 28 dias -->
-              <div class="Rtable-cell width-35"><label>28 dia</label></div>
+              <div class="Rtable-cell width-35"><label>28 dias</label></div>
               <div class="Rtable-cell width-15">
                 <el-form-item
                   class="item-no-margin"
