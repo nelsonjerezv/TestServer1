@@ -7,6 +7,38 @@
       label-width="150px"
       :class="esClickeable"
     >
+    <!-- Cabecera / OTT -->
+
+    <table>
+    <tr>
+      <td rowspan="2"  style="width:250px;" align="left" valign="top">
+        <img src="/images/logo-lacem.png" style="width: 100px;">
+      </td>
+      <td colspan="3" align="center" style="width:500px;">
+         <b>Orden de Trabajo de Terreno</b><br>
+         <b>Extracción de Muestras de Mortero, Hormigón Fresco y Endurecido</b>
+      </td>
+      <td align="right">
+        Página<br>
+            1 de 1
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="width:250px;">
+        Revisión&nbsp;&nbsp;&nbsp;011
+      </td>
+      <td>
+        Código&nbsp;&nbsp;&nbsp;FOCC-007-002
+      </td>
+      <td colspan="2" align="right">
+        Fecha aprobación:&nbsp;&nbsp;&nbsp;13 de Febrero de 2019
+      </td>
+    </tr>  
+    </table>
+      
+    <el-divider class="el-divider-5" />
+
+
       <!-- CLIENTE OBRA / N° OTT -->
       <el-row class="margin-b-5">
         <el-col :span="14" class="padding-5">
