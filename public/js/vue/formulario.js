@@ -97478,6 +97478,38 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -98001,6 +98033,66 @@ var render = function() {
           attrs: { model: _vm.form, rules: _vm.reglas, "label-width": "150px" }
         },
         [
+          _c("table", [
+            _c("tr", [
+              _c(
+                "td",
+                {
+                  staticStyle: { width: "250px" },
+                  attrs: { rowspan: "2", align: "left", valign: "top" }
+                },
+                [
+                  _c("img", {
+                    staticStyle: { width: "100px" },
+                    attrs: { src: "/images/logo-lacem.png" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticStyle: { width: "500px" },
+                  attrs: { colspan: "3", align: "center" }
+                },
+                [
+                  _c("b", [_vm._v("Orden de Trabajo de Terreno")]),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("b", [
+                    _vm._v(
+                      "Extracción de Muestras de Mortero, Hormigón Fresco y Endurecido"
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("td", { attrs: { align: "right" } }, [
+                _vm._v("\n      Página"),
+                _c("br"),
+                _vm._v("\n          1 de 1\n    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c(
+                "td",
+                { staticStyle: { width: "250px" }, attrs: { align: "left" } },
+                [_vm._v("\n      Revisión   011\n    ")]
+              ),
+              _vm._v(" "),
+              _c("td", [_vm._v("\n      Código   FOCC-007-002\n    ")]),
+              _vm._v(" "),
+              _c("td", { attrs: { colspan: "2", align: "right" } }, [
+                _vm._v(
+                  "\n      Fecha aprobación:   13 de Febrero de 2019\n    "
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-5" }),
+          _vm._v(" "),
           _c(
             "el-row",
             { staticClass: "margin-b-5" },
@@ -103568,6 +103660,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -105126,6 +105250,63 @@ var render = function() {
           attrs: { model: _vm.form, rules: _vm.reglas, "label-width": "150px" }
         },
         [
+          _c("table", [
+            _c("tr", [
+              _c(
+                "td",
+                {
+                  staticStyle: { width: "250px" },
+                  attrs: { rowspan: "2", align: "left", valign: "top" }
+                },
+                [
+                  _c("img", {
+                    staticStyle: { width: "100px" },
+                    attrs: { src: "/images/logo-lacem.png" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticStyle: { width: "500px" },
+                  attrs: { colspan: "3", align: "center" }
+                },
+                [
+                  _c("b", [
+                    _vm._v(
+                      "Hormigón: Ensayo de Compresión de Probetas Cilíndricas"
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                { staticStyle: { width: "250px" }, attrs: { align: "right" } },
+                [
+                  _vm._v("\n      Página"),
+                  _c("br"),
+                  _vm._v("\n          1 de 1\n    ")
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", { attrs: { align: "left" } }, [
+                _vm._v("\n      Revisión   012\n    ")
+              ]),
+              _vm._v(" "),
+              _c("td", [_vm._v("\n      Código   FE-H-006\n    ")]),
+              _vm._v(" "),
+              _c("td", { attrs: { colspan: "2", align: "right" } }, [
+                _vm._v("\n      Fecha aprobación:   08-09-2016\n    ")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("el-divider", { staticClass: "el-divider-5" }),
+          _vm._v(" "),
           _c(
             "el-row",
             [
