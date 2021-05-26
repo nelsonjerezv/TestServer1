@@ -102183,6 +102183,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
+var _watch;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
 //
 //
 //
@@ -104269,7 +104278,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     calculaFactorCompresion: function calculaFactorCompresion(resistenciaUno, resistenciaDos, factorUno, factorDos, valorRecibido) {
-      return ((valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno) * (factorDos - factorUno) + factorUno).toPrecision(1);
+      var result = ((parseFloat(valorRecibido) - parseFloat(resistenciaUno)) / (parseFloat(resistenciaDos) - parseFloat(resistenciaUno)) * (parseFloat(factorDos) - parseFloat(factorUno)) + parseFloat(factorUno)).toFixed(2);
+      return result;
     },
     cargaDatosEnsayo: function cargaDatosEnsayo() {
       this.form.id = this.ensayoCargado.id;
@@ -104452,7 +104462,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       };
     }
   },
-  watch: {
+  watch: (_watch = {
     "form.volumenMetroCubicoMuestraUno": function formVolumenMetroCubicoMuestraUno(newVal, oldVal) {
       var dUno = parseFloat(this.form.masaCorregidaMuestraUno);
       var dDos = parseFloat(this.form.volumenMetroCubicoMuestraUno);
@@ -104988,26 +104998,26 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       if (!isNaN(dUno) && dUno.trim() != "") {
         dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
-          this.form.factoresConversionMuestraUno = this.factoresConversion["20"];
-          this.form.resistenciaCorregidaMuestraUno = (this.factoresConversion["20"] * dUno).toFixed(1);
+          this.form.factoresConversionMuestraUno = this.factoresConversion["20"].toString();
+          this.form.resistenciaCorregidaMuestraUno = (this.factoresConversion["20"] * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(20, 25, this.factoresConversion["20"], this.factoresConversion["25"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(25, 30, this.factoresConversion["25"], this.factoresConversion["30"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(30, 35, this.factoresConversion["30"], this.factoresConversion["35"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(35, 40, this.factoresConversion["35"], this.factoresConversion["40"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(40, 45, this.factoresConversion["40"], this.factoresConversion["45"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) && Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraUno = this.calculaFactorCompresion(45, 50, this.factoresConversion["45"], this.factoresConversion["50"], dUno);
-          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
+          this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(2);
         } else if (Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)) {
           this.form.factoresConversionMuestraUno = this.factoresConversion["50"];
           this.form.resistenciaCorregidaMuestraUno = (this.form.factoresConversionMuestraUno * dUno).toFixed(1);
@@ -105204,7 +105214,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraDos.toString().replace(",", ".");
       this.form.volumenMuestraDos = commaReplaced;
       if (!isNaN(this.form.volumenMuestraDos) && this.form.volumenMuestraDos.trim() != "") {
-        this.form.volumenMetroCubicoMuestraDos = (parseFloat(this.form.volumenMuestraDos) / 100000000).toFixed(12).toString();
+        this.form.volumenMetroCubicoMuestraDos = (parseFloat(this.form.volumenMuestraDos) / 1000000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraDos = "---";
       }
@@ -105213,7 +105223,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraTres.toString().replace(",", ".");
       this.form.volumenMuestraTres = commaReplaced;
       if (!isNaN(this.form.volumenMuestraTres) && this.form.volumenMuestraTres.trim() != "") {
-        this.form.volumenMetroCubicoMuestraTres = (parseFloat(this.form.volumenMuestraTres) / 100000000).toFixed(12).toString();
+        this.form.volumenMetroCubicoMuestraTres = (parseFloat(this.form.volumenMuestraTres) / 1000000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraTres = "---";
       }
@@ -105222,12 +105232,86 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       var commaReplaced = this.form.volumenMuestraCuatro.toString().replace(",", ".");
       this.form.volumenMuestraCuatro = commaReplaced;
       if (!isNaN(this.form.volumenMuestraCuatro) && this.form.volumenMuestraCuatro.trim() != "") {
-        this.form.volumenMetroCubicoMuestraCuatro = (parseFloat(this.form.volumenMuestraCuatro) / 100000000).toFixed(12).toString();
+        this.form.volumenMetroCubicoMuestraCuatro = (parseFloat(this.form.volumenMuestraCuatro) / 1000000000).toFixed(12).toString();
       } else {
         this.form.volumenMetroCubicoMuestraCuatro = "---";
       }
+    },
+    "form.hUnoMuestraUnoCorregida": function formHUnoMuestraUnoCorregida(newVal, oldVal) {
+      if (!isNaN(this.form.hUnoMuestraUnoCorregida) && this.form.hUnoMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraUnoCorregida) && this.form.hDosMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraUno) && this.form.areaMuestraUno.toString().trim() != "") {
+        this.form.volumenMuestraUno = parseFloat(this.form.areaMuestraUno) * ((parseFloat(this.form.hUnoMuestraUnoCorregida) + parseFloat(this.form.hDosMuestraUnoCorregida)) / 2);
+      } else {
+        this.form.volumenMuestraUno = "---";
+      }
+    },
+    "form.hDosMuestraUnoCorregida": function formHDosMuestraUnoCorregida(newVal, oldVal) {
+      if (!isNaN(this.form.hUnoMuestraUnoCorregida) && this.form.hUnoMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraUnoCorregida) && this.form.hDosMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraUno) && this.form.areaMuestraUno.toString().trim() != "") {
+        this.form.volumenMuestraUno = parseFloat(this.form.areaMuestraUno) * ((parseFloat(this.form.hUnoMuestraUnoCorregida) + parseFloat(this.form.hDosMuestraUnoCorregida)) / 2);
+      } else {
+        this.form.volumenMuestraUno = "---";
+      }
     }
-  }
+  }, _defineProperty(_watch, "form.areaMuestraUno", function formAreaMuestraUno(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraUnoCorregida) && this.form.hUnoMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraUnoCorregida) && this.form.hDosMuestraUnoCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraUno) && this.form.areaMuestraUno.toString().trim() != "") {
+      this.form.volumenMuestraUno = parseFloat(this.form.areaMuestraUno) * ((parseFloat(this.form.hUnoMuestraUnoCorregida) + parseFloat(this.form.hDosMuestraUnoCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraUno = "---";
+    }
+  }), _defineProperty(_watch, "form.hUnoMuestraDosCorregida", function formHUnoMuestraDosCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraDosCorregida) && this.form.hUnoMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraDosCorregida) && this.form.hDosMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraDos) && this.form.areaMuestraDos.toString().trim() != "") {
+      this.form.volumenMuestraDos = parseFloat(this.form.areaMuestraDos) * ((parseFloat(this.form.hUnoMuestraDosCorregida) + parseFloat(this.form.hDosMuestraDosCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraDos = "---";
+    }
+  }), _defineProperty(_watch, "form.hDosMuestraDosCorregida", function formHDosMuestraDosCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraDosCorregida) && this.form.hUnoMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraDosCorregida) && this.form.hDosMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraDos) && this.form.areaMuestraDos.toString().trim() != "") {
+      this.form.volumenMuestraDos = parseFloat(this.form.areaMuestraDos) * ((parseFloat(this.form.hUnoMuestraDosCorregida) + parseFloat(this.form.hDosMuestraDosCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraDos = "---";
+    }
+  }), _defineProperty(_watch, "form.areaMuestraDos", function formAreaMuestraDos(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraDosCorregida) && this.form.hUnoMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraDosCorregida) && this.form.hDosMuestraDosCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraDos) && this.form.areaMuestraDos.toString().trim() != "") {
+      this.form.volumenMuestraDos = parseFloat(this.form.areaMuestraDos) * ((parseFloat(this.form.hUnoMuestraDosCorregida) + parseFloat(this.form.hDosMuestraDosCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraDos = "---";
+    }
+  }), _defineProperty(_watch, "form.hUnoMuestraTresCorregida", function formHUnoMuestraTresCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraTresCorregida) && this.form.hUnoMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraTresCorregida) && this.form.hDosMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraTres) && this.form.areaMuestraTres.toString().trim() != "") {
+      this.form.volumenMuestraTres = parseFloat(this.form.areaMuestraTres) * ((parseFloat(this.form.hUnoMuestraTresCorregida) + parseFloat(this.form.hDosMuestraTresCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraTres = "---";
+    }
+  }), _defineProperty(_watch, "form.hDosMuestraTresCorregida", function formHDosMuestraTresCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraTresCorregida) && this.form.hUnoMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraTresCorregida) && this.form.hDosMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraTres) && this.form.areaMuestraTres.toString().trim() != "") {
+      this.form.volumenMuestraTres = parseFloat(this.form.areaMuestraTres) * ((parseFloat(this.form.hUnoMuestraTresCorregida) + parseFloat(this.form.hDosMuestraTresCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraTres = "---";
+    }
+  }), _defineProperty(_watch, "form.areaMuestraTres", function formAreaMuestraTres(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraTresCorregida) && this.form.hUnoMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraTresCorregida) && this.form.hDosMuestraTresCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraTres) && this.form.areaMuestraTres.toString().trim() != "") {
+      this.form.volumenMuestraTres = parseFloat(this.form.areaMuestraTres) * ((parseFloat(this.form.hUnoMuestraTresCorregida) + parseFloat(this.form.hDosMuestraTresCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraTres = "---";
+    }
+  }), _defineProperty(_watch, "form.hUnoMuestraCuatroCorregida", function formHUnoMuestraCuatroCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraCuatroCorregida) && this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraCuatroCorregida) && this.form.hDosMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraCuatro) && this.form.areaMuestraCuatro.toString().trim() != "") {
+      this.form.volumenMuestraCuatro = parseFloat(this.form.areaMuestraCuatro) * ((parseFloat(this.form.hUnoMuestraCuatroCorregida) + parseFloat(this.form.hDosMuestraCuatroCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraCuatro = "---";
+    }
+  }), _defineProperty(_watch, "form.hDosMuestraCuatroCorregida", function formHDosMuestraCuatroCorregida(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraCuatroCorregida) && this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraCuatroCorregida) && this.form.hDosMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraCuatro) && this.form.areaMuestraCuatro.toString().trim() != "") {
+      this.form.volumenMuestraCuatro = parseFloat(this.form.areaMuestraCuatro) * ((parseFloat(this.form.hUnoMuestraCuatroCorregida) + parseFloat(this.form.hDosMuestraCuatroCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraCuatro = "---";
+    }
+  }), _defineProperty(_watch, "form.areaMuestraCuatro", function formAreaMuestraCuatro(newVal, oldVal) {
+    if (!isNaN(this.form.hUnoMuestraCuatroCorregida) && this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.hDosMuestraCuatroCorregida) && this.form.hDosMuestraCuatroCorregida.toString().trim() != "" && !isNaN(this.form.areaMuestraCuatro) && this.form.areaMuestraCuatro.toString().trim() != "") {
+      this.form.volumenMuestraCuatro = parseFloat(this.form.areaMuestraCuatro) * ((parseFloat(this.form.hUnoMuestraCuatroCorregida) + parseFloat(this.form.hDosMuestraCuatroCorregida)) / 2);
+    } else {
+      this.form.volumenMuestraCuatro = "---";
+    }
+  }), _watch)
 });
 
 /***/ }),
@@ -105285,22 +105369,22 @@ var render = function() {
                 "td",
                 { staticStyle: { width: "250px" }, attrs: { align: "right" } },
                 [
-                  _vm._v("\n      Página"),
+                  _vm._v("\n          Página"),
                   _c("br"),
-                  _vm._v("\n          1 de 1\n    ")
+                  _vm._v("\n          1 de 1\n        ")
                 ]
               )
             ]),
             _vm._v(" "),
             _c("tr", [
               _c("td", { attrs: { align: "left" } }, [
-                _vm._v("\n      Revisión   012\n    ")
+                _vm._v("Revisión   012")
               ]),
               _vm._v(" "),
-              _c("td", [_vm._v("\n      Código   FE-H-006\n    ")]),
+              _c("td", [_vm._v("Código   FE-H-006")]),
               _vm._v(" "),
               _c("td", { attrs: { colspan: "2", align: "right" } }, [
-                _vm._v("\n      Fecha aprobación:   08-09-2016\n    ")
+                _vm._v("\n          Fecha aprobación:   08-09-2016\n        ")
               ])
             ])
           ]),
@@ -108401,6 +108485,7 @@ var render = function() {
                       { attrs: { prop: "volumenMuestraUno" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMuestraUno,
                             callback: function($$v) {
@@ -108425,6 +108510,7 @@ var render = function() {
                       { attrs: { prop: "volumenMuestraDos" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMuestraDos,
                             callback: function($$v) {
@@ -108449,6 +108535,7 @@ var render = function() {
                       { attrs: { prop: "volumenMuestraTres" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMuestraTres,
                             callback: function($$v) {
@@ -108473,6 +108560,7 @@ var render = function() {
                       { attrs: { prop: "volumenMuestraCuatro" } },
                       [
                         _c("el-input", {
+                          staticClass: "no-click",
                           model: {
                             value: _vm.form.volumenMuestraCuatro,
                             callback: function($$v) {
