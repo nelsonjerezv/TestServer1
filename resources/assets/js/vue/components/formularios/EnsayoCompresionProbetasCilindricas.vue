@@ -7,37 +7,30 @@
       label-width="150px"
       :class="esClickeable"
     >
-       
-    <!-- Cabecera / EPC -->
-    <table>
-    <tr>
-      <td rowspan="2" style="width:250px;" align="left" valign="top">
-        <img src="/images/logo-lacem.png" style="width: 100px;">
-      </td>
-      <td colspan="3" align="center" style="width:500px;">
-         <b>Hormigón: Ensayo de Compresión de Probetas Cilíndricas</b>
-      </td>
-      <td align="right" style="width:250px;">
-        Página<br>
+      <!-- Cabecera / EPC -->
+      <table>
+        <tr>
+          <td rowspan="2" style="width: 250px" align="left" valign="top">
+            <img src="/images/logo-lacem.png" style="width: 100px" />
+          </td>
+          <td colspan="3" align="center" style="width: 500px">
+            <b>Hormigón: Ensayo de Compresión de Probetas Cilíndricas</b>
+          </td>
+          <td align="right" style="width: 250px">
+            Página<br />
             1 de 1
-      </td>
-    </tr>
-    <tr>
-      <td align="left">
-        Revisión&nbsp;&nbsp;&nbsp;012
-      </td>
-      <td>
-        Código&nbsp;&nbsp;&nbsp;FE-H-006
-      </td>
-      <td colspan="2" align="right">
-        Fecha aprobación:&nbsp;&nbsp;&nbsp;08-09-2016
-      </td>
-    </tr>  
-    </table>
-      
-    <el-divider class="el-divider-5" />
+          </td>
+        </tr>
+        <tr>
+          <td align="left">Revisión&nbsp;&nbsp;&nbsp;012</td>
+          <td>Código&nbsp;&nbsp;&nbsp;FE-H-006</td>
+          <td colspan="2" align="right">
+            Fecha aprobación:&nbsp;&nbsp;&nbsp;08-09-2016
+          </td>
+        </tr>
+      </table>
 
-
+      <el-divider class="el-divider-5" />
 
       <el-row>
         <el-col :span="8">
@@ -934,22 +927,34 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMuestraUno">
-              <el-input v-model="form.volumenMuestraUno"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMuestraUno"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMuestraDos">
-              <el-input v-model="form.volumenMuestraDos"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMuestraDos"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMuestraTres">
-              <el-input v-model="form.volumenMuestraTres"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMuestraTres"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="volumenMuestraCuatro">
-              <el-input v-model="form.volumenMuestraCuatro"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.volumenMuestraCuatro"
+              ></el-input>
             </el-form-item>
           </div>
         </el-col>
@@ -2365,11 +2370,13 @@ export default {
       factorDos,
       valorRecibido
     ) {
-      return (
-        ((valorRecibido - resistenciaUno) / (resistenciaDos - resistenciaUno)) *
-          (factorDos - factorUno) +
-        factorUno
-      ).toPrecision(1);
+      let result = (
+        ((parseFloat(valorRecibido) - parseFloat(resistenciaUno)) /
+          (parseFloat(resistenciaDos) - parseFloat(resistenciaUno))) *
+          (parseFloat(factorDos) - parseFloat(factorUno)) +
+        parseFloat(factorUno)
+      ).toFixed(2);
+      return result;
     },
     cargaDatosEnsayo() {
       this.form.id = this.ensayoCargado.id;
@@ -3455,10 +3462,10 @@ export default {
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
           this.form.factoresConversionMuestraUno = this.factoresConversion[
             "20"
-          ];
+          ].toString();
           this.form.resistenciaCorregidaMuestraUno = (
             this.factoresConversion["20"] * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
@@ -3472,7 +3479,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
@@ -3486,7 +3493,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
@@ -3500,7 +3507,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
@@ -3514,7 +3521,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
@@ -3528,7 +3535,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
@@ -3542,7 +3549,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
@@ -3994,7 +4001,7 @@ export default {
         this.form.volumenMuestraDos.trim() != ""
       ) {
         this.form.volumenMetroCubicoMuestraDos = (
-          parseFloat(this.form.volumenMuestraDos) / 100000000
+          parseFloat(this.form.volumenMuestraDos) / 1000000000
         )
           .toFixed(12)
           .toString();
@@ -4012,7 +4019,7 @@ export default {
         this.form.volumenMuestraTres.trim() != ""
       ) {
         this.form.volumenMetroCubicoMuestraTres = (
-          parseFloat(this.form.volumenMuestraTres) / 100000000
+          parseFloat(this.form.volumenMuestraTres) / 1000000000
         )
           .toFixed(12)
           .toString();
@@ -4030,12 +4037,228 @@ export default {
         this.form.volumenMuestraCuatro.trim() != ""
       ) {
         this.form.volumenMetroCubicoMuestraCuatro = (
-          parseFloat(this.form.volumenMuestraCuatro) / 100000000
+          parseFloat(this.form.volumenMuestraCuatro) / 1000000000
         )
           .toFixed(12)
           .toString();
       } else {
         this.form.volumenMetroCubicoMuestraCuatro = "---";
+      }
+    },
+    "form.hUnoMuestraUnoCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraUnoCorregida) &&
+        this.form.hUnoMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraUnoCorregida) &&
+        this.form.hDosMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraUno) &&
+        this.form.areaMuestraUno.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraUno =
+          parseFloat(this.form.areaMuestraUno) *
+          ((parseFloat(this.form.hUnoMuestraUnoCorregida) +
+            parseFloat(this.form.hDosMuestraUnoCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraUno = "---";
+      }
+    },
+    "form.hDosMuestraUnoCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraUnoCorregida) &&
+        this.form.hUnoMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraUnoCorregida) &&
+        this.form.hDosMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraUno) &&
+        this.form.areaMuestraUno.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraUno =
+          parseFloat(this.form.areaMuestraUno) *
+          ((parseFloat(this.form.hUnoMuestraUnoCorregida) +
+            parseFloat(this.form.hDosMuestraUnoCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraUno = "---";
+      }
+    },
+    "form.areaMuestraUno": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraUnoCorregida) &&
+        this.form.hUnoMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraUnoCorregida) &&
+        this.form.hDosMuestraUnoCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraUno) &&
+        this.form.areaMuestraUno.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraUno =
+          parseFloat(this.form.areaMuestraUno) *
+          ((parseFloat(this.form.hUnoMuestraUnoCorregida) +
+            parseFloat(this.form.hDosMuestraUnoCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraUno = "---";
+      }
+    },
+    "form.hUnoMuestraDosCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraDosCorregida) &&
+        this.form.hUnoMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraDosCorregida) &&
+        this.form.hDosMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraDos) &&
+        this.form.areaMuestraDos.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraDos =
+          parseFloat(this.form.areaMuestraDos) *
+          ((parseFloat(this.form.hUnoMuestraDosCorregida) +
+            parseFloat(this.form.hDosMuestraDosCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraDos = "---";
+      }
+    },
+    "form.hDosMuestraDosCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraDosCorregida) &&
+        this.form.hUnoMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraDosCorregida) &&
+        this.form.hDosMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraDos) &&
+        this.form.areaMuestraDos.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraDos =
+          parseFloat(this.form.areaMuestraDos) *
+          ((parseFloat(this.form.hUnoMuestraDosCorregida) +
+            parseFloat(this.form.hDosMuestraDosCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraDos = "---";
+      }
+    },
+    "form.areaMuestraDos": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraDosCorregida) &&
+        this.form.hUnoMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraDosCorregida) &&
+        this.form.hDosMuestraDosCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraDos) &&
+        this.form.areaMuestraDos.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraDos =
+          parseFloat(this.form.areaMuestraDos) *
+          ((parseFloat(this.form.hUnoMuestraDosCorregida) +
+            parseFloat(this.form.hDosMuestraDosCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraDos = "---";
+      }
+    },
+    "form.hUnoMuestraTresCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraTresCorregida) &&
+        this.form.hUnoMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraTresCorregida) &&
+        this.form.hDosMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraTres) &&
+        this.form.areaMuestraTres.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraTres =
+          parseFloat(this.form.areaMuestraTres) *
+          ((parseFloat(this.form.hUnoMuestraTresCorregida) +
+            parseFloat(this.form.hDosMuestraTresCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraTres = "---";
+      }
+    },
+    "form.hDosMuestraTresCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraTresCorregida) &&
+        this.form.hUnoMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraTresCorregida) &&
+        this.form.hDosMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraTres) &&
+        this.form.areaMuestraTres.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraTres =
+          parseFloat(this.form.areaMuestraTres) *
+          ((parseFloat(this.form.hUnoMuestraTresCorregida) +
+            parseFloat(this.form.hDosMuestraTresCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraTres = "---";
+      }
+    },
+    "form.areaMuestraTres": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraTresCorregida) &&
+        this.form.hUnoMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraTresCorregida) &&
+        this.form.hDosMuestraTresCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraTres) &&
+        this.form.areaMuestraTres.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraTres =
+          parseFloat(this.form.areaMuestraTres) *
+          ((parseFloat(this.form.hUnoMuestraTresCorregida) +
+            parseFloat(this.form.hDosMuestraTresCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraTres = "---";
+      }
+    },
+    "form.hUnoMuestraCuatroCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraCuatroCorregida) &&
+        this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraCuatroCorregida) &&
+        this.form.hDosMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraCuatro) &&
+        this.form.areaMuestraCuatro.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraCuatro =
+          parseFloat(this.form.areaMuestraCuatro) *
+          ((parseFloat(this.form.hUnoMuestraCuatroCorregida) +
+            parseFloat(this.form.hDosMuestraCuatroCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraCuatro = "---";
+      }
+    },
+    "form.hDosMuestraCuatroCorregida": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraCuatroCorregida) &&
+        this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraCuatroCorregida) &&
+        this.form.hDosMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraCuatro) &&
+        this.form.areaMuestraCuatro.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraCuatro =
+          parseFloat(this.form.areaMuestraCuatro) *
+          ((parseFloat(this.form.hUnoMuestraCuatroCorregida) +
+            parseFloat(this.form.hDosMuestraCuatroCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraCuatro = "---";
+      }
+    },
+    "form.areaMuestraCuatro": function (newVal, oldVal) {
+      if (
+        !isNaN(this.form.hUnoMuestraCuatroCorregida) &&
+        this.form.hUnoMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.hDosMuestraCuatroCorregida) &&
+        this.form.hDosMuestraCuatroCorregida.toString().trim() != "" &&
+        !isNaN(this.form.areaMuestraCuatro) &&
+        this.form.areaMuestraCuatro.toString().trim() != ""
+      ) {
+        this.form.volumenMuestraCuatro =
+          parseFloat(this.form.areaMuestraCuatro) *
+          ((parseFloat(this.form.hUnoMuestraCuatroCorregida) +
+            parseFloat(this.form.hDosMuestraCuatroCorregida)) /
+            2);
+      } else {
+        this.form.volumenMuestraCuatro = "---";
       }
     },
   },
