@@ -3558,7 +3558,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         }
       } else {
         this.form.factoresConversionMuestraUno = "---";
@@ -3579,7 +3579,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraDos = (
             this.factoresConversion["20"] * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
@@ -3593,7 +3593,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
@@ -3607,7 +3607,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
@@ -3621,7 +3621,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
@@ -3635,7 +3635,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
@@ -3649,7 +3649,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
@@ -3663,7 +3663,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
@@ -3672,7 +3672,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         }
       } else {
         this.form.factoresConversionMuestraDos = "---";
@@ -3693,7 +3693,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraTres = (
             this.factoresConversion["20"] * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
@@ -3707,7 +3707,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
@@ -3721,7 +3721,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
@@ -3735,7 +3735,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
@@ -3749,7 +3749,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
@@ -3763,7 +3763,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
@@ -3777,7 +3777,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
@@ -3786,7 +3786,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         }
       } else {
         this.form.factoresConversionMuestraTres = "---";
@@ -3807,7 +3807,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.factoresConversion["20"] * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
@@ -3821,7 +3821,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
@@ -3835,7 +3835,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
@@ -3849,7 +3849,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
@@ -3863,7 +3863,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
@@ -3877,7 +3877,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
@@ -3891,7 +3891,7 @@ export default {
           );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
@@ -3900,7 +3900,7 @@ export default {
           ];
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
-          ).toFixed(1);
+          ).toFixed(2);
         }
       } else {
         this.form.factoresConversionMuestraCuatro = "---";
