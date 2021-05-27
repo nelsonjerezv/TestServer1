@@ -1297,22 +1297,34 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadEnsayoMuestraUno">
-              <el-input v-model="form.velocidadEnsayoMuestraUno"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.velocidadEnsayoMuestraUno"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadEnsayoMuestraDos">
-              <el-input v-model="form.velocidadEnsayoMuestraDos"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.velocidadEnsayoMuestraDos"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadEnsayoMuestraTres">
-              <el-input v-model="form.velocidadEnsayoMuestraTres"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.velocidadEnsayoMuestraTres"
+              ></el-input>
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadEnsayoMuestraCuatro">
-              <el-input v-model="form.velocidadEnsayoMuestraCuatro"></el-input>
+              <el-input
+                class="no-click"
+                v-model="form.velocidadEnsayoMuestraCuatro"
+              ></el-input>
             </el-form-item>
           </div>
         </el-col>
@@ -4259,6 +4271,190 @@ export default {
             2);
       } else {
         this.form.volumenMuestraCuatro = "---";
+      }
+    },
+    "form.tiempoCargaMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraUno = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraUno = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraUno) &&
+        this.form.tiempoCargaMuestraUno.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraUno) &&
+        this.form.resistenciaCorregidaMuestraUno.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraUno = (
+          parseFloat(this.form.resistenciaCorregidaMuestraUno) /
+          parseFloat(this.form.tiempoCargaMuestraUno)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraUno = "---";
+      }
+    },
+    "form.resistenciaCorregidaMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraUno = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraUno = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraUno) &&
+        this.form.tiempoCargaMuestraUno.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraUno) &&
+        this.form.resistenciaCorregidaMuestraUno.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraUno = (
+          parseFloat(this.form.resistenciaCorregidaMuestraUno) /
+          parseFloat(this.form.tiempoCargaMuestraUno)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraUno = "---";
+      }
+    },
+    "form.tiempoCargaMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraDos = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraDos = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraDos) &&
+        this.form.tiempoCargaMuestraDos.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraDos) &&
+        this.form.resistenciaCorregidaMuestraDos.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraDos = (
+          parseFloat(this.form.resistenciaCorregidaMuestraDos) /
+          parseFloat(this.form.tiempoCargaMuestraDos)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraDos = "---";
+      }
+    },
+    "form.resistenciaCorregidaMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraDos = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraDos = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraDos) &&
+        this.form.tiempoCargaMuestraDos.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraDos) &&
+        this.form.resistenciaCorregidaMuestraDos.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraDos = (
+          parseFloat(this.form.resistenciaCorregidaMuestraDos) /
+          parseFloat(this.form.tiempoCargaMuestraDos)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraDos = "---";
+      }
+    },
+    "form.tiempoCargaMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraTres = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraTres = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraTres) &&
+        this.form.tiempoCargaMuestraTres.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraTres) &&
+        this.form.resistenciaCorregidaMuestraTres.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraTres = (
+          parseFloat(this.form.resistenciaCorregidaMuestraTres) /
+          parseFloat(this.form.tiempoCargaMuestraTres)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraTres = "---";
+      }
+    },
+    "form.resistenciaCorregidaMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraTres = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraTres = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraTres) &&
+        this.form.tiempoCargaMuestraTres.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraTres) &&
+        this.form.resistenciaCorregidaMuestraTres.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraTres = (
+          parseFloat(this.form.resistenciaCorregidaMuestraTres) /
+          parseFloat(this.form.tiempoCargaMuestraTres)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraTres = "---";
+      }
+    },
+    "form.tiempoCargaMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraCuatro = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraCuatro = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraCuatro) &&
+        this.form.tiempoCargaMuestraCuatro.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraCuatro) &&
+        this.form.resistenciaCorregidaMuestraCuatro.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraCuatro = (
+          parseFloat(this.form.resistenciaCorregidaMuestraCuatro) /
+          parseFloat(this.form.tiempoCargaMuestraCuatro)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraCuatro = "---";
+      }
+    },
+    "form.resistenciaCorregidaMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.tiempoCargaMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.tiempoCargaMuestraCuatro = commaReplaced;
+      commaReplaced = this.form.resistenciaCorregidaMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.resistenciaCorregidaMuestraCuatro = commaReplaced;
+      if (
+        !isNaN(this.form.tiempoCargaMuestraCuatro) &&
+        this.form.tiempoCargaMuestraCuatro.toString().trim() != "" &&
+        !isNaN(this.form.resistenciaCorregidaMuestraCuatro) &&
+        this.form.resistenciaCorregidaMuestraCuatro.toString().trim() != ""
+      ) {
+        this.form.velocidadEnsayoMuestraCuatro = (
+          parseFloat(this.form.resistenciaCorregidaMuestraCuatro) /
+          parseFloat(this.form.tiempoCargaMuestraCuatro)
+        ).toFixed(1);
+      } else {
+        this.form.velocidadEnsayoMuestraCuatro = "---";
       }
     },
   },
