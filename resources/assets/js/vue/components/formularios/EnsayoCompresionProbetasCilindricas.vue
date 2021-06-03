@@ -4291,7 +4291,7 @@ export default {
         this.form.velocidadEnsayoMuestraUno = (
           parseFloat(this.form.resistenciaCorregidaMuestraUno) /
           parseFloat(this.form.tiempoCargaMuestraUno)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraUno = "---";
       }
@@ -4314,7 +4314,7 @@ export default {
         this.form.velocidadEnsayoMuestraUno = (
           parseFloat(this.form.resistenciaCorregidaMuestraUno) /
           parseFloat(this.form.tiempoCargaMuestraUno)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraUno = "---";
       }
@@ -4337,7 +4337,7 @@ export default {
         this.form.velocidadEnsayoMuestraDos = (
           parseFloat(this.form.resistenciaCorregidaMuestraDos) /
           parseFloat(this.form.tiempoCargaMuestraDos)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraDos = "---";
       }
@@ -4360,7 +4360,7 @@ export default {
         this.form.velocidadEnsayoMuestraDos = (
           parseFloat(this.form.resistenciaCorregidaMuestraDos) /
           parseFloat(this.form.tiempoCargaMuestraDos)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraDos = "---";
       }
@@ -4383,7 +4383,7 @@ export default {
         this.form.velocidadEnsayoMuestraTres = (
           parseFloat(this.form.resistenciaCorregidaMuestraTres) /
           parseFloat(this.form.tiempoCargaMuestraTres)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraTres = "---";
       }
@@ -4406,7 +4406,7 @@ export default {
         this.form.velocidadEnsayoMuestraTres = (
           parseFloat(this.form.resistenciaCorregidaMuestraTres) /
           parseFloat(this.form.tiempoCargaMuestraTres)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraTres = "---";
       }
@@ -4429,7 +4429,7 @@ export default {
         this.form.velocidadEnsayoMuestraCuatro = (
           parseFloat(this.form.resistenciaCorregidaMuestraCuatro) /
           parseFloat(this.form.tiempoCargaMuestraCuatro)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraCuatro = "---";
       }
@@ -4452,7 +4452,7 @@ export default {
         this.form.velocidadEnsayoMuestraCuatro = (
           parseFloat(this.form.resistenciaCorregidaMuestraCuatro) /
           parseFloat(this.form.tiempoCargaMuestraCuatro)
-        ).toFixed(1);
+        ).toFixed(2);
       } else {
         this.form.velocidadEnsayoMuestraCuatro = "---";
       }
