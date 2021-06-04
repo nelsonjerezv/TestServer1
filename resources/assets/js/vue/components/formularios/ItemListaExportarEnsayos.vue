@@ -171,9 +171,9 @@ export default {
       fechaMuestreoManual: "",
       paginaActual: "1",
       totalPaginas: "1",
-      firmador: "CRISTIAN ALARCON BRAVO",
-      profesionFirmador: "Ingeniero Civil U.C.",
-      cargoFirmador: "Jefe Área Hormigones",
+      firmador: "Quien firma",
+      profesionFirmador: "Profesión de quien firma",
+      cargoFirmador: "Cargo de quien firma",
       dialogVisible: false,
     };
   },
