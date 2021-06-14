@@ -3290,7 +3290,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
         dDos = parseFloat(this.form.areaMuestraUno);
-        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestrUnos = "---";
       }
@@ -3314,7 +3314,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraUno);
         dDos = parseFloat(this.form.areaMuestraUno);
-        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraUno = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestrUnos = "---";
       }
@@ -3338,7 +3338,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
         dDos = parseFloat(this.form.areaMuestraDos);
-        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraDos = "---";
       }
@@ -3362,7 +3362,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraDos);
         dDos = parseFloat(this.form.areaMuestraDos);
-        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraDos = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraDos = "---";
       }
@@ -3386,7 +3386,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
         dDos = parseFloat(this.form.areaMuestraTres);
-        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraTres = "---";
       }
@@ -3410,7 +3410,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraTres);
         dDos = parseFloat(this.form.areaMuestraTres);
-        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraTres = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraTres = "---";
       }
@@ -3434,7 +3434,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
         dDos = parseFloat(this.form.areaMuestraCuatro);
-        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraCuatro = "---";
       }
@@ -3458,7 +3458,7 @@ export default {
       ) {
         dUno = parseFloat(this.form.cargaEnsayoMilMuestraCuatro);
         dDos = parseFloat(this.form.areaMuestraCuatro);
-        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(1);
+        this.form.resistenciaCompresionMuestraCuatro = (dUno / dDos).toFixed(2);
       } else {
         this.form.resistenciaCompresionMuestraCuatro = "---";
       }
