@@ -1417,7 +1417,18 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadMuestraUno">
-              <el-checkbox v-model="form.velocidadMuestraUno"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraUno', 'SI')"
+                v-model="form.velocidadMuestraUno"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraUno', 'NO')"
+                v-model="form.velocidadMuestraUno"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
@@ -2622,6 +2633,13 @@ export default {
         this.ensayoCargado.velocidad_muestra_cuatro == 1
           ? true
           : this.ensayoCargado.velocidad_muestra_cuatro;
+    },
+    clickitem(item, value) {
+      if (item == "velocidadMuestraUno") {
+        this.form.velocidadMuestraUno == value
+          ? (this.form.velocidadMuestraUno = "")
+          : (this.form.velocidadMuestraUno = value);
+      }
     },
   },
   computed: {
