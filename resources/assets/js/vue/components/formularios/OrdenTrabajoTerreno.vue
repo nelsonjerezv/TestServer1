@@ -1073,6 +1073,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraUno">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraUno', 'grava')
+                  "
                   v-model="form.aridosHormigonMuestraUno"
                   :disabled="!form.seccionAridosHabilitada"
                   label="grava"
@@ -1082,6 +1085,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraDos">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraDos', 'grava')
+                  "
                   v-model="form.aridosHormigonMuestraDos"
                   :disabled="!form.seccionAridosHabilitada"
                   label="grava"
@@ -1091,6 +1097,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraTres">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraTres', 'grava')
+                  "
                   v-model="form.aridosHormigonMuestraTres"
                   :disabled="!form.seccionAridosHabilitada"
                   label="grava"
@@ -1100,6 +1109,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraCuatro">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraCuatro', 'grava')
+                  "
                   v-model="form.aridosHormigonMuestraCuatro"
                   :disabled="!form.seccionAridosHabilitada"
                   label="grava"
@@ -1111,6 +1123,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraUno">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraUno', 'gravilla')
+                  "
                   v-model="form.aridosHormigonMuestraUno"
                   :disabled="!form.seccionAridosHabilitada"
                   label="gravilla"
@@ -1120,6 +1135,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraDos">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraDos', 'gravilla')
+                  "
                   v-model="form.aridosHormigonMuestraDos"
                   :disabled="!form.seccionAridosHabilitada"
                   label="gravilla"
@@ -1129,6 +1147,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraTres">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraTres', 'gravilla')
+                  "
                   v-model="form.aridosHormigonMuestraTres"
                   :disabled="!form.seccionAridosHabilitada"
                   label="gravilla"
@@ -1138,6 +1159,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraCuatro">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraCuatro', 'gravilla')
+                  "
                   v-model="form.aridosHormigonMuestraCuatro"
                   :disabled="!form.seccionAridosHabilitada"
                   label="gravilla"
@@ -1149,6 +1173,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraUno">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraUno', 'arena')
+                  "
                   v-model="form.aridosHormigonMuestraUno"
                   :disabled="!form.seccionAridosHabilitada"
                   label="arena"
@@ -1158,6 +1185,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraDos">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraDos', 'arena')
+                  "
                   v-model="form.aridosHormigonMuestraDos"
                   :disabled="!form.seccionAridosHabilitada"
                   label="arena"
@@ -1167,6 +1197,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraTres">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraTres', 'arena')
+                  "
                   v-model="form.aridosHormigonMuestraTres"
                   :disabled="!form.seccionAridosHabilitada"
                   label="arena"
@@ -1176,6 +1209,9 @@
             <div class="tabla-aridos-cell" style="width: 16.25%">
               <el-form-item prop="aridosHormigonMuestraCuatro">
                 <el-radio
+                  @click.native.prevent="
+                    clickitem('aridosHormigonMuestraCuatro', 'arena')
+                  "
                   v-model="form.aridosHormigonMuestraCuatro"
                   :disabled="!form.seccionAridosHabilitada"
                   label="arena"
@@ -2249,6 +2285,26 @@ export default {
         this.form.alteracionMuestra == value
           ? (this.form.alteracionMuestra = "")
           : (this.form.alteracionMuestra = value);
+      }
+      if (item == "aridosHormigonMuestraUno") {
+        this.form.aridosHormigonMuestraUno == value
+          ? (this.form.aridosHormigonMuestraUno = "")
+          : (this.form.aridosHormigonMuestraUno = value);
+      }
+      if (item == "aridosHormigonMuestraDos") {
+        this.form.aridosHormigonMuestraDos == value
+          ? (this.form.aridosHormigonMuestraDos = "")
+          : (this.form.aridosHormigonMuestraDos = value);
+      }
+      if (item == "aridosHormigonMuestraTres") {
+        this.form.aridosHormigonMuestraTres == value
+          ? (this.form.aridosHormigonMuestraTres = "")
+          : (this.form.aridosHormigonMuestraTres = value);
+      }
+      if (item == "aridosHormigonMuestraCuatro") {
+        this.form.aridosHormigonMuestraCuatro == value
+          ? (this.form.aridosHormigonMuestraCuatro = "")
+          : (this.form.aridosHormigonMuestraCuatro = value);
       }
     },
   },
