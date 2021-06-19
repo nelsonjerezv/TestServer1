@@ -7,37 +7,37 @@
       label-width="150px"
       :class="esClickeable"
     >
-    <!-- Cabecera / OTT -->
+      <!-- Cabecera / OTT -->
 
-    <table>
-    <tr>
-      <td rowspan="2"  style="width:250px;" align="left" valign="top">
-        <img src="/images/logo-lacem.png" style="width: 100px;">
-      </td>
-      <td colspan="3" align="center" style="width:500px;">
-         <b>Orden de Trabajo de Terreno</b><br>
-         <b>Extracción de Muestras de Mortero, Hormigón Fresco y Endurecido</b>
-      </td>
-      <td align="right">
-        Página<br>
+      <table>
+        <tr>
+          <td rowspan="2" style="width: 250px" align="left" valign="top">
+            <img src="/images/logo-lacem.png" style="width: 100px" />
+          </td>
+          <td colspan="3" align="center" style="width: 500px">
+            <b>Orden de Trabajo de Terreno</b><br />
+            <b
+              >Extracción de Muestras de Mortero, Hormigón Fresco y
+              Endurecido</b
+            >
+          </td>
+          <td align="right">
+            Página<br />
             1 de 1
-      </td>
-    </tr>
-    <tr>
-      <td align="left" style="width:250px;">
-        Revisión&nbsp;&nbsp;&nbsp;011
-      </td>
-      <td>
-        Código&nbsp;&nbsp;&nbsp;FOCC-007-002
-      </td>
-      <td colspan="2" align="right">
-        Fecha aprobación:&nbsp;&nbsp;&nbsp;13 de Febrero de 2019
-      </td>
-    </tr>  
-    </table>
-      
-    <el-divider class="el-divider-5" />
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="width: 250px">
+            Revisión&nbsp;&nbsp;&nbsp;011
+          </td>
+          <td>Código&nbsp;&nbsp;&nbsp;FOCC-007-002</td>
+          <td colspan="2" align="right">
+            Fecha aprobación:&nbsp;&nbsp;&nbsp;13 de Febrero de 2019
+          </td>
+        </tr>
+      </table>
 
+      <el-divider class="el-divider-5" />
 
       <!-- CLIENTE OBRA / N° OTT -->
       <el-row class="margin-b-5">
@@ -137,22 +137,40 @@
       <el-row class="margin-b-5">
         <el-col :span="24" class="padding-5">
           <el-form-item label="Muestreo de:" prop="muestreoDe">
-            <el-radio v-model="form.muestreoDe" label="hormigon"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'hormigon')"
+              v-model="form.muestreoDe"
+              label="hormigon"
               >Hormig&oacute;n</el-radio
             >
-            <el-radio v-model="form.muestreoDe" label="mortero"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'mortero')"
+              v-model="form.muestreoDe"
+              label="mortero"
               >Mortero</el-radio
             >
-            <el-radio v-model="form.muestreoDe" label="seccionTestigos"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'seccionTestigos')"
+              v-model="form.muestreoDe"
+              label="seccionTestigos"
               >Secci&oacute;n Testigos</el-radio
             >
-            <el-radio v-model="form.muestreoDe" label="seccionAridos"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'seccionAridos')"
+              v-model="form.muestreoDe"
+              label="seccionAridos"
               >Secci&oacute;n &Aacute;ridos</el-radio
             >
-            <el-radio v-model="form.muestreoDe" label="seccionOtros"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'seccionOtros')"
+              v-model="form.muestreoDe"
+              label="seccionOtros"
               >Secci&oacute;n Otros</el-radio
             >
-            <el-radio v-model="form.muestreoDe" label="seccionRetiro"
+            <el-radio
+              @click.native.prevent="clickitem('muestreoDe', 'seccionRetiro')"
+              v-model="form.muestreoDe"
+              label="seccionRetiro"
               >Secci&oacute;n Retiro de Muestras</el-radio
             >
           </el-form-item>
@@ -236,13 +254,22 @@
         <el-col :span="unaDosColumnas" class="padding-5">
           <el-form-item label="Extracción" prop="extraccion">
             <div class="dis-flex-dir-col">
-              <el-radio v-model="form.extraccion" label="camion"
+              <el-radio
+                @click.native.prevent="clickitem('extraccion', 'camion')"
+                v-model="form.extraccion"
+                label="camion"
                 >Cami&oacute;n</el-radio
               >
-              <el-radio v-model="form.extraccion" label="betonera"
+              <el-radio
+                @click.native.prevent="clickitem('extraccion', 'betonera')"
+                v-model="form.extraccion"
+                label="betonera"
                 >Betonera</el-radio
               >
-              <el-radio v-model="form.extraccion" label="acopio"
+              <el-radio
+                @click.native.prevent="clickitem('extraccion', 'acopio')"
+                v-model="form.extraccion"
+                label="acopio"
                 >Acopio</el-radio
               >
             </div>
@@ -250,10 +277,16 @@
           <el-divider class="el-divider-5" />
           <el-form-item label="Compactación" prop="">
             <div class="dis-flex-dir-col">
-              <el-radio v-model="form.compactacion" label="apisonado"
+              <el-radio
+                @click.native.prevent="clickitem('compactacion', 'apisonado')"
+                v-model="form.compactacion"
+                label="apisonado"
                 >Apisonado</el-radio
               >
-              <el-radio v-model="form.compactacion" label="vibrado"
+              <el-radio
+                @click.native.prevent="clickitem('compactacion', 'vibrado')"
+                v-model="form.compactacion"
+                label="vibrado"
                 >Vibrado</el-radio
               >
             </div>
@@ -372,10 +405,16 @@
           <el-divider class="el-divider-5" />
           <el-form-item label="Muestreado por" prop="muestreadoPor">
             <div class="dis-flex-dir-col">
-              <el-radio v-model="form.muestreadoPor" label="lacem"
+              <el-radio
+                @click.native.prevent="clickitem('muestreadoPor', 'lacem')"
+                v-model="form.muestreadoPor"
+                label="lacem"
                 >Lacem</el-radio
               >
-              <el-radio v-model="form.muestreadoPor" label="mandante"
+              <el-radio
+                @click.native.prevent="clickitem('muestreadoPor', 'mandante')"
+                v-model="form.muestreadoPor"
+                label="mandante"
                 >Mandante</el-radio
               >
             </div>
@@ -383,10 +422,16 @@
           <el-divider class="el-divider-5" />
           <el-form-item label="Ensayado por" prop="ensayadoPor">
             <div class="dis-flex-dir-col">
-              <el-radio v-model="form.ensayadoPor" label="lacem"
+              <el-radio
+                @click.native.prevent="clickitem('ensayadoPor', 'lacem')"
+                v-model="form.ensayadoPor"
+                label="lacem"
                 >Lacem</el-radio
               >
-              <el-radio v-model="form.ensayadoPor" label="mandante"
+              <el-radio
+                @click.native.prevent="clickitem('ensayadoPor', 'mandante')"
+                v-model="form.ensayadoPor"
+                label="mandante"
                 >Mandante</el-radio
               >
             </div>
@@ -394,13 +439,22 @@
           <el-divider class="el-divider-5" />
           <el-form-item label="Tipo de muestra" prop="tipoMuestra">
             <div class="dis-flex-dir-col">
-              <el-radio v-model="form.tipoMuestra" label="simple"
+              <el-radio
+                @click.native.prevent="clickitem('tipoMuestra', 'simple')"
+                v-model="form.tipoMuestra"
+                label="simple"
                 >Simple</el-radio
               >
-              <el-radio v-model="form.tipoMuestra" label="compuesta"
+              <el-radio
+                @click.native.prevent="clickitem('tipoMuestra', 'compuesta')"
+                v-model="form.tipoMuestra"
+                label="compuesta"
                 >Compuesta</el-radio
               >
-              <el-radio v-model="form.tipoMuestra" label="especial"
+              <el-radio
+                @click.native.prevent="clickitem('tipoMuestra', 'especial')"
+                v-model="form.tipoMuestra"
+                label="especial"
                 >Especial</el-radio
               >
             </div>
@@ -420,9 +474,12 @@
             <el-input v-model="form.asentamientoCono"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
-          <!-- <el-form-item label="N° Informe" prop="numInforme">
-            <el-input disabled v-model="form.numInforme"></el-input>
-          </el-form-item> -->
+          <el-form-item label="N° Informe" prop="numInforme">
+            <!-- <el-input class="no-click" v-model="form.numInforme"></el-input> -->
+            <strong
+              ><label>{{ form.numInforme }}</label></strong
+            >
+          </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item label="Segregación" prop="segregacion">
             <el-input v-model="form.segregacion"></el-input>
@@ -804,10 +861,18 @@
           >
           <el-col :span="24" class="padding-5">
             <el-form-item prop="trasladoProbetas">
-              <el-radio v-model="form.trasladoProbetas" label="moldes"
+              <el-radio
+                @click.native.prevent="clickitem('trasladoProbetas', 'moldes')"
+                v-model="form.trasladoProbetas"
+                label="moldes"
                 >En Moldes</el-radio
               >
-              <el-radio v-model="form.trasladoProbetas" label="desmoldadas"
+              <el-radio
+                @click.native.prevent="
+                  clickitem('trasladoProbetas', 'desmoldadas')
+                "
+                v-model="form.trasladoProbetas"
+                label="desmoldadas"
                 >Desmoldadas</el-radio
               >
             </el-form-item>
@@ -965,18 +1030,27 @@
             prop="procedimientoExtraccion"
           >
             <el-radio
+              @click.native.prevent="
+                clickitem('procedimientoExtraccion', 'yacimiento')
+              "
               v-model="form.procedimientoExtraccion"
               :disabled="!form.seccionAridosHabilitada"
               label="yacimiento"
               >Yacimiento</el-radio
             >
             <el-radio
+              @click.native.prevent="
+                clickitem('procedimientoExtraccion', 'produccion')
+              "
               v-model="form.procedimientoExtraccion"
               :disabled="!form.seccionAridosHabilitada"
               label="produccion"
               >Producci&oacute;n</el-radio
             >
             <el-radio
+              @click.native.prevent="
+                clickitem('procedimientoExtraccion', 'obra')
+              "
               v-model="form.procedimientoExtraccion"
               :disabled="!form.seccionAridosHabilitada"
               label="obra"
@@ -1217,10 +1291,20 @@
             label="Muestra Ingresada por el Cliente"
             prop="muestraIngresadaPorCliente"
           >
-            <el-radio v-model="form.muestraIngresadaPorCliente" label="true"
+            <el-radio
+              @click.native.prevent="
+                clickitem('muestraIngresadaPorCliente', 'true')
+              "
+              v-model="form.muestraIngresadaPorCliente"
+              label="true"
               >Si</el-radio
             >
-            <el-radio v-model="form.muestraIngresadaPorCliente" label="false"
+            <el-radio
+              @click.native.prevent="
+                clickitem('muestraIngresadaPorCliente', 'false')
+              "
+              v-model="form.muestraIngresadaPorCliente"
+              label="false"
               >No</el-radio
             >
           </el-form-item>
@@ -1290,10 +1374,16 @@
           >
           <el-col :span="24" class="padding-5">
             <el-form-item prop="alteracionMuestra">
-              <el-radio v-model="form.alteracionMuestra" label="si"
+              <el-radio
+                @click.native.prevent="clickitem('alteracionMuestra', 'si')"
+                v-model="form.alteracionMuestra"
+                label="si"
                 >Si</el-radio
               >
-              <el-radio v-model="form.alteracionMuestra" label="no"
+              <el-radio
+                @click.native.prevent="clickitem('alteracionMuestra', 'no')"
+                v-model="form.alteracionMuestra"
+                label="no"
                 >No</el-radio
               >
             </el-form-item>
@@ -1354,10 +1444,16 @@
         </el-col>
         <el-col :span="unaDosColumnas" class="comentarios">
           <el-form-item prop="recibeOMuestrea">
-            <el-radio v-model="form.recibeOMuestrea" label="recibe"
+            <el-radio
+              @click.native.prevent="clickitem('recibeOMuestrea', 'recibe')"
+              v-model="form.recibeOMuestrea"
+              label="recibe"
               >Recibe</el-radio
             >
-            <el-radio v-model="form.recibeOMuestrea" label="muestrea"
+            <el-radio
+              @click.native.prevent="clickitem('recibeOMuestrea', 'muestrea')"
+              v-model="form.recibeOMuestrea"
+              label="muestrea"
               >Muestrea</el-radio
             >
           </el-form-item>
@@ -1942,7 +2038,8 @@ export default {
       this.form.segregacion = this.ottCargada.segregacion;
       this.form.numEquipoConoAbrams = this.ottCargada.num_equipo_cono_abrams;
       this.form.numVibradorInmersion = this.ottCargada.num_vibrador_inmersion;
-      this.form.numEquipoConoReducido = this.ottCargada.num_equipo_cono_reducido;
+      this.form.numEquipoConoReducido =
+        this.ottCargada.num_equipo_cono_reducido;
       this.form.horaMuestreo = this.ottCargada.hora_muestreo;
       this.form.horaInicioAmasado = this.ottCargada.hora_inicio_amasado;
       this.form.tAmbiente = this.ottCargada.t_ambiente;
@@ -1954,54 +2051,85 @@ export default {
       this.form.elementoHormigonado = this.ottCargada.elemento_hormigonado;
       this.form.ubicacionElemento = this.ottCargada.ubicacion_elemento;
       this.form.tipoHormigonMortero = this.ottCargada.tipo_hormigon_mortero;
-      this.form.resistenciaEspecificada = this.ottCargada.resistencia_especificada;
+      this.form.resistenciaEspecificada =
+        this.ottCargada.resistencia_especificada;
       this.form.fechaConfeccion = this.ottCargada.fecha_confeccion;
       this.form.aditivo = this.ottCargada.aditivo;
       this.form.numMixer = this.ottCargada.num_mixer;
       this.form.trasladoProbetas = this.ottCargada.traslado_probetas;
       this.form.retiroMuestraOtros = this.ottCargada.retiro_muestra_otros;
-      this.form.retiroMuestraCantidadUnDia = this.ottCargada.retiro_muestra_cantidad_un_dia;
-      this.form.retiroMuestraCantidadTresDias = this.ottCargada.retiro_muestra_cantidad_tres_dias;
-      this.form.retiroMuestraCantidadSieteDias = this.ottCargada.retiro_muestra_cantidad_siete_dias;
-      this.form.retiroMuestraCantidadCatorceDias = this.ottCargada.retiro_muestra_cantidad_catorce_dias;
-      this.form.retiroMuestraCantidadVeintiochoDias = this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
-      this.form.retiroMuestraCantidadOtros = this.ottCargada.retiro_muestra_cantidad_otros;
-      this.form.retiroMuestraFechaUnDia = this.ottCargada.retiro_muestra_fecha_un_dia;
-      this.form.retiroMuestraFechaTresDias = this.ottCargada.retiro_muestra_fecha_tres_dias;
-      this.form.retiroMuestraFechaSieteDias = this.ottCargada.retiro_muestra_fecha_siete_dias;
-      this.form.retiroMuestraFechaCatorceDias = this.ottCargada.retiro_muestra_fecha_catorce_dias;
-      this.form.retiroMuestraFechaVeintiochoDias = this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
-      this.form.retiroMuestraFechaOtros = this.ottCargada.retiro_muestra_fecha_otros;
-      this.form.retiroMuestraInformeUnDia = this.ottCargada.retiro_muestra_informe_un_dia;
-      this.form.retiroMuestraInformeTresDias = this.ottCargada.retiro_muestra_informe_tres_dias;
-      this.form.retiroMuestraInformeSieteDias = this.ottCargada.retiro_muestra_informe_siete_dias;
-      this.form.retiroMuestraInformeCatorceDias = this.ottCargada.retiro_muestra_informe_catorce_dias;
-      this.form.retiroMuestraInformeVeintiochoDias = this.ottCargada.retiro_muestra_informe_veintiocho_dias;
-      this.form.retiroMuestraInformeOtros = this.ottCargada.retiro_muestra_informe_otros;
-      this.form.procedimientoExtraccion = this.ottCargada.procedimiento_extraccion;
-      this.form.muestraIngresadaPorCliente = this.ottCargada.muestra_ingresada_por_cliente;
+      this.form.retiroMuestraCantidadUnDia =
+        this.ottCargada.retiro_muestra_cantidad_un_dia;
+      this.form.retiroMuestraCantidadTresDias =
+        this.ottCargada.retiro_muestra_cantidad_tres_dias;
+      this.form.retiroMuestraCantidadSieteDias =
+        this.ottCargada.retiro_muestra_cantidad_siete_dias;
+      this.form.retiroMuestraCantidadCatorceDias =
+        this.ottCargada.retiro_muestra_cantidad_catorce_dias;
+      this.form.retiroMuestraCantidadVeintiochoDias =
+        this.ottCargada.retiro_muestra_cantidad_veintiocho_dias;
+      this.form.retiroMuestraCantidadOtros =
+        this.ottCargada.retiro_muestra_cantidad_otros;
+      this.form.retiroMuestraFechaUnDia =
+        this.ottCargada.retiro_muestra_fecha_un_dia;
+      this.form.retiroMuestraFechaTresDias =
+        this.ottCargada.retiro_muestra_fecha_tres_dias;
+      this.form.retiroMuestraFechaSieteDias =
+        this.ottCargada.retiro_muestra_fecha_siete_dias;
+      this.form.retiroMuestraFechaCatorceDias =
+        this.ottCargada.retiro_muestra_fecha_catorce_dias;
+      this.form.retiroMuestraFechaVeintiochoDias =
+        this.ottCargada.retiro_muestra_fecha_veintiocho_dias;
+      this.form.retiroMuestraFechaOtros =
+        this.ottCargada.retiro_muestra_fecha_otros;
+      this.form.retiroMuestraInformeUnDia =
+        this.ottCargada.retiro_muestra_informe_un_dia;
+      this.form.retiroMuestraInformeTresDias =
+        this.ottCargada.retiro_muestra_informe_tres_dias;
+      this.form.retiroMuestraInformeSieteDias =
+        this.ottCargada.retiro_muestra_informe_siete_dias;
+      this.form.retiroMuestraInformeCatorceDias =
+        this.ottCargada.retiro_muestra_informe_catorce_dias;
+      this.form.retiroMuestraInformeVeintiochoDias =
+        this.ottCargada.retiro_muestra_informe_veintiocho_dias;
+      this.form.retiroMuestraInformeOtros =
+        this.ottCargada.retiro_muestra_informe_otros;
+      this.form.procedimientoExtraccion =
+        this.ottCargada.procedimiento_extraccion;
+      this.form.muestraIngresadaPorCliente =
+        this.ottCargada.muestra_ingresada_por_cliente;
       this.form.fechaIngreso = this.ottCargada.fecha_ingreso;
       this.form.fechaVisitaObra = this.ottCargada.fecha_visita_obra;
       this.form.horaLlegada = this.ottCargada.hora_llegada;
       this.form.horaSalida = this.ottCargada.hora_salida;
       this.form.responsableEnObra = this.ottCargada.responsable_en_obra;
-      this.form.irregularidadSuperficialMl = this.ottCargada.irregularidad_superficial_ml;
+      this.form.irregularidadSuperficialMl =
+        this.ottCargada.irregularidad_superficial_ml;
       this.form.observaciones = this.ottCargada.observaciones;
       this.form.alteracionMuestra = this.ottCargada.alteracion_muestra;
-      this.form.observacionesAlteracionesMuestra = this.ottCargada.observaciones_alteraciones_muestra;
+      this.form.observacionesAlteracionesMuestra =
+        this.ottCargada.observaciones_alteraciones_muestra;
       this.form.laboratorista = this.ottCargada.laboratorista;
       this.form.ayudante = this.ottCargada.ayudante;
       this.form.recibeOMuestrea = this.ottCargada.recibe_o_muestrea;
-      this.form.aridosHormigonMuestraUno = this.ottCargada.aridos_hormigon_muestra_uno;
-      this.form.aridosHormigonMuestraDos = this.ottCargada.aridos_hormigon_muestra_dos;
-      this.form.aridosHormigonMuestraTres = this.ottCargada.aridos_hormigon_muestra_tres;
-      this.form.aridosHormigonMuestraCuatro = this.ottCargada.aridos_hormigon_muestra_cuatro;
+      this.form.aridosHormigonMuestraUno =
+        this.ottCargada.aridos_hormigon_muestra_uno;
+      this.form.aridosHormigonMuestraDos =
+        this.ottCargada.aridos_hormigon_muestra_dos;
+      this.form.aridosHormigonMuestraTres =
+        this.ottCargada.aridos_hormigon_muestra_tres;
+      this.form.aridosHormigonMuestraCuatro =
+        this.ottCargada.aridos_hormigon_muestra_cuatro;
       this.form.testigosExtraidosSeis = this.ottCargada.testigos_extraidos_seis;
-      this.form.testigosExtraidosCuatro = this.ottCargada.testigos_extraidos_cuatro;
-      this.form.testigosExtraidosTotal = this.ottCargada.testigos_extraidos_total;
+      this.form.testigosExtraidosCuatro =
+        this.ottCargada.testigos_extraidos_cuatro;
+      this.form.testigosExtraidosTotal =
+        this.ottCargada.testigos_extraidos_total;
       this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
-      this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
-      this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
+      this.form.testigosEnsayadosCuatro =
+        this.ottCargada.testigos_ensayados_cuatro;
+      this.form.testigosEnsayadosTotal =
+        this.ottCargada.testigos_ensayados_total;
 
       this.form.seccionTestigosHabilitada =
         this.ottCargada.seccion_testigos_habilitada == 1
@@ -2063,6 +2191,63 @@ export default {
         this.ottCargada.irregularidad_superficial == 1
           ? true
           : this.ottCargada.irregularidad_superficial;
+    },
+    clickitem(item, value) {
+      if (item == "muestreoDe") {
+        this.form.muestreoDe == value
+          ? (this.form.muestreoDe = "")
+          : (this.form.muestreoDe = value);
+      }
+      if (item == "extraccion") {
+        this.form.extraccion == value
+          ? (this.form.extraccion = "")
+          : (this.form.extraccion = value);
+      }
+      if (item == "compactacion") {
+        this.form.compactacion == value
+          ? (this.form.compactacion = "")
+          : (this.form.compactacion = value);
+      }
+      if (item == "muestreadoPor") {
+        this.form.muestreadoPor == value
+          ? (this.form.muestreadoPor = "")
+          : (this.form.muestreadoPor = value);
+      }
+      if (item == "ensayadoPor") {
+        this.form.ensayadoPor == value
+          ? (this.form.ensayadoPor = "")
+          : (this.form.ensayadoPor = value);
+      }
+      if (item == "tipoMuestra") {
+        this.form.tipoMuestra == value
+          ? (this.form.tipoMuestra = "")
+          : (this.form.tipoMuestra = value);
+      }
+      if (item == "trasladoProbetas") {
+        this.form.trasladoProbetas == value
+          ? (this.form.trasladoProbetas = "")
+          : (this.form.trasladoProbetas = value);
+      }
+      if (item == "procedimientoExtraccion") {
+        this.form.procedimientoExtraccion == value
+          ? (this.form.procedimientoExtraccion = "")
+          : (this.form.procedimientoExtraccion = value);
+      }
+      if (item == "muestraIngresadaPorCliente") {
+        this.form.muestraIngresadaPorCliente == value
+          ? (this.form.muestraIngresadaPorCliente = "")
+          : (this.form.muestraIngresadaPorCliente = value);
+      }
+      if (item == "recibeOMuestrea") {
+        this.form.recibeOMuestrea == value
+          ? (this.form.recibeOMuestrea = "")
+          : (this.form.recibeOMuestrea = value);
+      }
+      if (item == "alteracionMuestra") {
+        this.form.alteracionMuestra == value
+          ? (this.form.alteracionMuestra = "")
+          : (this.form.alteracionMuestra = value);
+      }
     },
   },
   computed: {
