@@ -97646,6 +97646,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -98398,6 +98409,11 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       this.form.velocidadMuestraDos = this.ensayoCargado.velocidad_muestra_dos == 1 ? true : this.ensayoCargado.velocidad_muestra_dos;
       this.form.velocidadMuestraTres = this.ensayoCargado.velocidad_muestra_tres == 1 ? true : this.ensayoCargado.velocidad_muestra_tres;
       this.form.velocidadMuestraCuatro = this.ensayoCargado.velocidad_muestra_cuatro == 1 ? true : this.ensayoCargado.velocidad_muestra_cuatro;
+    },
+    clickitem: function clickitem(item, value) {
+      if (item == "velocidadMuestraUno") {
+        this.form.velocidadMuestraUno == value ? this.form.velocidadMuestraUno = "" : this.form.velocidadMuestraUno = value;
+      }
     }
   },
   computed: {
@@ -104120,15 +104136,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "velocidadMuestraUno" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.velocidadMuestraUno,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "velocidadMuestraUno", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraUno",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.velocidadMuestraUno"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.velocidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraUno", $$v)
+                              },
+                              expression: "form.velocidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraUno",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.velocidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraUno", $$v)
+                              },
+                              expression: "form.velocidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )

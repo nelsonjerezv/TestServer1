@@ -97510,6 +97510,102 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -97707,6 +97803,8 @@ var moment = __webpack_require__(0);
         seccionAridosHabilitada: false,
         seccionOtrosHabilitada: false,
         seccionRetiroMuestrasHabilitada: false,
+        seccionHormigonHabilitada: false,
+        seccionMorteroHabilitada: false,
         testigosExtraidosSeis: "0",
         testigosExtraidosCuatro: "0",
         testigosExtraidosTotal: "0",
@@ -97983,6 +98081,41 @@ var moment = __webpack_require__(0);
       this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
       this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
       this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
+    },
+    clickitem: function clickitem(item, value) {
+      if (item == "muestreoDe") {
+        this.form.muestreoDe == value ? this.form.muestreoDe = "" : this.form.muestreoDe = value;
+      }
+      if (item == "extraccion") {
+        this.form.extraccion == value ? this.form.extraccion = "" : this.form.extraccion = value;
+      }
+      if (item == "compactacion") {
+        this.form.compactacion == value ? this.form.compactacion = "" : this.form.compactacion = value;
+      }
+      if (item == "muestreadoPor") {
+        this.form.muestreadoPor == value ? this.form.muestreadoPor = "" : this.form.muestreadoPor = value;
+      }
+      if (item == "ensayadoPor") {
+        this.form.ensayadoPor == value ? this.form.ensayadoPor = "" : this.form.ensayadoPor = value;
+      }
+      if (item == "tipoMuestra") {
+        this.form.tipoMuestra == value ? this.form.tipoMuestra = "" : this.form.tipoMuestra = value;
+      }
+      if (item == "trasladoProbetas") {
+        this.form.trasladoProbetas == value ? this.form.trasladoProbetas = "" : this.form.trasladoProbetas = value;
+      }
+      if (item == "procedimientoExtraccion") {
+        this.form.procedimientoExtraccion == value ? this.form.procedimientoExtraccion = "" : this.form.procedimientoExtraccion = value;
+      }
+      if (item == "muestraIngresadaPorCliente") {
+        this.form.muestraIngresadaPorCliente == value ? this.form.muestraIngresadaPorCliente = "" : this.form.muestraIngresadaPorCliente = value;
+      }
+      if (item == "recibeOMuestrea") {
+        this.form.recibeOMuestrea == value ? this.form.recibeOMuestrea = "" : this.form.recibeOMuestrea = value;
+      }
+      if (item == "alteracionMuestra") {
+        this.form.alteracionMuestra == value ? this.form.alteracionMuestra = "" : this.form.alteracionMuestra = value;
+      }
     }
   },
   computed: {
@@ -97993,6 +98126,58 @@ var moment = __webpack_require__(0);
     }
   },
   watch: {
+    "form.muestreoDe": function formMuestreoDe(newVal, oldVal) {
+      if (this.form.muestreoDe == "seccionOtros") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = true;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "seccionRetiro") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = true;
+      } else if (this.form.muestreoDe == "seccionAridos") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = true;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "seccionTestigos") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = true;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "hormigon") {
+        this.form.seccionHormigonHabilitada = true;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "mortero") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = true;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      }
+    },
     "form.testigosExtraidosCuatro": function formTestigosExtraidosCuatro(newVal, oldVal) {
       this.form.testigosExtraidosTotal = parseInt(this.form.testigosExtraidosCuatro) + parseInt(this.form.testigosExtraidosSeis);
     },
@@ -98061,16 +98246,16 @@ var render = function() {
                   _vm._v(" "),
                   _c("b", [
                     _vm._v(
-                      "Extracción de Muestras de Mortero, Hormigón Fresco y Endurecido"
+                      "Extracción de Muestras de Mortero, Hormigón Fresco y\n            Endurecido"
                     )
                   ])
                 ]
               ),
               _vm._v(" "),
               _c("td", { attrs: { align: "right" } }, [
-                _vm._v("\n      Página"),
+                _vm._v("\n          Página"),
                 _c("br"),
-                _vm._v("\n          1 de 1\n    ")
+                _vm._v("\n          1 de 1\n        ")
               ])
             ]),
             _vm._v(" "),
@@ -98078,14 +98263,14 @@ var render = function() {
               _c(
                 "td",
                 { staticStyle: { width: "250px" }, attrs: { align: "left" } },
-                [_vm._v("\n      Revisión   011\n    ")]
+                [_vm._v("\n          Revisión   011\n        ")]
               ),
               _vm._v(" "),
-              _c("td", [_vm._v("\n      Código   FOCC-007-002\n    ")]),
+              _c("td", [_vm._v("Código   FOCC-007-002")]),
               _vm._v(" "),
               _c("td", { attrs: { colspan: "2", align: "right" } }, [
                 _vm._v(
-                  "\n      Fecha aprobación:   13 de Febrero de 2019\n    "
+                  "\n          Fecha aprobación:   13 de Febrero de 2019\n        "
                 )
               ])
             ])
@@ -98325,6 +98510,12 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "hormigon" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem("muestreoDe", "hormigon")
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98340,6 +98531,12 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "mortero" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem("muestreoDe", "mortero")
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98355,6 +98552,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "seccionTestigos" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "muestreoDe",
+                                "seccionTestigos"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98370,6 +98576,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "seccionAridos" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "muestreoDe",
+                                "seccionAridos"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98385,6 +98600,12 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "seccionOtros" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem("muestreoDe", "seccionOtros")
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98400,6 +98621,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "seccionRetiro" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "muestreoDe",
+                                "seccionRetiro"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.muestreoDe,
                             callback: function($$v) {
@@ -98445,6 +98675,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "camion" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("extraccion", "camion")
+                                }
+                              },
                               model: {
                                 value: _vm.form.extraccion,
                                 callback: function($$v) {
@@ -98460,6 +98696,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "betonera" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("extraccion", "betonera")
+                                }
+                              },
                               model: {
                                 value: _vm.form.extraccion,
                                 callback: function($$v) {
@@ -98475,6 +98717,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "acopio" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("extraccion", "acopio")
+                                }
+                              },
                               model: {
                                 value: _vm.form.extraccion,
                                 callback: function($$v) {
@@ -98505,6 +98753,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "apisonado" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "compactacion",
+                                    "apisonado"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.compactacion,
                                 callback: function($$v) {
@@ -98520,6 +98777,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "vibrado" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "compactacion",
+                                    "vibrado"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.compactacion,
                                 callback: function($$v) {
@@ -98747,6 +99013,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "lacem" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("muestreadoPor", "lacem")
+                                }
+                              },
                               model: {
                                 value: _vm.form.muestreadoPor,
                                 callback: function($$v) {
@@ -98762,6 +99034,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "mandante" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "muestreadoPor",
+                                    "mandante"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.muestreadoPor,
                                 callback: function($$v) {
@@ -98792,6 +99073,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "lacem" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("ensayadoPor", "lacem")
+                                }
+                              },
                               model: {
                                 value: _vm.form.ensayadoPor,
                                 callback: function($$v) {
@@ -98807,6 +99094,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "mandante" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "ensayadoPor",
+                                    "mandante"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.ensayadoPor,
                                 callback: function($$v) {
@@ -98839,6 +99135,12 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "simple" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem("tipoMuestra", "simple")
+                                }
+                              },
                               model: {
                                 value: _vm.form.tipoMuestra,
                                 callback: function($$v) {
@@ -98854,6 +99156,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "compuesta" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "tipoMuestra",
+                                    "compuesta"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.tipoMuestra,
                                 callback: function($$v) {
@@ -98869,6 +99180,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "especial" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "tipoMuestra",
+                                    "especial"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.tipoMuestra,
                                 callback: function($$v) {
@@ -98934,6 +99254,16 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("el-divider", { staticClass: "el-divider-5" }),
+                  _vm._v(" "),
+                  _c(
+                    "el-form-item",
+                    { attrs: { label: "N° Informe", prop: "numInforme" } },
+                    [
+                      _c("strong", [
+                        _c("label", [_vm._v(_vm._s(_vm.form.numInforme))])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
                   _c("el-divider", { staticClass: "el-divider-5" }),
                   _vm._v(" "),
@@ -100132,6 +100462,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "moldes" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "trasladoProbetas",
+                                    "moldes"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.trasladoProbetas,
                                 callback: function($$v) {
@@ -100147,6 +100486,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "desmoldadas" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "trasladoProbetas",
+                                    "desmoldadas"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.trasladoProbetas,
                                 callback: function($$v) {
@@ -100592,6 +100940,15 @@ var render = function() {
                             disabled: !_vm.form.seccionAridosHabilitada,
                             label: "yacimiento"
                           },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "procedimientoExtraccion",
+                                "yacimiento"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
                             callback: function($$v) {
@@ -100610,6 +100967,15 @@ var render = function() {
                             disabled: !_vm.form.seccionAridosHabilitada,
                             label: "produccion"
                           },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "procedimientoExtraccion",
+                                "produccion"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
                             callback: function($$v) {
@@ -100627,6 +100993,15 @@ var render = function() {
                           attrs: {
                             disabled: !_vm.form.seccionAridosHabilitada,
                             label: "obra"
+                          },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "procedimientoExtraccion",
+                                "obra"
+                              )
+                            }
                           },
                           model: {
                             value: _vm.form.procedimientoExtraccion,
@@ -101549,6 +101924,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "true" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "muestraIngresadaPorCliente",
+                                "true"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.muestraIngresadaPorCliente,
                             callback: function($$v) {
@@ -101568,6 +101952,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "false" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "muestraIngresadaPorCliente",
+                                "false"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.muestraIngresadaPorCliente,
                             callback: function($$v) {
@@ -101802,6 +102195,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "si" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "alteracionMuestra",
+                                    "si"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.alteracionMuestra,
                                 callback: function($$v) {
@@ -101817,6 +102219,15 @@ var render = function() {
                             "el-radio",
                             {
                               attrs: { label: "no" },
+                              nativeOn: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.clickitem(
+                                    "alteracionMuestra",
+                                    "no"
+                                  )
+                                }
+                              },
                               model: {
                                 value: _vm.form.alteracionMuestra,
                                 callback: function($$v) {
@@ -101958,6 +102369,12 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "recibe" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem("recibeOMuestrea", "recibe")
+                            }
+                          },
                           model: {
                             value: _vm.form.recibeOMuestrea,
                             callback: function($$v) {
@@ -101973,6 +102390,15 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: { label: "muestrea" },
+                          nativeOn: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.clickitem(
+                                "recibeOMuestrea",
+                                "muestrea"
+                              )
+                            }
+                          },
                           model: {
                             value: _vm.form.recibeOMuestrea,
                             callback: function($$v) {
