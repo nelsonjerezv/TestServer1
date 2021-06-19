@@ -97606,6 +97606,42 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -98115,6 +98151,18 @@ var moment = __webpack_require__(0);
       }
       if (item == "alteracionMuestra") {
         this.form.alteracionMuestra == value ? this.form.alteracionMuestra = "" : this.form.alteracionMuestra = value;
+      }
+      if (item == "aridosHormigonMuestraUno") {
+        this.form.aridosHormigonMuestraUno == value ? this.form.aridosHormigonMuestraUno = "" : this.form.aridosHormigonMuestraUno = value;
+      }
+      if (item == "aridosHormigonMuestraDos") {
+        this.form.aridosHormigonMuestraDos == value ? this.form.aridosHormigonMuestraDos = "" : this.form.aridosHormigonMuestraDos = value;
+      }
+      if (item == "aridosHormigonMuestraTres") {
+        this.form.aridosHormigonMuestraTres == value ? this.form.aridosHormigonMuestraTres = "" : this.form.aridosHormigonMuestraTres = value;
+      }
+      if (item == "aridosHormigonMuestraCuatro") {
+        this.form.aridosHormigonMuestraCuatro == value ? this.form.aridosHormigonMuestraCuatro = "" : this.form.aridosHormigonMuestraCuatro = value;
       }
     }
   },
@@ -101101,6 +101149,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "grava"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraUno",
+                                  "grava"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -101135,6 +101192,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "grava"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraDos",
+                                  "grava"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
@@ -101171,6 +101237,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "grava"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraTres",
+                                  "grava"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -101205,6 +101280,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "grava"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraCuatro",
+                                  "grava"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
@@ -101250,6 +101334,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "gravilla"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraUno",
+                                  "gravilla"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -101284,6 +101377,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "gravilla"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraDos",
+                                  "gravilla"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
@@ -101320,6 +101422,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "gravilla"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraTres",
+                                  "gravilla"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -101354,6 +101465,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "gravilla"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraCuatro",
+                                  "gravilla"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
@@ -101399,6 +101519,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "arena"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraUno",
+                                  "arena"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraUno,
                               callback: function($$v) {
@@ -101433,6 +101562,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "arena"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraDos",
+                                  "arena"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraDos,
@@ -101469,6 +101607,15 @@ var render = function() {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "arena"
                             },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraTres",
+                                  "arena"
+                                )
+                              }
+                            },
                             model: {
                               value: _vm.form.aridosHormigonMuestraTres,
                               callback: function($$v) {
@@ -101503,6 +101650,15 @@ var render = function() {
                             attrs: {
                               disabled: !_vm.form.seccionAridosHabilitada,
                               label: "arena"
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "aridosHormigonMuestraCuatro",
+                                  "arena"
+                                )
+                              }
                             },
                             model: {
                               value: _vm.form.aridosHormigonMuestraCuatro,
