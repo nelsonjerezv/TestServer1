@@ -52,7 +52,7 @@
           <span slot="title">Exportar</span>
           <el-menu-item-group>
             <el-menu-item index="4-1" @click="exportaEnsayos">
-              Ensayos
+              Informes
             </el-menu-item>
           </el-menu-item-group>
           <!-- <el-menu-item-group>
@@ -69,10 +69,7 @@
               Usuarios
             </el-menu-item>
           </el-menu-item-group>
- 
         </el-submenu>
-
-
 
         <!-- <el-menu-item index="6" disabled>
                     <span slot="title">Navigator Four</span>

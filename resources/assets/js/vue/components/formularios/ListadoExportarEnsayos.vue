@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor-vue" style="display: flex; flex-direction: column">
     <div class="container-elementos">
-      <h1>Buscar Ensayos</h1>
+      <h1>Buscar Informes</h1>
       <el-input
         class="width-100"
         placeholder="Filtre por N° Ott, N° Muestra, N° Informe o quien realizó el ensayo"
