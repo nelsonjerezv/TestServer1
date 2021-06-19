@@ -1719,6 +1719,8 @@ export default {
         seccionAridosHabilitada: false,
         seccionOtrosHabilitada: false,
         seccionRetiroMuestrasHabilitada: false,
+        seccionHormigonHabilitada: false,
+        seccionMorteroHabilitada: false,
         testigosExtraidosSeis: "0",
         testigosExtraidosCuatro: "0",
         testigosExtraidosTotal: "0",
@@ -2258,6 +2260,58 @@ export default {
     },
   },
   watch: {
+    "form.muestreoDe": function (newVal, oldVal) {
+      if (this.form.muestreoDe == "seccionOtros") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = true;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "seccionRetiro") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = true;
+      } else if (this.form.muestreoDe == "seccionAridos") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = true;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "seccionTestigos") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = true;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "hormigon") {
+        this.form.seccionHormigonHabilitada = true;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else if (this.form.muestreoDe == "mortero") {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = true;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      } else {
+        this.form.seccionHormigonHabilitada = false;
+        this.form.seccionMorteroHabilitada = false;
+        this.form.seccionOtrosHabilitada = false;
+        this.form.seccionTestigosHabilitada = false;
+        this.form.seccionAridosHabilitada = false;
+        this.form.seccionRetiroMuestrasHabilitada = false;
+      }
+    },
     "form.testigosExtraidosCuatro": function (newVal, oldVal) {
       this.form.testigosExtraidosTotal =
         parseInt(this.form.testigosExtraidosCuatro) +
