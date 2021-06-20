@@ -98096,11 +98096,12 @@ var moment = __webpack_require__(0);
       this.form.testigosEnsayadosSeis = this.ottCargada.testigos_ensayados_seis;
       this.form.testigosEnsayadosCuatro = this.ottCargada.testigos_ensayados_cuatro;
       this.form.testigosEnsayadosTotal = this.ottCargada.testigos_ensayados_total;
-
       this.form.seccionTestigosHabilitada = this.ottCargada.seccion_testigos_habilitada == 1 ? true : this.ottCargada.seccion_testigos_habilitada;
       this.form.seccionAridosHabilitada = this.ottCargada.seccion_aridos_habilitada == 1 ? true : this.ottCargada.seccion_aridos_habilitada;
       this.form.seccionOtrosHabilitada = this.ottCargada.seccion_otros_habilitada == 1 ? true : this.ottCargada.seccion_otros_habilitada;
       this.form.seccionRetiroMuestrasHabilitada = this.ottCargada.seccion_retiro_muestras_habilitada == 1 ? true : this.ottCargada.seccion_retiro_muestras_habilitada;
+      this.form.seccionHormigonHabilitada = this.ottCargada.seccion_hormigon_habilitada == 1 ? true : this.ottCargada.seccion_hormigon_habilitada;
+      this.form.seccionMorteroHabilitada = this.ottCargada.seccion_mortero_habilitada == 1 ? true : this.ottCargada.seccion_mortero_habilitada;
       this.form.tipoMoldeUno = this.ottCargada.tipo_molde_uno == 1 ? true : this.ottCargada.tipo_molde_uno;
       this.form.tipoMoldeDos = this.ottCargada.tipo_molde_dos == 1 ? true : this.ottCargada.tipo_molde_dos;
       this.form.tipoMoldeTres = this.ottCargada.tipo_molde_tres == 1 ? true : this.ottCargada.tipo_molde_tres;

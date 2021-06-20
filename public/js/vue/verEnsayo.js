@@ -98508,6 +98508,11 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
         this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+      } else {
+        this.form.fechaConfeccionMuestraUno = "";
+        this.form.fechaConfeccionMuestraDos = "";
+        this.form.fechaConfeccionMuestraTres = "";
+        this.form.fechaConfeccionMuestraCuatro = "";
       }
     },
     "form.fechaEnsayoMuestraUno": function formFechaEnsayoMuestraUno(newVal, oldVal) {
@@ -98517,6 +98522,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraUno = diff;
+      } else {
+        this.form.edadDiasMuestraUno = "";
       }
     },
     "form.fechaConfeccionMuestraUno": function formFechaConfeccionMuestraUno(newVal, oldVal) {
@@ -98526,6 +98533,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraUno = diff;
+      } else {
+        this.form.edadDiasMuestraUno = "";
       }
     },
     "form.fechaEnsayoMuestraDos": function formFechaEnsayoMuestraDos(newVal, oldVal) {
@@ -98535,6 +98544,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraDos = diff;
+      } else {
+        this.form.edadDiasMuestraDos = "";
       }
     },
     "form.fechaConfeccionMuestraDos": function formFechaConfeccionMuestraDos(newVal, oldVal) {
@@ -98544,6 +98555,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraDos = diff;
+      } else {
+        this.form.edadDiasMuestraDos = "";
       }
     },
     "form.fechaEnsayoMuestraTres": function formFechaEnsayoMuestraTres(newVal, oldVal) {
@@ -98553,6 +98566,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraTres = diff;
+      } else {
+        this.form.edadDiasMuestraTres = "";
       }
     },
     "form.fechaConfeccionMuestraTres": function formFechaConfeccionMuestraTres(newVal, oldVal) {
@@ -98562,6 +98577,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraTres = diff;
+      } else {
+        this.form.edadDiasMuestraTres = "";
       }
     },
     "form.fechaEnsayoMuestraCuatro": function formFechaEnsayoMuestraCuatro(newVal, oldVal) {
@@ -98571,6 +98588,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraCuatro = diff;
+      } else {
+        this.form.edadDiasMuestraCuatro = "";
       }
     },
     "form.fechaConfeccionMuestraCuatro": function formFechaConfeccionMuestraCuatro(newVal, oldVal) {
@@ -98580,6 +98599,8 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var date2 = __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.form.fechaConfeccionMuestraCuatro, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraCuatro = diff;
+      } else {
+        this.form.edadDiasMuestraCuatro = "";
       }
     },
     "form.masaMuestraUno": function formMasaMuestraUno(newVal, oldVal) {
