@@ -140,7 +140,10 @@
             </el-col>
           </div>
           <div style="display: flex; width: fit-content; margin: 0px">
-            <img style="width: 102px; height: 103px" :src="imagenCilindro" />
+            <img
+              style="width: 102px; height: 103px"
+              src="/images/cilindro.png"
+            />
           </div>
         </div>
       </el-row>
@@ -1546,7 +1549,6 @@ export default {
       urlGuardarEnsayo: `${GLOBAL.URL}ensayos/guardar-ensayo-compresion`,
       urlActualizarEnsayo: `${GLOBAL.URL}ensayos/actualizar-ensayo-compresion`,
       urlBuscarOtt: `${GLOBAL.URL}ensayos/buscar-ott`,
-      imagenCilindro: "/images/cilindro.jpg",
       timeout: null,
       ordenSeleccionada: "",
       ordenes: [],
@@ -2412,43 +2414,71 @@ export default {
       this.form.numPieDeMetro = this.ensayoCargado.num_pie_de_metro;
       this.form.numPrensa = this.ensayoCargado.num_prensa;
       this.form.numCronometro = this.ensayoCargado.num_cronometro;
-      this.form.errorCientoCincuentaMm = this.ensayoCargado.error_cientocincuenta_mm;
+      this.form.errorCientoCincuentaMm =
+        this.ensayoCargado.error_cientocincuenta_mm;
       this.form.errorTrescientosMm = this.ensayoCargado.error_trescientos_mm;
       this.form.numMarmita = this.ensayoCargado.num_marmita;
-      this.form.numDispositivoRefrentado = this.ensayoCargado.num_dispositivo_refrentado;
+      this.form.numDispositivoRefrentado =
+        this.ensayoCargado.num_dispositivo_refrentado;
       this.form.numMicrometro = this.ensayoCargado.num_micrometro;
       this.form.numMoldeMuestraUno = this.ensayoCargado.num_molde_muestra_uno;
       this.form.numMoldeMuestraDos = this.ensayoCargado.num_molde_muestra_dos;
       this.form.numMoldeMuestraTres = this.ensayoCargado.num_molde_muestra_tres;
-      this.form.numMoldeMuestraCuatro = this.ensayoCargado.num_molde_muestra_cuatro;
-      this.form.fechaConfeccionMuestraUno = this.ensayoCargado.fecha_confeccion_muestra_uno;
-      this.form.fechaConfeccionMuestraDos = this.ensayoCargado.fecha_confeccion_muestra_dos;
-      this.form.fechaConfeccionMuestraTres = this.ensayoCargado.fecha_confeccion_muestra_tres;
-      this.form.fechaConfeccionMuestraCuatro = this.ensayoCargado.fecha_confeccion_muestra_cuatro;
-      this.form.fechaEnsayoMuestraUno = this.ensayoCargado.fecha_ensayo_muestra_uno;
-      this.form.fechaEnsayoMuestraDos = this.ensayoCargado.fecha_ensayo_muestra_dos;
-      this.form.fechaEnsayoMuestraTres = this.ensayoCargado.fecha_ensayo_muestra_tres;
-      this.form.fechaEnsayoMuestraCuatro = this.ensayoCargado.fecha_ensayo_muestra_cuatro;
+      this.form.numMoldeMuestraCuatro =
+        this.ensayoCargado.num_molde_muestra_cuatro;
+      this.form.fechaConfeccionMuestraUno =
+        this.ensayoCargado.fecha_confeccion_muestra_uno;
+      this.form.fechaConfeccionMuestraDos =
+        this.ensayoCargado.fecha_confeccion_muestra_dos;
+      this.form.fechaConfeccionMuestraTres =
+        this.ensayoCargado.fecha_confeccion_muestra_tres;
+      this.form.fechaConfeccionMuestraCuatro =
+        this.ensayoCargado.fecha_confeccion_muestra_cuatro;
+      this.form.fechaEnsayoMuestraUno =
+        this.ensayoCargado.fecha_ensayo_muestra_uno;
+      this.form.fechaEnsayoMuestraDos =
+        this.ensayoCargado.fecha_ensayo_muestra_dos;
+      this.form.fechaEnsayoMuestraTres =
+        this.ensayoCargado.fecha_ensayo_muestra_tres;
+      this.form.fechaEnsayoMuestraCuatro =
+        this.ensayoCargado.fecha_ensayo_muestra_cuatro;
       this.form.edadDiasMuestraUno = this.ensayoCargado.edad_dias_muestra_uno;
       this.form.edadDiasMuestraDos = this.ensayoCargado.edad_dias_muestra_dos;
       this.form.edadDiasMuestraTres = this.ensayoCargado.edad_dias_muestra_tres;
-      this.form.edadDiasMuestraCuatro = this.ensayoCargado.edad_dias_muestra_cuatro;
-      this.form.refrentadoCorregidoMuestraUno = this.ensayoCargado.refrentado_corregido_muestra_uno;
-      this.form.refrentadoCorregidoMuestraDos = this.ensayoCargado.refrentado_corregido_muestra_dos;
-      this.form.refrentadoCorregidoMuestraTres = this.ensayoCargado.refrentado_corregido_muestra_tres;
-      this.form.refrentadoCorregidoMuestraCuatro = this.ensayoCargado.refrentado_corregido_muestra_cuatro;
-      this.form.espesorSuperiorMuestraUno = this.ensayoCargado.espesor_superior_muestra_uno;
-      this.form.espesorSuperiorMuestraDos = this.ensayoCargado.espesor_superior_muestra_dos;
-      this.form.espesorSuperiorMuestraTres = this.ensayoCargado.espesor_superior_muestra_tres;
-      this.form.espesorSuperiorMuestraCuatro = this.ensayoCargado.espesor_superior_muestra_cuatro;
-      this.form.espesorInferiorMuestraUno = this.ensayoCargado.espesor_inferior_muestra_uno;
-      this.form.espesorInferiorMuestraDos = this.ensayoCargado.espesor_inferior_muestra_dos;
-      this.form.espesorInferiorMuestraTres = this.ensayoCargado.espesor_inferior_muestra_tres;
-      this.form.espesorInferiorMuestraCuatro = this.ensayoCargado.espesor_inferior_muestra_cuatro;
-      this.form.espesorPromedioMuestraUno = this.ensayoCargado.espesor_promedio_muestra_uno;
-      this.form.espesorPromedioMuestraDos = this.ensayoCargado.espesor_promedio_muestra_dos;
-      this.form.espesorPromedioMuestraTres = this.ensayoCargado.espesor_promedio_muestra_tres;
-      this.form.espesorPromedioMuestraCuatro = this.ensayoCargado.espesor_promedio_muestra_cuatro;
+      this.form.edadDiasMuestraCuatro =
+        this.ensayoCargado.edad_dias_muestra_cuatro;
+      this.form.refrentadoCorregidoMuestraUno =
+        this.ensayoCargado.refrentado_corregido_muestra_uno;
+      this.form.refrentadoCorregidoMuestraDos =
+        this.ensayoCargado.refrentado_corregido_muestra_dos;
+      this.form.refrentadoCorregidoMuestraTres =
+        this.ensayoCargado.refrentado_corregido_muestra_tres;
+      this.form.refrentadoCorregidoMuestraCuatro =
+        this.ensayoCargado.refrentado_corregido_muestra_cuatro;
+      this.form.espesorSuperiorMuestraUno =
+        this.ensayoCargado.espesor_superior_muestra_uno;
+      this.form.espesorSuperiorMuestraDos =
+        this.ensayoCargado.espesor_superior_muestra_dos;
+      this.form.espesorSuperiorMuestraTres =
+        this.ensayoCargado.espesor_superior_muestra_tres;
+      this.form.espesorSuperiorMuestraCuatro =
+        this.ensayoCargado.espesor_superior_muestra_cuatro;
+      this.form.espesorInferiorMuestraUno =
+        this.ensayoCargado.espesor_inferior_muestra_uno;
+      this.form.espesorInferiorMuestraDos =
+        this.ensayoCargado.espesor_inferior_muestra_dos;
+      this.form.espesorInferiorMuestraTres =
+        this.ensayoCargado.espesor_inferior_muestra_tres;
+      this.form.espesorInferiorMuestraCuatro =
+        this.ensayoCargado.espesor_inferior_muestra_cuatro;
+      this.form.espesorPromedioMuestraUno =
+        this.ensayoCargado.espesor_promedio_muestra_uno;
+      this.form.espesorPromedioMuestraDos =
+        this.ensayoCargado.espesor_promedio_muestra_dos;
+      this.form.espesorPromedioMuestraTres =
+        this.ensayoCargado.espesor_promedio_muestra_tres;
+      this.form.espesorPromedioMuestraCuatro =
+        this.ensayoCargado.espesor_promedio_muestra_cuatro;
       this.form.dUnoMuestraUno = this.ensayoCargado.d_uno_muestra_uno;
       this.form.dUnoMuestraDos = this.ensayoCargado.d_uno_muestra_dos;
       this.form.dUnoMuestraTres = this.ensayoCargado.d_uno_muestra_tres;
@@ -2469,22 +2499,38 @@ export default {
       this.form.refrentadoDos = this.ensayoCargado.refrentado_dos;
       this.form.refrentadoTres = this.ensayoCargado.refrentado_tres;
       this.form.refrentadoCuatro = this.ensayoCargado.refrentado_cuatro;
-      this.form.dUnoMuestraUnoCorregida = this.ensayoCargado.d_uno_muestra_uno_corregida;
-      this.form.dUnoMuestraDosCorregida = this.ensayoCargado.d_uno_muestra_dos_corregida;
-      this.form.dUnoMuestraTresCorregida = this.ensayoCargado.d_uno_muestra_tres_corregida;
-      this.form.dUnoMuestraCuatroCorregida = this.ensayoCargado.d_uno_muestra_cuatro_corregida;
-      this.form.dDosMuestraUnoCorregida = this.ensayoCargado.d_dos_muestra_uno_corregida;
-      this.form.dDosMuestraDosCorregida = this.ensayoCargado.d_dos_muestra_dos_corregida;
-      this.form.dDosMuestraTresCorregida = this.ensayoCargado.d_dos_muestra_tres_corregida;
-      this.form.dDosMuestraCuatroCorregida = this.ensayoCargado.d_dos_muestra_cuatro_corregida;
-      this.form.hUnoMuestraUnoCorregida = this.ensayoCargado.h_uno_muestra_uno_corregida;
-      this.form.hUnoMuestraDosCorregida = this.ensayoCargado.h_uno_muestra_dos_corregida;
-      this.form.hUnoMuestraTresCorregida = this.ensayoCargado.h_uno_muestra_tres_corregida;
-      this.form.hUnoMuestraCuatroCorregida = this.ensayoCargado.h_uno_muestra_cuatro_corregida;
-      this.form.hDosMuestraUnoCorregida = this.ensayoCargado.h_dos_muestra_uno_corregida;
-      this.form.hDosMuestraDosCorregida = this.ensayoCargado.h_dos_muestra_dos_corregida;
-      this.form.hDosMuestraTresCorregida = this.ensayoCargado.h_dos_muestra_tres_corregida;
-      this.form.hDosMuestraCuatroCorregida = this.ensayoCargado.h_dos_muestra_cuatro_corregida;
+      this.form.dUnoMuestraUnoCorregida =
+        this.ensayoCargado.d_uno_muestra_uno_corregida;
+      this.form.dUnoMuestraDosCorregida =
+        this.ensayoCargado.d_uno_muestra_dos_corregida;
+      this.form.dUnoMuestraTresCorregida =
+        this.ensayoCargado.d_uno_muestra_tres_corregida;
+      this.form.dUnoMuestraCuatroCorregida =
+        this.ensayoCargado.d_uno_muestra_cuatro_corregida;
+      this.form.dDosMuestraUnoCorregida =
+        this.ensayoCargado.d_dos_muestra_uno_corregida;
+      this.form.dDosMuestraDosCorregida =
+        this.ensayoCargado.d_dos_muestra_dos_corregida;
+      this.form.dDosMuestraTresCorregida =
+        this.ensayoCargado.d_dos_muestra_tres_corregida;
+      this.form.dDosMuestraCuatroCorregida =
+        this.ensayoCargado.d_dos_muestra_cuatro_corregida;
+      this.form.hUnoMuestraUnoCorregida =
+        this.ensayoCargado.h_uno_muestra_uno_corregida;
+      this.form.hUnoMuestraDosCorregida =
+        this.ensayoCargado.h_uno_muestra_dos_corregida;
+      this.form.hUnoMuestraTresCorregida =
+        this.ensayoCargado.h_uno_muestra_tres_corregida;
+      this.form.hUnoMuestraCuatroCorregida =
+        this.ensayoCargado.h_uno_muestra_cuatro_corregida;
+      this.form.hDosMuestraUnoCorregida =
+        this.ensayoCargado.h_dos_muestra_uno_corregida;
+      this.form.hDosMuestraDosCorregida =
+        this.ensayoCargado.h_dos_muestra_dos_corregida;
+      this.form.hDosMuestraTresCorregida =
+        this.ensayoCargado.h_dos_muestra_tres_corregida;
+      this.form.hDosMuestraCuatroCorregida =
+        this.ensayoCargado.h_dos_muestra_cuatro_corregida;
       this.form.masaMuestraUno = this.ensayoCargado.masa_muestra_uno;
       this.form.masaMuestraDos = this.ensayoCargado.masa_muestra_dos;
       this.form.masaMuestraTres = this.ensayoCargado.masa_muestra_tres;
@@ -2493,62 +2539,108 @@ export default {
       this.form.errorMuestraDos = this.ensayoCargado.error_muestra_dos;
       this.form.errorMuestraTres = this.ensayoCargado.error_muestra_tres;
       this.form.errorMuestraCuatro = this.ensayoCargado.error_muestra_cuatro;
-      this.form.masaCorregidaMuestraUno = this.ensayoCargado.masa_corregida_muestra_uno;
-      this.form.masaCorregidaMuestraDos = this.ensayoCargado.masa_corregida_muestra_dos;
-      this.form.masaCorregidaMuestraTres = this.ensayoCargado.masa_corregida_muestra_tres;
-      this.form.masaCorregidaMuestraCuatro = this.ensayoCargado.masa_corregida_muestra_cuatro;
+      this.form.masaCorregidaMuestraUno =
+        this.ensayoCargado.masa_corregida_muestra_uno;
+      this.form.masaCorregidaMuestraDos =
+        this.ensayoCargado.masa_corregida_muestra_dos;
+      this.form.masaCorregidaMuestraTres =
+        this.ensayoCargado.masa_corregida_muestra_tres;
+      this.form.masaCorregidaMuestraCuatro =
+        this.ensayoCargado.masa_corregida_muestra_cuatro;
       this.form.volumenMuestraUno = this.ensayoCargado.volumen_muestra_uno;
       this.form.volumenMuestraDos = this.ensayoCargado.volumen_muestra_dos;
       this.form.volumenMuestraTres = this.ensayoCargado.volumen_muestra_tres;
-      this.form.volumenMuestraCuatro = this.ensayoCargado.volumen_muestra_cuatro;
-      this.form.volumenMetroCubicoMuestraUno = this.ensayoCargado.volumen_metro_cubico_muestra_uno;
-      this.form.volumenMetroCubicoMuestraDos = this.ensayoCargado.volumen_metro_cubico_muestra_dos;
-      this.form.volumenMetroCubicoMuestraTres = this.ensayoCargado.volumen_metro_cubico_muestra_tres;
-      this.form.volumenMetroCubicoMuestraCuatro = this.ensayoCargado.volumen_metro_cubico_muestra_cuatro;
+      this.form.volumenMuestraCuatro =
+        this.ensayoCargado.volumen_muestra_cuatro;
+      this.form.volumenMetroCubicoMuestraUno =
+        this.ensayoCargado.volumen_metro_cubico_muestra_uno;
+      this.form.volumenMetroCubicoMuestraDos =
+        this.ensayoCargado.volumen_metro_cubico_muestra_dos;
+      this.form.volumenMetroCubicoMuestraTres =
+        this.ensayoCargado.volumen_metro_cubico_muestra_tres;
+      this.form.volumenMetroCubicoMuestraCuatro =
+        this.ensayoCargado.volumen_metro_cubico_muestra_cuatro;
       this.form.densidadMuestraUno = this.ensayoCargado.densidad_muestra_uno;
       this.form.densidadMuestraDos = this.ensayoCargado.densidad_muestra_dos;
       this.form.densidadMuestraTres = this.ensayoCargado.densidad_muestra_tres;
-      this.form.densidadMuestraCuatro = this.ensayoCargado.densidad_muestra_cuatro;
+      this.form.densidadMuestraCuatro =
+        this.ensayoCargado.densidad_muestra_cuatro;
       this.form.areaMuestraUno = this.ensayoCargado.area_muestra_uno;
       this.form.areaMuestraDos = this.ensayoCargado.area_muestra_dos;
       this.form.areaMuestraTres = this.ensayoCargado.area_muestra_tres;
       this.form.areaMuestraCuatro = this.ensayoCargado.area_muestra_cuatro;
-      this.form.cargaEnsayoMuestraUno = this.ensayoCargado.carga_ensayo_muestra_uno;
-      this.form.cargaEnsayoMuestraDos = this.ensayoCargado.carga_ensayo_muestra_dos;
-      this.form.cargaEnsayoMuestraTres = this.ensayoCargado.carga_ensayo_muestra_tres;
-      this.form.cargaEnsayoMuestraCuatro = this.ensayoCargado.carga_ensayo_muestra_cuatro;
-      this.form.cargaEnsayoMilMuestraUno = this.ensayoCargado.carga_ensayo_mil_muestra_uno;
-      this.form.cargaEnsayoMilMuestraDos = this.ensayoCargado.carga_ensayo_mil_muestra_dos;
-      this.form.cargaEnsayoMilMuestraTres = this.ensayoCargado.carga_ensayo_mil_muestra_tres;
-      this.form.cargaEnsayoMilMuestraCuatro = this.ensayoCargado.carga_ensayo_mil_muestra_cuatro;
-      this.form.tiempoCargaMuestraUno = this.ensayoCargado.tiempo_carga_muestra_uno;
-      this.form.tiempoCargaMuestraDos = this.ensayoCargado.tiempo_carga_muestra_dos;
-      this.form.tiempoCargaMuestraTres = this.ensayoCargado.tiempo_carga_muestra_tres;
-      this.form.tiempoCargaMuestraCuatro = this.ensayoCargado.tiempo_carga_muestra_cuatro;
-      this.form.resistenciaCompresionMuestraUno = this.ensayoCargado.resistencia_compresion_muestra_uno;
-      this.form.resistenciaCompresionMuestraDos = this.ensayoCargado.resistencia_compresion_muestra_dos;
-      this.form.resistenciaCompresionMuestraTres = this.ensayoCargado.resistencia_compresion_muestra_tres;
-      this.form.resistenciaCompresionMuestraCuatro = this.ensayoCargado.resistencia_compresion_muestra_cuatro;
-      this.form.factoresConversionMuestraUno = this.ensayoCargado.factores_conversion_muestra_uno;
-      this.form.factoresConversionMuestraDos = this.ensayoCargado.factores_conversion_muestra_dos;
-      this.form.factoresConversionMuestraTres = this.ensayoCargado.factores_conversion_muestra_tres;
-      this.form.factoresConversionMuestraCuatro = this.ensayoCargado.factores_conversion_muestra_cuatro;
-      this.form.resistenciaCorregidaMuestraUno = this.ensayoCargado.resistencia_corregida_muestra_uno;
-      this.form.resistenciaCorregidaMuestraDos = this.ensayoCargado.resistencia_corregida_muestra_dos;
-      this.form.resistenciaCorregidaMuestraTres = this.ensayoCargado.resistencia_corregida_muestra_tres;
-      this.form.resistenciaCorregidaMuestraCuatro = this.ensayoCargado.resistencia_corregida_muestra_cuatro;
-      this.form.velocidadEnsayoMuestraUno = this.ensayoCargado.velocidad_ensayo_muestra_uno;
-      this.form.velocidadEnsayoMuestraDos = this.ensayoCargado.velocidad_ensayo_muestra_dos;
-      this.form.velocidadEnsayoMuestraTres = this.ensayoCargado.velocidad_ensayo_muestra_tres;
-      this.form.velocidadEnsayoMuestraCuatro = this.ensayoCargado.velocidad_ensayo_muestra_cuatro;
-      this.form.tipoRoturaMuestraUno = this.ensayoCargado.tipo_rotura_muestra_uno;
-      this.form.tipoRoturaMuestraDos = this.ensayoCargado.tipo_rotura_muestra_dos;
-      this.form.tipoRoturaMuestraTres = this.ensayoCargado.tipo_rotura_muestra_tres;
-      this.form.tipoRoturaMuestraCuatro = this.ensayoCargado.tipo_rotura_muestra_cuatro;
-      this.form.aseguramientoMuestraUno = this.ensayoCargado.aseguramiento_muestra_uno;
-      this.form.aseguramientoMuestraDos = this.ensayoCargado.aseguramiento_muestra_dos;
-      this.form.aseguramientoMuestraTres = this.ensayoCargado.aseguramiento_muestra_tres;
-      this.form.aseguramientoMuestraCuatro = this.ensayoCargado.aseguramiento_muestra_cuatro;
+      this.form.cargaEnsayoMuestraUno =
+        this.ensayoCargado.carga_ensayo_muestra_uno;
+      this.form.cargaEnsayoMuestraDos =
+        this.ensayoCargado.carga_ensayo_muestra_dos;
+      this.form.cargaEnsayoMuestraTres =
+        this.ensayoCargado.carga_ensayo_muestra_tres;
+      this.form.cargaEnsayoMuestraCuatro =
+        this.ensayoCargado.carga_ensayo_muestra_cuatro;
+      this.form.cargaEnsayoMilMuestraUno =
+        this.ensayoCargado.carga_ensayo_mil_muestra_uno;
+      this.form.cargaEnsayoMilMuestraDos =
+        this.ensayoCargado.carga_ensayo_mil_muestra_dos;
+      this.form.cargaEnsayoMilMuestraTres =
+        this.ensayoCargado.carga_ensayo_mil_muestra_tres;
+      this.form.cargaEnsayoMilMuestraCuatro =
+        this.ensayoCargado.carga_ensayo_mil_muestra_cuatro;
+      this.form.tiempoCargaMuestraUno =
+        this.ensayoCargado.tiempo_carga_muestra_uno;
+      this.form.tiempoCargaMuestraDos =
+        this.ensayoCargado.tiempo_carga_muestra_dos;
+      this.form.tiempoCargaMuestraTres =
+        this.ensayoCargado.tiempo_carga_muestra_tres;
+      this.form.tiempoCargaMuestraCuatro =
+        this.ensayoCargado.tiempo_carga_muestra_cuatro;
+      this.form.resistenciaCompresionMuestraUno =
+        this.ensayoCargado.resistencia_compresion_muestra_uno;
+      this.form.resistenciaCompresionMuestraDos =
+        this.ensayoCargado.resistencia_compresion_muestra_dos;
+      this.form.resistenciaCompresionMuestraTres =
+        this.ensayoCargado.resistencia_compresion_muestra_tres;
+      this.form.resistenciaCompresionMuestraCuatro =
+        this.ensayoCargado.resistencia_compresion_muestra_cuatro;
+      this.form.factoresConversionMuestraUno =
+        this.ensayoCargado.factores_conversion_muestra_uno;
+      this.form.factoresConversionMuestraDos =
+        this.ensayoCargado.factores_conversion_muestra_dos;
+      this.form.factoresConversionMuestraTres =
+        this.ensayoCargado.factores_conversion_muestra_tres;
+      this.form.factoresConversionMuestraCuatro =
+        this.ensayoCargado.factores_conversion_muestra_cuatro;
+      this.form.resistenciaCorregidaMuestraUno =
+        this.ensayoCargado.resistencia_corregida_muestra_uno;
+      this.form.resistenciaCorregidaMuestraDos =
+        this.ensayoCargado.resistencia_corregida_muestra_dos;
+      this.form.resistenciaCorregidaMuestraTres =
+        this.ensayoCargado.resistencia_corregida_muestra_tres;
+      this.form.resistenciaCorregidaMuestraCuatro =
+        this.ensayoCargado.resistencia_corregida_muestra_cuatro;
+      this.form.velocidadEnsayoMuestraUno =
+        this.ensayoCargado.velocidad_ensayo_muestra_uno;
+      this.form.velocidadEnsayoMuestraDos =
+        this.ensayoCargado.velocidad_ensayo_muestra_dos;
+      this.form.velocidadEnsayoMuestraTres =
+        this.ensayoCargado.velocidad_ensayo_muestra_tres;
+      this.form.velocidadEnsayoMuestraCuatro =
+        this.ensayoCargado.velocidad_ensayo_muestra_cuatro;
+      this.form.tipoRoturaMuestraUno =
+        this.ensayoCargado.tipo_rotura_muestra_uno;
+      this.form.tipoRoturaMuestraDos =
+        this.ensayoCargado.tipo_rotura_muestra_dos;
+      this.form.tipoRoturaMuestraTres =
+        this.ensayoCargado.tipo_rotura_muestra_tres;
+      this.form.tipoRoturaMuestraCuatro =
+        this.ensayoCargado.tipo_rotura_muestra_cuatro;
+      this.form.aseguramientoMuestraUno =
+        this.ensayoCargado.aseguramiento_muestra_uno;
+      this.form.aseguramientoMuestraDos =
+        this.ensayoCargado.aseguramiento_muestra_dos;
+      this.form.aseguramientoMuestraTres =
+        this.ensayoCargado.aseguramiento_muestra_tres;
+      this.form.aseguramientoMuestraCuatro =
+        this.ensayoCargado.aseguramiento_muestra_cuatro;
       this.form.observaciones = this.ensayoCargado.observaciones;
       this.form.ensayadoPor = this.ensayoCargado.ensayado_por;
       this.form.fecha = this.ensayoCargado.fecha;
@@ -2744,10 +2836,14 @@ export default {
       });
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
-        this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
-        this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
-        this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
-        this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraUno =
+          this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraDos =
+          this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraTres =
+          this.ordenSeleccionada.fecha_confeccion;
+        this.form.fechaConfeccionMuestraCuatro =
+          this.ordenSeleccionada.fecha_confeccion;
         this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
       }
     },
@@ -3490,9 +3586,8 @@ export default {
       if (!isNaN(dUno) && dUno.trim() != "") {
         dUno = parseFloat(this.form.resistenciaCompresionMuestraUno);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
-          this.form.factoresConversionMuestraUno = this.factoresConversion[
-            "20"
-          ].toString();
+          this.form.factoresConversionMuestraUno =
+            this.factoresConversion["20"].toString();
           this.form.resistenciaCorregidaMuestraUno = (
             this.factoresConversion["20"] * dUno
           ).toFixed(2);
@@ -3583,9 +3678,8 @@ export default {
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraUno = this.factoresConversion[
-            "50"
-          ];
+          this.form.factoresConversionMuestraUno =
+            this.factoresConversion["50"];
           this.form.resistenciaCorregidaMuestraUno = (
             this.form.factoresConversionMuestraUno * dUno
           ).toFixed(2);
@@ -3621,9 +3715,8 @@ export default {
       if (!isNaN(dUno) && dUno.trim() != "") {
         dUno = parseFloat(this.form.resistenciaCompresionMuestraDos);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
-          this.form.factoresConversionMuestraDos = this.factoresConversion[
-            "20"
-          ];
+          this.form.factoresConversionMuestraDos =
+            this.factoresConversion["20"];
           this.form.resistenciaCorregidaMuestraDos = (
             this.factoresConversion["20"] * dUno
           ).toFixed(2);
@@ -3714,9 +3807,8 @@ export default {
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraDos = this.factoresConversion[
-            "50"
-          ];
+          this.form.factoresConversionMuestraDos =
+            this.factoresConversion["50"];
           this.form.resistenciaCorregidaMuestraDos = (
             this.form.factoresConversionMuestraDos * dUno
           ).toFixed(2);
@@ -3752,9 +3844,8 @@ export default {
       if (!isNaN(dUno) && dUno.trim() != "") {
         dUno = parseFloat(this.form.resistenciaCompresionMuestraTres);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
-          this.form.factoresConversionMuestraTres = this.factoresConversion[
-            "20"
-          ];
+          this.form.factoresConversionMuestraTres =
+            this.factoresConversion["20"];
           this.form.resistenciaCorregidaMuestraTres = (
             this.factoresConversion["20"] * dUno
           ).toFixed(2);
@@ -3762,13 +3853,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            20,
-            25,
-            this.factoresConversion["20"],
-            this.factoresConversion["25"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              20,
+              25,
+              this.factoresConversion["20"],
+              this.factoresConversion["25"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3776,13 +3868,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            25,
-            30,
-            this.factoresConversion["25"],
-            this.factoresConversion["30"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              25,
+              30,
+              this.factoresConversion["25"],
+              this.factoresConversion["30"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3790,13 +3883,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            30,
-            35,
-            this.factoresConversion["30"],
-            this.factoresConversion["35"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              30,
+              35,
+              this.factoresConversion["30"],
+              this.factoresConversion["35"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3804,13 +3898,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            35,
-            40,
-            this.factoresConversion["35"],
-            this.factoresConversion["40"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              35,
+              40,
+              this.factoresConversion["35"],
+              this.factoresConversion["40"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3818,13 +3913,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            40,
-            45,
-            this.factoresConversion["40"],
-            this.factoresConversion["45"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              40,
+              45,
+              this.factoresConversion["40"],
+              this.factoresConversion["45"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3832,22 +3928,22 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.calculaFactorCompresion(
-            45,
-            50,
-            this.factoresConversion["45"],
-            this.factoresConversion["50"],
-            dUno
-          );
+          this.form.factoresConversionMuestraTres =
+            this.calculaFactorCompresion(
+              45,
+              50,
+              this.factoresConversion["45"],
+              this.factoresConversion["50"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraTres = this.factoresConversion[
-            "50"
-          ];
+          this.form.factoresConversionMuestraTres =
+            this.factoresConversion["50"];
           this.form.resistenciaCorregidaMuestraTres = (
             this.form.factoresConversionMuestraTres * dUno
           ).toFixed(2);
@@ -3883,9 +3979,8 @@ export default {
       if (!isNaN(dUno) && dUno.trim() != "") {
         dUno = parseFloat(this.form.resistenciaCompresionMuestraCuatro);
         if (Math.round(dUno * 100000) <= Math.round(parseFloat(20) * 100000)) {
-          this.form.factoresConversionMuestraCuatro = this.factoresConversion[
-            "20"
-          ];
+          this.form.factoresConversionMuestraCuatro =
+            this.factoresConversion["20"];
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.factoresConversion["20"] * dUno
           ).toFixed(2);
@@ -3893,13 +3988,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(20) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(25) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            20,
-            25,
-            this.factoresConversion["20"],
-            this.factoresConversion["25"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              20,
+              25,
+              this.factoresConversion["20"],
+              this.factoresConversion["25"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
@@ -3907,13 +4003,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(25) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(30) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            25,
-            30,
-            this.factoresConversion["25"],
-            this.factoresConversion["30"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              25,
+              30,
+              this.factoresConversion["25"],
+              this.factoresConversion["30"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
@@ -3921,13 +4018,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(30) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(35) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            30,
-            35,
-            this.factoresConversion["30"],
-            this.factoresConversion["35"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              30,
+              35,
+              this.factoresConversion["30"],
+              this.factoresConversion["35"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
@@ -3935,13 +4033,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(35) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(40) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            35,
-            40,
-            this.factoresConversion["35"],
-            this.factoresConversion["40"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              35,
+              40,
+              this.factoresConversion["35"],
+              this.factoresConversion["40"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
@@ -3949,13 +4048,14 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(40) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(45) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            40,
-            45,
-            this.factoresConversion["40"],
-            this.factoresConversion["45"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              40,
+              45,
+              this.factoresConversion["40"],
+              this.factoresConversion["45"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
@@ -3963,22 +4063,22 @@ export default {
           Math.round(dUno * 100000) > Math.round(parseFloat(45) * 100000) &&
           Math.round(dUno * 100000) <= Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.calculaFactorCompresion(
-            45,
-            50,
-            this.factoresConversion["45"],
-            this.factoresConversion["50"],
-            dUno
-          );
+          this.form.factoresConversionMuestraCuatro =
+            this.calculaFactorCompresion(
+              45,
+              50,
+              this.factoresConversion["45"],
+              this.factoresConversion["50"],
+              dUno
+            );
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
         } else if (
           Math.round(dUno * 100000) > Math.round(parseFloat(50) * 100000)
         ) {
-          this.form.factoresConversionMuestraCuatro = this.factoresConversion[
-            "50"
-          ];
+          this.form.factoresConversionMuestraCuatro =
+            this.factoresConversion["50"];
           this.form.resistenciaCorregidaMuestraCuatro = (
             this.form.factoresConversionMuestraCuatro * dUno
           ).toFixed(2);
