@@ -107,5 +107,7 @@ class OrdenTrabajoTerreno extends Model
         'testigos_ensayados_seis',
         'testigos_ensayados_cuatro',
         'testigos_ensayados_total',
+        'encargado_retiro_muestras',
+        'fecha_retiro_muestras',
     ];
 }

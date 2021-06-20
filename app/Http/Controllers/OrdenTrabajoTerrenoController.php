@@ -156,6 +156,9 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['testigos_ensayados_seis'] = $request->formulario['testigosEnsayadosSeis'];
         $formulario['testigos_ensayados_cuatro'] = $request->formulario['testigosEnsayadosCuatro'];
         $formulario['testigos_ensayados_total'] = $request->formulario['testigosEnsayadosTotal'];
+        $formulario['encargado_retiro_muestras'] = $request->formulario['encargadoRetiroMuestras'];
+        $formulario['fecha_retiro_muestras'] = $request->formulario['fechaRetiroMuestras'];
+
 
         $result;
         try {
@@ -281,7 +284,8 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario->testigos_ensayados_seis = $request->formulario['testigosEnsayadosSeis'];
         $formulario->testigos_ensayados_cuatro = $request->formulario['testigosEnsayadosCuatro'];
         $formulario->testigos_ensayados_total = $request->formulario['testigosEnsayadosTotal'];
-
+        $formulario->encargado_retiro_muestras = $request->formulario['encargadoRetiroMuestras'];
+        $formulario->fecha_retiro_muestras = $request->formulario['fechaRetiroMuestras'];
 
 
         try {
