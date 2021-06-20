@@ -2845,6 +2845,11 @@ export default {
         this.form.fechaConfeccionMuestraCuatro =
           this.ordenSeleccionada.fecha_confeccion;
         this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+      } else {
+        this.form.fechaConfeccionMuestraUno = "";
+        this.form.fechaConfeccionMuestraDos = "";
+        this.form.fechaConfeccionMuestraTres = "";
+        this.form.fechaConfeccionMuestraCuatro = "";
       }
     },
     "form.fechaEnsayoMuestraUno": function (newVal, oldVal) {
@@ -2857,6 +2862,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraUno = diff;
+      } else {
+        this.form.edadDiasMuestraUno = "";
       }
     },
     "form.fechaConfeccionMuestraUno": function (newVal, oldVal) {
@@ -2869,6 +2876,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraUno, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraUno = diff;
+      } else {
+        this.form.edadDiasMuestraUno = "";
       }
     },
     "form.fechaEnsayoMuestraDos": function (newVal, oldVal) {
@@ -2881,6 +2890,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraDos = diff;
+      } else {
+        this.form.edadDiasMuestraDos = "";
       }
     },
     "form.fechaConfeccionMuestraDos": function (newVal, oldVal) {
@@ -2893,6 +2904,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraDos, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraDos = diff;
+      } else {
+        this.form.edadDiasMuestraDos = "";
       }
     },
     "form.fechaEnsayoMuestraTres": function (newVal, oldVal) {
@@ -2905,6 +2918,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraTres = diff;
+      } else {
+        this.form.edadDiasMuestraTres = "";
       }
     },
     "form.fechaConfeccionMuestraTres": function (newVal, oldVal) {
@@ -2917,6 +2932,8 @@ export default {
         var date2 = moment(this.form.fechaConfeccionMuestraTres, "DD-MM-YYYY");
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraTres = diff;
+      } else {
+        this.form.edadDiasMuestraTres = "";
       }
     },
     "form.fechaEnsayoMuestraCuatro": function (newVal, oldVal) {
@@ -2932,6 +2949,8 @@ export default {
         );
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraCuatro = diff;
+      } else {
+        this.form.edadDiasMuestraCuatro = "";
       }
     },
     "form.fechaConfeccionMuestraCuatro": function (newVal, oldVal) {
@@ -2947,6 +2966,8 @@ export default {
         );
         var diff = date1.diff(date2, "days");
         this.form.edadDiasMuestraCuatro = diff;
+      } else {
+        this.form.edadDiasMuestraCuatro = "";
       }
     },
     "form.masaMuestraUno": function (newVal, oldVal) {
