@@ -13,7 +13,7 @@
       </div>
       <div class="item-contenedor-botones">
         <el-button type="warning" @click="dialogVisible = true" plain
-          >Ver Ensayo</el-button
+          >Ver Informe</el-button
         >
         <el-dialog
           :visible.sync="dialogVisible"
