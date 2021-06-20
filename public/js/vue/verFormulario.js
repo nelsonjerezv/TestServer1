@@ -96097,7 +96097,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.seccion-otros-container[data-v-1e744d4c] {\n  width: auto !important;\n  white-space: nowrap !important;\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    margin-right: 30px;\n    white-space: nowrap !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__content {\n    margin: 0px !important;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.item-content-minus-150[data-v-1e744d4c] .el-form-item__content {\n  width: calc(100% - 150px) !important;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.seccion-otros-container[data-v-1e744d4c] {\n  width: auto !important;\n  white-space: nowrap !important;\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    margin-right: 30px;\n    white-space: nowrap !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__content {\n    margin: 0px !important;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -97637,6 +97637,45 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var moment = __webpack_require__(0);
@@ -97647,6 +97686,94 @@ var moment = __webpack_require__(0);
     var _reglas;
 
     return {
+      retiroMuestras: [{
+        value: "NELSON CARDENAS RODRIGUEZ",
+        label: "NELSON CARDENAS RODRIGUEZ"
+      }, {
+        value: "FABIAN DIAZ LOYOLA",
+        label: "FABIAN DIAZ LOYOLA"
+      }, {
+        value: "RICARDO MOYA GONZALEZ",
+        label: "RICARDO MOYA GONZALEZ"
+      }, {
+        value: "LUIS NAVARRO NAVARRO",
+        label: "LUIS NAVARRO NAVARRO"
+      }, {
+        value: "CRISTIAN REYES MARTINEZ",
+        label: "CRISTIAN REYES MARTINEZ"
+      }, {
+        value: "WALTER ROJAS SAN MARTIN",
+        label: "WALTER ROJAS SAN MARTIN"
+      }, {
+        value: "VICTOR SANDOVAL HERNANDEZ",
+        label: "VICTOR SANDOVAL HERNANDEZ"
+      }, {
+        value: "ERNESTO  VARGAS GONZALEZ",
+        label: "ERNESTO  VARGAS GONZALEZ"
+      }, {
+        value: "FRANCISCO VARGAS MARTINEZ",
+        label: "FRANCISCO VARGAS MARTINEZ"
+      }, {
+        value: "JORGE PINTO CONCHA",
+        label: "JORGE PINTO CONCHA"
+      }, {
+        value: "GUILLERMO NEIRA ROJAS",
+        label: "GUILLERMO NEIRA ROJAS"
+      }, {
+        value: "VICTOR SAEZ BARRIOS",
+        label: "VICTOR SAEZ BARRIOS"
+      }, {
+        value: "VICTOR MUÑOZ ANDRADE",
+        label: "VICTOR MUÑOZ ANDRADE"
+      }, {
+        value: "ALEX ORTIZ PASTEN",
+        label: "ALEX ORTIZ PASTEN"
+      }, {
+        value: "IGNACIO ORTIZ PASTEN",
+        label: "IGNACIO ORTIZ PASTEN"
+      }, {
+        value: "ANGELO ESPINOZA HERNANDEZ",
+        label: "ANGELO ESPINOZA HERNANDEZ"
+      }, {
+        value: "OSCAR ALARCON REYES",
+        label: "OSCAR ALARCON REYES"
+      }, {
+        value: "CRISTIAN GARRIDO PAINEO",
+        label: "CRISTIAN GARRIDO PAINEO"
+      }, {
+        value: "BAYHRON ITURRA PRADENAS",
+        label: "BAYHRON ITURRA PRADENAS"
+      }, {
+        value: "JOSE PALMA ASTORGA",
+        label: "JOSE PALMA ASTORGA"
+      }, {
+        value: "DANIEL PINCHEIRA BECERRA",
+        label: "DANIEL PINCHEIRA BECERRA"
+      }, {
+        value: "FELIPE PIZARRO ARAYA",
+        label: "FELIPE PIZARRO ARAYA"
+      }, {
+        value: "CARLOS QUIROGA ABURTO",
+        label: "CARLOS QUIROGA ABURTO"
+      }, {
+        value: "MARCELO RETAMALES MATELUNA",
+        label: "MARCELO RETAMALES MATELUNA"
+      }, {
+        value: "MIGUEL ROJAS GARRIDO",
+        label: "MIGUEL ROJAS GARRIDO"
+      }, {
+        value: "GONZALO ROJAS SANCHEZ",
+        label: "GONZALO ROJAS SANCHEZ"
+      }, {
+        value: "ALFREDO ROJAS SANCHEZ",
+        label: "ALFREDO ROJAS SANCHEZ"
+      }, {
+        value: "LUIS VELASQUEZ ATABALES",
+        label: "LUIS VELASQUEZ ATABALES"
+      }, {
+        value: "LUIS VERA MORALES",
+        label: "LUIS VERA MORALES"
+      }],
       ayudante: [{
         value: "OSCAR ALARCON REYES",
         label: "OSCAR ALARCON REYES"
@@ -97721,17 +97848,17 @@ var moment = __webpack_require__(0);
         value: "GUILLERMO NEIRA ROJAS",
         label: "GUILLERMO NEIRA ROJAS"
       }, {
-        value: "EVICTOR SAEZ BARRIOS",
+        value: "VICTOR SAEZ BARRIOS",
         label: "VICTOR SAEZ BARRIOS"
       }, {
         value: "VICTOR MUÑOZ ANDRADE",
         label: "VICTOR MUÑOZ ANDRADE"
       }, {
-        value: "ALEX ORTIZ  PASTEN",
-        label: "ALEX ORTIZ  PASTEN"
+        value: "ALEX ORTIZ PASTEN",
+        label: "ALEX ORTIZ PASTEN"
       }, {
-        value: "IGNACIO ORTIZ  PASTEN",
-        label: "IGNACIO ORTIZ  PASTEN"
+        value: "IGNACIO ORTIZ PASTEN",
+        label: "IGNACIO ORTIZ PASTEN"
       }, {
         value: "ANGELO ESPINOZA HERNANDEZ",
         label: "ANGELO ESPINOZA HERNANDEZ"
@@ -97841,7 +97968,9 @@ var moment = __webpack_require__(0);
         testigosExtraidosTotal: "0",
         testigosEnsayadosSeis: "0",
         testigosEnsayadosCuatro: "0",
-        testigosEnsayadosTotal: "0"
+        testigosEnsayadosTotal: "0",
+        encargadoRetiroMuestras: "",
+        fechaRetiroMuestras: ""
       },
       reglas: (_reglas = {
         numClienteObra: [{ required: true, message: "", trigger: "blur" }],
@@ -98113,6 +98242,8 @@ var moment = __webpack_require__(0);
       this.form.densAparenteMortero = this.ottCargada.dens_aparente_mortero == 1 ? true : this.ottCargada.dens_aparente_mortero;
       this.form.indiceEsclerometrico = this.ottCargada.indice_esclerometrico == 1 ? true : this.ottCargada.indice_esclerometrico;
       this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
+      this.form.encargadoRetiroMuestras = this.ottCargada.encargado_retiro_muestras;
+      this.form.fechaRetiroMuestras = this.ottCargada.fecha_retiro_muestras;
     },
     clickitem: function clickitem(item, value) {
       if (item == "muestreoDe") {
@@ -100554,6 +100685,85 @@ var render = function() {
                       )
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "el-col",
+                    {
+                      staticClass:
+                        "padding-5  item-content-minus-150 una-linea",
+                      attrs: { span: 24 }
+                    },
+                    [
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "item-no-margin",
+                          attrs: {
+                            label: "Encargado",
+                            prop: "encargadoRetiroMuestras"
+                          }
+                        },
+                        [
+                          _c(
+                            "el-select",
+                            {
+                              attrs: {
+                                clearable: "",
+                                placeholder: "Seleccione..",
+                                prop: "retiroMuestras"
+                              },
+                              model: {
+                                value: _vm.form.encargadoRetiroMuestras,
+                                callback: function($$v) {
+                                  _vm.$set(
+                                    _vm.form,
+                                    "encargadoRetiroMuestras",
+                                    $$v
+                                  )
+                                },
+                                expression: "form.encargadoRetiroMuestras"
+                              }
+                            },
+                            _vm._l(_vm.retiroMuestras, function(item) {
+                              return _c("el-option", {
+                                key: item.value,
+                                attrs: { label: item.label, value: item.value }
+                              })
+                            }),
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "item-no-margin",
+                          attrs: { label: "Fecha", prop: "fechaRetiroMuestras" }
+                        },
+                        [
+                          _c("el-date-picker", {
+                            attrs: {
+                              type: "date",
+                              size: "mini",
+                              format: "dd-MM-yyyy",
+                              "value-format": "dd-MM-yyyy"
+                            },
+                            model: {
+                              value: _vm.form.fechaRetiroMuestras,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "fechaRetiroMuestras", $$v)
+                              },
+                              expression: "form.fechaRetiroMuestras"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
@@ -102493,6 +102703,7 @@ var render = function() {
                     "el-select",
                     {
                       attrs: {
+                        clearable: "",
                         placeholder: "Seleccione..",
                         prop: "laboratorista"
                       },
@@ -102527,7 +102738,11 @@ var render = function() {
                   _c(
                     "el-select",
                     {
-                      attrs: { placeholder: "Seleccione..", prop: "ayudante" },
+                      attrs: {
+                        clearable: "",
+                        placeholder: "Seleccione..",
+                        prop: "ayudante"
+                      },
                       model: {
                         value: _vm.form.ayudante,
                         callback: function($$v) {
