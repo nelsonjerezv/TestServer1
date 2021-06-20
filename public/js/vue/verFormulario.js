@@ -96097,7 +96097,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.seccion-otros-container[data-v-1e744d4c] {\n  width: auto !important;\n  white-space: nowrap !important;\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    margin-right: 30px;\n    white-space: nowrap !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__content {\n    margin: 0px !important;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -96111,11 +96111,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
 //
 //
 //
@@ -101888,168 +101883,210 @@ var render = function() {
           _vm._v(" "),
           _c(
             "el-row",
-            { staticClass: "margin-b-5" },
+            { staticClass: "margin-b-5 seccion-otros-container" },
             [
               _c(
                 "el-col",
                 {
                   staticClass: "padding-5",
-                  staticStyle: { "font-weight": "600" },
+                  staticStyle: {
+                    "font-weight": "600",
+                    "border-radius": "4px",
+                    height: "auto !important",
+                    width: "100%"
+                  },
                   attrs: { span: 24 }
                 },
                 [_vm._v("Otros")]
               ),
               _vm._v(" "),
               _c(
-                "el-col",
-                { staticClass: "padding-5", attrs: { span: 8 } },
+                "el-form-item",
+                {
+                  attrs: {
+                    label: "Dens. Aparente Hormigón",
+                    prop: "densAparenteHormigon"
+                  }
+                },
                 [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Dens. Aparente Hormigón",
-                        prop: "densAparenteHormigon"
-                      }
-                    },
-                    [
-                      _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
-                        model: {
-                          value: _vm.form.densAparenteHormigon,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "densAparenteHormigon", $$v)
-                          },
-                          expression: "form.densAparenteHormigon"
+                  _c("div", { attrs: { slot: "label" }, slot: "label" }, [
+                    _c("p", { staticStyle: { "margin-bottom": "0px" } }, [
+                      _vm._v("Dens. Aparente Hormigón"),
+                      _c("br")
+                    ]),
+                    _c(
+                      "div",
+                      {
+                        staticStyle: {
+                          "border-style": "solid",
+                          "border-width": "1px",
+                          display: "inline"
                         }
-                      })
-                    ],
-                    1
-                  )
+                      },
+                      [_vm._v(" 400 - 10 ")]
+                    ),
+                    _c("p")
+                  ]),
+                  _vm._v(" "),
+                  _c("el-checkbox", {
+                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    model: {
+                      value: _vm.form.densAparenteHormigon,
+                      callback: function($$v) {
+                        _vm.$set(_vm.form, "densAparenteHormigon", $$v)
+                      },
+                      expression: "form.densAparenteHormigon"
+                    }
+                  })
                 ],
                 1
               ),
               _vm._v(" "),
               _c(
-                "el-col",
-                { staticClass: "padding-5", attrs: { span: 8 } },
+                "el-form-item",
+                {
+                  attrs: {
+                    label: "Dens. Aparente Mortero",
+                    prop: "densAparenteMortero"
+                  }
+                },
                 [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Dens. Aparente Mortero",
-                        prop: "densAparenteMortero"
-                      }
-                    },
-                    [
-                      _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
-                        model: {
-                          value: _vm.form.densAparenteMortero,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "densAparenteMortero", $$v)
-                          },
-                          expression: "form.densAparenteMortero"
+                  _c("div", { attrs: { slot: "label" }, slot: "label" }, [
+                    _c("p", { staticStyle: { "margin-bottom": "0px" } }, [
+                      _vm._v("Dens. Aparente Mortero"),
+                      _c("br")
+                    ]),
+                    _c(
+                      "div",
+                      {
+                        staticStyle: {
+                          "border-style": "solid",
+                          "border-width": "1px",
+                          display: "inline"
                         }
-                      })
-                    ],
-                    1
-                  )
+                      },
+                      [_vm._v(" 400 - 10 ")]
+                    ),
+                    _c("p")
+                  ]),
+                  _vm._v(" "),
+                  _c("el-checkbox", {
+                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    model: {
+                      value: _vm.form.densAparenteMortero,
+                      callback: function($$v) {
+                        _vm.$set(_vm.form, "densAparenteMortero", $$v)
+                      },
+                      expression: "form.densAparenteMortero"
+                    }
+                  })
                 ],
                 1
               ),
               _vm._v(" "),
               _c(
-                "el-col",
-                { staticClass: "padding-5", attrs: { span: 8 } },
+                "el-form-item",
+                {
+                  attrs: {
+                    label: "Índice Esclerométrico",
+                    prop: "indiceEsclerometrico"
+                  }
+                },
                 [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Índice Esclerométrico",
-                        prop: "indiceEsclerometrico"
-                      }
-                    },
-                    [
-                      _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
-                        model: {
-                          value: _vm.form.indiceEsclerometrico,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "indiceEsclerometrico", $$v)
-                          },
-                          expression: "form.indiceEsclerometrico"
+                  _c("div", { attrs: { slot: "label" }, slot: "label" }, [
+                    _c("p", { staticStyle: { "margin-bottom": "0px" } }, [
+                      _vm._v("Índice Esclerométrico"),
+                      _c("br")
+                    ]),
+                    _c(
+                      "div",
+                      {
+                        staticStyle: {
+                          "border-style": "solid",
+                          "border-width": "1px",
+                          display: "inline"
                         }
-                      })
-                    ],
-                    1
-                  )
+                      },
+                      [_vm._v(" 400 - 21 ")]
+                    ),
+                    _c("p")
+                  ]),
+                  _vm._v(" "),
+                  _c("el-checkbox", {
+                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    model: {
+                      value: _vm.form.indiceEsclerometrico,
+                      callback: function($$v) {
+                        _vm.$set(_vm.form, "indiceEsclerometrico", $$v)
+                      },
+                      expression: "form.indiceEsclerometrico"
+                    }
+                  })
                 ],
                 1
               ),
               _vm._v(" "),
               _c(
-                "el-col",
-                { staticClass: "padding-5", attrs: { span: 12 } },
+                "el-form-item",
+                {
+                  attrs: {
+                    label: "Irregularidad Superficial",
+                    prop: "irregularidadSuperficial"
+                  }
+                },
                 [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Irregularidad Superficial",
-                        prop: "irregularidadSuperficial"
-                      }
-                    },
-                    [
-                      _c("el-checkbox", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
-                        model: {
-                          value: _vm.form.irregularidadSuperficial,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "irregularidadSuperficial", $$v)
-                          },
-                          expression: "form.irregularidadSuperficial"
+                  _c("div", { attrs: { slot: "label" }, slot: "label" }, [
+                    _c("p", { staticStyle: { "margin-bottom": "0px" } }, [
+                      _vm._v("Irregularidad Superficial"),
+                      _c("br")
+                    ]),
+                    _c(
+                      "div",
+                      {
+                        staticStyle: {
+                          "border-style": "solid",
+                          "border-width": "1px",
+                          display: "inline"
                         }
-                      })
-                    ],
-                    1
-                  )
+                      },
+                      [_vm._v(" 400 - 20 ")]
+                    ),
+                    _c("p")
+                  ]),
+                  _vm._v(" "),
+                  _c("el-checkbox", {
+                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    model: {
+                      value: _vm.form.irregularidadSuperficial,
+                      callback: function($$v) {
+                        _vm.$set(_vm.form, "irregularidadSuperficial", $$v)
+                      },
+                      expression: "form.irregularidadSuperficial"
+                    }
+                  })
                 ],
                 1
               ),
               _vm._v(" "),
               _c(
-                "el-col",
-                { staticClass: "padding-5", attrs: { span: 12 } },
+                "el-form-item",
+                {
+                  attrs: {
+                    label: "Irregularidad Superficial - cantidad ml",
+                    prop: "irregularidadSuperficialMl"
+                  }
+                },
                 [
-                  _c(
-                    "el-form-item",
-                    {
-                      attrs: {
-                        label: "Irregularidad Superficial - cantidad ml",
-                        prop: "irregularidadSuperficialMl"
-                      }
-                    },
-                    [
-                      _c("el-input", {
-                        attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
-                        model: {
-                          value: _vm.form.irregularidadSuperficialMl,
-                          callback: function($$v) {
-                            _vm.$set(
-                              _vm.form,
-                              "irregularidadSuperficialMl",
-                              $$v
-                            )
-                          },
-                          expression: "form.irregularidadSuperficialMl"
-                        }
-                      })
-                    ],
-                    1
-                  )
+                  _c("el-input", {
+                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    model: {
+                      value: _vm.form.irregularidadSuperficialMl,
+                      callback: function($$v) {
+                        _vm.$set(_vm.form, "irregularidadSuperficialMl", $$v)
+                      },
+                      expression: "form.irregularidadSuperficialMl"
+                    }
+                  })
                 ],
                 1
               )

@@ -97657,6 +97657,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
 
 
 
@@ -97668,7 +97671,6 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       urlGuardarEnsayo: GLOBAL.URL + "ensayos/guardar-ensayo-compresion",
       urlActualizarEnsayo: GLOBAL.URL + "ensayos/actualizar-ensayo-compresion",
       urlBuscarOtt: GLOBAL.URL + "ensayos/buscar-ott",
-      imagenCilindro: "/images/cilindro.jpg",
       timeout: null,
       ordenSeleccionada: "",
       ordenes: [],
@@ -99869,7 +99871,7 @@ var render = function() {
                   [
                     _c("img", {
                       staticStyle: { width: "102px", height: "103px" },
-                      attrs: { src: _vm.imagenCilindro }
+                      attrs: { src: "/images/cilindro.png" }
                     })
                   ]
                 )
