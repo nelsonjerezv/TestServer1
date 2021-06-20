@@ -148,6 +148,8 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['seccion_aridos_habilitada'] = $request->formulario['seccionAridosHabilitada'];
         $formulario['seccion_otros_habilitada'] = $request->formulario['seccionOtrosHabilitada'];
         $formulario['seccion_retiro_muestras_habilitada'] = $request->formulario['seccionRetiroMuestrasHabilitada'];
+        $formulario['seccion_hormigon_habilitada'] = $request->formulario['seccionHormigonHabilitada'];
+        $formulario['seccion_mortero_habilitada'] = $request->formulario['seccionMorteroHabilitada'];
         $formulario['testigos_extraidos_seis'] = $request->formulario['testigosExtraidosSeis'];
         $formulario['testigos_extraidos_cuatro'] = $request->formulario['testigosExtraidosCuatro'];
         $formulario['testigos_extraidos_total'] = $request->formulario['testigosExtraidosTotal'];
@@ -271,6 +273,8 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario->seccion_aridos_habilitada = $request->formulario['seccionAridosHabilitada'];
         $formulario->seccion_otros_habilitada = $request->formulario['seccionOtrosHabilitada'];
         $formulario->seccion_retiro_muestras_habilitada = $request->formulario['seccionRetiroMuestrasHabilitada'];
+        $formulario->seccion_hormigon_habilitada = $request->formulario['seccionHormigonHabilitada'];
+        $formulario->seccion_mortero_habilitada = $request->formulario['seccionMorteroHabilitada'];
         $formulario->testigos_extraidos_seis = $request->formulario['testigosExtraidosSeis'];
         $formulario->testigos_extraidos_cuatro = $request->formulario['testigosExtraidosCuatro'];
         $formulario->testigos_extraidos_total = $request->formulario['testigosExtraidosTotal'];
