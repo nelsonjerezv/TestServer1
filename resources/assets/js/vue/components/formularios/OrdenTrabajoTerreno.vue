@@ -1260,55 +1260,51 @@
       </el-row>
       <el-divider class="el-divider-5" />
       <!-- Otros -->
-      <el-row class="margin-b-5">
-        <el-col :span="24" style="font-weight: 600" class="padding-5"
+      <el-row class="margin-b-5 seccion-otros-container">
+        <el-col :span="24" style="font-weight: 600; border-radius: 4px;
+    height: auto !important; width: 100%;" class="padding-5"
           >Otros</el-col
         >
-        <el-col :span="8" class="padding-5">
           <el-form-item
             label="Dens. Aparente Hormigón"
             prop="densAparenteHormigon"
           >
+            <div slot="label"><p style="margin-bottom: 0px;">Dens. Aparente Hormig&oacute;n<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 10&nbsp;</div></p></div>
             <el-checkbox
               :disabled="!form.seccionOtrosHabilitada"
               v-model="form.densAparenteHormigon"
             ></el-checkbox>
           </el-form-item>
-        </el-col>
-        <el-col :span="8" class="padding-5">
           <el-form-item
             label="Dens. Aparente Mortero"
             prop="densAparenteMortero"
           >
+            <div slot="label"><p style="margin-bottom: 0px;">Dens. Aparente Mortero<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 10&nbsp;</div></p></div>
             <el-checkbox
               :disabled="!form.seccionOtrosHabilitada"
               v-model="form.densAparenteMortero"
             ></el-checkbox>
           </el-form-item>
-        </el-col>
-        <el-col :span="8" class="padding-5">
           <el-form-item
             label="Índice Esclerométrico"
             prop="indiceEsclerometrico"
           >
+            <div slot="label"><p style="margin-bottom: 0px;">&Iacute;ndice Esclerom&eacute;trico<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 21&nbsp;</div></p></div>
             <el-checkbox
               :disabled="!form.seccionOtrosHabilitada"
               v-model="form.indiceEsclerometrico"
             ></el-checkbox>
           </el-form-item>
-        </el-col>
-        <el-col :span="12" class="padding-5">
           <el-form-item
             label="Irregularidad Superficial"
             prop="irregularidadSuperficial"
           >
+            <div slot="label"><p style="margin-bottom: 0px;">Irregularidad Superficial<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 20&nbsp;</div></p></div>
             <el-checkbox
               :disabled="!form.seccionOtrosHabilitada"
               v-model="form.irregularidadSuperficial"
             ></el-checkbox>
           </el-form-item>
-        </el-col>
-        <el-col :span="12" class="padding-5">
           <el-form-item
             label="Irregularidad Superficial - cantidad ml"
             prop="irregularidadSuperficialMl"
@@ -1318,7 +1314,6 @@
               v-model="form.irregularidadSuperficialMl"
             ></el-input>
           </el-form-item>
-        </el-col>
       </el-row>
       <el-divider class="el-divider-5" />
       <el-row class="margin-b-5">
@@ -2542,6 +2537,25 @@ export default {
   min-height: 40px;
   display: flex;
   align-items: center;
+}
+.seccion-otros-container {
+  width: auto !important;
+  white-space: nowrap !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /deep/ .el-form-item {
+    display: flex;
+    width: fit-content !important;
+    margin-right: 30px;
+    white-space: nowrap !important;
+  }
+  /deep/ .el-form-item__label {
+    width: auto !important;
+  }
+  /deep/ .el-form-item__content {
+    margin: 0px !important;
+  }
 }
 .el-divider-5 {
   margin: 14px 0;
