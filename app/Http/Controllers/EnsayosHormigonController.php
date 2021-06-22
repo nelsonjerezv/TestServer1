@@ -553,6 +553,8 @@ class EnsayosHormigonController extends Controller
 
     public function verEnsayo($id){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+        $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo->ott)->first();
+        $ensayo['numerosMuestraOtt'] = $orden['num_ingreso'];
         $accion = 'ver';
 
         return view('ver_ensayo', compact('accion', 'ensayo') );
@@ -560,6 +562,8 @@ class EnsayosHormigonController extends Controller
 
     public function editarEnsayo($id){
         $ensayo = EnsayoProbetasHormigon::where('id', $id)->first();
+        $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo->ott)->first();
+        $ensayo['numerosMuestraOtt'] = $orden['num_ingreso'];
         $accion = 'editar';
 
         return view('ver_ensayo', compact('accion', 'ensayo') );
