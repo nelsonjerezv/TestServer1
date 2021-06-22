@@ -1863,12 +1863,12 @@ export default {
         numMixer: "",
         trasladoProbetas: "",
         retiroMuestraOtros: "",
-        retiroMuestraCantidadUnDia: "",
-        retiroMuestraCantidadTresDias: "",
-        retiroMuestraCantidadSieteDias: "",
-        retiroMuestraCantidadCatorceDias: "",
-        retiroMuestraCantidadVeintiochoDias: "",
-        retiroMuestraCantidadOtros: "",
+        retiroMuestraCantidadUnDia: 0,
+        retiroMuestraCantidadTresDias: 0,
+        retiroMuestraCantidadSieteDias: 0,
+        retiroMuestraCantidadCatorceDias: 0,
+        retiroMuestraCantidadVeintiochoDias: 0,
+        retiroMuestraCantidadOtros: 0,
         retiroMuestraFechaUnDia: "",
         retiroMuestraFechaTresDias: "",
         retiroMuestraFechaSieteDias: "",
@@ -2093,117 +2093,309 @@ export default {
   },
   methods: {
     onSubmit(nombreFormulario, accion) {
-      if (accion === "crear") {
-        // this.$refs[nombreFormulario].validate((valid) => {
-        //     if (valid) {
-        this.$http
-          .post(this.urlGuardarFormulario, {
-            formulario: this.form,
-          })
-          .then(
-            (response) => {
-              console.log(response);
-              if (response.body[1] == true) {
-                Tools.mensajeAlerta(
-                  "Formulario guardado.",
-                  Tools.MENSAJE.EXITO,
-                  "",
-                  5
-                );
-                this.$emit("cambiaMain", {
-                  vista: "ListadoFormularios",
-                  condicion: "porvalidar",
-                });
-              } else {
-                if (response.body[0].errorInfo[0] == "23000") {
+      if (this.validacionesExtra()) {
+        if (accion === "crear") {
+          // this.$refs[nombreFormulario].validate((valid) => {
+          //     if (valid) {
+          this.$http
+            .post(this.urlGuardarFormulario, {
+              formulario: this.form,
+            })
+            .then(
+              (response) => {
+                console.log(response);
+                if (response.body[1] == true) {
+                  Tools.mensajeAlerta(
+                    "Formulario guardado.",
+                    Tools.MENSAJE.EXITO,
+                    "",
+                    5
+                  );
+                  this.$emit("cambiaMain", {
+                    vista: "ListadoFormularios",
+                    condicion: "porvalidar",
+                  });
+                } else {
+                  if (response.body[0].errorInfo[0] == "23000") {
+                    return Tools.mensajeAlerta(
+                      "Ya existe una OTT con este numero en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
                   return Tools.mensajeAlerta(
-                    "Ya existe una OTT con este numero en la base de datos.",
+                    "No se pudo guardar el formulario.",
                     Tools.MENSAJE.ERROR,
                     "",
                     5
                   );
                 }
-                return Tools.mensajeAlerta(
+              },
+              (response) => {
+                console.log(response);
+                Tools.mensajeAlerta(
                   "No se pudo guardar el formulario.",
                   Tools.MENSAJE.ERROR,
                   "",
                   5
                 );
               }
-            },
-            (response) => {
-              console.log(response);
-              Tools.mensajeAlerta(
-                "No se pudo guardar el formulario.",
-                Tools.MENSAJE.ERROR,
-                "",
-                5
-              );
-            }
-          );
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
-      } else if (accion === "editar") {
-        let estado = this.ottCargada.validado ? "validadas" : "porvalidar";
-        console.log("estado vale " + estado);
-        // this.$refs[nombreFormulario].validate((valid) => {
-        //     if (valid) {
-        this.$http
-          .post(this.urlActualizarFormulario, {
-            formulario: this.form,
-          })
-          .then(
-            (response) => {
-              console.log(response);
-              if (response.body[1] == true) {
-                Tools.mensajeAlerta(
-                  "Formulario actualizado.",
-                  Tools.MENSAJE.EXITO,
-                  "",
-                  7
-                );
-                setTimeout(function () {
-                  parent.$("#cerrar-visualizacion").click();
-                }, 100);
-              } else {
-                if (response.body[0].errorInfo[0] == "23000") {
+            );
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        } else if (accion === "editar") {
+          let estado = this.ottCargada.validado ? "validadas" : "porvalidar";
+          console.log("estado vale " + estado);
+          // this.$refs[nombreFormulario].validate((valid) => {
+          //     if (valid) {
+          this.$http
+            .post(this.urlActualizarFormulario, {
+              formulario: this.form,
+            })
+            .then(
+              (response) => {
+                console.log(response);
+                if (response.body[1] == true) {
+                  Tools.mensajeAlerta(
+                    "Formulario actualizado.",
+                    Tools.MENSAJE.EXITO,
+                    "",
+                    7
+                  );
+                  setTimeout(function () {
+                    parent.$("#cerrar-visualizacion").click();
+                  }, 100);
+                } else {
+                  if (response.body[0].errorInfo[0] == "23000") {
+                    return Tools.mensajeAlerta(
+                      "Ya existe una OTT con este numero en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
                   return Tools.mensajeAlerta(
-                    "Ya existe una OTT con este numero en la base de datos.",
+                    "No se pudo guardar el formulario.",
                     Tools.MENSAJE.ERROR,
                     "",
                     5
                   );
                 }
-                return Tools.mensajeAlerta(
+              },
+              (response) => {
+                console.log(response);
+                Tools.mensajeAlerta(
                   "No se pudo guardar el formulario.",
                   Tools.MENSAJE.ERROR,
                   "",
                   5
                 );
               }
-            },
-            (response) => {
-              console.log(response);
-              Tools.mensajeAlerta(
-                "No se pudo guardar el formulario.",
-                Tools.MENSAJE.ERROR,
-                "",
-                5
-              );
-            }
-          );
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
+            );
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan camposque llenar en el formulario.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        }
       }
     },
     resetForm(nombreFormulario) {
       this.$refs[nombreFormulario].resetFields();
+    },
+    validacionesExtra() {
+      console.log("validacionesExtra");
+      if (this.validacionesCantidadDiasMuestrasRetiro()) {
+        return true;
+      }
+      return false;
+    },
+    validacionesCantidadDiasMuestrasRetiro() {
+      let validoUnDia = false;
+      let validoTresDias = false;
+      let validoSieteDias = false;
+      let validoCatorceDias = false;
+      let validoVeintiochoDias = false;
+      let validoOtrosDias = false;
+
+      let numerosIngresados =
+        this.form.numIngreso == null
+          ? (this.form.numIngreso = [""])
+          : this.form.numIngreso.toString().trim().split(",");
+
+      if (this.form.retiroMuestraCantidadUnDia == null) {
+        this.form.retiroMuestraCantidadUnDia = 0;
+      } else if (this.form.retiroMuestraCantidadUnDia.toString().trim() == "") {
+        this.form.retiroMuestraCantidadUnDia = 0;
+      }
+      if (this.form.retiroMuestraCantidadTresDias == null) {
+        this.form.retiroMuestraCantidadTresDias = 0;
+      } else if (
+        this.form.retiroMuestraCantidadTresDias.toString().trim() == ""
+      ) {
+        this.form.retiroMuestraCantidadTresDias = 0;
+      }
+      if (this.form.retiroMuestraCantidadSieteDias == null) {
+        this.form.retiroMuestraCantidadSieteDias = 0;
+      } else if (
+        this.form.retiroMuestraCantidadSieteDias.toString().trim() == ""
+      ) {
+        this.form.retiroMuestraCantidadSieteDias = 0;
+      }
+      if (this.form.retiroMuestraCantidadCatorceDias == null) {
+        this.form.retiroMuestraCantidadCatorceDias = 0;
+      } else if (
+        this.form.retiroMuestraCantidadCatorceDias.toString().trim() == ""
+      ) {
+        this.form.retiroMuestraCantidadCatorceDias = 0;
+      }
+      if (this.form.retiroMuestraCantidadVeintiochoDias == null) {
+        this.form.retiroMuestraCantidadVeintiochoDias = 0;
+      } else if (
+        this.form.retiroMuestraCantidadVeintiochoDias.toString().trim() == ""
+      ) {
+        this.form.retiroMuestraCantidadVeintiochoDias = 0;
+      }
+      if (this.form.retiroMuestraCantidadOtros == null) {
+        this.form.retiroMuestraCantidadOtros = 0;
+      } else if (this.form.retiroMuestraCantidadOtros.toString().trim() == "") {
+        this.form.retiroMuestraCantidadOtros = 0;
+      }
+
+      isNaN(this.form.retiroMuestraCantidadUnDia) ||
+      this.form.retiroMuestraCantidadUnDia.toString().includes(".") ||
+      this.form.retiroMuestraCantidadUnDia.toString().includes(",")
+        ? (validoUnDia = false)
+        : (validoUnDia = true);
+
+      isNaN(this.form.retiroMuestraCantidadTresDias) ||
+      this.form.retiroMuestraCantidadTresDias.toString().includes(".") ||
+      this.form.retiroMuestraCantidadTresDias.toString().includes(",")
+        ? (validoTresDias = false)
+        : (validoTresDias = true);
+
+      isNaN(this.form.retiroMuestraCantidadSieteDias) ||
+      this.form.retiroMuestraCantidadSieteDias.toString().includes(".") ||
+      this.form.retiroMuestraCantidadSieteDias.toString().includes(",")
+        ? (validoSieteDias = false)
+        : (validoSieteDias = true);
+
+      isNaN(this.form.retiroMuestraCantidadCatorceDias) ||
+      this.form.retiroMuestraCantidadCatorceDias.toString().includes(".") ||
+      this.form.retiroMuestraCantidadCatorceDias.toString().includes(",")
+        ? (validoCatorceDias = false)
+        : (validoCatorceDias = true);
+
+      isNaN(this.form.retiroMuestraCantidadVeintiochoDias) ||
+      this.form.retiroMuestraCantidadVeintiochoDias.toString().includes(".") ||
+      this.form.retiroMuestraCantidadVeintiochoDias.toString().includes(",")
+        ? (validoVeintiochoDias = false)
+        : (validoVeintiochoDias = true);
+
+      isNaN(this.form.retiroMuestraCantidadOtros) ||
+      this.form.retiroMuestraCantidadOtros.toString().includes(".") ||
+      this.form.retiroMuestraCantidadOtros.toString().includes(",")
+        ? (validoOtrosDias = false)
+        : (validoOtrosDias = true);
+      console.log(
+        validoUnDia,
+        validoTresDias,
+        validoSieteDias,
+        validoCatorceDias,
+        validoVeintiochoDias,
+        validoOtrosDias
+      );
+      if (!validoUnDia) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras a un día inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+      if (!validoTresDias) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras a tres días inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+      if (!validoSieteDias) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras a siete días inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+      if (!validoCatorceDias) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras a catorce días inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+      if (!validoVeintiochoDias) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras a veintiocho días inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+      if (!validoOtrosDias) {
+        Tools.mensajeAlerta(
+          "Cantidad de muestras 'otros' inválida. (Recibe número entero, sin comas ni puntos)",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          6
+        );
+      }
+
+      if (
+        validoUnDia &&
+        validoTresDias &&
+        validoSieteDias &&
+        validoCatorceDias &&
+        validoVeintiochoDias &&
+        validoOtrosDias
+      ) {
+        console.log("numeros: ", numerosIngresados, numerosIngresados.length);
+
+        if (numerosIngresados[0] == "") {
+          Tools.mensajeAlerta(
+            "Campo N° Muestras: número de muestra no puede ser vacío.",
+            Tools.MENSAJE.ADVERTENCIA,
+            "",
+            6
+          );
+          return false;
+        }
+        if (
+          numerosIngresados.length !=
+          parseInt(this.form.retiroMuestraCantidadUnDia) +
+            parseInt(this.form.retiroMuestraCantidadTresDias) +
+            parseInt(this.form.retiroMuestraCantidadSieteDias) +
+            parseInt(this.form.retiroMuestraCantidadCatorceDias) +
+            parseInt(this.form.retiroMuestraCantidadVeintiochoDias) +
+            parseInt(this.form.retiroMuestraCantidadOtros)
+        ) {
+          Tools.mensajeAlerta(
+            "Campo N° Muestras: cantidad de muestras ingresadas distinta a cantidad en sección 'Programa de Ensayo a'.",
+            Tools.MENSAJE.ADVERTENCIA,
+            "",
+            6
+          );
+          return false;
+        }
+        return true;
+      } else return false;
     },
     handleResize() {
       this.unaDosColumnas = window.innerWidth < 940 ? 24 : 12;

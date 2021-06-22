@@ -35,13 +35,9 @@
       <el-row>
         <el-col :span="8">
           <el-form-item label="N° Muestra" prop="numMuestra">
-            <el-input class="no-click" v-model="form.numIngreso"></el-input>
-          </el-form-item>
-        </el-col>
-        <el-col :span="8">
-          <el-form-item label="N° OTT" prop="OTT">
-            <el-select
-              v-model="form.OTT"
+            <!-- <el-input class="no-click" v-model="form.numIngreso"></el-input> -->
+            <!-- <el-select
+              v-model="form.numIngreso"
               filterable
               clearable
               remote
@@ -50,6 +46,47 @@
               placeholder="Seleccione OTT"
               :remote-method="querySearchNumeroOtt"
               :loading="loading"
+            >
+              <el-option
+                v-for="item in opcionesSearchBoxOTT"
+                :key="item.id"
+                :label="item.value"
+                :value="item.value"
+              >
+              </el-option>
+            </el-select> -->
+            <el-select
+              v-model="form.numIngreso"
+              size="mini"
+              placeholder="Cargado desde la OTT"
+              no-data-text="Sin muestras ingresadas en la OTT"
+              v-bind:class="[form.OTT == '' ? 'no-click' : '']"
+              :disabled="visualizacion == 'ver' || form.OTT == ''"
+            >
+              <el-option
+                v-for="item in opcionesSearchBoxNumMuestra"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value"
+              >
+              </el-option>
+            </el-select>
+          </el-form-item>
+        </el-col>
+        <el-col :span="8">
+          <el-form-item label="N° OTT" prop="OTT">
+            <el-select
+              v-model="form.OTT"
+              size="mini"
+              filterable
+              clearable
+              remote
+              reserve-keyword
+              no-data-text="Sin resultados"
+              placeholder="Seleccione OTT"
+              :remote-method="querySearchNumeroOtt"
+              :loading="loading"
+              :disabled="visualizacion == 'ver'"
             >
               <el-option
                 v-for="item in opcionesSearchBoxOTT"
@@ -1472,6 +1509,8 @@
             v-model="form.ensayadoPor"
             placeholder="Seleccione.."
             prop="ensayadoPor"
+            size="mini"
+            :disabled="visualizacion == 'ver'"
           >
             <el-option
               v-for="item in options"
@@ -1553,8 +1592,10 @@ export default {
       ordenSeleccionada: "",
       ordenes: [],
       opcionesSearchBoxOTT: [],
+      opcionesSearchBoxNumMuestra: [],
       loading: false,
       cantidadDecimales: 6,
+      numerosMuestraFromOTT: [],
       factoresConversion: {
         20: 1.25,
         25: 1.2,
@@ -1638,7 +1679,7 @@ export default {
       },
       form: {
         id: null,
-        numIngreso: "Cargado desde la OTT",
+        numIngreso: [],
         OTT: "",
         numInforme: "",
         camaraHumeda: "",
@@ -1863,127 +1904,163 @@ export default {
         ],
       },
       visualizacion: "",
+      estadoEnsayo: false,
     };
   },
   mounted() {
     this.visualizacion = this.tipoEnsayo;
-    console.log(this.visualizacion);
     if (this.ensayoCargado) {
+      this.numerosMuestraFromOTT = this.ensayoCargado.numerosMuestraOtt;
+      this.estadoEnsayo = this.ensayoCargado.validado;
+      // console.log(
+      //   this.visualizacion,
+      //   this.ensayoCargado,
+      //   this.ensayoCargado.numerosMuestraOtt,
+      //   this.numerosMuestraFromOTT
+      // );
+
       this.cargaDatosEnsayo();
     }
   },
   methods: {
     onSubmit(nombreEnsayo, accion) {
-      if (accion === "crear") {
-        // this.$refs[nombreEnsayo].validate((valid) => {
-        //     if (valid) {
-        this.$http
-          .post(this.urlGuardarEnsayo, {
-            ensayo: this.form,
-          })
-          .then(
-            (response) => {
-              if (response.body[1] == true) {
-                Tools.mensajeAlerta(
-                  "Ensayo guardado.",
-                  Tools.MENSAJE.EXITO,
-                  "",
-                  5
-                );
-                this.$emit("cambiaMain", {
-                  vista: "ListadoEnsayosCompresionProbetasCilindricas",
-                  condicion: "porvalidar",
-                });
-              } else {
-                if (response.body[0].errorInfo[0] == "23000") {
+      if (this.validacionesExtra()) {
+        if (accion === "crear") {
+          // this.$refs[nombreEnsayo].validate((valid) => {
+          //     if (valid) {
+          this.$http
+            .post(this.urlGuardarEnsayo, {
+              ensayo: this.form,
+            })
+            .then(
+              (response) => {
+                if (response.body[1] == true) {
+                  Tools.mensajeAlerta(
+                    "Ensayo guardado.",
+                    Tools.MENSAJE.EXITO,
+                    "",
+                    5
+                  );
+                  this.$emit("cambiaMain", {
+                    vista: "ListadoEnsayosCompresionProbetasCilindricas",
+                    condicion: "porvalidar",
+                  });
+                } else {
+                  if (response.body[0].errorInfo[0] == "23000") {
+                    return Tools.mensajeAlerta(
+                      "Ya existe un ensayo con este número de informe en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
                   return Tools.mensajeAlerta(
-                    "Ya existe un ensayo con este número de informe en la base de datos.",
+                    "No se pudo guardar el ensayo.",
                     Tools.MENSAJE.ERROR,
                     "",
                     5
                   );
                 }
-                return Tools.mensajeAlerta(
+              },
+              (response) => {
+                console.log(response);
+                Tools.mensajeAlerta(
                   "No se pudo guardar el ensayo.",
                   Tools.MENSAJE.ERROR,
                   "",
                   5
                 );
               }
-            },
-            (response) => {
-              console.log(response);
-              Tools.mensajeAlerta(
-                "No se pudo guardar el ensayo.",
-                Tools.MENSAJE.ERROR,
-                "",
-                5
-              );
-            }
-          );
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
-      } else if (accion === "editar") {
-        let estado = this.ensayoCargado.validado ? "validadas" : "porvalidar";
-        console.log("estado vale " + estado);
-        console.log(this.$parent.$parent);
-        // this.$refs[nombreEnsayo].validate((valid) => {
-        //     if (valid) {
-        this.$http
-          .post(this.urlActualizarEnsayo, {
-            ensayo: this.form,
-          })
-          .then(
-            (response) => {
-              if (response.body[1] == true) {
-                Tools.mensajeAlerta(
-                  "Ensayo actualizado.",
-                  Tools.MENSAJE.EXITO,
-                  "",
-                  5
-                );
-                setTimeout(function () {
-                  parent.$("#cerrar-visualizacion").click();
-                }, 100);
-              } else {
-                if (response.body[0].errorInfo[0] == "23000") {
+            );
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        } else if (accion === "editar") {
+          let estado = this.estadoEnsayo ? "validadas" : "porvalidar";
+          // console.log("estado vale " + estado);
+          // console.log(this.$parent.$parent);
+          // this.$refs[nombreEnsayo].validate((valid) => {
+          //     if (valid) {
+          this.$http
+            .post(this.urlActualizarEnsayo, {
+              ensayo: this.form,
+            })
+            .then(
+              (response) => {
+                if (response.body[1] == true) {
+                  Tools.mensajeAlerta(
+                    "Ensayo actualizado.",
+                    Tools.MENSAJE.EXITO,
+                    "",
+                    5
+                  );
+                  setTimeout(function () {
+                    parent.$("#cerrar-visualizacion").click();
+                  }, 100);
+                } else {
+                  if (response.body[0].errorInfo[0] == "23000") {
+                    return Tools.mensajeAlerta(
+                      "Ya existe un ensayo con este número de informe en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
                   return Tools.mensajeAlerta(
-                    "Ya existe un ensayo con este número de informe en la base de datos.",
+                    "No se pudo guardar el ensayo.",
                     Tools.MENSAJE.ERROR,
                     "",
                     5
                   );
                 }
-                return Tools.mensajeAlerta(
+              },
+              (response) => {
+                console.log(response);
+                Tools.mensajeAlerta(
                   "No se pudo guardar el ensayo.",
                   Tools.MENSAJE.ERROR,
                   "",
                   5
                 );
               }
-            },
-            (response) => {
-              console.log(response);
-              Tools.mensajeAlerta(
-                "No se pudo guardar el ensayo.",
-                Tools.MENSAJE.ERROR,
-                "",
-                5
-              );
-            }
-          );
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
+            );
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        }
       }
     },
     resetForm(nombreFormulario) {
       this.$refs[nombreFormulario].resetFields();
+    },
+    validacionesExtra() {
+      let numOTT = this.form.OTT == "" ? false : true;
+      let numMuestra =
+        this.form.numIngreso == "" || this.form.OTT == [] ? false : true;
+      if (!numOTT) {
+        Tools.mensajeAlerta(
+          "Debe ingresar un numero de OTT para generar el ensayo.",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          7
+        );
+      }
+      if (!numMuestra) {
+        Tools.mensajeAlerta(
+          "Debe seleccionar un numero de muestra para generar el ensayo.",
+          Tools.MENSAJE.ADVERTENCIA,
+          "",
+          7
+        );
+      }
+      if (numMuestra && numOTT) {
+        return true;
+      }
+      return false;
     },
     querySearchNumeroOtt(query) {
       if (query !== "") {
@@ -1998,7 +2075,7 @@ export default {
                     return { value: orden.num_ott, id: orden.num_ott };
                   })
                 : [];
-            console.log("resultados", results, resultados);
+            // console.log("resultados", results, resultados);
             this.opcionesSearchBoxOTT = results;
             this.ordenes = resultados;
           },
@@ -2405,7 +2482,6 @@ export default {
     },
     cargaDatosEnsayo() {
       this.form.id = this.ensayoCargado.id;
-      this.form.numIngreso = this.ensayoCargado.num_ingreso;
       this.form.OTT = this.ensayoCargado.ott;
       this.form.numInforme = this.ensayoCargado.num_informe;
       this.form.camaraHumeda = this.ensayoCargado.camara_humeda;
@@ -2844,12 +2920,48 @@ export default {
           this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro =
           this.ordenSeleccionada.fecha_confeccion;
-        this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+
+        let numerosDeMuestra = this.ordenSeleccionada.num_ingreso
+          .toString()
+          .trim()
+          .split(",");
+        var results =
+          numerosDeMuestra.length > 0
+            ? numerosDeMuestra.map((elemento) => {
+                return { value: elemento, id: elemento };
+              })
+            : [];
+        this.opcionesSearchBoxNumMuestra = results;
       } else {
+        // console.log("else watch ott", this.form.OTT);
         this.form.fechaConfeccionMuestraUno = "";
         this.form.fechaConfeccionMuestraDos = "";
         this.form.fechaConfeccionMuestraTres = "";
         this.form.fechaConfeccionMuestraCuatro = "";
+        this.form.numIngreso = [];
+        this.opcionesSearchBoxNumMuestra = [];
+        if (this.form.OTT == "") {
+          this.ensayoCargado = undefined;
+        }
+        if (this.ensayoCargado) {
+          let numsDeMuestra = this.ensayoCargado.numerosMuestraOtt
+            .toString()
+            .trim()
+            .split(",");
+          var resultss =
+            numsDeMuestra.length > 0
+              ? numsDeMuestra.map((elemento) => {
+                  return { value: elemento, id: elemento };
+                })
+              : [];
+          this.opcionesSearchBoxNumMuestra = resultss;
+          this.form.numIngreso = this.ensayoCargado.num_ingreso;
+          // console.log(
+          //   "ensayoCargado- num_ingreso, opcionesSearchBoxNumMuestra",
+          //   this.ensayoCargado.num_ingreso,
+          //   this.opcionesSearchBoxNumMuestra
+          // );
+        }
       }
     },
     "form.fechaEnsayoMuestraUno": function (newVal, oldVal) {
