@@ -97660,6 +97660,45 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -97675,8 +97714,10 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       ordenSeleccionada: "",
       ordenes: [],
       opcionesSearchBoxOTT: [],
+      opcionesSearchBoxNumMuestra: [],
       loading: false,
       cantidadDecimales: 6,
+      numerosMuestraFromOTT: [],
       factoresConversion: {
         20: 1.25,
         25: 1.2,
@@ -97743,7 +97784,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       },
       form: {
         id: null,
-        numIngreso: "Cargado desde la OTT",
+        numIngreso: [],
         OTT: "",
         numInforme: "",
         camaraHumeda: "",
@@ -97945,13 +97986,22 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         edadDiasMuestraTres: [{ required: true, message: "", trigger: "blur" }],
         edadDiasMuestraCuatro: [{ required: true, message: "", trigger: "blur" }]
       },
-      visualizacion: ""
+      visualizacion: "",
+      estadoEnsayo: false
     };
   },
   mounted: function mounted() {
     this.visualizacion = this.tipoEnsayo;
-    console.log(this.visualizacion);
     if (this.ensayoCargado) {
+      this.numerosMuestraFromOTT = this.ensayoCargado.numerosMuestraOtt;
+      this.estadoEnsayo = this.ensayoCargado.validado;
+      // console.log(
+      //   this.visualizacion,
+      //   this.ensayoCargado,
+      //   this.ensayoCargado.numerosMuestraOtt,
+      //   this.numerosMuestraFromOTT
+      // );
+
       this.cargaDatosEnsayo();
     }
   },
@@ -97960,66 +98010,82 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     onSubmit: function onSubmit(nombreEnsayo, accion) {
       var _this = this;
 
-      if (accion === "crear") {
-        // this.$refs[nombreEnsayo].validate((valid) => {
-        //     if (valid) {
-        this.$http.post(this.urlGuardarEnsayo, {
-          ensayo: this.form
-        }).then(function (response) {
-          if (response.body[1] == true) {
-            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
-            _this.$emit("cambiaMain", {
-              vista: "ListadoEnsayosCompresionProbetasCilindricas",
-              condicion: "porvalidar"
-            });
-          } else {
-            if (response.body[0].errorInfo[0] == "23000") {
-              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+      if (this.validacionesExtra()) {
+        if (accion === "crear") {
+          // this.$refs[nombreEnsayo].validate((valid) => {
+          //     if (valid) {
+          this.$http.post(this.urlGuardarEnsayo, {
+            ensayo: this.form
+          }).then(function (response) {
+            if (response.body[1] == true) {
+              __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo guardado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+              _this.$emit("cambiaMain", {
+                vista: "ListadoEnsayosCompresionProbetasCilindricas",
+                condicion: "porvalidar"
+              });
+            } else {
+              if (response.body[0].errorInfo[0] == "23000") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              }
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
             }
-            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
-          }
-        }, function (response) {
-          console.log(response);
-          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
-        });
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
-      } else if (accion === "editar") {
-        var estado = this.ensayoCargado.validado ? "validadas" : "porvalidar";
-        console.log("estado vale " + estado);
-        console.log(this.$parent.$parent);
-        // this.$refs[nombreEnsayo].validate((valid) => {
-        //     if (valid) {
-        this.$http.post(this.urlActualizarEnsayo, {
-          ensayo: this.form
-        }).then(function (response) {
-          if (response.body[1] == true) {
-            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
-            setTimeout(function () {
-              parent.$("#cerrar-visualizacion").click();
-            }, 100);
-          } else {
-            if (response.body[0].errorInfo[0] == "23000") {
-              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          }, function (response) {
+            console.log(response);
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          });
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        } else if (accion === "editar") {
+          var estado = this.estadoEnsayo ? "validadas" : "porvalidar";
+          // console.log("estado vale " + estado);
+          // console.log(this.$parent.$parent);
+          // this.$refs[nombreEnsayo].validate((valid) => {
+          //     if (valid) {
+          this.$http.post(this.urlActualizarEnsayo, {
+            ensayo: this.form
+          }).then(function (response) {
+            if (response.body[1] == true) {
+              __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ensayo actualizado.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.EXITO, "", 5);
+              setTimeout(function () {
+                parent.$("#cerrar-visualizacion").click();
+              }, 100);
+            } else {
+              if (response.body[0].errorInfo[0] == "23000") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe un ensayo con este número de informe en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              }
+              return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
             }
-            return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
-          }
-        }, function (response) {
-          console.log(response);
-          __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
-        });
-        //     } else {
-        //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
-        //         return false;
-        //     }
-        // });
+          }, function (response) {
+            console.log(response);
+            __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+          });
+          //     } else {
+          //         Tools.mensajeAlerta("Faltan campos que llenar en el ensayo.", Tools.MENSAJE.ADVERTENCIA, '', 5);
+          //         return false;
+          //     }
+          // });
+        }
       }
     },
     resetForm: function resetForm(nombreFormulario) {
       this.$refs[nombreFormulario].resetFields();
+    },
+    validacionesExtra: function validacionesExtra() {
+      var numOTT = this.form.OTT == "" ? false : true;
+      var numMuestra = this.form.numIngreso == "" || this.form.OTT == [] ? false : true;
+      if (!numOTT) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Debe ingresar un numero de OTT para generar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ADVERTENCIA, "", 7);
+      }
+      if (!numMuestra) {
+        __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Debe seleccionar un numero de muestra para generar el ensayo.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ADVERTENCIA, "", 7);
+      }
+      if (numMuestra && numOTT) {
+        return true;
+      }
+      return false;
     },
     querySearchNumeroOtt: function querySearchNumeroOtt(query) {
       var _this2 = this;
@@ -98032,7 +98098,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
           var results = resultados.length > 0 ? resultados.map(function (orden) {
             return { value: orden.num_ott, id: orden.num_ott };
           }) : [];
-          console.log("resultados", results, resultados);
+          // console.log("resultados", results, resultados);
           _this2.opcionesSearchBoxOTT = results;
           _this2.ordenes = resultados;
         }, function (response) {
@@ -98241,7 +98307,6 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     },
     cargaDatosEnsayo: function cargaDatosEnsayo() {
       this.form.id = this.ensayoCargado.id;
-      this.form.numIngreso = this.ensayoCargado.num_ingreso;
       this.form.OTT = this.ensayoCargado.ott;
       this.form.numInforme = this.ensayoCargado.num_informe;
       this.form.camaraHumeda = this.ensayoCargado.camara_humeda;
@@ -98507,12 +98572,36 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
-        this.form.numIngreso = this.ordenSeleccionada.num_ingreso;
+
+        var numerosDeMuestra = this.ordenSeleccionada.num_ingreso.toString().trim().split(",");
+        var results = numerosDeMuestra.length > 0 ? numerosDeMuestra.map(function (elemento) {
+          return { value: elemento, id: elemento };
+        }) : [];
+        this.opcionesSearchBoxNumMuestra = results;
       } else {
+        // console.log("else watch ott", this.form.OTT);
         this.form.fechaConfeccionMuestraUno = "";
         this.form.fechaConfeccionMuestraDos = "";
         this.form.fechaConfeccionMuestraTres = "";
         this.form.fechaConfeccionMuestraCuatro = "";
+        this.form.numIngreso = [];
+        this.opcionesSearchBoxNumMuestra = [];
+        if (this.form.OTT == "") {
+          this.ensayoCargado = undefined;
+        }
+        if (this.ensayoCargado) {
+          var numsDeMuestra = this.ensayoCargado.numerosMuestraOtt.toString().trim().split(",");
+          var resultss = numsDeMuestra.length > 0 ? numsDeMuestra.map(function (elemento) {
+            return { value: elemento, id: elemento };
+          }) : [];
+          this.opcionesSearchBoxNumMuestra = resultss;
+          this.form.numIngreso = this.ensayoCargado.num_ingreso;
+          // console.log(
+          //   "ensayoCargado- num_ingreso, opcionesSearchBoxNumMuestra",
+          //   this.ensayoCargado.num_ingreso,
+          //   this.opcionesSearchBoxNumMuestra
+          // );
+        }
       }
     },
     "form.fechaEnsayoMuestraUno": function formFechaEnsayoMuestraUno(newVal, oldVal) {
@@ -99446,16 +99535,33 @@ var render = function() {
                     "el-form-item",
                     { attrs: { label: "N° Muestra", prop: "numMuestra" } },
                     [
-                      _c("el-input", {
-                        staticClass: "no-click",
-                        model: {
-                          value: _vm.form.numIngreso,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "numIngreso", $$v)
+                      _c(
+                        "el-select",
+                        {
+                          class: [_vm.form.OTT == "" ? "no-click" : ""],
+                          attrs: {
+                            size: "mini",
+                            placeholder: "Cargado desde la OTT",
+                            "no-data-text": "Sin muestras ingresadas en la OTT",
+                            disabled:
+                              _vm.visualizacion == "ver" || _vm.form.OTT == ""
                           },
-                          expression: "form.numIngreso"
-                        }
-                      })
+                          model: {
+                            value: _vm.form.numIngreso,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "numIngreso", $$v)
+                            },
+                            expression: "form.numIngreso"
+                          }
+                        },
+                        _vm._l(_vm.opcionesSearchBoxNumMuestra, function(item) {
+                          return _c("el-option", {
+                            key: item.value,
+                            attrs: { label: item.label, value: item.value }
+                          })
+                        }),
+                        1
+                      )
                     ],
                     1
                   )
@@ -99475,6 +99581,7 @@ var render = function() {
                         "el-select",
                         {
                           attrs: {
+                            size: "mini",
                             filterable: "",
                             clearable: "",
                             remote: "",
@@ -99482,7 +99589,8 @@ var render = function() {
                             "no-data-text": "Sin resultados",
                             placeholder: "Seleccione OTT",
                             "remote-method": _vm.querySearchNumeroOtt,
-                            loading: _vm.loading
+                            loading: _vm.loading,
+                            disabled: _vm.visualizacion == "ver"
                           },
                           model: {
                             value: _vm.form.OTT,
@@ -104335,7 +104443,9 @@ var render = function() {
                     {
                       attrs: {
                         placeholder: "Seleccione..",
-                        prop: "ensayadoPor"
+                        prop: "ensayadoPor",
+                        size: "mini",
+                        disabled: _vm.visualizacion == "ver"
                       },
                       model: {
                         value: _vm.form.ensayadoPor,
