@@ -55,6 +55,29 @@ class OrdenTrabajoTerrenoController extends Controller
         //         $ultimoNumIngreso++;
         //     }
         // }
+        $ordenExistente = OrdenTrabajoTerreno::where('num_ott', $request->formulario['numOtt'])->get();
+        if(count($ordenExistente)){
+            $retorno = ['num_ott_existe'];
+            return [$retorno, false];
+        }
+
+        $numerosMuestra = explode(",", $request->formulario['numIngreso']);
+        $numerosMuestraExistentes = [];
+
+        OrdenTrabajoTerreno::chunk(100, function ($ordenes) use(&$numerosMuestra, &$numerosMuestraExistentes) {
+            foreach ($ordenes as $orden) {
+                $numeros = explode(",", $orden['num_ingreso']);
+                foreach ($numeros as $numeroMuestraEnOtt) {
+                    if( in_array($numeroMuestraEnOtt, $numerosMuestra) ){
+                        array_push($numerosMuestraExistentes, $numeroMuestraEnOtt);
+                    }
+                }
+            }
+        });
+        if(count($numerosMuestraExistentes)){
+            $retorno = ['num_muestra_repetido', $numerosMuestraExistentes];
+            return [$retorno, false];
+        }
 
         $formulario;
         $formulario['num_ott'] = $request->formulario['numOtt'];
@@ -183,6 +206,32 @@ class OrdenTrabajoTerrenoController extends Controller
         //         $ultimoNumIngreso++;
         //     }
         // }
+        $ordenExistente = OrdenTrabajoTerreno::where([
+            ['num_ott', $request->formulario['numOtt']],
+            ['id', '!=', $request->formulario['id']]
+            ])->get();
+        if(count($ordenExistente)){
+            $retorno = ['num_ott_existe'];
+            return [$retorno, false];
+        }
+
+        $numerosMuestra = explode(",", $request->formulario['numIngreso']);
+        $numerosMuestraExistentes = [];
+
+        OrdenTrabajoTerreno::where('id', '!=', $request->formulario['id'])->chunk(100, function ($ordenes) use(&$numerosMuestra, &$numerosMuestraExistentes) {
+            foreach ($ordenes as $orden) {
+                $numeros = explode(",", $orden['num_ingreso']);
+                foreach ($numeros as $numeroMuestraEnOtt) {
+                    if( in_array($numeroMuestraEnOtt, $numerosMuestra) ){
+                        array_push($numerosMuestraExistentes, $numeroMuestraEnOtt);
+                    }
+                }
+            }
+        });
+        if(count($numerosMuestraExistentes)){
+            $retorno = ['num_muestra_repetido', $numerosMuestraExistentes];
+            return [$retorno, false];
+        }
 
         $formulario = OrdenTrabajoTerreno::find($request->formulario['id']);
 
