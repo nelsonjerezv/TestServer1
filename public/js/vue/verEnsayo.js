@@ -97699,6 +97699,195 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -98480,6 +98669,44 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     clickitem: function clickitem(item, value) {
       if (item == "velocidadMuestraUno") {
         this.form.velocidadMuestraUno == value ? this.form.velocidadMuestraUno = "" : this.form.velocidadMuestraUno = value;
+      } else if (item == "velocidadMuestraDos") {
+        this.form.velocidadMuestraDos == value ? this.form.velocidadMuestraDos = "" : this.form.velocidadMuestraDos = value;
+      } else if (item == "velocidadMuestraTres") {
+        this.form.velocidadMuestraTres == value ? this.form.velocidadMuestraTres = "" : this.form.velocidadMuestraTres = value;
+      } else if (item == "velocidadMuestraCuatro") {
+        this.form.velocidadMuestraCuatro == value ? this.form.velocidadMuestraCuatro = "" : this.form.velocidadMuestraCuatro = value;
+      } else if (item == "cumpleMuestraUno") {
+        this.form.cumpleMuestraUno == value ? this.form.cumpleMuestraUno = "" : this.form.cumpleMuestraUno = value;
+      } else if (item == "cumpleMuestraDos") {
+        this.form.cumpleMuestraDos == value ? this.form.cumpleMuestraDos = "" : this.form.cumpleMuestraDos = value;
+      } else if (item == "cumpleMuestraTres") {
+        this.form.cumpleMuestraTres == value ? this.form.cumpleMuestraTres = "" : this.form.cumpleMuestraTres = value;
+      } else if (item == "cumpleMuestraCuatro") {
+        this.form.cumpleMuestraCuatro == value ? this.form.cumpleMuestraCuatro = "" : this.form.cumpleMuestraCuatro = value;
+      } else if (item == "refrentadoMuestraUno") {
+        this.form.refrentadoMuestraUno == value ? this.form.refrentadoMuestraUno = "" : this.form.refrentadoMuestraUno = value;
+      } else if (item == "refrentadoMuestraDos") {
+        this.form.refrentadoMuestraDos == value ? this.form.refrentadoMuestraDos = "" : this.form.refrentadoMuestraDos = value;
+      } else if (item == "refrentadoMuestraTres") {
+        this.form.refrentadoMuestraTres == value ? this.form.refrentadoMuestraTres = "" : this.form.refrentadoMuestraTres = value;
+      } else if (item == "refrentadoMuestraCuatro") {
+        this.form.refrentadoMuestraCuatro == value ? this.form.refrentadoMuestraCuatro = "" : this.form.refrentadoMuestraCuatro = value;
+      } else if (item == "perpendicularidadMuestraUno") {
+        this.form.perpendicularidadMuestraUno == value ? this.form.perpendicularidadMuestraUno = "" : this.form.perpendicularidadMuestraUno = value;
+      } else if (item == "perpendicularidadMuestraDos") {
+        this.form.perpendicularidadMuestraDos == value ? this.form.perpendicularidadMuestraDos = "" : this.form.perpendicularidadMuestraDos = value;
+      } else if (item == "perpendicularidadMuestraTres") {
+        this.form.perpendicularidadMuestraTres == value ? this.form.perpendicularidadMuestraTres = "" : this.form.perpendicularidadMuestraTres = value;
+      } else if (item == "perpendicularidadMuestraCuatro") {
+        this.form.perpendicularidadMuestraCuatro == value ? this.form.perpendicularidadMuestraCuatro = "" : this.form.perpendicularidadMuestraCuatro = value;
+      } else if (item == "planeidadMuestraUno") {
+        this.form.planeidadMuestraUno == value ? this.form.planeidadMuestraUno = "" : this.form.planeidadMuestraUno = value;
+      } else if (item == "planeidadMuestraDos") {
+        this.form.planeidadMuestraDos == value ? this.form.planeidadMuestraDos = "" : this.form.planeidadMuestraDos = value;
+      } else if (item == "planeidadMuestraTres") {
+        this.form.planeidadMuestraTres == value ? this.form.planeidadMuestraTres = "" : this.form.planeidadMuestraTres = value;
+      } else if (item == "planeidadMuestraCuatro") {
+        this.form.planeidadMuestraCuatro == value ? this.form.planeidadMuestraCuatro = "" : this.form.planeidadMuestraCuatro = value;
       }
     }
   },
@@ -99486,7 +99713,7 @@ var render = function() {
               _c(
                 "td",
                 {
-                  staticStyle: { width: "500px" },
+                  staticStyle: { width: "900px" },
                   attrs: { colspan: "3", align: "center" }
                 },
                 [
@@ -99510,9 +99737,11 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("tr", [
-              _c("td", { attrs: { align: "left" } }, [
-                _vm._v("Revisión   012")
-              ]),
+              _c(
+                "td",
+                { staticStyle: { width: "250px" }, attrs: { align: "left" } },
+                [_vm._v("Revisión   012")]
+              ),
               _vm._v(" "),
               _c("td", [_vm._v("Código   FE-H-006")]),
               _vm._v(" "),
@@ -100515,15 +100744,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "refrentadoMuestraUno" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.refrentadoMuestraUno,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "refrentadoMuestraUno", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraUno",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.refrentadoMuestraUno"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.refrentadoMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraUno", $$v)
+                              },
+                              expression: "form.refrentadoMuestraUno"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraUno",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.refrentadoMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraUno", $$v)
+                              },
+                              expression: "form.refrentadoMuestraUno"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100539,15 +100806,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "refrentadoMuestraDos" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.refrentadoMuestraDos,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "refrentadoMuestraDos", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraDos",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.refrentadoMuestraDos"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.refrentadoMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraDos", $$v)
+                              },
+                              expression: "form.refrentadoMuestraDos"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraDos",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.refrentadoMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraDos", $$v)
+                              },
+                              expression: "form.refrentadoMuestraDos"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100563,15 +100868,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "refrentadoMuestraTres" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.refrentadoMuestraTres,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "refrentadoMuestraTres", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraTres",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.refrentadoMuestraTres"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.refrentadoMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraTres", $$v)
+                              },
+                              expression: "form.refrentadoMuestraTres"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraTres",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.refrentadoMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "refrentadoMuestraTres", $$v)
+                              },
+                              expression: "form.refrentadoMuestraTres"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100587,15 +100930,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "refrentadoMuestraCuatro" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.refrentadoMuestraCuatro,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "refrentadoMuestraCuatro", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraCuatro",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.refrentadoMuestraCuatro"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.refrentadoMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "refrentadoMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.refrentadoMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "refrentadoMuestraCuatro",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.refrentadoMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "refrentadoMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.refrentadoMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100620,19 +101009,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "perpendicularidadMuestraUno" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.perpendicularidadMuestraUno,
-                            callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "perpendicularidadMuestraUno",
-                                $$v
-                              )
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraUno",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.perpendicularidadMuestraUno"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraUno",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraUno",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraUno",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100648,19 +101079,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "perpendicularidadMuestraDos" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.perpendicularidadMuestraDos,
-                            callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "perpendicularidadMuestraDos",
-                                $$v
-                              )
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraDos",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.perpendicularidadMuestraDos"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraDos",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraDos",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraDos",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100676,19 +101149,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "perpendicularidadMuestraTres" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.perpendicularidadMuestraTres,
-                            callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "perpendicularidadMuestraTres",
-                                $$v
-                              )
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraTres",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.perpendicularidadMuestraTres"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraTres",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraTres",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraTres",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100704,19 +101219,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "perpendicularidadMuestraCuatro" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.perpendicularidadMuestraCuatro,
-                            callback: function($$v) {
-                              _vm.$set(
-                                _vm.form,
-                                "perpendicularidadMuestraCuatro",
-                                $$v
-                              )
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraCuatro",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.perpendicularidadMuestraCuatro"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "perpendicularidadMuestraCuatro",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.perpendicularidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "perpendicularidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.perpendicularidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100741,15 +101298,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "planeidadMuestraUno" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.planeidadMuestraUno,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "planeidadMuestraUno", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraUno",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.planeidadMuestraUno"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.planeidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraUno", $$v)
+                              },
+                              expression: "form.planeidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraUno",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.planeidadMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraUno", $$v)
+                              },
+                              expression: "form.planeidadMuestraUno"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100765,15 +101360,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "planeidadMuestraDos" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.planeidadMuestraDos,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "planeidadMuestraDos", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraDos",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.planeidadMuestraDos"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.planeidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraDos", $$v)
+                              },
+                              expression: "form.planeidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraDos",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.planeidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraDos", $$v)
+                              },
+                              expression: "form.planeidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100789,15 +101422,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "planeidadMuestraTres" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.planeidadMuestraTres,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "planeidadMuestraTres", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraTres",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.planeidadMuestraTres"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.planeidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraTres", $$v)
+                              },
+                              expression: "form.planeidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraTres",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.planeidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "planeidadMuestraTres", $$v)
+                              },
+                              expression: "form.planeidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -100813,15 +101484,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "planeidadMuestraCuatro" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.planeidadMuestraCuatro,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "planeidadMuestraCuatro", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraCuatro",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.planeidadMuestraCuatro"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.planeidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "planeidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.planeidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "planeidadMuestraCuatro",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.planeidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "planeidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.planeidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104160,15 +104877,47 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "cumpleMuestraUno" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.cumpleMuestraUno,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "cumpleMuestraUno", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraUno", "SI")
+                              }
                             },
-                            expression: "form.cumpleMuestraUno"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.cumpleMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraUno", $$v)
+                              },
+                              expression: "form.cumpleMuestraUno"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraUno", "NO")
+                              }
+                            },
+                            model: {
+                              value: _vm.form.cumpleMuestraUno,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraUno", $$v)
+                              },
+                              expression: "form.cumpleMuestraUno"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104184,15 +104933,47 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "cumpleMuestraDos" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.cumpleMuestraDos,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "cumpleMuestraDos", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraDos", "SI")
+                              }
                             },
-                            expression: "form.cumpleMuestraDos"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.cumpleMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraDos", $$v)
+                              },
+                              expression: "form.cumpleMuestraDos"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraDos", "NO")
+                              }
+                            },
+                            model: {
+                              value: _vm.form.cumpleMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraDos", $$v)
+                              },
+                              expression: "form.cumpleMuestraDos"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104208,15 +104989,47 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "cumpleMuestraTres" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.cumpleMuestraTres,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "cumpleMuestraTres", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraTres", "SI")
+                              }
                             },
-                            expression: "form.cumpleMuestraTres"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.cumpleMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraTres", $$v)
+                              },
+                              expression: "form.cumpleMuestraTres"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem("cumpleMuestraTres", "NO")
+                              }
+                            },
+                            model: {
+                              value: _vm.form.cumpleMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraTres", $$v)
+                              },
+                              expression: "form.cumpleMuestraTres"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104232,15 +105045,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "cumpleMuestraCuatro" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.cumpleMuestraCuatro,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "cumpleMuestraCuatro", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "cumpleMuestraCuatro",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.cumpleMuestraCuatro"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.cumpleMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraCuatro", $$v)
+                              },
+                              expression: "form.cumpleMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "cumpleMuestraCuatro",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.cumpleMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "cumpleMuestraCuatro", $$v)
+                              },
+                              expression: "form.cumpleMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104329,15 +105180,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "velocidadMuestraDos" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.velocidadMuestraDos,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "velocidadMuestraDos", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraDos",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.velocidadMuestraDos"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.velocidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraDos", $$v)
+                              },
+                              expression: "form.velocidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraDos",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.velocidadMuestraDos,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraDos", $$v)
+                              },
+                              expression: "form.velocidadMuestraDos"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104353,15 +105242,53 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "velocidadMuestraTres" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.velocidadMuestraTres,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "velocidadMuestraTres", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraTres",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.velocidadMuestraTres"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.velocidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraTres", $$v)
+                              },
+                              expression: "form.velocidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraTres",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.velocidadMuestraTres,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "velocidadMuestraTres", $$v)
+                              },
+                              expression: "form.velocidadMuestraTres"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
@@ -104377,15 +105304,61 @@ var render = function() {
                       "el-form-item",
                       { attrs: { prop: "velocidadMuestraCuatro" } },
                       [
-                        _c("el-checkbox", {
-                          model: {
-                            value: _vm.form.velocidadMuestraCuatro,
-                            callback: function($$v) {
-                              _vm.$set(_vm.form, "velocidadMuestraCuatro", $$v)
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "SI" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraCuatro",
+                                  "SI"
+                                )
+                              }
                             },
-                            expression: "form.velocidadMuestraCuatro"
-                          }
-                        })
+                            model: {
+                              value: _vm.form.velocidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "velocidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.velocidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("SI")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "el-radio",
+                          {
+                            attrs: { label: "NO" },
+                            nativeOn: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.clickitem(
+                                  "velocidadMuestraCuatro",
+                                  "NO"
+                                )
+                              }
+                            },
+                            model: {
+                              value: _vm.form.velocidadMuestraCuatro,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "velocidadMuestraCuatro",
+                                  $$v
+                                )
+                              },
+                              expression: "form.velocidadMuestraCuatro"
+                            }
+                          },
+                          [_vm._v("NO")]
+                        )
                       ],
                       1
                     )
