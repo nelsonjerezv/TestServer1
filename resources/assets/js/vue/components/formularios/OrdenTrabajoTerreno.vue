@@ -2116,9 +2116,18 @@ export default {
                     condicion: "porvalidar",
                   });
                 } else {
-                  if (response.body[0].errorInfo[0] == "23000") {
+                  if (response.body[0][0] == "num_ott_existe") {
                     return Tools.mensajeAlerta(
-                      "Ya existe una OTT con este numero en la base de datos.",
+                      "No se puede guardar. Ya existe una OTT con este numero en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
+                  if (response.body[0][0] == "num_muestra_repetido") {
+                    return Tools.mensajeAlerta(
+                      "No se puede guardar. Ya existe el o los siguientes numeros de muestra en base de datos: " +
+                        response.body[0][1],
                       Tools.MENSAJE.ERROR,
                       "",
                       5
@@ -2170,9 +2179,18 @@ export default {
                     parent.$("#cerrar-visualizacion").click();
                   }, 100);
                 } else {
-                  if (response.body[0].errorInfo[0] == "23000") {
+                  if (response.body[0][0] == "num_ott_existe") {
                     return Tools.mensajeAlerta(
-                      "Ya existe una OTT con este numero en la base de datos.",
+                      "No se puede guardar. Ya existe otra OTT con este numero en la base de datos.",
+                      Tools.MENSAJE.ERROR,
+                      "",
+                      5
+                    );
+                  }
+                  if (response.body[0][0] == "num_muestra_repetido") {
+                    return Tools.mensajeAlerta(
+                      "No se puede guardar. Ya existe el o los siguientes numeros de muestra (en otras OTTs) en base de datos: " +
+                        response.body[0][1],
                       Tools.MENSAJE.ERROR,
                       "",
                       5
