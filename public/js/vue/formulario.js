@@ -98093,8 +98093,11 @@ var moment = __webpack_require__(0);
                 condicion: "porvalidar"
               });
             } else {
-              if (response.body[0].errorInfo[0] == "23000") {
-                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              if (response.body[0][0] == "num_ott_existe") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se puede guardar. Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              }
+              if (response.body[0][0] == "num_muestra_repetido") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se puede guardar. Ya existe el o los siguientes numeros de muestra en base de datos: " + response.body[0][1], __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
               }
               return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
             }
@@ -98122,8 +98125,11 @@ var moment = __webpack_require__(0);
                 parent.$("#cerrar-visualizacion").click();
               }, 100);
             } else {
-              if (response.body[0].errorInfo[0] == "23000") {
-                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("Ya existe una OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              if (response.body[0][0] == "num_ott_existe") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se puede guardar. Ya existe otra OTT con este numero en la base de datos.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
+              }
+              if (response.body[0][0] == "num_muestra_repetido") {
+                return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se puede guardar. Ya existe el o los siguientes numeros de muestra (en otras OTTs) en base de datos: " + response.body[0][1], __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
               }
               return __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].mensajeAlerta("No se pudo guardar el formulario.", __WEBPACK_IMPORTED_MODULE_0__tools_js__["a" /* default */].MENSAJE.ERROR, "", 5);
             }
