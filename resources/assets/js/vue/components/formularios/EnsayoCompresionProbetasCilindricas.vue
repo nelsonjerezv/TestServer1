@@ -13,7 +13,7 @@
           <td rowspan="2" style="width: 250px" align="left" valign="top">
             <img src="/images/logo-lacem.png" style="width: 100px" />
           </td>
-          <td colspan="3" align="center" style="width: 500px">
+          <td colspan="3" align="center" style="width: 900px">
             <b>Hormigón: Ensayo de Compresión de Probetas Cilíndricas</b>
           </td>
           <td align="right" style="width: 250px">
@@ -22,7 +22,7 @@
           </td>
         </tr>
         <tr>
-          <td align="left">Revisión&nbsp;&nbsp;&nbsp;012</td>
+          <td align="left" style="width: 250px">Revisión&nbsp;&nbsp;&nbsp;012</td>
           <td>Código&nbsp;&nbsp;&nbsp;FE-H-006</td>
           <td colspan="2" align="right">
             Fecha aprobación:&nbsp;&nbsp;&nbsp;08-09-2016
@@ -366,22 +366,62 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="refrentadoMuestraUno">
-              <el-checkbox v-model="form.refrentadoMuestraUno"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraUno', 'SI')"
+                  v-model="form.refrentadoMuestraUno"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraUno', 'NO')"
+                  v-model="form.refrentadoMuestraUno"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="refrentadoMuestraDos">
-              <el-checkbox v-model="form.refrentadoMuestraDos"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraDos', 'SI')"
+                  v-model="form.refrentadoMuestraDos"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraDos', 'NO')"
+                  v-model="form.refrentadoMuestraDos"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="refrentadoMuestraTres">
-              <el-checkbox v-model="form.refrentadoMuestraTres"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraTres', 'SI')"
+                  v-model="form.refrentadoMuestraTres"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraTres', 'NO')"
+                  v-model="form.refrentadoMuestraTres"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="refrentadoMuestraCuatro">
-              <el-checkbox v-model="form.refrentadoMuestraCuatro"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraCuatro', 'SI')"
+                  v-model="form.refrentadoMuestraCuatro"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('refrentadoMuestraCuatro', 'NO')"
+                  v-model="form.refrentadoMuestraCuatro"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
         </el-col>
@@ -393,30 +433,62 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="perpendicularidadMuestraUno">
-              <el-checkbox
-                v-model="form.perpendicularidadMuestraUno"
-              ></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraUno', 'SI')"
+                  v-model="form.perpendicularidadMuestraUno"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraUno', 'NO')"
+                  v-model="form.perpendicularidadMuestraUno"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="perpendicularidadMuestraDos">
-              <el-checkbox
-                v-model="form.perpendicularidadMuestraDos"
-              ></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraDos', 'SI')"
+                  v-model="form.perpendicularidadMuestraDos"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraDos', 'NO')"
+                  v-model="form.perpendicularidadMuestraDos"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="perpendicularidadMuestraTres">
-              <el-checkbox
-                v-model="form.perpendicularidadMuestraTres"
-              ></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraTres', 'SI')"
+                  v-model="form.perpendicularidadMuestraTres"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraTres', 'NO')"
+                  v-model="form.perpendicularidadMuestraTres"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="perpendicularidadMuestraCuatro">
-              <el-checkbox
-                v-model="form.perpendicularidadMuestraCuatro"
-              ></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraCuatro', 'SI')"
+                  v-model="form.perpendicularidadMuestraCuatro"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('perpendicularidadMuestraCuatro', 'NO')"
+                  v-model="form.perpendicularidadMuestraCuatro"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
         </el-col>
@@ -428,22 +500,62 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="planeidadMuestraUno">
-              <el-checkbox v-model="form.planeidadMuestraUno"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraUno', 'SI')"
+                  v-model="form.planeidadMuestraUno"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraUno', 'NO')"
+                  v-model="form.planeidadMuestraUno"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="planeidadMuestraDos">
-              <el-checkbox v-model="form.planeidadMuestraDos"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraDos', 'SI')"
+                  v-model="form.planeidadMuestraDos"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraDos', 'NO')"
+                  v-model="form.planeidadMuestraDos"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="planeidadMuestraTres">
-              <el-checkbox v-model="form.planeidadMuestraTres"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraTres', 'SI')"
+                  v-model="form.planeidadMuestraTres"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraTres', 'NO')"
+                  v-model="form.planeidadMuestraTres"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="planeidadMuestraCuatro">
-              <el-checkbox v-model="form.planeidadMuestraCuatro"></el-checkbox>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraCuatro', 'SI')"
+                  v-model="form.planeidadMuestraCuatro"
+                  label="SI"
+                  >SI</el-radio>
+              <el-radio
+                  @click.native.prevent="clickitem('planeidadMuestraCuatro', 'NO')"
+                  v-model="form.planeidadMuestraCuatro"
+                  label="NO"
+                  >NO</el-radio
+              >
             </el-form-item>
           </div>
         </el-col>
@@ -1430,22 +1542,66 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="cumpleMuestraUno">
-              <el-checkbox v-model="form.cumpleMuestraUno"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraUno', 'SI')"
+                v-model="form.cumpleMuestraUno"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraUno', 'NO')"
+                v-model="form.cumpleMuestraUno"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="cumpleMuestraDos">
-              <el-checkbox v-model="form.cumpleMuestraDos"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraDos', 'SI')"
+                v-model="form.cumpleMuestraDos"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraDos', 'NO')"
+                v-model="form.cumpleMuestraDos"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="cumpleMuestraTres">
-              <el-checkbox v-model="form.cumpleMuestraTres"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraTres', 'SI')"
+                v-model="form.cumpleMuestraTres"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraTres', 'NO')"
+                v-model="form.cumpleMuestraTres"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="cumpleMuestraCuatro">
-              <el-checkbox v-model="form.cumpleMuestraCuatro"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraCuatro', 'SI')"
+                v-model="form.cumpleMuestraCuatro"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('cumpleMuestraCuatro', 'NO')"
+                v-model="form.cumpleMuestraCuatro"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
         </el-col>
@@ -1473,17 +1629,50 @@
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadMuestraDos">
-              <el-checkbox v-model="form.velocidadMuestraDos"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraDos', 'SI')"
+                v-model="form.velocidadMuestraDos"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraDos', 'NO')"
+                v-model="form.velocidadMuestraDos"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadMuestraTres">
-              <el-checkbox v-model="form.velocidadMuestraTres"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraTres', 'SI')"
+                v-model="form.velocidadMuestraTres"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraTres', 'NO')"
+                v-model="form.velocidadMuestraTres"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
           <div class="texto-muestras">
             <el-form-item prop="velocidadMuestraCuatro">
-              <el-checkbox v-model="form.velocidadMuestraCuatro"></el-checkbox>
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraCuatro', 'SI')"
+                v-model="form.velocidadMuestraCuatro"
+                label="SI"
+                >SI</el-radio
+              >
+              <el-radio
+                @click.native.prevent="clickitem('velocidadMuestraCuatro', 'NO')"
+                v-model="form.velocidadMuestraCuatro"
+                label="NO"
+                >NO</el-radio
+              >
             </el-form-item>
           </div>
         </el-col>
@@ -2808,6 +2997,102 @@ export default {
           ? (this.form.velocidadMuestraUno = "")
           : (this.form.velocidadMuestraUno = value);
       }
+      else if (item == "velocidadMuestraDos") {
+        this.form.velocidadMuestraDos == value
+          ? (this.form.velocidadMuestraDos = "")
+          : (this.form.velocidadMuestraDos = value);
+      }
+      else if (item == "velocidadMuestraTres") {
+        this.form.velocidadMuestraTres == value
+          ? (this.form.velocidadMuestraTres = "")
+          : (this.form.velocidadMuestraTres = value);
+      }
+      else if (item == "velocidadMuestraCuatro") {
+        this.form.velocidadMuestraCuatro == value
+          ? (this.form.velocidadMuestraCuatro = "")
+          : (this.form.velocidadMuestraCuatro = value);
+      }
+      else if (item == "cumpleMuestraUno") {
+        this.form.cumpleMuestraUno == value
+          ? (this.form.cumpleMuestraUno = "")
+          : (this.form.cumpleMuestraUno = value);
+      }
+      else if (item == "cumpleMuestraDos") {
+        this.form.cumpleMuestraDos == value
+          ? (this.form.cumpleMuestraDos = "")
+          : (this.form.cumpleMuestraDos = value);
+      }
+      else if (item == "cumpleMuestraTres") {
+        this.form.cumpleMuestraTres == value
+          ? (this.form.cumpleMuestraTres = "")
+          : (this.form.cumpleMuestraTres = value);
+      }
+      else if (item == "cumpleMuestraCuatro") {
+        this.form.cumpleMuestraCuatro == value
+          ? (this.form.cumpleMuestraCuatro = "")
+          : (this.form.cumpleMuestraCuatro = value);
+      }
+      else if (item == "refrentadoMuestraUno") {
+        this.form.refrentadoMuestraUno == value
+          ? (this.form.refrentadoMuestraUno = "")
+          : (this.form.refrentadoMuestraUno = value);
+      }
+      else if (item == "refrentadoMuestraDos") {
+        this.form.refrentadoMuestraDos == value
+          ? (this.form.refrentadoMuestraDos = "")
+          : (this.form.refrentadoMuestraDos = value);
+      }
+      else if (item == "refrentadoMuestraTres") {
+        this.form.refrentadoMuestraTres == value
+          ? (this.form.refrentadoMuestraTres = "")
+          : (this.form.refrentadoMuestraTres = value);
+      }
+      else if (item == "refrentadoMuestraCuatro") {
+        this.form.refrentadoMuestraCuatro == value
+          ? (this.form.refrentadoMuestraCuatro = "")
+          : (this.form.refrentadoMuestraCuatro = value);
+      }
+      else if (item == "perpendicularidadMuestraUno") {
+        this.form.perpendicularidadMuestraUno == value
+          ? (this.form.perpendicularidadMuestraUno = "")
+          : (this.form.perpendicularidadMuestraUno = value);
+      }
+      else if (item == "perpendicularidadMuestraDos") {
+        this.form.perpendicularidadMuestraDos == value
+          ? (this.form.perpendicularidadMuestraDos = "")
+          : (this.form.perpendicularidadMuestraDos = value);
+      }
+      else if (item == "perpendicularidadMuestraTres") {
+        this.form.perpendicularidadMuestraTres == value
+          ? (this.form.perpendicularidadMuestraTres = "")
+          : (this.form.perpendicularidadMuestraTres = value);
+      }
+      else if (item == "perpendicularidadMuestraCuatro") {
+        this.form.perpendicularidadMuestraCuatro == value
+          ? (this.form.perpendicularidadMuestraCuatro = "")
+          : (this.form.perpendicularidadMuestraCuatro = value);
+      }
+      else if (item == "planeidadMuestraUno") {
+        this.form.planeidadMuestraUno == value
+          ? (this.form.planeidadMuestraUno = "")
+          : (this.form.planeidadMuestraUno = value);
+      }
+      else if (item == "planeidadMuestraDos") {
+        this.form.planeidadMuestraDos == value
+          ? (this.form.planeidadMuestraDos = "")
+          : (this.form.planeidadMuestraDos = value);
+      }
+      else if (item == "planeidadMuestraTres") {
+        this.form.planeidadMuestraTres == value
+          ? (this.form.planeidadMuestraTres = "")
+          : (this.form.planeidadMuestraTres = value);
+      }
+      else if (item == "planeidadMuestraCuatro") {
+        this.form.planeidadMuestraCuatro == value
+          ? (this.form.planeidadMuestraCuatro = "")
+          : (this.form.planeidadMuestraCuatro = value);
+      }
+
     },
   },
   computed: {
