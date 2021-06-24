@@ -97888,6 +97888,48 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -97907,6 +97949,9 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       loading: false,
       cantidadDecimales: 6,
       numerosMuestraFromOTT: [],
+      numMuestraEnsayoCargado: "",
+      idEnsayoCargado: "",
+      placeholderNumeroMuestra: "Sin muestras ingresadas en la OTT",
       factoresConversion: {
         20: 1.25,
         25: 1.2,
@@ -98184,6 +98229,9 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     if (this.ensayoCargado) {
       this.numerosMuestraFromOTT = this.ensayoCargado.numerosMuestraOtt;
       this.estadoEnsayo = this.ensayoCargado.validado;
+      this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
+      this.idEnsayoCargado = this.ensayoCargado.ott;
+      console.log(this.numMuestraEnsayoCargado, this.ensayoCargado.num_ingreso);
       // console.log(
       //   this.visualizacion,
       //   this.ensayoCargado,
@@ -98790,22 +98838,55 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       }
     },
     "form.OTT": function formOTT(newVal, oldVal) {
+      var _this3 = this;
+
       this.ordenSeleccionada = this.ordenes.filter(function (orden) {
         return orden.num_ott == newVal;
       });
+      console.log(this.ordenSeleccionada);
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
         this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraDos = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
+        this.form.numIngreso = [];
+        console.log("if", this.idEnsayoCargado, this.ordenSeleccionada.id, this.numMuestraEnsayoCargado, this.ordenSeleccionada.num_ingreso);
+        if (this.idEnsayoCargado != this.ordenSeleccionada.num_ott && this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso) {
+          this.idEnsayoCargado = this.ordenSeleccionada.num_ott;
+          this.numMuestraEnsayoCargado = this.ordenSeleccionada.num_ingreso;
+        }
+        this.placeholderNumeroMuestra = "Sin muestras ingresadas en la OTT";
 
         var numerosDeMuestra = this.ordenSeleccionada.num_ingreso.toString().trim().split(",");
-        var results = numerosDeMuestra.length > 0 ? numerosDeMuestra.map(function (elemento) {
+        var numsUsados = this.ordenSeleccionada.numMuestraUsados;
+        if (this.numMuestraEnsayoCargado != "") {
+          // const array = [2, 5, 9];
+          console.log("if if");
+
+          console.log("pre", numsUsados, this.numMuestraEnsayoCargado);
+
+          var index = numsUsados.indexOf(this.numMuestraEnsayoCargado);
+          if (index > -1) {
+            numsUsados.splice(index, 1);
+          }
+          console.log("post", numsUsados);
+        }
+
+        var numerosDeMuestraFiltrados = numerosDeMuestra.filter(function (numero) {
+          return !numsUsados.includes(numero);
+        });
+        console.log("if", this.ordenSeleccionada.numMuestraUsados, numerosDeMuestra, numerosDeMuestraFiltrados, numsUsados, this.numMuestraEnsayoCargado);
+        var results = numerosDeMuestraFiltrados.length > 0 ? numerosDeMuestraFiltrados.map(function (elemento) {
           return { value: elemento, id: elemento };
         }) : [];
+        if (numerosDeMuestra.length != 0 && numerosDeMuestraFiltrados.length == 0) {
+          this.placeholderNumeroMuestra = "Todas las muestras de \r\nesta OTT ya han sido \r\nusadas en otros ensayos";
+        }
         this.opcionesSearchBoxNumMuestra = results;
       } else {
+        console.log("else");
+
         // console.log("else watch ott", this.form.OTT);
         this.form.fechaConfeccionMuestraUno = "";
         this.form.fechaConfeccionMuestraDos = "";
@@ -98813,12 +98894,24 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.fechaConfeccionMuestraCuatro = "";
         this.form.numIngreso = [];
         this.opcionesSearchBoxNumMuestra = [];
+        this.placeholderNumeroMuestra = "Sin muestras ingresadas en la OTT";
+
         if (this.form.OTT == "") {
           this.ensayoCargado = undefined;
         }
         if (this.ensayoCargado) {
+          console.log("else ensayoCargado", this.ensayoCargado);
           var numsDeMuestra = this.ensayoCargado.numerosMuestraOtt.toString().trim().split(",");
-          var resultss = numsDeMuestra.length > 0 ? numsDeMuestra.map(function (elemento) {
+          console.log("else ensayoCargado", this.ensayoCargado, this.ensayoCargado.numMuestraUsados, numsDeMuestra);
+          this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
+          this.idEnsayoCargado = this.ensayoCargado.ott;
+          var numsDeMuestraFiltrados = numsDeMuestra.filter(function (numero) {
+            return !_this3.ensayoCargado.numMuestraUsados.includes(numero);
+          });
+          if (numsDeMuestra.length != 0 && numsDeMuestraFiltrados.length == 0) {
+            this.placeholderNumeroMuestra = "Todas las muestras de \r\nesta OTT ya han sido \r\nusadas en otros ensayos";
+          }
+          var resultss = numsDeMuestraFiltrados.length > 0 ? numsDeMuestraFiltrados.map(function (elemento) {
             return { value: elemento, id: elemento };
           }) : [];
           this.opcionesSearchBoxNumMuestra = resultss;
@@ -99740,7 +99833,7 @@ var render = function() {
               _c(
                 "td",
                 { staticStyle: { width: "250px" }, attrs: { align: "left" } },
-                [_vm._v("Revisión   012")]
+                [_vm._v("\n          Revisión   012\n        ")]
               ),
               _vm._v(" "),
               _c("td", [_vm._v("Código   FE-H-006")]),
@@ -99771,7 +99864,7 @@ var render = function() {
                           attrs: {
                             size: "mini",
                             placeholder: "Cargado desde la OTT",
-                            "no-data-text": "Sin muestras ingresadas en la OTT",
+                            "no-data-text": _vm.placeholderNumeroMuestra,
                             disabled:
                               _vm.visualizacion == "ver" || _vm.form.OTT == ""
                           },
