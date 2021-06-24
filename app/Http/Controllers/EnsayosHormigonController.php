@@ -518,10 +518,23 @@ class EnsayosHormigonController extends Controller
                                         ->where('validado', true)
                                         ->get();
 
-        // $ordenes = OrdenTrabajoTerreno::where('num_cliente_obra' , 'like', '%' . $busqueda . '%')
-        //                                 ->orWhere('laboratorista' , 'like', '%' . $busqueda . '%')
-        //                                 ->orWhere('id' , $busqueda)
-        //                                 ->get();
+        $ensayos = EnsayoProbetasHormigon::whereHas('ott', function ($query) use ($busqueda) {
+            return $query->where('num_ott' , 'like', '%' . $busqueda . '%')
+                                        ->where('validado', true);
+        })->get();
+
+        // $ensayos = EnsayoProbetasHormigon::where('num_ott' , 'like', '%' . $busqueda . '%')->with('ott')->get();
+
+        foreach ($ordenes as $orden) {
+            $numMuestraUsados = [];
+            foreach ($ensayos as $ensayo) {
+                // dd($ensayo);
+                if($orden['num_ott'] == $ensayo['ott']){
+                    array_push($numMuestraUsados, $ensayo['num_ingreso']);
+                }
+            }
+            $orden['numMuestraUsados'] = $numMuestraUsados;
+        }
 
         return $ordenes;
     }
@@ -556,6 +569,20 @@ class EnsayosHormigonController extends Controller
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo->ott)->first();
         $ensayo['numerosMuestraOtt'] = $orden['num_ingreso'];
         $accion = 'ver';
+        $numeroOtt = $ensayo->ott;
+
+        $ensayos = EnsayoProbetasHormigon::where('id', '!=', $id)
+        ->whereHas('ott', function ($query) use ($numeroOtt) {
+            return $query->where('num_ott' , $numeroOtt);
+        })->get();
+
+        $numMuestraUsados = [];
+        foreach ($ensayos as $ensayi) {
+            if($orden['num_ott'] == $ensayi['ott'] && $ensayi['id'] != $id){
+                array_push($numMuestraUsados, $ensayi['num_ingreso']);
+            }
+        }
+        $ensayo['numMuestraUsados'] = $numMuestraUsados;
 
         return view('ver_ensayo', compact('accion', 'ensayo') );
     }
@@ -565,7 +592,21 @@ class EnsayosHormigonController extends Controller
         $orden = OrdenTrabajoTerreno::where('num_ott', $ensayo->ott)->first();
         $ensayo['numerosMuestraOtt'] = $orden['num_ingreso'];
         $accion = 'editar';
+        $numeroOtt = $ensayo->ott;
 
+        $ensayos = EnsayoProbetasHormigon::where('id', '!=', $id)
+        ->whereHas('ott', function ($query) use ($numeroOtt) {
+            return $query->where('num_ott' , $numeroOtt);
+        })->get();
+
+        $numMuestraUsados = [];
+        foreach ($ensayos as $ensayi) {
+            if($orden['num_ott'] == $ensayi['ott'] && $ensayi['id'] != $id){
+                array_push($numMuestraUsados, $ensayi['num_ingreso']);
+            }
+        }
+        $ensayo['numMuestraUsados'] = $numMuestraUsados;
+        // dd($ensayo);
         return view('ver_ensayo', compact('accion', 'ensayo') );
     }
 
