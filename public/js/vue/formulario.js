@@ -105846,7 +105846,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       this.ordenSeleccionada = this.ordenes.filter(function (orden) {
         return orden.num_ott == newVal;
       });
-      console.log(this.ordenSeleccionada);
+      console.log(this.ordenSeleccionada, this.idEnsayoCargado, this.numMuestraEnsayoCargado);
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
         this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
@@ -105855,7 +105855,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
         this.form.numIngreso = [];
         console.log("if", this.idEnsayoCargado, this.ordenSeleccionada.id, this.numMuestraEnsayoCargado, this.ordenSeleccionada.num_ingreso);
-        if (this.idEnsayoCargado != this.ordenSeleccionada.num_ott && this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso) {
+        if (this.idEnsayoCargado != this.ordenSeleccionada.num_ott && this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso && this.idEnsayoCargado != "" && this.numMuestraEnsayoCargado != "") {
           this.idEnsayoCargado = this.ordenSeleccionada.num_ott;
           this.numMuestraEnsayoCargado = this.ordenSeleccionada.num_ingreso;
         }
