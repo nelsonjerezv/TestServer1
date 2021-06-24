@@ -1828,6 +1828,7 @@ export default {
       cantidadDecimales: 6,
       numerosMuestraFromOTT: [],
       numMuestraEnsayoCargado: "",
+      idEnsayoCargado: "",
       placeholderNumeroMuestra: "Sin muestras ingresadas en la OTT",
       factoresConversion: {
         20: 1.25,
@@ -2146,6 +2147,7 @@ export default {
       this.numerosMuestraFromOTT = this.ensayoCargado.numerosMuestraOtt;
       this.estadoEnsayo = this.ensayoCargado.validado;
       this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
+      this.idEnsayoCargado = this.ensayoCargado.ott;
       console.log(this.numMuestraEnsayoCargado, this.ensayoCargado.num_ingreso);
       // console.log(
       //   this.visualizacion,
@@ -3221,6 +3223,7 @@ export default {
       this.ordenSeleccionada = this.ordenes.filter((orden) => {
         return orden.num_ott == newVal;
       });
+      console.log(this.ordenSeleccionada);
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
         this.form.fechaConfeccionMuestraUno =
@@ -3231,34 +3234,51 @@ export default {
           this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro =
           this.ordenSeleccionada.fecha_confeccion;
-
+        this.form.numIngreso = [];
+        console.log(
+          "if",
+          this.idEnsayoCargado,
+          this.ordenSeleccionada.id,
+          this.numMuestraEnsayoCargado,
+          this.ordenSeleccionada.num_ingreso
+        );
+        if (
+          this.idEnsayoCargado != this.ordenSeleccionada.num_ott &&
+          this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso
+        ) {
+          this.idEnsayoCargado = this.ordenSeleccionada.num_ott;
+          this.numMuestraEnsayoCargado = this.ordenSeleccionada.num_ingreso;
+        }
         this.placeholderNumeroMuestra = "Sin muestras ingresadas en la OTT";
 
         let numerosDeMuestra = this.ordenSeleccionada.num_ingreso
           .toString()
           .trim()
           .split(",");
-
+        let numsUsados = this.ordenSeleccionada.numMuestraUsados;
         if (this.numMuestraEnsayoCargado != "") {
           // const array = [2, 5, 9];
+          console.log("if if");
 
-          console.log("pre", numerosDeMuestra, this.numMuestraEnsayoCargado);
+          console.log("pre", numsUsados, this.numMuestraEnsayoCargado);
 
-          const index = numerosDeMuestra.indexOf(this.numMuestraEnsayoCargado);
+          const index = numsUsados.indexOf(this.numMuestraEnsayoCargado);
           if (index > -1) {
-            numerosDeMuestra.splice(index, 1);
+            numsUsados.splice(index, 1);
           }
-          console.log("post", numerosDeMuestra);
+          console.log("post", numsUsados);
         }
 
-        let numerosDeMuestraFiltrados =
-          this.ordenSeleccionada.numMuestraUsados.filter(
-            (numero) => !numerosDeMuestra.includes(numero)
-          );
+        let numerosDeMuestraFiltrados = numerosDeMuestra.filter(
+          (numero) => !numsUsados.includes(numero)
+        );
         console.log(
+          "if",
           this.ordenSeleccionada.numMuestraUsados,
           numerosDeMuestra,
-          numerosDeMuestraFiltrados
+          numerosDeMuestraFiltrados,
+          numsUsados,
+          this.numMuestraEnsayoCargado
         );
         var results =
           numerosDeMuestraFiltrados.length > 0
@@ -3275,6 +3295,8 @@ export default {
         }
         this.opcionesSearchBoxNumMuestra = results;
       } else {
+        console.log("else");
+
         // console.log("else watch ott", this.form.OTT);
         this.form.fechaConfeccionMuestraUno = "";
         this.form.fechaConfeccionMuestraDos = "";
@@ -3283,20 +3305,24 @@ export default {
         this.form.numIngreso = [];
         this.opcionesSearchBoxNumMuestra = [];
         this.placeholderNumeroMuestra = "Sin muestras ingresadas en la OTT";
+
         if (this.form.OTT == "") {
           this.ensayoCargado = undefined;
         }
         if (this.ensayoCargado) {
-          console.log(this.ensayoCargado);
+          console.log("else ensayoCargado", this.ensayoCargado);
           let numsDeMuestra = this.ensayoCargado.numerosMuestraOtt
             .toString()
             .trim()
             .split(",");
           console.log(
+            "else ensayoCargado",
             this.ensayoCargado,
             this.ensayoCargado.numMuestraUsados,
             numsDeMuestra
           );
+          this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
+          this.idEnsayoCargado = this.ensayoCargado.ott;
           let numsDeMuestraFiltrados = numsDeMuestra.filter(
             (numero) => !this.ensayoCargado.numMuestraUsados.includes(numero)
           );
