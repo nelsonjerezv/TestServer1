@@ -3223,7 +3223,11 @@ export default {
       this.ordenSeleccionada = this.ordenes.filter((orden) => {
         return orden.num_ott == newVal;
       });
-      console.log(this.ordenSeleccionada);
+      console.log(
+        this.ordenSeleccionada,
+        this.idEnsayoCargado,
+        this.numMuestraEnsayoCargado
+      );
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
         this.form.fechaConfeccionMuestraUno =
@@ -3244,7 +3248,9 @@ export default {
         );
         if (
           this.idEnsayoCargado != this.ordenSeleccionada.num_ott &&
-          this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso
+          this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso &&
+          this.idEnsayoCargado != "" &&
+          this.numMuestraEnsayoCargado != ""
         ) {
           this.idEnsayoCargado = this.ordenSeleccionada.num_ott;
           this.numMuestraEnsayoCargado = this.ordenSeleccionada.num_ingreso;
