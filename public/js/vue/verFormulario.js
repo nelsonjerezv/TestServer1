@@ -96097,7 +96097,7 @@ exports = module.exports = __webpack_require__(19)(false);
 
 
 // module
-exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.item-content-minus-150[data-v-1e744d4c] .el-form-item__content {\n  width: calc(100% - 150px) !important;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.seccion-otros-container[data-v-1e744d4c] {\n  width: auto !important;\n  white-space: nowrap !important;\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    margin-right: 30px;\n    white-space: nowrap !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__content {\n    margin: 0px !important;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\n.no-click[data-v-1e744d4c] {\n  pointer-events: none;\n}\n.container-item[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.container-item .label-item[data-v-1e744d4c] {\n    margin-right: 10px;\n    color: #606266;\n}\n.contenedor-vue[data-v-1e744d4c] {\n  background-color: #f5f5f5;\n  padding: 10px;\n  line-height: 40px;\n  height: auto;\n  overflow: auto;\n}\n.contenedor-vue[data-v-1e744d4c] .el-form-item__error {\n    top: 10px;\n    font-size: 14px;\n    padding-left: 15px;\n    color: #ffffff00;\n    z-index: -1;\n}\n.contenedor-vue[data-v-1e744d4c] .el-date-editor.el-input {\n    width: 100% !important;\n}\n.una-linea[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.item-content-minus-150[data-v-1e744d4c] .el-form-item__content {\n  width: calc(100% - 150px) !important;\n}\n.dis-flex-dir-col[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.dis-flex-dir-row[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n}\n.radio-molde[data-v-1e744d4c] {\n  width: 100%;\n  min-width: 142px;\n  max-width: 180px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.radio-molde[data-v-1e744d4c] .el-radio__label {\n    width: 100%;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__content {\n  margin: 0px !important;\n}\n.item-no-margin[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin: 0px !important;\n}\n.cantidad-otros[data-v-1e744d4c] {\n  white-space: nowrap;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__content {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.cantidad-otros[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.tabla-aridos[data-v-1e744d4c] .el-radio__label {\n  display: none;\n}\n.tabla-aridos[data-v-1e744d4c] .el-form-item__content {\n  text-align: center;\n  line-height: 20px;\n}\n.el-form-item__label-wrap[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.padding-5[data-v-1e744d4c] {\n  padding: 5px;\n}\n.nombre-campo[data-v-1e744d4c] {\n  padding: 0px 15px;\n}\n.margin-b-0[data-v-1e744d4c] {\n  margin-bottom: 0px;\n}\n.margin-b-5[data-v-1e744d4c] {\n  margin-bottom: 5px;\n}\n.margin-b-15[data-v-1e744d4c] {\n  margin-bottom: 15px;\n}\n.margin-l-5[data-v-1e744d4c] {\n  margin-left: 5px;\n}\n.el-row[data-v-1e744d4c] {\n  height: 40px;\n  height: auto !important;\n}\n.el-row[data-v-1e744d4c]:last-child {\n    margin-bottom: 0;\n}\n.el-col[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: auto !important;\n}\n.bg-purple-dark[data-v-1e744d4c] {\n  background: #99a9bf;\n}\n.bg-purple[data-v-1e744d4c] {\n  background: #d3dce6;\n}\n.bg-purple-light[data-v-1e744d4c] {\n  background: #e5e9f2;\n}\n.grid-content[data-v-1e744d4c] {\n  border-radius: 4px;\n  height: 44px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  white-space: nowrap;\n  padding: 0px 3px;\n}\n.row-bg[data-v-1e744d4c] {\n  padding: 10px 0;\n  background-color: #f9fafc;\n}\n.el-form[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%;\n  text-align: left;\n}\n.el-form-item[data-v-1e744d4c] {\n  margin-bottom: 3px;\n}\n[data-v-1e744d4c] .el-form-item__label-wrap {\n  margin-left: 4px !important;\n}\n[data-v-1e744d4c] .el-form-item__label {\n  line-height: 20px;\n  text-align: left;\n  min-height: 40px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.seccion-otros-container[data-v-1e744d4c] {\n  width: auto !important;\n  white-space: nowrap !important;\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    margin-right: 30px;\n    white-space: nowrap !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__label {\n    width: auto !important;\n}\n.seccion-otros-container[data-v-1e744d4c] .el-form-item__content {\n    margin: 0px !important;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 14px 0;\n}\n.el-divider-5[data-v-1e744d4c] {\n  margin: 5px 0;\n}\n.Rtable[data-v-1e744d4c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n}\n.Rtable-cell[data-v-1e744d4c] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border: 1px solid #f5f5f5;\n}\n.Rtable-cell > h1[data-v-1e744d4c],\n  .Rtable-cell > h2[data-v-1e744d4c],\n  .Rtable-cell > h3[data-v-1e744d4c],\n  .Rtable-cell > h4[data-v-1e744d4c],\n  .Rtable-cell > h5[data-v-1e744d4c],\n  .Rtable-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.Rtable--2cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 50%;\n}\n.Rtable--3cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 33.33%;\n}\n.Rtable--4cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 25%;\n}\n.Rtable--5cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 20%;\n}\n.Rtable--6cols > .Rtable-cell[data-v-1e744d4c] {\n  width: 16.6%;\n}\n.tabla-extraccion[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-extraccion-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 1px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n}\n.tabla-extraccion-cell > h1[data-v-1e744d4c],\n  .tabla-extraccion-cell > h2[data-v-1e744d4c],\n  .tabla-extraccion-cell > h3[data-v-1e744d4c],\n  .tabla-extraccion-cell > h4[data-v-1e744d4c],\n  .tabla-extraccion-cell > h5[data-v-1e744d4c],\n  .tabla-extraccion-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.extraccion-cell-borde-left[data-v-1e744d4c] {\n  border-left-style: solid;\n  border-left-color: #8e9198;\n  border-left-width: 1px;\n  border-right-width: 0px;\n  border-bottom-width: 0px;\n  width: -webkit-fit-content !important;\n  width: -moz-fit-content !important;\n  width: fit-content !important;\n  padding: 0 10px;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n}\n.tabla-extraccion--10cols > .tabla-extraccion-cell[data-v-1e744d4c] {\n  width: 7%;\n}\n.width-15[data-v-1e744d4c] {\n  width: 70px !important;\n}\n.width-15[data-v-1e744d4c] .el-input__inner {\n    padding: 0 5px;\n}\n.width-35[data-v-1e744d4c] {\n  width: 35% !important;\n}\n.width-datepicker[data-v-1e744d4c] {\n  width: 135px !important;\n  max-width: 143px;\n}\n.width-datepicker[data-v-1e744d4c] .el-input__inner {\n    width: 135px;\n}\n.procedimiento-extraccion-opciones[data-v-1e744d4c] .el-form-item__content,\n.comentarios[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.tabla-aridos[data-v-1e744d4c] {\n  color: #8e9198;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin: 0 0 3em 0;\n  padding: 0;\n  border-left-style: solid;\n  border-top-style: solid;\n  border-left-color: #8e9198;\n  border-top-color: #8e9198;\n  border-left-width: 1px;\n  border-top-width: 1px;\n}\n.tabla-aridos-cell[data-v-1e744d4c] {\n  color: #8e9198;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  width: 100%;\n  padding: 0 4px;\n  overflow: hidden;\n  list-style: none;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-right-color: #8e9198;\n  border-bottom-color: #8e9198;\n  border-right-width: 1px;\n  border-bottom-width: 1px;\n  white-space: nowrap;\n  line-height: 20px;\n}\n.tabla-aridos-cell > h1[data-v-1e744d4c],\n  .tabla-aridos-cell > h2[data-v-1e744d4c],\n  .tabla-aridos-cell > h3[data-v-1e744d4c],\n  .tabla-aridos-cell > h4[data-v-1e744d4c],\n  .tabla-aridos-cell > h5[data-v-1e744d4c],\n  .tabla-aridos-cell > h6[data-v-1e744d4c] {\n    margin: 0;\n}\n.seccion-otros[data-v-1e744d4c] .el-date-editor.el-input {\n  width: 140px !important;\n}\n.form-item-no-label[data-v-1e744d4c] .el-form-item__content {\n  margin-left: 0px !important;\n}\n.campos-extra-aridos[data-v-1e744d4c] {\n  margin-left: 0px !important;\n}\n.campos-extra-aridos[data-v-1e744d4c] .el-form-item__content {\n    margin-left: 0px !important;\n}\n", ""]);
 
 // exports
 
@@ -96111,6 +96111,95 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(77);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -97970,7 +98059,11 @@ var moment = __webpack_require__(0);
         testigosEnsayadosCuatro: "0",
         testigosEnsayadosTotal: "0",
         encargadoRetiroMuestras: "",
-        fechaRetiroMuestras: ""
+        fechaRetiroMuestras: "",
+        ensayosAceptacionAridos: "",
+        ensayosDosificacionHormigon: "",
+        ensayosSinProbetasPrueba: "",
+        ensayosConProbetasPrueba: ""
       },
       reglas: (_reglas = {
         numClienteObra: [{ required: true, message: "", trigger: "blur" }],
@@ -98345,6 +98438,10 @@ var moment = __webpack_require__(0);
       this.form.irregularidadSuperficial = this.ottCargada.irregularidad_superficial == 1 ? true : this.ottCargada.irregularidad_superficial;
       this.form.encargadoRetiroMuestras = this.ottCargada.encargado_retiro_muestras;
       this.form.fechaRetiroMuestras = this.ottCargada.fecha_retiro_muestras;
+      this.form.ensayosAceptacionAridos = this.ottCargada.ensayos_aceptacion_aridos;
+      this.form.ensayosDosificacionHormigon = this.ottCargada.ensayos_dosificacion_hormigon;
+      this.form.ensayosSinProbetasPrueba = this.ottCargada.ensayos_sin_probetas_prueba;
+      this.form.ensayosConProbetasPrueba = this.ottCargada.ensayos_con_probetas_prueba;
     },
     clickitem: function clickitem(item, value) {
       if (item == "muestreoDe") {
@@ -98391,6 +98488,27 @@ var moment = __webpack_require__(0);
       }
       if (item == "aridosHormigonMuestraCuatro") {
         this.form.aridosHormigonMuestraCuatro == value ? this.form.aridosHormigonMuestraCuatro = "" : this.form.aridosHormigonMuestraCuatro = value;
+      }
+      if (item == "tipoMoldeUno") {
+        this.form.tipoMoldeUno == value ? this.form.tipoMoldeUno = "" : this.form.tipoMoldeUno = value;
+      }
+      if (item == "tipoMoldeDos") {
+        this.form.tipoMoldeDos == value ? this.form.tipoMoldeDos = "" : this.form.tipoMoldeDos = value;
+      }
+      if (item == "tipoMoldeTres") {
+        this.form.tipoMoldeTres == value ? this.form.tipoMoldeTres = "" : this.form.tipoMoldeTres = value;
+      }
+      if (item == "tipoMoldeCuatro") {
+        this.form.tipoMoldeCuatro == value ? this.form.tipoMoldeCuatro = "" : this.form.tipoMoldeCuatro = value;
+      }
+      if (item == "tipoMoldeCinco") {
+        this.form.tipoMoldeCinco == value ? this.form.tipoMoldeCinco = "" : this.form.tipoMoldeCinco = value;
+      }
+      if (item == "tipoMoldeSeis") {
+        this.form.tipoMoldeSeis == value ? this.form.tipoMoldeSeis = "" : this.form.tipoMoldeSeis = value;
+      }
+      if (item == "tipoMoldeSiete") {
+        this.form.tipoMoldeSiete == value ? this.form.tipoMoldeSiete = "" : this.form.tipoMoldeSiete = value;
       }
     }
   },
@@ -98950,7 +99068,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "camion" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "camion"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -98971,7 +99095,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "betonera" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "betonera"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -98992,7 +99122,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "acopio" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "acopio"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99028,7 +99164,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "apisonado" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "apisonado"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99052,7 +99194,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "vibrado" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "vibrado"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99112,21 +99260,44 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "15x15x15 | 400-01",
-                              prop: "tipoMoldeUno"
-                            }
+                            attrs: { prop: "tipoMoldeUno" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeUno,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeUno", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "15x15x15"
                                 },
-                                expression: "form.tipoMoldeUno"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeUno",
+                                      "15x15x15"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeUno,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeUno", $$v)
+                                  },
+                                  expression: "form.tipoMoldeUno"
+                                }
+                              },
+                              [
+                                _vm._v("15x15x15  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-01")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99135,21 +99306,44 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "20x20x20 | 400-01",
-                              prop: "tipoMoldeDos"
-                            }
+                            attrs: { prop: "tipoMoldeDos" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeDos,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeDos", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "20x20x20"
                                 },
-                                expression: "form.tipoMoldeDos"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeDos",
+                                      "20x20x20"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeDos,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeDos", $$v)
+                                  },
+                                  expression: "form.tipoMoldeDos"
+                                }
+                              },
+                              [
+                                _vm._v("20x20x20  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-01")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99158,21 +99352,44 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "15x30 | 400-02",
-                              prop: "tipoMoldeTres"
-                            }
+                            attrs: { prop: "tipoMoldeTres" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeTres,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeTres", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "15x30"
                                 },
-                                expression: "form.tipoMoldeTres"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeTres",
+                                      "15x30"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeTres,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeTres", $$v)
+                                  },
+                                  expression: "form.tipoMoldeTres"
+                                }
+                              },
+                              [
+                                _vm._v("15x30  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-02")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99181,21 +99398,45 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "4x4x16 | 400-04",
-                              prop: "tipoMoldeCuatro"
-                            }
+                            attrs: { prop: "tipoMoldeCuatro" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeCuatro,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeCuatro", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "mortero" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "4x4x16"
                                 },
-                                expression: "form.tipoMoldeCuatro"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeCuatro",
+                                      "4x4x16"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeCuatro,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeCuatro", $$v)
+                                  },
+                                  expression: "form.tipoMoldeCuatro"
+                                }
+                              },
+                              [
+                                _vm._v("4x4x16  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-04")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99204,21 +99445,44 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "53x15x15 | 400-03",
-                              prop: "tipoMoldeCinco"
-                            }
+                            attrs: { prop: "tipoMoldeCinco" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeCinco,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeCinco", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "53x15x15"
                                 },
-                                expression: "form.tipoMoldeCinco"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeCinco",
+                                      "53x15x15"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeCinco,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeCinco", $$v)
+                                  },
+                                  expression: "form.tipoMoldeCinco"
+                                }
+                              },
+                              [
+                                _vm._v("53x15x15  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-03")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99227,21 +99491,45 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "10x10x10 | 400-06",
-                              prop: "tipoMoldeSeis"
-                            }
+                            attrs: { prop: "tipoMoldeSeis" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeSeis,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeSeis", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "mortero" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "10x10x10"
                                 },
-                                expression: "form.tipoMoldeSeis"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeSeis",
+                                      "10x10x10"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeSeis,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeSeis", $$v)
+                                  },
+                                  expression: "form.tipoMoldeSeis"
+                                }
+                              },
+                              [
+                                _vm._v("10x10x10  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-06")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         ),
@@ -99250,21 +99538,44 @@ var render = function() {
                           "el-form-item",
                           {
                             staticClass: "item-no-margin cantidad-otros",
-                            attrs: {
-                              label: "15x30 | 400-07",
-                              prop: "tipoMoldeSiete"
-                            }
+                            attrs: { prop: "tipoMoldeSiete" }
                           },
                           [
-                            _c("el-checkbox", {
-                              model: {
-                                value: _vm.form.tipoMoldeSiete,
-                                callback: function($$v) {
-                                  _vm.$set(_vm.form, "tipoMoldeSiete", $$v)
+                            _c(
+                              "el-radio",
+                              {
+                                attrs: {
+                                  disabled:
+                                    _vm.form.muestreoDe != "hormigon" &&
+                                    _vm.form.muestreoDe != "seccionRetiro",
+                                  label: "15x30"
                                 },
-                                expression: "form.tipoMoldeSiete"
-                              }
-                            })
+                                nativeOn: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.clickitem(
+                                      "tipoMoldeSiete",
+                                      "15x30"
+                                    )
+                                  }
+                                },
+                                model: {
+                                  value: _vm.form.tipoMoldeSiete,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "tipoMoldeSiete", $$v)
+                                  },
+                                  expression: "form.tipoMoldeSiete"
+                                }
+                              },
+                              [
+                                _vm._v("\n                15x30  "),
+                                _c(
+                                  "strong",
+                                  { staticStyle: { "margin-left": "30px" } },
+                                  [_vm._v("|  400-07")]
+                                )
+                              ]
+                            )
                           ],
                           1
                         )
@@ -99288,7 +99599,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "lacem" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "lacem"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99309,7 +99626,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "mandante" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "mandante"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99348,7 +99671,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "lacem" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "lacem"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99369,7 +99698,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "mandante" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "mandante"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99410,7 +99745,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "simple" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "simple"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99431,7 +99772,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "compuesta" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "compuesta"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99455,7 +99802,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "especial" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe != "hormigon" &&
+                                  _vm.form.muestreoDe != "mortero" &&
+                                  _vm.form.muestreoDe != "seccionRetiro",
+                                label: "especial"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -99493,6 +99846,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "hormigon" &&
+                            _vm.form.muestreoDe != "mortero" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.amasadaHormigon,
                           callback: function($$v) {
@@ -99517,6 +99876,11 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "hormigon" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.asentamientoCono,
                           callback: function($$v) {
@@ -99548,6 +99912,12 @@ var render = function() {
                     { attrs: { label: "Segregación", prop: "segregacion" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "hormigon" &&
+                            _vm.form.muestreoDe != "mortero" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.segregacion,
                           callback: function($$v) {
@@ -99572,6 +99942,11 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "hormigon" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.numEquipoConoAbrams,
                           callback: function($$v) {
@@ -99596,6 +99971,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "hormigon" &&
+                            _vm.form.muestreoDe != "mortero" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.numVibradorInmersion,
                           callback: function($$v) {
@@ -99620,6 +100001,11 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe != "mortero" &&
+                            _vm.form.muestreoDe != "seccionRetiro"
+                        },
                         model: {
                           value: _vm.form.numEquipoConoReducido,
                           callback: function($$v) {
@@ -99647,6 +100033,12 @@ var render = function() {
                     { attrs: { label: "N° Muestra", prop: "numIngreso" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.numIngreso,
                           callback: function($$v) {
@@ -99666,7 +100058,14 @@ var render = function() {
                     { attrs: { label: "Hora Muestreo", prop: "horaMuestreo" } },
                     [
                       _c("el-time-picker", {
-                        attrs: { format: "HH:mm", "value-format": "HH:mm" },
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros",
+                          format: "HH:mm",
+                          "value-format": "HH:mm"
+                        },
                         model: {
                           value: _vm.form.horaMuestreo,
                           callback: function($$v) {
@@ -99691,7 +100090,14 @@ var render = function() {
                     },
                     [
                       _c("el-time-picker", {
-                        attrs: { format: "HH:mm", "value-format": "HH:mm" },
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros",
+                          format: "HH:mm",
+                          "value-format": "HH:mm"
+                        },
                         model: {
                           value: _vm.form.horaInicioAmasado,
                           callback: function($$v) {
@@ -99711,6 +100117,12 @@ var render = function() {
                     { attrs: { label: "T° Ambiente", prop: "tAmbiente" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.tAmbiente,
                           callback: function($$v) {
@@ -99735,6 +100147,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.tHormigonMortero,
                           callback: function($$v) {
@@ -99754,6 +100172,12 @@ var render = function() {
                     { attrs: { label: "Proveedor", prop: "proveedor" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.proveedor,
                           callback: function($$v) {
@@ -99778,6 +100202,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.numGuiaDespacho,
                           callback: function($$v) {
@@ -99797,6 +100227,12 @@ var render = function() {
                     { attrs: { label: "Nombre Chofer", prop: "nombreChofer" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.nombreChofer,
                           callback: function($$v) {
@@ -99818,6 +100254,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.curadoInicial,
                           callback: function($$v) {
@@ -99842,6 +100284,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.elementoHormigonado,
                           callback: function($$v) {
@@ -99866,6 +100314,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.ubicacionElemento,
                           callback: function($$v) {
@@ -99890,6 +100344,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.tipoHormigonMortero,
                           callback: function($$v) {
@@ -99914,6 +100374,12 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.resistenciaEspecificada,
                           callback: function($$v) {
@@ -99939,6 +100405,10 @@ var render = function() {
                     [
                       _c("el-date-picker", {
                         attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros",
                           type: "date",
                           format: "dd-MM-yyyy",
                           "value-format": "dd-MM-yyyy"
@@ -99962,6 +100432,12 @@ var render = function() {
                     { attrs: { label: "Aditivo", prop: "aditivo" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.aditivo,
                           callback: function($$v) {
@@ -99981,6 +100457,12 @@ var render = function() {
                     { attrs: { label: "N° de Mixer", prop: "numMixer" } },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled:
+                            _vm.form.muestreoDe == "seccionTestigos" ||
+                            _vm.form.muestreoDe == "seccionAridos" ||
+                            _vm.form.muestreoDe == "seccionOtros"
+                        },
                         model: {
                           value: _vm.form.numMixer,
                           callback: function($$v) {
@@ -100034,7 +100516,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value: _vm.form.retiroMuestraCantidadUnDia,
                                     callback: function($$v) {
@@ -100068,6 +100557,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100104,7 +100598,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value: _vm.form.retiroMuestraInformeUnDia,
                                     callback: function($$v) {
@@ -100140,7 +100641,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraCantidadTresDias,
@@ -100175,6 +100683,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100212,7 +100725,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraInformeTresDias,
@@ -100252,7 +100772,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraCantidadSieteDias,
@@ -100287,6 +100814,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100324,7 +100856,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraInformeSieteDias,
@@ -100364,7 +100903,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraCantidadCatorceDias,
@@ -100399,6 +100945,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100439,7 +100990,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form.retiroMuestraInformeCatorceDias,
@@ -100479,7 +101037,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form
@@ -100517,6 +101082,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100557,7 +101127,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value:
                                       _vm.form
@@ -100595,7 +101172,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value: _vm.form.retiroMuestraOtros,
                                     callback: function($$v) {
@@ -100627,7 +101211,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value: _vm.form.retiroMuestraCantidadOtros,
                                     callback: function($$v) {
@@ -100661,6 +101252,11 @@ var render = function() {
                               [
                                 _c("el-date-picker", {
                                   attrs: {
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros",
                                     type: "date",
                                     size: "mini",
                                     format: "dd-MM-yyyy",
@@ -100697,7 +101293,14 @@ var render = function() {
                               },
                               [
                                 _c("el-input", {
-                                  attrs: { size: "mini" },
+                                  attrs: {
+                                    size: "mini",
+                                    disabled:
+                                      _vm.form.muestreoDe ==
+                                        "seccionTestigos" ||
+                                      _vm.form.muestreoDe == "seccionAridos" ||
+                                      _vm.form.muestreoDe == "seccionOtros"
+                                  },
                                   model: {
                                     value: _vm.form.retiroMuestraInformeOtros,
                                     callback: function($$v) {
@@ -100737,7 +101340,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "moldes" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe == "seccionTestigos" ||
+                                  _vm.form.muestreoDe == "seccionAridos" ||
+                                  _vm.form.muestreoDe == "seccionOtros",
+                                label: "moldes"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -100761,7 +101370,13 @@ var render = function() {
                           _c(
                             "el-radio",
                             {
-                              attrs: { label: "desmoldadas" },
+                              attrs: {
+                                disabled:
+                                  _vm.form.muestreoDe == "seccionTestigos" ||
+                                  _vm.form.muestreoDe == "seccionAridos" ||
+                                  _vm.form.muestreoDe == "seccionOtros",
+                                label: "desmoldadas"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   $event.preventDefault()
@@ -100811,6 +101426,10 @@ var render = function() {
                             {
                               attrs: {
                                 clearable: "",
+                                disabled:
+                                  _vm.form.muestreoDe == "seccionTestigos" ||
+                                  _vm.form.muestreoDe == "seccionAridos" ||
+                                  _vm.form.muestreoDe == "seccionOtros",
                                 placeholder: "Seleccione..",
                                 prop: "retiroMuestras"
                               },
@@ -100847,6 +101466,10 @@ var render = function() {
                         [
                           _c("el-date-picker", {
                             attrs: {
+                              disabled:
+                                _vm.form.muestreoDe == "seccionTestigos" ||
+                                _vm.form.muestreoDe == "seccionAridos" ||
+                                _vm.form.muestreoDe == "seccionOtros",
                               type: "date",
                               size: "mini",
                               format: "dd-MM-yyyy",
@@ -100991,7 +101614,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosExtraidosSeis,
@@ -101026,7 +101650,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosExtraidosCuatro,
@@ -101061,7 +101686,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosExtraidosTotal,
@@ -101142,7 +101768,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosEnsayadosSeis,
@@ -101177,7 +101804,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosEnsayadosCuatro,
@@ -101212,7 +101840,8 @@ var render = function() {
                             _c("el-input", {
                               attrs: {
                                 size: "mini",
-                                disabled: !_vm.form.seccionTestigosHabilitada
+                                disabled:
+                                  _vm.form.muestreoDe != "seccionTestigos"
                               },
                               model: {
                                 value: _vm.form.testigosEnsayadosTotal,
@@ -101292,7 +101921,7 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: {
-                            disabled: !_vm.form.seccionAridosHabilitada,
+                            disabled: _vm.form.muestreoDe != "seccionAridos",
                             label: "yacimiento"
                           },
                           nativeOn: {
@@ -101319,7 +101948,7 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: {
-                            disabled: !_vm.form.seccionAridosHabilitada,
+                            disabled: _vm.form.muestreoDe != "seccionAridos",
                             label: "produccion"
                           },
                           nativeOn: {
@@ -101346,7 +101975,7 @@ var render = function() {
                         "el-radio",
                         {
                           attrs: {
-                            disabled: !_vm.form.seccionAridosHabilitada,
+                            disabled: _vm.form.muestreoDe != "seccionAridos",
                             label: "obra"
                           },
                           nativeOn: {
@@ -101453,7 +102082,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "grava"
                             },
                             nativeOn: {
@@ -101497,7 +102126,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "grava"
                             },
                             nativeOn: {
@@ -101541,7 +102170,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "grava"
                             },
                             nativeOn: {
@@ -101585,7 +102214,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "grava"
                             },
                             nativeOn: {
@@ -101638,7 +102267,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "gravilla"
                             },
                             nativeOn: {
@@ -101682,7 +102311,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "gravilla"
                             },
                             nativeOn: {
@@ -101726,7 +102355,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "gravilla"
                             },
                             nativeOn: {
@@ -101770,7 +102399,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "gravilla"
                             },
                             nativeOn: {
@@ -101823,7 +102452,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "arena"
                             },
                             nativeOn: {
@@ -101867,7 +102496,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "arena"
                             },
                             nativeOn: {
@@ -101911,7 +102540,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "arena"
                             },
                             nativeOn: {
@@ -101955,7 +102584,7 @@ var render = function() {
                         [
                           _c("el-radio", {
                             attrs: {
-                              disabled: !_vm.form.seccionAridosHabilitada,
+                              disabled: _vm.form.muestreoDe != "seccionAridos",
                               label: "arena"
                             },
                             nativeOn: {
@@ -101994,7 +102623,7 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "90%" }
+                      staticStyle: { width: "50%" }
                     },
                     [
                       _vm._v(
@@ -102007,16 +102636,45 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "10%" }
+                      staticStyle: { width: "50%" }
                     },
-                    [_vm._v("-")]
+                    [
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "campos-extra-aridos",
+                          attrs: { prop: "ensayosAceptacionAridos" }
+                        },
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              size: "mini",
+                              disabled: _vm.form.muestreoDe != "seccionAridos"
+                            },
+                            model: {
+                              value: _vm.form.ensayosAceptacionAridos,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "ensayosAceptacionAridos",
+                                  $$v
+                                )
+                              },
+                              expression: "form.ensayosAceptacionAridos"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "90%" }
+                      staticStyle: { width: "50%" }
                     },
                     [
                       _vm._v(
@@ -102029,16 +102687,45 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "10%" }
+                      staticStyle: { width: "50%" }
                     },
-                    [_vm._v("-")]
+                    [
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "campos-extra-aridos",
+                          attrs: { prop: "ensayosDosificacionHormigon" }
+                        },
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              size: "mini",
+                              disabled: _vm.form.muestreoDe != "seccionAridos"
+                            },
+                            model: {
+                              value: _vm.form.ensayosDosificacionHormigon,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "ensayosDosificacionHormigon",
+                                  $$v
+                                )
+                              },
+                              expression: "form.ensayosDosificacionHormigon"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "75%" }
+                      staticStyle: { width: "50%" }
                     },
                     [
                       _vm._v(
@@ -102060,16 +102747,45 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "10%" }
+                      staticStyle: { width: "35%" }
                     },
-                    [_vm._v("-")]
+                    [
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "campos-extra-aridos",
+                          attrs: { prop: "ensayosSinProbetasPrueba" }
+                        },
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              size: "mini",
+                              disabled: _vm.form.muestreoDe != "seccionAridos"
+                            },
+                            model: {
+                              value: _vm.form.ensayosSinProbetasPrueba,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "ensayosSinProbetasPrueba",
+                                  $$v
+                                )
+                              },
+                              expression: "form.ensayosSinProbetasPrueba"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "75%" }
+                      staticStyle: { width: "50%" }
                     },
                     [
                       _vm._v(
@@ -102091,9 +102807,38 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tabla-aridos-cell",
-                      staticStyle: { width: "10%" }
+                      staticStyle: { width: "35%" }
                     },
-                    [_vm._v("-")]
+                    [
+                      _c(
+                        "el-form-item",
+                        {
+                          staticClass: "campos-extra-aridos",
+                          attrs: { prop: "ensayosConProbetasPrueba" }
+                        },
+                        [
+                          _c("el-input", {
+                            attrs: {
+                              size: "mini",
+                              disabled: _vm.form.muestreoDe != "seccionAridos"
+                            },
+                            model: {
+                              value: _vm.form.ensayosConProbetasPrueba,
+                              callback: function($$v) {
+                                _vm.$set(
+                                  _vm.form,
+                                  "ensayosConProbetasPrueba",
+                                  $$v
+                                )
+                              },
+                              expression: "form.ensayosConProbetasPrueba"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
@@ -102241,7 +102986,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("el-checkbox", {
-                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    attrs: { disabled: _vm.form.muestreoDe != "seccionOtros" },
                     model: {
                       value: _vm.form.densAparenteHormigon,
                       callback: function($$v) {
@@ -102283,7 +103028,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("el-checkbox", {
-                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    attrs: { disabled: _vm.form.muestreoDe != "seccionOtros" },
                     model: {
                       value: _vm.form.densAparenteMortero,
                       callback: function($$v) {
@@ -102325,7 +103070,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("el-checkbox", {
-                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    attrs: { disabled: _vm.form.muestreoDe != "seccionOtros" },
                     model: {
                       value: _vm.form.indiceEsclerometrico,
                       callback: function($$v) {
@@ -102367,7 +103112,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("el-checkbox", {
-                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    attrs: { disabled: _vm.form.muestreoDe != "seccionOtros" },
                     model: {
                       value: _vm.form.irregularidadSuperficial,
                       callback: function($$v) {
@@ -102390,7 +103135,7 @@ var render = function() {
                 },
                 [
                   _c("el-input", {
-                    attrs: { disabled: !_vm.form.seccionOtrosHabilitada },
+                    attrs: { disabled: _vm.form.muestreoDe != "seccionOtros" },
                     model: {
                       value: _vm.form.irregularidadSuperficialMl,
                       callback: function($$v) {
@@ -102428,14 +103173,23 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "true" },
+                          attrs: {
+                            disabled:
+                              _vm.form.muestraIngresadaPorCliente == "false",
+                            label: "true"
+                          },
                           nativeOn: {
                             click: function($event) {
                               $event.preventDefault()
-                              return _vm.clickitem(
-                                "muestraIngresadaPorCliente",
-                                "true"
-                              )
+                              if (
+                                _vm.form.muestraIngresadaPorCliente == "false"
+                              ) {
+                              } else {
+                                _vm.clickitem(
+                                  "muestraIngresadaPorCliente",
+                                  "true"
+                                )
+                              }
                             }
                           },
                           model: {
@@ -102456,14 +103210,23 @@ var render = function() {
                       _c(
                         "el-radio",
                         {
-                          attrs: { label: "false" },
+                          attrs: {
+                            disabled:
+                              _vm.form.muestraIngresadaPorCliente == "true",
+                            label: "false"
+                          },
                           nativeOn: {
                             click: function($event) {
                               $event.preventDefault()
-                              return _vm.clickitem(
-                                "muestraIngresadaPorCliente",
-                                "false"
-                              )
+                              if (
+                                _vm.form.muestraIngresadaPorCliente == "true"
+                              ) {
+                              } else {
+                                _vm.clickitem(
+                                  "muestraIngresadaPorCliente",
+                                  "false"
+                                )
+                              }
                             }
                           },
                           model: {
@@ -102501,6 +103264,9 @@ var render = function() {
                     },
                     [
                       _c("el-input", {
+                        attrs: {
+                          disabled: _vm.form.muestraIngresadaPorCliente == ""
+                        },
                         model: {
                           value: _vm.form.responsableEnObra,
                           callback: function($$v) {
@@ -102528,6 +103294,7 @@ var render = function() {
                     [
                       _c("el-date-picker", {
                         attrs: {
+                          disabled: _vm.form.muestraIngresadaPorCliente == "",
                           type: "date",
                           format: "dd-MM-yyyy",
                           "value-format": "dd-MM-yyyy"
@@ -102562,6 +103329,8 @@ var render = function() {
                     [
                       _c("el-date-picker", {
                         attrs: {
+                          disabled:
+                            _vm.form.muestraIngresadaPorCliente == "true",
                           type: "date",
                           format: "dd-MM-yyyy",
                           "value-format": "dd-MM-yyyy"
@@ -102590,7 +103359,12 @@ var render = function() {
                     { attrs: { label: "Hora Llegada", prop: "horaLlegada" } },
                     [
                       _c("el-time-picker", {
-                        attrs: { format: "HH:mm", "value-format": "HH:mm" },
+                        attrs: {
+                          disabled:
+                            _vm.form.muestraIngresadaPorCliente == "true",
+                          format: "HH:mm",
+                          "value-format": "HH:mm"
+                        },
                         model: {
                           value: _vm.form.horaLlegada,
                           callback: function($$v) {
@@ -102615,7 +103389,12 @@ var render = function() {
                     { attrs: { label: "Hora Salida", prop: "horaSalida" } },
                     [
                       _c("el-time-picker", {
-                        attrs: { format: "HH:mm", "value-format": "HH:mm" },
+                        attrs: {
+                          disabled:
+                            _vm.form.muestraIngresadaPorCliente == "true",
+                          format: "HH:mm",
+                          "value-format": "HH:mm"
+                        },
                         model: {
                           value: _vm.form.horaSalida,
                           callback: function($$v) {
@@ -102659,7 +103438,12 @@ var render = function() {
                         { attrs: { prop: "observaciones" } },
                         [
                           _c("el-input", {
-                            attrs: { type: "textarea", autosize: "" },
+                            attrs: {
+                              type: "textarea",
+                              autosize: "",
+                              disabled:
+                                _vm.form.muestraIngresadaPorCliente == ""
+                            },
                             model: {
                               value: _vm.form.observaciones,
                               callback: function($$v) {
@@ -102759,7 +103543,11 @@ var render = function() {
                         { attrs: { prop: "observacionesAlteracionesMuestra" } },
                         [
                           _c("el-input", {
-                            attrs: { type: "textarea", autosize: "" },
+                            attrs: {
+                              type: "textarea",
+                              autosize: "",
+                              disabled: _vm.form.alteracionMuestra != "si"
+                            },
                             model: {
                               value: _vm.form.observacionesAlteracionesMuestra,
                               callback: function($$v) {
@@ -102805,6 +103593,7 @@ var render = function() {
                     {
                       attrs: {
                         clearable: "",
+                        disabled: _vm.form.muestraIngresadaPorCliente == "",
                         placeholder: "Seleccione..",
                         prop: "laboratorista"
                       },
@@ -102841,6 +103630,7 @@ var render = function() {
                     {
                       attrs: {
                         clearable: "",
+                        disabled: _vm.form.muestraIngresadaPorCliente == "",
                         placeholder: "Seleccione..",
                         prop: "ayudante"
                       },

@@ -98231,7 +98231,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       this.estadoEnsayo = this.ensayoCargado.validado;
       this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
       this.idEnsayoCargado = this.ensayoCargado.ott;
-      console.log(this.numMuestraEnsayoCargado, this.ensayoCargado.num_ingreso);
+      // console.log(this.numMuestraEnsayoCargado, this.ensayoCargado.num_ingreso);
       // console.log(
       //   this.visualizacion,
       //   this.ensayoCargado,
@@ -98843,7 +98843,11 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
       this.ordenSeleccionada = this.ordenes.filter(function (orden) {
         return orden.num_ott == newVal;
       });
-      console.log(this.ordenSeleccionada, this.idEnsayoCargado, this.numMuestraEnsayoCargado);
+      // console.log(
+      //   this.ordenSeleccionada,
+      //   this.idEnsayoCargado,
+      //   this.numMuestraEnsayoCargado
+      // );
       if (this.ordenSeleccionada.length != 0) {
         this.ordenSeleccionada = this.ordenSeleccionada[0];
         this.form.fechaConfeccionMuestraUno = this.ordenSeleccionada.fecha_confeccion;
@@ -98851,7 +98855,13 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         this.form.fechaConfeccionMuestraTres = this.ordenSeleccionada.fecha_confeccion;
         this.form.fechaConfeccionMuestraCuatro = this.ordenSeleccionada.fecha_confeccion;
         this.form.numIngreso = [];
-        console.log("if", this.idEnsayoCargado, this.ordenSeleccionada.id, this.numMuestraEnsayoCargado, this.ordenSeleccionada.num_ingreso);
+        // console.log(
+        //   "if",
+        //   this.idEnsayoCargado,
+        //   this.ordenSeleccionada.id,
+        //   this.numMuestraEnsayoCargado,
+        //   this.ordenSeleccionada.num_ingreso
+        // );
         if (this.idEnsayoCargado != this.ordenSeleccionada.num_ott && this.numMuestraEnsayoCargado != this.ordenSeleccionada.num_ingreso && this.idEnsayoCargado != "" && this.numMuestraEnsayoCargado != "") {
           this.idEnsayoCargado = this.ordenSeleccionada.num_ott;
           this.numMuestraEnsayoCargado = this.ordenSeleccionada.num_ingreso;
@@ -98862,21 +98872,28 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         var numsUsados = this.ordenSeleccionada.numMuestraUsados;
         if (this.numMuestraEnsayoCargado != "") {
           // const array = [2, 5, 9];
-          console.log("if if");
+          // console.log("if if");
 
-          console.log("pre", numsUsados, this.numMuestraEnsayoCargado);
+          // console.log("pre", numsUsados, this.numMuestraEnsayoCargado);
 
           var index = numsUsados.indexOf(this.numMuestraEnsayoCargado);
           if (index > -1) {
             numsUsados.splice(index, 1);
           }
-          console.log("post", numsUsados);
+          // console.log("post", numsUsados);
         }
 
         var numerosDeMuestraFiltrados = numerosDeMuestra.filter(function (numero) {
           return !numsUsados.includes(numero);
         });
-        console.log("if", this.ordenSeleccionada.numMuestraUsados, numerosDeMuestra, numerosDeMuestraFiltrados, numsUsados, this.numMuestraEnsayoCargado);
+        // console.log(
+        //   "if",
+        //   this.ordenSeleccionada.numMuestraUsados,
+        //   numerosDeMuestra,
+        //   numerosDeMuestraFiltrados,
+        //   numsUsados,
+        //   this.numMuestraEnsayoCargado
+        // );
         var results = numerosDeMuestraFiltrados.length > 0 ? numerosDeMuestraFiltrados.map(function (elemento) {
           return { value: elemento, id: elemento };
         }) : [];
@@ -98885,7 +98902,7 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
         }
         this.opcionesSearchBoxNumMuestra = results;
       } else {
-        console.log("else");
+        // console.log("else");
 
         // console.log("else watch ott", this.form.OTT);
         this.form.fechaConfeccionMuestraUno = "";
@@ -98900,9 +98917,14 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
           this.ensayoCargado = undefined;
         }
         if (this.ensayoCargado) {
-          console.log("else ensayoCargado", this.ensayoCargado);
+          // console.log("else ensayoCargado", this.ensayoCargado);
           var numsDeMuestra = this.ensayoCargado.numerosMuestraOtt.toString().trim().split(",");
-          console.log("else ensayoCargado", this.ensayoCargado, this.ensayoCargado.numMuestraUsados, numsDeMuestra);
+          // console.log(
+          //   "else ensayoCargado",
+          //   this.ensayoCargado,
+          //   this.ensayoCargado.numMuestraUsados,
+          //   numsDeMuestra
+          // );
           this.numMuestraEnsayoCargado = this.ensayoCargado.num_ingreso;
           this.idEnsayoCargado = this.ensayoCargado.ott;
           var numsDeMuestraFiltrados = numsDeMuestra.filter(function (numero) {
