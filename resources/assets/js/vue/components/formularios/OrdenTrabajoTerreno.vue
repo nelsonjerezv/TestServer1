@@ -175,76 +175,6 @@
             >
           </el-form-item>
         </el-col>
-        <!--
-        <el-col :span="3" class="padding-5">
-          <el-form-item
-            class="form-item-no-label"
-            prop="seccionTestigosHabilitada"
-          >
-            <el-checkbox
-              v-model="form.seccionTestigosHabilitada"
-              :disabled="
-                form.seccionAridosHabilitada ||
-                form.seccionOtrosHabilitada ||
-                form.seccionRetiroMuestrasHabilitada
-              "
-            >
-              Secci&oacute;n Testigos</el-checkbox
-            >
-          </el-form-item>
-        </el-col>
-        <el-col :span="3" class="padding-5">
-          <el-form-item
-            class="form-item-no-label"
-            prop="seccionAridosHabilitada"
-          >
-            <el-checkbox
-              v-model="form.seccionAridosHabilitada"
-              :disabled="
-                form.seccionTestigosHabilitada ||
-                form.seccionOtrosHabilitada ||
-                form.seccionRetiroMuestrasHabilitada
-              "
-            >
-              Secci&oacute;n &Aacute;ridos</el-checkbox
-            >
-          </el-form-item>
-        </el-col>
-        <el-col :span="3" class="padding-5">
-          <el-form-item
-            class="form-item-no-label"
-            prop="seccionOtrosHabilitada"
-          >
-            <el-checkbox
-              v-model="form.seccionOtrosHabilitada"
-              :disabled="
-                form.seccionTestigosHabilitada ||
-                form.seccionAridosHabilitada ||
-                form.seccionRetiroMuestrasHabilitada
-              "
-            >
-              Secci&oacute;n Otros</el-checkbox
-            >
-          </el-form-item>
-        </el-col>
-        <el-col :span="5" class="padding-5">
-          <el-form-item
-            class="form-item-no-label"
-            prop="seccionRetiroMuestrasHabilitada"
-          >
-            <el-checkbox
-              v-model="form.seccionRetiroMuestrasHabilitada"
-              :disabled="
-                form.seccionTestigosHabilitada ||
-                form.seccionAridosHabilitada ||
-                form.seccionOtrosHabilitada
-              "
-            >
-              Secci&oacute;n Retiro de Muestras</el-checkbox
-            >
-          </el-form-item>
-        </el-col>
-        -->
       </el-row>
       <!-- <el-divider class="el-divider-5"/>
             <el-row class="margin-b-5">
@@ -257,18 +187,21 @@
               <el-radio
                 @click.native.prevent="clickitem('extraccion', 'camion')"
                 v-model="form.extraccion"
+                :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="camion"
                 >Cami&oacute;n</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('extraccion', 'betonera')"
                 v-model="form.extraccion"
+                :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="betonera"
                 >Betonera</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('extraccion', 'acopio')"
                 v-model="form.extraccion"
+                :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="acopio"
                 >Acopio</el-radio
               >
@@ -280,12 +213,14 @@
               <el-radio
                 @click.native.prevent="clickitem('compactacion', 'apisonado')"
                 v-model="form.compactacion"
+                :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="apisonado"
                 >Apisonado</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('compactacion', 'vibrado')"
                 v-model="form.compactacion"
+                :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="vibrado"
                 >Vibrado</el-radio
               >
@@ -328,52 +263,96 @@
             <div style="display: flex; flex-direction: column; width: 100%">
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="15x15x15 | 400-01"
                 prop="tipoMoldeUno"
               >
-                <el-checkbox v-model="form.tipoMoldeUno"></el-checkbox>
+                <!-- label="15x15x15 | 400-01" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeUno', '15x15x15')"
+                  v-model="form.tipoMoldeUno"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"
+                  label="15x15x15"
+                  >15x15x15  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-01</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="20x20x20 | 400-01"
                 prop="tipoMoldeDos"
               >
-                <el-checkbox v-model="form.tipoMoldeDos"></el-checkbox>
+                <!-- label="20x20x20 | 400-01" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeDos', '20x20x20')"
+                  v-model="form.tipoMoldeDos"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"
+                  label="20x20x20"
+                  >20x20x20  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-01</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="15x30 | 400-02"
                 prop="tipoMoldeTres"
               >
-                <el-checkbox v-model="form.tipoMoldeTres"></el-checkbox>
+                <!-- label="15x30 | 400-02" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeTres', '15x30')"
+                  v-model="form.tipoMoldeTres"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"
+                  label="15x30"
+                  >15x30  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-02</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="4x4x16 | 400-04"
                 prop="tipoMoldeCuatro"
               >
-                <el-checkbox v-model="form.tipoMoldeCuatro"></el-checkbox>
+                <!-- label="4x4x16 | 400-04" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeCuatro', '4x4x16')"
+                  v-model="form.tipoMoldeCuatro"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
+                  label="4x4x16"
+                  >4x4x16  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-04</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="53x15x15 | 400-03"
                 prop="tipoMoldeCinco"
               >
-                <el-checkbox v-model="form.tipoMoldeCinco"></el-checkbox>
+                <!-- label="53x15x15 | 400-03" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeCinco', '53x15x15')"
+                  v-model="form.tipoMoldeCinco"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"
+                  label="53x15x15"
+                  >53x15x15  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-03</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="10x10x10 | 400-06"
                 prop="tipoMoldeSeis"
               >
-                <el-checkbox v-model="form.tipoMoldeSeis"></el-checkbox>
+                <!-- label="10x10x10 | 400-06" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeSeis', '10x10x10')"
+                  v-model="form.tipoMoldeSeis"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
+                  label="10x10x10"
+                  >10x10x10  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-06</strong></el-radio
+                >
               </el-form-item>
               <el-form-item
                 class="item-no-margin cantidad-otros"
-                label="15x30 | 400-07"
                 prop="tipoMoldeSiete"
               >
-                <el-checkbox v-model="form.tipoMoldeSiete"></el-checkbox>
+                <!-- label="15x30 | 400-07" -->
+                <el-radio
+                  @click.native.prevent="clickitem('tipoMoldeSiete', '15x30')"
+                  v-model="form.tipoMoldeSiete"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"
+                  label="15x30"
+                  >
+                  <!-- :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'" -->
+                  15x30  <strong style="margin-left: 30px;">|&nbsp;&nbsp;400-07</strong></el-radio
+                >
               </el-form-item>
             </div>
           </div>
@@ -408,12 +387,14 @@
               <el-radio
                 @click.native.prevent="clickitem('muestreadoPor', 'lacem')"
                 v-model="form.muestreadoPor"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="lacem"
                 >Lacem</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('muestreadoPor', 'mandante')"
                 v-model="form.muestreadoPor"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="mandante"
                 >Mandante</el-radio
               >
@@ -425,12 +406,14 @@
               <el-radio
                 @click.native.prevent="clickitem('ensayadoPor', 'lacem')"
                 v-model="form.ensayadoPor"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="lacem"
                 >Lacem</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('ensayadoPor', 'mandante')"
                 v-model="form.ensayadoPor"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="mandante"
                 >Mandante</el-radio
               >
@@ -442,18 +425,21 @@
               <el-radio
                 @click.native.prevent="clickitem('tipoMuestra', 'simple')"
                 v-model="form.tipoMuestra"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="simple"
                 >Simple</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('tipoMuestra', 'compuesta')"
                 v-model="form.tipoMuestra"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="compuesta"
                 >Compuesta</el-radio
               >
               <el-radio
                 @click.native.prevent="clickitem('tipoMuestra', 'especial')"
                 v-model="form.tipoMuestra"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"
                 label="especial"
                 >Especial</el-radio
               >
@@ -464,14 +450,16 @@
             label="Volumen de la Amasada del Hormigón (m³)"
             prop="amasadaHormigon"
           >
-            <el-input v-model="form.amasadaHormigon"></el-input>
+            <el-input v-model="form.amasadaHormigon"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item
             label="Asentamiento de cono (cm)"
             prop="asentamientoCono"
           >
-            <el-input v-model="form.asentamientoCono"></el-input>
+            <el-input v-model="form.asentamientoCono"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item label="N° Informe" prop="numInforme">
@@ -482,28 +470,32 @@
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item label="Segregación" prop="segregacion">
-            <el-input v-model="form.segregacion"></el-input>
+            <el-input v-model="form.segregacion"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item
             label="N° equipo Cono de Abrams"
             prop="numEquipoConoAbrams"
           >
-            <el-input v-model="form.numEquipoConoAbrams"></el-input>
+            <el-input v-model="form.numEquipoConoAbrams"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item
             label="N° Vibrador de Inmersión"
             prop="numVibradorInmersion"
           >
-            <el-input v-model="form.numVibradorInmersion"></el-input>
+            <el-input v-model="form.numVibradorInmersion"
+                  :disabled="form.muestreoDe != 'hormigon' && form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5" />
           <el-form-item
             label="N° equipo Cono reducido"
             prop="numEquipoConoReducido"
           >
-            <el-input v-model="form.numEquipoConoReducido"></el-input>
+            <el-input v-model="form.numEquipoConoReducido"
+                  :disabled="form.muestreoDe != 'mortero' && form.muestreoDe != 'seccionRetiro'"></el-input>
           </el-form-item>
         </el-col>
         <el-col :span="unaDosColumnas" class="padding-5">
@@ -512,12 +504,14 @@
                         <el-input class="contenido-item" v-model="placeholderNumIngreso"></el-input>
                     </div> -->
           <el-form-item label="N° Muestra" prop="numIngreso">
-            <el-input v-model="form.numIngreso"></el-input>
+            <el-input v-model="form.numIngreso"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Hora Muestreo" prop="horaMuestreo">
             <el-time-picker
               v-model="form.horaMuestreo"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
               format="HH:mm"
               value-format="HH:mm"
             >
@@ -527,6 +521,7 @@
           <el-form-item label="Hora Inicio amasado" prop="horaInicioAmasado">
             <el-time-picker
               v-model="form.horaInicioAmasado"
+              :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
               format="HH:mm"
               value-format="HH:mm"
             >
@@ -534,54 +529,65 @@
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="T° Ambiente" prop="tAmbiente">
-            <el-input v-model="form.tAmbiente"></el-input>
+            <el-input v-model="form.tAmbiente"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="T° Hormigón/Mortero" prop="tHormigonMortero">
-            <el-input v-model="form.tHormigonMortero"></el-input>
+            <el-input v-model="form.tHormigonMortero"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Proveedor" prop="proveedor">
-            <el-input v-model="form.proveedor"></el-input>
+            <el-input v-model="form.proveedor"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="N° Guía de Despacho" prop="numGuiaDespacho">
-            <el-input v-model="form.numGuiaDespacho"></el-input>
+            <el-input v-model="form.numGuiaDespacho"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Nombre Chofer" prop="nombreChofer">
-            <el-input v-model="form.nombreChofer"></el-input>
+            <el-input v-model="form.nombreChofer"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Curado Inicial" prop="curadoInicial">
-            <el-input v-model="form.curadoInicial"></el-input>
+            <el-input v-model="form.curadoInicial"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Elemento Hormigonado" prop="elementoHormigonado">
-            <el-input v-model="form.elementoHormigonado"></el-input>
+            <el-input v-model="form.elementoHormigonado"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Ubicación del Elemento" prop="ubicacionElemento">
-            <el-input v-model="form.ubicacionElemento"></el-input>
+            <el-input v-model="form.ubicacionElemento"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item
             label="Tipo de Hormigón / Mortero"
             prop="tipoHormigonMortero"
           >
-            <el-input v-model="form.tipoHormigonMortero"></el-input>
+            <el-input v-model="form.tipoHormigonMortero"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item
             label="Resistencia especificada"
             prop="resistenciaEspecificada"
           >
-            <el-input v-model="form.resistenciaEspecificada"></el-input>
+            <el-input v-model="form.resistenciaEspecificada"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Fecha de confección" prop="fechaConfeccion">
             <el-date-picker
               v-model="form.fechaConfeccion"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
               type="date"
               format="dd-MM-yyyy"
               value-format="dd-MM-yyyy"
@@ -590,11 +596,13 @@
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="Aditivo" prop="aditivo">
-            <el-input v-model="form.aditivo"></el-input>
+            <el-input v-model="form.aditivo"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <el-form-item label="N° de Mixer" prop="numMixer">
-            <el-input v-model="form.numMixer"></el-input>
+            <el-input v-model="form.numMixer"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"></el-input>
           </el-form-item>
           <el-divider class="el-divider-5 margin-l-5" />
           <!-- Fecha de Retiro de muestra -->
@@ -619,6 +627,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadUnDia"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -629,6 +638,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaUnDia"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -645,6 +655,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeUnDia"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -658,6 +669,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadTresDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -668,6 +680,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaTresDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -684,6 +697,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeTresDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -697,6 +711,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadSieteDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -707,6 +722,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaSieteDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -723,6 +739,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeSieteDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -736,6 +753,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadCatorceDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -746,6 +764,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaCatorceDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -762,6 +781,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeCatorceDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -775,6 +795,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadVeintiochoDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -785,6 +806,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaVeintiochoDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -801,6 +823,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeVeintiochoDias"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -814,6 +837,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraOtros"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -825,6 +849,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraCantidadOtros"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -835,6 +860,7 @@
                 >
                   <el-date-picker
                     v-model="form.retiroMuestraFechaOtros"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -851,6 +877,7 @@
                   <el-input
                     size="mini"
                     v-model="form.retiroMuestraInformeOtros"
+            :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                   ></el-input>
                 </el-form-item>
               </div>
@@ -864,6 +891,7 @@
               <el-radio
                 @click.native.prevent="clickitem('trasladoProbetas', 'moldes')"
                 v-model="form.trasladoProbetas"
+                :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                 label="moldes"
                 >En Moldes</el-radio
               >
@@ -872,6 +900,7 @@
                   clickitem('trasladoProbetas', 'desmoldadas')
                 "
                 v-model="form.trasladoProbetas"
+                :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                 label="desmoldadas"
                 >Desmoldadas</el-radio
               >
@@ -887,6 +916,7 @@
           <el-select
             clearable
             v-model="form.encargadoRetiroMuestras"
+                :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
             placeholder="Seleccione.."
             prop="retiroMuestras"
           >
@@ -906,6 +936,7 @@
                 >
                   <el-date-picker
                     v-model="form.fechaRetiroMuestras"
+                :disabled="form.muestreoDe == 'seccionTestigos' || form.muestreoDe == 'seccionAridos' || form.muestreoDe == 'seccionOtros'"
                     type="date"
                     size="mini"
                     format="dd-MM-yyyy"
@@ -963,7 +994,7 @@
               <el-form-item class="item-no-margin" prop="testigosExtraidosSeis">
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosExtraidosSeis"
                 ></el-input>
               </el-form-item>
@@ -975,7 +1006,7 @@
               >
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosExtraidosCuatro"
                 ></el-input>
               </el-form-item>
@@ -987,7 +1018,7 @@
               >
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosExtraidosTotal"
                 ></el-input>
               </el-form-item>
@@ -1014,7 +1045,7 @@
               <el-form-item class="item-no-margin" prop="testigosEnsayadosSeis">
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosEnsayadosSeis"
                 ></el-input>
               </el-form-item>
@@ -1026,7 +1057,7 @@
               >
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosEnsayadosCuatro"
                 ></el-input>
               </el-form-item>
@@ -1038,7 +1069,7 @@
               >
                 <el-input
                   size="mini"
-                  :disabled="!form.seccionTestigosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionTestigos'"
                   v-model="form.testigosEnsayadosTotal"
                 ></el-input>
               </el-form-item>
@@ -1071,7 +1102,7 @@
                 clickitem('procedimientoExtraccion', 'yacimiento')
               "
               v-model="form.procedimientoExtraccion"
-              :disabled="!form.seccionAridosHabilitada"
+              :disabled="form.muestreoDe != 'seccionAridos'"
               label="yacimiento"
               >Yacimiento</el-radio
             >
@@ -1080,7 +1111,7 @@
                 clickitem('procedimientoExtraccion', 'produccion')
               "
               v-model="form.procedimientoExtraccion"
-              :disabled="!form.seccionAridosHabilitada"
+              :disabled="form.muestreoDe != 'seccionAridos'"
               label="produccion"
               >Producci&oacute;n</el-radio
             >
@@ -1089,7 +1120,7 @@
                 clickitem('procedimientoExtraccion', 'obra')
               "
               v-model="form.procedimientoExtraccion"
-              :disabled="!form.seccionAridosHabilitada"
+              :disabled="form.muestreoDe != 'seccionAridos'"
               label="obra"
               >Obra
             </el-radio>
@@ -1114,7 +1145,7 @@
                     clickitem('aridosHormigonMuestraUno', 'grava')
                   "
                   v-model="form.aridosHormigonMuestraUno"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="grava"
                 ></el-radio>
               </el-form-item>
@@ -1126,7 +1157,7 @@
                     clickitem('aridosHormigonMuestraDos', 'grava')
                   "
                   v-model="form.aridosHormigonMuestraDos"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="grava"
                 ></el-radio>
               </el-form-item>
@@ -1138,7 +1169,7 @@
                     clickitem('aridosHormigonMuestraTres', 'grava')
                   "
                   v-model="form.aridosHormigonMuestraTres"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="grava"
                 ></el-radio>
               </el-form-item>
@@ -1150,7 +1181,7 @@
                     clickitem('aridosHormigonMuestraCuatro', 'grava')
                   "
                   v-model="form.aridosHormigonMuestraCuatro"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="grava"
                 ></el-radio>
               </el-form-item>
@@ -1164,7 +1195,7 @@
                     clickitem('aridosHormigonMuestraUno', 'gravilla')
                   "
                   v-model="form.aridosHormigonMuestraUno"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="gravilla"
                 ></el-radio>
               </el-form-item>
@@ -1176,7 +1207,7 @@
                     clickitem('aridosHormigonMuestraDos', 'gravilla')
                   "
                   v-model="form.aridosHormigonMuestraDos"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="gravilla"
                 ></el-radio>
               </el-form-item>
@@ -1188,7 +1219,7 @@
                     clickitem('aridosHormigonMuestraTres', 'gravilla')
                   "
                   v-model="form.aridosHormigonMuestraTres"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="gravilla"
                 ></el-radio>
               </el-form-item>
@@ -1200,7 +1231,7 @@
                     clickitem('aridosHormigonMuestraCuatro', 'gravilla')
                   "
                   v-model="form.aridosHormigonMuestraCuatro"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="gravilla"
                 ></el-radio>
               </el-form-item>
@@ -1214,7 +1245,7 @@
                     clickitem('aridosHormigonMuestraUno', 'arena')
                   "
                   v-model="form.aridosHormigonMuestraUno"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="arena"
                 ></el-radio>
               </el-form-item>
@@ -1226,7 +1257,7 @@
                     clickitem('aridosHormigonMuestraDos', 'arena')
                   "
                   v-model="form.aridosHormigonMuestraDos"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="arena"
                 ></el-radio>
               </el-form-item>
@@ -1238,7 +1269,7 @@
                     clickitem('aridosHormigonMuestraTres', 'arena')
                   "
                   v-model="form.aridosHormigonMuestraTres"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="arena"
                 ></el-radio>
               </el-form-item>
@@ -1250,7 +1281,7 @@
                     clickitem('aridosHormigonMuestraCuatro', 'arena')
                   "
                   v-model="form.aridosHormigonMuestraCuatro"
-                  :disabled="!form.seccionAridosHabilitada"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
                   label="arena"
                 ></el-radio>
               </el-form-item>
@@ -1260,27 +1291,74 @@
         <el-col :span="12" class="padding-5">
           <div class="tabla-aridos">
             <!-- r1 -->
-            <div class="tabla-aridos-cell" style="width: 90%">
+            <div class="tabla-aridos-cell" style="width: 50%">
               Ensayos para aceptaci&oacute;n de &aacute;ridos
             </div>
-            <div class="tabla-aridos-cell" style="width: 10%">-</div>
+            <div class="tabla-aridos-cell" style="width: 50%">
+              <el-form-item
+                prop="ensayosAceptacionAridos"
+                class="campos-extra-aridos"
+              >
+                <el-input
+                  size="mini"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
+                  v-model="form.ensayosAceptacionAridos"
+                ></el-input>
+              </el-form-item>
+            </div>
             <!-- r2 -->
-            <div class="tabla-aridos-cell" style="width: 90%">
+            <div class="tabla-aridos-cell" style="width: 50%">
               Ensayos para dosificaci&oacute; de hormig&oacute;n
             </div>
-            <div class="tabla-aridos-cell" style="width: 10%">-</div>
+            <div class="tabla-aridos-cell" style="width: 50%">
+              <el-form-item
+                prop="ensayosDosificacionHormigon"
+                class="campos-extra-aridos"
+              >
+                <el-input
+                  size="mini"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
+                  v-model="form.ensayosDosificacionHormigon"
+                ></el-input>
+              </el-form-item>
+
+            </div>
             <!-- r3 -->
-            <div class="tabla-aridos-cell" style="width: 75%">
+            <div class="tabla-aridos-cell" style="width: 50%">
               - Sin probetas de prueba
             </div>
             <div class="tabla-aridos-cell" style="width: 15%">400 - 18</div>
-            <div class="tabla-aridos-cell" style="width: 10%">-</div>
+            <div class="tabla-aridos-cell" style="width: 35%">
+              <el-form-item
+                prop="ensayosSinProbetasPrueba"
+                class="campos-extra-aridos"
+              >
+                <el-input
+                  size="mini"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
+                  v-model="form.ensayosSinProbetasPrueba"
+                ></el-input>
+              </el-form-item>
+
+            </div>
             <!-- r4 -->
-            <div class="tabla-aridos-cell" style="width: 75%">
+            <div class="tabla-aridos-cell" style="width: 50%">
               - Con probetas de prueba
             </div>
             <div class="tabla-aridos-cell" style="width: 15%">400 - 19</div>
-            <div class="tabla-aridos-cell" style="width: 10%">-</div>
+            <div class="tabla-aridos-cell" style="width: 35%">
+              <el-form-item
+                prop="ensayosConProbetasPrueba"
+                class="campos-extra-aridos"
+              >
+                <el-input
+                  size="mini"
+                  :disabled="form.muestreoDe != 'seccionAridos'"
+                  v-model="form.ensayosConProbetasPrueba"
+                ></el-input>
+              </el-form-item>
+
+            </div>
             <!-- asdsad -->
             <div class="tabla-aridos-cell" style="width: 30%">N° Informe</div>
             <div class="tabla-aridos-cell" style="width: 17.5%">-</div>
@@ -1308,7 +1386,7 @@
           >
             <div slot="label"><p style="margin-bottom: 0px;">Dens. Aparente Hormig&oacute;n<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 10&nbsp;</div></p></div>
             <el-checkbox
-              :disabled="!form.seccionOtrosHabilitada"
+              :disabled="form.muestreoDe != 'seccionOtros'"
               v-model="form.densAparenteHormigon"
             ></el-checkbox>
           </el-form-item>
@@ -1318,7 +1396,7 @@
           >
             <div slot="label"><p style="margin-bottom: 0px;">Dens. Aparente Mortero<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 10&nbsp;</div></p></div>
             <el-checkbox
-              :disabled="!form.seccionOtrosHabilitada"
+              :disabled="form.muestreoDe != 'seccionOtros'"
               v-model="form.densAparenteMortero"
             ></el-checkbox>
           </el-form-item>
@@ -1328,7 +1406,7 @@
           >
             <div slot="label"><p style="margin-bottom: 0px;">&Iacute;ndice Esclerom&eacute;trico<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 21&nbsp;</div></p></div>
             <el-checkbox
-              :disabled="!form.seccionOtrosHabilitada"
+              :disabled="form.muestreoDe != 'seccionOtros'"
               v-model="form.indiceEsclerometrico"
             ></el-checkbox>
           </el-form-item>
@@ -1338,7 +1416,7 @@
           >
             <div slot="label"><p style="margin-bottom: 0px;">Irregularidad Superficial<br/><div style="border-style: solid;border-width: 1px;display: inline;">&nbsp;400 - 20&nbsp;</div></p></div>
             <el-checkbox
-              :disabled="!form.seccionOtrosHabilitada"
+              :disabled="form.muestreoDe != 'seccionOtros'"
               v-model="form.irregularidadSuperficial"
             ></el-checkbox>
           </el-form-item>
@@ -1347,7 +1425,7 @@
             prop="irregularidadSuperficialMl"
           >
             <el-input
-              :disabled="!form.seccionOtrosHabilitada"
+              :disabled="form.muestreoDe != 'seccionOtros'"
               v-model="form.irregularidadSuperficialMl"
             ></el-input>
           </el-form-item>
@@ -1361,17 +1439,19 @@
           >
             <el-radio
               @click.native.prevent="
-                clickitem('muestraIngresadaPorCliente', 'true')
+                if(form.muestraIngresadaPorCliente == 'false'){}else{clickitem('muestraIngresadaPorCliente', 'true')}
               "
               v-model="form.muestraIngresadaPorCliente"
+              :disabled="form.muestraIngresadaPorCliente == 'false'"
               label="true"
               >Si</el-radio
             >
             <el-radio
               @click.native.prevent="
-                clickitem('muestraIngresadaPorCliente', 'false')
+                if(form.muestraIngresadaPorCliente == 'true'){}else{clickitem('muestraIngresadaPorCliente', 'false')}
               "
               v-model="form.muestraIngresadaPorCliente"
+              :disabled="form.muestraIngresadaPorCliente == 'true'"
               label="false"
               >No</el-radio
             >
@@ -1379,13 +1459,15 @@
         </el-col>
         <el-col :span="12" class="seccion-otros padding-5">
           <el-form-item label="Responsable en Obra" prop="responsableEnObra">
-            <el-input v-model="form.responsableEnObra"></el-input>
+            <el-input v-model="form.responsableEnObra"
+              :disabled="form.muestraIngresadaPorCliente == ''"></el-input>
           </el-form-item>
         </el-col>
         <el-col :span="12" class="seccion-otros padding-5">
           <el-form-item label="Fecha de Ingreso" prop="fechaIngreso">
             <el-date-picker
               v-model="form.fechaIngreso"
+              :disabled="form.muestraIngresadaPorCliente == ''"
               type="date"
               format="dd-MM-yyyy"
               value-format="dd-MM-yyyy"
@@ -1397,6 +1479,7 @@
           <el-form-item label="Fecha de Visita Obra" prop="fechaVisitaObra">
             <el-date-picker
               v-model="form.fechaVisitaObra"
+              :disabled="form.muestraIngresadaPorCliente == 'true'"
               type="date"
               format="dd-MM-yyyy"
               value-format="dd-MM-yyyy"
@@ -1408,6 +1491,7 @@
           <el-form-item label="Hora Llegada" prop="horaLlegada">
             <el-time-picker
               v-model="form.horaLlegada"
+              :disabled="form.muestraIngresadaPorCliente == 'true'"
               format="HH:mm"
               value-format="HH:mm"
             >
@@ -1418,6 +1502,7 @@
           <el-form-item label="Hora Salida" prop="horaSalida">
             <el-time-picker
               v-model="form.horaSalida"
+              :disabled="form.muestraIngresadaPorCliente == 'true'"
               format="HH:mm"
               value-format="HH:mm"
             >
@@ -1431,7 +1516,8 @@
           <el-col :span="24" class="padding-5">Observaciones</el-col>
           <el-col :span="24" class="padding-5">
             <el-form-item prop="observaciones">
-              <el-input type="textarea" autosize v-model="form.observaciones">
+              <el-input type="textarea" autosize v-model="form.observaciones"
+              :disabled="form.muestraIngresadaPorCliente == ''">
               </el-input>
             </el-form-item>
           </el-col>
@@ -1462,6 +1548,7 @@
                 type="textarea"
                 autosize
                 v-model="form.observacionesAlteracionesMuestra"
+                :disabled="form.alteracionMuestra != 'si'"
               >
               </el-input>
             </el-form-item>
@@ -1479,6 +1566,7 @@
           <el-select
             clearable
             v-model="form.laboratorista"
+              :disabled="form.muestraIngresadaPorCliente == ''"
             placeholder="Seleccione.."
             prop="laboratorista"
           >
@@ -1500,6 +1588,7 @@
           <el-select
             clearable
             v-model="form.ayudante"
+              :disabled="form.muestraIngresadaPorCliente == ''"
             placeholder="Seleccione.."
             prop="ayudante"
           >
@@ -1917,6 +2006,10 @@ export default {
         testigosEnsayadosTotal: "0",
         encargadoRetiroMuestras: "",
         fechaRetiroMuestras: "",
+        ensayosAceptacionAridos: "",
+        ensayosDosificacionHormigon: "",
+        ensayosSinProbetasPrueba: "",
+        ensayosConProbetasPrueba: "",
       },
       reglas: {
         numClienteObra: [{ required: true, message: "", trigger: "blur" }],
@@ -2603,6 +2696,14 @@ export default {
       this.form.encargadoRetiroMuestras =
         this.ottCargada.encargado_retiro_muestras;
       this.form.fechaRetiroMuestras = this.ottCargada.fecha_retiro_muestras;
+      this.form.ensayosAceptacionAridos =
+        this.ottCargada.ensayos_aceptacion_aridos;
+      this.form.ensayosDosificacionHormigon =
+        this.ottCargada.ensayos_dosificacion_hormigon;
+      this.form.ensayosSinProbetasPrueba =
+        this.ottCargada.ensayos_sin_probetas_prueba;
+      this.form.ensayosConProbetasPrueba =
+        this.ottCargada.ensayos_con_probetas_prueba;
     },
     clickitem(item, value) {
       if (item == "muestreoDe") {
@@ -2679,6 +2780,41 @@ export default {
         this.form.aridosHormigonMuestraCuatro == value
           ? (this.form.aridosHormigonMuestraCuatro = "")
           : (this.form.aridosHormigonMuestraCuatro = value);
+      }
+      if (item == "tipoMoldeUno") {
+        this.form.tipoMoldeUno == value
+          ? (this.form.tipoMoldeUno = "")
+          : (this.form.tipoMoldeUno = value);
+      }
+      if (item == "tipoMoldeDos") {
+        this.form.tipoMoldeDos == value
+          ? (this.form.tipoMoldeDos = "")
+          : (this.form.tipoMoldeDos = value);
+      }
+      if (item == "tipoMoldeTres") {
+        this.form.tipoMoldeTres == value
+          ? (this.form.tipoMoldeTres = "")
+          : (this.form.tipoMoldeTres = value);
+      }
+      if (item == "tipoMoldeCuatro") {
+        this.form.tipoMoldeCuatro == value
+          ? (this.form.tipoMoldeCuatro = "")
+          : (this.form.tipoMoldeCuatro = value);
+      }
+      if (item == "tipoMoldeCinco") {
+        this.form.tipoMoldeCinco == value
+          ? (this.form.tipoMoldeCinco = "")
+          : (this.form.tipoMoldeCinco = value);
+      }
+      if (item == "tipoMoldeSeis") {
+        this.form.tipoMoldeSeis == value
+          ? (this.form.tipoMoldeSeis = "")
+          : (this.form.tipoMoldeSeis = value);
+      }
+      if (item == "tipoMoldeSiete") {
+        this.form.tipoMoldeSiete == value
+          ? (this.form.tipoMoldeSiete = "")
+          : (this.form.tipoMoldeSiete = value);
       }
     },
   },
@@ -3104,6 +3240,12 @@ export default {
   }
 }
 .form-item-no-label {
+  /deep/ .el-form-item__content {
+    margin-left: 0px !important;
+  }
+}
+.campos-extra-aridos {
+  margin-left: 0px !important;
   /deep/ .el-form-item__content {
     margin-left: 0px !important;
   }
