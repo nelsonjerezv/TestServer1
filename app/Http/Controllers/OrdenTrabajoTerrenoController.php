@@ -181,6 +181,10 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario['testigos_ensayados_total'] = $request->formulario['testigosEnsayadosTotal'];
         $formulario['encargado_retiro_muestras'] = $request->formulario['encargadoRetiroMuestras'];
         $formulario['fecha_retiro_muestras'] = $request->formulario['fechaRetiroMuestras'];
+        $formulario['ensayos_aceptacion_aridos'] = $request->formulario['ensayosAceptacionAridos'];
+        $formulario['ensayos_dosificacion_hormigon'] = $request->formulario['ensayosDosificacionHormigon'];
+        $formulario['ensayos_sin_probetas_prueba'] = $request->formulario['ensayosSinProbetasPrueba'];
+        $formulario['ensayos_con_probetas_prueba'] = $request->formulario['ensayosConProbetasPrueba'];
 
 
         $result;
@@ -335,6 +339,10 @@ class OrdenTrabajoTerrenoController extends Controller
         $formulario->testigos_ensayados_total = $request->formulario['testigosEnsayadosTotal'];
         $formulario->encargado_retiro_muestras = $request->formulario['encargadoRetiroMuestras'];
         $formulario->fecha_retiro_muestras = $request->formulario['fechaRetiroMuestras'];
+        $formulario->ensayos_aceptacion_aridos = $request->formulario['ensayosAceptacionAridos'];
+        $formulario->ensayos_dosificacion_hormigon = $request->formulario['ensayosDosificacionHormigon'];
+        $formulario->ensayos_sin_probetas_prueba = $request->formulario['ensayosSinProbetasPrueba'];
+        $formulario->ensayos_con_probetas_prueba = $request->formulario['ensayosConProbetasPrueba'];
 
 
         try {
