@@ -98470,6 +98470,9 @@ var moment = __webpack_require__(0);
       }
       if (item == "muestraIngresadaPorCliente") {
         this.form.muestraIngresadaPorCliente == value ? this.form.muestraIngresadaPorCliente = "" : this.form.muestraIngresadaPorCliente = value;
+        if (this.form.muestraIngresadaPorCliente != "") {
+          this.form.fechaIngreso = moment().format("DD-MM-YYYY");
+        }
       }
       if (item == "recibeOMuestrea") {
         this.form.recibeOMuestrea == value ? this.form.recibeOMuestrea = "" : this.form.recibeOMuestrea = value;
