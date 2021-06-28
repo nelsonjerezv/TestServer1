@@ -5056,6 +5056,78 @@ export default {
         this.form.velocidadEnsayoMuestraCuatro = "---";
       }
     },
+    "form.espesorSuperiorMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorSuperiorMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.espesorSuperiorMuestraUno = commaReplaced;
+    },
+    "form.espesorSuperiorMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorSuperiorMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.espesorSuperiorMuestraDos = commaReplaced;
+    },
+    "form.espesorSuperiorMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorSuperiorMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.espesorSuperiorMuestraTres = commaReplaced;
+    },
+    "form.espesorSuperiorMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorSuperiorMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.espesorSuperiorMuestraCuatro = commaReplaced;
+    },
+    "form.espesorInferiorMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorInferiorMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.espesorInferiorMuestraUno = commaReplaced;
+    },
+    "form.espesorInferiorMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorInferiorMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.espesorInferiorMuestraDos = commaReplaced;
+    },
+    "form.espesorInferiorMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorInferiorMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.espesorInferiorMuestraTres = commaReplaced;
+    },
+    "form.espesorInferiorMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorInferiorMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.espesorInferiorMuestraCuatro = commaReplaced;
+    },
+    "form.espesorPromedioMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorPromedioMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.espesorPromedioMuestraUno = commaReplaced;
+    },
+    "form.espesorPromedioMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorPromedioMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.espesorPromedioMuestraDos = commaReplaced;
+    },
+    "form.espesorPromedioMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorPromedioMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.espesorPromedioMuestraTres = commaReplaced;
+    },
+    "form.espesorPromedioMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.espesorPromedioMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.espesorPromedioMuestraCuatro = commaReplaced;
+    },
   },
 };
 </script>
