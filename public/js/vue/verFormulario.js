@@ -98591,6 +98591,38 @@ var moment = __webpack_require__(0);
       if (newVal == "lacem") {
         this.form.ensayadoPor = "lacem";
       }
+    },
+    "form.amasadaHormigon": function formAmasadaHormigon(newVal, oldVal) {
+      var commaReplaced = this.form.amasadaHormigon.toString().replace(",", ".");
+      this.form.amasadaHormigon = commaReplaced;
+    },
+    "form.asentamientoCono": function formAsentamientoCono(newVal, oldVal) {
+      var commaReplaced = this.form.asentamientoCono.toString().replace(",", ".");
+      this.form.asentamientoCono = commaReplaced;
+    },
+    "form.segregacion": function formSegregacion(newVal, oldVal) {
+      var commaReplaced = this.form.segregacion.toString().replace(",", ".");
+      this.form.segregacion = commaReplaced;
+    },
+    "form.numEquipoConoAbrams": function formNumEquipoConoAbrams(newVal, oldVal) {
+      var commaReplaced = this.form.numEquipoConoAbrams.toString().replace(",", ".");
+      this.form.numEquipoConoAbrams = commaReplaced;
+    },
+    "form.numVibradorInmersion": function formNumVibradorInmersion(newVal, oldVal) {
+      var commaReplaced = this.form.numVibradorInmersion.toString().replace(",", ".");
+      this.form.numVibradorInmersion = commaReplaced;
+    },
+    "form.numEquipoConoReducido": function formNumEquipoConoReducido(newVal, oldVal) {
+      var commaReplaced = this.form.numEquipoConoReducido.toString().replace(",", ".");
+      this.form.numEquipoConoReducido = commaReplaced;
+    },
+    "form.tAmbiente": function formTAmbiente(newVal, oldVal) {
+      var commaReplaced = this.form.tAmbiente.toString().replace(",", ".");
+      this.form.tAmbiente = commaReplaced;
+    },
+    "form.tHormigonMortero": function formTHormigonMortero(newVal, oldVal) {
+      var commaReplaced = this.form.tHormigonMortero.toString().replace(",", ".");
+      this.form.tHormigonMortero = commaReplaced;
     }
   }
 });

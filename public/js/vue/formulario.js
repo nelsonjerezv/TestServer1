@@ -98591,6 +98591,38 @@ var moment = __webpack_require__(0);
       if (newVal == "lacem") {
         this.form.ensayadoPor = "lacem";
       }
+    },
+    "form.amasadaHormigon": function formAmasadaHormigon(newVal, oldVal) {
+      var commaReplaced = this.form.amasadaHormigon.toString().replace(",", ".");
+      this.form.amasadaHormigon = commaReplaced;
+    },
+    "form.asentamientoCono": function formAsentamientoCono(newVal, oldVal) {
+      var commaReplaced = this.form.asentamientoCono.toString().replace(",", ".");
+      this.form.asentamientoCono = commaReplaced;
+    },
+    "form.segregacion": function formSegregacion(newVal, oldVal) {
+      var commaReplaced = this.form.segregacion.toString().replace(",", ".");
+      this.form.segregacion = commaReplaced;
+    },
+    "form.numEquipoConoAbrams": function formNumEquipoConoAbrams(newVal, oldVal) {
+      var commaReplaced = this.form.numEquipoConoAbrams.toString().replace(",", ".");
+      this.form.numEquipoConoAbrams = commaReplaced;
+    },
+    "form.numVibradorInmersion": function formNumVibradorInmersion(newVal, oldVal) {
+      var commaReplaced = this.form.numVibradorInmersion.toString().replace(",", ".");
+      this.form.numVibradorInmersion = commaReplaced;
+    },
+    "form.numEquipoConoReducido": function formNumEquipoConoReducido(newVal, oldVal) {
+      var commaReplaced = this.form.numEquipoConoReducido.toString().replace(",", ".");
+      this.form.numEquipoConoReducido = commaReplaced;
+    },
+    "form.tAmbiente": function formTAmbiente(newVal, oldVal) {
+      var commaReplaced = this.form.tAmbiente.toString().replace(",", ".");
+      this.form.tAmbiente = commaReplaced;
+    },
+    "form.tHormigonMortero": function formTHormigonMortero(newVal, oldVal) {
+      var commaReplaced = this.form.tHormigonMortero.toString().replace(",", ".");
+      this.form.tHormigonMortero = commaReplaced;
     }
   }
 });
@@ -107582,6 +107614,42 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
     } else {
       this.form.velocidadEnsayoMuestraCuatro = "---";
     }
+  }), _defineProperty(_watch, "form.espesorSuperiorMuestraUno", function formEspesorSuperiorMuestraUno(newVal, oldVal) {
+    var commaReplaced = this.form.espesorSuperiorMuestraUno.toString().replace(",", ".");
+    this.form.espesorSuperiorMuestraUno = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorSuperiorMuestraDos", function formEspesorSuperiorMuestraDos(newVal, oldVal) {
+    var commaReplaced = this.form.espesorSuperiorMuestraDos.toString().replace(",", ".");
+    this.form.espesorSuperiorMuestraDos = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorSuperiorMuestraTres", function formEspesorSuperiorMuestraTres(newVal, oldVal) {
+    var commaReplaced = this.form.espesorSuperiorMuestraTres.toString().replace(",", ".");
+    this.form.espesorSuperiorMuestraTres = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorSuperiorMuestraCuatro", function formEspesorSuperiorMuestraCuatro(newVal, oldVal) {
+    var commaReplaced = this.form.espesorSuperiorMuestraCuatro.toString().replace(",", ".");
+    this.form.espesorSuperiorMuestraCuatro = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorInferiorMuestraUno", function formEspesorInferiorMuestraUno(newVal, oldVal) {
+    var commaReplaced = this.form.espesorInferiorMuestraUno.toString().replace(",", ".");
+    this.form.espesorInferiorMuestraUno = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorInferiorMuestraDos", function formEspesorInferiorMuestraDos(newVal, oldVal) {
+    var commaReplaced = this.form.espesorInferiorMuestraDos.toString().replace(",", ".");
+    this.form.espesorInferiorMuestraDos = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorInferiorMuestraTres", function formEspesorInferiorMuestraTres(newVal, oldVal) {
+    var commaReplaced = this.form.espesorInferiorMuestraTres.toString().replace(",", ".");
+    this.form.espesorInferiorMuestraTres = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorInferiorMuestraCuatro", function formEspesorInferiorMuestraCuatro(newVal, oldVal) {
+    var commaReplaced = this.form.espesorInferiorMuestraCuatro.toString().replace(",", ".");
+    this.form.espesorInferiorMuestraCuatro = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorPromedioMuestraUno", function formEspesorPromedioMuestraUno(newVal, oldVal) {
+    var commaReplaced = this.form.espesorPromedioMuestraUno.toString().replace(",", ".");
+    this.form.espesorPromedioMuestraUno = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorPromedioMuestraDos", function formEspesorPromedioMuestraDos(newVal, oldVal) {
+    var commaReplaced = this.form.espesorPromedioMuestraDos.toString().replace(",", ".");
+    this.form.espesorPromedioMuestraDos = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorPromedioMuestraTres", function formEspesorPromedioMuestraTres(newVal, oldVal) {
+    var commaReplaced = this.form.espesorPromedioMuestraTres.toString().replace(",", ".");
+    this.form.espesorPromedioMuestraTres = commaReplaced;
+  }), _defineProperty(_watch, "form.espesorPromedioMuestraCuatro", function formEspesorPromedioMuestraCuatro(newVal, oldVal) {
+    var commaReplaced = this.form.espesorPromedioMuestraCuatro.toString().replace(",", ".");
+    this.form.espesorPromedioMuestraCuatro = commaReplaced;
   }), _watch)
 });
 
