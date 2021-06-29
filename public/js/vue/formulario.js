@@ -107650,6 +107650,18 @@ Vue.prototype.moment = __WEBPACK_IMPORTED_MODULE_1_moment___default.a;
   }), _defineProperty(_watch, "form.espesorPromedioMuestraCuatro", function formEspesorPromedioMuestraCuatro(newVal, oldVal) {
     var commaReplaced = this.form.espesorPromedioMuestraCuatro.toString().replace(",", ".");
     this.form.espesorPromedioMuestraCuatro = commaReplaced;
+  }), _defineProperty(_watch, "form.aseguramientoMuestraUno", function formAseguramientoMuestraUno(newVal, oldVal) {
+    var commaReplaced = this.form.aseguramientoMuestraUno.toString().replace(",", ".");
+    this.form.aseguramientoMuestraUno = commaReplaced;
+  }), _defineProperty(_watch, "form.aseguramientoMuestraDos", function formAseguramientoMuestraDos(newVal, oldVal) {
+    var commaReplaced = this.form.aseguramientoMuestraDos.toString().replace(",", ".");
+    this.form.aseguramientoMuestraDos = commaReplaced;
+  }), _defineProperty(_watch, "form.aseguramientoMuestraTres", function formAseguramientoMuestraTres(newVal, oldVal) {
+    var commaReplaced = this.form.aseguramientoMuestraTres.toString().replace(",", ".");
+    this.form.aseguramientoMuestraTres = commaReplaced;
+  }), _defineProperty(_watch, "form.aseguramientoMuestraCuatro", function formAseguramientoMuestraCuatro(newVal, oldVal) {
+    var commaReplaced = this.form.aseguramientoMuestraCuatro.toString().replace(",", ".");
+    this.form.aseguramientoMuestraCuatro = commaReplaced;
   }), _watch)
 });
 
