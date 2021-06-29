@@ -5128,6 +5128,30 @@ export default {
         .replace(",", ".");
       this.form.espesorPromedioMuestraCuatro = commaReplaced;
     },
+    "form.aseguramientoMuestraUno": function (newVal, oldVal) {
+      let commaReplaced = this.form.aseguramientoMuestraUno
+        .toString()
+        .replace(",", ".");
+      this.form.aseguramientoMuestraUno = commaReplaced;
+    },
+    "form.aseguramientoMuestraDos": function (newVal, oldVal) {
+      let commaReplaced = this.form.aseguramientoMuestraDos
+        .toString()
+        .replace(",", ".");
+      this.form.aseguramientoMuestraDos = commaReplaced;
+    },
+    "form.aseguramientoMuestraTres": function (newVal, oldVal) {
+      let commaReplaced = this.form.aseguramientoMuestraTres
+        .toString()
+        .replace(",", ".");
+      this.form.aseguramientoMuestraTres = commaReplaced;
+    },
+    "form.aseguramientoMuestraCuatro": function (newVal, oldVal) {
+      let commaReplaced = this.form.aseguramientoMuestraCuatro
+        .toString()
+        .replace(",", ".");
+      this.form.aseguramientoMuestraCuatro = commaReplaced;
+    },
   },
 };
 </script>
