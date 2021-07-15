@@ -1405,7 +1405,7 @@
           <div class="texto">
             Factores de conversión cil. 15x30 a cubo 20x20
             <br />
-            Fcil a 20 MPa * 1,25 | Fcil 20 Mpa ver nota (*)
+            Fcil &leq; a 20 MPa * 1,25 | Fcil > 20 Mpa ver nota (*)
           </div>
           <div class="texto-muestras">
             <el-form-item prop="factoresConversionMuestraUno">
