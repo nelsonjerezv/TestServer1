@@ -33,7 +33,7 @@
             :modo="modoListadoExportar"
           />
         </el-main>
-        <el-footer>Footer</el-footer>
+        <el-footer>LACEM</el-footer>
       </el-container>
     </el-container>
   </div>

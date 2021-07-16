@@ -20,7 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "element-ui": "^2.15.0",
+        "element-ui": "^2.15.3",
         "fomantic-ui": "^2.8.7",
         "gulp": "^4.0.2",
         "loadash": "^1.0.0",

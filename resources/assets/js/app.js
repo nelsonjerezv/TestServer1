@@ -18,6 +18,8 @@ window.Vue = require('vue');
 import componentePrueba from './vue/components/ExampleComponent.vue';
 import Element from 'element-ui';
 import locale from 'element-ui/lib/locale/lang/es';
+import 'element-ui/lib/theme-chalk/index.css';
+import Vue from 'vue'
 
 Vue.use(Element, { locale });
 
